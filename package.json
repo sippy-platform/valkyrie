@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/optimise-group/valley.git"
   },
+  "files": [
+    "icons/*.svg"
+  ],
   "keywords": [
     "icons"
   ],
