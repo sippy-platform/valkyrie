@@ -1,2 +1,2 @@
-# valley
-Next generation icons for sippy.cloud.
+# Valley
+An open source icon set for the next generation of Sippy.
