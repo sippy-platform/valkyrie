@@ -1,0 +1,22 @@
+{
+  "name": "valley",
+  "version": "0.1.0",
+  "description": "The iconography of Sippy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/optimise-group/valley.git"
+  },
+  "keywords": [
+    "icons"
+  ],
+  "author": "",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/optimise-group/valley/issues"
+  },
+  "homepage": "https://github.com/optimise-group/valley#readme"
+}
