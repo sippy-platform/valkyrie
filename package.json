@@ -4,6 +4,7 @@
   "description": "The iconography of Sippy.",
   "main": "index.js",
   "scripts": {
+    "icons": "svgo -f ./icons -o ./icons",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/optimise-group/valley/issues"
   },
-  "homepage": "https://github.com/optimise-group/valley#readme"
+  "homepage": "https://github.com/optimise-group/valley#readme",
+  "devDependencies": {
+    "svgo": "^2.3.0"
+  }
 }
