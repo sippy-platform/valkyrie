@@ -1,0 +1,13 @@
+{
+  "conversionType": "constants",
+  "srcFiles": ["./icons/**/*.svg"],
+  "outputDirectory": "./js",
+  "interfaceName": "Valkyrie",
+  "typeName": "valkyrie",
+  "prefix": "vi",
+  "fileName": "valkyrie",
+  "svgoConfig": ["./svgo.config.js"],
+  "additionalModelFile": "./src/lib",
+  "compileSources": true,
+  "verbose": true
+}
