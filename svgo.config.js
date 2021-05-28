@@ -16,9 +16,11 @@ module.exports = {
       name: 'removeAttrs',
       params: {
         attrs: [
+          'clip-rule',
           'data-name',
           'fill',
-          'clip-rule'
+          'height',
+          'width'
         ]
       }
     },
@@ -34,6 +36,14 @@ module.exports = {
     },
     {
       name: 'sortAttrs'
+    },
+    {
+      name: 'addAttributesToSVGElement',
+      params: {
+        attributes: [{
+          fill: 'currentColor'
+        }]
+      }
     }
   ])
 }
