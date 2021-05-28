@@ -6,8 +6,7 @@
   "typeName": "Valkyrie",
   "prefix": "vi",
   "fileName": "Valkyrie",
-  "svgoConfig": ["./svgo.config.js"],
+  "svgoConfig": false,
   "additionalModelFile": "./src/lib",
-  "compileSources": true,
-  "verbose": true
+  "compileSources": true
 }

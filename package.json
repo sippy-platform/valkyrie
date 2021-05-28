@@ -4,9 +4,10 @@
   "description": "The iconography of Sippy.",
   "main": "index.js",
   "scripts": {
-    "icons": "svgo -f ./icons -o ./icons",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "js": "svg-to-ts"
+    "icons:clean": "svgo -f ./icons -o ./icons",
+    "icons:ts": "svg-to-ts",
+    "icons": "npm run icons:clean && npm run icons:ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
