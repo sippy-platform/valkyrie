@@ -4,7 +4,7 @@ export const viAccounts: {
   data: string;
 } = {
   name: 'accounts',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.75 5.5a3.25 3.25 0 116.5 0 3.25 3.25 0 01-6.5 0zM8 3.75a1.75 1.75 0 100 3.5 1.75 1.75 0 000-3.5z"/><path fill-rule="evenodd" d="M2.19 13.499A8 8 0 1113.81 2.5a8 8 0 01-11.621 11zm10.976-1.553a6.5 6.5 0 10-10.331 0A5.997 5.997 0 018 9a5.997 5.997 0 015.166 2.946zm-1.1 1.125a4.5 4.5 0 00-8.133 0A6.473 6.473 0 008 14.5c1.54 0 2.953-.535 4.067-1.429z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 8.5A2.75 2.75 0 108 3a2.75 2.75 0 000 5.5zM8 7a1.25 1.25 0 100-2.5A1.25 1.25 0 008 7z"/><path fill-rule="evenodd" d="M14.245 13a8 8 0 10-1.054 1.087A8.052 8.052 0 0014.245 13zm-1.054-1.087a6.5 6.5 0 10-10.382 0A7.968 7.968 0 018 10c1.981 0 3.794.72 5.191 1.913zM12.154 13A6.474 6.474 0 008 11.5c-1.58 0-3.027.563-4.154 1.5A6.473 6.473 0 008 14.5c1.58 0 3.027-.563 4.154-1.5z"/></svg>`
 };
 export const viArrowDownToLine: {
   name: 'arrow_down_to_line';
