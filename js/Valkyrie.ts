@@ -60,7 +60,7 @@ export const viBook: {
   data: string;
 } = {
   name: 'book',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><g clip-path="url(#book_svg__a)"><path fill-rule="evenodd" d="M12.5 2a.5.5 0 00-.5-.5H4a.5.5 0 00-.5.5v9.628c.235-.083.487-.128.75-.128H12a.5.5 0 00.5-.5V2zm.5 11a1 1 0 001-1V1a1 1 0 00-1-1H4a2 2 0 00-2 2v12a2 2 0 002 2h9.25a.75.75 0 000-1.5h-9a.75.75 0 010-1.5H13z"/><path d="M10.25 4.5h-4.5a.75.75 0 010-1.5h4.5a.75.75 0 010 1.5zm2.75 10V13h-1.5v1.5H13z"/></g><defs><clipPath id="book_svg__a"><path d="M0 0h12v16H0z" transform="translate(2)"/></clipPath></defs></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M10.25 4.5h-4.5a.75.75 0 010-1.5h4.5a.75.75 0 010 1.5z"/><path fill-rule="evenodd" d="M13 13a1 1 0 001-1V1a1 1 0 00-1-1H4a2 2 0 00-2 2v12a2 2 0 002 2h9.25a.75.75 0 000-1.5H13V13zm-.5-11a.5.5 0 00-.5-.5H4a.5.5 0 00-.5.5v9.628c.235-.083.487-.128.75-.128H12a.5.5 0 00.5-.5V2zm-1 11H4.25a.75.75 0 000 1.5h7.25V13z"/></svg>`
 };
 export const viCompass: {
   name: 'compass';
@@ -95,7 +95,7 @@ export const viHome: {
   data: string;
 } = {
   name: 'home',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14.438 8.593a.737.737 0 00.97-1.112l-6.75-5.905a1 1 0 00-1.316 0L.593 7.481a.737.737 0 00.97 1.112L2 8.213V13a2 2 0 002 2h8a2 2 0 002-2V8.213l.438.38zM3.5 13V6.91L8 3l4.5 3.91V13a.5.5 0 01-.5.5h-1V8a1 1 0 00-1-1H6a1 1 0 00-1 1v5.5H4a.5.5 0 01-.5-.5zm3 .5h3V8.75a.25.25 0 00-.25-.25h-2.5a.25.25 0 00-.25.25v4.75z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M.522 7.478a.738.738 0 101.043 1.043L2 8.088V14a2 2 0 002 2h8a2 2 0 002-2V8.087l.435.435a.738.738 0 001.044-1.043L8.706.706a1 1 0 00-1.414 0L.522 7.478zM3.5 14V6.587l4.5-4.5 4.5 4.5V14a.5.5 0 01-.5.5h-1V9a1 1 0 00-1-1H6a1 1 0 00-1 1v5.5H4a.5.5 0 01-.5-.5zm3 .5h3V9.75a.25.25 0 00-.25-.25h-2.5a.25.25 0 00-.25.25v4.75z"/></svg>`
 };
 export const viImage: {
   name: 'image';
