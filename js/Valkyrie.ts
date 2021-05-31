@@ -104,6 +104,20 @@ export const viImage: {
   name: 'image',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M11 6a1 1 0 100-2 1 1 0 000 2z"/><path fill-rule="evenodd" d="M1 13a2 2 0 002 2h10a2 2 0 002-2V3a2 2 0 00-2-2H3a2 2 0 00-2 2v10zm12 .5h-.44L7.365 8.303a2.75 2.75 0 00-3.772-.11l-1.092.97V3a.5.5 0 01.5-.5h10a.5.5 0 01.5.5v10a.5.5 0 01-.5.5zM4.589 9.313L2.5 11.17V13a.5.5 0 00.5.5h7.44L6.302 9.364a1.25 1.25 0 00-1.714-.05z"/></svg>`
 };
+export const viPlus: {
+  name: 'plus';
+  data: string;
+} = {
+  name: 'plus',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.75 8.75v5.5a.75.75 0 01-1.5 0v-5.5h-5.5a.75.75 0 010-1.5h5.5v-5.5a.75.75 0 011.5 0v5.5h5.5a.75.75 0 010 1.5h-5.5z"/></svg>`
+};
+export const viSearch: {
+  name: 'search';
+  data: string;
+} = {
+  name: 'search',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15 6a5 5 0 01-7.965 4.026L2.06 15A.75.75 0 011 13.94l4.973-4.975A5 5 0 1115 6zm-1.5 0a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0z"/></svg>`
+};
 export const viXMark: {
   name: 'x_mark';
   data: string;
@@ -127,6 +141,8 @@ export type Valkyrie =
   | 'gear'
   | 'home'
   | 'image'
+  | 'plus'
+  | 'search'
   | 'x_mark';
 export interface ValkyrieIcon {
   name: Valkyrie;
