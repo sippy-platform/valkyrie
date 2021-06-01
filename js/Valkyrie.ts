@@ -111,12 +111,26 @@ export const viCheckCircle: {
   name: 'check_circle',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M10.44 5.5L7 8.94 5.56 7.5A.75.75 0 004.5 8.56l1.793 1.794a1 1 0 001.414 0L11.5 6.56a.75.75 0 10-1.06-1.06z"/><path fill-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-1.5 0a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"/></svg>`
 };
+export const viCheck: {
+  name: 'check';
+  data: string;
+} = {
+  name: 'check',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14.5 3.5a.75.75 0 010 1.06l-7.793 7.794a1 1 0 01-1.414 0L1.5 8.56A.75.75 0 012.56 7.5L6 10.938 13.44 3.5a.75.75 0 011.06 0z"/></svg>`
+};
 export const viCompass: {
   name: 'compass';
   data: string;
 } = {
   name: 'compass',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.428 5.099l1.86 3.719a2 2 0 00.894.894l3.719 1.86a.5.5 0 00.67-.671L9.713 7.182a2 2 0 00-.894-.894L5.1 4.428a.5.5 0 00-.67.671zM9 8a1 1 0 11-2 0 1 1 0 012 0z"/><path fill-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-1.5 0a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"/></svg>`
+};
+export const viCopy: {
+  name: 'copy';
+  data: string;
+} = {
+  name: 'copy',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 10V2a2 2 0 012-2h4.172a2 2 0 011.414.586l1.828 1.828A2 2 0 0116 3.828V10a2 2 0 01-2 2H8a2 2 0 01-2-2zm1.5 0a.5.5 0 00.5.5h6a.5.5 0 00.5-.5V4.75h-2.25a1 1 0 01-1-1V1.5H8a.5.5 0 00-.5.5v8zm5.25-8.129V3.25h1.379L12.75 1.871z"/><path d="M4.5 4H2a2 2 0 00-2 2v8a2 2 0 002 2h6a2 2 0 002-2v-.5H8.5v.5a.5.5 0 01-.5.5H2a.5.5 0 01-.5-.5V6a.5.5 0 01.5-.5h2.5V4z"/></svg>`
 };
 export const viDashboard: {
   name: 'dashboard';
@@ -131,6 +145,13 @@ export const viDevices: {
 } = {
   name: 'devices',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><mask id="devices_svg__a"><rect x="9" y="5" rx="1"/></mask><rect x="9" y="5" stroke="#000" stroke-width="3" mask="url(#devices_svg__a)" rx="1"/><path fill-rule="evenodd" d="M.667 10a.667.667 0 00-.667.667C0 11.403.597 12 1.333 12H7.5v-2h-4V3a.5.5 0 01.5-.5h8a.5.5 0 01.5.5v.5H14V2a1 1 0 00-1-1H3a1 1 0 00-1 1v8H.667z"/><path d="M0 10.667C0 10.299.298 10 .667 10H2V2a1 1 0 011-1h10a1 1 0 011 1v1.5h-1.5V3a.5.5 0 00-.5-.5H4a.5.5 0 00-.5.5v7h4v2H1.333A1.333 1.333 0 010 10.667z"/><path fill-rule="evenodd" d="M9 6a1 1 0 011-1h5a1 1 0 011 1v8a1 1 0 01-1 1h-5a1 1 0 01-1-1V6zm1.5 7.5v-7h4v7h-4z"/></svg>`
+};
+export const viEllipsis: {
+  name: 'ellipsis';
+  data: string;
+} = {
+  name: 'ellipsis',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M3.5 8a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm6 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM14 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg>`
 };
 export const viFloppyDisk: {
   name: 'floppy_disk';
@@ -223,6 +244,13 @@ export const viTrash: {
   name: 'trash',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M5.5 12.5v-6A.5.5 0 016 6h.5a.5.5 0 01.5.5v6a.5.5 0 01-.5.5H6a.5.5 0 01-.5-.5zm3.5-6v6a.5.5 0 00.5.5h.5a.5.5 0 00.5-.5v-6A.5.5 0 0010 6h-.5a.5.5 0 00-.5.5z"/><path fill-rule="evenodd" d="M5 3V2a2 2 0 012-2h2a2 2 0 012 2v1h3.25a.75.75 0 010 1.5H14V14a2 2 0 01-2 2H4a2 2 0 01-2-2V4.5h-.25a.75.75 0 010-1.5H5zm1.5 0h3v-.5a1 1 0 00-1-1h-1a1 1 0 00-1 1V3zm-3 11V4.5h9V14a.5.5 0 01-.5.5H4a.5.5 0 01-.5-.5z"/></svg>`
 };
+export const viWarningCircle: {
+  name: 'warning_circle';
+  data: string;
+} = {
+  name: 'warning_circle',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M9 4.5v4a1 1 0 01-2 0v-4a1 1 0 012 0zm0 7a1 1 0 11-2 0 1 1 0 012 0z"/><path fill-rule="evenodd" d="M16 8A8 8 0 110 8a8 8 0 0116 0zm-1.5 0a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"/></svg>`
+};
 export const viWarningTriangle: {
   name: 'warning_triangle';
   data: string;
@@ -254,9 +282,12 @@ export type Valkyrie =
   | 'box_full'
   | 'building'
   | 'check_circle'
+  | 'check'
   | 'compass'
+  | 'copy'
   | 'dashboard'
   | 'devices'
+  | 'ellipsis'
   | 'floppy_disk'
   | 'gear'
   | 'home'
@@ -270,6 +301,7 @@ export type Valkyrie =
   | 'sim_card'
   | 'spinner_third'
   | 'trash'
+  | 'warning_circle'
   | 'warning_triangle'
   | 'x_mark';
 export interface ValkyrieIcon {
