@@ -1,7 +1,7 @@
 # Valkyrie
 An open source icon set for the next generation of Sippy.
 
-# 21 icons
+# 38 icons
 [Available on Figma](https://www.figma.com/file/jeP1aSRulegRxHDegrrmWc/Valkyrie?node-id=1%3A11358)
 
 # About

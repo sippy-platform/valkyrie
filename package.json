@@ -1,32 +1,60 @@
 {
-  "name": "valley",
+  "name": "@optimisegroup/valkyrie",
   "version": "0.1.0",
   "description": "The iconography of Sippy.",
-  "main": "index.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "icons": "npm run icons:clean && npm run icons:ts",
     "icons:clean": "svgo -f ./icons -o ./icons",
     "icons:ts": "svg-to-ts",
-    "icons": "npm run icons:clean && npm run icons:ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-task:scss-compile": "node-sass-chokidar --source-map true src/ -o dist",
+    "build-task:autoprefixer": "postcss dist/*.css --use autoprefixer -d dist",
+    "build-task:scss-copy": "postcss src/valkyrie.scss > dist/valkyrie.scss",
+    "sass:build": "npm-run-all -p build-task:*",
+    "sass:watch": "chokidar \"src/**/*.scss\" -c \"npm run sass:build\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/optimise-group/valley.git"
+    "url": "git+https://github.com/optimise-group/valkyrie.git"
   },
   "files": [
-    "icons/*.svg"
+    "/icons",
+    "/dist"
   ],
   "keywords": [
-    "icons"
+    "icons",
+    "svg-icons",
+    "iconography"
   ],
   "author": "",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/optimise-group/valley/issues"
+    "url": "https://github.com/optimise-group/valkyrie/issues"
   },
-  "homepage": "https://github.com/optimise-group/valley#readme",
+  "homepage": "https://github.com/optimise-group/valkyrie#readme",
+  "peerDependencies": {
+    "react": ">=16.x",
+    "clsx": ">=1.x"
+  },
   "devDependencies": {
+    "@types/react": "^17.0.8",
+    "autoprefixer": "^10.2.6",
+    "chokidar-cli": "^2.1.0",
+    "clsx": "^1.1.1",
+    "node-sass-chokidar": "^1.5.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.0",
+    "postcss-cli": "^8.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "svg-to-ts": "^6.0.1",
-    "svgo": "^2.3.0"
+    "svgo": "^2.3.0",
+    "typescript": "^4.3.2"
   }
 }
