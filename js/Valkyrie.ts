@@ -69,6 +69,13 @@ export const viBoxFull: {
   name: 'box_full',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M9.05 4.549l.372.646L8 5.5l-1.51-.324a1.5 1.5 0 00-2.921-.626l-1.47-.315a3.001 3.001 0 015.577-.593c.056-.054.12-.101.19-.142l3.464-2a1 1 0 011.366.366l1.35 2.338-1.541.33-.858-1.485-2.598 1.5zM8 7L1.412 5.588a.5.5 0 00-.569.304l-.66 1.65a.5.5 0 00.272.648l5.138 2.14a.5.5 0 00.626-.213L8 7zm0 0l1.781 3.117a.5.5 0 00.626.213l5.138-2.14a.5.5 0 00.272-.648l-.66-1.65a.5.5 0 00-.57-.304L8 7z"/><path d="M8 10a.75.75 0 01.75.75v2.53l4.75-1.131v-1.48l1.5-.624v2.498a1 1 0 01-.768.973l-6 1.429a1.01 1.01 0 01-.464 0l-6-1.429A1 1 0 011 12.543v-2.498l1.5.625v1.479l4.75 1.13V10.75A.75.75 0 018 10z"/></svg>`
 };
+export const viBuilding: {
+  name: 'building';
+  data: string;
+} = {
+  name: 'building',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M2 1v15h1.5V2a.5.5 0 01.5-.5h8a.5.5 0 01.5.5v14H14V1a1 1 0 00-1-1H3a1 1 0 00-1 1z"/><path d="M6.5 3h-1a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5zm2.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1a.5.5 0 00-.5.5zM6.5 7h-1a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5zm4 0h-1a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5zm-4 4.5V16h3v-4.5A.5.5 0 009 11H7a.5.5 0 00-.5.5z"/></svg>`
+};
 export const viCompass: {
   name: 'compass';
   data: string;
@@ -111,6 +118,13 @@ export const viImage: {
   name: 'image',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M11 6a1 1 0 100-2 1 1 0 000 2z"/><path fill-rule="evenodd" d="M1 13a2 2 0 002 2h10a2 2 0 002-2V3a2 2 0 00-2-2H3a2 2 0 00-2 2v10zm12 .5h-.44L7.365 8.303a2.75 2.75 0 00-3.772-.11l-1.092.97V3a.5.5 0 01.5-.5h10a.5.5 0 01.5.5v10a.5.5 0 01-.5.5zM4.589 9.313L2.5 11.17V13a.5.5 0 00.5.5h7.44L6.302 9.364a1.25 1.25 0 00-1.714-.05z"/></svg>`
 };
+export const viInfoCircle: {
+  name: 'info_circle';
+  data: string;
+} = {
+  name: 'info_circle',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M9 4.5a1 1 0 11-2 0 1 1 0 012 0zM9 8v3h.75a.75.75 0 010 1.5h-3a.75.75 0 010-1.5h.75V8.5h-.25a.75.75 0 010-1.5H8a1 1 0 011 1z"/><path fill-rule="evenodd" d="M8 16A8 8 0 108 0a8 8 0 000 16zm0-1.5a6.5 6.5 0 100-13 6.5 6.5 0 000 13z"/></svg>`
+};
 export const viMapMarkerSlashed: {
   name: 'map_marker_slashed';
   data: string;
@@ -139,6 +153,27 @@ export const viSearch: {
   name: 'search',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15 6a5 5 0 01-7.965 4.026L2.06 15A.75.75 0 011 13.94l4.973-4.975A5 5 0 1115 6zm-1.5 0a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0z"/></svg>`
 };
+export const viSimCard: {
+  name: 'sim_card';
+  data: string;
+} = {
+  name: 'sim_card',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M12.5 4.621V14.5h-9v-13h5.879L12.5 4.621zM2 1v14a1 1 0 001 1h10a1 1 0 001-1V4.414a1 1 0 00-.293-.707L10.293.293A1 1 0 009.586 0H3a1 1 0 00-1 1zm6 9h3V8.5a.5.5 0 00-.5-.5H8v2zm-3 2.5V11h3v2H5.5a.5.5 0 01-.5-.5zm6 0V11H9v2h1.5a.5.5 0 00.5-.5zM7 10V8H5.5a.5.5 0 00-.5.5V10h2z"/></svg>`
+};
+export const viSpinnerThird: {
+  name: 'spinner_third';
+  data: string;
+} = {
+  name: 'spinner_third',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 17 16"><path d="M8 .748c0-.414.336-.753.748-.715a8 8 0 016.524 11.3c-.172.377-.635.5-.993.292-.36-.207-.477-.665-.312-1.045a6.501 6.501 0 00-5.218-9.038C8.337 1.494 8 1.162 8 .748z"/></svg>`
+};
+export const viTrash: {
+  name: 'trash';
+  data: string;
+} = {
+  name: 'trash',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M5.5 12.5v-6A.5.5 0 016 6h.5a.5.5 0 01.5.5v6a.5.5 0 01-.5.5H6a.5.5 0 01-.5-.5zm3.5-6v6a.5.5 0 00.5.5h.5a.5.5 0 00.5-.5v-6A.5.5 0 0010 6h-.5a.5.5 0 00-.5.5z"/><path fill-rule="evenodd" d="M5 3V1a1 1 0 011-1h4a1 1 0 011 1v2h3.25a.75.75 0 010 1.5H14V15a1 1 0 01-1 1H3a1 1 0 01-1-1V4.5h-.25a.75.75 0 010-1.5H5zm1.5 0h3V2a.5.5 0 00-.5-.5H7a.5.5 0 00-.5.5v1zm-3 11.5v-10h9v10h-9z"/></svg>`
+};
 export const viXMark: {
   name: 'x_mark';
   data: string;
@@ -157,16 +192,21 @@ export type Valkyrie =
   | 'arrow_up'
   | 'book'
   | 'box_full'
+  | 'building'
   | 'compass'
   | 'dashboard'
   | 'devices'
   | 'gear'
   | 'home'
   | 'image'
+  | 'info_circle'
   | 'map_marker_slashed'
   | 'map_marker'
   | 'plus'
   | 'search'
+  | 'sim_card'
+  | 'spinner_third'
+  | 'trash'
   | 'x_mark';
 export interface ValkyrieIcon {
   name: Valkyrie;
