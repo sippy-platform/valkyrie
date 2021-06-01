@@ -74,7 +74,7 @@ export const viBuilding: {
   data: string;
 } = {
   name: 'building',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M2 1v15h1.5V2a.5.5 0 01.5-.5h8a.5.5 0 01.5.5v14H14V1a1 1 0 00-1-1H3a1 1 0 00-1 1z"/><path d="M6.5 3h-1a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5zm2.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1a.5.5 0 00-.5.5zM6.5 7h-1a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5zm4 0h-1a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5zm-4 4.5V16h3v-4.5A.5.5 0 009 11H7a.5.5 0 00-.5.5z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M2 2v14h1.5V2.5a1 1 0 011-1h7a1 1 0 011 1V16H14V2a2 2 0 00-2-2H4a2 2 0 00-2 2z"/><path d="M7 3H6a.5.5 0 00-.5.5v1A.5.5 0 006 5h1a.5.5 0 00.5-.5v-1A.5.5 0 007 3zm2 .5v1a.5.5 0 00.5.5h.5a.5.5 0 00.5-.5v-1A.5.5 0 0010 3h-.5a.5.5 0 00-.5.5zm-2.5 3H6a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h.5A.5.5 0 007 8V7a.5.5 0 00-.5-.5zm3.5 0H9a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5V7a.5.5 0 00-.5-.5zm-3.5 5V16h3v-4.5A.5.5 0 009 11H7a.5.5 0 00-.5.5z"/></svg>`
 };
 export const viCompass: {
   name: 'compass';
@@ -158,7 +158,7 @@ export const viSimCard: {
   data: string;
 } = {
   name: 'sim_card',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M12.5 4.621V14.5h-9v-13h5.879L12.5 4.621zM2 1v14a1 1 0 001 1h10a1 1 0 001-1V4.414a1 1 0 00-.293-.707L10.293.293A1 1 0 009.586 0H3a1 1 0 00-1 1zm6 9h3V8.5a.5.5 0 00-.5-.5H8v2zm-3 2.5V11h3v2H5.5a.5.5 0 01-.5-.5zm6 0V11H9v2h1.5a.5.5 0 00.5-.5zM7 10V8H5.5a.5.5 0 00-.5.5V10h2z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8 10h3V9a1 1 0 00-1-1H8v2zm-3 2v-1h3v2H6a1 1 0 01-1-1zm6 0v-1H9v2h1a1 1 0 001-1zM5 9v1h2V8H6a1 1 0 00-1 1z"/><path fill-rule="evenodd" d="M2 2v12a2 2 0 002 2h8a2 2 0 002-2V4.828a2 2 0 00-.586-1.414L10.586.586A2 2 0 009.172 0H4a2 2 0 00-2 2zm1.5 12V2a.5.5 0 01.5-.5h5.172a.5.5 0 01.353.146l2.829 2.829a.5.5 0 01.146.353V14a.5.5 0 01-.5.5H4a.5.5 0 01-.5-.5z"/></svg>`
 };
 export const viSpinnerThird: {
   name: 'spinner_third';
@@ -172,7 +172,7 @@ export const viTrash: {
   data: string;
 } = {
   name: 'trash',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M5.5 12.5v-6A.5.5 0 016 6h.5a.5.5 0 01.5.5v6a.5.5 0 01-.5.5H6a.5.5 0 01-.5-.5zm3.5-6v6a.5.5 0 00.5.5h.5a.5.5 0 00.5-.5v-6A.5.5 0 0010 6h-.5a.5.5 0 00-.5.5z"/><path fill-rule="evenodd" d="M5 3V1a1 1 0 011-1h4a1 1 0 011 1v2h3.25a.75.75 0 010 1.5H14V15a1 1 0 01-1 1H3a1 1 0 01-1-1V4.5h-.25a.75.75 0 010-1.5H5zm1.5 0h3V2a.5.5 0 00-.5-.5H7a.5.5 0 00-.5.5v1zm-3 11.5v-10h9v10h-9z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M5.5 12.5v-6A.5.5 0 016 6h.5a.5.5 0 01.5.5v6a.5.5 0 01-.5.5H6a.5.5 0 01-.5-.5zm3.5-6v6a.5.5 0 00.5.5h.5a.5.5 0 00.5-.5v-6A.5.5 0 0010 6h-.5a.5.5 0 00-.5.5z"/><path fill-rule="evenodd" d="M5 3V2a2 2 0 012-2h2a2 2 0 012 2v1h3.25a.75.75 0 010 1.5H14V14a2 2 0 01-2 2H4a2 2 0 01-2-2V4.5h-.25a.75.75 0 010-1.5H5zm1.5 0h3v-.5a1 1 0 00-1-1h-1a1 1 0 00-1 1V3zm-3 11V4.5h9V14a.5.5 0 01-.5.5H4a.5.5 0 01-.5-.5z"/></svg>`
 };
 export const viXMark: {
   name: 'x_mark';
