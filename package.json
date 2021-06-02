@@ -13,6 +13,7 @@
     "icons:clean": "svgo -f ./icons -o ./icons",
     "icons:ts": "svg-to-ts",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "npm run icons && npm run build && npm run scss",
     "scss": "npm run scss:compile && npm run scss:prefix && npm run scss:copy",
     "scss:compile": "node-sass src -o dist --output-style compressed",
     "scss:copy": "bundle-scss --mask \"src/valkyrie.scss\" --dest \"dist/valkyrie.scss\"",
