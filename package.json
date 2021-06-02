@@ -13,11 +13,10 @@
     "icons:clean": "svgo -f ./icons -o ./icons",
     "icons:ts": "svg-to-ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-task:scss-compile": "node-sass-chokidar --source-map true src/ -o dist",
-    "build-task:autoprefixer": "postcss dist/*.css --use autoprefixer -d dist",
-    "build-task:scss-copy": "postcss src/valkyrie.scss > dist/valkyrie.scss",
-    "sass:build": "npm-run-all -p build-task:*",
-    "sass:watch": "chokidar \"src/**/*.scss\" -c \"npm run sass:build\""
+    "scss": "npm run scss:compile && npm run scss:prefix && npm run scss:copy",
+    "scss:compile": "node-sass src -o dist --output-style compressed",
+    "scss:copy": "bundle-scss --mask \"src/valkyrie.scss\" --dest \"dist/valkyrie.scss\"",
+    "scss:prefix": "postcss -u autoprefixer -r dist/*.css --map"
   },
   "repository": {
     "type": "git",
@@ -45,16 +44,25 @@
   "devDependencies": {
     "@types/react": "^17.0.8",
     "autoprefixer": "^10.2.6",
-    "chokidar-cli": "^2.1.0",
+    "bundle-scss": "^1.5.0",
     "clsx": "^1.1.1",
-    "node-sass-chokidar": "^1.5.0",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.0",
     "postcss-cli": "^8.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "sass": "^1.29.0",
     "svg-to-ts": "^6.0.1",
     "svgo": "^2.3.0",
     "typescript": "^4.3.2"
+  },
+  "browserslist": {
+    "production": [
+      "last 2 versions",
+      "not dead",
+      "not ie <= 11"
+    ]
   }
 }
