@@ -11,28 +11,28 @@ export const viAngleDown: {
   data: string;
 } = {
   name: 'angle_down',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 6.56A.75.75 0 013.56 5.5L8 9.94l4.44-4.44a.75.75 0 111.06 1.06l-4.793 4.794a1 1 0 01-1.414 0L2.5 6.56z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 6.56A.75.75 0 113.56 5.5L8 9.94l4.44-4.44a.75.75 0 011.06 1.06l-4.793 4.794a1 1 0 01-1.414 0L2.5 6.56z"/></svg>`
 };
 export const viAngleLeft: {
   name: 'angle_left';
   data: string;
 } = {
   name: 'angle_left',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6.091 8l4.44 4.44a.75.75 0 11-1.06 1.06L4.676 8.707a1 1 0 010-1.414L9.47 2.5a.75.75 0 011.06 1.06L6.091 8z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6.091 8l4.44 4.44A.75.75 0 019.47 13.5L4.677 8.707a1 1 0 010-1.414L9.47 2.5a.75.75 0 111.06 1.06L6.091 8z"/></svg>`
 };
 export const viAngleRight: {
   name: 'angle_right';
   data: string;
 } = {
   name: 'angle_right',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M9.94 8L5.5 3.56A.75.75 0 016.56 2.5l4.793 4.793a1 1 0 010 1.414L6.562 13.5a.75.75 0 01-1.06-1.06L9.938 8z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M9.94 8L5.5 3.56A.75.75 0 116.56 2.5l4.794 4.793a1 1 0 010 1.414L6.56 13.5a.75.75 0 11-1.06-1.06L9.94 8z"/></svg>`
 };
 export const viAngleUp: {
   name: 'angle_up';
   data: string;
 } = {
   name: 'angle_up',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M13.5 9.47a.75.75 0 01-1.06 1.06L8 6.091l-4.44 4.44A.75.75 0 112.5 9.47l4.793-4.794a1 1 0 011.414 0L13.5 9.47z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M13.5 9.47a.75.75 0 11-1.06 1.06L8 6.091l-4.44 4.44A.75.75 0 112.5 9.47l4.793-4.793a1 1 0 011.414 0L13.5 9.47z"/></svg>`
 };
 export const viArrowDownToLine: {
   name: 'arrow_down_to_line';
@@ -200,7 +200,7 @@ export const viHome: {
   data: string;
 } = {
   name: 'home',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M.522 7.478a.738.738 0 101.043 1.043L2 8.088V14a2 2 0 002 2h8a2 2 0 002-2V8.087l.435.435a.738.738 0 001.044-1.043L8.706.706a1 1 0 00-1.414 0L.522 7.478zM3.5 14V6.587l4.5-4.5 4.5 4.5V14a.5.5 0 01-.5.5h-1V9a1 1 0 00-1-1H6a1 1 0 00-1 1v5.5H4a.5.5 0 01-.5-.5zm3 .5h3V9.75a.25.25 0 00-.25-.25h-2.5a.25.25 0 00-.25.25v4.75z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M.522 7.478a.738.738 0 001.043 1.044L2 8.087V14a2 2 0 002 2h8a2 2 0 002-2V8.087l.435.435a.738.738 0 001.043-1.044L8.708.708a1 1 0 00-1.415 0L.522 7.477zM3.5 14V6.587l4.5-4.5 4.5 4.5V14a.5.5 0 01-.5.5h-1V9a1 1 0 00-1-1H6a1 1 0 00-1 1v5.5H4a.5.5 0 01-.5-.5zm3 .5h3V9.75a.25.25 0 00-.25-.25h-2.5a.25.25 0 00-.25.25v4.75z"/></svg>`
 };
 export const viImage: {
   name: 'image';
@@ -277,7 +277,7 @@ export const viXMark: {
   data: string;
 } = {
   name: 'x_mark',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6.94 8L3.5 4.56A.75.75 0 014.56 3.5L8 6.94l3.44-3.44a.75.75 0 111.06 1.06L9.06 8l3.44 3.44a.75.75 0 01-1.06 1.06L8 9.06 4.56 12.5a.75.75 0 01-1.06-1.06L6.94 8z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6.94 8L3.5 4.56A.75.75 0 114.56 3.5L8 6.94l3.44-3.44a.75.75 0 011.06 1.06L9.06 8l3.44 3.44a.75.75 0 01-1.06 1.06L8 9.06 4.56 12.5a.75.75 0 11-1.06-1.06L6.94 8z"/></svg>`
 };
 export type Valkyrie =
   | 'accounts'
