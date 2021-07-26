@@ -181,6 +181,13 @@ export const viEllipsis: {
   name: 'ellipsis',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M3.5 8a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm6 0a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM14 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/></svg>`
 };
+export const viEnvelope: {
+  name: 'envelope';
+  data: string;
+} = {
+  name: 'envelope',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M0 4a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H2a2 2 0 01-2-2V4zm13.44-.5H2.56l4.556 4.555a1.25 1.25 0 001.768 0L13.439 3.5zM1.5 4.56V12a.5.5 0 00.5.5h12a.5.5 0 00.5-.5V4.56L9.945 9.117a2.75 2.75 0 01-3.89 0L1.5 4.561z"/></svg>`
+};
 export const viFloppyDisk: {
   name: 'floppy_disk';
   data: string;
@@ -229,6 +236,13 @@ export const viImage: {
 } = {
   name: 'image',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M11 6a1 1 0 100-2 1 1 0 000 2z"/><path fill-rule="evenodd" d="M1 13a2 2 0 002 2h10a2 2 0 002-2V3a2 2 0 00-2-2H3a2 2 0 00-2 2v10zm12 .5h-.44L7.365 8.303a2.75 2.75 0 00-3.772-.11l-1.092.97V3a.5.5 0 01.5-.5h10a.5.5 0 01.5.5v10a.5.5 0 01-.5.5zM4.589 9.313L2.5 11.17V13a.5.5 0 00.5.5h7.44L6.302 9.364a1.25 1.25 0 00-1.714-.05z"/></svg>`
+};
+export const viLock: {
+  name: 'lock';
+  data: string;
+} = {
+  name: 'lock',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8.75 10.25a1.25 1.25 0 10-1.5 0v2a.75.75 0 001.5 0v-2z"/><path fill-rule="evenodd" d="M11 5h2a2 2 0 012 2v7a2 2 0 01-2 2H3a2 2 0 01-2-2V7a2 2 0 012-2h2V3a3 3 0 016 0v2zM9.5 5V3a1.5 1.5 0 10-3 0v2h3zm-7 2a.5.5 0 01.5-.5h10a.5.5 0 01.5.5v7a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V7z"/></svg>`
 };
 export const viMapMarkerSlashed: {
   name: 'map_marker_slashed';
@@ -355,6 +369,7 @@ export type Valkyrie =
   | 'dashboard'
   | 'devices'
   | 'ellipsis'
+  | 'envelope'
   | 'floppy_disk'
   | 'gear'
   | 'heart_broken'
@@ -362,6 +377,7 @@ export type Valkyrie =
   | 'heart'
   | 'home'
   | 'image'
+  | 'lock'
   | 'map_marker_slashed'
   | 'map_marker'
   | 'pen'
