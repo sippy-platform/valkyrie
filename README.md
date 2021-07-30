@@ -8,7 +8,7 @@ Install Valkyrie with the following npm command.
 npm install @optimisegroup/valkyrie
 ```
 
-# 51 icons
+# 51 icons and 3 brand icons
 [Available on Figma](https://www.figma.com/file/jeP1aSRulegRxHDegrrmWc/Valkyrie?node-id=1%3A11358)
 
 # About

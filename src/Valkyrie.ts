@@ -195,6 +195,20 @@ export const viEnvelope: {
   name: 'envelope',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M0 4a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H2a2 2 0 01-2-2V4zm13.44-.5H2.56l4.556 4.555a1.25 1.25 0 001.768 0L13.439 3.5zM1.5 4.56V12a.5.5 0 00.5.5h12a.5.5 0 00.5-.5V4.56L9.945 9.117a2.75 2.75 0 01-3.89 0L1.5 4.561z"/></svg>`
 };
+export const viFacebookMessenger: {
+  name: 'facebook_messenger';
+  data: string;
+} = {
+  name: 'facebook_messenger',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M8.016 0C3.5 0 0 3.3 0 7.761c0 2.333.958 4.349 2.518 5.739.27.242.214.383.26 1.878a.643.643 0 00.9.567c1.706-.752 1.728-.81 2.017-.732C10.642 16.574 16 13.41 16 7.76 16 3.3 12.536 0 8.016 0zm4.813 5.971L10.474 9.7a1.206 1.206 0 01-1.739.32L6.862 8.618a.484.484 0 00-.581 0l-2.528 1.918c-.338.255-.78-.149-.552-.506l2.355-3.729a1.205 1.205 0 011.739-.32l1.873 1.402a.484.484 0 00.58 0l2.53-1.916c.336-.257.778.147.551.504z"/></svg>`
+};
+export const viFacebook: {
+  name: 'facebook';
+  data: string;
+} = {
+  name: 'facebook',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M16 8c0-4.42-3.58-8-8-8S0 3.58 0 8a8.002 8.002 0 006.752 7.903v-5.59H4.719V8h2.033V6.237c0-2.004 1.193-3.112 3.021-3.112.876 0 1.791.156 1.791.156V5.25h-1.009c-.993 0-1.303.617-1.303 1.25V8h2.218l-.354 2.313H9.252v5.59A8.002 8.002 0 0016 8z"/></svg>`
+};
 export const viFloppyDisk: {
   name: 'floppy_disk';
   data: string;
@@ -243,6 +257,13 @@ export const viImage: {
 } = {
   name: 'image',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M11 6a1 1 0 100-2 1 1 0 000 2z"/><path fill-rule="evenodd" d="M1 13a2 2 0 002 2h10a2 2 0 002-2V3a2 2 0 00-2-2H3a2 2 0 00-2 2v10zm12 .5h-.44L7.365 8.303a2.75 2.75 0 00-3.772-.11l-1.092.97V3a.5.5 0 01.5-.5h10a.5.5 0 01.5.5v10a.5.5 0 01-.5.5zM4.589 9.313L2.5 11.17V13a.5.5 0 00.5.5h7.44L6.302 9.364a1.25 1.25 0 00-1.714-.05z"/></svg>`
+};
+export const viLinkedin: {
+  name: 'linkedin';
+  data: string;
+} = {
+  name: 'linkedin',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M14 1H1.997C1.447 1 1 1.453 1 2.01v11.98c0 .557.447 1.01.997 1.01H14c.55 0 1-.453 1-1.01V2.01C15 1.452 14.55 1 14 1zM5.231 13H3.156V6.319h2.078V13h-.003zM4.194 5.406a1.204 1.204 0 110-2.407 1.204 1.204 0 010 2.407zM13.009 13h-2.075V9.75c0-.775-.015-1.772-1.078-1.772-1.081 0-1.247.844-1.247 1.716V13H6.534V6.319h1.991v.912h.028c.278-.525.956-1.078 1.966-1.078 2.1 0 2.49 1.385 2.49 3.185V13z"/></svg>`
 };
 export const viLock: {
   name: 'lock';
@@ -385,6 +406,8 @@ export type Valkyrie =
   | 'devices'
   | 'ellipsis'
   | 'envelope'
+  | 'facebook_messenger'
+  | 'facebook'
   | 'floppy_disk'
   | 'gear'
   | 'heart_broken'
@@ -392,6 +415,7 @@ export type Valkyrie =
   | 'heart'
   | 'home'
   | 'image'
+  | 'linkedin'
   | 'lock'
   | 'map_marker_slashed'
   | 'map_marker'
