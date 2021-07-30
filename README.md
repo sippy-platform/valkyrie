@@ -1,6 +1,11 @@
 # Valkyrie
 An open source icon set for the next generation of Sippy.
 
+# Usage
+Install Valkyrie with the following npm command.
+
+`npm install @optimisegroup/valkyrie`
+
 # 49 icons
 [Available on Figma](https://www.figma.com/file/jeP1aSRulegRxHDegrrmWc/Valkyrie?node-id=1%3A11358)
 
