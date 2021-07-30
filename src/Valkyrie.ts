@@ -83,6 +83,13 @@ export const viArrowUp: {
   name: 'arrow_up',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 15.75a.75.75 0 01-.75-.75h1.5a.75.75 0 01-.75.75zM7.25 2.81V15h1.5V2.81l4.218 4.219h.001a.75.75 0 001.061-1.06L8.706.646a1 1 0 00-1.414 0L1.976 5.964l-.004.003-.001.001v.001A.75.75 0 003.03 7.03l4.22-4.22z"/></svg>`
 };
+export const viBars: {
+  name: 'bars';
+  data: string;
+} = {
+  name: 'bars',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M1.75 2a.75.75 0 000 1.5h12.5a.75.75 0 000-1.5H1.75zM1 8a.75.75 0 01.75-.75h12.5a.75.75 0 010 1.5H1.75A.75.75 0 011 8zm0 5.25a.75.75 0 01.75-.75h12.5a.75.75 0 010 1.5H1.75a.75.75 0 01-.75-.75z"/></svg>`
+};
 export const viBook: {
   name: 'book';
   data: string;
@@ -362,6 +369,7 @@ export type Valkyrie =
   | 'arrow_right_to_bracket'
   | 'arrow_right'
   | 'arrow_up'
+  | 'bars'
   | 'book'
   | 'box_full'
   | 'building'
