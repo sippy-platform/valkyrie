@@ -17,7 +17,10 @@
     "scss": "npm run scss:compile && npm run scss:prefix && npm run scss:copy",
     "scss:compile": "node-sass src -o dist --output-style compressed",
     "scss:copy": "bundle-scss --mask \"src/valkyrie.scss\" --dest \"dist/valkyrie.scss\"",
-    "scss:prefix": "postcss -u autoprefixer -r dist/*.css --map"
+    "scss:prefix": "postcss -u autoprefixer -r dist/*.css --map",
+
+    "trf:generate": "fantasticon",
+    "trf:icons:clean": "oslllo-svg-fixer -s icons -d icons"
   },
   "repository": {
     "type": "git",
@@ -47,9 +50,11 @@
     "autoprefixer": "^10.3.1",
     "bundle-scss": "^1.5.0",
     "clsx": "^1.1.1",
+    "fantasticon": "^1.2.2",
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12",
     "npm-run-all": "^4.1.5",
+    "oslllo-svg-fixer": "^1.4.0",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "react": "^17.0.2",
