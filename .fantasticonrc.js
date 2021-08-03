@@ -2,29 +2,16 @@ module.exports = {
     inputDir: './icons',
     outputDir: './dist',
     fontTypes: ['ttf', 'woff', 'woff2', 'eot'],
-    assetTypes: ['ts', 'css', 'json', 'html'],
+    assetTypes: ['css', 'html'],
     fontsUrl: '.',
     name: 'Valkyrie',
     prefix: 'vi',
-    descent: 30,
-    formatOptions: {
-      woff: {
-        metadata: '...'
-      },
-      json: {
-        indent: 2
-      },
-      ts: {
-        types: ['enum', 'constant', 'literalId', 'literalKey'],
-        singleQuotes: false
-      }
-    },
+    normalize: true,
+    descent: 35,
     templates: {
       html: './templates/html.hbs'
     },
     pathOptions: {
-      ts: './dist/types/Valkyrie-types.ts',
-      json: './dist/Valkyrie-codepoints.json',
       eot: './dist/fonts/Valkyrie.eot',
       ttf: './dist/fonts/Valkyrie.ttf',
       woff: './dist/fonts/Valkyrie.woff',
