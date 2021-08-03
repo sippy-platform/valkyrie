@@ -6,6 +6,7 @@ module.exports = {
     fontsUrl: '.',
     name: 'Valkyrie',
     prefix: 'vi',
+    descent: 30,
     formatOptions: {
       woff: {
         metadata: '...'
