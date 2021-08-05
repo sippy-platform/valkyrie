@@ -305,7 +305,7 @@ export const viFolder: {
   data: string;
 } = {
   name: 'folder',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M16.5 12a.5.5 0 01-.5.5H4a.5.5 0 01-.5-.5V4a.5.5 0 01.5-.5h2.764a.5.5 0 01.447.276l.31.618A2 2 0 009.308 5.5H16a.5.5 0 01.5.5v6zM4 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H9.309a.5.5 0 01-.447-.276l-.31-.618A2 2 0 006.765 2H4z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M16.5 12.5a.5.5 0 01-.5.5H4a.5.5 0 01-.5-.5v-9A.5.5 0 014 3h2.764a.5.5 0 01.447.276l.31.618A2 2 0 009.308 5H16a.5.5 0 01.5.5v7zM4 1.5a2 2 0 00-2 2v9a2 2 0 002 2h12a2 2 0 002-2v-7a2 2 0 00-2-2H9.309a.5.5 0 01-.447-.276l-.31-.618A2 2 0 006.765 1.5H4z"/></svg>`
 };
 export const viGauge: {
   name: 'gauge';
@@ -348,6 +348,13 @@ export const viHeart: {
 } = {
   name: 'heart',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M10 5.421L7.818 3.24A2.53 2.53 0 003.5 5.03v.373c0 .817.325 1.601.903 2.18L10 13.178l5.597-5.598a3.082 3.082 0 00.903-2.179v-.374a2.53 2.53 0 00-4.318-1.789L10 5.421zM10 3.3l1.121-1.121A4.03 4.03 0 0118 5.029v.373c0 1.215-.483 2.38-1.342 3.24l-5.95 5.95a1 1 0 01-1.415 0l-5.951-5.95A4.582 4.582 0 012 5.402v-.374a4.03 4.03 0 016.879-2.85L10 3.3z"/></svg>`
+};
+export const viHistory: {
+  name: 'history';
+  data: string;
+} = {
+  name: 'history',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M6.32 12.739c-.328-.255-.8-.259-1.093.034-.293.293-.295.771.026 1.033A7.5 7.5 0 104 3.5V1.75a.75.75 0 00-1.5 0V6a1 1 0 001 1h3.25a.75.75 0 000-1.5H4.544a6.001 6.001 0 111.775 7.239z"/><path d="M9.25 8V3.75a.75.75 0 011.5 0v3.94l1.432 1.431a.75.75 0 11-1.06 1.061L9.53 8.591a.761.761 0 01-.03-.031.748.748 0 01-.25-.56z"/></svg>`
 };
 export const viHome: {
   name: 'home';
@@ -424,7 +431,7 @@ export const viNetwork: {
   data: string;
 } = {
   name: 'network',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16"><path d="M4.844 7.188a2.49 2.49 0 00.635-1.359l2.24 1.046a3.485 3.485 0 00-.635 1.359l-2.24-1.046zM16.52 5.515a2.51 2.51 0 01-.887-1.21l-2.82 2.068c.377.333.682.744.888 1.21l2.82-2.068zm-3.735 6.136c.38-.328.69-.737.9-1.2l2.225 1.67a1.503 1.503 0 00-.9 1.2l-2.225-1.67z"/><path fill-rule="evenodd" d="M10.5 11a2 2 0 110-4 2 2 0 010 4zm0 1.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7zm7.5-8a1 1 0 110-2 1 1 0 010 2zM18 6a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM3 6.5a1 1 0 110-2 1 1 0 010 2zM3 8a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"/><path d="M18 13.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-7-11a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M4.344 7.188a2.49 2.49 0 00.635-1.359l2.24 1.046a3.485 3.485 0 00-.635 1.359l-2.24-1.046zM16.02 5.515a2.51 2.51 0 01-.887-1.21l-2.82 2.068c.377.333.682.744.888 1.21l2.82-2.068zm-3.735 6.136c.38-.328.69-.737.9-1.2l2.225 1.67a1.503 1.503 0 00-.9 1.2l-2.225-1.67z"/><path fill-rule="evenodd" d="M10 11a2 2 0 110-4 2 2 0 010 4zm0 1.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7zm7.5-8a1 1 0 110-2 1 1 0 010 2zm0 1.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zm-15 .5a1 1 0 110-2 1 1 0 010 2zm0 1.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"/><path d="M17.5 13.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-7-11a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>`
 };
 export const viPen: {
   name: 'pen';
@@ -510,6 +517,13 @@ export const viSmartphone: {
   name: 'smartphone',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M9.5 13.5h1a.75.75 0 000-1.5h-1a.75.75 0 000 1.5z"/><path fill-rule="evenodd" d="M4.5 2a2 2 0 012-2h7a2 2 0 012 2v12a2 2 0 01-2 2h-7a2 2 0 01-2-2V2zm2-.5A.5.5 0 006 2v12a.5.5 0 00.5.5h7a.5.5 0 00.5-.5V2a.5.5 0 00-.5-.5h-7z"/></svg>`
 };
+export const viSoundWave: {
+  name: 'sound_wave';
+  data: string;
+} = {
+  name: 'sound_wave',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M10 16a.75.75 0 01-.75-.75V.75a.75.75 0 011.5 0v14.5A.75.75 0 0110 16zm3-3a.75.75 0 01-.75-.75v-8.5a.75.75 0 011.5 0v8.5A.75.75 0 0113 13zm2.25-3.75a.75.75 0 001.5 0v-2.5a.75.75 0 00-1.5 0v2.5zM19 9a.75.75 0 01-.75-.75v-.5a.75.75 0 011.5 0v.5A.75.75 0 0119 9zM.25 8.25a.75.75 0 001.5 0v-.5a.75.75 0 00-1.5 0v.5zM4 14a.75.75 0 01-.75-.75V2.75a.75.75 0 011.5 0v10.5A.75.75 0 014 14zm2.25-2.75a.75.75 0 001.5 0v-6.5a.75.75 0 00-1.5 0v6.5z"/></svg>`
+};
 export const viSpinnerThird: {
   name: 'spinner_third';
   data: string;
@@ -579,6 +593,13 @@ export const viUsers: {
 } = {
   name: 'users',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M9.937 7.5a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5zm0-1.5a2.25 2.25 0 110-4.5 2.25 2.25 0 010 4.5zM3.78 10.332c-.763.918-.497 2.267.319 3.137A7.978 7.978 0 009.937 16a7.978 7.978 0 005.839-2.53c.816-.871 1.082-2.22.319-3.138a3.64 3.64 0 00-2.29-1.28 27.354 27.354 0 00-7.736 0 3.64 3.64 0 00-2.29 1.28zm2.5.206a25.852 25.852 0 017.314 0 2.14 2.14 0 011.348.753c.075.09.126.222.098.433a1.35 1.35 0 01-.359.72A6.478 6.478 0 019.937 14.5a6.478 6.478 0 01-4.744-2.056 1.35 1.35 0 01-.359-.72c-.027-.211.023-.342.099-.433a2.14 2.14 0 011.348-.753zM2.25 6.5a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5zm0-1.5a.75.75 0 110-1.5.75.75 0 010 1.5z"/><path d="M4.484 7.25c.285 0 .516.23.516.516a5.135 5.135 0 00-1.76.984h-.49c-.69 0-1.25.56-1.25 1.25v1.25a.75.75 0 01-1.5 0V10a2.75 2.75 0 012.75-2.75h1.734zm12.766 1.5h-.616A5.135 5.135 0 0015 7.808c0-.308.25-.558.558-.558h1.692A2.75 2.75 0 0120 10v1.25a.75.75 0 01-1.5 0V10c0-.69-.56-1.25-1.25-1.25z"/><path fill-rule="evenodd" d="M17.75 6.5a2.25 2.25 0 110-4.5 2.25 2.25 0 010 4.5zm0-1.5a.75.75 0 100-1.5.75.75 0 000 1.5z"/></svg>`
+};
+export const viVideoRecorder: {
+  name: 'video_recorder';
+  data: string;
+} = {
+  name: 'video_recorder',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M1 4a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2H3a2 2 0 01-2-2V4zm2-.5a.5.5 0 00-.5.5v8a.5.5 0 00.5.5h8a.5.5 0 00.5-.5V4a.5.5 0 00-.5-.5H3z"/><path d="M17.53 13.216L14.5 11.6V9.9l3 1.6v-7l-3 1.6V4.4l3.03-1.616a1 1 0 011.47.883v8.666a1 1 0 01-1.47.883z"/></svg>`
 };
 export const viVoiceRecorder: {
   name: 'voice_recorder';
@@ -652,6 +673,7 @@ export type Valkyrie =
   | 'heart_broken'
   | 'heart_half'
   | 'heart'
+  | 'history'
   | 'home'
   | 'id_card'
   | 'image'
@@ -675,6 +697,7 @@ export type Valkyrie =
   | 'sim_card'
   | 'sippy'
   | 'smartphone'
+  | 'sound_wave'
   | 'spinner_third'
   | 'timetable'
   | 'trash'
@@ -685,6 +708,7 @@ export type Valkyrie =
   | 'user_plus'
   | 'user'
   | 'users'
+  | 'video_recorder'
   | 'voice_recorder'
   | 'voicemail'
   | 'x_mark';
