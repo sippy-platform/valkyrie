@@ -118,6 +118,13 @@ export const viBars: {
   name: 'bars',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M3.75 2a.75.75 0 000 1.5h12.5a.75.75 0 000-1.5H3.75zM3 8a.75.75 0 01.75-.75h12.5a.75.75 0 010 1.5H3.75A.75.75 0 013 8zm0 5.25a.75.75 0 01.75-.75h12.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"/></svg>`
 };
+export const viBlf: {
+  name: 'blf';
+  data: string;
+} = {
+  name: 'blf',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M18.659 10A6.003 6.003 0 0113 14H7A6 6 0 017 2h6a6.003 6.003 0 015.685 4.076A5.99 5.99 0 0119 8a5.99 5.99 0 01-.341 2zM7 3.5a4.5 4.5 0 000 9h6a4.5 4.5 0 004.032-2.5H13a2 2 0 110-4h4.032A4.5 4.5 0 0013 3.5H7zM17.5 8c0-.169-.01-.336-.027-.5H13a.5.5 0 000 1h4.473c.018-.164.027-.331.027-.5z"/></svg>`
+};
 export const viBook: {
   name: 'book';
   data: string;
@@ -640,6 +647,7 @@ export type Valkyrie =
   | 'arrow_up_to_line'
   | 'arrow_up'
   | 'bars'
+  | 'blf'
   | 'book'
   | 'box_full'
   | 'building'
