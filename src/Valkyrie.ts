@@ -263,7 +263,7 @@ export const viEuro: {
   data: string;
 } = {
   name: 'euro',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M12 1c.745 0 1.462.116 2.136.332.421.135.577.629.356 1.012l-.01.017c-.19.328-.593.458-.957.353A5.5 5.5 0 007.1 5.5h4.27a.75.75 0 110 1.5H6.59a5.531 5.531 0 000 2h2.76a.75.75 0 110 1.5H7.1a5.5 5.5 0 006.445 2.78c.365-.106.77.023.96.352l.01.017c.22.382.066.875-.354 1.011A7.003 7.003 0 015.46 10.5H4.25a.75.75 0 010-1.5h.82a7.059 7.059 0 010-2h-.82a.75.75 0 010-1.5h1.21A7.003 7.003 0 0112 1z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M12 1c.745 0 1.462.116 2.136.332.421.135.577.629.356 1.012l-.01.017c-.19.328-.593.458-.957.353A5.5 5.5 0 007.1 5.5h4.27a.75.75 0 110 1.5H6.59a5.531 5.531 0 000 2h2.76a.75.75 0 010 1.5H7.1a5.5 5.5 0 006.445 2.78c.365-.106.77.023.96.352l.01.017c.22.382.066.875-.354 1.011A7.003 7.003 0 015.46 10.5H4.25a.75.75 0 010-1.5h.82a7.059 7.059 0 010-2h-.82a.75.75 0 010-1.5h1.21A7.003 7.003 0 0112 1z"/></svg>`
 };
 export const viFacebookMessenger: {
   name: 'facebook_messenger';
@@ -390,6 +390,13 @@ export const viMapMarker: {
 } = {
   name: 'map_marker',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M12.784 2.845a3.938 3.938 0 00-5.568 0l-.112.112a4.096 4.096 0 00-.693 4.87l3.143 5.714 3.748-5.766a3.938 3.938 0 00-.518-4.93zm-6.629-1.06a5.438 5.438 0 018.404 6.808l-4.299 6.614a.894.894 0 01-1.533-.057l-3.63-6.6a5.596 5.596 0 01.946-6.654l.112-.112z"/></svg>`
+};
+export const viMessage: {
+  name: 'message';
+  data: string;
+} = {
+  name: 'message',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M5.75 4.5h3.5a.75.75 0 100-1.5h-3.5a.75.75 0 000 1.5zm6 0h1.5a.75.75 0 000-1.5h-1.5a.75.75 0 000 1.5zm.5 3h-6.5a.75.75 0 010-1.5h6.5a.75.75 0 010 1.5z"/><path fill-rule="evenodd" d="M9.726 12.22l-4.32 3.455A.25.25 0 015 15.48V12H4a2 2 0 01-2-2V2a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2h-5.65a1 1 0 00-.624.22zM6.5 10.5v2.38l2.289-1.832a2.5 2.5 0 011.562-.548H16a.5.5 0 00.5-.5V2a.5.5 0 00-.5-.5H4a.5.5 0 00-.5.5v8a.5.5 0 00.5.5h2.5z"/></svg>`
 };
 export const viNetwork: {
   name: 'network';
@@ -552,12 +559,26 @@ export const viUsers: {
   name: 'users',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M9.937 7.5a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5zm0-1.5a2.25 2.25 0 110-4.5 2.25 2.25 0 010 4.5zM3.78 10.332c-.763.918-.497 2.267.319 3.137A7.978 7.978 0 009.937 16a7.978 7.978 0 005.839-2.53c.816-.871 1.082-2.22.319-3.138a3.64 3.64 0 00-2.29-1.28 27.354 27.354 0 00-7.736 0 3.64 3.64 0 00-2.29 1.28zm2.5.206a25.852 25.852 0 017.314 0 2.14 2.14 0 011.348.753c.075.09.126.222.098.433a1.35 1.35 0 01-.359.72A6.478 6.478 0 019.937 14.5a6.478 6.478 0 01-4.744-2.056 1.35 1.35 0 01-.359-.72c-.027-.211.023-.342.099-.433a2.14 2.14 0 011.348-.753zM2.25 6.5a2.25 2.25 0 100-4.5 2.25 2.25 0 000 4.5zm0-1.5a.75.75 0 110-1.5.75.75 0 010 1.5z"/><path d="M4.484 7.25c.285 0 .516.23.516.516a5.135 5.135 0 00-1.76.984h-.49c-.69 0-1.25.56-1.25 1.25v1.25a.75.75 0 01-1.5 0V10a2.75 2.75 0 012.75-2.75h1.734zm12.766 1.5h-.616A5.135 5.135 0 0015 7.808c0-.308.25-.558.558-.558h1.692A2.75 2.75 0 0120 10v1.25a.75.75 0 01-1.5 0V10c0-.69-.56-1.25-1.25-1.25z"/><path fill-rule="evenodd" d="M17.75 6.5a2.25 2.25 0 110-4.5 2.25 2.25 0 010 4.5zm0-1.5a.75.75 0 100-1.5.75.75 0 000 1.5z"/></svg>`
 };
+export const viVoiceRecorder: {
+  name: 'voice_recorder';
+  data: string;
+} = {
+  name: 'voice_recorder',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M10 0a3 3 0 00-3 3v3.5a3 3 0 006 0V3a3 3 0 00-3-3zm1.5 6.5a1.5 1.5 0 01-3 0V3a1.5 1.5 0 113 0v3.5z"/><path d="M10.75 12.454A6.001 6.001 0 0016 6.5a.5.5 0 00-.5-.5H15a.5.5 0 00-.5.5 4.5 4.5 0 11-9 0A.5.5 0 005 6h-.5a.5.5 0 00-.5.5c0 3.06 2.29 5.585 5.25 5.954V14.5h-1.5a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-1.5v-2.046z"/></svg>`
+};
+export const viVoicemail: {
+  name: 'voicemail';
+  data: string;
+} = {
+  name: 'voicemail',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M7.123 10.5A4 4 0 104 12h12a4 4 0 10-3.123-1.5H7.123zM4 10.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm12 0a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>`
+};
 export const viXMark: {
   name: 'x_mark';
   data: string;
 } = {
   name: 'x_mark',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 11.06l3.89 3.89a.75.75 0 001.06-1.06L11.06 10l3.89-3.89a.75.75 0 10-1.06-1.06L10 8.94 6.11 5.05a.75.75 0 00-1.06 1.06L8.94 10l-3.89 3.89a.75.75 0 101.06 1.06L10 11.06z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M10 9.06l3.89 3.89a.75.75 0 001.06-1.06L11.06 8l3.89-3.89a.75.75 0 10-1.06-1.06L10 6.94 6.11 3.05a.75.75 0 00-1.06 1.06L8.94 8l-3.89 3.89a.75.75 0 101.06 1.06L10 9.06z"/></svg>`
 };
 export type Valkyrie =
   | 'angle_down'
@@ -616,6 +637,7 @@ export type Valkyrie =
   | 'lock'
   | 'map_marker_slashed'
   | 'map_marker'
+  | 'message'
   | 'network'
   | 'pen'
   | 'phone'
@@ -639,6 +661,8 @@ export type Valkyrie =
   | 'user_plus'
   | 'user'
   | 'users'
+  | 'voice_recorder'
+  | 'voicemail'
   | 'x_mark';
 export interface ValkyrieIcon {
   name: Valkyrie;
