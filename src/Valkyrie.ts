@@ -545,6 +545,13 @@ export const viSearch: {
   name: 'search',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M17 6a5 5 0 01-7.965 4.026L4.06 15A.75.75 0 113 13.94l4.974-4.975A5 5 0 1117 6zm-1.5 0a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0z"/></svg>`
 };
+export const viSend: {
+  name: 'send';
+  data: string;
+} = {
+  name: 'send',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M2.478 14.74l16.309-6.273a.5.5 0 000-.934L2.477 1.261A1 1 0 001.17 2.51l1.725 5.173a1 1 0 010 .632L1.17 13.49a1 1 0 001.308 1.25zM15.822 8L2.928 12.959l1.39-4.168.013-.041h5.919a.75.75 0 000-1.5H4.33a2.487 2.487 0 00-.012-.04l-1.39-4.17L15.821 8z"/></svg>`
+};
 export const viServer: {
   name: 'server';
   data: string;
@@ -820,6 +827,7 @@ export type Valkyrie =
   | 'present'
   | 'refresh'
   | 'search'
+  | 'send'
   | 'server'
   | 'shield_danger'
   | 'shield_keyhole'
