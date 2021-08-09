@@ -13,6 +13,7 @@ module.exports = {
     html: './templates/html.hbs',
     css: './templates/css.hbs',
     scss: './templates/css.hbs'
+  },
   pathOptions: {
     eot: './dist/fonts/Valkyrie.eot',
     ttf: './dist/fonts/Valkyrie.ttf',
@@ -20,5 +21,6 @@ module.exports = {
     woff2: './dist/fonts/Valkyrie.woff2',
     css: './dist/fonts/Valkyrie.css',
     scss: './dist/fonts/Valkyrie.scss',
+    html: './docs/Valkyrie.html'
   }
 };
