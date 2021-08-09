@@ -25,6 +25,12 @@ module.exports = {
       }
     },
     {
+      name: 'convertPathData',
+      params: {
+        floatPrecision: 2
+      }
+    },
+    {
       name: 'removeUnknownsAndDefaults',
       params: {
         keepRoleAttr: true
