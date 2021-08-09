@@ -258,6 +258,13 @@ export const viDeskPhone: {
   name: 'desk_phone',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M9.5 11a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1zm.5-4a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1A.5.5 0 0011 7h-1zm3.5 4a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1zm.5-4a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-1A.5.5 0 0015 7h-1z"/><path fill-rule="evenodd" d="M17 1H3a2 2 0 00-2 2v10a2 2 0 002 2h14a2 2 0 002-2V3a2 2 0 00-2-2zM9 2.5v1.25c0 .966.784 1.75 1.75 1.75h3.75a1.75 1.75 0 001.75-1.75V2.5H17a.5.5 0 01.5.5v10a.5.5 0 01-.5.5H7.437c.041-.16.063-.327.063-.5V3c0-.173-.022-.34-.063-.5H9zm1.5 0h4.25v1.25a.25.25 0 01-.25.25h-3.75a.25.25 0 01-.25-.25V2.5zM3 2.5h2.5A.5.5 0 016 3v10a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V3a.5.5 0 01.5-.5z"/></svg>`
 };
+export const viDesktop: {
+  name: 'desktop';
+  data: string;
+} = {
+  name: 'desktop',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M3 0a2 2 0 00-2 2v9a2 2 0 002 2h6.25v1.5h-2a.75.75 0 000 1.5h5.5a.75.75 0 000-1.5h-2V13H17a2 2 0 002-2V2a2 2 0 00-2-2H3zm14 1.5a.5.5 0 01.5.5v9a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V2a.5.5 0 01.5-.5h14z"/></svg>`
+};
 export const viDevices: {
   name: 'devices';
   data: string;
@@ -327,6 +334,13 @@ export const viFlagCheckered: {
 } = {
   name: 'flag_checkered',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M3.5 15.25v-2.66l1.482-.403A9.115 9.115 0 0110 12.25a9.115 9.115 0 005.018.063l2.43-.662a.75.75 0 00.552-.724V.982a.75.75 0 00-.947-.724l-2.035.555A9.116 9.116 0 0110 .75 9.116 9.116 0 004.982.687L3.5 1.09V.75a.75.75 0 00-1.5 0v14.5a.75.75 0 001.5 0zm1.087-4.51l-1.087.296V9.368l1.68-.458a8.38 8.38 0 01.29-.073v1.702c-.296.054-.59.121-.883.2zm2.383-.367V8.627a8.366 8.366 0 012.25.194v1.706a10.617 10.617 0 00-2.25-.152zm5.75.76a7.619 7.619 0 01-2-.24V9.2c.66.13 1.33.19 2 .184v1.75zm1.5-.168V9.253a9.81 9.81 0 00.995-.217l1.285-.35v1.667l-1.877.512c-.133.037-.268.07-.403.098zm0-3.235V5.754a9.81 9.81 0 00.995-.217l1.285-.35v1.945l-1.68.458c-.198.054-.399.1-.6.14zm-1.5-1.846v2a8.365 8.365 0 01-2-.218V5.7c.66.13 1.33.19 2 .184zm0-1.5a8.365 8.365 0 01-2-.218V2.463c.66.12 1.33.177 2 .171v1.75zm1.5-.154V2.513c.4-.061.799-.145 1.193-.253l1.087-.296v1.668l-1.68.458c-.198.054-.399.1-.6.14zm-7.25.896a8.366 8.366 0 012.25.194v1.968a9.866 9.866 0 00-2.25-.164V5.126zm0-1.502V1.877a7.593 7.593 0 012.25.214v1.697a9.866 9.866 0 00-2.25-.164zm-1.5 1.713v1.965c-.23.046-.459.1-.685.161l-1.285.35V5.869l1.68-.458a8.38 8.38 0 01.29-.073zm0-1.535c-.23.046-.459.1-.685.161l-1.285.35V2.647l1.877-.512.093-.025v1.693z"/></svg>`
+};
+export const viFlag: {
+  name: 'flag';
+  data: string;
+} = {
+  name: 'flag',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M3.5 12.59v2.66a.75.75 0 01-1.5 0V.75a.75.75 0 011.5 0v.34L4.982.688A9.116 9.116 0 0110 .75a9.116 9.116 0 005.018.063l2.035-.555A.75.75 0 0118 .982v9.945a.75.75 0 01-.553.724l-2.429.662A9.115 9.115 0 0110 12.25a9.115 9.115 0 00-5.018-.063L3.5 12.59zm0-1.554l1.087-.296a10.616 10.616 0 015.844.073 7.616 7.616 0 004.192.053l1.877-.512v-8.39l-1.087.296a10.616 10.616 0 01-5.844-.073 7.616 7.616 0 00-4.192-.053L3.5 2.646v8.39z"/></svg>`
 };
 export const viFloppyDisk: {
   name: 'floppy_disk';
@@ -418,6 +432,13 @@ export const viImage: {
 } = {
   name: 'image',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M12.5 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/><path fill-rule="evenodd" d="M5 1a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V3a2 2 0 00-2-2H5zm10 12.5h-.44L9.365 8.303a2.75 2.75 0 00-3.772-.11l-1.092.97V3a.5.5 0 01.5-.5h10a.5.5 0 01.5.5v10a.5.5 0 01-.5.5zM6.589 9.313a1.25 1.25 0 011.714.05L12.44 13.5H5a.5.5 0 01-.5-.5v-1.83l2.089-1.857z"/></svg>`
+};
+export const viLaptop: {
+  name: 'laptop';
+  data: string;
+} = {
+  name: 'laptop',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M2 12V4a2 2 0 012-2h12a2 2 0 012 2v8h1.1c.22 0 .4.18.4.4a1.6 1.6 0 01-1.6 1.6H2.1a1.6 1.6 0 01-1.6-1.6c0-.22.18-.4.4-.4H2zm14.5-8a.5.5 0 00-.5-.5H4a.5.5 0 00-.5.5v8h13V4z"/></svg>`
 };
 export const viLayersPlus: {
   name: 'layers_plus';
@@ -800,6 +821,7 @@ export type Valkyrie =
   | 'copy'
   | 'dashboard'
   | 'desk_phone'
+  | 'desktop'
   | 'devices'
   | 'earth'
   | 'ellipsis'
@@ -810,6 +832,7 @@ export type Valkyrie =
   | 'fax'
   | 'fingerprint'
   | 'flag_checkered'
+  | 'flag'
   | 'floppy_disk'
   | 'folder'
   | 'gauge'
@@ -823,6 +846,7 @@ export type Valkyrie =
   | 'home'
   | 'id_card'
   | 'image'
+  | 'laptop'
   | 'layers_plus'
   | 'layers'
   | 'lightbulb_on'
