@@ -39,7 +39,7 @@
   "bugs": {
     "url": "https://github.com/optimise-group/valkyrie/issues"
   },
-  "homepage": "https://github.com/optimise-group/valkyrie#readme",
+  "homepage": "https://optimise-group.github.io/valkyrie",
   "peerDependencies": {
     "react": ">=16.x",
     "clsx": ">=1.x"
