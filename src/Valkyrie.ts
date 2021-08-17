@@ -328,6 +328,27 @@ export const viFax: {
   name: 'fax',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M10 11.5a.5.5 0 00-.5.5v1c0 .28.22.5.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm-.5-3c0-.28.22-.5.5-.5h1c.28 0 .5.22.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1zm4.5 3a.5.5 0 00-.5.5v1c0 .28.22.5.5.5h1a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-1zm-.5-3c0-.28.22-.5.5-.5h1c.28 0 .5.22.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1z"/><path fill-rule="evenodd" d="M8.5 5.5V1a1 1 0 011-1h4.09a1 1 0 01.7.3l1.92 1.9a1 1 0 01.29.71V5.5h.5a2 2 0 012 2V14a2 2 0 01-2 2H3a2 2 0 01-2-2V4c0-1.1.9-2 2-2h2.5a2 2 0 012 2v1.5h1zM15 3.12L13.38 1.5H10v4h5V3.12zM7.5 7v7a2 2 0 01-.06.5H17a.5.5 0 00.5-.5V7.5A.5.5 0 0017 7H7.5zM6 4a.5.5 0 00-.5-.5H3a.5.5 0 00-.5.5v10c0 .28.22.5.5.5h2.5A.5.5 0 006 14V4z"/></svg>`
 };
+export const viFilterPlus: {
+  name: 'filter_plus';
+  data: string;
+} = {
+  name: 'filter_plus',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M14 1.5H3l4 5.33c.32.44.5.96.5 1.5v5.02l.73-.44c.4.37.94.59 1.52.59h.42l-3.41 2.05a.5.5 0 01-.76-.43V8.33a1 1 0 00-.2-.6l-4-5.33A1.5 1.5 0 013 0h11a1.5 1.5 0 011.2 2.4l-2 2.67a2.25 2.25 0 00-1.7 2.18v.08l-.3.4a1 1 0 00-.2.6V9H9.75l-.25.01v-.68c0-.54.18-1.06.5-1.5l4-5.33z"/><path d="M14.5 7.25v3.25h3.25a.75.75 0 010 1.5H14.5v3.25a.75.75 0 01-1.5 0V12H9.75a.75.75 0 010-1.5H13V7.25a.75.75 0 011.5 0z"/></svg>`
+};
+export const viFilterXMark: {
+  name: 'filter_x_mark';
+  data: string;
+} = {
+  name: 'filter_x_mark',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M14 1.5H3l4 5.33c.32.44.5.96.5 1.5v5.02l2-1.2v-2.12l.08.09 1.24 1.23-1.24 1.24a2.24 2.24 0 00-.66 1.66l-2.16 1.3a.5.5 0 01-.76-.43V8.33a1 1 0 00-.2-.6l-4-5.33A1.5 1.5 0 013 0h11a1.5 1.5 0 011.2 2.4l-3.07 4.09a2.26 2.26 0 00-1.85-.03L14 1.5z"/><path d="M11.7 8l2.3 2.3L16.3 8a.75.75 0 011.06 1.06l-2.3 2.3 2.3 2.3a.75.75 0 11-1.06 1.05l-2.3-2.3-2.3 2.3a.75.75 0 11-1.06-1.06l2.3-2.3-2.3-2.3A.75.75 0 0111.7 8z"/></svg>`
+};
+export const viFilter: {
+  name: 'filter';
+  data: string;
+} = {
+  name: 'filter',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M15.5 1.5h-11l4 5.33-1.2.9-4-5.33A1.5 1.5 0 014.5 0h11a1.5 1.5 0 011.2 2.4l-4 5.33a1 1 0 00-.2.6v4.1a1 1 0 01-.49.86L9 15.1l-.74.45a.5.5 0 01-.76-.43V8.33a1 1 0 00-.2-.6l1.2-.9c.32.44.5.96.5 1.5v5.02l2-1.2V8.33c0-.54.18-1.06.5-1.5l4-5.33z"/></svg>`
+};
 export const viFingerprint: {
   name: 'fingerprint';
   data: string;
@@ -845,6 +866,9 @@ export type Valkyrie =
   | 'facebook_messenger'
   | 'facebook'
   | 'fax'
+  | 'filter_plus'
+  | 'filter_x_mark'
+  | 'filter'
   | 'fingerprint'
   | 'flag_checkered'
   | 'flag'
