@@ -18,14 +18,14 @@ export const viAngleLeft: {
   data: string;
 } = {
   name: 'angle_left',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M9.28 12.03c-.3.3-.77.3-1.06 0a.75.75 0 010-1.06l2.76-2.76c.1-.1.1-.26 0-.36L8.22 5.1a.75.75 0 011.06-1.06l3.3 3.3a1 1 0 010 1.4l-3.3 3.3z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M10.72 4.03c.3-.3.77-.3 1.06 0 .3.3.3.77 0 1.06L9.02 7.85c-.1.1-.1.26 0 .36l2.76 2.76c.3.3.3.77 0 1.06-.3.3-.77.3-1.06 0l-3.3-3.3a1 1 0 010-1.4l3.3-3.3z"/></svg>`
 };
 export const viAngleRight: {
   name: 'angle_right';
   data: string;
 } = {
   name: 'angle_right',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M10.72 4.03c.3-.3.77-.3 1.06 0 .3.3.3.77 0 1.06L9.02 7.85c-.1.1-.1.26 0 .36l2.76 2.76c.3.3.3.77 0 1.06-.3.3-.77.3-1.06 0l-3.3-3.3a1 1 0 010-1.4l3.3-3.3z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M9.28 12.03c-.3.3-.77.3-1.06 0a.75.75 0 010-1.06l2.76-2.76c.1-.1.1-.26 0-.36L8.22 5.1a.75.75 0 011.06-1.06l3.3 3.3a1 1 0 010 1.4l-3.3 3.3z"/></svg>`
 };
 export const viAngleUp: {
   name: 'angle_up';
