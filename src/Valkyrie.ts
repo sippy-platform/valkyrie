@@ -704,7 +704,7 @@ export const viMapMarkerRoute: {
   data: string;
 } = {
   name: 'map_marker_route',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M6.9 6.75l1.13-1.63a3.08 3.08 0 10-5.06 0l1.98 2.84c.13.2.34.29.55.29h3a.75.75 0 110 1.5H5.25a3 3 0 100 6H15c.2 0 .42-.1.55-.29l1.98-2.84a3.08 3.08 0 10-5.06 0l1.14 1.63H5.25a1.5 1.5 0 010-3H8.5a2.25 2.25 0 000-4.5H6.9zm-1.4-.63L4.2 4.26a1.58 1.58 0 112.6 0L5.5 6.12zm9.5 7.5l-1.3-1.86a1.58 1.58 0 112.6 0L15 13.62z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M6.9 6.5l1.13-1.63a3.08 3.08 0 10-5.06 0L4.95 7.7c.13.2.34.29.55.29h2.75a1 1 0 110 2h-3a3 3 0 100 6H15c.2 0 .42-.1.55-.29l1.98-2.84a3.08 3.08 0 10-5.06 0l1.14 1.63H5.25a1.5 1.5 0 010-3h3a2.5 2.5 0 000-5H6.89zm-1.4-.63L4.2 4.01a1.58 1.58 0 112.6 0L5.5 5.87zm9.5 8l-1.3-1.86a1.58 1.58 0 112.6 0L15 13.87z"/></svg>`
 };
 export const viMapMarkerSlashed: {
   name: 'map_marker_slashed';
