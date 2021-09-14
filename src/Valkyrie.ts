@@ -692,19 +692,33 @@ export const viLock: {
   name: 'lock',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M10.75 10.25a1.25 1.25 0 10-1.5 0v2a.75.75 0 001.5 0v-2z"/><path fill-rule="evenodd" d="M13 5h2a2 2 0 012 2v7a2 2 0 01-2 2H5a2 2 0 01-2-2V7c0-1.1.9-2 2-2h2V3a3 3 0 016 0v2zm-1.5 0V3a1.5 1.5 0 00-3 0v2h3zm-7 2v7c0 .28.22.5.5.5h10a.5.5 0 00.5-.5V7a.5.5 0 00-.5-.5H5a.5.5 0 00-.5.5z"/></svg>`
 };
+export const viMapMarkerDot: {
+  name: 'map_marker_dot';
+  data: string;
+} = {
+  name: 'map_marker_dot',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M12.5 5.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm-1.5 0a1 1 0 10-2 0 1 1 0 002 0z"/><path fill-rule="evenodd" d="M13.9 1.84a5.51 5.51 0 00-8.63 6.74l3.96 6.6a.9.9 0 001.54 0l3.96-6.6a5.51 5.51 0 00-.83-6.74zM7.16 2.9a4.01 4.01 0 016.28 4.9L10 13.54 6.56 7.8a4 4 0 01.6-4.9z"/></svg>`
+};
+export const viMapMarkerRoute: {
+  name: 'map_marker_route';
+  data: string;
+} = {
+  name: 'map_marker_route',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M6.9 6.75l1.13-1.63a3.08 3.08 0 10-5.06 0l1.98 2.84c.13.2.34.29.55.29h3a.75.75 0 110 1.5H5.25a3 3 0 100 6H15c.2 0 .42-.1.55-.29l1.98-2.84a3.08 3.08 0 10-5.06 0l1.14 1.63H5.25a1.5 1.5 0 010-3H8.5a2.25 2.25 0 000-4.5H6.9zm-1.4-.63L4.2 4.26a1.58 1.58 0 112.6 0L5.5 6.12zm9.5 7.5l-1.3-1.86a1.58 1.58 0 112.6 0L15 13.62z"/></svg>`
+};
 export const viMapMarkerSlashed: {
   name: 'map_marker_slashed';
   data: string;
 } = {
   name: 'map_marker_slashed',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M9.55 13.54l-.68-1.23-1.1 1.1.96 1.74a.9.9 0 001.53.06l4.3-6.62c.57-.87.86-1.86.88-2.84L13.1 8.08l-3.56 5.46zM7.22 2.85a3.94 3.94 0 015.13-.38l1.07-1.07a5.44 5.44 0 00-7.26.38l-.12.12a5.6 5.6 0 00-.94 6.65l.41.76 1.1-1.1-.2-.38a4.1 4.1 0 01.7-4.87l.1-.11zm8.78.21A.75.75 0 1014.94 2L4 12.94A.75.75 0 005.06 14L16 3.06z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M10 13.54l-.89-1.47-1.09 1.09 1.21 2.02a.9.9 0 001.54 0l3.96-6.6c.54-.9.8-1.91.78-2.91l-1.98 1.98-.09.15L10 13.54zM7.16 2.9a4.02 4.02 0 015.18-.42l1.07-1.07a5.52 5.52 0 00-8.14 7.17l.37.6L6.73 8.1l-.17-.29a4 4 0 01.6-4.9zm8.84.16A.75.75 0 1014.94 2L4 12.94A.75.75 0 005.06 14L16 3.06z"/></svg>`
 };
 export const viMapMarker: {
   name: 'map_marker';
   data: string;
 } = {
   name: 'map_marker',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M12.78 2.85a3.94 3.94 0 00-5.56 0l-.12.1a4.1 4.1 0 00-.69 4.88l3.14 5.71 3.75-5.76a3.94 3.94 0 00-.52-4.93zM6.15 1.78a5.44 5.44 0 018.4 6.81l-4.29 6.62a.9.9 0 01-1.53-.06L5.1 8.55a5.6 5.6 0 01.94-6.65l.11-.12z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M12.84 2.9a4.01 4.01 0 00-6.28 4.9L10 13.54l3.44-5.74a4 4 0 00-.6-4.9zM6.1 1.84a5.51 5.51 0 018.63 6.74l-3.96 6.6a.9.9 0 01-1.54 0l.63-.38-.63.38-3.96-6.6a5.51 5.51 0 01.83-6.74z"/></svg>`
 };
 export const viMessagePen: {
   name: 'message_pen';
@@ -1042,6 +1056,13 @@ export const viUnlock: {
   name: 'unlock',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M10.75 10.25a1.25 1.25 0 10-1.5 0v2a.75.75 0 001.5 0v-2z"/><path fill-rule="evenodd" d="M11.5 3v.5H13V3a3 3 0 10-6 0v2H5a2 2 0 00-2 2v7c0 1.1.9 2 2 2h10a2 2 0 002-2V7a2 2 0 00-2-2H8.5V3a1.5 1.5 0 113 0zm-7 4c0-.28.22-.5.5-.5h10c.28 0 .5.22.5.5v7a.5.5 0 01-.5.5H5a.5.5 0 01-.5-.5V7z"/></svg>`
 };
+export const viUserClock: {
+  name: 'user_clock';
+  data: string;
+} = {
+  name: 'user_clock',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M11.06 5.83a3.75 3.75 0 10-1.12 1.09c.33-.4.7-.77 1.12-1.09zM7.94 6a2.25 2.25 0 110-4.5 2.25 2.25 0 010 4.5z"/><path d="M8.88 8.8a26.7 26.7 0 00-4.81.25c-.93.13-1.73.6-2.3 1.28-.75.92-.49 2.27.33 3.14a7.98 7.98 0 008.32 2.14 6.52 6.52 0 01-1-1.28 6.52 6.52 0 01-6.23-1.89 1.4 1.4 0 01-.36-.72.59.59 0 01.1-.43c.33-.4.8-.67 1.35-.75 1.41-.2 2.84-.29 4.26-.26.06-.51.17-1.01.34-1.49zm5.37.45v1.54c0 .33.13.65.37.89l.32.32A.75.75 0 0016 10.94l-.25-.25V9.25a.75.75 0 00-1.5 0z"/><path fill-rule="evenodd" d="M15 16a5 5 0 100-10 5 5 0 000 10zm0-1.5a3.5 3.5 0 110-7 3.5 3.5 0 010 7z"/></svg>`
+};
 export const viUserGear: {
   name: 'user_gear';
   data: string;
@@ -1268,6 +1289,8 @@ export type Valkyrie =
   | 'list_ol'
   | 'list_ul'
   | 'lock'
+  | 'map_marker_dot'
+  | 'map_marker_route'
   | 'map_marker_slashed'
   | 'map_marker'
   | 'message_pen'
@@ -1318,6 +1341,7 @@ export type Valkyrie =
   | 'triangle_warning'
   | 'unlink'
   | 'unlock'
+  | 'user_clock'
   | 'user_gear'
   | 'user_headset'
   | 'user_list'
