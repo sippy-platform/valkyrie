@@ -1068,7 +1068,7 @@ export const viValkyrie: {
   data: string;
 } = {
   name: 'valkyrie',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M9.3 8.18l.7.47.7-.47-.2-7.43L10 0l-.5.75-.2 7.43z"/><path d="M10.48 11.91L10.25 16l-.25-.25-.25.25-.23-4.09-2.28 1.37-.43-1.5 1.79-1.06L6.03 9l-.62-2.22L10 9.85l4.6-3.06L13.96 9l-2.57 1.7 1.79 1.08-.43 1.5-2.28-1.38z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M8.81 8.9l1.19.8 1.19-.8-.44-7.4L10 0l-.75 1.5-.44 7.4z"/><path d="M10.69 13.16L10.5 16l-.5-.5-.5.5-.19-2.84-2.43 1.62-.62-1.99L8.2 11.5l-.3-.2a9 9 0 01-3.6-4.8l5.7 3.8 5.7-3.8a9 9 0 01-3.6 4.8l-.3.2 1.94 1.29-.62 1.99-2.43-1.62z"/></svg>`
 };
 export const viVideoRecorder: {
   name: 'video_recorder';
