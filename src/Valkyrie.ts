@@ -1110,7 +1110,7 @@ export const viTag: {
   data: string;
 } = {
   name: 'tag',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path stroke="#000" stroke-width="1.5" d="M3.75 7.59V2c0-.14.11-.25.25-.25h5.59c.06 0 .13.03.17.07l7 7c.1.1.1.26 0 .36l-5.58 5.58c-.1.1-.26.1-.36 0l-7-7a.25.25 0 01-.07-.17z"/><path d="M6 5.9V4.5c0-.28.22-.5.5-.5h1.4c.22 0 .33.27.17.43L6.43 6.07A.25.25 0 016 5.9z"/><path d="M6 4.5v1.4c0 .22.27.33.43.17l1.64-1.64A.25.25 0 007.9 4H6.5a.5.5 0 00-.5.5z"/><path fill-rule="evenodd" d="M3 7.59V2a1 1 0 011-1h5.59a1 1 0 01.7.3l7 7a1 1 0 010 1.4l-5.58 5.6a1 1 0 01-1.42 0l-7-7A1 1 0 013 7.58zm8 6.29l-6.5-6.5V2.5h4.88l6.5 6.5L11 13.88z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M6 4.5v1.4c0 .22.27.33.43.17l1.64-1.64A.25.25 0 007.9 4H6.5a.5.5 0 00-.5.5z"/><path fill-rule="evenodd" d="M3 7.59V2a1 1 0 011-1h5.59a1 1 0 01.7.3l7 7a1 1 0 010 1.4l-5.58 5.6a1 1 0 01-1.42 0l-7-7A1 1 0 013 7.58zm8 6.29L15.88 9l-6.5-6.5H4.5v4.88l6.5 6.5z"/></svg>`
 };
 export const viTimetable: {
   name: 'timetable';
