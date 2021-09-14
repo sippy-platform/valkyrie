@@ -1,6 +1,6 @@
 {
   "name": "@optimisegroup/valkyrie",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "The iconography of Sippy.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -39,14 +39,14 @@
   "bugs": {
     "url": "https://github.com/optimise-group/valkyrie/issues"
   },
-  "homepage": "https://github.com/optimise-group/valkyrie#readme",
+  "homepage": "https://optimise-group.github.io/valkyrie",
   "peerDependencies": {
     "react": ">=16.x",
     "clsx": ">=1.x"
   },
   "devDependencies": {
-    "@types/react": "^17.0.16",
-    "autoprefixer": "^10.3.1",
+    "@types/react": "^17.0.20",
+    "autoprefixer": "^10.3.4",
     "bundle-scss": "^1.5.0",
     "clsx": "^1.1.1",
     "fantasticon": "^1.2.2",
@@ -58,10 +58,10 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
-    "sass": "^1.37.5",
-    "svg-to-ts": "^6.0.1",
-    "svgo": "^2.3.1",
-    "typescript": "^4.3.5"
+    "sass": "^1.40.1",
+    "svg-to-ts": "^6.0.2",
+    "svgo": "^2.6.0",
+    "typescript": "^4.4.3"
   },
   "browserslist": {
     "production": [
@@ -69,5 +69,6 @@
       "not dead",
       "not ie <= 11"
     ]
-  }
+  },
+  "sideEffects": false
 }

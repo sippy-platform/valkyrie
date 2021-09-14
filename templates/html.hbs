@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ name }}</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <style>
+        :root {
+            --primary: #0057FF;
+        }
         body {
             font-family: system-ui, -apple-system, "Segoe UI Variable Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
             margin: 0;
-            padding: 10px 20px;
-            text-align: center;
         }
-        h1 {
-            font-family: system-ui, -apple-system, "Segoe UI Variable Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        .display-4 {
+            font-family: system-ui, -apple-system, "Segoe UI Variable Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+            font-weight: 700;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .icons {
+            padding: 20px;
         }
         .preview {
             width: 100px;
@@ -24,9 +33,7 @@
             width: 100%;
             text-align: center;
             background: #f5f5f5;
-            -webkit-border-radius: 3px 3px 0 0;
-            -moz-border-radius: 3px 3px 0 0;
-            border-radius: 3px 3px 0 0;
+            border-radius: .25rem .25rem 0 0;
         }
         .preview .inner {{ baseTag }} {
             line-height: 85px;
@@ -45,30 +52,32 @@
             overflow: hidden;
             text-overflow: ellipsis;
             background: #ddd;
-            -webkit-border-radius: 0 0 3px 3px;
-            -moz-border-radius: 0 0 3px 3px;
-            border-radius: 0 0 3px 3px;
+            border-radius: 0 0 .25rem .25rem;
             color: #666;
         }
     </style>
 
-    <link rel="stylesheet" type="text/css" href="../dist/fonts/{{ name }}.css" />
+    <link rel="stylesheet" type="text/css" href="./fonts/{{ name }}.css" />
 </head>
 <body>
 
-    <h1><i class="vi vi-sippy"></i> {{ name }}</h1>
+    <div class="bg-primary text-white pb-4 pt-3 text-center">
+        <h1 class="display-4 m-0"><i class="vi vi-valkyrie"></i> {{ name }}</h1>
+    </div>
 
-    {{# each assets }}
+    <div class="icons text-center">
+        {{# each assets }}
 
-        <div class="preview">
-            <span class="inner">
-                <{{ ../tag }} class="{{ ../prefix }} {{ ../prefix }}-{{ @key }}"></{{ ../tag }}>
-            </span>
-            <br>
-            <span class='label'>{{ @key }}</span>
-        </div>
+            <div class="preview">
+                <span class="inner">
+                    <{{ ../tag }} class="{{ ../prefix }} {{ ../prefix }}-{{ @key }}"></{{ ../tag }}>
+                </span>
+                <br>
+                <span class='label'>{{ @key }}</span>
+            </div>
 
-    {{/ each }}
+        {{/ each }}
+    </div>
 
 </body>
 </html>

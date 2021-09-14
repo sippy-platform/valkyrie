@@ -1,0 +1,18 @@
+{
+  "name": "valkyrie-docs",
+  "version": "1.0.0",
+  "description": "Valkyrie documentation.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "valkyrie"
+  ],
+  "author": "Optimise Group",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "@optimisegroup/valkyrie": "file:../"
+  }
+}
+ 

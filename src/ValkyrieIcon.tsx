@@ -13,7 +13,7 @@ export default function ValkyrieIcon({
   spin = false
 }: ValkyrieProps) {
   return (
-    <div
+    <span
       className={
         clsx(
           'vi',
