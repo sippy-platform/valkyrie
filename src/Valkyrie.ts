@@ -11,28 +11,28 @@ export const viAngleDown: {
   data: string;
 } = {
   name: 'angle_down',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M6 7.31a.75.75 0 011.06-1.06l2.76 2.76c.1.1.26.1.36 0l2.76-2.76c.3-.3.77-.3 1.06 0 .3.3.3.77 0 1.06l-3.3 3.3a1 1 0 01-1.4 0L6 7.3z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M6 6.81a.75.75 0 011.06-1.06l2.76 2.76c.1.1.26.1.36 0l2.76-2.76A.75.75 0 0114 6.81l-3.3 3.3a1 1 0 01-1.4 0L6 6.8z"/></svg>`
 };
 export const viAngleLeft: {
   name: 'angle_left';
   data: string;
 } = {
   name: 'angle_left',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M10.72 4.03c.3-.3.77-.3 1.06 0 .3.3.3.77 0 1.06L9.02 7.85c-.1.1-.1.26 0 .36l2.76 2.76c.3.3.3.77 0 1.06-.3.3-.77.3-1.06 0l-3.3-3.3a1 1 0 010-1.4l3.3-3.3z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M11.22 4.03a.75.75 0 111.06 1.06L9.52 7.85c-.1.1-.1.26 0 .36l2.76 2.76a.75.75 0 11-1.06 1.06l-3.3-3.3a1 1 0 010-1.4l3.3-3.3z"/></svg>`
 };
 export const viAngleRight: {
   name: 'angle_right';
   data: string;
 } = {
   name: 'angle_right',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M9.28 12.03c-.3.3-.77.3-1.06 0a.75.75 0 010-1.06l2.76-2.76c.1-.1.1-.26 0-.36L8.22 5.1a.75.75 0 011.06-1.06l3.3 3.3a1 1 0 010 1.4l-3.3 3.3z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M8.78 12.03a.75.75 0 01-1.06-1.06l2.76-2.76c.1-.1.1-.26 0-.36L7.72 5.1a.75.75 0 011.06-1.06l3.3 3.3a1 1 0 010 1.4l-3.3 3.3z"/></svg>`
 };
 export const viAngleUp: {
   name: 'angle_up';
   data: string;
 } = {
   name: 'angle_up',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M14 8.75c.3.3.3.77 0 1.06-.3.3-.77.3-1.06 0l-2.76-2.76a.25.25 0 00-.36 0L7.06 9.8c-.3.3-.77.3-1.06 0a.75.75 0 010-1.06l3.3-3.3a1 1 0 011.4 0l3.3 3.3z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M14 9.25a.75.75 0 01-1.06 1.06l-2.76-2.76a.25.25 0 00-.36 0L7.06 10.3A.75.75 0 116 9.25l3.3-3.3a1 1 0 011.4 0l3.3 3.3z"/></svg>`
 };
 export const viAnglesY: {
   name: 'angles_y';
@@ -277,28 +277,28 @@ export const viChevronDown: {
   data: string;
 } = {
   name: 'chevron_down',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M4.5 6.56A.75.75 0 015.56 5.5l4.26 4.26c.1.1.26.1.36 0l4.26-4.26a.75.75 0 011.06 1.06l-4.8 4.8a1 1 0 01-1.4 0l-4.8-4.8z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M4.5 6.06A.75.75 0 015.56 5l4.26 4.26c.1.1.26.1.36 0L14.44 5a.75.75 0 011.06 1.06l-4.8 4.8a1 1 0 01-1.4 0l-4.8-4.8z"/></svg>`
 };
 export const viChevronLeft: {
   name: 'chevron_left';
   data: string;
 } = {
   name: 'chevron_left',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M11.47 2.53a.75.75 0 111.06 1.06L8.27 7.85c-.1.1-.1.26 0 .36l4.26 4.26a.75.75 0 11-1.06 1.06l-4.8-4.8a1 1 0 010-1.4l4.8-4.8z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M11.97 2.53a.75.75 0 111.06 1.06L8.77 7.85c-.1.1-.1.26 0 .36l4.26 4.26a.75.75 0 11-1.06 1.06l-4.8-4.8a1 1 0 010-1.4l4.8-4.8z"/></svg>`
 };
 export const viChevronRight: {
   name: 'chevron_right';
   data: string;
 } = {
   name: 'chevron_right',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M8.53 13.53a.75.75 0 01-1.06-1.06l4.26-4.26c.1-.1.1-.26 0-.36L7.47 3.6a.75.75 0 111.06-1.06l4.8 4.8a1 1 0 010 1.4l-4.8 4.8z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M8.03 13.53a.75.75 0 01-1.06-1.06l4.26-4.26c.1-.1.1-.26 0-.36L6.97 3.6a.75.75 0 011.06-1.06l4.8 4.8a1 1 0 010 1.4l-4.8 4.8z"/></svg>`
 };
 export const viChevronUp: {
   name: 'chevron_up';
   data: string;
 } = {
   name: 'chevron_up',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M15.5 9.5a.75.75 0 01-1.06 1.06L10.18 6.3a.25.25 0 00-.36 0l-4.26 4.26A.75.75 0 114.5 9.5l4.8-4.8a1 1 0 011.4 0l4.8 4.8z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M15.5 10a.75.75 0 01-1.06 1.06L10.18 6.8a.25.25 0 00-.36 0l-4.26 4.26A.75.75 0 114.5 10l4.8-4.8a1 1 0 011.4 0l4.8 4.8z"/></svg>`
 };
 export const viChrome: {
   name: 'chrome';
