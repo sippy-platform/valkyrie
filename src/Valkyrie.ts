@@ -629,6 +629,13 @@ export const viGooglePlay: {
   name: 'google_play',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M12.08 7.37L5.61.88l8.23 4.72-1.76 1.77zM3.93.5c-.38.2-.64.56-.64 1.03v12.94c0 .47.26.83.64 1.03L11.45 8 3.93.5zm12.46 6.61l-1.73-1-1.93 1.9 1.93 1.88 1.76-1c.53-.42.53-1.36-.03-1.78zM5.6 15.12l8.23-4.72-1.76-1.76-6.47 6.48z"/></svg>`
 };
+export const viGripLines: {
+  name: 'grip_lines';
+  data: string;
+} = {
+  name: 'grip_lines',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M3.75 5a.75.75 0 000 1.5h12.5a.75.75 0 000-1.5H3.75zm0 4.5a.75.75 0 000 1.5h12.5a.75.75 0 000-1.5H3.75z"/></svg>`
+};
 export const viHeadset: {
   name: 'headset';
   data: string;
@@ -1231,6 +1238,13 @@ export const viVideoRecorder: {
   name: 'video_recorder',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M1 4c0-1.1.9-2 2-2h8a2 2 0 012 2v8a2 2 0 01-2 2H3a2 2 0 01-2-2V4zm2-.5a.5.5 0 00-.5.5v8c0 .28.22.5.5.5h8a.5.5 0 00.5-.5V4a.5.5 0 00-.5-.5H3z"/><path d="M17.53 13.22L14.5 11.6V9.9l3 1.6v-7l-3 1.6V4.4l3.03-1.62a1 1 0 011.47.89v8.66a1 1 0 01-1.47.89z"/></svg>`
 };
+export const viVideo: {
+  name: 'video';
+  data: string;
+} = {
+  name: 'video',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M5.25 5V2H3a.5.5 0 00-.5.5V5h2.75zm0 1.5H2.5v3h2.75v-3zm0 4.5H2.5v2.5c0 .28.22.5.5.5h2.25v-3zM3 15.5a2 2 0 01-2-2v-11c0-1.1.9-2 2-2h14a2 2 0 012 2v11a2 2 0 01-2 2H3zM13.25 14V2h-6.5v12h6.5zm1.5 0H17a.5.5 0 00.5-.5V11h-2.75v3zm0-4.5h2.75v-3h-2.75v3zm0-4.5h2.75V2.5A.5.5 0 0017 2h-2.25v3z"/></svg>`
+};
 export const viVoiceRecorder: {
   name: 'voice_recorder';
   data: string;
@@ -1385,6 +1399,7 @@ export type Valkyrie =
   | 'gauge'
   | 'gear'
   | 'google_play'
+  | 'grip_lines'
   | 'headset'
   | 'heart_broken'
   | 'heart_half'
@@ -1471,6 +1486,7 @@ export type Valkyrie =
   | 'users'
   | 'valkyrie'
   | 'video_recorder'
+  | 'video'
   | 'voice_recorder'
   | 'voicemail'
   | 'volume_0'
