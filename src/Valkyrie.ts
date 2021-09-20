@@ -1047,7 +1047,7 @@ export const viSippy: {
   data: string;
 } = {
   name: 'sippy',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M12.2 4.96l1.1-1.06A2.28 2.28 0 0010.07.67l-4.3 4.3h6.43zm3.46 4.64l-5.73 5.73a2.28 2.28 0 11-3.22-3.22l5.73-5.72a2.28 2.28 0 013.22 3.22zM11.9 5.85l-4.42 4.43H5.95a2.28 2.28 0 110-4.56h6.1l-.15.13z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M12.18 4.95l1.08-1.08a2.27 2.27 0 00-3.21-3.2l-4.3 4.28h6.44zm3.44 4.63l-5.7 5.7a2.27 2.27 0 11-3.21-3.2l5.7-5.71a2.27 2.27 0 013.21 3.2zm-3.74-3.75l-4.41 4.41H5.94a2.27 2.27 0 110-4.54h6.07l-.13.13z"/></svg>`
 };
 export const viSliders: {
   name: 'sliders';
