@@ -461,6 +461,13 @@ export const viEnvelope: {
   name: 'envelope',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M1.5 4c0-1.1.9-2 2-2h13a2 2 0 012 2v8a2 2 0 01-2 2h-13a2 2 0 01-2-2V4zm13.94-.5H4.56l4.56 4.56c.48.48 1.28.48 1.76 0l4.56-4.56zM3 4.06V12c0 .28.22.5.5.5h13a.5.5 0 00.5-.5V4.06l-5.06 5.06a2.75 2.75 0 01-3.88 0L3 4.06z"/></svg>`
 };
+export const viEthernet: {
+  name: 'ethernet';
+  data: string;
+} = {
+  name: 'ethernet',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M4.75 10.5c.41 0 .75.34.75.75v2.25h2v-2.25a.75.75 0 011.5 0v2.25h2v-2.25a.75.75 0 011.5 0v2.25h2v-2.25a.75.75 0 011.5 0v2.25h1.5v-6h-2A.5.5 0 0115 7V5h-2a.5.5 0 01-.5-.5v-2h-5v2A.5.5 0 017 5H5v2a.5.5 0 01-.5.5h-2v6H4v-2.25c0-.41.34-.75.75-.75zM1 14V7a1 1 0 011-1h1.5V4.5a1 1 0 011-1H6V2a1 1 0 011-1h6a1 1 0 011 1v1.5h1.5a1 1 0 011 1V6H18a1 1 0 011 1v7a1 1 0 01-1 1H2a1 1 0 01-1-1z"/></svg>`
+};
 export const viEuro: {
   name: 'euro';
   data: string;
@@ -1301,6 +1308,13 @@ export const viWallpaper: {
   name: 'wallpaper',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M8.87 5.31l5.2 5.19h-2.13L7.8 6.37a1.25 1.25 0 00-1.72-.04L3.5 8.66V6.64l1.59-1.43a2.75 2.75 0 013.78.1zM13.5 7a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"/><path fill-rule="evenodd" d="M1 2c0-1.1.9-2 2-2h14a2 2 0 012 2v9a2 2 0 01-2 2h-6.25v1.5h2a.75.75 0 010 1.5h-5.5a.75.75 0 010-1.5h2V13H3a2 2 0 01-2-2V2zm2-.5a.5.5 0 00-.5.5v9c0 .28.22.5.5.5h14a.5.5 0 00.5-.5V2a.5.5 0 00-.5-.5H3z"/></svg>`
 };
+export const viWindow: {
+  name: 'window';
+  data: string;
+} = {
+  name: 'window',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"/>`
+};
 export const viXMark: {
   name: 'x_mark';
   data: string;
@@ -1375,6 +1389,7 @@ export type Valkyrie =
   | 'edge'
   | 'ellipsis'
   | 'envelope'
+  | 'ethernet'
   | 'euro'
   | 'expand'
   | 'eye_slashed'
@@ -1495,6 +1510,7 @@ export type Valkyrie =
   | 'volume_3'
   | 'volume_none'
   | 'wallpaper'
+  | 'window'
   | 'x_mark';
 export interface ValkyrieIcon {
   name: Valkyrie;
