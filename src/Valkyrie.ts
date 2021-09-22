@@ -1313,7 +1313,7 @@ export const viWindow: {
   data: string;
 } = {
   name: 'window',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"/>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M3 0a2 2 0 00-2 2v12c0 1.1.9 2 2 2h14a2 2 0 002-2V2a2 2 0 00-2-2H3zm-.5 14V3.5h15V14a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5zm10-12.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm1.75.75a.75.75 0 110-1.5.75.75 0 010 1.5zm2.5 0a.75.75 0 110-1.5.75.75 0 010 1.5z"/></svg>`
 };
 export const viXMark: {
   name: 'x_mark';
