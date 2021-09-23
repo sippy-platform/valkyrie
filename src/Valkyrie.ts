@@ -991,7 +991,7 @@ export const viSearch: {
   data: string;
 } = {
   name: 'search',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M17 6a5 5 0 01-7.97 4.03L4.06 15A.75.75 0 113 13.94l4.97-4.97A5 5 0 1117 6zm-1.5 0a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M17 6.5a5.5 5.5 0 01-8.82 4.38L4.06 15A.75.75 0 113 13.94l4.12-4.12A5.5 5.5 0 1117 6.5zm-1.5 0a4 4 0 10-8 0 4 4 0 008 0z"/></svg>`
 };
 export const viSend: {
   name: 'send';
