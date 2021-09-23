@@ -1320,7 +1320,7 @@ export const viXMark: {
   data: string;
 } = {
   name: 'x_mark',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M10 9.06l3.89 3.89a.75.75 0 001.06-1.06L11.06 8l3.89-3.89a.75.75 0 10-1.06-1.06L10 6.94 6.11 3.05a.75.75 0 00-1.06 1.06L8.94 8l-3.89 3.89a.75.75 0 101.06 1.06L10 9.06z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M11.06 8l3.89 3.89c.3.3.3.77 0 1.06-.3.3-.77.3-1.06 0L10 9.06l-3.89 3.89c-.3.3-.77.3-1.06 0a.75.75 0 010-1.06L8.94 8 5.05 4.11a.75.75 0 011.06-1.06L10 6.94l3.89-3.89c.3-.3.77-.3 1.06 0 .3.3.3.77 0 1.06L11.06 8z"/></svg>`
 };
 export type Valkyrie =
   | 'address_book'
