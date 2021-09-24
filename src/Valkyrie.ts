@@ -160,6 +160,13 @@ export const viArrowUp: {
   name: 'arrow_up',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M10.75 3.87v10.44a.75.75 0 01-1.5 0V3.87l-3.69 3.7A.75.75 0 014.5 6.5l4.8-4.8a1 1 0 011.4 0l4.8 4.8a.75.75 0 11-1.06 1.06l-3.69-3.69z"/></svg>`
 };
+export const viAsterisk: {
+  name: 'asterisk';
+  data: string;
+} = {
+  name: 'asterisk',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M10 15a.75.75 0 01-.75-.75V9.3l-4.29 2.47a.75.75 0 01-.75-1.3L8.5 8 4.21 5.52a.75.75 0 11.75-1.3L9.25 6.7V1.75a.75.75 0 011.5 0V6.7l4.29-2.47a.75.75 0 01.75 1.3L11.5 8l4.29 2.48a.75.75 0 11-.75 1.3L10.75 9.3v4.95c0 .41-.34.75-.75.75z"/></svg>`
+};
 export const viAt: {
   name: 'at';
   data: string;
@@ -1208,7 +1215,7 @@ export const viUserLock: {
   data: string;
 } = {
   name: 'user_lock',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M7.86 7.5a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5zm0-6a2.25 2.25 0 110 4.5 2.25 2.25 0 010-4.5z"/><path d="M10.56 15.53a2.5 2.5 0 01-.06-.53v-1.06c-.8.36-1.7.56-2.63.56h-.03a6.48 6.48 0 01-5.05-2.42 1.3 1.3 0 01-.29-.7c0-.17.04-.21.06-.23.19-.17.42-.29.68-.33 2.46-.43 4.96-.5 7.44-.25.24-.6.7-1.09 1.3-1.35a28.6 28.6 0 00-9 .12c-.54.1-1.03.34-1.42.7-.85.76-.65 2.09.07 2.98A7.98 7.98 0 007.83 16h.05c.94 0 1.84-.17 2.68-.47z"/><path fill-rule="evenodd" d="M17.5 10.5V10a2 2 0 10-4 0v.5H13a1 1 0 00-1 1V15a1 1 0 001 1h5a1 1 0 001-1v-3.5a1 1 0 00-1-1h-.5zm-1.5 0V10a.5.5 0 00-1 0v.5h1zm.25 2.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M7.86 7.5a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5zm0-6a2.25 2.25 0 110 4.5 2.25 2.25 0 010-4.5z"/><path d="M10.56 15.53a2.5 2.5 0 01-.06-.53v-1.06c-.8.36-1.7.56-2.63.56h-.03a6.48 6.48 0 01-5.05-2.42 1.3 1.3 0 01-.29-.7c0-.17.04-.21.06-.23.19-.17.42-.29.68-.33 2.54-.44 5.13-.51 7.69-.22.16-.24.37-.45.6-.63.04-.27.1-.53.2-.79-2.9-.39-5.85-.34-8.74.16-.55.1-1.04.34-1.43.7-.85.76-.65 2.09.07 2.98A7.98 7.98 0 007.83 16h.05c.94 0 1.84-.17 2.68-.47z"/><path fill-rule="evenodd" d="M18 11v-.5a2.5 2.5 0 00-5 0v.5a1 1 0 00-1 1v3a1 1 0 001 1h5a1 1 0 001-1v-3a1 1 0 00-1-1zm-1.5 0h-2v-.5a1 1 0 112 0v.5zm-.25 2.5a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/></svg>`
 };
 export const viUserPlus: {
   name: 'user_plus';
@@ -1346,6 +1353,7 @@ export type Valkyrie =
   | 'arrow_up_to_line'
   | 'arrow_up_wide_short'
   | 'arrow_up'
+  | 'asterisk'
   | 'at'
   | 'backward'
   | 'bars'
