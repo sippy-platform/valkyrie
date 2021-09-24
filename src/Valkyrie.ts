@@ -160,6 +160,13 @@ export const viArrowUp: {
   name: 'arrow_up',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M10.75 3.87v10.44a.75.75 0 01-1.5 0V3.87l-3.69 3.7A.75.75 0 014.5 6.5l4.8-4.8a1 1 0 011.4 0l4.8 4.8a.75.75 0 11-1.06 1.06l-3.69-3.69z"/></svg>`
 };
+export const viAstrisk: {
+  name: 'astrisk';
+  data: string;
+} = {
+  name: 'astrisk',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M10 15a.75.75 0 01-.75-.75V9.3l-4.29 2.47a.75.75 0 01-.75-1.3L8.5 8 4.21 5.52a.75.75 0 11.75-1.3L9.25 6.7V1.75a.75.75 0 011.5 0V6.7l4.29-2.47a.75.75 0 01.75 1.3L11.5 8l4.29 2.48a.75.75 0 11-.75 1.3L10.75 9.3v4.95c0 .41-.34.75-.75.75z"/></svg>`
+};
 export const viAt: {
   name: 'at';
   data: string;
@@ -1346,6 +1353,7 @@ export type Valkyrie =
   | 'arrow_up_to_line'
   | 'arrow_up_wide_short'
   | 'arrow_up'
+  | 'astrisk'
   | 'at'
   | 'backward'
   | 'bars'
