@@ -1,9 +1,9 @@
 @font-face {
     font-family: "Valkyrie";
-    src: url("./Valkyrie.ttf?11a77dcfc07fd5ea4b57cb0067be680b") format("truetype"),
-url("./Valkyrie.woff?11a77dcfc07fd5ea4b57cb0067be680b") format("woff"),
-url("./Valkyrie.woff2?11a77dcfc07fd5ea4b57cb0067be680b") format("woff2"),
-url("./Valkyrie.eot?11a77dcfc07fd5ea4b57cb0067be680b#iefix") format("embedded-opentype");
+    src: url("./Valkyrie.ttf?970e2943c2b05124f502e517598204ff") format("truetype"),
+url("./Valkyrie.woff?970e2943c2b05124f502e517598204ff") format("woff"),
+url("./Valkyrie.woff2?970e2943c2b05124f502e517598204ff") format("woff2"),
+url("./Valkyrie.eot?970e2943c2b05124f502e517598204ff#iefix") format("embedded-opentype");
 }
 
 .vi {
@@ -87,7 +87,7 @@ url("./Valkyrie.eot?11a77dcfc07fd5ea4b57cb0067be680b#iefix") format("embedded-op
 .vi.vi-arrow-up:before {
     content: "\f117";
 }
-.vi.vi-astrisk:before {
+.vi.vi-asterisk:before {
     content: "\f118";
 }
 .vi.vi-at:before {
