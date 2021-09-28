@@ -1,6 +1,6 @@
 {
   "name": "@optimisegroup/valkyrie",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "The iconography of Sippy.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",

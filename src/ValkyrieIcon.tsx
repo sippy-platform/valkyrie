@@ -10,10 +10,12 @@ interface ValkyrieProps {
 export default function ValkyrieIcon({
   icon,
   className,
-  spin = false
+  spin = false,
+  ...props
 }: ValkyrieProps) {
   return (
     <span
+      {...props}
       className={
         clsx(
           'vi',
