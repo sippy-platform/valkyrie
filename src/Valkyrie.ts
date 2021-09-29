@@ -1147,6 +1147,13 @@ export const viSwatchbook: {
   name: 'swatchbook',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M6.5 12.5a1 1 0 11-2 0 1 1 0 012 0z"/><path fill-rule="evenodd" d="M9 4V2a2 2 0 00-2-2H4a2 2 0 00-2 2v10.5A3.5 3.5 0 005.5 16H16a2 2 0 002-2v-3a2 2 0 00-2-2h-2.09l-1.49 1.5H16c.28 0 .5.22.5.5v3a.5.5 0 01-.5.5H8.44l-.32.32 7.28-7.31c.78-.79.78-2.06 0-2.84l-2.12-2.13a2 2 0 00-2.83 0L9 3.99zM3.5 5.5h4V8h-4V5.5zm0-1.5V2c0-.28.22-.5.5-.5h3c.28 0 .5.22.5.5v2h-4zM9 11.81v-5.7l2.51-2.52c.2-.2.51-.2.7 0l2.13 2.13c.2.2.2.53 0 .73L9 11.81zM3.5 9.5h4v3a2 2 0 11-4 0v-3z"/></svg>`
 };
+export const viTableClock: {
+  name: 'table_clock';
+  data: string;
+} = {
+  name: 'table_clock',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M3 0a2 2 0 00-2 2v12c0 1.1.9 2 2 2h8.23a5.52 5.52 0 01-1.13-1.5h-.35v-.86a5.5 5.5 0 01.23-3.89h-.23v-3.5h5.75v.27c.52.05 1.03.17 1.5.35V2a2 2 0 00-2-2H3zm12 1.5c.28 0 .5.22.5.5v2.75H9.75V1.5H15zm-6.75 13H3a.5.5 0 01-.5-.5v-2.75h5.75v3.25zm0-4.75H2.5v-3.5h5.75v3.5zm-5.75-5V2c0-.28.22-.5.5-.5h5.25v3.25H2.5z"/><path fill-rule="evenodd" d="M15 16a4 4 0 100-8 4 4 0 000 8zm.75-5.75v1.44l.5.5a.75.75 0 01-1.06 1.06l-.65-.65a1 1 0 01-.29-.7v-1.65a.75.75 0 011.5 0z"/></svg>`
+};
 export const viTable: {
   name: 'table';
   data: string;
@@ -1160,13 +1167,6 @@ export const viTag: {
 } = {
   name: 'tag',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M4.5 7.38V2.5h4.88l6.5 6.5L11 13.88l-6.5-6.5zM3 2v5.59c0 .26.1.52.3.7l7 7a1 1 0 001.4 0l5.6-5.58a1 1 0 000-1.42l-7-7A1 1 0 009.58 1H4a1 1 0 00-1 1z"/><path d="M8 5a1 1 0 11-2 0 1 1 0 012 0z"/></svg>`
-};
-export const viTimetable: {
-  name: 'timetable';
-  data: string;
-} = {
-  name: 'timetable',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M3 0a2 2 0 00-2 2v12c0 1.1.9 2 2 2h8.23a5.52 5.52 0 01-1.13-1.5h-.35v-.86a5.5 5.5 0 01.23-3.89h-.23v-3.5h5.75v.27c.52.05 1.03.17 1.5.35V2a2 2 0 00-2-2H3zm12 1.5c.28 0 .5.22.5.5v2.75H9.75V1.5H15zm-6.75 13H3a.5.5 0 01-.5-.5v-2.75h5.75v3.25zm0-4.75H2.5v-3.5h5.75v3.5zm-5.75-5V2c0-.28.22-.5.5-.5h5.25v3.25H2.5z"/><path fill-rule="evenodd" d="M15 16a4 4 0 100-8 4 4 0 000 8zm.75-5.75v1.44l.5.5a.75.75 0 01-1.06 1.06l-.65-.65a1 1 0 01-.29-.7v-1.65a.75.75 0 011.5 0z"/></svg>`
 };
 export const viTowerBroadcast: {
   name: 'tower_broadcast';
@@ -1501,9 +1501,9 @@ export type Valkyrie =
   | 'store'
   | 'sun'
   | 'swatchbook'
+  | 'table_clock'
   | 'table'
   | 'tag'
-  | 'timetable'
   | 'tower_broadcast'
   | 'trash_can'
   | 'triangle_exclamation'
