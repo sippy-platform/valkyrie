@@ -1271,7 +1271,7 @@ export const viVoicemail: {
   data: string;
 } = {
   name: 'voicemail',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M7.12 10.5A4 4 0 104 12h12a4 4 0 10-3.12-1.5H7.12zM4 10.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm12 0a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M7.85 11a4.5 4.5 0 10-3.35 1.5h11a4.5 4.5 0 10-3.35-1.5h-4.3zM7.5 8a3 3 0 11-6 0 3 3 0 016 0zm8 3a3 3 0 110-6 3 3 0 010 6z"/></svg>`
 };
 export const viVolume0: {
   name: 'volume_0';
