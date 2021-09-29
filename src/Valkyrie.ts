@@ -104,6 +104,13 @@ export const viArrowLeft: {
   name: 'arrow_left',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M5.84 7.28h10.44a.75.75 0 010 1.5H5.84l3.69 3.69a.75.75 0 11-1.06 1.06l-4.8-4.8a1 1 0 010-1.4l4.8-4.8a.75.75 0 111.06 1.06L5.84 7.28z"/></svg>`
 };
+export const viArrowPointer: {
+  name: 'arrow_pointer';
+  data: string;
+} = {
+  name: 'arrow_pointer',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M8.95 10.6l-2.64 2.95a.75.75 0 01-1.31-.5V1.7c0-.66.77-1 1.25-.56l8.31 7.56a.74.74 0 01-.5 1.3h-3.74l1.8 4a.75.75 0 11-1.36.62l-1.8-4.01zm-.12-2.1h3.29L6.5 3.4v7.7l2.33-2.6z"/></svg>`
+};
 export const viArrowRightFromBracket: {
   name: 'arrow_right_from_bracket';
   data: string;
@@ -1327,7 +1334,7 @@ export const viXMark: {
   data: string;
 } = {
   name: 'x_mark',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M11.06 8l3.89 3.89c.3.3.3.77 0 1.06-.3.3-.77.3-1.06 0L10 9.06l-3.89 3.89c-.3.3-.77.3-1.06 0a.75.75 0 010-1.06L8.94 8 5.05 4.11a.75.75 0 011.06-1.06L10 6.94l3.89-3.89c.3-.3.77-.3 1.06 0 .3.3.3.77 0 1.06L11.06 8z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M11.06 8l3.89 3.89a.75.75 0 11-1.06 1.06L10 9.06l-3.89 3.89a.75.75 0 01-1.06-1.06L8.94 8 5.05 4.11a.75.75 0 011.06-1.06L10 6.94l3.89-3.89a.75.75 0 011.06 1.06L11.06 8z"/></svg>`
 };
 export type Valkyrie =
   | 'address_book'
@@ -1345,6 +1352,7 @@ export type Valkyrie =
   | 'arrow_left_to_bracket'
   | 'arrow_left_to_line'
   | 'arrow_left'
+  | 'arrow_pointer'
   | 'arrow_right_from_bracket'
   | 'arrow_right_to_bracket'
   | 'arrow_right_to_line'
