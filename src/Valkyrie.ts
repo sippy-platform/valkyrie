@@ -1159,7 +1159,7 @@ export const viTag: {
   data: string;
 } = {
   name: 'tag',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M6 4.5v1.4c0 .22.27.33.43.17l1.64-1.64A.25.25 0 007.9 4H6.5a.5.5 0 00-.5.5z"/><path fill-rule="evenodd" d="M3 7.59V2a1 1 0 011-1h5.59a1 1 0 01.7.3l7 7a1 1 0 010 1.4l-5.58 5.6a1 1 0 01-1.42 0l-7-7A1 1 0 013 7.58zm8 6.29L15.88 9l-6.5-6.5H4.5v4.88l6.5 6.5z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path fill-rule="evenodd" d="M4.5 7.38V2.5h4.88l6.5 6.5L11 13.88l-6.5-6.5zM3 2v5.59c0 .26.1.52.3.7l7 7a1 1 0 001.4 0l5.6-5.58a1 1 0 000-1.42l-7-7A1 1 0 009.58 1H4a1 1 0 00-1 1z"/><path d="M8 5a1 1 0 11-2 0 1 1 0 012 0z"/></svg>`
 };
 export const viTimetable: {
   name: 'timetable';
