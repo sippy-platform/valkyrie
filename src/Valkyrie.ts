@@ -991,7 +991,7 @@ export const viPower: {
   data: string;
 } = {
   name: 'power',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M10 0a.75.75 0 00-.75.75v3.5a.75.75 0 001.5 0V.75A.75.75 0 0010 0z"/><path d="M3 8a7 7 0 013.85-6.26c.37-.18.8.02.95.4.15.4-.05.82-.41 1.02a5.5 5.5 0 105.22 0c-.36-.2-.56-.63-.41-1.01.14-.4.58-.6.95-.4A7 7 0 113 8z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16"><path d="M10 0a.75.75 0 00-.75.75v5a.75.75 0 001.5 0v-5A.75.75 0 0010 0z"/><path d="M3 8a6.99 6.99 0 012.68-5.5c.32-.26.79-.15 1 .2.23.35.12.81-.2 1.08A5.49 5.49 0 0010 13.5a5.5 5.5 0 003.52-9.72c-.32-.27-.43-.73-.2-1.08.21-.35.68-.46 1-.2A6.99 6.99 0 0110 15a7 7 0 01-7-7z"/></svg>`
 };
 export const viPuzzlePiece: {
   name: 'puzzle_piece';
