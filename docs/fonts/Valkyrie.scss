@@ -1,9 +1,9 @@
 @font-face {
     font-family: "Valkyrie";
-    src: url("./Valkyrie.ttf?970e2943c2b05124f502e517598204ff") format("truetype"),
-url("./Valkyrie.woff?970e2943c2b05124f502e517598204ff") format("woff"),
-url("./Valkyrie.woff2?970e2943c2b05124f502e517598204ff") format("woff2"),
-url("./Valkyrie.eot?970e2943c2b05124f502e517598204ff#iefix") format("embedded-opentype");
+    src: url("./Valkyrie.ttf?9ce07ea4cccea374cc57427c0cf1e8b5") format("truetype"),
+url("./Valkyrie.woff?9ce07ea4cccea374cc57427c0cf1e8b5") format("woff"),
+url("./Valkyrie.woff2?9ce07ea4cccea374cc57427c0cf1e8b5") format("woff2"),
+url("./Valkyrie.eot?9ce07ea4cccea374cc57427c0cf1e8b5#iefix") format("embedded-opentype");
 }
 
 .vi {
@@ -63,235 +63,235 @@ url("./Valkyrie.eot?970e2943c2b05124f502e517598204ff#iefix") format("embedded-op
 .vi.vi-arrow-left:before {
     content: "\f10f";
 }
-.vi.vi-arrow-right-from-bracket:before {
+.vi.vi-arrow-pointer:before {
     content: "\f110";
 }
-.vi.vi-arrow-right-to-bracket:before {
+.vi.vi-arrow-right-from-bracket:before {
     content: "\f111";
 }
-.vi.vi-arrow-right-to-line:before {
+.vi.vi-arrow-right-to-bracket:before {
     content: "\f112";
 }
-.vi.vi-arrow-right:before {
+.vi.vi-arrow-right-to-line:before {
     content: "\f113";
 }
-.vi.vi-arrow-up-short-wide:before {
+.vi.vi-arrow-right:before {
     content: "\f114";
 }
-.vi.vi-arrow-up-to-line:before {
+.vi.vi-arrow-rotate-right:before {
     content: "\f115";
 }
-.vi.vi-arrow-up-wide-short:before {
+.vi.vi-arrow-up-short-wide:before {
     content: "\f116";
 }
-.vi.vi-arrow-up:before {
+.vi.vi-arrow-up-to-line:before {
     content: "\f117";
 }
-.vi.vi-asterisk:before {
+.vi.vi-arrow-up-wide-short:before {
     content: "\f118";
 }
-.vi.vi-at:before {
+.vi.vi-arrow-up:before {
     content: "\f119";
 }
-.vi.vi-backward:before {
+.vi.vi-arrows-rotate-right:before {
     content: "\f11a";
 }
-.vi.vi-bars:before {
+.vi.vi-asterisk:before {
     content: "\f11b";
 }
-.vi.vi-blf:before {
+.vi.vi-at:before {
     content: "\f11c";
 }
-.vi.vi-book:before {
+.vi.vi-backward:before {
     content: "\f11d";
 }
-.vi.vi-box-full:before {
+.vi.vi-bars:before {
     content: "\f11e";
 }
-.vi.vi-bug:before {
+.vi.vi-blf:before {
     content: "\f11f";
 }
-.vi.vi-building:before {
+.vi.vi-book:before {
     content: "\f120";
 }
-.vi.vi-calendar-holidays:before {
+.vi.vi-box-open-full:before {
     content: "\f121";
 }
-.vi.vi-calendar:before {
+.vi.vi-bug:before {
     content: "\f122";
 }
-.vi.vi-call-incoming:before {
+.vi.vi-building:before {
     content: "\f123";
 }
-.vi.vi-call-log:before {
+.vi.vi-calendar-stars:before {
     content: "\f124";
 }
-.vi.vi-call-outgoing:before {
+.vi.vi-calendar:before {
     content: "\f125";
 }
-.vi.vi-call:before {
+.vi.vi-chart-pie:before {
     content: "\f126";
 }
-.vi.vi-chart-pie:before {
+.vi.vi-check:before {
     content: "\f127";
 }
-.vi.vi-check:before {
+.vi.vi-chevron-down:before {
     content: "\f128";
 }
-.vi.vi-chevron-down:before {
+.vi.vi-chevron-left:before {
     content: "\f129";
 }
-.vi.vi-chevron-left:before {
+.vi.vi-chevron-right:before {
     content: "\f12a";
 }
-.vi.vi-chevron-right:before {
+.vi.vi-chevron-up:before {
     content: "\f12b";
 }
-.vi.vi-chevron-up:before {
+.vi.vi-chrome:before {
     content: "\f12c";
 }
-.vi.vi-chrome:before {
+.vi.vi-circle-check:before {
     content: "\f12d";
 }
-.vi.vi-circle-check:before {
+.vi.vi-circle-exclamation:before {
     content: "\f12e";
 }
-.vi.vi-circle-danger:before {
+.vi.vi-circle-info:before {
     content: "\f12f";
 }
-.vi.vi-circle-info:before {
+.vi.vi-circle-plus:before {
     content: "\f130";
 }
-.vi.vi-circle-plus:before {
+.vi.vi-circle-question:before {
     content: "\f131";
 }
-.vi.vi-circle-question:before {
+.vi.vi-circle-user:before {
     content: "\f132";
 }
-.vi.vi-circle-user:before {
+.vi.vi-circle-xmark:before {
     content: "\f133";
 }
-.vi.vi-circle-warning:before {
+.vi.vi-city:before {
     content: "\f134";
 }
-.vi.vi-city:before {
+.vi.vi-clock-rotate-left:before {
     content: "\f135";
 }
 .vi.vi-clock:before {
     content: "\f136";
 }
-.vi.vi-color-swatch:before {
+.vi.vi-compass:before {
     content: "\f137";
 }
-.vi.vi-compass:before {
+.vi.vi-compress:before {
     content: "\f138";
 }
-.vi.vi-compress:before {
+.vi.vi-copy:before {
     content: "\f139";
 }
-.vi.vi-copy:before {
+.vi.vi-devices:before {
     content: "\f13a";
 }
-.vi.vi-dashboard:before {
+.vi.vi-display:before {
     content: "\f13b";
 }
-.vi.vi-desk-phone:before {
+.vi.vi-earth:before {
     content: "\f13c";
 }
-.vi.vi-desktop:before {
+.vi.vi-eclipse:before {
     content: "\f13d";
 }
-.vi.vi-devices:before {
+.vi.vi-edge:before {
     content: "\f13e";
 }
-.vi.vi-earth:before {
+.vi.vi-ellipsis:before {
     content: "\f13f";
 }
-.vi.vi-eclipse:before {
+.vi.vi-envelope:before {
     content: "\f140";
 }
-.vi.vi-edge:before {
+.vi.vi-ethernet:before {
     content: "\f141";
 }
-.vi.vi-ellipsis:before {
+.vi.vi-euro:before {
     content: "\f142";
 }
-.vi.vi-envelope:before {
+.vi.vi-expand:before {
     content: "\f143";
 }
-.vi.vi-ethernet:before {
+.vi.vi-eye-slash:before {
     content: "\f144";
 }
-.vi.vi-euro:before {
+.vi.vi-eye:before {
     content: "\f145";
 }
-.vi.vi-expand:before {
+.vi.vi-facebook-messenger:before {
     content: "\f146";
 }
-.vi.vi-eye-slashed:before {
+.vi.vi-facebook:before {
     content: "\f147";
 }
-.vi.vi-eye:before {
+.vi.vi-fast-backward:before {
     content: "\f148";
 }
-.vi.vi-facebook-messenger:before {
+.vi.vi-fast-forward:before {
     content: "\f149";
 }
-.vi.vi-facebook:before {
+.vi.vi-fax:before {
     content: "\f14a";
 }
-.vi.vi-fast-backward:before {
+.vi.vi-file:before {
     content: "\f14b";
 }
-.vi.vi-fast-forward:before {
+.vi.vi-files:before {
     content: "\f14c";
 }
-.vi.vi-fax:before {
+.vi.vi-film:before {
     content: "\f14d";
 }
-.vi.vi-file:before {
+.vi.vi-filter-plus:before {
     content: "\f14e";
 }
-.vi.vi-files:before {
+.vi.vi-filter-xmark:before {
     content: "\f14f";
 }
-.vi.vi-filter-plus:before {
+.vi.vi-filter:before {
     content: "\f150";
 }
-.vi.vi-filter-x-mark:before {
+.vi.vi-fingerprint:before {
     content: "\f151";
 }
-.vi.vi-filter:before {
+.vi.vi-firefox:before {
     content: "\f152";
 }
-.vi.vi-fingerprint:before {
+.vi.vi-flag-checkered:before {
     content: "\f153";
 }
-.vi.vi-firefox:before {
+.vi.vi-flag:before {
     content: "\f154";
 }
-.vi.vi-flag-checkered:before {
+.vi.vi-floppy-disk:before {
     content: "\f155";
 }
-.vi.vi-flag:before {
+.vi.vi-folder:before {
     content: "\f156";
 }
-.vi.vi-floppy-disk:before {
+.vi.vi-forward:before {
     content: "\f157";
 }
-.vi.vi-folder:before {
+.vi.vi-gauge:before {
     content: "\f158";
 }
-.vi.vi-forward:before {
+.vi.vi-gear:before {
     content: "\f159";
 }
-.vi.vi-gauge:before {
+.vi.vi-gift:before {
     content: "\f15a";
 }
-.vi.vi-gear:before {
+.vi.vi-google-play:before {
     content: "\f15b";
 }
-.vi.vi-google-play:before {
+.vi.vi-grid:before {
     content: "\f15c";
 }
 .vi.vi-grip-lines:before {
@@ -300,7 +300,7 @@ url("./Valkyrie.eot?970e2943c2b05124f502e517598204ff#iefix") format("embedded-op
 .vi.vi-headset:before {
     content: "\f15e";
 }
-.vi.vi-heart-broken:before {
+.vi.vi-heart-crack:before {
     content: "\f15f";
 }
 .vi.vi-heart-half:before {
@@ -309,67 +309,67 @@ url("./Valkyrie.eot?970e2943c2b05124f502e517598204ff#iefix") format("embedded-op
 .vi.vi-heart:before {
     content: "\f161";
 }
-.vi.vi-history:before {
+.vi.vi-house:before {
     content: "\f162";
 }
-.vi.vi-home:before {
+.vi.vi-id-card:before {
     content: "\f163";
 }
-.vi.vi-id-card:before {
+.vi.vi-image:before {
     content: "\f164";
 }
-.vi.vi-image:before {
+.vi.vi-laptop:before {
     content: "\f165";
 }
-.vi.vi-ivr:before {
+.vi.vi-layers-plus:before {
     content: "\f166";
 }
-.vi.vi-laptop:before {
+.vi.vi-layers:before {
     content: "\f167";
 }
-.vi.vi-layers-plus:before {
+.vi.vi-lightbulb-on:before {
     content: "\f168";
 }
-.vi.vi-layers:before {
+.vi.vi-lightbulb:before {
     content: "\f169";
 }
-.vi.vi-lightbulb-on:before {
+.vi.vi-link-slash:before {
     content: "\f16a";
 }
-.vi.vi-lightbulb:before {
+.vi.vi-link:before {
     content: "\f16b";
 }
-.vi.vi-link:before {
+.vi.vi-linkedin:before {
     content: "\f16c";
 }
-.vi.vi-linkedin:before {
+.vi.vi-list-check:before {
     content: "\f16d";
 }
-.vi.vi-list-check:before {
+.vi.vi-list-ol:before {
     content: "\f16e";
 }
-.vi.vi-list-ol:before {
+.vi.vi-list:before {
     content: "\f16f";
 }
-.vi.vi-list-ul:before {
+.vi.vi-location-pin-dot:before {
     content: "\f170";
 }
-.vi.vi-lock:before {
+.vi.vi-location-pin-slash:before {
     content: "\f171";
 }
-.vi.vi-logs:before {
+.vi.vi-location-pin:before {
     content: "\f172";
 }
-.vi.vi-map-marker-dot:before {
+.vi.vi-location-pins-route:before {
     content: "\f173";
 }
-.vi.vi-map-marker-route:before {
+.vi.vi-lock:before {
     content: "\f174";
 }
-.vi.vi-map-marker-slashed:before {
+.vi.vi-logs:before {
     content: "\f175";
 }
-.vi.vi-map-marker:before {
+.vi.vi-magnifying-glass:before {
     content: "\f176";
 }
 .vi.vi-message-pen:before {
@@ -384,181 +384,181 @@ url("./Valkyrie.eot?970e2943c2b05124f502e517598204ff#iefix") format("embedded-op
 .vi.vi-message:before {
     content: "\f17a";
 }
-.vi.vi-moon:before {
+.vi.vi-microphone:before {
     content: "\f17b";
 }
-.vi.vi-music:before {
+.vi.vi-moon:before {
     content: "\f17c";
 }
-.vi.vi-network:before {
+.vi.vi-music:before {
     content: "\f17d";
 }
-.vi.vi-parachute:before {
+.vi.vi-network:before {
     content: "\f17e";
 }
-.vi.vi-pause:before {
+.vi.vi-numpad:before {
     content: "\f17f";
 }
-.vi.vi-pen:before {
+.vi.vi-paper-plane-top:before {
     content: "\f180";
 }
-.vi.vi-phone-gear:before {
+.vi.vi-parachute-box:before {
     content: "\f181";
 }
-.vi.vi-phone:before {
+.vi.vi-pause:before {
     content: "\f182";
 }
-.vi.vi-play-pause:before {
+.vi.vi-pen:before {
     content: "\f183";
 }
-.vi.vi-play:before {
+.vi.vi-phone-arrow-down-left:before {
     content: "\f184";
 }
-.vi.vi-plus:before {
+.vi.vi-phone-arrow-up-right:before {
     content: "\f185";
 }
-.vi.vi-power:before {
+.vi.vi-phone-gear:before {
     content: "\f186";
 }
-.vi.vi-present:before {
+.vi.vi-phone-list:before {
     content: "\f187";
 }
-.vi.vi-provider:before {
+.vi.vi-phone-office:before {
     content: "\f188";
 }
-.vi.vi-puzzle:before {
+.vi.vi-phone-volume:before {
     content: "\f189";
 }
-.vi.vi-refresh:before {
+.vi.vi-phone:before {
     content: "\f18a";
 }
-.vi.vi-reload:before {
+.vi.vi-play-pause:before {
     content: "\f18b";
 }
-.vi.vi-repeat-1:before {
+.vi.vi-play:before {
     content: "\f18c";
 }
-.vi.vi-repeat:before {
+.vi.vi-plus:before {
     content: "\f18d";
 }
-.vi.vi-safari:before {
+.vi.vi-power:before {
     content: "\f18e";
 }
-.vi.vi-search:before {
+.vi.vi-puzzle-piece:before {
     content: "\f18f";
 }
-.vi.vi-send:before {
+.vi.vi-repeat-1:before {
     content: "\f190";
 }
-.vi.vi-server:before {
+.vi.vi-repeat:before {
     content: "\f191";
 }
-.vi.vi-shield-danger:before {
+.vi.vi-safari:before {
     content: "\f192";
 }
-.vi.vi-shield-keyhole:before {
+.vi.vi-server:before {
     content: "\f193";
 }
-.vi.vi-shield-plus:before {
+.vi.vi-shield-keyhole:before {
     content: "\f194";
 }
-.vi.vi-shield:before {
+.vi.vi-shield-plus:before {
     content: "\f195";
 }
-.vi.vi-shuffle:before {
+.vi.vi-shield-xmark:before {
     content: "\f196";
 }
-.vi.vi-sim-card:before {
+.vi.vi-shield:before {
     content: "\f197";
 }
-.vi.vi-sippy:before {
+.vi.vi-shuffle:before {
     content: "\f198";
 }
-.vi.vi-sliders:before {
+.vi.vi-sim-card:before {
     content: "\f199";
 }
-.vi.vi-smartphone-divert:before {
+.vi.vi-sippy:before {
     content: "\f19a";
 }
-.vi.vi-smartphone:before {
+.vi.vi-sliders:before {
     content: "\f19b";
 }
-.vi.vi-sound-wave:before {
+.vi.vi-smartphone-divert:before {
     content: "\f19c";
 }
-.vi.vi-spinner-third:before {
+.vi.vi-smartphone:before {
     content: "\f19d";
 }
-.vi.vi-spy:before {
+.vi.vi-spinner-third:before {
     content: "\f19e";
 }
-.vi.vi-star:before {
+.vi.vi-spy:before {
     content: "\f19f";
 }
-.vi.vi-stop:before {
+.vi.vi-star:before {
     content: "\f1a0";
 }
-.vi.vi-store:before {
+.vi.vi-stop:before {
     content: "\f1a1";
 }
-.vi.vi-sun:before {
+.vi.vi-store:before {
     content: "\f1a2";
 }
-.vi.vi-table:before {
+.vi.vi-sun:before {
     content: "\f1a3";
 }
-.vi.vi-tag:before {
+.vi.vi-swatchbook:before {
     content: "\f1a4";
 }
-.vi.vi-timetable:before {
+.vi.vi-table-clock:before {
     content: "\f1a5";
 }
-.vi.vi-trash:before {
+.vi.vi-table:before {
     content: "\f1a6";
 }
-.vi.vi-triangle-warning:before {
+.vi.vi-tag:before {
     content: "\f1a7";
 }
-.vi.vi-unlink:before {
+.vi.vi-tower-broadcast:before {
     content: "\f1a8";
 }
-.vi.vi-unlock:before {
+.vi.vi-trash-can:before {
     content: "\f1a9";
 }
-.vi.vi-user-clock:before {
+.vi.vi-triangle-exclamation:before {
     content: "\f1aa";
 }
-.vi.vi-user-gear:before {
+.vi.vi-unlock:before {
     content: "\f1ab";
 }
-.vi.vi-user-headset:before {
+.vi.vi-user-clock:before {
     content: "\f1ac";
 }
-.vi.vi-user-list:before {
+.vi.vi-user-gear:before {
     content: "\f1ad";
 }
-.vi.vi-user-lock:before {
+.vi.vi-user-headset:before {
     content: "\f1ae";
 }
-.vi.vi-user-plus:before {
+.vi.vi-user-list:before {
     content: "\f1af";
 }
-.vi.vi-user:before {
+.vi.vi-user-lock:before {
     content: "\f1b0";
 }
-.vi.vi-users:before {
+.vi.vi-user-plus:before {
     content: "\f1b1";
 }
-.vi.vi-valkyrie:before {
+.vi.vi-user:before {
     content: "\f1b2";
 }
-.vi.vi-video-recorder:before {
+.vi.vi-users:before {
     content: "\f1b3";
 }
-.vi.vi-video:before {
+.vi.vi-valkyrie:before {
     content: "\f1b4";
 }
-.vi.vi-voice-recorder:before {
+.vi.vi-video:before {
     content: "\f1b5";
 }
 .vi.vi-voicemail:before {
@@ -582,9 +582,12 @@ url("./Valkyrie.eot?970e2943c2b05124f502e517598204ff#iefix") format("embedded-op
 .vi.vi-wallpaper:before {
     content: "\f1bc";
 }
-.vi.vi-window:before {
+.vi.vi-waveform:before {
     content: "\f1bd";
 }
-.vi.vi-x-mark:before {
+.vi.vi-window:before {
     content: "\f1be";
+}
+.vi.vi-xmark:before {
+    content: "\f1bf";
 }
