@@ -17,18 +17,36 @@
 }
 
 .vi-spin {
-    svg {
-        animation-name: animate-spin;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-    }
   svg {
     animation-name: animate-spin;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
+}
+
+.vi-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.vi-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.vi-rotate-270 {
+  transform: rotate(270deg);
+}
+
+.vi-flip-x {
+  transform: scaleX(-1);
+}
+
+.vi-flip-y {
+  transform: scaleY(-1);
+}
+
+.vi-flip {
+  transform: scale(-1);
 }
 
 @keyframes animate-spin {
