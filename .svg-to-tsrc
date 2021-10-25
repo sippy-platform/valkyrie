@@ -6,7 +6,6 @@
   "typeName": "Valkyrie",
   "prefix": "vi",
   "fileName": "Valkyrie",
-  "svgoConfig": false,
   "additionalModelFile": "./src",
   "compileSources": true
 }
