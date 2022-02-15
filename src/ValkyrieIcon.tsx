@@ -28,7 +28,7 @@ export default function ValkyrieIcon({
             'vi-spin': spin,
             [`vi-rotate-${rotate}`]: rotate,
             'vi-flip': flip === true,
-            [`vi-flip-${rotate}`]: flip === 'x' || flip === 'y'
+            [`vi-flip-${flip}`]: flip === 'x' || flip === 'y'
           }
         )
       }
