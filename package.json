@@ -17,6 +17,7 @@
     "icons": "npm run icons:clean && npm run icons:ts",
     "icons:clean": "svgo -f ./icons -o ./icons",
     "icons:ts": "svg-to-ts-constants",
+    "mellow": "svgo -f ./mellow -o ./mellow",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "npm run prod",
     "prod": "npm run clean && npm run icons && npm run fonts && npm run build && npm run scss",
