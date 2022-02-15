@@ -1,5 +1,4 @@
 {
-  "conversionType": "constants",
   "srcFiles": ["./icons/**/*.svg"],
   "outputDirectory": "./src",
   "interfaceName": "ValkyrieIcon",
