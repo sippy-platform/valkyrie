@@ -1567,7 +1567,7 @@ export interface ValkyrieIcon {
 export type ValkyrieIconNameSubset<
   T extends Readonly<ValkyrieIcon[]>
 > = T[number]['name'];
-export const completeIconSet = [
+export const valkyrieSet = [
   viAddressBook,
   viAngleDown,
   viAngleLeft,
