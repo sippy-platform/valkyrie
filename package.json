@@ -1,6 +1,6 @@
 {
   "name": "@optimisegroup/valkyrie",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "The iconography of Sippy.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -17,6 +17,7 @@
     "icons": "npm run icons:clean && npm run icons:ts",
     "icons:clean": "svgo -f ./icons -o ./icons",
     "icons:ts": "svg-to-ts-constants",
+    "mellow": "svgo -f ./mellow -o ./mellow",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "npm run prod",
     "prod": "npm run clean && npm run icons && npm run fonts && npm run build && npm run scss",
@@ -58,15 +59,15 @@
     "node-sass": "7.0.1",
     "nodemon": "2.0.15",
     "npm-run-all": "4.1.5",
-    "postcss": "8.4.6",
+    "postcss": "8.4.7",
     "postcss-cli": "9.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "rimraf": "3.0.2",
-    "sass": "1.49.7",
-    "svg-to-ts": "8.3.0",
+    "sass": "1.49.9",
+    "svg-to-ts": "8.3.1",
     "svgo": "2.8.0",
-    "typescript": "4.5.5"
+    "typescript": "4.6.2"
   },
   "browserslist": {
     "production": [
