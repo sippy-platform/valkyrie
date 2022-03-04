@@ -1012,7 +1012,7 @@ export const viParagraph: {
   data: string;
 } = {
   name: 'paragraph',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M7.25 2.5h3.25V7H7.25a2.25 2.25 0 0 1 0-4.5Zm4.75 0h1.5v11H12v-11Zm3 0h.25a.75.75 0 0 0 0-1.5h-8a3.75 3.75 0 0 0 0 7.5h3.25v5h-.25a.75.75 0 0 0 0 1.5h5a.75.75 0 0 0 0-1.5H15v-11Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M6.75 2.5a2.25 2.25 0 0 0 0 4.5H10V2.5H6.75Zm4.75 0v11.75a.75.75 0 0 1-1.5 0V8.5H6.75a3.75 3.75 0 0 1 0-7.5h8.5a.75.75 0 0 1 0 1.5h-.75v11.75a.75.75 0 0 1-1.5 0V2.5h-1.5Z"/></svg>`
 };
 export const viPause: {
   name: 'pause';
@@ -1328,6 +1328,13 @@ export const viTriangleExclamation: {
 } = {
   name: 'triangle_exclamation',
   data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M11 11.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM10.75 9V6.5a.75.75 0 0 0-1.5 0V9a.75.75 0 0 0 1.5 0Z"/><path fill-rule="evenodd" d="m10.87 1.54 6.78 11.97a1 1 0 0 1-.87 1.49H3.22a1 1 0 0 1-.87-1.5L9.13 1.55a1 1 0 0 1 1.74 0ZM10 3.04 4.07 13.5h11.86L10 3.04Z"/></svg>`
+};
+export const viUnderline: {
+  name: 'underline';
+  data: string;
+} = {
+  name: 'underline',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M5.75 1a.75.75 0 0 0-.75.75v5.5A4.75 4.75 0 0 0 9.75 12h.5A4.75 4.75 0 0 0 15 7.25v-5.5a.75.75 0 0 0-1.5 0v5.5c0 1.8-1.46 3.25-3.25 3.25h-.5A3.25 3.25 0 0 1 6.5 7.25v-5.5A.75.75 0 0 0 5.75 1ZM4 14.25c0 .41.34.75.75.75h10.5a.75.75 0 0 0 0-1.5H4.75a.75.75 0 0 0-.75.75Z"/></svg>`
 };
 export const viUndo: {
   name: 'undo';
@@ -1688,6 +1695,7 @@ export type Valkyrie =
   | 'tower_broadcast'
   | 'trash_can'
   | 'triangle_exclamation'
+  | 'underline'
   | 'undo'
   | 'unlock'
   | 'user_clock'
@@ -1910,6 +1918,7 @@ export const valkyrieSet = [
   viTowerBroadcast,
   viTrashCan,
   viTriangleExclamation,
+  viUnderline,
   viUndo,
   viUnlock,
   viUserClock,
