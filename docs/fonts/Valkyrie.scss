@@ -1,9 +1,9 @@
 @font-face {
  font-family: "Valkyrie";
- src: url("./Valkyrie.ttf?3e6c6702cf3e94d29aa70bc1235eda02") format("truetype"),
-url("./Valkyrie.woff?3e6c6702cf3e94d29aa70bc1235eda02") format("woff"),
-url("./Valkyrie.woff2?3e6c6702cf3e94d29aa70bc1235eda02") format("woff2"),
-url("./Valkyrie.eot?3e6c6702cf3e94d29aa70bc1235eda02#iefix") format("embedded-opentype");
+ src: url("./Valkyrie.ttf?7b9bb338e11299e5b9c73e23348f1770") format("truetype"),
+url("./Valkyrie.woff?7b9bb338e11299e5b9c73e23348f1770") format("woff"),
+url("./Valkyrie.woff2?7b9bb338e11299e5b9c73e23348f1770") format("woff2"),
+url("./Valkyrie.eot?7b9bb338e11299e5b9c73e23348f1770#iefix") format("embedded-opentype");
 }
 
 .vi {
@@ -588,75 +588,78 @@ url("./Valkyrie.eot?3e6c6702cf3e94d29aa70bc1235eda02#iefix") format("embedded-op
 .vi.vi-triangle-exclamation:before {
  content: "\f1be";
 }
-.vi.vi-undo:before {
+.vi.vi-underline:before {
  content: "\f1bf";
 }
-.vi.vi-unlock:before {
+.vi.vi-undo:before {
  content: "\f1c0";
 }
-.vi.vi-user-clock:before {
+.vi.vi-unlock:before {
  content: "\f1c1";
 }
-.vi.vi-user-gear:before {
+.vi.vi-user-clock:before {
  content: "\f1c2";
 }
-.vi.vi-user-headset:before {
+.vi.vi-user-gear:before {
  content: "\f1c3";
 }
-.vi.vi-user-list:before {
+.vi.vi-user-headset:before {
  content: "\f1c4";
 }
-.vi.vi-user-lock:before {
+.vi.vi-user-list:before {
  content: "\f1c5";
 }
-.vi.vi-user-plus:before {
+.vi.vi-user-lock:before {
  content: "\f1c6";
 }
-.vi.vi-user:before {
+.vi.vi-user-plus:before {
  content: "\f1c7";
 }
-.vi.vi-users:before {
+.vi.vi-user:before {
  content: "\f1c8";
 }
-.vi.vi-valkyrie-sword:before {
+.vi.vi-users:before {
  content: "\f1c9";
 }
-.vi.vi-video:before {
+.vi.vi-valkyrie-sword:before {
  content: "\f1ca";
 }
-.vi.vi-voicemail:before {
+.vi.vi-video:before {
  content: "\f1cb";
 }
-.vi.vi-volume-0:before {
+.vi.vi-voicemail:before {
  content: "\f1cc";
 }
-.vi.vi-volume-1:before {
+.vi.vi-volume-0:before {
  content: "\f1cd";
 }
-.vi.vi-volume-2:before {
+.vi.vi-volume-1:before {
  content: "\f1ce";
 }
-.vi.vi-volume-3:before {
+.vi.vi-volume-2:before {
  content: "\f1cf";
 }
-.vi.vi-volume-none:before {
+.vi.vi-volume-3:before {
  content: "\f1d0";
 }
-.vi.vi-wallpaper:before {
+.vi.vi-volume-none:before {
  content: "\f1d1";
 }
-.vi.vi-waveform:before {
+.vi.vi-wallpaper:before {
  content: "\f1d2";
 }
-.vi.vi-webhooks-clock:before {
+.vi.vi-waveform:before {
  content: "\f1d3";
 }
-.vi.vi-webhooks:before {
+.vi.vi-webhooks-clock:before {
  content: "\f1d4";
 }
-.vi.vi-window:before {
+.vi.vi-webhooks:before {
  content: "\f1d5";
 }
-.vi.vi-xmark:before {
+.vi.vi-window:before {
  content: "\f1d6";
+}
+.vi.vi-xmark:before {
+ content: "\f1d7";
 }
