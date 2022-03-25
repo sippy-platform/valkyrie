@@ -8,7 +8,7 @@ module.exports = {
   prefix: 'vi',
   selector: '.vi',
   normalize: true,
-  descent: 35,
+  descent: 10,
   templates: {
     html: './templates/html.hbs',
     css: './templates/css.hbs',

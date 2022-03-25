@@ -1,9 +1,9 @@
 @font-face {
  font-family: "Valkyrie";
- src: url("./Valkyrie.ttf?7b9bb338e11299e5b9c73e23348f1770") format("truetype"),
-url("./Valkyrie.woff?7b9bb338e11299e5b9c73e23348f1770") format("woff"),
-url("./Valkyrie.woff2?7b9bb338e11299e5b9c73e23348f1770") format("woff2"),
-url("./Valkyrie.eot?7b9bb338e11299e5b9c73e23348f1770#iefix") format("embedded-opentype");
+ src: url("./Valkyrie.ttf?f20d1ce7cdf077c6d3d0adb4983f8b74") format("truetype"),
+url("./Valkyrie.woff?f20d1ce7cdf077c6d3d0adb4983f8b74") format("woff"),
+url("./Valkyrie.woff2?f20d1ce7cdf077c6d3d0adb4983f8b74") format("woff2"),
+url("./Valkyrie.eot?f20d1ce7cdf077c6d3d0adb4983f8b74#iefix") format("embedded-opentype");
 }
 
 .vi {
@@ -16,6 +16,53 @@ url("./Valkyrie.eot?7b9bb338e11299e5b9c73e23348f1770#iefix") format("embedded-op
  font-weight: normal !important;
  line-height: 1;
  text-rendering: auto;
+}
+
+.vi-spin {
+  animation-name: animate-spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vi-spin {
+    animation: none;
+  }
+}
+
+.vi-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.vi-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.vi-rotate-270 {
+  transform: rotate(270deg);
+}
+
+.vi-flip-x {
+  transform: scaleX(-1);
+}
+
+.vi-flip-y {
+  transform: scaleY(-1);
+}
+
+.vi-flip {
+  transform: scale(-1);
+}
+
+@keyframes animate-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .vi.vi-address-book:before {
