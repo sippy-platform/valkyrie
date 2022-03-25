@@ -55,6 +55,16 @@ url("./Valkyrie.eot?f20d1ce7cdf077c6d3d0adb4983f8b74#iefix") format("embedded-op
   transform: scale(-1);
 }
 
+@keyframes animate-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .vi.vi-address-book:before {
  content: "\f101";
 }
