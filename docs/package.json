@@ -9,10 +9,9 @@
   "keywords": [
     "valkyrie"
   ],
-  "author": "Optimise Group",
+  "author": "Sippy",
   "license": "AGPL-3.0-or-later",
   "dependencies": {
-    "@optimisegroup/valkyrie": "file:../"
+    "@sippy-platform/valkyrie": "file:../"
   }
 }
- 
