@@ -1,5 +1,5 @@
 {
-  "name": "@optimisegroup/valkyrie",
+  "name": "@sippy-platform/valkyrie",
   "version": "0.14.2",
   "description": "The iconography of Sippy.",
   "main": "./dist/cjs/index.js",
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/optimise-group/valkyrie.git"
+    "url": "git+https://github.com/sippy-platform/valkyrie.git"
   },
   "files": [
     "/icons",
@@ -43,32 +43,32 @@
   "author": "",
   "license": "AGPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/optimise-group/valkyrie/issues"
+    "url": "https://github.com/sippy-platform/valkyrie/issues"
   },
-  "homepage": "https://optimise-group.github.io/valkyrie",
+  "homepage": "https://sippy-platform.github.io/valkyrie",
   "peerDependencies": {
     "react": ">=16.x",
     "clsx": ">=1.x"
   },
   "devDependencies": {
-    "@types/react": "17.0.43",
-    "autoprefixer": "10.4.4",
+    "@types/react": "18.0.9",
+    "autoprefixer": "10.4.7",
     "bundle-scss": "1.5.1",
     "clsx": "1.1.1",
     "copyfiles": "2.4.1",
     "fantasticon": "1.2.2",
     "node-sass": "7.0.1",
-    "nodemon": "2.0.15",
+    "nodemon": "2.0.16",
     "npm-run-all": "4.1.5",
-    "postcss": "8.4.12",
+    "postcss": "8.4.13",
     "postcss-cli": "9.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
     "rimraf": "3.0.2",
-    "sass": "1.49.9",
-    "svg-to-ts": "8.4.0",
+    "sass": "1.51.0",
+    "svg-to-ts": "8.6.1",
     "svgo": "2.8.0",
-    "typescript": "4.6.3"
+    "typescript": "4.6.4"
   },
   "browserslist": {
     "production": [
