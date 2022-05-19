@@ -3,22 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ name }}</title>
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
   <style>
-    :root {
-      --primary: #0057FF;
+    .bg {
+      background-color: #202225;
     }
     body {
       font-family: system-ui, -apple-system, "Segoe UI Variable Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       margin: 0;
     }
-    .display-4 {
+    .text-marketing-icons {
+      display: inline-block;
+      background-image: linear-gradient(135deg, #0068d8, #8055f7);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .display-5 {
       font-family: system-ui, -apple-system, "Segoe UI Variable Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
       font-weight: 700;
       padding-left: 20px;
       padding-right: 20px;
+      line-height: 1.5;
     }
     .icons {
       padding: 20px;
@@ -61,8 +69,8 @@
 </head>
 <body>
 
-  <div class="bg-primary text-white pb-4 pt-3 text-center">
-    <h1 class="display-4 m-0"><i class="vi vi-valkyrie-sword"></i> {{ name }}</h1>
+  <div class="bg text-white pb-3 pt-2">
+    <h1 class="display-5 m-0 text-marketing-icons">{{ name }}</h1>
   </div>
 
   <div class="icons text-center">
@@ -89,7 +97,7 @@
       <br>
       <span class='label'>spin</span>
     </div>
-    
+
     <div class="preview">
       <span class="inner">
         <i class="vi vi-devices vi-rotate-90"></i>
@@ -97,7 +105,7 @@
       <br>
       <span class='label'>rotate-90</span>
     </div>
-    
+
     <div class="preview">
       <span class="inner">
         <i class="vi vi-devices vi-rotate-180"></i>
@@ -105,7 +113,7 @@
       <br>
       <span class='label'>rotate-180</span>
     </div>
-    
+
     <div class="preview">
       <span class="inner">
         <i class="vi vi-devices vi-rotate-270"></i>
@@ -113,7 +121,7 @@
       <br>
       <span class='label'>rotate-270</span>
     </div>
-    
+
     <div class="preview">
       <span class="inner">
         <i class="vi vi-devices vi-flip-x"></i>
@@ -121,7 +129,7 @@
       <br>
       <span class='label'>flip-x</span>
     </div>
-    
+
     <div class="preview">
       <span class="inner">
         <i class="vi vi-devices vi-flip-y"></i>
@@ -129,7 +137,7 @@
       <br>
       <span class='label'>flip-y</span>
     </div>
-    
+
     <div class="preview">
       <span class="inner">
         <i class="vi vi-devices vi-flip"></i>

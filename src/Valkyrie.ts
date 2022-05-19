@@ -860,6 +860,13 @@ export const viListCheck: {
   name: 'list_check',
   data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M6.18 1.68c.2.2.2.5 0 .7L3.85 4.71a.5.5 0 0 1-.7 0L1.82 3.38a.5.5 0 0 1 0-.7l.36-.36c.2-.2.5-.2.7 0l.62.62 1.62-1.62c.2-.2.5-.2.7 0l.36.36ZM7 3c0-.41.34-.75.75-.75h8.5a.75.75 0 0 1 0 1.5h-8.5A.75.75 0 0 1 7 3Zm0 5c0-.41.34-.75.75-.75h8.5a.75.75 0 0 1 0 1.5h-8.5A.75.75 0 0 1 7 8Zm.75 4.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5ZM6.18 7.38a.5.5 0 0 0 0-.7l-.36-.36a.5.5 0 0 0-.7 0L3.5 7.94l-.62-.62a.5.5 0 0 0-.7 0l-.36.36a.5.5 0 0 0 0 .7l1.33 1.33c.2.2.5.2.7 0l2.33-2.33Z"/></svg>`
 };
+export const viListClock: {
+  name: 'list_clock';
+  data: string;
+} = {
+  name: 'list_clock',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M3 3a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm0 5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Zm1.5 3.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3ZM7 3c0-.41.34-.75.75-.75h8.5a.75.75 0 0 1 0 1.5h-8.5A.75.75 0 0 1 7 3Zm.75 4.25a.75.75 0 0 0 0 1.5h1.81a5.53 5.53 0 0 1 1.67-1.5H7.75Zm0 5h.76c.02.52.12 1.03.27 1.5H7.75a.75.75 0 0 1 0-1.5Z"/><path fill-rule="evenodd" d="M18 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-3.25-.31v-1.44a.75.75 0 0 0-1.5 0v1.65c0 .26.1.52.3.7l.64.65a.75.75 0 0 0 1.06-1.06l-.5-.5Z"/></svg>`
+};
 export const viListOlClock: {
   name: 'list_ol_clock';
   data: string;
@@ -1628,6 +1635,7 @@ export type Valkyrie =
   | 'link'
   | 'linkedin'
   | 'list_check'
+  | 'list_clock'
   | 'list_ol_clock'
   | 'list_ol'
   | 'list'
@@ -1851,6 +1859,7 @@ export const valkyrieSet = [
   viLink,
   viLinkedin,
   viListCheck,
+  viListClock,
   viListOlClock,
   viListOl,
   viList,
