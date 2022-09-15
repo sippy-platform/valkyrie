@@ -1,9 +1,9 @@
 @font-face {
  font-family: "Valkyrie";
- src: url("./Valkyrie.ttf?51f088113ce1d528afdf3074932c81e5") format("truetype"),
-url("./Valkyrie.woff?51f088113ce1d528afdf3074932c81e5") format("woff"),
-url("./Valkyrie.woff2?51f088113ce1d528afdf3074932c81e5") format("woff2"),
-url("./Valkyrie.eot?51f088113ce1d528afdf3074932c81e5#iefix") format("embedded-opentype");
+ src: url("./Valkyrie.ttf?8bfc230770531aca874a717951cb7a15") format("truetype"),
+url("./Valkyrie.woff?8bfc230770531aca874a717951cb7a15") format("woff"),
+url("./Valkyrie.woff2?8bfc230770531aca874a717951cb7a15") format("woff2"),
+url("./Valkyrie.eot?8bfc230770531aca874a717951cb7a15#iefix") format("embedded-opentype");
 }
 
 .vi {
