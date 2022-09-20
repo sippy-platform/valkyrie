@@ -207,7 +207,7 @@ export const viBan: {
   data: string;
 } = {
   name: 'ban',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M18 8A8 8 0 1 1 2 8a8 8 0 0 1 16 0Zm-3.96 5.1L4.9 3.96a6.5 6.5 0 0 0 9.13 9.13Zm1.06-1.06A6.5 6.5 0 0 0 5.97 2.9l9.13 9.13Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M17.5 8a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Zm-3.82 4.74L5.26 4.32a6 6 0 0 0 8.42 8.42Zm1.06-1.06a6 6 0 0 0-8.42-8.42l8.42 8.42Z"/></svg>`
 };
 export const viBars: {
   name: 'bars';
