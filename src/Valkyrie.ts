@@ -844,14 +844,14 @@ export const viLinkSlash: {
   data: string;
 } = {
   name: 'link_slash',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M8.28 7.25H7.25a.75.75 0 0 0-.37 1.4l1.4-1.4Zm-3 3-1.4 1.4a3.75 3.75 0 0 1 .87-7.4h3.5a.75.75 0 0 1 0 1.5h-3.5a2.25 2.25 0 0 0 0 4.5h.53Zm6.44-1.5 1.4-1.4a.75.75 0 0 1-.37 1.4h-1.03Zm3-3h.53a2.25 2.25 0 0 1 0 4.5h-3.5a.75.75 0 0 0 0 1.5h3.5a3.75 3.75 0 0 0 .87-7.4l-1.4 1.4ZM16 2c.3.3.3.77 0 1.06L5.06 14c-.3.3-.77.3-1.06 0a.75.75 0 0 1 0-1.06L14.94 2c.3-.3.77-.3 1.06 0Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M16 2c.3.3.3.77 0 1.06l-4.19 4.19h.94a.75.75 0 0 1 0 1.5h-2.44L5.06 14A.75.75 0 1 1 4 12.94l4.19-4.19h-.94a.75.75 0 0 1 0-1.5h2.44L14.94 2c.3-.3.77-.3 1.06 0Z"/><path d="M5.17 10.36A2.5 2.5 0 0 1 6 5.5h1.75a.75.75 0 0 0 0-1.5H6a4 4 0 0 0-1.96 7.49l1.13-1.13Zm9.66-4.72A2.5 2.5 0 0 1 14 10.5h-1.75a.75.75 0 0 0 0 1.5H14a4 4 0 0 0 1.96-7.49l-1.13 1.13Z"/></svg>`
 };
 export const viLink: {
   name: 'link';
   data: string;
 } = {
   name: 'link',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M8.25 4.25a.75.75 0 0 1 0 1.5h-3.5a2.25 2.25 0 0 0 0 4.5h3.5a.75.75 0 0 1 0 1.5h-3.5a3.75 3.75 0 1 1 0-7.5h3.5Zm3.5 6a.75.75 0 0 0 0 1.5h3.5a3.75 3.75 0 1 0 0-7.5h-3.5a.75.75 0 0 0 0 1.5h3.5a2.25 2.25 0 0 1 0 4.5h-3.5Z"/><path d="M12.75 8.75a.75.75 0 0 0 0-1.5h-5.5a.75.75 0 0 0 0 1.5h5.5Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M7.75 4a.75.75 0 0 1 0 1.5H6a2.5 2.5 0 0 0 0 5h1.75a.75.75 0 0 1 0 1.5H6a4 4 0 0 1 0-8h1.75Zm4.5 6.5a.75.75 0 0 0 0 1.5H14a4 4 0 0 0 0-8h-1.75a.75.75 0 0 0 0 1.5H14a2.5 2.5 0 0 1 0 5h-1.75Z"/><path d="M12.75 8.75a.75.75 0 0 0 0-1.5h-5.5a.75.75 0 0 0 0 1.5h5.5Z"/></svg>`
 };
 export const viLinkedin: {
   name: 'linkedin';
