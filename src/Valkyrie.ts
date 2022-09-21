@@ -578,14 +578,14 @@ export const viFiles: {
   data: string;
 } = {
   name: 'files',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M13.3.3a1 1 0 0 0-.71-.3H7.5a1 1 0 0 0-1 1v11.5a1 1 0 0 0 1 1H15a1 1 0 0 0 1-1V3.41a1 1 0 0 0-.3-.7L13.3.29Zm-1.05 1.2v1.25a1 1 0 0 0 1 1h1.25V12H8V1.5h4.25Z"/><path d="M14.44 14.5A2 2 0 0 1 12.5 16H7a3 3 0 0 1-3-3V3.5a2 2 0 0 1 1.5-1.94V13c0 .83.67 1.5 1.5 1.5h7.44Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path stroke="#000" stroke-width="1.5" d="M15.25 3.41v9.09c0 .14-.11.25-.25.25H7.5a.25.25 0 0 1-.25-.25V1c0-.14.11-.25.25-.25h5.09c.06 0 .13.03.17.07l2.42 2.42c.04.04.07.1.07.17Z"/><path fill-rule="evenodd" d="M14.44 14.5A2 2 0 0 1 12.5 16H7a3 3 0 0 1-3-3V3.5a2 2 0 0 1 1.5-1.94V13c0 .83.67 1.5 1.5 1.5h7.44Z"/><path d="M12.25 2.75V0L16 3.75h-2.75a1 1 0 0 1-1-1Z"/></svg>`
 };
 export const viFilm: {
   name: 'film';
   data: string;
 } = {
   name: 'film',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M5.25 5V2H3a.5.5 0 0 0-.5.5V5h2.75Zm0 1.5H2.5v3h2.75v-3Zm0 4.5H2.5v2.5c0 .28.22.5.5.5h2.25v-3ZM3 15.5a2 2 0 0 1-2-2v-11c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H3ZM13.25 14V2h-6.5v12h6.5Zm1.5 0H17a.5.5 0 0 0 .5-.5V11h-2.75v3Zm0-4.5h2.75v-3h-2.75v3Zm0-4.5h2.75V2.5A.5.5 0 0 0 17 2h-2.25v3Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M6.25 5V2H4a.5.5 0 0 0-.5.5V5h2.75Zm0 1.5H3.5v3h2.75v-3Zm0 4.5H3.5v2.5c0 .28.22.5.5.5h2.25v-3ZM4 15.5a2 2 0 0 1-2-2v-11c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4Zm8.25-1.5V2h-4.5v12h4.5Zm1.5 0H16a.5.5 0 0 0 .5-.5V11h-2.75v3Zm0-4.5h2.75v-3h-2.75v3Zm0-4.5h2.75V2.5A.5.5 0 0 0 16 2h-2.25v3Z"/></svg>`
 };
 export const viFilterPlus: {
   name: 'filter_plus';
@@ -942,7 +942,7 @@ export const viLogs: {
   data: string;
 } = {
   name: 'logs',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M10.3.3a1 1 0 0 0-.71-.3H4.5a1 1 0 0 0-1 1v11.5a1 1 0 0 0 1 1h5.57c-.35-.4-.57-.92-.57-1.5H5V1.5h4.25v1.25a1 1 0 0 0 1 1h1.25v2.76l.25-.01H13V3.41a1 1 0 0 0-.3-.7L10.3.29Z"/><path d="M4 14.5h5.63a2.25 2.25 0 0 0 0 1.5H4a3 3 0 0 1-3-3V3.5a2 2 0 0 1 1.5-1.94V13c0 .83.67 1.5 1.5 1.5ZM11.75 8a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5ZM11 12c0-.41.34-.75.75-.75h6.5a.75.75 0 0 1 0 1.5h-6.5A.75.75 0 0 1 11 12Zm.75 2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M11.3.3a1 1 0 0 0-.71-.3H5.5a1 1 0 0 0-1 1v11.5a1 1 0 0 0 1 1h4.35C9.34 13.2 9 12.64 9 12H6V1.5h4.25v1.25a1 1 0 0 0 1 1h1.25V7H14V3.41a1 1 0 0 0-.3-.7L11.3.29Z"/><path d="M5 14.5h4.17a1.74 1.74 0 0 0 0 1.5H5a3 3 0 0 1-3-3V3.5a2 2 0 0 1 1.5-1.94V13c0 .83.67 1.5 1.5 1.5ZM10.75 8a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5ZM10 12c0-.41.34-.75.75-.75h6.5a.75.75 0 0 1 0 1.5h-6.5A.75.75 0 0 1 10 12Zm.75 2.5a.75.75 0 0 0 0 1.5h6.5a.75.75 0 0 0 0-1.5h-6.5Z"/></svg>`
 };
 export const viMagnifyingGlass: {
   name: 'magnifying_glass';
@@ -1502,14 +1502,14 @@ export const viWallpaper: {
   data: string;
 } = {
   name: 'wallpaper',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="m8.87 5.31 5.2 5.19h-2.13L7.8 6.37a1.25 1.25 0 0 0-1.72-.04L3.5 8.66V6.64l1.59-1.43a2.75 2.75 0 0 1 3.78.1ZM13.5 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/><path fill-rule="evenodd" d="M1 2c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-6.25v1.5h2a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1 0-1.5h2V13H3a2 2 0 0 1-2-2V2Zm2-.5a.5.5 0 0 0-.5.5v9c0 .28.22.5.5.5h14a.5.5 0 0 0 .5-.5V2a.5.5 0 0 0-.5-.5H3Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="m9.87 5.31 5.2 5.19h-2.13L8.8 6.37a1.25 1.25 0 0 0-1.72-.04L4.5 8.66V6.64l1.59-1.43a2.75 2.75 0 0 1 3.78.1ZM13.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/><path fill-rule="evenodd" d="M2 2c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-5.25v1.5h2a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1 0-1.5h2V13H4a2 2 0 0 1-2-2V2Zm2-.5a.5.5 0 0 0-.5.5v9c0 .28.22.5.5.5h12a.5.5 0 0 0 .5-.5V2a.5.5 0 0 0-.5-.5H4Z"/></svg>`
 };
 export const viWaveform: {
   name: 'waveform';
   data: string;
 } = {
   name: 'waveform',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M10 16a.75.75 0 0 1-.75-.75V.75a.75.75 0 0 1 1.5 0v14.5c0 .41-.34.75-.75.75Zm3-3a.75.75 0 0 1-.75-.75v-8.5a.75.75 0 0 1 1.5 0v8.5c0 .41-.34.75-.75.75Zm2.25-3.75a.75.75 0 0 0 1.5 0v-2.5a.75.75 0 0 0-1.5 0v2.5ZM19 9a.75.75 0 0 1-.75-.75v-.5a.75.75 0 0 1 1.5 0v.5c0 .41-.34.75-.75.75ZM.25 8.25a.75.75 0 0 0 1.5 0v-.5a.75.75 0 0 0-1.5 0v.5ZM4 14a.75.75 0 0 1-.75-.75V2.75a.75.75 0 0 1 1.5 0v10.5c0 .41-.34.75-.75.75Zm2.25-2.75a.75.75 0 0 0 1.5 0v-6.5a.75.75 0 0 0-1.5 0v6.5Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M10.75 15.25a.75.75 0 0 0 1.5 0V.75a.75.75 0 0 0-1.5 0v14.5Zm2.75-3a.75.75 0 0 0 1.5 0v-8.5a.75.75 0 0 0-1.5 0v8.5ZM17 10a.75.75 0 0 1-.75-.75v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .41-.34.75-.75.75ZM2.5 8.25a.75.75 0 0 0 1.5 0v-.5a.75.75 0 0 0-1.5 0v.5ZM6 14a.75.75 0 0 1-.75-.75V2.75a.75.75 0 0 1 1.5 0v10.5c0 .41-.34.75-.75.75Zm2-2.75a.75.75 0 0 0 1.5 0v-6.5a.75.75 0 0 0-1.5 0v6.5Z"/></svg>`
 };
 export const viWebhooksClock: {
   name: 'webhooks_clock';
