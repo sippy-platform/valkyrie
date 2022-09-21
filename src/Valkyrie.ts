@@ -403,7 +403,7 @@ export const viClock: {
   data: string;
 } = {
   name: 'clock',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M9.25 8V3.75a.75.75 0 0 1 1.5 0v3.94l1.43 1.43a.75.75 0 1 1-1.06 1.06L9.53 8.6a.76.76 0 0 1-.03-.03.75.75 0 0 1-.25-.56Z"/><path fill-rule="evenodd" d="M10 16a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm0-1.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M9.25 8V3.75a.75.75 0 0 1 1.5 0v3.94l1.43 1.43a.75.75 0 1 1-1.06 1.06L9.53 8.6a.76.76 0 0 1-.03-.03.75.75 0 0 1-.25-.56Z"/><path fill-rule="evenodd" d="M10 15.5a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Zm0-1.5a6 6 0 1 1 0-12 6 6 0 0 1 0 12Z"/></svg>`
 };
 export const viCode: {
   name: 'code';
@@ -1327,14 +1327,14 @@ export const viTableClock: {
   data: string;
 } = {
   name: 'table_clock',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M3 0a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h8.23a5.52 5.52 0 0 1-1.13-1.5h-.35v-.86a5.5 5.5 0 0 1 .23-3.89h-.23v-3.5h5.75v.27c.52.05 1.03.17 1.5.35V2a2 2 0 0 0-2-2H3Zm12 1.5c.28 0 .5.22.5.5v2.75H9.75V1.5H15Zm-6.75 13H3a.5.5 0 0 1-.5-.5v-2.75h5.75v3.25Zm0-4.75H2.5v-3.5h5.75v3.5Zm-5.75-5V2c0-.28.22-.5.5-.5h5.25v3.25H2.5Z"/><path fill-rule="evenodd" d="M15 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm.75-5.75v1.44l.5.5a.75.75 0 0 1-1.06 1.06l-.65-.65a1 1 0 0 1-.29-.7v-1.65a.75.75 0 0 1 1.5 0Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M16 1a2 2 0 0 1 2 2v6c-.4-.54-.91-1-1.5-1.33v-.92h-5.75V8.2a5 5 0 0 0-1.6 2.55H3.5V13c0 .28.22.5.5.5h5.23c.17.55.43 1.05.77 1.5H4a2 2 0 0 1-2-2V3c0-1.1.9-2 2-2h12Zm-5.25 1.5v2.75h5.75V3a.5.5 0 0 0-.5-.5h-5.25Zm-1.5 4.25H3.5v2.5h5.75v-2.5Zm0-1.5V2.5H4a.5.5 0 0 0-.5.5v2.25h5.75Z"/><path fill-rule="evenodd" d="M18 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-3.25-.31v-1.44a.75.75 0 0 0-1.5 0v1.65c0 .26.1.52.3.7l.64.65a.75.75 0 0 0 1.06-1.06l-.5-.5Z"/></svg>`
 };
 export const viTable: {
   name: 'table';
   data: string;
 } = {
   name: 'table',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M16 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h12Zm-5.25 1.5v3.25h5.75V2a.5.5 0 0 0-.5-.5h-5.25Zm0 13H16a.5.5 0 0 0 .5-.5v-2.75h-5.75v3.25Zm-1.5-3.25H3.5V14c0 .28.22.5.5.5h5.25v-3.25Zm1.5-1.5h5.75v-3.5h-5.75v3.5Zm-1.5-3.5H3.5v3.5h5.75v-3.5Zm0-1.5V1.5H4a.5.5 0 0 0-.5.5v2.75h5.75Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M16 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V3c0-1.1.9-2 2-2h12Zm-5.25 1.5v2.75h5.75V3a.5.5 0 0 0-.5-.5h-5.25Zm0 11H16a.5.5 0 0 0 .5-.5v-2.25h-5.75v2.75Zm-1.5-2.75H3.5V13c0 .28.22.5.5.5h5.25v-2.75Zm1.5-1.5h5.75v-2.5h-5.75v2.5Zm-1.5-2.5H3.5v2.5h5.75v-2.5Zm0-1.5V2.5H4a.5.5 0 0 0-.5.5v2.25h5.75Z"/></svg>`
 };
 export const viTag: {
   name: 'tag';
