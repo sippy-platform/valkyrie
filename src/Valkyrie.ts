@@ -221,7 +221,7 @@ export const viBlf: {
   data: string;
 } = {
   name: 'blf',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M19.67 6.1a5.5 5.5 0 0 0-5.17-3.6h-9a5.5 5.5 0 1 0 0 11h9a5.5 5.5 0 0 0 5.17-7.4ZM5.5 4h9a4 4 0 0 1 3.46 2H14a2 2 0 1 0 0 4h3.96a4 4 0 0 1-3.46 2h-9a4 4 0 0 1 0-8Zm13 4c0 .17-.01.34-.03.5H14a.5.5 0 0 1 0-1h4.47c.02.16.03.33.03.5Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M17.67 6.1a5.5 5.5 0 0 0-5.17-3.6h-5a5.5 5.5 0 1 0 0 11h5a5.5 5.5 0 0 0 5.17-7.4ZM7.5 4h5a4 4 0 0 1 3.46 2H12a2 2 0 1 0 0 4h3.96a4 4 0 0 1-3.46 2h-5a4 4 0 0 1 0-8Zm9 4c0 .17-.01.34-.03.5H12a.5.5 0 0 1 0-1h4.47c.02.16.03.33.03.5Z"/></svg>`
 };
 export const viBold: {
   name: 'bold';
@@ -494,7 +494,7 @@ export const viEnvelope: {
   data: string;
 } = {
   name: 'envelope',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M1.5 4c0-1.1.9-2 2-2h13a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2V4Zm13.94-.5H4.56l4.56 4.56c.48.48 1.28.48 1.76 0l4.56-4.56ZM3 4.06V12c0 .28.22.5.5.5h13a.5.5 0 0 0 .5-.5V4.06l-5.06 5.06a2.75 2.75 0 0 1-3.88 0L3 4.06Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M2 4c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4Zm13.44-.5H4.56l4.56 4.56c.48.48 1.28.48 1.76 0l4.56-4.56ZM3.5 4.56V12c0 .28.22.5.5.5h12a.5.5 0 0 0 .5-.5V4.56l-4.56 4.56a2.75 2.75 0 0 1-3.88 0L3.5 4.56Z"/></svg>`
 };
 export const viEthernet: {
   name: 'ethernet';
@@ -1012,7 +1012,7 @@ export const viNetwork: {
   data: string;
 } = {
   name: 'network',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M4.34 7.19c.34-.37.57-.84.64-1.36l2.24 1.04c-.3.4-.52.86-.64 1.36L4.34 7.2Zm11.68-1.67a2.5 2.5 0 0 1-.89-1.21l-2.82 2.06c.38.34.68.75.9 1.21l2.81-2.06Zm-3.73 6.13c.38-.33.68-.74.9-1.2l2.22 1.67c-.48.2-.83.66-.9 1.2l-2.22-1.67Z"/><path fill-rule="evenodd" d="M10 11a2 2 0 1 1 0-4 2 2 0 0 1 0 4Zm0 1.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm7.5-8a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 1.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Zm-15 .5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 1.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/><path d="M17.5 13.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm-7-11a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M9 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/><path fill-rule="evenodd" d="M18 3.5a2.5 2.5 0 0 1-3.66 2.22l-1.4 1.4a3.48 3.48 0 0 1-.09 3.9l1.83 2.01a1.5 1.5 0 0 1 1.82 1.47 1.5 1.5 0 1 1-2.93-.46l-1.82-2A3.5 3.5 0 0 1 6.72 7.8l-.62-.4a2.5 2.5 0 1 1 .8-1.27l.6.4a3.49 3.49 0 0 1 4.38-.49l1.4-1.4.01.04A2.5 2.5 0 1 1 18 3.5Zm-1.5 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0ZM12 9a2 2 0 1 0-4 0 2 2 0 0 0 4 0ZM4.5 6.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>`
 };
 export const viNumpad: {
   name: 'numpad';
@@ -1460,7 +1460,7 @@ export const viVoicemail: {
   data: string;
 } = {
   name: 'voicemail',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M7.85 11a4.5 4.5 0 1 0-3.35 1.5h11a4.5 4.5 0 1 0-3.35-1.5h-4.3ZM7.5 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm8 3a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M8.75 10.25a3.75 3.75 0 1 0-3 1.5h8.5a3.75 3.75 0 1 0-3-1.5h-2.5Zm-3 0a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Zm8.5 0a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z"/></svg>`
 };
 export const viVolume0: {
   name: 'volume_0';
