@@ -111,6 +111,13 @@ export const viArrowPointer: {
   name: 'arrow_pointer',
   data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="m8.95 10.6-2.64 2.95a.75.75 0 0 1-1.31-.5V1.7c0-.66.77-1 1.25-.56l8.31 7.56a.74.74 0 0 1-.5 1.3h-3.74l1.8 4a.75.75 0 1 1-1.36.62l-1.8-4.01Zm-.12-2.1h3.29L6.5 3.4v7.7l2.33-2.6Z"/></svg>`
 };
+export const viArrowRightBan: {
+  name: 'arrow_right_ban';
+  data: string;
+} = {
+  name: 'arrow_right_ban',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M16.59 8.28a1 1 0 0 0-.27-.96l-4.79-4.79a.75.75 0 1 0-1.06 1.06l3.45 3.46a4.9 4.9 0 0 1 2.67 1.23Zm-7.17.5a5 5 0 0 1 2.18-1.5H3.72a.75.75 0 0 0 0 1.5h5.7Z"/><path fill-rule="evenodd" d="M17.25 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-2.84 2.22-3.38-3.38a2.5 2.5 0 0 0 3.37 3.37Zm1.06-1.06a2.5 2.5 0 0 0-3.37-3.37l3.37 3.37Z"/></svg>`
+};
 export const viArrowRightFromBracket: {
   name: 'arrow_right_from_bracket';
   data: string;
@@ -1056,12 +1063,26 @@ export const viPen: {
   name: 'pen',
   data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="m7.43 14.57 9.66-9.66a2 2 0 0 0 0-2.82L15.9.9a2 2 0 0 0-2.82 0l-9.66 9.66a2 2 0 0 0-.55 1.02l-.73 3.67a.5.5 0 0 0 .59.6l3.67-.74a2 2 0 0 0 1.02-.55Zm5.63-11.5 1.88 1.87-8.57 8.57a.5.5 0 0 1-.26.14l-2.2.44.44-2.2a.5.5 0 0 1 .14-.26l8.57-8.57Z"/></svg>`
 };
+export const viPhoneArrowDownLeftBan: {
+  name: 'phone_arrow_down_left_ban';
+  data: string;
+} = {
+  name: 'phone_arrow_down_left_ban',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M3.5 2.2V3c0 2.76 1.4 5.65 3.62 7.88.6.59 1.23 1.12 1.9 1.58.07.8.34 1.55.74 2.2C5.41 12.42 2 7.7 2 3V1.8a1 1 0 0 1 .78-.98L5.9.12a2 2 0 0 1 2.26 1.11l1.48 3.25a1 1 0 0 1-.36 1.24l-1.38.92a.2.2 0 0 0-.07.28c.5.9 1.17 1.7 1.96 2.36-.28.43-.5.9-.63 1.41a9.86 9.86 0 0 1-2.64-3.04 1.7 1.7 0 0 1 .55-2.25l1.03-.7-1.3-2.85a.5.5 0 0 0-.57-.28L3.5 2.2ZM14 7h-2a1 1 0 0 1-1-1V3a.75.75 0 0 1 1.5 0v1.44L16.19.75a.75.75 0 0 1 1.06 1.06L13.56 5.5H15A.75.75 0 0 1 15 7h-1Z"/><path fill-rule="evenodd" d="M18 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-2.84 2.22-3.38-3.38a2.5 2.5 0 0 0 3.37 3.37Zm1.06-1.06a2.5 2.5 0 0 0-3.37-3.37l3.37 3.37Z"/></svg>`
+};
 export const viPhoneArrowDownLeft: {
   name: 'phone_arrow_down_left';
   data: string;
 } = {
   name: 'phone_arrow_down_left',
   data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M11.36 10.1a.21.21 0 0 1-.27.06 8.38 8.38 0 0 1-3.25-3.24.2.2 0 0 1 .07-.28l1.38-.92a1 1 0 0 0 .36-1.24L8.17 1.23A2 2 0 0 0 5.91.11L2.78.82A1 1 0 0 0 2 1.8V3c0 6.5 6.5 13 13 13h1.2a1 1 0 0 0 .98-.78l.72-3.16a2 2 0 0 0-1.1-2.25l-3.07-1.46a1 1 0 0 0-1.22.28l-1.15 1.48ZM3.5 3v-.8l2.74-.63a.5.5 0 0 1 .57.28l1.3 2.86-1.03.69a1.7 1.7 0 0 0-.55 2.25 9.88 9.88 0 0 0 3.83 3.82c.73.4 1.66.23 2.18-.44l.9-1.16 2.72 1.3c.21.1.32.33.27.56l-.63 2.77H15c-2.76 0-5.65-1.4-7.88-3.62C4.9 8.65 3.5 5.76 3.5 3Z"/><path d="M16.19.75 12.5 4.44V3A.75.75 0 0 0 11 3v3a1 1 0 0 0 1 1h3a.75.75 0 0 0 0-1.5h-1.44l3.69-3.69A.75.75 0 1 0 16.19.75Z"/></svg>`
+};
+export const viPhoneArrowUpRightBan: {
+  name: 'phone_arrow_up_right_ban';
+  data: string;
+} = {
+  name: 'phone_arrow_up_right_ban',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="m16.47 2.56-3.69 3.69a.75.75 0 1 1-1.06-1.06l3.69-3.69h-1.44a.75.75 0 0 1 0-1.5h3a1 1 0 0 1 1 1v3a.75.75 0 0 1-1.5 0V2.56ZM3.5 2.14v.8c0 2.76 1.4 5.65 3.62 7.88.6.58 1.23 1.12 1.9 1.58.06.79.3 1.52.69 2.17C5.38 12.32 2 7.63 2 2.94v-1.2a1 1 0 0 1 .78-.98L5.9.05a2 2 0 0 1 2.26 1.12l1.48 3.24a1 1 0 0 1-.36 1.25l-1.38.92a.2.2 0 0 0-.07.28 8.45 8.45 0 0 0 1.99 2.38c-.28.43-.5.9-.64 1.4A9.86 9.86 0 0 1 6.53 7.6a1.7 1.7 0 0 1 .55-2.26l1.03-.68-1.3-2.86a.5.5 0 0 0-.57-.28l-2.74.63Z"/><path fill-rule="evenodd" d="M18 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-2.84 2.22-3.38-3.38a2.5 2.5 0 0 0 3.37 3.37Zm1.06-1.06a2.5 2.5 0 0 0-3.37-3.37l3.37 3.37Z"/></svg>`
 };
 export const viPhoneArrowUpRight: {
   name: 'phone_arrow_up_right';
@@ -1556,6 +1577,7 @@ export type Valkyrie =
   | 'arrow_left_to_line'
   | 'arrow_left'
   | 'arrow_pointer'
+  | 'arrow_right_ban'
   | 'arrow_right_from_bracket'
   | 'arrow_right_to_bracket'
   | 'arrow_right_to_line'
@@ -1691,7 +1713,9 @@ export type Valkyrie =
   | 'paragraph'
   | 'pause'
   | 'pen'
+  | 'phone_arrow_down_left_ban'
   | 'phone_arrow_down_left'
+  | 'phone_arrow_up_right_ban'
   | 'phone_arrow_up_right'
   | 'phone_clock'
   | 'phone_gear'
@@ -1784,6 +1808,7 @@ export const valkyrieSet = [
   viArrowLeftToLine,
   viArrowLeft,
   viArrowPointer,
+  viArrowRightBan,
   viArrowRightFromBracket,
   viArrowRightToBracket,
   viArrowRightToLine,
@@ -1919,7 +1944,9 @@ export const valkyrieSet = [
   viParagraph,
   viPause,
   viPen,
+  viPhoneArrowDownLeftBan,
   viPhoneArrowDownLeft,
+  viPhoneArrowUpRightBan,
   viPhoneArrowUpRight,
   viPhoneClock,
   viPhoneGear,
