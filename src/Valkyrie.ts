@@ -11,28 +11,28 @@ export const viAngleDown: {
   data: string;
 } = {
   name: 'angle_down',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M6 6.81a.75.75 0 0 1 1.06-1.06l2.76 2.76c.1.1.26.1.36 0l2.76-2.76A.75.75 0 0 1 14 6.81l-3.3 3.3a1 1 0 0 1-1.4 0L6 6.8Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M6 6.81a.75.75 0 0 1 1.06-1.06l2.76 2.76c.1.1.26.1.36 0l2.76-2.76c.3-.3.77-.3 1.06 0 .3.3.3.77 0 1.06l-3.3 3.3a1 1 0 0 1-1.4 0L6 6.8Z"/></svg>`
 };
 export const viAngleLeft: {
   name: 'angle_left';
   data: string;
 } = {
   name: 'angle_left',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M11.22 4.03a.75.75 0 1 1 1.06 1.06L9.52 7.85c-.1.1-.1.26 0 .36l2.76 2.76a.75.75 0 1 1-1.06 1.06l-3.3-3.3a1 1 0 0 1 0-1.4l3.3-3.3Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M11.22 4.03c.3-.3.77-.3 1.06 0 .3.3.3.77 0 1.06L9.52 7.85c-.1.1-.1.26 0 .36l2.76 2.76c.3.3.3.77 0 1.06-.3.3-.77.3-1.06 0l-3.3-3.3a1 1 0 0 1 0-1.4l3.3-3.3Z"/></svg>`
 };
 export const viAngleRight: {
   name: 'angle_right';
   data: string;
 } = {
   name: 'angle_right',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M8.78 12.03a.75.75 0 0 1-1.06-1.06l2.76-2.76c.1-.1.1-.26 0-.36L7.72 5.1a.75.75 0 0 1 1.06-1.06l3.3 3.3a1 1 0 0 1 0 1.4l-3.3 3.3Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M8.78 12.03c-.3.3-.77.3-1.06 0a.75.75 0 0 1 0-1.06l2.76-2.76c.1-.1.1-.26 0-.36L7.72 5.1a.75.75 0 0 1 1.06-1.06l3.3 3.3a1 1 0 0 1 0 1.4l-3.3 3.3Z"/></svg>`
 };
 export const viAngleUp: {
   name: 'angle_up';
   data: string;
 } = {
   name: 'angle_up',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M14 9.25a.75.75 0 0 1-1.06 1.06l-2.76-2.76a.25.25 0 0 0-.36 0L7.06 10.3A.75.75 0 1 1 6 9.25l3.3-3.3a1 1 0 0 1 1.4 0l3.3 3.3Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M14 9.25c.3.3.3.77 0 1.06-.3.3-.77.3-1.06 0l-2.76-2.76a.25.25 0 0 0-.36 0L7.06 10.3c-.3.3-.77.3-1.06 0a.75.75 0 0 1 0-1.06l3.3-3.3a1 1 0 0 1 1.4 0l3.3 3.3Z"/></svg>`
 };
 export const viAnglesY: {
   name: 'angles_y';
@@ -74,21 +74,21 @@ export const viArrowDown: {
   data: string;
 } = {
   name: 'arrow_down',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M9.25 12.19V1.75a.75.75 0 0 1 1.5 0v10.44l3.69-3.69a.75.75 0 0 1 1.06 1.06l-4.8 4.8a1 1 0 0 1-1.4 0l-4.8-4.8A.75.75 0 0 1 5.56 8.5l3.69 3.69Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M9.25 12.19V1.75a.75.75 0 0 1 1.5 0v10.44l3.69-3.69c.3-.3.77-.3 1.06 0 .3.3.3.77 0 1.06l-4.8 4.8a1 1 0 0 1-1.4 0l-4.8-4.8A.75.75 0 0 1 5.56 8.5l3.69 3.69Z"/></svg>`
 };
 export const viArrowLeftFromBracket: {
   name: 'arrow_left_from_bracket';
   data: string;
 } = {
   name: 'arrow_left_from_bracket',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M12 14.25c0 .41.34.75.75.75H15a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3h-2.25a.75.75 0 0 0 0 1.5H15c.83 0 1.5.67 1.5 1.5v8c0 .83-.67 1.5-1.5 1.5h-2.25a.75.75 0 0 0-.75.75Z"/><path fill-rule="evenodd" d="M7.2 12.5c-.3.3-.77.3-1.06 0l-3.8-3.8a1 1 0 0 1 0-1.4l3.8-3.8A.75.75 0 0 1 7.2 4.56L4.51 7.25h7.44a.75.75 0 0 1 0 1.5H4.51l2.69 2.69c.3.3.3.77 0 1.06Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M12 14.25c0 .41.34.75.75.75H15a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3h-2.25a.75.75 0 0 0 0 1.5H15c.83 0 1.5.67 1.5 1.5v8c0 .83-.67 1.5-1.5 1.5h-2.25a.75.75 0 0 0-.75.75Z"/><path fill-rule="evenodd" d="M7.2 12.5c-.3.3-.77.3-1.06 0l-3.8-3.8a1 1 0 0 1 0-1.4l3.8-3.8c.3-.3.77-.3 1.06 0 .3.3.3.77 0 1.06L4.51 7.25h7.44a.75.75 0 0 1 0 1.5H4.51l2.69 2.69c.3.3.3.77 0 1.06Z"/></svg>`
 };
 export const viArrowLeftToBracket: {
   name: 'arrow_left_to_bracket';
   data: string;
 } = {
   name: 'arrow_left_to_bracket',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M8 1.75A.75.75 0 0 0 7.25 1H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h2.25a.75.75 0 0 0 0-1.5H5A1.5 1.5 0 0 1 3.5 12V4c0-.83.67-1.5 1.5-1.5h2.25c.41 0 .75-.34.75-.75Z"/><path fill-rule="evenodd" d="M12.5 12.5c-.3.3-.77.3-1.06 0l-3.8-3.8a1 1 0 0 1 0-1.4l3.8-3.8a.75.75 0 0 1 1.06 1.06L9.81 7.25h7.44a.75.75 0 0 1 0 1.5H9.81l2.69 2.69c.3.3.3.77 0 1.06Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M8 1.75A.75.75 0 0 0 7.25 1H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h2.25a.75.75 0 0 0 0-1.5H5A1.5 1.5 0 0 1 3.5 12V4c0-.83.67-1.5 1.5-1.5h2.25c.41 0 .75-.34.75-.75Z"/><path fill-rule="evenodd" d="M12.5 12.5c-.3.3-.77.3-1.06 0l-3.8-3.8a1 1 0 0 1 0-1.4l3.8-3.8c.3-.3.77-.3 1.06 0 .3.3.3.77 0 1.06L9.81 7.25h7.44a.75.75 0 0 1 0 1.5H9.81l2.69 2.69c.3.3.3.77 0 1.06Z"/></svg>`
 };
 export const viArrowLeftToLine: {
   name: 'arrow_left_to_line';
@@ -102,7 +102,7 @@ export const viArrowLeft: {
   data: string;
 } = {
   name: 'arrow_left',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M5.84 7.28h10.44a.75.75 0 0 1 0 1.5H5.84l3.69 3.69a.75.75 0 1 1-1.06 1.06l-4.8-4.8a1 1 0 0 1 0-1.4l4.8-4.8a.75.75 0 1 1 1.06 1.06L5.84 7.28Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M5.84 7.28h10.44a.75.75 0 0 1 0 1.5H5.84l3.69 3.69c.3.3.3.77 0 1.06-.3.3-.77.3-1.06 0l-4.8-4.8a1 1 0 0 1 0-1.4l4.8-4.8c.3-.3.77-.3 1.06 0 .3.3.3.77 0 1.06L5.84 7.28Z"/></svg>`
 };
 export const viArrowPointer: {
   name: 'arrow_pointer';
@@ -111,19 +111,26 @@ export const viArrowPointer: {
   name: 'arrow_pointer',
   data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="m8.95 10.6-2.64 2.95a.75.75 0 0 1-1.31-.5V1.7c0-.66.77-1 1.25-.56l8.31 7.56a.74.74 0 0 1-.5 1.3h-3.74l1.8 4a.75.75 0 1 1-1.36.62l-1.8-4.01Zm-.12-2.1h3.29L6.5 3.4v7.7l2.33-2.6Z"/></svg>`
 };
+export const viArrowRightBan: {
+  name: 'arrow_right_ban';
+  data: string;
+} = {
+  name: 'arrow_right_ban',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M16.59 8.28a1 1 0 0 0-.27-.96l-4.79-4.79a.75.75 0 1 0-1.06 1.06l3.45 3.46a4.9 4.9 0 0 1 2.67 1.23Zm-7.17.5a5 5 0 0 1 2.18-1.5H3.72a.75.75 0 0 0 0 1.5h5.7Z"/><path fill-rule="evenodd" d="M17.25 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-2.84 2.22-3.38-3.38a2.5 2.5 0 0 0 3.37 3.37Zm1.06-1.06a2.5 2.5 0 0 0-3.37-3.37l3.37 3.37Z"/></svg>`
+};
 export const viArrowRightFromBracket: {
   name: 'arrow_right_from_bracket';
   data: string;
 } = {
   name: 'arrow_right_from_bracket',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M8 1.75A.75.75 0 0 0 7.25 1H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h2.25a.75.75 0 0 0 0-1.5H5A1.5 1.5 0 0 1 3.5 12V4c0-.83.67-1.5 1.5-1.5h2.25c.41 0 .75-.34.75-.75Z"/><path fill-rule="evenodd" d="M12.8 3.5c.3-.3.77-.3 1.06 0l3.8 3.8a1 1 0 0 1 0 1.4l-3.8 3.8a.75.75 0 0 1-1.06-1.06l2.69-2.69H8.05a.75.75 0 0 1 0-1.5h7.44L12.8 4.56a.75.75 0 0 1 0-1.06Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M8 1.75A.75.75 0 0 0 7.25 1H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h2.25a.75.75 0 0 0 0-1.5H5A1.5 1.5 0 0 1 3.5 12V4c0-.83.67-1.5 1.5-1.5h2.25c.41 0 .75-.34.75-.75Z"/><path fill-rule="evenodd" d="M12.8 3.5c.3-.3.77-.3 1.06 0l3.8 3.8a1 1 0 0 1 0 1.4l-3.8 3.8c-.3.3-.77.3-1.06 0a.75.75 0 0 1 0-1.06l2.69-2.69H8.05a.75.75 0 1 1 0-1.5h7.44L12.8 4.56a.75.75 0 0 1 0-1.06Z"/></svg>`
 };
 export const viArrowRightToBracket: {
   name: 'arrow_right_to_bracket';
   data: string;
 } = {
   name: 'arrow_right_to_bracket',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M12 14.25c0 .41.34.75.75.75H15a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3h-2.25a.75.75 0 0 0 0 1.5H15c.83 0 1.5.67 1.5 1.5v8c0 .83-.67 1.5-1.5 1.5h-2.25a.75.75 0 0 0-.75.75Z"/><path fill-rule="evenodd" d="M7.5 3.5c.3-.3.77-.3 1.06 0l3.8 3.8a1 1 0 0 1 0 1.4l-3.8 3.8a.75.75 0 1 1-1.06-1.06l2.69-2.69H2.75a.75.75 0 1 1 0-1.5h7.44L7.5 4.56a.75.75 0 0 1 0-1.06Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M12 14.25c0 .41.34.75.75.75H15a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3h-2.25a.75.75 0 0 0 0 1.5H15c.83 0 1.5.67 1.5 1.5v8c0 .83-.67 1.5-1.5 1.5h-2.25a.75.75 0 0 0-.75.75Z"/><path fill-rule="evenodd" d="M7.5 3.5c.3-.3.77-.3 1.06 0l3.8 3.8a1 1 0 0 1 0 1.4l-3.8 3.8c-.3.3-.77.3-1.06 0a.75.75 0 0 1 0-1.06l2.69-2.69H2.75a.75.75 0 0 1 0-1.5h7.44L7.5 4.56a.75.75 0 0 1 0-1.06Z"/></svg>`
 };
 export const viArrowRightToLine: {
   name: 'arrow_right_to_line';
@@ -137,7 +144,7 @@ export const viArrowRight: {
   data: string;
 } = {
   name: 'arrow_right',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M14.16 8.78H3.72a.75.75 0 0 1 0-1.5h10.44l-3.69-3.69a.75.75 0 0 1 1.06-1.06l4.8 4.8a1 1 0 0 1 0 1.4l-4.8 4.8a.75.75 0 1 1-1.06-1.06l3.69-3.69Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M14.16 8.78H3.72a.75.75 0 0 1 0-1.5h10.44l-3.69-3.69a.75.75 0 1 1 1.06-1.06l4.8 4.8a1 1 0 0 1 0 1.4l-4.8 4.8c-.3.3-.77.3-1.06 0a.75.75 0 0 1 0-1.06l3.69-3.69Z"/></svg>`
 };
 export const viArrowRotateRight: {
   name: 'arrow_rotate_right';
@@ -172,7 +179,7 @@ export const viArrowUp: {
   data: string;
 } = {
   name: 'arrow_up',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M10.75 3.87v10.44a.75.75 0 0 1-1.5 0V3.87l-3.69 3.7A.75.75 0 0 1 4.5 6.5l4.8-4.8a1 1 0 0 1 1.4 0l4.8 4.8a.75.75 0 1 1-1.06 1.06l-3.69-3.69Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M10.75 3.87v10.44a.75.75 0 0 1-1.5 0V3.87l-3.69 3.7a.77.77 0 0 1-1.06 0 .75.75 0 0 1 0-1.07l4.8-4.8a1 1 0 0 1 1.4 0l4.8 4.8c.3.3.3.77 0 1.06-.3.3-.77.3-1.06 0l-3.69-3.69Z"/></svg>`
 };
 export const viArrowsRotateRight: {
   name: 'arrows_rotate_right';
@@ -244,12 +251,19 @@ export const viBoxOpenFull: {
   name: 'box_open_full',
   data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M9 4a2 2 0 0 1-.8 1.6l1.7.36.17-.28.15.25 1.54-.33-.8-1.4 2.59-1.5 1.3 2.24 1.53-.33-1.78-3.1a1 1 0 0 0-1.37-.36l-2.93 1.7A3.5 3.5 0 0 0 3.55 4.6l.07.01 1.62.35A2 2 0 1 1 9 4ZM3.41 5.59 10 7l-1.78 3.12a.5.5 0 0 1-.63.21L2.46 8.19a.5.5 0 0 1-.28-.65l.66-1.65a.5.5 0 0 1 .57-.3ZM10 7l1.78 3.12c.13.22.4.3.63.21l5.14-2.14a.5.5 0 0 0 .27-.65l-.66-1.65a.5.5 0 0 0-.57-.3L10 7Z"/><path d="M3 9.5v3.3c0 .42.27.8.66.94l6 2.14a1 1 0 0 0 .68 0l6-2.14a1 1 0 0 0 .66-.94V9.5l-1.5.63v2.31l-4.75 1.7v-3.82L10 9.02l-.75 1.31v3.8L4.5 12.45v-2.32L3 9.5Z"/></svg>`
 };
+export const viBracketsCurly: {
+  name: 'brackets_curly';
+  data: string;
+} = {
+  name: 'brackets_curly',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M3.5 3.75A2.75 2.75 0 0 1 6.25 1h.5a.75.75 0 0 1 0 1.5h-.5C5.56 2.5 5 3.06 5 3.75v1.92c0 .73-.29 1.43-.8 1.95L3.8 8l.38.38c.52.52.81 1.22.81 1.95v1.92c0 .69.56 1.25 1.25 1.25h.5a.75.75 0 0 1 0 1.5h-.5a2.75 2.75 0 0 1-2.75-2.75v-1.92c0-.33-.13-.65-.37-.89L2.3 8.6l.53-.53-.53.53a.85.85 0 0 1 0-1.2l.53.53-.53-.53.84-.84c.24-.24.37-.56.37-.89V3.75Zm8-2c0-.41.34-.75.75-.75h.5a2.75 2.75 0 0 1 2.75 2.75v1.92c0 .33.13.65.37.89l.84.84c.33.33.33.87 0 1.2l-.84.84c-.24.24-.37.56-.37.89v1.92A2.75 2.75 0 0 1 12.75 15h-.5a.75.75 0 1 1 0-1.5h.5c.69 0 1.25-.56 1.25-1.25v-1.92c0-.73.29-1.43.8-1.95l.4-.38-.38-.38A2.75 2.75 0 0 1 14 5.67V3.75c0-.69-.56-1.25-1.25-1.25h-.5a.75.75 0 0 1-.75-.75Z"/></svg>`
+};
 export const viBug: {
   name: 'bug';
   data: string;
 } = {
   name: 'bug',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M11.5 4v-.5a1.5 1.5 0 0 0-3 0V4H7v-.5a3 3 0 0 1 6 0V4h-1.5Z"/><path fill-rule="evenodd" d="M6 10v1.5c0 .26.02.51.07.76l-2.1 2.18a.75.75 0 1 0 1.09 1.04l1.64-1.71a4 4 0 0 0 6.57.03l1.67 1.7c.3.3.77.3 1.06 0 .3-.3.3-.77 0-1.06-.74-.75-1.43-1.45-2.08-2.13.05-.26.08-.53.08-.81V10h2.25a.75.75 0 0 0 0-1.5H14V6.17l2.02-2.11a.75.75 0 1 0-1.08-1.04L13.04 5H7.01c-.61-.64-1.26-1.3-1.95-2A.75.75 0 0 0 4 3c-.3.3-.3.77 0 1.06l2 2.05V8.5H3.75a.75.75 0 0 0 0 1.5H6Zm1.5-3.5h5v5a2.5 2.5 0 0 1-5 0v-5Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M11.5 4v-.5a1.5 1.5 0 0 0-3 0V4H7v-.5a3 3 0 0 1 6 0V4h-1.5Z"/><path fill-rule="evenodd" d="M6 10v1.5c0 .26.02.51.07.76l-2.1 2.18a.75.75 0 0 0 1.09 1.04l1.64-1.71a4 4 0 0 0 6.57.03l1.67 1.7c.3.3.77.3 1.06 0 .3-.3.3-.77 0-1.06-.74-.75-1.43-1.45-2.08-2.13.05-.26.08-.53.08-.81V10h2.25a.75.75 0 0 0 0-1.5H14V6.17l2.02-2.11a.75.75 0 1 0-1.08-1.04L13.04 5H7.01c-.61-.64-1.26-1.3-1.95-2A.75.75 0 0 0 4 3c-.3.3-.3.77 0 1.06l2 2.05V8.5H3.75a.75.75 0 0 0 0 1.5H6Zm1.5-3.5h5v5a2.5 2.5 0 0 1-5 0v-5Z"/></svg>`
 };
 export const viBuilding: {
   name: 'building';
@@ -291,28 +305,28 @@ export const viChevronDown: {
   data: string;
 } = {
   name: 'chevron_down',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M4.5 6.06A.75.75 0 0 1 5.56 5l4.26 4.26c.1.1.26.1.36 0L14.44 5a.75.75 0 0 1 1.06 1.06l-4.8 4.8a1 1 0 0 1-1.4 0l-4.8-4.8Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M4.5 6.06A.75.75 0 0 1 5.56 5l4.26 4.26c.1.1.26.1.36 0L14.44 5c.3-.3.77-.3 1.06 0 .3.3.3.77 0 1.06l-4.8 4.8a1 1 0 0 1-1.4 0l-4.8-4.8Z"/></svg>`
 };
 export const viChevronLeft: {
   name: 'chevron_left';
   data: string;
 } = {
   name: 'chevron_left',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M11.97 2.53a.75.75 0 1 1 1.06 1.06L8.77 7.85c-.1.1-.1.26 0 .36l4.26 4.26a.75.75 0 1 1-1.06 1.06l-4.8-4.8a1 1 0 0 1 0-1.4l4.8-4.8Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M11.97 2.53c.3-.3.77-.3 1.06 0 .3.3.3.77 0 1.06L8.77 7.85c-.1.1-.1.26 0 .36l4.26 4.26c.3.3.3.77 0 1.06-.3.3-.77.3-1.06 0l-4.8-4.8a1 1 0 0 1 0-1.4l4.8-4.8Z"/></svg>`
 };
 export const viChevronRight: {
   name: 'chevron_right';
   data: string;
 } = {
   name: 'chevron_right',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M8.03 13.53a.75.75 0 0 1-1.06-1.06l4.26-4.26c.1-.1.1-.26 0-.36L6.97 3.6a.75.75 0 0 1 1.06-1.06l4.8 4.8a1 1 0 0 1 0 1.4l-4.8 4.8Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M8.03 13.53c-.3.3-.77.3-1.06 0a.75.75 0 0 1 0-1.06l4.26-4.26c.1-.1.1-.26 0-.36L6.97 3.6a.75.75 0 0 1 1.06-1.06l4.8 4.8a1 1 0 0 1 0 1.4l-4.8 4.8Z"/></svg>`
 };
 export const viChevronUp: {
   name: 'chevron_up';
   data: string;
 } = {
   name: 'chevron_up',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M15.5 10a.75.75 0 0 1-1.06 1.06L10.18 6.8a.25.25 0 0 0-.36 0l-4.26 4.26A.75.75 0 1 1 4.5 10l4.8-4.8a1 1 0 0 1 1.4 0l4.8 4.8Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M15.5 10c.3.3.3.77 0 1.06-.3.3-.77.3-1.06 0L10.18 6.8a.25.25 0 0 0-.36 0l-4.26 4.26c-.3.3-.77.3-1.06 0a.75.75 0 0 1 0-1.06l4.8-4.8a1 1 0 0 1 1.4 0l4.8 4.8Z"/></svg>`
 };
 export const viChrome: {
   name: 'chrome';
@@ -410,14 +424,14 @@ export const viCode: {
   data: string;
 } = {
   name: 'code',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M8.5 3c.3.3.3.77 0 1.06L4.56 8l3.94 3.94A.75.75 0 0 1 7.44 13L3.32 8.88a1.25 1.25 0 0 1 0-1.76L7.44 3c.3-.3.77-.3 1.06 0Zm3 0c-.3.3-.3.77 0 1.06L15.44 8l-3.94 3.94A.75.75 0 0 0 12.56 13l4.12-4.12c.48-.48.48-1.28 0-1.76L12.56 3a.75.75 0 0 0-1.06 0Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M8.5 3c.3.3.3.77 0 1.06L4.56 8l3.94 3.94c.3.3.3.77 0 1.06-.3.3-.77.3-1.06 0L3.32 8.88a1.25 1.25 0 0 1 0-1.76L7.44 3c.3-.3.77-.3 1.06 0Zm3 0c-.3.3-.3.77 0 1.06L15.44 8l-3.94 3.94c-.3.3-.3.77 0 1.06.3.3.77.3 1.06 0l4.12-4.12c.48-.48.48-1.28 0-1.76L12.56 3a.75.75 0 0 0-1.06 0Z"/></svg>`
 };
 export const viCodeblock: {
   name: 'codeblock';
   data: string;
 } = {
   name: 'codeblock',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M6.56 8 9 5.56A.75.75 0 0 0 7.94 4.5L5.32 7.12a1.25 1.25 0 0 0 0 1.76l2.62 2.62A.75.75 0 1 0 9 10.44L6.56 8Zm6.88 0L11 5.56a.75.75 0 1 1 1.06-1.06l2.62 2.62c.48.48.48 1.28 0 1.76l-2.62 2.62A.75.75 0 0 1 11 10.44L13.44 8Z"/><path fill-rule="evenodd" d="M2 4c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4Zm2-.5a.5.5 0 0 0-.5.5v8c0 .28.22.5.5.5h12a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H4Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M6.56 8 9 5.56c.3-.3.3-.77 0-1.06a.75.75 0 0 0-1.06 0L5.32 7.12a1.25 1.25 0 0 0 0 1.76l2.62 2.62c.3.3.77.3 1.06 0 .3-.3.3-.77 0-1.06L6.56 8Zm6.88 0L11 5.56a.75.75 0 0 1 1.06-1.06l2.62 2.62c.48.48.48 1.28 0 1.76l-2.62 2.62c-.3.3-.77.3-1.06 0a.75.75 0 0 1 0-1.06L13.44 8Z"/><path fill-rule="evenodd" d="M2 4c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4Zm2-.5a.5.5 0 0 0-.5.5v8c0 .28.22.5.5.5h12a.5.5 0 0 0 .5-.5V4a.5.5 0 0 0-.5-.5H4Z"/></svg>`
 };
 export const viCompass: {
   name: 'compass';
@@ -508,7 +522,7 @@ export const viEuro: {
   data: string;
 } = {
   name: 'euro',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M12 1a7 7 0 0 1 2.14.33c.42.14.57.63.35 1.01v.02a.83.83 0 0 1-.97.35A5.5 5.5 0 0 0 7.1 5.5h4.27a.75.75 0 1 1 0 1.5H6.6a5.53 5.53 0 0 0 0 2h2.76a.75.75 0 0 1 0 1.5H7.1a5.5 5.5 0 0 0 6.44 2.78c.37-.1.78.02.97.35v.02c.23.38.07.87-.35 1.01a7 7 0 0 1-8.7-4.16H4.25a.75.75 0 0 1 0-1.5h.82a7.06 7.06 0 0 1 0-2h-.82a.75.75 0 0 1 0-1.5h1.21A7 7 0 0 1 12 1Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M12 1a7 7 0 0 1 2.14.33c.42.14.57.63.35 1.01v.02a.83.83 0 0 1-.97.35A5.5 5.5 0 0 0 7.1 5.5h4.27c.58 0 .94.63.65 1.13a.75.75 0 0 1-.65.37H6.6a5.53 5.53 0 0 0 0 2h2.76c.58 0 .94.63.65 1.13a.75.75 0 0 1-.65.37H7.1a5.5 5.5 0 0 0 6.44 2.78c.37-.1.78.02.97.35v.02c.23.38.07.87-.35 1.01a7 7 0 0 1-8.7-4.16H4.25a.75.75 0 0 1 0-1.5h.82a7.06 7.06 0 0 1 0-2h-.82a.75.75 0 0 1 0-1.5h1.21A7 7 0 0 1 12 1Z"/></svg>`
 };
 export const viExpand: {
   name: 'expand';
@@ -725,7 +739,7 @@ export const viHeading3: {
   data: string;
 } = {
   name: 'heading_3',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M2 2v12h1.5V8.5h5V14H10V2H8.5v5h-5V2H2Zm9.1 2.3A3.03 3.03 0 0 1 14.02 2h.72a3.25 3.25 0 0 1 2 5.82A3.5 3.5 0 0 1 14.5 14h-.47A3.03 3.03 0 0 1 11 10.97v-.22a.75.75 0 0 1 1.5 0v.22a1.53 1.53 0 0 0 1.53 1.53h.47a2 2 0 1 0 0-4H14V7h.75a1.75 1.75 0 1 0 0-3.5h-.72a1.53 1.53 0 0 0-1.53 1.53v.22a.75.75 0 0 1-1.5 0v-.22c0-.25.03-.5.1-.73Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M2 2v12h1.5V8.5h5V14H10V2H8.5v5h-5V2H2Zm9.1 2.3A3.03 3.03 0 0 1 14.02 2h.72a3.25 3.25 0 0 1 2 5.82A3.5 3.5 0 0 1 14.5 14h-.47A3.03 3.03 0 0 1 11 10.97v-.22a.75.75 0 0 1 1.5 0v.22a1.53 1.53 0 0 0 1.53 1.53h.47a2 2 0 0 0 2-2c0-1.1-.65-2-1.75-2a.75.75 0 0 1 0-1.5 1.75 1.75 0 1 0 0-3.5h-.72a1.53 1.53 0 0 0-1.53 1.53v.22a.75.75 0 0 1-1.5 0v-.22c0-.25.03-.5.1-.73Z"/></svg>`
 };
 export const viHeading4: {
   name: 'heading_4';
@@ -1007,6 +1021,13 @@ export const viMusic: {
   name: 'music',
   data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M15.5 9.2V4.94L8 6.6v6.9a2.5 2.5 0 1 1-1.5-2.3V3.66c0-.58.4-1.1.98-1.22L15.78.6a1 1 0 0 1 1.22.97v9.94a2.5 2.5 0 1 1-1.5-2.3ZM8 3.86v1.22l7.5-1.67V2.18L8 3.85Zm7.5 7.65a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm-9 2a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z"/></svg>`
 };
+export const viMySippy: {
+  name: 'my_sippy';
+  data: string;
+} = {
+  name: 'my_sippy',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M4 1a2 2 0 0 0-2 2v10c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H4Zm-.5 12V4.5h13V13a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5Zm8-10.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm1.75.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Zm2.5 0a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"/><path d="m10.73 7.67.47-.47a1 1 0 1 0-1.4-1.4L7.9 7.66h2.82Zm1.51 2.03-2.5 2.5a1 1 0 0 1-1.41-1.4l2.5-2.5a1 1 0 0 1 1.41 1.4ZM10.6 8.06 8.66 10H8a1 1 0 1 1 0-2h2.66a1.4 1.4 0 0 0-.06.06Z"/></svg>`
+};
 export const viNetwork: {
   name: 'network';
   data: string;
@@ -1056,12 +1077,26 @@ export const viPen: {
   name: 'pen',
   data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="m7.43 14.57 9.66-9.66a2 2 0 0 0 0-2.82L15.9.9a2 2 0 0 0-2.82 0l-9.66 9.66a2 2 0 0 0-.55 1.02l-.73 3.67a.5.5 0 0 0 .59.6l3.67-.74a2 2 0 0 0 1.02-.55Zm5.63-11.5 1.88 1.87-8.57 8.57a.5.5 0 0 1-.26.14l-2.2.44.44-2.2a.5.5 0 0 1 .14-.26l8.57-8.57Z"/></svg>`
 };
+export const viPhoneArrowDownLeftBan: {
+  name: 'phone_arrow_down_left_ban';
+  data: string;
+} = {
+  name: 'phone_arrow_down_left_ban',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M3.5 2.2V3c0 2.76 1.4 5.65 3.62 7.88.6.59 1.23 1.12 1.9 1.58.07.8.34 1.55.74 2.2C5.41 12.42 2 7.7 2 3V1.8a1 1 0 0 1 .78-.98L5.9.12a2 2 0 0 1 2.26 1.11l1.48 3.25a1 1 0 0 1-.36 1.24l-1.38.92a.2.2 0 0 0-.07.28c.5.9 1.17 1.7 1.96 2.36-.28.43-.5.9-.63 1.41a9.86 9.86 0 0 1-2.64-3.04 1.7 1.7 0 0 1 .55-2.25l1.03-.7-1.3-2.85a.5.5 0 0 0-.57-.28L3.5 2.2ZM14 7h-2a1 1 0 0 1-1-1V3a.75.75 0 0 1 1.5 0v1.44L16.19.75a.75.75 0 0 1 1.06 1.06L13.56 5.5H15A.75.75 0 0 1 15 7h-1Z"/><path fill-rule="evenodd" d="M18 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-2.84 2.22-3.38-3.38a2.5 2.5 0 0 0 3.37 3.37Zm1.06-1.06a2.5 2.5 0 0 0-3.37-3.37l3.37 3.37Z"/></svg>`
+};
 export const viPhoneArrowDownLeft: {
   name: 'phone_arrow_down_left';
   data: string;
 } = {
   name: 'phone_arrow_down_left',
   data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M11.36 10.1a.21.21 0 0 1-.27.06 8.38 8.38 0 0 1-3.25-3.24.2.2 0 0 1 .07-.28l1.38-.92a1 1 0 0 0 .36-1.24L8.17 1.23A2 2 0 0 0 5.91.11L2.78.82A1 1 0 0 0 2 1.8V3c0 6.5 6.5 13 13 13h1.2a1 1 0 0 0 .98-.78l.72-3.16a2 2 0 0 0-1.1-2.25l-3.07-1.46a1 1 0 0 0-1.22.28l-1.15 1.48ZM3.5 3v-.8l2.74-.63a.5.5 0 0 1 .57.28l1.3 2.86-1.03.69a1.7 1.7 0 0 0-.55 2.25 9.88 9.88 0 0 0 3.83 3.82c.73.4 1.66.23 2.18-.44l.9-1.16 2.72 1.3c.21.1.32.33.27.56l-.63 2.77H15c-2.76 0-5.65-1.4-7.88-3.62C4.9 8.65 3.5 5.76 3.5 3Z"/><path d="M16.19.75 12.5 4.44V3A.75.75 0 0 0 11 3v3a1 1 0 0 0 1 1h3a.75.75 0 0 0 0-1.5h-1.44l3.69-3.69A.75.75 0 1 0 16.19.75Z"/></svg>`
+};
+export const viPhoneArrowUpRightBan: {
+  name: 'phone_arrow_up_right_ban';
+  data: string;
+} = {
+  name: 'phone_arrow_up_right_ban',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="m16.47 2.56-3.69 3.69a.75.75 0 1 1-1.06-1.06l3.69-3.69h-1.44a.75.75 0 0 1 0-1.5h3a1 1 0 0 1 1 1v3a.75.75 0 0 1-1.5 0V2.56ZM3.5 2.14v.8c0 2.76 1.4 5.65 3.62 7.88.6.58 1.23 1.12 1.9 1.58.06.79.3 1.52.69 2.17C5.38 12.32 2 7.63 2 2.94v-1.2a1 1 0 0 1 .78-.98L5.9.05a2 2 0 0 1 2.26 1.12l1.48 3.24a1 1 0 0 1-.36 1.25l-1.38.92a.2.2 0 0 0-.07.28 8.45 8.45 0 0 0 1.99 2.38c-.28.43-.5.9-.64 1.4A9.86 9.86 0 0 1 6.53 7.6a1.7 1.7 0 0 1 .55-2.26l1.03-.68-1.3-2.86a.5.5 0 0 0-.57-.28l-2.74.63Z"/><path fill-rule="evenodd" d="M18 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-2.84 2.22-3.38-3.38a2.5 2.5 0 0 0 3.37 3.37Zm1.06-1.06a2.5 2.5 0 0 0-3.37-3.37l3.37 3.37Z"/></svg>`
 };
 export const viPhoneArrowUpRight: {
   name: 'phone_arrow_up_right';
@@ -1159,7 +1194,7 @@ export const viRedo: {
   data: string;
 } = {
   name: 'redo',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M11.3 3.36a3.25 3.25 0 0 0-4.6 0l-.34.34a3.25 3.25 0 0 0 0 4.6l5.39 5.39a.75.75 0 0 1-1.06 1.06l-5.4-5.4a4.75 4.75 0 0 1 0-6.7l.35-.35a4.75 4.75 0 0 1 6.72 0l2.14 2.14V1.75a.75.75 0 0 1 1.5 0V6a1 1 0 0 1-1 1h-4.25a.75.75 0 0 1 0-1.5h2.69L11.3 3.36Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M11.3 3.36a3.25 3.25 0 0 0-4.6 0l-.34.34a3.25 3.25 0 0 0 0 4.6l5.39 5.39c.3.3.3.77 0 1.06-.3.3-.77.3-1.06 0l-5.4-5.4a4.75 4.75 0 0 1 0-6.7l.35-.35a4.75 4.75 0 0 1 6.72 0l2.14 2.14V1.75a.75.75 0 0 1 1.5 0V6a1 1 0 0 1-1 1h-4.25a.75.75 0 0 1 0-1.5h2.69L11.3 3.36Z"/></svg>`
 };
 export const viRepeat1: {
   name: 'repeat_1';
@@ -1180,7 +1215,7 @@ export const viSafari: {
   data: string;
 } = {
   name: 'safari',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M10.57 8.57 9.43 7.43l-2.15 3.3 3.29-2.16ZM10 .5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15Zm4.71 5.29.45-.19a.24.24 0 0 1 .32.32.24.24 0 0 1-.13.13l-.45.18a.24.24 0 0 1-.19-.44ZM11.77 3.1l.18-.45a.24.24 0 0 1 .45.19l-.19.45a.24.24 0 1 1-.44-.19ZM10 2.07a.24.24 0 0 1 .24.24v.49a.24.24 0 0 1-.48 0v-.5a.24.24 0 0 1 .24-.24Zm-2.27.45a.24.24 0 0 1 .32.13l.18.45a.24.24 0 1 1-.44.19l-.19-.45a.24.24 0 0 1 .13-.32ZM5.81 3.81a.24.24 0 0 1 .34 0l.34.34a.24.24 0 0 1-.34.34l-.34-.34a.24.24 0 0 1 0-.34ZM4.07 8a.24.24 0 0 1 .24-.24h.49a.24.24 0 0 1 0 .48h-.5A.24.24 0 0 1 4.07 8Zm1.22 2.21-.45.19a.24.24 0 0 1-.33-.22.24.24 0 0 1 .14-.23l.45-.18a.24.24 0 0 1 .19.44Zm.13-4.1a.24.24 0 0 1-.32.12l-.45-.18a.24.24 0 0 1 .19-.45l.45.19a.24.24 0 0 1 .13.31Zm2.81 6.79-.18.45a.24.24 0 0 1-.4.07.24.24 0 0 1-.05-.26l.19-.45a.24.24 0 1 1 .44.19Zm2.01.79a.24.24 0 0 1-.48 0v-.49a.24.24 0 1 1 .48 0v.49Zm2.03-.21a.24.24 0 0 1-.32-.13l-.18-.45a.24.24 0 0 1 .44-.19l.19.45a.24.24 0 0 1-.13.32Zm1.92-1.29a.24.24 0 0 1-.34 0l-.34-.34a.24.24 0 0 1 .34-.34l.34.34a.24.24 0 0 1 0 .34Zm-3.28-3.28-5.32 3.5 3.5-5.32 5.31-3.5-3.49 5.32Zm4.57 1.36a.24.24 0 0 1-.32.13l-.45-.19a.24.24 0 1 1 .19-.44l.45.18a.24.24 0 0 1 .13.32Zm.2-2.03h-.48a.24.24 0 1 1 0-.48h.49a.24.24 0 0 1 0 .48Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M10.57 8.57 9.43 7.43l-2.15 3.3 3.29-2.16ZM10 .5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15Zm4.71 5.29.45-.19a.24.24 0 0 1 .32.13.24.24 0 0 1-.13.32l-.45.18a.24.24 0 0 1-.32-.13.24.24 0 0 1 .13-.31ZM11.77 3.1l.18-.45a.24.24 0 0 1 .32-.13.24.24 0 0 1 .13.32l-.19.45a.24.24 0 0 1-.31.13.24.24 0 0 1-.13-.32ZM10 2.07a.24.24 0 0 1 .24.24v.49a.24.24 0 0 1-.48 0v-.5a.24.24 0 0 1 .24-.24Zm-2.27.45a.24.24 0 0 1 .32.13l.18.45a.24.24 0 1 1-.44.19l-.19-.45a.24.24 0 0 1 .13-.32ZM5.81 3.81a.24.24 0 0 1 .34 0l.34.34a.24.24 0 0 1-.34.34l-.34-.34a.24.24 0 0 1 0-.34ZM4.07 8a.24.24 0 0 1 .24-.24h.49a.24.24 0 0 1 0 .48h-.5A.24.24 0 0 1 4.07 8Zm1.22 2.21-.45.19a.24.24 0 0 1-.33-.22.24.24 0 0 1 .14-.23l.45-.18a.24.24 0 0 1 .32.13.24.24 0 0 1-.13.31Zm.13-4.1a.24.24 0 0 1-.32.12l-.45-.18a.24.24 0 0 1 .19-.45l.45.19a.24.24 0 0 1 .13.31Zm2.81 6.79-.18.45a.24.24 0 0 1-.4.07.24.24 0 0 1-.05-.26l.19-.45a.24.24 0 1 1 .44.19Zm2.01.79a.24.24 0 0 1-.48 0v-.49a.24.24 0 1 1 .48 0v.49Zm2.03-.21a.24.24 0 0 1-.32-.13l-.18-.45a.24.24 0 0 1 .13-.32.24.24 0 0 1 .31.13l.19.45a.24.24 0 0 1-.13.32Zm1.92-1.29a.24.24 0 0 1-.34 0l-.34-.34a.24.24 0 0 1 .34-.34l.34.34a.24.24 0 0 1 0 .34Zm-3.28-3.28-5.32 3.5 3.5-5.32 5.31-3.5-3.49 5.32Zm4.57 1.36a.24.24 0 0 1-.32.13l-.45-.19a.24.24 0 0 1-.13-.31.24.24 0 0 1 .23-.15c.03 0 .06 0 .09.02l.45.18a.24.24 0 0 1 .13.32Zm.2-2.03h-.48a.24.24 0 1 1 0-.48h.49a.24.24 0 0 1 0 .48Z"/></svg>`
 };
 export const viServer: {
   name: 'server';
@@ -1376,7 +1411,7 @@ export const viUndo: {
   data: string;
 } = {
   name: 'undo',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M7.64 2.3a4.75 4.75 0 0 1 6.72 0l.34.34a4.75 4.75 0 0 1 0 6.72l-5.39 5.39a.75.75 0 1 1-1.06-1.06l5.4-5.4a3.25 3.25 0 0 0 0-4.59l-.35-.34a3.25 3.25 0 0 0-4.6 0L6.56 5.5h2.69a.75.75 0 0 1 0 1.5H5a1 1 0 0 1-1-1V1.75a.75.75 0 0 1 1.5 0v2.69L7.64 2.3Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M7.64 2.3a4.75 4.75 0 0 1 6.72 0l.34.34a4.75 4.75 0 0 1 0 6.72l-5.39 5.39c-.3.3-.77.3-1.06 0a.75.75 0 0 1 0-1.06l5.4-5.4a3.25 3.25 0 0 0 0-4.59l-.35-.34a3.25 3.25 0 0 0-4.6 0L6.56 5.5h2.69a.75.75 0 0 1 0 1.5H5a1 1 0 0 1-1-1V1.75a.75.75 0 0 1 1.5 0v2.69L7.64 2.3Z"/></svg>`
 };
 export const viUnlock: {
   name: 'unlock';
@@ -1446,7 +1481,7 @@ export const viValkyrieSword: {
   data: string;
 } = {
   name: 'valkyrie_sword',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="m10 9.4-.75-.47V.75a.75.75 0 1 1 1.5 0v8.18L10 9.4Z"/><path d="m4.73 9.03 3.87 2.44-2.37 1.5a.75.75 0 1 0 .8 1.26l2.22-1.4v2.42a.75.75 0 0 0 1.5 0v-2.42l2.22 1.4a.75.75 0 1 0 .8-1.26l-2.37-1.5 3.87-2.44a.75.75 0 0 0-.8-1.26L10 10.59 5.53 7.77a.75.75 0 1 0-.8 1.26Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="m10 9.4-.75-.47V.75a.75.75 0 0 1 1.5 0v8.18L10 9.4Z"/><path d="m4.73 9.03 3.87 2.44-2.37 1.5a.75.75 0 1 0 .8 1.26l2.22-1.4v2.42a.75.75 0 0 0 1.5 0v-2.42l2.22 1.4a.75.75 0 1 0 .8-1.26l-2.37-1.5 3.87-2.44a.75.75 0 0 0-.8-1.26L10 10.59 5.53 7.77a.75.75 0 1 0-.8 1.26Z"/></svg>`
 };
 export const viVideo: {
   name: 'video';
@@ -1537,7 +1572,7 @@ export const viXmark: {
   data: string;
 } = {
   name: 'xmark',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="m11.06 8 3.89 3.89a.75.75 0 1 1-1.06 1.06L10 9.06l-3.89 3.89a.75.75 0 0 1-1.06-1.06L8.94 8 5.05 4.11a.75.75 0 0 1 1.06-1.06L10 6.94l3.89-3.89a.75.75 0 0 1 1.06 1.06L11.06 8Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="m11.06 8 3.89 3.89c.3.3.3.77 0 1.06-.3.3-.77.3-1.06 0L10 9.06l-3.89 3.89c-.3.3-.77.3-1.06 0a.75.75 0 0 1 0-1.06L8.94 8 5.05 4.11a.75.75 0 0 1 1.06-1.06L10 6.94l3.89-3.89c.3-.3.77-.3 1.06 0 .3.3.3.77 0 1.06L11.06 8Z"/></svg>`
 };
 export type Valkyrie =
   | 'address_book'
@@ -1556,6 +1591,7 @@ export type Valkyrie =
   | 'arrow_left_to_line'
   | 'arrow_left'
   | 'arrow_pointer'
+  | 'arrow_right_ban'
   | 'arrow_right_from_bracket'
   | 'arrow_right_to_bracket'
   | 'arrow_right_to_line'
@@ -1575,6 +1611,7 @@ export type Valkyrie =
   | 'bold'
   | 'book'
   | 'box_open_full'
+  | 'brackets_curly'
   | 'bug'
   | 'building'
   | 'calendar_stars'
@@ -1684,6 +1721,7 @@ export type Valkyrie =
   | 'microphone'
   | 'moon'
   | 'music'
+  | 'my_sippy'
   | 'network'
   | 'numpad'
   | 'paper_plane_top'
@@ -1691,7 +1729,9 @@ export type Valkyrie =
   | 'paragraph'
   | 'pause'
   | 'pen'
+  | 'phone_arrow_down_left_ban'
   | 'phone_arrow_down_left'
+  | 'phone_arrow_up_right_ban'
   | 'phone_arrow_up_right'
   | 'phone_clock'
   | 'phone_gear'
@@ -1784,6 +1824,7 @@ export const valkyrieSet = [
   viArrowLeftToLine,
   viArrowLeft,
   viArrowPointer,
+  viArrowRightBan,
   viArrowRightFromBracket,
   viArrowRightToBracket,
   viArrowRightToLine,
@@ -1803,6 +1844,7 @@ export const valkyrieSet = [
   viBold,
   viBook,
   viBoxOpenFull,
+  viBracketsCurly,
   viBug,
   viBuilding,
   viCalendarStars,
@@ -1912,6 +1954,7 @@ export const valkyrieSet = [
   viMicrophone,
   viMoon,
   viMusic,
+  viMySippy,
   viNetwork,
   viNumpad,
   viPaperPlaneTop,
@@ -1919,7 +1962,9 @@ export const valkyrieSet = [
   viParagraph,
   viPause,
   viPen,
+  viPhoneArrowDownLeftBan,
   viPhoneArrowDownLeft,
+  viPhoneArrowUpRightBan,
   viPhoneArrowUpRight,
   viPhoneClock,
   viPhoneGear,
