@@ -739,7 +739,7 @@ export const viHeading3: {
   data: string;
 } = {
   name: 'heading_3',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M2 2v12h1.5V8.5h5V14H10V2H8.5v5h-5V2H2Zm9.1 2.3A3.03 3.03 0 0 1 14.02 2h.72a3.25 3.25 0 0 1 2 5.82A3.5 3.5 0 0 1 14.5 14h-.47A3.03 3.03 0 0 1 11 10.97v-.22a.75.75 0 0 1 1.5 0v.22a1.53 1.53 0 0 0 1.53 1.53h.47a2 2 0 1 0 0-4H14V7h.75a1.75 1.75 0 1 0 0-3.5h-.72a1.53 1.53 0 0 0-1.53 1.53v.22a.75.75 0 0 1-1.5 0v-.22c0-.25.03-.5.1-.73Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M2 2v12h1.5V8.5h5V14H10V2H8.5v5h-5V2H2Zm9.1 2.3A3.03 3.03 0 0 1 14.02 2h.72a3.25 3.25 0 0 1 2 5.82A3.5 3.5 0 0 1 14.5 14h-.47A3.03 3.03 0 0 1 11 10.97v-.22a.75.75 0 0 1 1.5 0v.22a1.53 1.53 0 0 0 1.53 1.53h.47a2 2 0 0 0 2-2c0-1.1-.65-2-1.75-2a.75.75 0 0 1 0-1.5 1.75 1.75 0 1 0 0-3.5h-.72a1.53 1.53 0 0 0-1.53 1.53v.22a.75.75 0 0 1-1.5 0v-.22c0-.25.03-.5.1-.73Z"/></svg>`
 };
 export const viHeading4: {
   name: 'heading_4';
