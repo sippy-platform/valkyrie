@@ -1063,6 +1063,13 @@ export const viPen: {
   name: 'pen',
   data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="m7.43 14.57 9.66-9.66a2 2 0 0 0 0-2.82L15.9.9a2 2 0 0 0-2.82 0l-9.66 9.66a2 2 0 0 0-.55 1.02l-.73 3.67a.5.5 0 0 0 .59.6l3.67-.74a2 2 0 0 0 1.02-.55Zm5.63-11.5 1.88 1.87-8.57 8.57a.5.5 0 0 1-.26.14l-2.2.44.44-2.2a.5.5 0 0 1 .14-.26l8.57-8.57Z"/></svg>`
 };
+export const viPeopleCircle: {
+  name: 'people_circle';
+  data: string;
+} = {
+  name: 'people_circle',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M10.56 3.7a2.75 2.75 0 0 1-5.15.02c-.33.2-.64.44-.92.72-.3.29-.76.36-1.09.11-.33-.25-.4-.72-.12-1.02a6.8 6.8 0 0 1 2.03-1.45 2.75 2.75 0 0 1 5.33-.02c.79.35 1.5.85 2.08 1.47.28.3.21.77-.12 1.02-.33.25-.8.18-1.1-.11-.28-.28-.6-.53-.94-.73Zm-1.33-.95a1.25 1.25 0 1 0-2.5 0 1.25 1.25 0 0 0 2.5 0Zm-7.7 5.93c-.09-.86 0-1.71.24-2.53.12-.4.56-.57.94-.4.38.15.55.6.45 1-.1.38-.15.78-.16 1.18a2.75 2.75 0 0 1 2.6 4.45c.33.19.7.34 1.07.44.4.1.7.48.64.89a.69.69 0 0 1-.83.61 6.52 6.52 0 0 1-2.27-1.03 2.75 2.75 0 0 1-2.68-4.61Zm3.01 1.34a1.25 1.25 0 1 0-2.16 1.25 1.25 1.25 0 0 0 2.16-1.25Zm5.9 2.35A2.75 2.75 0 0 1 13 7.89c0-.38-.06-.77-.16-1.15-.1-.4.07-.84.45-1 .38-.16.82.01.94.41.24.8.32 1.64.24 2.48a2.75 2.75 0 0 1-2.65 4.63c-.7.5-1.48.86-2.3 1.06-.4.1-.78-.2-.83-.61-.05-.41.24-.78.64-.9.39-.1.76-.25 1.1-.44Zm1.03-2.39a1.25 1.25 0 1 0 2.17 1.25 1.25 1.25 0 0 0-2.17-1.25Z"/></svg>`
+};
 export const viPeople: {
   name: 'people';
   data: string;
@@ -1455,13 +1462,6 @@ export const viUnlock: {
   name: 'unlock',
   data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M10.75 10.25a1.25 1.25 0 1 0-1.5 0v2a.75.75 0 0 0 1.5 0v-2Z"/><path fill-rule="evenodd" d="M11.5 3v.5H13V3a3 3 0 1 0-6 0v2H5a2 2 0 0 0-2 2v7c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H8.5V3a1.5 1.5 0 1 1 3 0Zm-7 4c0-.28.22-.5.5-.5h10c.28 0 .5.22.5.5v7a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V7Z"/></svg>`
 };
-export const viUsersCircle: {
-  name: 'users_circle';
-  data: string;
-} = {
-  name: 'users_circle',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M12.56 3.7a2.75 2.75 0 0 1-5.15.02c-.33.2-.64.44-.92.72-.3.29-.76.36-1.09.11-.33-.25-.4-.72-.12-1.02a6.8 6.8 0 0 1 2.03-1.45 2.75 2.75 0 0 1 5.33-.02c.79.35 1.5.85 2.08 1.47.28.3.21.77-.12 1.02-.33.25-.8.18-1.1-.11-.28-.28-.6-.53-.94-.73Zm-1.33-.95a1.25 1.25 0 1 0-2.5 0 1.25 1.25 0 0 0 2.5 0Zm-7.7 5.93c-.09-.86 0-1.71.24-2.53.12-.4.56-.57.94-.4.38.15.55.6.45 1-.1.38-.15.78-.16 1.18a2.75 2.75 0 0 1 2.6 4.45c.33.19.7.34 1.07.44.4.1.7.48.64.89a.69.69 0 0 1-.83.61 6.51 6.51 0 0 1-2.27-1.03 2.75 2.75 0 0 1-2.68-4.61Zm3.01 1.34a1.25 1.25 0 1 0-2.16 1.25 1.25 1.25 0 0 0 2.16-1.25Zm5.9 2.35A2.75 2.75 0 0 1 15 7.89c0-.38-.06-.77-.16-1.15-.1-.4.07-.84.45-1 .38-.16.82.02.94.41.24.8.32 1.64.24 2.48a2.75 2.75 0 0 1-2.65 4.63c-.7.5-1.48.86-2.3 1.06-.4.1-.78-.2-.83-.61-.05-.41.24-.78.64-.9.39-.1.76-.25 1.1-.44Zm1.03-2.39a1.25 1.25 0 1 0 2.17 1.25 1.25 1.25 0 0 0-2.17-1.25Z"/></svg>`
-};
 export const viValkyrieSword: {
   name: 'valkyrie_sword';
   data: string;
@@ -1713,6 +1713,7 @@ export type Valkyrie =
   | 'paragraph'
   | 'pause'
   | 'pen'
+  | 'people_circle'
   | 'people'
   | 'person_clock'
   | 'person_gear'
@@ -1769,7 +1770,6 @@ export type Valkyrie =
   | 'underline'
   | 'undo'
   | 'unlock'
-  | 'users_circle'
   | 'valkyrie_sword'
   | 'video'
   | 'voicemail'
@@ -1944,6 +1944,7 @@ export const valkyrieSet = [
   viParagraph,
   viPause,
   viPen,
+  viPeopleCircle,
   viPeople,
   viPersonClock,
   viPersonGear,
@@ -2000,7 +2001,6 @@ export const valkyrieSet = [
   viUnderline,
   viUndo,
   viUnlock,
-  viUsersCircle,
   viValkyrieSword,
   viVideo,
   viVoicemail,
