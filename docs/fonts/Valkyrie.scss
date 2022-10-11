@@ -1,9 +1,9 @@
 @font-face {
  font-family: "Valkyrie";
- src: url("./Valkyrie.ttf?6cb278cc2b06bf61a78625223fadb0ee") format("truetype"),
-url("./Valkyrie.woff?6cb278cc2b06bf61a78625223fadb0ee") format("woff"),
-url("./Valkyrie.woff2?6cb278cc2b06bf61a78625223fadb0ee") format("woff2"),
-url("./Valkyrie.eot?6cb278cc2b06bf61a78625223fadb0ee#iefix") format("embedded-opentype");
+ src: url("./Valkyrie.ttf?d0c221270e6fdbfcba24eac6c138e1cc") format("truetype"),
+url("./Valkyrie.woff?d0c221270e6fdbfcba24eac6c138e1cc") format("woff"),
+url("./Valkyrie.woff2?d0c221270e6fdbfcba24eac6c138e1cc") format("woff2"),
+url("./Valkyrie.eot?d0c221270e6fdbfcba24eac6c138e1cc#iefix") format("embedded-opentype");
 }
 
 .vi {
@@ -314,163 +314,163 @@ url("./Valkyrie.eot?6cb278cc2b06bf61a78625223fadb0ee#iefix") format("embedded-op
 .vi.vi-file:before {
  content: "\f153";
 }
-.vi.vi-files:before {
+.vi.vi-files-list:before {
  content: "\f154";
 }
-.vi.vi-film:before {
+.vi.vi-files:before {
  content: "\f155";
 }
-.vi.vi-filter-plus:before {
+.vi.vi-film:before {
  content: "\f156";
 }
-.vi.vi-filter-xmark:before {
+.vi.vi-filter-plus:before {
  content: "\f157";
 }
-.vi.vi-filter:before {
+.vi.vi-filter-xmark:before {
  content: "\f158";
 }
-.vi.vi-fingerprint:before {
+.vi.vi-filter:before {
  content: "\f159";
 }
-.vi.vi-firefox:before {
+.vi.vi-fingerprint:before {
  content: "\f15a";
 }
-.vi.vi-flag-checkered:before {
+.vi.vi-firefox:before {
  content: "\f15b";
 }
-.vi.vi-flag:before {
+.vi.vi-flag-checkered:before {
  content: "\f15c";
 }
-.vi.vi-floppy-disk:before {
+.vi.vi-flag:before {
  content: "\f15d";
 }
-.vi.vi-folder:before {
+.vi.vi-floppy-disk:before {
  content: "\f15e";
 }
-.vi.vi-forward:before {
+.vi.vi-folder:before {
  content: "\f15f";
 }
-.vi.vi-gauge:before {
+.vi.vi-forward:before {
  content: "\f160";
 }
-.vi.vi-gear:before {
+.vi.vi-gauge:before {
  content: "\f161";
 }
-.vi.vi-gift:before {
+.vi.vi-gear:before {
  content: "\f162";
 }
-.vi.vi-github:before {
+.vi.vi-gift:before {
  content: "\f163";
 }
-.vi.vi-google-play:before {
+.vi.vi-github:before {
  content: "\f164";
 }
-.vi.vi-grid:before {
+.vi.vi-google-play:before {
  content: "\f165";
 }
-.vi.vi-grip-lines:before {
+.vi.vi-grid:before {
  content: "\f166";
 }
-.vi.vi-heading-1:before {
+.vi.vi-grip-lines:before {
  content: "\f167";
 }
-.vi.vi-heading-2:before {
+.vi.vi-heading-1:before {
  content: "\f168";
 }
-.vi.vi-heading-3:before {
+.vi.vi-heading-2:before {
  content: "\f169";
 }
-.vi.vi-heading-4:before {
+.vi.vi-heading-3:before {
  content: "\f16a";
 }
-.vi.vi-heading-5:before {
+.vi.vi-heading-4:before {
  content: "\f16b";
 }
-.vi.vi-heading-6:before {
+.vi.vi-heading-5:before {
  content: "\f16c";
 }
-.vi.vi-headset:before {
+.vi.vi-heading-6:before {
  content: "\f16d";
 }
-.vi.vi-heart-crack:before {
+.vi.vi-headset:before {
  content: "\f16e";
 }
-.vi.vi-heart-half:before {
+.vi.vi-heart-crack:before {
  content: "\f16f";
 }
-.vi.vi-heart:before {
+.vi.vi-heart-half:before {
  content: "\f170";
 }
-.vi.vi-horizontal-rule:before {
+.vi.vi-heart:before {
  content: "\f171";
 }
-.vi.vi-house:before {
+.vi.vi-horizontal-rule:before {
  content: "\f172";
 }
-.vi.vi-id-card:before {
+.vi.vi-house:before {
  content: "\f173";
 }
-.vi.vi-image:before {
+.vi.vi-id-card:before {
  content: "\f174";
 }
-.vi.vi-italic:before {
+.vi.vi-image:before {
  content: "\f175";
 }
-.vi.vi-laptop:before {
+.vi.vi-italic:before {
  content: "\f176";
 }
-.vi.vi-layers-plus:before {
+.vi.vi-laptop:before {
  content: "\f177";
 }
-.vi.vi-layers:before {
+.vi.vi-layers-plus:before {
  content: "\f178";
 }
-.vi.vi-lightbulb-on:before {
+.vi.vi-layers:before {
  content: "\f179";
 }
-.vi.vi-lightbulb:before {
+.vi.vi-lightbulb-on:before {
  content: "\f17a";
 }
-.vi.vi-link-slash:before {
+.vi.vi-lightbulb:before {
  content: "\f17b";
 }
-.vi.vi-link:before {
+.vi.vi-link-slash:before {
  content: "\f17c";
 }
-.vi.vi-linkedin:before {
+.vi.vi-link:before {
  content: "\f17d";
 }
-.vi.vi-list-check:before {
+.vi.vi-linkedin:before {
  content: "\f17e";
 }
-.vi.vi-list-clock:before {
+.vi.vi-list-check:before {
  content: "\f17f";
 }
-.vi.vi-list-ol-clock:before {
+.vi.vi-list-clock:before {
  content: "\f180";
 }
-.vi.vi-list-ol:before {
+.vi.vi-list-ol-clock:before {
  content: "\f181";
 }
-.vi.vi-list:before {
+.vi.vi-list-ol:before {
  content: "\f182";
 }
-.vi.vi-location-pin-dot:before {
+.vi.vi-list:before {
  content: "\f183";
 }
-.vi.vi-location-pin-slash:before {
+.vi.vi-location-pin-dot:before {
  content: "\f184";
 }
-.vi.vi-location-pin:before {
+.vi.vi-location-pin-slash:before {
  content: "\f185";
 }
-.vi.vi-location-pins-route:before {
+.vi.vi-location-pin:before {
  content: "\f186";
 }
-.vi.vi-lock:before {
+.vi.vi-location-pins-route:before {
  content: "\f187";
 }
-.vi.vi-logs:before {
+.vi.vi-lock:before {
  content: "\f188";
 }
 .vi.vi-magnifying-glass:before {
