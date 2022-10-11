@@ -1,9 +1,9 @@
 @font-face {
  font-family: "Valkyrie";
- src: url("./Valkyrie.ttf?6fd216e4eacf4f056071abd08616f8e8") format("truetype"),
-url("./Valkyrie.woff?6fd216e4eacf4f056071abd08616f8e8") format("woff"),
-url("./Valkyrie.woff2?6fd216e4eacf4f056071abd08616f8e8") format("woff2"),
-url("./Valkyrie.eot?6fd216e4eacf4f056071abd08616f8e8#iefix") format("embedded-opentype");
+ src: url("./Valkyrie.ttf?6cb278cc2b06bf61a78625223fadb0ee") format("truetype"),
+url("./Valkyrie.woff?6cb278cc2b06bf61a78625223fadb0ee") format("woff"),
+url("./Valkyrie.woff2?6cb278cc2b06bf61a78625223fadb0ee") format("woff2"),
+url("./Valkyrie.eot?6cb278cc2b06bf61a78625223fadb0ee#iefix") format("embedded-opentype");
 }
 
 .vi {
@@ -113,10 +113,10 @@ url("./Valkyrie.eot?6fd216e4eacf4f056071abd08616f8e8#iefix") format("embedded-op
 .vi.vi-arrow-pointer:before {
  content: "\f110";
 }
-.vi.vi-arrow-right-ban:before {
+.vi.vi-arrow-right-from-bracket:before {
  content: "\f111";
 }
-.vi.vi-arrow-right-from-bracket:before {
+.vi.vi-arrow-right-prohibited:before {
  content: "\f112";
 }
 .vi.vi-arrow-right-to-bracket:before {
