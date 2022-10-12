@@ -1,9 +1,9 @@
 @font-face {
  font-family: "Valkyrie";
- src: url("./Valkyrie.ttf?d0c221270e6fdbfcba24eac6c138e1cc") format("truetype"),
-url("./Valkyrie.woff?d0c221270e6fdbfcba24eac6c138e1cc") format("woff"),
-url("./Valkyrie.woff2?d0c221270e6fdbfcba24eac6c138e1cc") format("woff2"),
-url("./Valkyrie.eot?d0c221270e6fdbfcba24eac6c138e1cc#iefix") format("embedded-opentype");
+ src: url("./Valkyrie.ttf?05dc00d9e1884ed1f6a7e6bb56e4a300") format("truetype"),
+url("./Valkyrie.woff?05dc00d9e1884ed1f6a7e6bb56e4a300") format("woff"),
+url("./Valkyrie.woff2?05dc00d9e1884ed1f6a7e6bb56e4a300") format("woff2"),
+url("./Valkyrie.eot?05dc00d9e1884ed1f6a7e6bb56e4a300#iefix") format("embedded-opentype");
 }
 
 .vi {
@@ -320,7 +320,7 @@ url("./Valkyrie.eot?d0c221270e6fdbfcba24eac6c138e1cc#iefix") format("embedded-op
 .vi.vi-files:before {
  content: "\f155";
 }
-.vi.vi-film:before {
+.vi.vi-filmstrip:before {
  content: "\f156";
 }
 .vi.vi-filter-plus:before {

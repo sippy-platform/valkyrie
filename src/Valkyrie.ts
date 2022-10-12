@@ -594,12 +594,12 @@ export const viFiles: {
   name: 'files',
   data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M6.25 0C5.28 0 4.5.78 4.5 1.75v10c0 .97.78 1.75 1.75 1.75h6c.97 0 1.75-.78 1.75-1.75v-8c0-.2-.08-.39-.22-.53l-3-3a.75.75 0 0 0-.53-.22h-4ZM6 1.75c0-.14.11-.25.25-.25H9.5v2.25c0 .41.34.75.75.75h2.25v7.25c0 .14-.11.25-.25.25h-6a.25.25 0 0 1-.25-.25v-10ZM11.44 3H11v-.44l.44.44Z"/><path d="M2 4.25c0-.88.65-1.61 1.5-1.73v9.23a2.75 2.75 0 0 0 2.75 2.75h5.23c-.12.85-.85 1.5-1.73 1.5h-3.5A4.25 4.25 0 0 1 2 11.75v-7.5Z"/></svg>`
 };
-export const viFilm: {
-  name: 'film';
+export const viFilmstrip: {
+  name: 'filmstrip';
   data: string;
 } = {
-  name: 'film',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M6.25 5V2H4a.5.5 0 0 0-.5.5V5h2.75Zm0 1.5H3.5v3h2.75v-3Zm0 4.5H3.5v2.5c0 .28.22.5.5.5h2.25v-3ZM4 15.5a2 2 0 0 1-2-2v-11c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4Zm8.25-1.5V2h-4.5v12h4.5Zm1.5 0H16a.5.5 0 0 0 .5-.5V11h-2.75v3Zm0-4.5h2.75v-3h-2.75v3Zm0-4.5h2.75V2.5A.5.5 0 0 0 16 2h-2.25v3Z"/></svg>`
+  name: 'filmstrip',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M0 3.75C0 2.78.78 2 1.75 2h12.5c.97 0 1.75.78 1.75 1.75v9.5c0 .97-.78 1.75-1.75 1.75H1.75C.78 15 0 14.22 0 13.25v-9.5Zm1.75-.25a.25.25 0 0 0-.25.25v2h2V3.5H1.75ZM5 3.5v10h6v-10H5Zm7.5 0v2.25h2v-2a.25.25 0 0 0-.25-.25H12.5Zm2 3.75h-2v2.5h2v-2.5Zm0 4h-2v2.25h1.75c.14 0 .25-.11.25-.25v-2Zm-11 2.25v-2.25h-2v2c0 .14.11.25.25.25H3.5Zm-2-3.75h2v-2.5h-2v2.5Z"/></svg>`
 };
 export const viFilterPlus: {
   name: 'filter_plus';
@@ -1012,7 +1012,7 @@ export const viMusic: {
   data: string;
 } = {
   name: 'music',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M15.5 9.2V4.94L8 6.6v6.9a2.5 2.5 0 1 1-1.5-2.3V3.66c0-.58.4-1.1.98-1.22L15.78.6a1 1 0 0 1 1.22.97v9.94a2.5 2.5 0 1 1-1.5-2.3ZM8 3.86v1.22l7.5-1.67V2.18L8 3.85Zm7.5 7.65a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm-9 2a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M15 .75a.75.75 0 0 0-.95-.72l-9 2.5a.75.75 0 0 0-.55.72v7.96A2.5 2.5 0 0 0 1 13.5a2.5 2.5 0 0 0 5 0V7.07l7.5-2.08V9.2a2.5 2.5 0 0 0-3.5 2.3 2.5 2.5 0 0 0 5 0V.75ZM13.5 11.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-9 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm9-10.07L6 5.51V3.82l7.5-2.08v1.69Z"/></svg>`
 };
 export const viNetwork: {
   name: 'network';
@@ -1646,7 +1646,7 @@ export type Valkyrie =
   | 'file'
   | 'files_list'
   | 'files'
-  | 'film'
+  | 'filmstrip'
   | 'filter_plus'
   | 'filter_xmark'
   | 'filter'
@@ -1877,7 +1877,7 @@ export const valkyrieSet = [
   viFile,
   viFilesList,
   viFiles,
-  viFilm,
+  viFilmstrip,
   viFilterPlus,
   viFilterXmark,
   viFilter,
