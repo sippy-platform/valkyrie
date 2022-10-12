@@ -340,49 +340,49 @@ export const viCircleCheck: {
   data: string;
 } = {
   name: 'circle_check',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M12.44 5.5 9 8.94 7.56 7.5A.75.75 0 0 0 6.5 8.56l1.8 1.8a1 1 0 0 0 1.4 0l3.8-3.8a.75.75 0 1 0-1.06-1.06Z"/><path fill-rule="evenodd" d="M17.5 8a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0ZM16 8A6 6 0 1 0 4 8a6 6 0 0 0 12 0Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M11.53 7.03a.75.75 0 0 0-1.06-1.06L7.25 9.19 5.53 7.47a.75.75 0 0 0-1.06 1.06l2.25 2.25c.3.3.77.3 1.06 0l3.75-3.75Z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0Z"/></svg>`
 };
 export const viCircleExclamation: {
   name: 'circle_exclamation';
   data: string;
 } = {
   name: 'circle_exclamation',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M11 11.75a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM10.75 9V4a.75.75 0 0 0-1.5 0v5a.75.75 0 0 0 1.5 0Z"/><path fill-rule="evenodd" d="M10 15.5a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Zm0-1.5a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M8 3.5c.41 0 .75.34.75.75v5a.75.75 0 0 1-1.5 0v-5c0-.41.34-.75.75-.75Zm0 9A.75.75 0 1 0 8 11a.75.75 0 0 0 0 1.5Z"/><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Zm0-1.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13Z"/></svg>`
 };
 export const viCircleInfo: {
   name: 'circle_info';
   data: string;
 } = {
   name: 'circle_info',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M11.5 4.25a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0ZM11 8v3h.75a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5h.75V8.5h-.25a.75.75 0 0 1 0-1.5H10a1 1 0 0 1 1 1Z"/><path fill-rule="evenodd" d="M10 15.5a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Zm0-1.5a6 6 0 1 1 0-12 6 6 0 0 1 0 12Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M8 6c.41 0 .75.34.75.75v5a.75.75 0 0 1-1.5 0v-5c0-.41.34-.75.75-.75Zm0-1a.75.75 0 1 0 0-1.5A.75.75 0 0 0 8 5Z"/><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Zm0-1.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13Z"/></svg>`
 };
 export const viCirclePlus: {
   name: 'circle_plus';
   data: string;
 } = {
   name: 'circle_plus',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M6.25 7.25h3v-3a.75.75 0 0 1 1.5 0v3h3a.75.75 0 0 1 0 1.5h-3v3a.75.75 0 0 1-1.5 0v-3h-3a.75.75 0 0 1 0-1.5Z"/><path fill-rule="evenodd" d="M17.5 8a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0ZM16 8A6 6 0 1 0 4 8a6 6 0 0 0 12 0Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M8.75 4.25a.75.75 0 0 0-1.5 0v3h-3a.75.75 0 0 0 0 1.5h3v3a.75.75 0 0 0 1.5 0v-3h3a.75.75 0 0 0 0-1.5h-3v-3Z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0Z"/></svg>`
 };
 export const viCircleQuestion: {
   name: 'circle_question';
   data: string;
 } = {
   name: 'circle_question',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M8.31 3.8A2.98 2.98 0 0 1 10 3.24a3 3 0 0 1 1.69.54A2.6 2.6 0 0 1 12.75 6c0 1.3-.7 2.07-1.45 2.44-.19.1-.34.2-.44.32a.37.37 0 0 0-.11.24l-.02.3a.75.75 0 1 1-1.5-.1l.02-.2c0-1 .81-1.62 1.38-1.9.18-.09.33-.2.43-.36.1-.16.19-.39.19-.74 0-.56-.21-.83-.44-1-.26-.18-.6-.25-.81-.25-.21 0-.55.07-.81.26a.98.98 0 0 0-.26.27C8.7 5.63 8.4 6 8 6c-.41 0-.76-.34-.67-.74a2.5 2.5 0 0 1 .98-1.47ZM10 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path fill-rule="evenodd" d="M10 15.5a7.5 7.5 0 1 0 0-15 7.5 7.5 0 0 0 0 15Zm0-1.5a6 6 0 1 1 0-12 6 6 0 0 1 0 12Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M8.75 11.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM7 6a1 1 0 0 1 1-1 .99.99 0 0 1 .5 1.85A2.49 2.49 0 0 0 7.25 9v.24a.75.75 0 0 0 1.5 0V9c0-.36.19-.68.5-.86A2.49 2.49 0 0 0 8 3.5 2.5 2.5 0 0 0 5.5 6v.5a.75.75 0 0 0 1.5 0V6Z"/><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Zm0-1.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13Z"/></svg>`
 };
 export const viCircleUser: {
   name: 'circle_user';
   data: string;
 } = {
   name: 'circle_user',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path fill-rule="evenodd" d="M10 8.5A2.75 2.75 0 1 0 10 3a2.75 2.75 0 0 0 0 5.5ZM10 7a1.25 1.25 0 1 1 0-2.5A1.25 1.25 0 0 1 10 7Z"/><path fill-rule="evenodd" d="M15.91 12.61A7.5 7.5 0 1 0 4.08 3.38a7.5 7.5 0 0 0 11.83 9.23Zm-1.1-1.01a7.97 7.97 0 0 0-9.61 0 6 6 0 1 1 9.6 0Zm-1.06 1.09a5.97 5.97 0 0 1-7.5 0 6.47 6.47 0 0 1 7.5 0Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M8 9.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7ZM8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/><path d="M3.05 14.29A8.04 8.04 0 0 1 0 8a8 8 0 1 1 13.01 6.23l-.06.06a7.97 7.97 0 0 1-9.9 0Zm9.9-2.08a6.5 6.5 0 1 0-9.9 0 7.97 7.97 0 0 1 9.9 0Zm-1.12 1.04a6.47 6.47 0 0 0-7.66 0 6.47 6.47 0 0 0 7.66 0Z"/></svg>`
 };
 export const viCircleXmark: {
   name: 'circle_xmark';
   data: string;
 } = {
   name: 'circle_xmark',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" fill="currentColor"><path d="M6.82 10.12 8.94 8 6.82 5.88a.75.75 0 0 1 1.06-1.06L10 6.94l2.12-2.12a.75.75 0 0 1 1.06 1.06L11.06 8l2.12 2.12a.75.75 0 0 1-1.06 1.06L10 9.06l-2.12 2.12a.75.75 0 1 1-1.06-1.06Z"/><path fill-rule="evenodd" d="M17.5 8a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0ZM16 8A6 6 0 1 0 4 8a6 6 0 0 0 12 0Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"><path d="M5.78 4.72a.75.75 0 0 0-1.06 1.06L6.94 8l-2.22 2.22a.75.75 0 1 0 1.06 1.06L8 9.06l2.22 2.22a.75.75 0 1 0 1.06-1.06L9.06 8l2.22-2.22a.75.75 0 0 0-1.06-1.06L8 6.94 5.78 4.72Z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0Z"/></svg>`
 };
 export const viCity: {
   name: 'city';
