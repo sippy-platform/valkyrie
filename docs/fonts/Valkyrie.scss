@@ -1,9 +1,9 @@
 @font-face {
  font-family: "Valkyrie";
- src: url("./Valkyrie.ttf?a4501b8599f770725aab60f175c55496") format("truetype"),
-url("./Valkyrie.woff?a4501b8599f770725aab60f175c55496") format("woff"),
-url("./Valkyrie.woff2?a4501b8599f770725aab60f175c55496") format("woff2"),
-url("./Valkyrie.eot?a4501b8599f770725aab60f175c55496#iefix") format("embedded-opentype");
+ src: url("./Valkyrie.ttf?558093cdbfb7f8757d23c26f2270fb48") format("truetype"),
+url("./Valkyrie.woff?558093cdbfb7f8757d23c26f2270fb48") format("woff"),
+url("./Valkyrie.woff2?558093cdbfb7f8757d23c26f2270fb48") format("woff2"),
+url("./Valkyrie.eot?558093cdbfb7f8757d23c26f2270fb48#iefix") format("embedded-opentype");
 }
 
 .vi {
@@ -548,13 +548,13 @@ url("./Valkyrie.eot?a4501b8599f770725aab60f175c55496#iefix") format("embedded-op
 .vi.vi-person:before {
  content: "\f1a1";
 }
-.vi.vi-phone-arrow-down-left-ban:before {
+.vi.vi-phone-arrow-down-left-prohibited:before {
  content: "\f1a2";
 }
 .vi.vi-phone-arrow-down-left:before {
  content: "\f1a3";
 }
-.vi.vi-phone-arrow-up-right-ban:before {
+.vi.vi-phone-arrow-up-right-prohibited:before {
  content: "\f1a4";
 }
 .vi.vi-phone-arrow-up-right:before {
