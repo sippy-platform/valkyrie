@@ -1,9 +1,9 @@
 @font-face {
  font-family: "Valkyrie";
- src: url("./Valkyrie.ttf?0da834ce953646b2416f1fa09860ed38") format("truetype"),
-url("./Valkyrie.woff?0da834ce953646b2416f1fa09860ed38") format("woff"),
-url("./Valkyrie.woff2?0da834ce953646b2416f1fa09860ed38") format("woff2"),
-url("./Valkyrie.eot?0da834ce953646b2416f1fa09860ed38#iefix") format("embedded-opentype");
+ src: url("./Valkyrie.ttf?114fa900301fcf95ae1467248471beee") format("truetype"),
+url("./Valkyrie.woff?114fa900301fcf95ae1467248471beee") format("woff"),
+url("./Valkyrie.woff2?114fa900301fcf95ae1467248471beee") format("woff2"),
+url("./Valkyrie.eot?114fa900301fcf95ae1467248471beee#iefix") format("embedded-opentype");
 }
 
 .vi {
@@ -440,16 +440,16 @@ url("./Valkyrie.eot?0da834ce953646b2416f1fa09860ed38#iefix") format("embedded-op
 .vi.vi-linkedin:before {
  content: "\f17d";
 }
-.vi.vi-list-check:before {
+.vi.vi-list-checks:before {
  content: "\f17e";
 }
 .vi.vi-list-clock:before {
  content: "\f17f";
 }
-.vi.vi-list-ol-clock:before {
+.vi.vi-list-ordered-clock:before {
  content: "\f180";
 }
-.vi.vi-list-ol:before {
+.vi.vi-list-ordered:before {
  content: "\f181";
 }
 .vi.vi-list:before {
