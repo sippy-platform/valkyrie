@@ -1,9 +1,9 @@
 @font-face {
  font-family: "Valkyrie";
- src: url("./Valkyrie.ttf?a6d455002dfc409df00a46f9b4915863") format("truetype"),
-url("./Valkyrie.woff?a6d455002dfc409df00a46f9b4915863") format("woff"),
-url("./Valkyrie.woff2?a6d455002dfc409df00a46f9b4915863") format("woff2"),
-url("./Valkyrie.eot?a6d455002dfc409df00a46f9b4915863#iefix") format("embedded-opentype");
+ src: url("./Valkyrie.ttf?e4163344aeaebb429f5710ca684b0b1f") format("truetype"),
+url("./Valkyrie.woff?e4163344aeaebb429f5710ca684b0b1f") format("woff"),
+url("./Valkyrie.woff2?e4163344aeaebb429f5710ca684b0b1f") format("woff2"),
+url("./Valkyrie.eot?e4163344aeaebb429f5710ca684b0b1f#iefix") format("embedded-opentype");
 }
 
 .vi {
@@ -599,7 +599,7 @@ url("./Valkyrie.eot?a6d455002dfc409df00a46f9b4915863#iefix") format("embedded-op
 .vi.vi-redo:before {
  content: "\f1b2";
 }
-.vi.vi-repeat-1:before {
+.vi.vi-repeat-once:before {
  content: "\f1b3";
 }
 .vi.vi-repeat:before {
@@ -713,7 +713,7 @@ url("./Valkyrie.eot?a6d455002dfc409df00a46f9b4915863#iefix") format("embedded-op
 .vi.vi-volume-3:before {
  content: "\f1d8";
 }
-.vi.vi-volume-none:before {
+.vi.vi-volume-slash:before {
  content: "\f1d9";
 }
 .vi.vi-wallpaper:before {
