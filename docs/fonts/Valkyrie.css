@@ -1,9 +1,9 @@
 @font-face {
  font-family: "Valkyrie";
- src: url("./Valkyrie.ttf?9bf26c9d5dd0e940a4e561fa431ad74c") format("truetype"),
-url("./Valkyrie.woff?9bf26c9d5dd0e940a4e561fa431ad74c") format("woff"),
-url("./Valkyrie.woff2?9bf26c9d5dd0e940a4e561fa431ad74c") format("woff2"),
-url("./Valkyrie.eot?9bf26c9d5dd0e940a4e561fa431ad74c#iefix") format("embedded-opentype");
+ src: url("./Valkyrie.ttf?7f8eebac29a93ca04b15321948b3b87a") format("truetype"),
+url("./Valkyrie.woff?7f8eebac29a93ca04b15321948b3b87a") format("woff"),
+url("./Valkyrie.woff2?7f8eebac29a93ca04b15321948b3b87a") format("woff2"),
+url("./Valkyrie.eot?7f8eebac29a93ca04b15321948b3b87a#iefix") format("embedded-opentype");
 }
 
 .vi {
@@ -638,7 +638,7 @@ url("./Valkyrie.eot?9bf26c9d5dd0e940a4e561fa431ad74c#iefix") format("embedded-op
 .vi.vi-sliders:before {
  content: "\f1bf";
 }
-.vi.vi-smartphone-divert:before {
+.vi.vi-smartphone-arrow-right:before {
  content: "\f1c0";
 }
 .vi.vi-smartphone:before {
@@ -680,60 +680,57 @@ url("./Valkyrie.eot?9bf26c9d5dd0e940a4e561fa431ad74c#iefix") format("embedded-op
 .vi.vi-tower-broadcast:before {
  content: "\f1cd";
 }
-.vi.vi-traingle-exclamation:before {
+.vi.vi-trash-can:before {
  content: "\f1ce";
 }
-.vi.vi-trash-can:before {
+.vi.vi-triangle-exclamation:before {
  content: "\f1cf";
 }
-.vi.vi-triangle-exclamation:before {
+.vi.vi-underline:before {
  content: "\f1d0";
 }
-.vi.vi-underline:before {
+.vi.vi-undo:before {
  content: "\f1d1";
 }
-.vi.vi-undo:before {
+.vi.vi-valkyrie-sword:before {
  content: "\f1d2";
 }
-.vi.vi-valkyrie-sword:before {
+.vi.vi-video:before {
  content: "\f1d3";
 }
-.vi.vi-video:before {
+.vi.vi-voicemail:before {
  content: "\f1d4";
 }
-.vi.vi-voicemail:before {
+.vi.vi-volume-0:before {
  content: "\f1d5";
 }
-.vi.vi-volume-0:before {
+.vi.vi-volume-1:before {
  content: "\f1d6";
 }
-.vi.vi-volume-1:before {
+.vi.vi-volume-2:before {
  content: "\f1d7";
 }
-.vi.vi-volume-2:before {
+.vi.vi-volume-3:before {
  content: "\f1d8";
 }
-.vi.vi-volume-3:before {
+.vi.vi-volume-slash:before {
  content: "\f1d9";
 }
-.vi.vi-volume-slash:before {
+.vi.vi-wallpaper:before {
  content: "\f1da";
 }
-.vi.vi-wallpaper:before {
+.vi.vi-waveform:before {
  content: "\f1db";
 }
-.vi.vi-waveform:before {
+.vi.vi-webhooks-clock:before {
  content: "\f1dc";
 }
-.vi.vi-webhooks-clock:before {
+.vi.vi-webhooks:before {
  content: "\f1dd";
 }
-.vi.vi-webhooks:before {
+.vi.vi-window:before {
  content: "\f1de";
 }
-.vi.vi-window:before {
- content: "\f1df";
-}
 .vi.vi-xmark:before {
- content: "\f1e0";
+ content: "\f1df";
 }
