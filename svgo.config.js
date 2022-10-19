@@ -1,43 +1,38 @@
-'use strict'
+"use strict";
 
 module.exports = {
   multipass: true,
   plugins: [
     {
-      name: 'preset-default',
+      name: "preset-default",
       params: {
         overrides: {
           convertPathData: {
             floatPrecision: 2,
           },
           removeUnknownsAndDefaults: {
-            keepRoleAttr: true
+            keepRoleAttr: true,
           },
-          removeViewBox: false,
         },
       },
     },
-    'cleanupListOfValues',
-    'sortAttrs',
+    "cleanupListOfValues",
+    "sortAttrs",
     {
-      name: 'removeAttrs',
+      name: "removeAttrs",
       params: {
-        attrs: [
-          'clip-rule',
-          'data-name',
-          'fill',
-          'height',
-          'width'
-        ]
-      }
+        attrs: ["clip-rule", "data-name", "fill", "height", "width"],
+      },
     },
     {
-      name: 'addAttributesToSVGElement',
+      name: "addAttributesToSVGElement",
       params: {
-        attributes: [{
-          fill: 'currentColor'
-        }]
-      }
-    }
-  ]
-}
+        attributes: [
+          {
+            fill: "currentColor",
+          },
+        ],
+      },
+    },
+  ],
+};
