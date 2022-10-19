@@ -1,37 +1,64 @@
-import clsx from 'clsx';
-import { ValkyrieIcon as IValkyrieIcon } from './Valkyrie';
+import { ValkyrieIcon as IValkyrieIcon } from "./Valkyrie";
+import { Box } from "@mui/system";
+import { keyframes } from "@emotion/react";
 
 interface ValkyrieProps {
-  icon: IValkyrieIcon
-  className?: string
-  rotate?: 0 | 90 | 180 | 270 | false
-  flip?: true | 'x' | 'y' | false
-  spin?: boolean
+  icon: IValkyrieIcon;
+  rotate?: 0 | 90 | 180 | 270 | false;
+  flip?: true | "x" | "y" | false;
+  spin?: boolean;
 }
 
 export default function ValkyrieIcon({
+  flip = false,
   icon,
-  className,
+  rotate = 0,
   spin = false,
-  rotate = false,
-  flip,
   ...props
 }: ValkyrieProps) {
+  const spinAnimation = keyframes`
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  `;
+
   return (
-    <span
+    <Box
       {...props}
-      className={
-        clsx(
-          'vi',
-          className,
-          {
-            'vi-spin': spin,
-            [`vi-rotate-${rotate}`]: rotate,
-            'vi-flip': flip === true,
-            [`vi-flip-${flip}`]: flip === 'x' || flip === 'y'
-          }
-        )
-      }
+      component="span"
+      sx={[
+        {
+          height: "1em",
+          width: "1em",
+          minWidth: "1em",
+          lineHeight: 1,
+          boxSizing: "content-box",
+          display: "inline-block",
+          position: "relative",
+          overflow: "visible",
+          verticalAlign: 0,
+          flexShrink: 0,
+          transition: "all .2s ease-in-out",
+          transform: `rotate(${rotate}deg)`,
+        },
+        spin && {
+          svg: {
+            animation: `${spinAnimation} 2s infinite linear`,
+          },
+        },
+        flip && {
+          transform:
+            flip === "x"
+              ? "scaleX(-1)"
+              : flip === "y"
+              ? "scaleY(-1)"
+              : "scale(-1)",
+        },
+      ]}
+      // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: icon.data }}
     />
   );

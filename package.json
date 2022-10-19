@@ -47,8 +47,10 @@
   },
   "homepage": "https://sippy-platform.github.io/valkyrie",
   "peerDependencies": {
-    "react": ">=16.x",
-    "clsx": ">=1.x"
+    "@emotion/react": ">=11.x",
+    "@emotion/styled": ">=11.x",
+    "@mui/system": ">=5.x",
+    "react": ">=16.x"
   },
   "devDependencies": {
     "@types/react": "18.0.21",
