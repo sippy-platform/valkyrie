@@ -5,7 +5,7 @@ const codepoints = require("./dist/valkyrie.json");
 module.exports = {
   inputDir: "./icons",
   outputDir: "./dist",
-  fontTypes: ["ttf", "woff", "woff2", "eot"],
+  fontTypes: ["woff", "woff2"],
   assetTypes: ["css", "scss", "html", "json"],
   fontsUrl: "./fonts",
   name: "Valkyrie",
