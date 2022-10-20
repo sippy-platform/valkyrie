@@ -1,3 +1,5 @@
+"use strict";
+
 const codepoints = require("./dist/fonts/valkyrie.json");
 
 module.exports = {
