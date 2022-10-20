@@ -9,8 +9,6 @@
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "dl:fonts": "copyfiles -a \"font/fonts/*.*\" \"dl/fonts\" -f",
-    "dl:styles": "copyfiles -a \"font/Valkyrie.css\" \"dl/\" -f",
     "docs:serve": "hugo server --port 5000 --disableFastRender",
     "fonts": "npm run fonts:generate",
     "fonts:generate": "fantasticon",
@@ -21,7 +19,7 @@
     "mellow": "svgo -f ./mellow -o ./mellow",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pages": "node build/generate-pages.js --verbose",
-    "prod": "npm run icons && npm run fonts && npm run build && npm run scss && npm run dl:fonts && npm run dl:styles",
+    "prod": "npm run icons && npm run fonts && npm run build && npm run scss",
     "scss": "npm run scss:compile && npm run scss:prefix",
     "scss:compile": "node-sass font -o font --output-style compressed",
     "scss:prefix": "postcss -u autoprefixer -r ./font/*.css --map"
