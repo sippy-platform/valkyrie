@@ -1,29 +1,31 @@
-<header class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
-  <nav class="container-fluid g-5 flex-nowrap" aria-label="Main navigation">
-    <h3 class="m-0">Icons</h3>
-    <ul class="navbar-nav flex-row">
-      <form class="subnav-search d-flex flex-nowrap">
-        <label for="search" class="visually-hidden">Find icons</label>
-        <input class="form-control search mb-0" id="search" type="search" placeholder="Find icon..." autocomplete="off">
-      </form>
-    </ul>
-  </nav>
-</header>
+<div class="vh-100 overflow-auto">
+  <header class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
+    <nav class="container-fluid g-5 flex-nowrap" aria-label="Main navigation">
+      <h3 class="m-0">Icons</h3>
+      <ul class="navbar-nav flex-row">
+        <form class="subnav-search d-flex flex-nowrap">
+          <label for="search" class="visually-hidden">Find icons</label>
+          <input class="form-control search mb-0" id="search" type="search" placeholder="Find icon..." autocomplete="off">
+        </form>
+      </ul>
+    </nav>
+  </header>
 
-<div class="container-fluid g-5 my-4">
-  <ul class="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 row-cols-xxl-8 row-cols-3xl-10 list-unstyled list">
-    {{ range (where .Site.RegularPages "Type" "icons") -}}
-      {{- $filename := .File.TranslationBaseName -}}
-      {{- with .Site.GetPage .File.Path }}
-      <li class="col mb-4"{{ with .Params.tags }} data-tags="{{ delimit . " " }}"{{ end }}{{ with .Params.categories }} data-categories="{{ delimit . " " | lower }}"{{ end }}>
-        <a class="d-block text-dark text-decoration-none border rounded-3 overflow-hidden" href="{{ .RelPermalink }}">
-          <div class="p-3 py-4 bg-light text-center">
-            <i class="vi vi-{{ $filename }}"></i>
-          </div>
-          <div class="name text-muted text-decoration-none text-center p-2 text-truncate">{{ $filename }}</div>
-        </a>
-      </li>
+  <div class="container-fluid g-5 mt-4">
+    <ul class="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 row-cols-xxl-8 row-cols-3xl-10 list-unstyled list">
+      {{ range (where .Site.RegularPages "Type" "icons") -}}
+        {{- $filename := .File.TranslationBaseName -}}
+        {{- with .Site.GetPage .File.Path }}
+        <li class="col mb-4"{{ with .Params.tags }} data-tags="{{ delimit . " " }}"{{ end }}{{ with .Params.categories }} data-categories="{{ delimit . " " | lower }}"{{ end }}>
+          <a class="d-block text-dark text-decoration-none border rounded-3 overflow-hidden" href="{{ .RelPermalink }}">
+            <div class="p-3 py-4 bg-light text-center">
+              <i class="vi vi-{{ $filename }}"></i>
+            </div>
+            <div class="name text-muted text-decoration-none text-center p-2 text-truncate">{{ $filename }}</div>
+          </a>
+        </li>
+        {{- end }}
       {{- end }}
-    {{- end }}
-  </ul>
+    </ul>
+  </div>
 </div>
