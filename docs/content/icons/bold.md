@@ -1,0 +1,5 @@
+---
+title: Bold
+categories:
+tags:
+---
