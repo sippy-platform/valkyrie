@@ -1,0 +1,40 @@
+.navbar {
+  padding: .75rem 0;
+  background-color: var(--vd-blue);
+  height: 64px;
+
+  .navbar-toggler {
+    padding: 0;
+    margin-right: -.5rem;
+    border: 0;
+
+    &:first-child {
+      margin-left: -.5rem;
+    }
+
+    .vi {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .nav-link {
+    padding-right: $spacer * .25;
+    padding-left: $spacer * .25;
+    color: rgba($white, .85);
+
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+
+    &.active {
+      font-weight: 600;
+      color: $white;
+    }
+  }
+}

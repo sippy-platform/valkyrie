@@ -45,8 +45,6 @@ module:
       target:           static/assets/font
     - source:           node_modules/bootstrap/scss
       target:           assets/scss/bootstrap
-    - source:           node_modules/bootstrap/dist/js/bootstrap.min.js
-      target:           assets/js/bootstrap.min.js
 
 params:
   description:          "Open source SVG icon library from Sippy"

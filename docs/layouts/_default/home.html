@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{ partial "head" . }}
+  </head>
+  <body id="icons-body">
+    <div class="uigrid">
+      {{ partialCached "home/hero" . }}
+
+      <main id="content">
+        {{ partialCached "icons" . "home" }}
+        {{ .Content }}
+      </main>
+    </div>
+
+    {{- partialCached "scripts" . "home" }}
+  </body>
+</html>
