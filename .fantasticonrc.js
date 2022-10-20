@@ -25,7 +25,7 @@ module.exports = {
     woff2: "./font/fonts/Valkyrie.woff2",
     css: "./font/Valkyrie.css",
     scss: "./font/Valkyrie.scss",
-    html: "./docs/index.html",
+    html: "./dl/index.html",
     json: "./font/valkyrie.json",
   },
 };
