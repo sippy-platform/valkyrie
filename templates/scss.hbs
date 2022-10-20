@@ -17,8 +17,15 @@ ${{ name }}-font: "{{ name }}";
   font-style: normal;
   font-variant: normal;
   font-weight: normal !important;
+  height: 1em;
+  width: 1em;
   line-height: 1;
   text-rendering: auto;
+  box-sizing: content-box;
+  position: relative;
+  overflow: visible;
+  vertical-align: 0;
+  flex-shrink: 0;
 }
 
 {{ selector }}-spin {

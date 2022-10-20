@@ -1,21 +1,26 @@
 @font-face {
- font-family: "Valkyrie";
- src: url("./Valkyrie.ttf?d86ddf5f6da0de0c529308a30355532c") format("truetype"),
-url("./Valkyrie.woff?d86ddf5f6da0de0c529308a30355532c") format("woff"),
-url("./Valkyrie.woff2?d86ddf5f6da0de0c529308a30355532c") format("woff2"),
-url("./Valkyrie.eot?d86ddf5f6da0de0c529308a30355532c#iefix") format("embedded-opentype");
+  font-family: "Valkyrie";
+  src: url("./fonts/Valkyrie.ttf?d86ddf5f6da0de0c529308a30355532c") format("truetype"),
+url("./fonts/Valkyrie.woff?d86ddf5f6da0de0c529308a30355532c") format("woff"),
+url("./fonts/Valkyrie.woff2?d86ddf5f6da0de0c529308a30355532c") format("woff2"),
+url("./fonts/Valkyrie.eot?d86ddf5f6da0de0c529308a30355532c#iefix") format("embedded-opentype");
 }
 
 .vi {
- -moz-osx-font-smoothing: grayscale;
- -webkit-font-smoothing: antialiased;
- display: inline-block;
- font-family: Valkyrie !important;
- font-style: normal;
- font-variant: normal;
- font-weight: normal !important;
- line-height: 1;
- text-rendering: auto;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-family: Valkyrie !important;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal !important;
+  line-height: 1;
+  text-rendering: auto;
+  box-sizing: content-box;
+  position: relative;
+  overflow: visible;
+  vertical-align: 0;
+  flex-shrink: 0;
 }
 
 .vi-spin {

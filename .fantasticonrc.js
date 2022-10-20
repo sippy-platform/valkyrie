@@ -1,13 +1,13 @@
 "use strict";
 
-const codepoints = require("./dist/fonts/valkyrie.json");
+const codepoints = require("./dist/valkyrie.json");
 
 module.exports = {
   inputDir: "./icons",
   outputDir: "./dist",
   fontTypes: ["ttf", "woff", "woff2", "eot"],
   assetTypes: ["css", "scss", "html", "json"],
-  fontsUrl: ".",
+  fontsUrl: "./fonts",
   name: "Valkyrie",
   prefix: "vi",
   selector: ".vi",
@@ -23,9 +23,9 @@ module.exports = {
     ttf: "./dist/fonts/Valkyrie.ttf",
     woff: "./dist/fonts/Valkyrie.woff",
     woff2: "./dist/fonts/Valkyrie.woff2",
-    css: "./dist/fonts/Valkyrie.css",
-    scss: "./dist/fonts/Valkyrie.scss",
+    css: "./dist/Valkyrie.css",
+    scss: "./dist/Valkyrie.scss",
     html: "./docs/index.html",
-    json: "./dist/fonts/valkyrie.json",
+    json: "./dist/valkyrie.json",
   },
 };
