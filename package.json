@@ -9,6 +9,7 @@
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "docs:build": "hugo --cleanDestinationDir",
     "docs:serve": "hugo server --port 5000 --disableFastRender",
     "fonts": "npm run fonts:generate",
     "fonts:generate": "fantasticon",
