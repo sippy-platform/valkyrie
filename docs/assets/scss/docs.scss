@@ -166,6 +166,15 @@ h1 {
   }
 }
 
+@media (min-width: 1800px) {
+  .row-cols-4xl-12 {
+    > * {
+      flex: 0 0 8.33%;
+      max-width: 8.33%;
+    }
+  }
+}
+
 .icon-demo {
   border-radius: .5rem;
   background-color: #fdfdfd;

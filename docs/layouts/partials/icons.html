@@ -12,7 +12,7 @@
   </header>
 
   <div class="container-fluid g-5 mt-4">
-    <ul class="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 row-cols-xxl-8 row-cols-3xl-10 list-unstyled list">
+    <ul class="row row-cols-1 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 row-cols-xxl-8 row-cols-3xl-10 row-cols-4xl-12 list-unstyled list">
       {{ range (where .Site.RegularPages "Type" "icons") -}}
         {{- $filename := .File.TranslationBaseName -}}
         {{- with .Site.GetPage .File.Path }}
