@@ -1,0 +1,5 @@
+---
+title: Quote
+categories:
+tags:
+---

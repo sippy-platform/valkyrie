@@ -1,6 +1,6 @@
 {
   "name": "@sippy-platform/valkyrie",
-  "version": "0.21.1",
+  "version": "1.0.0-alpha.1",
   "description": "The iconography of Sippy.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -9,8 +9,8 @@
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "docs:fonts": "copyfiles -a \"font/fonts/*.*\" \"docs/fonts\" -f",
-    "docs:styles": "copyfiles -a \"font/Valkyrie.css\" \"docs/\" -f",
+    "docs:build": "hugo --cleanDestinationDir",
+    "docs:serve": "hugo server --port 5000 --disableFastRender",
     "fonts": "npm run fonts:generate",
     "fonts:generate": "fantasticon",
     "icons": "npm run icons:clean && npm run icons:ts",
@@ -19,7 +19,8 @@
     "icons:ts": "svg-to-ts-constants",
     "mellow": "svgo -f ./mellow -o ./mellow",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prod": "npm run icons && npm run fonts && npm run build && npm run scss && npm run docs:fonts && npm run docs:styles",
+    "pages": "node build/generate-pages.js --verbose",
+    "prod": "npm run icons && npm run fonts && npm run build && npm run scss",
     "scss": "npm run scss:compile && npm run scss:prefix",
     "scss:compile": "node-sass font -o font --output-style compressed",
     "scss:prefix": "postcss -u autoprefixer -r ./font/*.css --map"
@@ -53,12 +54,15 @@
   "devDependencies": {
     "@types/react": "18.0.21",
     "autoprefixer": "10.4.12",
+    "bootstrap": "5.2.2",
     "bundle-scss": "1.5.1",
     "copyfiles": "2.4.1",
     "fantasticon": "1.2.3",
+    "hugo-bin": "0.92.3",
     "node-sass": "7.0.3",
     "nodemon": "2.0.20",
     "npm-run-all": "4.1.5",
+    "picocolors": "1.0.0",
     "postcss": "8.4.18",
     "postcss-cli": "10.0.0",
     "react": "18.2.0",
@@ -75,5 +79,8 @@
       "not ie <= 11"
     ]
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "hugo-bin": {
+    "buildTags": "extended"
+  }
 }

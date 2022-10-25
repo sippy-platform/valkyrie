@@ -1,0 +1,14 @@
+$vd-blue: #0062ff;
+$vd-purple: #9238ff;
+$vd-accent: $pink-500;
+
+$headings-font-family: "Segoe UI Variable Display", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+:root {
+  --vd-blue: #{$vd-blue};
+  --vd-purple: #{$vd-purple};
+  --vd-accent: #{$vd-accent};
+  --vd-blue-rgb: #{to-rgb($vd-blue)};
+  --vd-purple-rgb: #{to-rgb($vd-purple)};
+  --vd-accent-rgb: #{to-rgb($vd-accent)};
+}

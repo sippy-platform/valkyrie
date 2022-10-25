@@ -1,7 +1,9 @@
+$Valkyrie-font: "Valkyrie";
+
 @font-face {
-  font-family: "Valkyrie";
-  src: url("./fonts/Valkyrie.woff?d86ddf5f6da0de0c529308a30355532c") format("woff"),
-url("./fonts/Valkyrie.woff2?d86ddf5f6da0de0c529308a30355532c") format("woff2");
+  font-family: $Valkyrie-font;
+  src: url("./fonts/Valkyrie.woff?02572d1af40deaeeff4936d54a091c95") format("woff"),
+url("./fonts/Valkyrie.woff2?02572d1af40deaeeff4936d54a091c95") format("woff2");
 }
 
 .vi {
@@ -12,6 +14,8 @@ url("./fonts/Valkyrie.woff2?d86ddf5f6da0de0c529308a30355532c") format("woff2");
   font-style: normal;
   font-variant: normal;
   font-weight: normal !important;
+  height: 1em;
+  width: 1em;
   line-height: 1;
   text-rendering: auto;
   box-sizing: content-box;
@@ -26,10 +30,8 @@ url("./fonts/Valkyrie.woff2?d86ddf5f6da0de0c529308a30355532c") format("woff2");
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-}
 
-@media (prefers-reduced-motion: reduce) {
-  .vi-spin {
+  @media (prefers-reduced-motion: reduce) {
     animation: none;
   }
 }
@@ -68,672 +70,898 @@ url("./fonts/Valkyrie.woff2?d86ddf5f6da0de0c529308a30355532c") format("woff2");
   }
 }
 
+$Valkyrie-map: (
+  "a-gum": "\f101",
+  "address-book": "\f102",
+  "angle-down": "\f103",
+  "angle-left": "\f104",
+  "angle-right": "\f105",
+  "angle-up": "\f106",
+  "angles-y": "\f107",
+  "apple-app-store": "\f108",
+  "arrow-down-short-wide": "\f109",
+  "arrow-down-to-line": "\f10a",
+  "arrow-down-wide-short": "\f10b",
+  "arrow-down": "\f10c",
+  "arrow-left-from-bracket": "\f10d",
+  "arrow-left-to-bracket": "\f10e",
+  "arrow-left-to-line": "\f10f",
+  "arrow-left": "\f110",
+  "arrow-pointer": "\f111",
+  "arrow-right-from-bracket": "\f112",
+  "arrow-right-prohibited": "\f113",
+  "arrow-right-to-bracket": "\f114",
+  "arrow-right-to-line": "\f115",
+  "arrow-right": "\f116",
+  "arrow-rotate-right": "\f117",
+  "arrow-up-short-wide": "\f118",
+  "arrow-up-to-line": "\f119",
+  "arrow-up-wide-short": "\f11a",
+  "arrow-up": "\f11b",
+  "arrows-rotate-right": "\f11c",
+  "asterisk": "\f11d",
+  "at": "\f11e",
+  "backward": "\f11f",
+  "bars": "\f120",
+  "blf": "\f121",
+  "bold": "\f122",
+  "book": "\f123",
+  "box-open-full": "\f124",
+  "brackets-curly": "\f125",
+  "bug": "\f126",
+  "building": "\f127",
+  "calendar-stars": "\f128",
+  "calendar": "\f129",
+  "chain-slash": "\f12a",
+  "chain": "\f12b",
+  "chart-pie": "\f12c",
+  "check": "\f12d",
+  "chevron-down": "\f12e",
+  "chevron-left": "\f12f",
+  "chevron-right": "\f130",
+  "chevron-up": "\f131",
+  "chrome": "\f132",
+  "circle-check": "\f133",
+  "circle-exclamation": "\f134",
+  "circle-info": "\f135",
+  "circle-plus": "\f136",
+  "circle-question": "\f137",
+  "circle-user": "\f138",
+  "circle-xmark": "\f139",
+  "city": "\f13a",
+  "clock-rotate-left": "\f13b",
+  "clock": "\f13c",
+  "code": "\f13d",
+  "codeblock": "\f13e",
+  "compass": "\f13f",
+  "compress": "\f140",
+  "copy": "\f141",
+  "devices": "\f142",
+  "display": "\f143",
+  "earth": "\f144",
+  "eclipse": "\f145",
+  "edge": "\f146",
+  "ellipsis": "\f147",
+  "envelope": "\f148",
+  "ethernet": "\f149",
+  "euro": "\f14a",
+  "expand": "\f14b",
+  "eye-slash": "\f14c",
+  "eye": "\f14d",
+  "facebook-messenger": "\f14e",
+  "facebook": "\f14f",
+  "fast-backward": "\f150",
+  "fast-forward": "\f151",
+  "fax": "\f152",
+  "file": "\f153",
+  "files-list": "\f154",
+  "files": "\f155",
+  "filmstrip": "\f156",
+  "filter-plus": "\f157",
+  "filter-xmark": "\f158",
+  "filter": "\f159",
+  "fingerprint": "\f15a",
+  "firefox": "\f15b",
+  "flag-checkered": "\f15c",
+  "flag": "\f15d",
+  "floppy-disk": "\f15e",
+  "folder": "\f15f",
+  "forward": "\f160",
+  "gauge": "\f161",
+  "gear": "\f162",
+  "gift": "\f163",
+  "github": "\f164",
+  "google-play": "\f165",
+  "grid": "\f166",
+  "grip-lines": "\f167",
+  "heading-1": "\f168",
+  "heading-2": "\f169",
+  "heading-3": "\f16a",
+  "heading-4": "\f16b",
+  "heading-5": "\f16c",
+  "heading-6": "\f16d",
+  "headset": "\f16e",
+  "heart-crack": "\f16f",
+  "heart-half": "\f170",
+  "heart": "\f171",
+  "house": "\f172",
+  "id-card": "\f173",
+  "image": "\f174",
+  "italic": "\f175",
+  "laptop": "\f176",
+  "layers-plus": "\f177",
+  "layers": "\f178",
+  "lightbulb-on": "\f179",
+  "lightbulb": "\f17a",
+  "line": "\f17b",
+  "linkedin": "\f17c",
+  "list-checks": "\f17d",
+  "list-clock": "\f17e",
+  "list-ordered-clock": "\f17f",
+  "list-ordered": "\f180",
+  "list": "\f181",
+  "location-pin-dot": "\f182",
+  "location-pin-slash": "\f183",
+  "location-pin": "\f184",
+  "location-pins-route": "\f185",
+  "lock-open": "\f186",
+  "lock": "\f187",
+  "magnifying-glass": "\f188",
+  "megaphone": "\f189",
+  "message-pen": "\f18a",
+  "message-smile": "\f18b",
+  "message-text": "\f18c",
+  "message": "\f18d",
+  "microphone": "\f18e",
+  "moon": "\f18f",
+  "music": "\f190",
+  "network": "\f191",
+  "numpad": "\f192",
+  "paper-plane": "\f193",
+  "parachute-box": "\f194",
+  "paragraph": "\f195",
+  "pause": "\f196",
+  "pen": "\f197",
+  "people-circle": "\f198",
+  "people": "\f199",
+  "person-clock": "\f19a",
+  "person-gear": "\f19b",
+  "person-headset": "\f19c",
+  "person-list": "\f19d",
+  "person-lock": "\f19e",
+  "person-plus": "\f19f",
+  "person": "\f1a0",
+  "phone-arrow-down-left-prohibited": "\f1a1",
+  "phone-arrow-down-left": "\f1a2",
+  "phone-arrow-up-right-prohibited": "\f1a3",
+  "phone-arrow-up-right": "\f1a4",
+  "phone-clock": "\f1a5",
+  "phone-gear": "\f1a6",
+  "phone-list": "\f1a7",
+  "phone-office": "\f1a8",
+  "phone-volume": "\f1a9",
+  "phone": "\f1aa",
+  "play-pause": "\f1ab",
+  "play": "\f1ac",
+  "plus": "\f1ad",
+  "power": "\f1ae",
+  "prohibited": "\f1af",
+  "puzzle-piece": "\f1b0",
+  "quote": "\f1b1",
+  "redo": "\f1b2",
+  "repeat-once": "\f1b3",
+  "repeat": "\f1b4",
+  "safari": "\f1b5",
+  "server": "\f1b6",
+  "shield-keyhole": "\f1b7",
+  "shield-plus": "\f1b8",
+  "shield-xmark": "\f1b9",
+  "shield": "\f1ba",
+  "shuffle": "\f1bb",
+  "sim-card": "\f1bc",
+  "sippy": "\f1bd",
+  "sliders": "\f1be",
+  "smartphone-arrow-right": "\f1bf",
+  "smartphone": "\f1c0",
+  "spinner-third": "\f1c1",
+  "spy": "\f1c2",
+  "square-gum": "\f1c3",
+  "star": "\f1c4",
+  "stop": "\f1c5",
+  "store": "\f1c6",
+  "strikethrough": "\f1c7",
+  "sun": "\f1c8",
+  "swatchbook": "\f1c9",
+  "table-clock": "\f1ca",
+  "table": "\f1cb",
+  "tag": "\f1cc",
+  "tower-broadcast": "\f1cd",
+  "trash-can": "\f1ce",
+  "triangle-exclamation": "\f1cf",
+  "underline": "\f1d0",
+  "undo": "\f1d1",
+  "valkyrie-sword": "\f1d2",
+  "video": "\f1d3",
+  "voicemail": "\f1d4",
+  "volume-0": "\f1d5",
+  "volume-1": "\f1d6",
+  "volume-2": "\f1d7",
+  "volume-3": "\f1d8",
+  "volume-slash": "\f1d9",
+  "wallpaper": "\f1da",
+  "waveform": "\f1db",
+  "webhooks-clock": "\f1dc",
+  "webhooks": "\f1dd",
+  "window": "\f1de",
+  "xmark": "\f1df",
+);
+
 .vi.vi-a-gum:before {
- content: "\f101";
+  content: map-get($Valkyrie-map, "a-gum");
 }
 .vi.vi-address-book:before {
- content: "\f102";
+  content: map-get($Valkyrie-map, "address-book");
 }
 .vi.vi-angle-down:before {
- content: "\f103";
+  content: map-get($Valkyrie-map, "angle-down");
 }
 .vi.vi-angle-left:before {
- content: "\f104";
+  content: map-get($Valkyrie-map, "angle-left");
 }
 .vi.vi-angle-right:before {
- content: "\f105";
+  content: map-get($Valkyrie-map, "angle-right");
 }
 .vi.vi-angle-up:before {
- content: "\f106";
+  content: map-get($Valkyrie-map, "angle-up");
 }
 .vi.vi-angles-y:before {
- content: "\f107";
+  content: map-get($Valkyrie-map, "angles-y");
 }
 .vi.vi-apple-app-store:before {
- content: "\f108";
+  content: map-get($Valkyrie-map, "apple-app-store");
 }
 .vi.vi-arrow-down-short-wide:before {
- content: "\f109";
+  content: map-get($Valkyrie-map, "arrow-down-short-wide");
 }
 .vi.vi-arrow-down-to-line:before {
- content: "\f10a";
+  content: map-get($Valkyrie-map, "arrow-down-to-line");
 }
 .vi.vi-arrow-down-wide-short:before {
- content: "\f10b";
+  content: map-get($Valkyrie-map, "arrow-down-wide-short");
 }
 .vi.vi-arrow-down:before {
- content: "\f10c";
+  content: map-get($Valkyrie-map, "arrow-down");
 }
 .vi.vi-arrow-left-from-bracket:before {
- content: "\f10d";
+  content: map-get($Valkyrie-map, "arrow-left-from-bracket");
 }
 .vi.vi-arrow-left-to-bracket:before {
- content: "\f10e";
+  content: map-get($Valkyrie-map, "arrow-left-to-bracket");
 }
 .vi.vi-arrow-left-to-line:before {
- content: "\f10f";
+  content: map-get($Valkyrie-map, "arrow-left-to-line");
 }
 .vi.vi-arrow-left:before {
- content: "\f110";
+  content: map-get($Valkyrie-map, "arrow-left");
 }
 .vi.vi-arrow-pointer:before {
- content: "\f111";
+  content: map-get($Valkyrie-map, "arrow-pointer");
 }
 .vi.vi-arrow-right-from-bracket:before {
- content: "\f112";
+  content: map-get($Valkyrie-map, "arrow-right-from-bracket");
 }
 .vi.vi-arrow-right-prohibited:before {
- content: "\f113";
+  content: map-get($Valkyrie-map, "arrow-right-prohibited");
 }
 .vi.vi-arrow-right-to-bracket:before {
- content: "\f114";
+  content: map-get($Valkyrie-map, "arrow-right-to-bracket");
 }
 .vi.vi-arrow-right-to-line:before {
- content: "\f115";
+  content: map-get($Valkyrie-map, "arrow-right-to-line");
 }
 .vi.vi-arrow-right:before {
- content: "\f116";
+  content: map-get($Valkyrie-map, "arrow-right");
 }
 .vi.vi-arrow-rotate-right:before {
- content: "\f117";
+  content: map-get($Valkyrie-map, "arrow-rotate-right");
 }
 .vi.vi-arrow-up-short-wide:before {
- content: "\f118";
+  content: map-get($Valkyrie-map, "arrow-up-short-wide");
 }
 .vi.vi-arrow-up-to-line:before {
- content: "\f119";
+  content: map-get($Valkyrie-map, "arrow-up-to-line");
 }
 .vi.vi-arrow-up-wide-short:before {
- content: "\f11a";
+  content: map-get($Valkyrie-map, "arrow-up-wide-short");
 }
 .vi.vi-arrow-up:before {
- content: "\f11b";
+  content: map-get($Valkyrie-map, "arrow-up");
 }
 .vi.vi-arrows-rotate-right:before {
- content: "\f11c";
+  content: map-get($Valkyrie-map, "arrows-rotate-right");
 }
 .vi.vi-asterisk:before {
- content: "\f11d";
+  content: map-get($Valkyrie-map, "asterisk");
 }
 .vi.vi-at:before {
- content: "\f11e";
+  content: map-get($Valkyrie-map, "at");
 }
 .vi.vi-backward:before {
- content: "\f11f";
+  content: map-get($Valkyrie-map, "backward");
 }
 .vi.vi-bars:before {
- content: "\f120";
+  content: map-get($Valkyrie-map, "bars");
 }
 .vi.vi-blf:before {
- content: "\f121";
+  content: map-get($Valkyrie-map, "blf");
 }
 .vi.vi-bold:before {
- content: "\f122";
+  content: map-get($Valkyrie-map, "bold");
 }
 .vi.vi-book:before {
- content: "\f123";
+  content: map-get($Valkyrie-map, "book");
 }
 .vi.vi-box-open-full:before {
- content: "\f124";
+  content: map-get($Valkyrie-map, "box-open-full");
 }
 .vi.vi-brackets-curly:before {
- content: "\f125";
+  content: map-get($Valkyrie-map, "brackets-curly");
 }
 .vi.vi-bug:before {
- content: "\f126";
+  content: map-get($Valkyrie-map, "bug");
 }
 .vi.vi-building:before {
- content: "\f127";
+  content: map-get($Valkyrie-map, "building");
 }
 .vi.vi-calendar-stars:before {
- content: "\f128";
+  content: map-get($Valkyrie-map, "calendar-stars");
 }
 .vi.vi-calendar:before {
- content: "\f129";
+  content: map-get($Valkyrie-map, "calendar");
 }
 .vi.vi-chain-slash:before {
- content: "\f12a";
+  content: map-get($Valkyrie-map, "chain-slash");
 }
 .vi.vi-chain:before {
- content: "\f12b";
+  content: map-get($Valkyrie-map, "chain");
 }
 .vi.vi-chart-pie:before {
- content: "\f12c";
+  content: map-get($Valkyrie-map, "chart-pie");
 }
 .vi.vi-check:before {
- content: "\f12d";
+  content: map-get($Valkyrie-map, "check");
 }
 .vi.vi-chevron-down:before {
- content: "\f12e";
+  content: map-get($Valkyrie-map, "chevron-down");
 }
 .vi.vi-chevron-left:before {
- content: "\f12f";
+  content: map-get($Valkyrie-map, "chevron-left");
 }
 .vi.vi-chevron-right:before {
- content: "\f130";
+  content: map-get($Valkyrie-map, "chevron-right");
 }
 .vi.vi-chevron-up:before {
- content: "\f131";
+  content: map-get($Valkyrie-map, "chevron-up");
 }
 .vi.vi-chrome:before {
- content: "\f132";
+  content: map-get($Valkyrie-map, "chrome");
 }
 .vi.vi-circle-check:before {
- content: "\f133";
+  content: map-get($Valkyrie-map, "circle-check");
 }
 .vi.vi-circle-exclamation:before {
- content: "\f134";
+  content: map-get($Valkyrie-map, "circle-exclamation");
 }
 .vi.vi-circle-info:before {
- content: "\f135";
+  content: map-get($Valkyrie-map, "circle-info");
 }
 .vi.vi-circle-plus:before {
- content: "\f136";
+  content: map-get($Valkyrie-map, "circle-plus");
 }
 .vi.vi-circle-question:before {
- content: "\f137";
+  content: map-get($Valkyrie-map, "circle-question");
 }
 .vi.vi-circle-user:before {
- content: "\f138";
+  content: map-get($Valkyrie-map, "circle-user");
 }
 .vi.vi-circle-xmark:before {
- content: "\f139";
+  content: map-get($Valkyrie-map, "circle-xmark");
 }
 .vi.vi-city:before {
- content: "\f13a";
+  content: map-get($Valkyrie-map, "city");
 }
 .vi.vi-clock-rotate-left:before {
- content: "\f13b";
+  content: map-get($Valkyrie-map, "clock-rotate-left");
 }
 .vi.vi-clock:before {
- content: "\f13c";
+  content: map-get($Valkyrie-map, "clock");
 }
 .vi.vi-code:before {
- content: "\f13d";
+  content: map-get($Valkyrie-map, "code");
 }
 .vi.vi-codeblock:before {
- content: "\f13e";
+  content: map-get($Valkyrie-map, "codeblock");
 }
 .vi.vi-compass:before {
- content: "\f13f";
+  content: map-get($Valkyrie-map, "compass");
 }
 .vi.vi-compress:before {
- content: "\f140";
+  content: map-get($Valkyrie-map, "compress");
 }
 .vi.vi-copy:before {
- content: "\f141";
+  content: map-get($Valkyrie-map, "copy");
 }
 .vi.vi-devices:before {
- content: "\f142";
+  content: map-get($Valkyrie-map, "devices");
 }
 .vi.vi-display:before {
- content: "\f143";
+  content: map-get($Valkyrie-map, "display");
 }
 .vi.vi-earth:before {
- content: "\f144";
+  content: map-get($Valkyrie-map, "earth");
 }
 .vi.vi-eclipse:before {
- content: "\f145";
+  content: map-get($Valkyrie-map, "eclipse");
 }
 .vi.vi-edge:before {
- content: "\f146";
+  content: map-get($Valkyrie-map, "edge");
 }
 .vi.vi-ellipsis:before {
- content: "\f147";
+  content: map-get($Valkyrie-map, "ellipsis");
 }
 .vi.vi-envelope:before {
- content: "\f148";
+  content: map-get($Valkyrie-map, "envelope");
 }
 .vi.vi-ethernet:before {
- content: "\f149";
+  content: map-get($Valkyrie-map, "ethernet");
 }
 .vi.vi-euro:before {
- content: "\f14a";
+  content: map-get($Valkyrie-map, "euro");
 }
 .vi.vi-expand:before {
- content: "\f14b";
+  content: map-get($Valkyrie-map, "expand");
 }
 .vi.vi-eye-slash:before {
- content: "\f14c";
+  content: map-get($Valkyrie-map, "eye-slash");
 }
 .vi.vi-eye:before {
- content: "\f14d";
+  content: map-get($Valkyrie-map, "eye");
 }
 .vi.vi-facebook-messenger:before {
- content: "\f14e";
+  content: map-get($Valkyrie-map, "facebook-messenger");
 }
 .vi.vi-facebook:before {
- content: "\f14f";
+  content: map-get($Valkyrie-map, "facebook");
 }
 .vi.vi-fast-backward:before {
- content: "\f150";
+  content: map-get($Valkyrie-map, "fast-backward");
 }
 .vi.vi-fast-forward:before {
- content: "\f151";
+  content: map-get($Valkyrie-map, "fast-forward");
 }
 .vi.vi-fax:before {
- content: "\f152";
+  content: map-get($Valkyrie-map, "fax");
 }
 .vi.vi-file:before {
- content: "\f153";
+  content: map-get($Valkyrie-map, "file");
 }
 .vi.vi-files-list:before {
- content: "\f154";
+  content: map-get($Valkyrie-map, "files-list");
 }
 .vi.vi-files:before {
- content: "\f155";
+  content: map-get($Valkyrie-map, "files");
 }
 .vi.vi-filmstrip:before {
- content: "\f156";
+  content: map-get($Valkyrie-map, "filmstrip");
 }
 .vi.vi-filter-plus:before {
- content: "\f157";
+  content: map-get($Valkyrie-map, "filter-plus");
 }
 .vi.vi-filter-xmark:before {
- content: "\f158";
+  content: map-get($Valkyrie-map, "filter-xmark");
 }
 .vi.vi-filter:before {
- content: "\f159";
+  content: map-get($Valkyrie-map, "filter");
 }
 .vi.vi-fingerprint:before {
- content: "\f15a";
+  content: map-get($Valkyrie-map, "fingerprint");
 }
 .vi.vi-firefox:before {
- content: "\f15b";
+  content: map-get($Valkyrie-map, "firefox");
 }
 .vi.vi-flag-checkered:before {
- content: "\f15c";
+  content: map-get($Valkyrie-map, "flag-checkered");
 }
 .vi.vi-flag:before {
- content: "\f15d";
+  content: map-get($Valkyrie-map, "flag");
 }
 .vi.vi-floppy-disk:before {
- content: "\f15e";
+  content: map-get($Valkyrie-map, "floppy-disk");
 }
 .vi.vi-folder:before {
- content: "\f15f";
+  content: map-get($Valkyrie-map, "folder");
 }
 .vi.vi-forward:before {
- content: "\f160";
+  content: map-get($Valkyrie-map, "forward");
 }
 .vi.vi-gauge:before {
- content: "\f161";
+  content: map-get($Valkyrie-map, "gauge");
 }
 .vi.vi-gear:before {
- content: "\f162";
+  content: map-get($Valkyrie-map, "gear");
 }
 .vi.vi-gift:before {
- content: "\f163";
+  content: map-get($Valkyrie-map, "gift");
 }
 .vi.vi-github:before {
- content: "\f164";
+  content: map-get($Valkyrie-map, "github");
 }
 .vi.vi-google-play:before {
- content: "\f165";
+  content: map-get($Valkyrie-map, "google-play");
 }
 .vi.vi-grid:before {
- content: "\f166";
+  content: map-get($Valkyrie-map, "grid");
 }
 .vi.vi-grip-lines:before {
- content: "\f167";
+  content: map-get($Valkyrie-map, "grip-lines");
 }
 .vi.vi-heading-1:before {
- content: "\f168";
+  content: map-get($Valkyrie-map, "heading-1");
 }
 .vi.vi-heading-2:before {
- content: "\f169";
+  content: map-get($Valkyrie-map, "heading-2");
 }
 .vi.vi-heading-3:before {
- content: "\f16a";
+  content: map-get($Valkyrie-map, "heading-3");
 }
 .vi.vi-heading-4:before {
- content: "\f16b";
+  content: map-get($Valkyrie-map, "heading-4");
 }
 .vi.vi-heading-5:before {
- content: "\f16c";
+  content: map-get($Valkyrie-map, "heading-5");
 }
 .vi.vi-heading-6:before {
- content: "\f16d";
+  content: map-get($Valkyrie-map, "heading-6");
 }
 .vi.vi-headset:before {
- content: "\f16e";
+  content: map-get($Valkyrie-map, "headset");
 }
 .vi.vi-heart-crack:before {
- content: "\f16f";
+  content: map-get($Valkyrie-map, "heart-crack");
 }
 .vi.vi-heart-half:before {
- content: "\f170";
+  content: map-get($Valkyrie-map, "heart-half");
 }
 .vi.vi-heart:before {
- content: "\f171";
+  content: map-get($Valkyrie-map, "heart");
 }
 .vi.vi-house:before {
- content: "\f172";
+  content: map-get($Valkyrie-map, "house");
 }
 .vi.vi-id-card:before {
- content: "\f173";
+  content: map-get($Valkyrie-map, "id-card");
 }
 .vi.vi-image:before {
- content: "\f174";
+  content: map-get($Valkyrie-map, "image");
 }
 .vi.vi-italic:before {
- content: "\f175";
+  content: map-get($Valkyrie-map, "italic");
 }
 .vi.vi-laptop:before {
- content: "\f176";
+  content: map-get($Valkyrie-map, "laptop");
 }
 .vi.vi-layers-plus:before {
- content: "\f177";
+  content: map-get($Valkyrie-map, "layers-plus");
 }
 .vi.vi-layers:before {
- content: "\f178";
+  content: map-get($Valkyrie-map, "layers");
 }
 .vi.vi-lightbulb-on:before {
- content: "\f179";
+  content: map-get($Valkyrie-map, "lightbulb-on");
 }
 .vi.vi-lightbulb:before {
- content: "\f17a";
+  content: map-get($Valkyrie-map, "lightbulb");
 }
 .vi.vi-line:before {
- content: "\f17b";
+  content: map-get($Valkyrie-map, "line");
 }
 .vi.vi-linkedin:before {
- content: "\f17c";
+  content: map-get($Valkyrie-map, "linkedin");
 }
 .vi.vi-list-checks:before {
- content: "\f17d";
+  content: map-get($Valkyrie-map, "list-checks");
 }
 .vi.vi-list-clock:before {
- content: "\f17e";
+  content: map-get($Valkyrie-map, "list-clock");
 }
 .vi.vi-list-ordered-clock:before {
- content: "\f17f";
+  content: map-get($Valkyrie-map, "list-ordered-clock");
 }
 .vi.vi-list-ordered:before {
- content: "\f180";
+  content: map-get($Valkyrie-map, "list-ordered");
 }
 .vi.vi-list:before {
- content: "\f181";
+  content: map-get($Valkyrie-map, "list");
 }
 .vi.vi-location-pin-dot:before {
- content: "\f182";
+  content: map-get($Valkyrie-map, "location-pin-dot");
 }
 .vi.vi-location-pin-slash:before {
- content: "\f183";
+  content: map-get($Valkyrie-map, "location-pin-slash");
 }
 .vi.vi-location-pin:before {
- content: "\f184";
+  content: map-get($Valkyrie-map, "location-pin");
 }
 .vi.vi-location-pins-route:before {
- content: "\f185";
+  content: map-get($Valkyrie-map, "location-pins-route");
 }
 .vi.vi-lock-open:before {
- content: "\f186";
+  content: map-get($Valkyrie-map, "lock-open");
 }
 .vi.vi-lock:before {
- content: "\f187";
+  content: map-get($Valkyrie-map, "lock");
 }
 .vi.vi-magnifying-glass:before {
- content: "\f188";
+  content: map-get($Valkyrie-map, "magnifying-glass");
 }
 .vi.vi-megaphone:before {
- content: "\f189";
+  content: map-get($Valkyrie-map, "megaphone");
 }
 .vi.vi-message-pen:before {
- content: "\f18a";
+  content: map-get($Valkyrie-map, "message-pen");
 }
 .vi.vi-message-smile:before {
- content: "\f18b";
+  content: map-get($Valkyrie-map, "message-smile");
 }
 .vi.vi-message-text:before {
- content: "\f18c";
+  content: map-get($Valkyrie-map, "message-text");
 }
 .vi.vi-message:before {
- content: "\f18d";
+  content: map-get($Valkyrie-map, "message");
 }
 .vi.vi-microphone:before {
- content: "\f18e";
+  content: map-get($Valkyrie-map, "microphone");
 }
 .vi.vi-moon:before {
- content: "\f18f";
+  content: map-get($Valkyrie-map, "moon");
 }
 .vi.vi-music:before {
- content: "\f190";
+  content: map-get($Valkyrie-map, "music");
 }
 .vi.vi-network:before {
- content: "\f191";
+  content: map-get($Valkyrie-map, "network");
 }
 .vi.vi-numpad:before {
- content: "\f192";
+  content: map-get($Valkyrie-map, "numpad");
 }
 .vi.vi-paper-plane:before {
- content: "\f193";
+  content: map-get($Valkyrie-map, "paper-plane");
 }
 .vi.vi-parachute-box:before {
- content: "\f194";
+  content: map-get($Valkyrie-map, "parachute-box");
 }
 .vi.vi-paragraph:before {
- content: "\f195";
+  content: map-get($Valkyrie-map, "paragraph");
 }
 .vi.vi-pause:before {
- content: "\f196";
+  content: map-get($Valkyrie-map, "pause");
 }
 .vi.vi-pen:before {
- content: "\f197";
+  content: map-get($Valkyrie-map, "pen");
 }
 .vi.vi-people-circle:before {
- content: "\f198";
+  content: map-get($Valkyrie-map, "people-circle");
 }
 .vi.vi-people:before {
- content: "\f199";
+  content: map-get($Valkyrie-map, "people");
 }
 .vi.vi-person-clock:before {
- content: "\f19a";
+  content: map-get($Valkyrie-map, "person-clock");
 }
 .vi.vi-person-gear:before {
- content: "\f19b";
+  content: map-get($Valkyrie-map, "person-gear");
 }
 .vi.vi-person-headset:before {
- content: "\f19c";
+  content: map-get($Valkyrie-map, "person-headset");
 }
 .vi.vi-person-list:before {
- content: "\f19d";
+  content: map-get($Valkyrie-map, "person-list");
 }
 .vi.vi-person-lock:before {
- content: "\f19e";
+  content: map-get($Valkyrie-map, "person-lock");
 }
 .vi.vi-person-plus:before {
- content: "\f19f";
+  content: map-get($Valkyrie-map, "person-plus");
 }
 .vi.vi-person:before {
- content: "\f1a0";
+  content: map-get($Valkyrie-map, "person");
 }
 .vi.vi-phone-arrow-down-left-prohibited:before {
- content: "\f1a1";
+  content: map-get($Valkyrie-map, "phone-arrow-down-left-prohibited");
 }
 .vi.vi-phone-arrow-down-left:before {
- content: "\f1a2";
+  content: map-get($Valkyrie-map, "phone-arrow-down-left");
 }
 .vi.vi-phone-arrow-up-right-prohibited:before {
- content: "\f1a3";
+  content: map-get($Valkyrie-map, "phone-arrow-up-right-prohibited");
 }
 .vi.vi-phone-arrow-up-right:before {
- content: "\f1a4";
+  content: map-get($Valkyrie-map, "phone-arrow-up-right");
 }
 .vi.vi-phone-clock:before {
- content: "\f1a5";
+  content: map-get($Valkyrie-map, "phone-clock");
 }
 .vi.vi-phone-gear:before {
- content: "\f1a6";
+  content: map-get($Valkyrie-map, "phone-gear");
 }
 .vi.vi-phone-list:before {
- content: "\f1a7";
+  content: map-get($Valkyrie-map, "phone-list");
 }
 .vi.vi-phone-office:before {
- content: "\f1a8";
+  content: map-get($Valkyrie-map, "phone-office");
 }
 .vi.vi-phone-volume:before {
- content: "\f1a9";
+  content: map-get($Valkyrie-map, "phone-volume");
 }
 .vi.vi-phone:before {
- content: "\f1aa";
+  content: map-get($Valkyrie-map, "phone");
 }
 .vi.vi-play-pause:before {
- content: "\f1ab";
+  content: map-get($Valkyrie-map, "play-pause");
 }
 .vi.vi-play:before {
- content: "\f1ac";
+  content: map-get($Valkyrie-map, "play");
 }
 .vi.vi-plus:before {
- content: "\f1ad";
+  content: map-get($Valkyrie-map, "plus");
 }
 .vi.vi-power:before {
- content: "\f1ae";
+  content: map-get($Valkyrie-map, "power");
 }
 .vi.vi-prohibited:before {
- content: "\f1af";
+  content: map-get($Valkyrie-map, "prohibited");
 }
 .vi.vi-puzzle-piece:before {
- content: "\f1b0";
+  content: map-get($Valkyrie-map, "puzzle-piece");
 }
 .vi.vi-quote:before {
- content: "\f1b1";
+  content: map-get($Valkyrie-map, "quote");
 }
 .vi.vi-redo:before {
- content: "\f1b2";
+  content: map-get($Valkyrie-map, "redo");
 }
 .vi.vi-repeat-once:before {
- content: "\f1b3";
+  content: map-get($Valkyrie-map, "repeat-once");
 }
 .vi.vi-repeat:before {
- content: "\f1b4";
+  content: map-get($Valkyrie-map, "repeat");
 }
 .vi.vi-safari:before {
- content: "\f1b5";
+  content: map-get($Valkyrie-map, "safari");
 }
 .vi.vi-server:before {
- content: "\f1b6";
+  content: map-get($Valkyrie-map, "server");
 }
 .vi.vi-shield-keyhole:before {
- content: "\f1b7";
+  content: map-get($Valkyrie-map, "shield-keyhole");
 }
 .vi.vi-shield-plus:before {
- content: "\f1b8";
+  content: map-get($Valkyrie-map, "shield-plus");
 }
 .vi.vi-shield-xmark:before {
- content: "\f1b9";
+  content: map-get($Valkyrie-map, "shield-xmark");
 }
 .vi.vi-shield:before {
- content: "\f1ba";
+  content: map-get($Valkyrie-map, "shield");
 }
 .vi.vi-shuffle:before {
- content: "\f1bb";
+  content: map-get($Valkyrie-map, "shuffle");
 }
 .vi.vi-sim-card:before {
- content: "\f1bc";
+  content: map-get($Valkyrie-map, "sim-card");
 }
 .vi.vi-sippy:before {
- content: "\f1bd";
+  content: map-get($Valkyrie-map, "sippy");
 }
 .vi.vi-sliders:before {
- content: "\f1be";
+  content: map-get($Valkyrie-map, "sliders");
 }
 .vi.vi-smartphone-arrow-right:before {
- content: "\f1bf";
+  content: map-get($Valkyrie-map, "smartphone-arrow-right");
 }
 .vi.vi-smartphone:before {
- content: "\f1c0";
+  content: map-get($Valkyrie-map, "smartphone");
 }
 .vi.vi-spinner-third:before {
- content: "\f1c1";
+  content: map-get($Valkyrie-map, "spinner-third");
 }
 .vi.vi-spy:before {
- content: "\f1c2";
+  content: map-get($Valkyrie-map, "spy");
 }
 .vi.vi-square-gum:before {
- content: "\f1c3";
+  content: map-get($Valkyrie-map, "square-gum");
 }
 .vi.vi-star:before {
- content: "\f1c4";
+  content: map-get($Valkyrie-map, "star");
 }
 .vi.vi-stop:before {
- content: "\f1c5";
+  content: map-get($Valkyrie-map, "stop");
 }
 .vi.vi-store:before {
- content: "\f1c6";
+  content: map-get($Valkyrie-map, "store");
 }
 .vi.vi-strikethrough:before {
- content: "\f1c7";
+  content: map-get($Valkyrie-map, "strikethrough");
 }
 .vi.vi-sun:before {
- content: "\f1c8";
+  content: map-get($Valkyrie-map, "sun");
 }
 .vi.vi-swatchbook:before {
- content: "\f1c9";
+  content: map-get($Valkyrie-map, "swatchbook");
 }
 .vi.vi-table-clock:before {
- content: "\f1ca";
+  content: map-get($Valkyrie-map, "table-clock");
 }
 .vi.vi-table:before {
- content: "\f1cb";
+  content: map-get($Valkyrie-map, "table");
 }
 .vi.vi-tag:before {
- content: "\f1cc";
+  content: map-get($Valkyrie-map, "tag");
 }
 .vi.vi-tower-broadcast:before {
- content: "\f1cd";
+  content: map-get($Valkyrie-map, "tower-broadcast");
 }
 .vi.vi-trash-can:before {
- content: "\f1ce";
+  content: map-get($Valkyrie-map, "trash-can");
 }
 .vi.vi-triangle-exclamation:before {
- content: "\f1cf";
+  content: map-get($Valkyrie-map, "triangle-exclamation");
 }
 .vi.vi-underline:before {
- content: "\f1d0";
+  content: map-get($Valkyrie-map, "underline");
 }
 .vi.vi-undo:before {
- content: "\f1d1";
+  content: map-get($Valkyrie-map, "undo");
 }
 .vi.vi-valkyrie-sword:before {
- content: "\f1d2";
+  content: map-get($Valkyrie-map, "valkyrie-sword");
 }
 .vi.vi-video:before {
- content: "\f1d3";
+  content: map-get($Valkyrie-map, "video");
 }
 .vi.vi-voicemail:before {
- content: "\f1d4";
+  content: map-get($Valkyrie-map, "voicemail");
 }
 .vi.vi-volume-0:before {
- content: "\f1d5";
+  content: map-get($Valkyrie-map, "volume-0");
 }
 .vi.vi-volume-1:before {
- content: "\f1d6";
+  content: map-get($Valkyrie-map, "volume-1");
 }
 .vi.vi-volume-2:before {
- content: "\f1d7";
+  content: map-get($Valkyrie-map, "volume-2");
 }
 .vi.vi-volume-3:before {
- content: "\f1d8";
+  content: map-get($Valkyrie-map, "volume-3");
 }
 .vi.vi-volume-slash:before {
- content: "\f1d9";
+  content: map-get($Valkyrie-map, "volume-slash");
 }
 .vi.vi-wallpaper:before {
- content: "\f1da";
+  content: map-get($Valkyrie-map, "wallpaper");
 }
 .vi.vi-waveform:before {
- content: "\f1db";
+  content: map-get($Valkyrie-map, "waveform");
 }
 .vi.vi-webhooks-clock:before {
- content: "\f1dc";
+  content: map-get($Valkyrie-map, "webhooks-clock");
 }
 .vi.vi-webhooks:before {
- content: "\f1dd";
+  content: map-get($Valkyrie-map, "webhooks");
 }
 .vi.vi-window:before {
- content: "\f1de";
+  content: map-get($Valkyrie-map, "window");
 }
 .vi.vi-xmark:before {
- content: "\f1df";
+  content: map-get($Valkyrie-map, "xmark");
 }
