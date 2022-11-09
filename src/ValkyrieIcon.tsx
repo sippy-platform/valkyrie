@@ -7,6 +7,7 @@ interface ValkyrieProps {
   rotate?: 0 | 90 | 180 | 270 | false;
   flip?: true | "x" | "y" | false;
   spin?: boolean;
+  sx?: object | [];
 }
 
 export default function ValkyrieIcon({
@@ -14,6 +15,7 @@ export default function ValkyrieIcon({
   icon,
   rotate = 0,
   spin = false,
+  sx,
   ...props
 }: ValkyrieProps) {
   const spinAnimation = keyframes`
@@ -57,6 +59,7 @@ export default function ValkyrieIcon({
               ? "scaleY(-1)"
               : "scale(-1)",
         },
+        ...(Array.isArray(sx) ? sx : [sx])
       ]}
       // eslint-disable-next-line react/no-danger
       dangerouslySetInnerHTML={{ __html: icon.data }}
