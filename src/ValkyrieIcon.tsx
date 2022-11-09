@@ -43,7 +43,7 @@ export default function ValkyrieIcon({
           overflow: "visible",
           verticalAlign: 0,
           flexShrink: 0,
-          transition: "all .2s ease-in-out",
+          transition: "inherit",
           transform: `rotate(${rotate}deg)`,
         },
         spin && {
