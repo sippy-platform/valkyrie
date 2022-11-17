@@ -1,4 +1,4 @@
-import { ValkyrieIcon as IValkyrieIcon } from "./Valkyrie";
+import { IValkyrieIcon } from "./";
 import { Box, SxProps } from "@mui/system";
 import { keyframes } from "@emotion/react";
 

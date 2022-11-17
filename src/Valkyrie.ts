@@ -1784,12 +1784,12 @@ export type Valkyrie =
   | 'webhooks'
   | 'window'
   | 'xmark';
-export interface ValkyrieIcon {
+export interface IValkyrieIcon {
   name: Valkyrie;
   data: string;
 }
-export type ValkyrieIconNameSubset<
-  T extends Readonly<ValkyrieIcon[]>
+export type IValkyrieIconNameSubset<
+  T extends Readonly<IValkyrieIcon[]>
 > = T[number]['name'];
 export const valkyrieSet = [
   viAGum,
