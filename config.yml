@@ -50,7 +50,7 @@ params:
   description:          "Open source SVG icon library from Sippy"
   social_image_path:    /assets/img/valkyrie-social.png
 
-  version:              "1.0.0-alpha.3"
+  version:              "1.0.0-alpha.4"
 
   main:                 "https://sippy.cloud"
   github_org:           "https://github.com/sippy-platform"
