@@ -1,5 +1,5 @@
 import { ValkyrieIcon as IValkyrieIcon } from "./Valkyrie";
-import { Box } from "@mui/system";
+import { Box, SxProps } from "@mui/system";
 import { keyframes } from "@emotion/react";
 
 interface ValkyrieProps {
@@ -7,7 +7,7 @@ interface ValkyrieProps {
   rotate?: 0 | 90 | 180 | 270 | false;
   flip?: true | "x" | "y" | false;
   spin?: boolean;
-  sx?: object | [];
+  sx?: SxProps;
 }
 
 export default function ValkyrieIcon({
