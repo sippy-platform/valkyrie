@@ -22,7 +22,7 @@
     "pages": "node build/generate-pages.js --verbose",
     "prod": "npm run icons && npm run fonts && npm run build && npm run scss",
     "scss": "npm run scss:compile && npm run scss:prefix",
-    "scss:compile": "node-sass font -o font --output-style compressed",
+    "scss:compile": "sass font/Valkyrie.scss font/Valkyrie.css --no-source-map",
     "scss:prefix": "postcss -u autoprefixer -r ./font/*.css --map"
   },
   "repository": {
