@@ -1,4 +1,3 @@
-import ValkyrieIcon from './ValkyrieIcon';
-
+export { ValkyrieIcon as IValkyrieIcon } from './Valkyrie';
 export * from './Valkyrie';
-export default ValkyrieIcon;
+export * from './ValkyrieIcon';
