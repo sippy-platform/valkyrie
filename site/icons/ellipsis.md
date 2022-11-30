@@ -1,0 +1,5 @@
+---
+title: Ellipsis
+categories:
+tags:
+---
