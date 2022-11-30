@@ -1,5 +1,0 @@
----
-title: Github
-categories:
-tags:
----

@@ -1,5 +1,0 @@
----
-title: Headset
-categories:
-tags:
----

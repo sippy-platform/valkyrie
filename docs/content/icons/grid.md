@@ -1,5 +1,0 @@
----
-title: Grid
-categories:
-tags:
----

@@ -1,5 +1,0 @@
----
-title: Repeat
-categories:
-tags:
----

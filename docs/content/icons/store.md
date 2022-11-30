@@ -1,5 +1,0 @@
----
-title: Store
-categories:
-tags:
----

@@ -1,5 +1,0 @@
----
-title: Lightbulb
-categories:
-tags:
----

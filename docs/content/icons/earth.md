@@ -1,5 +1,0 @@
----
-title: Earth
-categories:
-tags:
----

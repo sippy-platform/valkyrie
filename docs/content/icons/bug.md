@@ -1,5 +1,0 @@
----
-title: Bug
-categories:
-tags:
----

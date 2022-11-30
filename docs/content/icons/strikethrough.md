@@ -1,5 +1,0 @@
----
-title: Strikethrough
-categories:
-tags:
----

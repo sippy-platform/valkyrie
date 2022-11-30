@@ -1,5 +1,0 @@
----
-title: Wallpaper
-categories:
-tags:
----

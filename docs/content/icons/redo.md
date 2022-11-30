@@ -1,5 +1,0 @@
----
-title: Redo
-categories:
-tags:
----

@@ -1,5 +1,0 @@
----
-title: Sun
-categories:
-tags:
----

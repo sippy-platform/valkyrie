@@ -1,5 +1,0 @@
----
-title: Safari
-categories:
-tags:
----

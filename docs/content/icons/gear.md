@@ -1,5 +1,0 @@
----
-title: Gear
-categories:
-tags:
----

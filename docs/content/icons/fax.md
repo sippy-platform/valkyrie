@@ -1,5 +1,0 @@
----
-title: Fax
-categories:
-tags:
----

@@ -1,5 +1,0 @@
----
-title: Gauge
-categories:
-tags:
----

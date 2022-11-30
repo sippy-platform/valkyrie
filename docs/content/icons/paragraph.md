@@ -1,5 +1,0 @@
----
-title: Paragraph
-categories:
-tags:
----

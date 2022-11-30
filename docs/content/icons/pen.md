@@ -1,5 +1,0 @@
----
-title: Pen
-categories:
-tags:
----

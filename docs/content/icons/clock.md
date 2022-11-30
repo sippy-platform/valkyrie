@@ -1,5 +1,0 @@
----
-title: Clock
-categories:
-tags:
----

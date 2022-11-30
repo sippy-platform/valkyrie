@@ -1,5 +1,0 @@
----
-title: Filmstrip
-categories:
-tags:
----

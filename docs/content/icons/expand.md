@@ -1,5 +1,0 @@
----
-title: Expand
-categories:
-tags:
----

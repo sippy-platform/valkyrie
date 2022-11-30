@@ -1,5 +1,0 @@
----
-title: Microphone
-categories:
-tags:
----

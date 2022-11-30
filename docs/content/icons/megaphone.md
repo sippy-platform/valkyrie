@@ -1,5 +1,0 @@
----
-title: Megaphone
-categories:
-tags:
----

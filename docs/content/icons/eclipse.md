@@ -1,5 +1,0 @@
----
-title: Eclipse
-categories:
-tags:
----

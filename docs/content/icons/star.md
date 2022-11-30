@@ -1,5 +1,0 @@
----
-title: Star
-categories:
-tags:
----

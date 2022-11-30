@@ -1,5 +1,0 @@
----
-title: Filter
-categories:
-tags:
----

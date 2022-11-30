@@ -1,5 +1,0 @@
----
-title: Prohibited
-categories:
-tags:
----

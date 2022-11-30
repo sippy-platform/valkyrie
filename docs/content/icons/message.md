@@ -1,5 +1,0 @@
----
-title: Message
-categories:
-tags:
----

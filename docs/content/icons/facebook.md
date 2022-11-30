@@ -1,5 +1,0 @@
----
-title: Facebook
-categories:
-tags:
----

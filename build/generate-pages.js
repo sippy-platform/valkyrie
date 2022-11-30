@@ -7,7 +7,7 @@ const path = require('path')
 const picocolors = require('picocolors')
 
 const iconsDir = path.join(__dirname, '../icons/')
-const pagesDir = path.join(__dirname, '../docs/content/icons/')
+const pagesDir = path.join(__dirname, '../site/icons/')
 
 const VERBOSE = process.argv.includes('--verbose')
 

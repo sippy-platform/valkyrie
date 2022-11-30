@@ -1,5 +1,0 @@
----
-title: Book
-categories:
-tags:
----

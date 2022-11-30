@@ -1,5 +1,0 @@
----
-title: Linkedin
-categories:
-tags:
----

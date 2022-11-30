@@ -1,5 +1,0 @@
----
-title: Window
-categories:
-tags:
----

@@ -1,5 +1,0 @@
----
-title: Stop
-categories:
-tags:
----

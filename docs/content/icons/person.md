@@ -1,5 +1,0 @@
----
-title: Person
-categories:
-tags:
----

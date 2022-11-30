@@ -1,5 +1,0 @@
----
-title: Edge
-categories:
-tags:
----

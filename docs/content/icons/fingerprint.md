@@ -1,5 +1,0 @@
----
-title: Fingerprint
-categories:
-tags:
----

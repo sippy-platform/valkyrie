@@ -1,5 +1,0 @@
----
-title: City
-categories:
-tags:
----

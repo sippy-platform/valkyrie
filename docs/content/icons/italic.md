@@ -1,5 +1,0 @@
----
-title: Italic
-categories:
-tags:
----

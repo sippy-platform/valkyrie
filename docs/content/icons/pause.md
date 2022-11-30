@@ -1,5 +1,0 @@
----
-title: Pause
-categories:
-tags:
----

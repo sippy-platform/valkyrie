@@ -1,5 +1,0 @@
----
-title: Sippy
-categories:
-tags:
----

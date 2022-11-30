@@ -1,5 +1,0 @@
----
-title: Flag
-categories:
-tags:
----

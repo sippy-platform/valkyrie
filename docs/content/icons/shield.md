@@ -1,5 +1,0 @@
----
-title: Shield
-categories:
-tags:
----

@@ -1,5 +1,0 @@
----
-title: Power
-categories:
-tags:
----

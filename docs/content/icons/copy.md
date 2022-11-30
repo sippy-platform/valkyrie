@@ -1,5 +1,0 @@
----
-title: Copy
-categories:
-tags:
----

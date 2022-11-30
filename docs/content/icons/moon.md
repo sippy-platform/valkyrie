@@ -1,5 +1,0 @@
----
-title: Moon
-categories:
-tags:
----

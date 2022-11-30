@@ -1,5 +1,0 @@
----
-title: Ethernet
-categories:
-tags:
----
