@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Card,
   CardOverflow,
   Container,
@@ -16,6 +17,7 @@ import ValkyrieIcon from "@sippy-platform/valkyrie";
 import * as Icons from "@sippy-platform/valkyrie";
 import NextLink from "next/link";
 import useSearch from "../hooks/useSearch";
+import { useState } from "react";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("icons");
@@ -47,6 +49,8 @@ export async function getStaticProps() {
 }
 
 export default function Home({ icons }) {
+  const [page, setPage] = useState(0);
+
   const { result, needle, setNeedle } = useSearch(icons, [
     "name",
     "categories",
@@ -95,7 +99,7 @@ export default function Home({ icons }) {
         />
       </Box>
       <Grid container spacing={2}>
-        {result.map(({ slug, viIcon }) => (
+        {result.slice(page * 42, (page + 1) * 42).map(({ slug, viIcon }) => (
           <Grid item xs={4} sm={3} md={2} key={slug}>
             <Card variant="outlined">
               <CardOverflow>
@@ -135,6 +139,35 @@ export default function Home({ icons }) {
             </Card>
           </Grid>
         ))}
+        <Grid xs={12}>
+          <Box
+            sx={{
+              mb: 3,
+              display: "flex",
+              gap: 1,
+              justifyContent: "center",
+              alignItems: "center"
+            }}
+          >
+            <Button
+              onClick={() => setPage(prev => prev - 1)}
+              disabled={page === 0}
+              startDecorator={<ValkyrieIcon icon={Icons.viChevronLeft} />}
+            >
+              Previous
+            </Button>
+            <Typography>
+              {page + 1}/{Math.ceil(result.length / 42)}
+            </Typography>
+            <Button
+              onClick={() => setPage(prev => prev + 1)}
+              disabled={page === result.length - 1}
+              endDecorator={<ValkyrieIcon icon={Icons.viChevronRight} />}
+            >
+              Next
+            </Button>
+          </Box>
+        </Grid>
       </Grid>
     </Container>
   );
