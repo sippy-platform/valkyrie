@@ -1,10 +1,12 @@
 import {
+  Box,
   Card,
   CardOverflow,
   Container,
   Divider,
   Grid,
   Link,
+  TextField,
   Typography
 } from "@mui/joy";
 import Head from "next/head";
@@ -13,6 +15,7 @@ import matter from "gray-matter";
 import ValkyrieIcon from "@sippy-platform/valkyrie";
 import * as Icons from "@sippy-platform/valkyrie";
 import NextLink from "next/link";
+import useSearch from "../hooks/useSearch";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("icons");
@@ -20,10 +23,19 @@ export async function getStaticProps() {
   const icons = files.map(fileName => {
     const slug = fileName.replace(".md", "");
     const readFile = fs.readFileSync(`./icons/${fileName}`, "utf-8");
-    const { data: frontmatter } = matter(readFile);
+    const { data } = matter(readFile);
+
     return {
       slug,
-      frontmatter
+      name: slug.replaceAll("-", " "),
+      categories: data.categories?.join(" ") ?? "",
+      tags: data.tags?.join(" ") ?? "",
+      viIcon: `vi${slug
+        .split("-")
+        .map(word => {
+          return word[0].toUpperCase() + word.substring(1);
+        })
+        .join("")}`
     };
   });
 
@@ -35,7 +47,12 @@ export async function getStaticProps() {
 }
 
 export default function Home({ icons }) {
-  console.log(icons);
+  const { result, needle, setNeedle } = useSearch(icons, [
+    "name",
+    "categories",
+    "tags"
+  ]);
+
   return (
     <Container>
       <Head>
@@ -58,61 +75,66 @@ export default function Home({ icons }) {
         Valkyrie
       </Typography>
       <Divider sx={{ my: 2 }} />
-      <Typography
-        level="h2"
-        sx={{ fontWeight: 700, mb: 2, fontSize: "1.75rem" }}
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          mb: 2
+        }}
       >
-        Icons
-      </Typography>
-      <Grid container spacing={2}>
-        {icons?.map(({ slug }) => {
-          const icon = `vi${slug.split("-")
-            .map(word => {
-              return word[0].toUpperCase() + word.substring(1);
-            })
-            .join("")}`;
+        <Typography level="h2" sx={{ fontWeight: 700, fontSize: "1.75rem" }}>
+          Icons
+        </Typography>
 
-          return (
-            <Grid item xs={4} sm={3} md={2} key={slug}>
-              <Card variant="outlined">
-                <CardOverflow>
-                  <Typography fontSize="xl4" textAlign="center" sx={{ my: 2 }}>
-                    <NextLink href={`/icons/${slug}`} legacyBehavior>
-                      <Link overlay underline="none" sx={{ color: '#222' }}>
-                        <ValkyrieIcon icon={Icons[icon]} />
-                      </Link>
-                    </NextLink>
-                  </Typography>
-                </CardOverflow>
-                <Divider />
-                <CardOverflow
-                  variant="soft"
+        <TextField
+          startDecorator={<ValkyrieIcon icon={Icons.viMagnifyingGlass} />}
+          placeholder="Search"
+          value={needle}
+          onChange={e => setNeedle(e.target.value)}
+        />
+      </Box>
+      <Grid container spacing={2}>
+        {result.map(({ slug, viIcon }) => (
+          <Grid item xs={4} sm={3} md={2} key={slug}>
+            <Card variant="outlined">
+              <CardOverflow>
+                <Typography fontSize="xl4" textAlign="center" sx={{ my: 2 }}>
+                  <NextLink href={`/icons/${slug}`} legacyBehavior>
+                    <Link overlay underline="none" sx={{ color: "#222" }}>
+                      <ValkyrieIcon icon={Icons[viIcon]} />
+                    </Link>
+                  </NextLink>
+                </Typography>
+              </CardOverflow>
+              <Divider />
+              <CardOverflow
+                variant="soft"
+                sx={{
+                  py: 1,
+                  textAlign: "center",
+                  overflow: "hidden",
+                  whiteSpace: "nowrap",
+                  textOverflow: "ellipsis"
+                }}
+              >
+                <Typography
+                  level="body2"
                   sx={{
-                    py: 1,
-                    textAlign: "center",
-                    overflow: "hidden",
-                    whiteSpace: "nowrap",
-                    textOverflow: "ellipsis"
+                    fontFamily:
+                      "SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace"
                   }}
                 >
-                  <Typography
-                    level="body2"
-                    sx={{
-                      fontFamily:
-                        "SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace"
-                    }}
-                  >
-                    <NextLink href={`/icons/${slug}`} legacyBehavior>
-                      <Link overlay underline="none" color="neutral">
-                        {icon}
-                      </Link>
-                    </NextLink>
-                  </Typography>
-                </CardOverflow>
-              </Card>
-            </Grid>
-          );
-        })}
+                  <NextLink href={`/icons/${slug}`} legacyBehavior>
+                    <Link overlay underline="none" color="neutral">
+                      {viIcon}
+                    </Link>
+                  </NextLink>
+                </Typography>
+              </CardOverflow>
+            </Card>
+          </Grid>
+        ))}
       </Grid>
     </Container>
   );
