@@ -12,6 +12,7 @@ import {
   TextField,
   Typography
 } from "@mui/joy";
+import Head from "next/head";
 import ValkyrieIcon from "@sippy-platform/valkyrie";
 import * as Icons from "@sippy-platform/valkyrie";
 import NextLink from "next/link";
@@ -28,6 +29,11 @@ function PostTemplate({ data, slug }) {
 
   return (
     <Container>
+      <Head>
+        <title>{frontmatter.title} &middot; Valkyrie</title>
+        <meta name="description" content="The Valkyrie Icon set." />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
         <NextLink href="/" legacyBehavior>
           <IconButton href="/">
