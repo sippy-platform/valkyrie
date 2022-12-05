@@ -1000,12 +1000,19 @@ export const viMoon: {
   name: 'moon',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M11.337.727A7.966 7.966 0 0 0 8 0a8 8 0 1 0 7.139 11.614l.01-.02c.11-.217.21-.44.3-.67.197-.503-.623-.88-1.083-.595a4.484 4.484 0 0 1-.36.2l-.02.01A4.5 4.5 0 1 1 12 2c.372.001.64-.528.327-.73a8.016 8.016 0 0 0-.99-.542Zm1.396 11.729A6.5 6.5 0 1 1 8.636 1.53a6 6 0 0 0 4.097 10.925Z"/></svg>`
 };
+export const viMusicPause: {
+  name: 'music_pause';
+  data: string;
+} = {
+  name: 'music_pause',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M15 .75a.75.75 0 0 0-.95-.723l-9 2.5a.75.75 0 0 0-.55.723v7.958A2.5 2.5 0 1 0 6 13.5V7.07l7.5-2.083V9.25A1.75 1.75 0 0 1 15 7.518V.75ZM4.5 13.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm9-10.07L6 5.513V3.82l7.5-2.083V3.43Z"/><path d="M11.75 8.5a.75.75 0 0 1 .75.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 .75-.75Zm3.5 0a.75.75 0 0 1 .75.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 .75-.75Z"/></svg>`
+};
 export const viMusic: {
   name: 'music';
   data: string;
 } = {
   name: 'music',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M15 .75a.75.75 0 0 0-.95-.723l-9 2.5a.75.75 0 0 0-.55.723v7.958A2.5 2.5 0 1 0 6 13.5V7.07l7.5-2.083v4.221A2.5 2.5 0 1 0 15 11.5V.75ZM13.5 11.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-9 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm9-10.07L6 5.513V3.82l7.5-2.083V3.43Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15 .75a.75.75 0 0 0-.95-.723l-9 2.5a.75.75 0 0 0-.55.723v7.958A2.5 2.5 0 1 0 6 13.5V7.07l7.5-2.083v4.221A2.5 2.5 0 1 0 15 11.5V.75ZM13.5 11.5a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm-9 2a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm9-10.07L6 5.513V3.82l7.5-2.083V3.43Z"/><path d="M15 .75a.75.75 0 0 0-.95-.723l-9 2.5a.75.75 0 0 0-.55.723v7.958A2.5 2.5 0 1 0 6 13.5V7.07l7.5-2.083v4.221A2.5 2.5 0 1 0 15 11.5V.75ZM13.5 11.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-9 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm9-10.07L6 5.513V3.82l7.5-2.083V3.43Z"/></svg>`
 };
 export const viNetwork: {
   name: 'network';
@@ -1704,6 +1711,7 @@ export type Valkyrie =
   | 'message'
   | 'microphone'
   | 'moon'
+  | 'music_pause'
   | 'music'
   | 'network'
   | 'numpad'
@@ -1935,6 +1943,7 @@ export const valkyrieSet = [
   viMessage,
   viMicrophone,
   viMoon,
+  viMusicPause,
   viMusic,
   viNetwork,
   viNumpad,
