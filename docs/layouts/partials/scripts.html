@@ -1,8 +1,0 @@
-{{- if or .IsHome (eq .Page.Layout "font") }}
-<script src="/valkyrie/assets/js/list.min.js"></script>
-<script>
-  new List('icons-body', {
-    valueNames: ['name', { data: ['tags', 'categories'] }]
-  });
-</script>
-{{- end }}
