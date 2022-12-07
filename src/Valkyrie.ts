@@ -935,7 +935,7 @@ export const viLockOpen: {
   data: string;
 } = {
   name: 'lock_open',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M9.25 9.25c0 .409-.196.772-.5 1v2a.75.75 0 0 1-1.5 0v-2a1.25 1.25 0 1 1 2-1Z"/><path d="M6.5 3a1.5 1.5 0 1 1 3 0v.5H11V3a3 3 0 0 0-6 0v2H3.75A2.75 2.75 0 0 0 1 7.75v5.5A2.75 2.75 0 0 0 3.75 16h8.5A2.75 2.75 0 0 0 15 13.25v-5.5A2.75 2.75 0 0 0 12.25 5H6.5V3Zm-4 4.75c0-.69.56-1.25 1.25-1.25h8.5c.69 0 1.25.56 1.25 1.25v5.5c0 .69-.56 1.25-1.25 1.25h-8.5c-.69 0-1.25-.56-1.25-1.25v-5.5Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M9.25 9.25c0 .409-.196.772-.5 1v2a.75.75 0 0 1-1.5 0v-2a1.25 1.25 0 1 1 2-1Z"/><path d="M6.5 3a1.5 1.5 0 1 1 3 0v.25a.75.75 0 0 0 1.5 0V3a3 3 0 0 0-6 0v2H3.75A2.75 2.75 0 0 0 1 7.75v5.5A2.75 2.75 0 0 0 3.75 16h8.5A2.75 2.75 0 0 0 15 13.25v-5.5A2.75 2.75 0 0 0 12.25 5H6.5V3Zm-4 4.75c0-.69.56-1.25 1.25-1.25h8.5c.69 0 1.25.56 1.25 1.25v5.5c0 .69-.56 1.25-1.25 1.25h-8.5c-.69 0-1.25-.56-1.25-1.25v-5.5Z"/></svg>`
 };
 export const viLock: {
   name: 'lock';
@@ -1383,7 +1383,7 @@ export const viStop: {
   data: string;
 } = {
   name: 'stop',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M1 1.75A.75.75 0 0 1 1.75 1h12.5a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75H1.75a.75.75 0 0 1-.75-.75V1.75Zm1.5.75v11h11v-11h-11Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 13.25 15H2.75A1.75 1.75 0 0 1 1 13.25V2.75Zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25H2.75Z"/></svg>`
 };
 export const viStore: {
   name: 'store';
