@@ -2,8 +2,8 @@ $Valkyrie-font: "Valkyrie";
 
 @font-face {
   font-family: $Valkyrie-font;
-  src: url("./fonts/Valkyrie.woff?9409655408951d15d143ed5b23b27369") format("woff"),
-url("./fonts/Valkyrie.woff2?9409655408951d15d143ed5b23b27369") format("woff2");
+  src: url("./fonts/Valkyrie.woff?20efa6f4cc3e512f669bdd8367583c53") format("woff"),
+url("./fonts/Valkyrie.woff2?20efa6f4cc3e512f669bdd8367583c53") format("woff2");
 }
 
 .vi {
@@ -296,6 +296,7 @@ $Valkyrie-map: (
   "xmark": "\f1df",
   "music-pause": "\f1e0",
   "list-checks-xmark": "\f1e1",
+  "circle-person": "\f1e2",
 );
 
 .vi.vi-a-gum:before {
@@ -972,4 +973,7 @@ $Valkyrie-map: (
 }
 .vi.vi-list-checks-xmark:before {
   content: map-get($Valkyrie-map, "list-checks-xmark");
+}
+.vi.vi-circle-person:before {
+  content: map-get($Valkyrie-map, "circle-person");
 }
