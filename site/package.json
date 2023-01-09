@@ -11,12 +11,12 @@
   "dependencies": {
     "@emotion/react": "11.10.5",
     "@emotion/styled": "11.10.5",
-    "@mui/joy": "5.0.0-alpha.56",
+    "@mui/joy": "5.0.0-alpha.61",
     "@sippy-platform/valkyrie": "file:../",
-    "eslint": "8.29.0",
-    "eslint-config-next": "13.0.6",
+    "eslint": "8.31.0",
+    "eslint-config-next": "13.1.1",
     "gray-matter": "4.0.3",
-    "next": "13.0.6",
+    "next": "13.1.1",
     "raw-loader": "4.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
