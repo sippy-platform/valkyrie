@@ -363,6 +363,20 @@ export const viCircleExclamation: {
   name: 'circle_exclamation',
   data: `<svg xmlns="http://www.w3.org/2000/svg" class="vi" viewBox="0 0 16 16"><path d="M8 3.5a.75.75 0 0 1 .75.75v5a.75.75 0 0 1-1.5 0v-5A.75.75 0 0 1 8 3.5Zm0 9.25a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16Zm0-1.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13Z"/></svg>`
 };
+export const viCircleHalfInner: {
+  name: 'circle_half_inner';
+  data: string;
+} = {
+  name: 'circle_half_inner',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" class="vi" viewBox="0 0 16 16"><path d="M8 12a4 4 0 0 0 0-8v8Z"/><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0Zm0 14.5a6.5 6.5 0 1 0 0-13V4a4 4 0 1 0 0 8v2.5Z"/></svg>`
+};
+export const viCircleHalf: {
+  name: 'circle_half';
+  data: string;
+} = {
+  name: 'circle_half',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" class="vi" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-1.5 0A6.5 6.5 0 0 0 8 1.5v13A6.5 6.5 0 0 0 14.5 8Z"/></svg>`
+};
 export const viCircleInfo: {
   name: 'circle_info';
   data: string;
@@ -1627,6 +1641,8 @@ export type Valkyrie =
   | 'chrome'
   | 'circle_check'
   | 'circle_exclamation'
+  | 'circle_half_inner'
+  | 'circle_half'
   | 'circle_info'
   | 'circle_person'
   | 'circle_plus'
@@ -1860,6 +1876,8 @@ export const valkyrieSet = [
   viChrome,
   viCircleCheck,
   viCircleExclamation,
+  viCircleHalfInner,
+  viCircleHalf,
   viCircleInfo,
   viCirclePerson,
   viCirclePlus,

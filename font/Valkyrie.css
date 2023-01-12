@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Valkyrie";
-  src: url("./fonts/Valkyrie.woff?20efa6f4cc3e512f669bdd8367583c53") format("woff"), url("./fonts/Valkyrie.woff2?20efa6f4cc3e512f669bdd8367583c53") format("woff2");
+  src: url("./fonts/Valkyrie.woff?8493bba613e9ab3ca9396f4b58b30145") format("woff"), url("./fonts/Valkyrie.woff2?8493bba613e9ab3ca9396f4b58b30145") format("woff2");
 }
 .vi {
   -moz-osx-font-smoothing: grayscale;
@@ -967,6 +967,14 @@
 
 .vi.vi-circle-person:before {
   content: "\f1e2";
+}
+
+.vi.vi-circle-half-inner:before {
+  content: "\f1e3";
+}
+
+.vi.vi-circle-half:before {
+  content: "\f1e4";
 }
 
 /*# sourceMappingURL=Valkyrie.css.map */
