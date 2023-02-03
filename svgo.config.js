@@ -21,7 +21,7 @@ module.exports = {
     {
       name: "removeAttrs",
       params: {
-        attrs: ["clip-rule", "data-name", "fill"]
+        attrs: ["clip-rule", "data-name"]
       }
     },
     {
