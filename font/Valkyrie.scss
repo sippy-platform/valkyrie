@@ -2,8 +2,8 @@ $Valkyrie-font: "Valkyrie";
 
 @font-face {
   font-family: $Valkyrie-font;
-  src: url("./fonts/Valkyrie.woff?8493bba613e9ab3ca9396f4b58b30145") format("woff"),
-url("./fonts/Valkyrie.woff2?8493bba613e9ab3ca9396f4b58b30145") format("woff2");
+  src: url("./fonts/Valkyrie.woff?107bb0f4d6d69f82d498c6377041dd44") format("woff"),
+url("./fonts/Valkyrie.woff2?107bb0f4d6d69f82d498c6377041dd44") format("woff2");
 }
 
 .vi {
@@ -299,6 +299,7 @@ $Valkyrie-map: (
   "circle-person": "\f1e2",
   "circle-half-inner": "\f1e3",
   "circle-half": "\f1e4",
+  "calendar-clock": "\f1e5",
 );
 
 .vi.vi-a-gum:before {
@@ -984,4 +985,7 @@ $Valkyrie-map: (
 }
 .vi.vi-circle-half:before {
   content: map-get($Valkyrie-map, "circle-half");
+}
+.vi.vi-calendar-clock:before {
+  content: map-get($Valkyrie-map, "calendar-clock");
 }

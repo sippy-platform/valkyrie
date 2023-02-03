@@ -7,7 +7,7 @@ import {
   Divider,
   Grid,
   Link,
-  TextField,
+  Input,
   Typography
 } from "@mui/joy";
 import Head from "next/head";
@@ -91,7 +91,7 @@ export default function Home({ icons }) {
           Icons
         </Typography>
 
-        <TextField
+        <Input
           startDecorator={<ValkyrieIcon icon={Icons.viMagnifyingGlass} />}
           placeholder="Search"
           value={needle}
@@ -106,7 +106,7 @@ export default function Home({ icons }) {
                 <Typography fontSize="xl4" textAlign="center" sx={{ my: 2 }}>
                   <NextLink href={`/icons/${slug}`} legacyBehavior>
                     <Link overlay underline="none" sx={{ color: "#222" }}>
-                      <ValkyrieIcon icon={Icons[viIcon]} />
+                      {Icons?.[viIcon] && <ValkyrieIcon icon={Icons[viIcon]} />}
                     </Link>
                   </NextLink>
                 </Typography>

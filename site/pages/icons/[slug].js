@@ -9,7 +9,7 @@ import {
   Divider,
   Grid,
   IconButton,
-  TextField,
+  Input,
   Typography
 } from "@mui/joy";
 import Head from "next/head";
@@ -109,7 +109,7 @@ function PostTemplate({ data, slug }) {
                 <ValkyrieIcon icon={Icons[icon]} />
               </IconButton>
             </Box>
-            <TextField
+            <Input
               startDecorator={<ValkyrieIcon icon={Icons[icon]} />}
               placeholder={frontmatter.title}
             />
