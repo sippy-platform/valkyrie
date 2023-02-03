@@ -18,26 +18,26 @@ module.exports = {
       }
     },
     "cleanupListOfValues",
+    "sortAttrs",
     {
       name: "removeAttrs",
       params: {
-        attrs: ["clip-rule", "data-name"]
+        attrs: ["clip-rule", "data-name", "fill"]
       }
     },
     {
       name: "explicitAttrs",
-      fn(
-        _root,
-        {
-          attributes = {
-            xmlns: "http://www.w3.org/2000/svg",
-            fill: "currentColor",
-            class: "vi",
-            viewBox: "0 0 16 16"
-          }
+      type: "visitor",
+      params: {
+        attributes: {
+          xmlns: "http://www.w3.org/2000/svg",
+          fill: "currentColor",
+          class: "vi",
+          viewBox: "0 0 16 16"
         }
-      ) {
-        if (!attributes) {
+      },
+      fn(_root, params) {
+        if (!params.attributes) {
           return null;
         }
 
@@ -46,7 +46,7 @@ module.exports = {
             enter(node, parentNode) {
               if (node.name === "svg" && parentNode.type === "root") {
                 node.attributes = {};
-                for (const [key, value] of Object.entries(attributes)) {
+                for (const [key, value] of Object.entries(params.attributes)) {
                   node.attributes[key] = value;
                 }
               }
