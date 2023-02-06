@@ -279,6 +279,13 @@ export const viCalendarClock: {
   name: 'calendar_clock',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M3.75 1A2.75 2.75 0 0 0 1 3.75v8.5A2.75 2.75 0 0 0 3.75 15H8a4.985 4.985 0 0 1-.771-1.5H3.75c-.69 0-1.25-.56-1.25-1.25V5.5h11v1.729a4.985 4.985 0 0 1 1.5.77V3.75A2.75 2.75 0 0 0 12.25 1h-8.5ZM2.5 3.75c0-.69.56-1.25 1.25-1.25h8.5c.69 0 1.25.56 1.25 1.25V4h-11v-.25Z"/><path d="M8 9a5.029 5.029 0 0 1 1-1 1 1 0 1 0-1 1ZM5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm1 2a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm10 1a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-4-3a.5.5 0 0 0-.5.5v2h-1a.5.5 0 1 0 .001 1H12a.5.5 0 0 0 .5-.5V9.5A.5.5 0 0 0 12 9Z"/></svg>`
 };
+export const viCalendarRangeClock: {
+  name: 'calendar_range_clock';
+  data: string;
+} = {
+  name: 'calendar_range_clock',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M3.75 1A2.75 2.75 0 0 0 1 3.75v8.5A2.75 2.75 0 0 0 3.75 15H8a4.985 4.985 0 0 1-.771-1.5H3.75c-.69 0-1.25-.56-1.25-1.25V5.5h11v1.729a4.985 4.985 0 0 1 1.5.77V3.75A2.75 2.75 0 0 0 12.25 1h-8.5ZM2.5 3.75c0-.69.56-1.25 1.25-1.25h8.5c.69 0 1.25.56 1.25 1.25V4h-11v-.25Z"/><path d="M7 12c0-.711.148-1.387.416-2H5a1 1 0 1 0 0 2h2Zm1-3a4.997 4.997 0 0 1 3.306-1.952A1 1 0 0 0 11 7H8a1 1 0 0 0 0 2Z"/><path d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-4-3a.5.5 0 0 0-.5.5v2h-1a.5.5 0 1 0 .001 1H12a.5.5 0 0 0 .5-.5V9.5A.5.5 0 0 0 12 9Z"/></svg>`
+};
 export const viCalendarRange: {
   name: 'calendar_range';
   data: string;
@@ -1455,6 +1462,20 @@ export const viTableClock: {
   name: 'table_clock',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M13.5 6.5H8.75v1.7A4.996 4.996 0 0 0 7.1 11H2.5v1.75c0 .69.56 1.25 1.25 1.25h3.5v-.434A5 5 0 0 0 8.43 15.5H3.75A2.75 2.75 0 0 1 1 12.75v-9.5A2.75 2.75 0 0 1 3.75.5h8.5A2.75 2.75 0 0 1 15 3.25V8a4.985 4.985 0 0 0-1.5-.771V6.5ZM3.75 2c-.69 0-1.25.56-1.25 1.25V5h4.75V2h-3.5Zm5 0v3h4.75V3.25c0-.69-.56-1.25-1.25-1.25h-3.5ZM2.5 9.5h4.75v-3H2.5v3Z"/><path d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-4-3a.5.5 0 0 0-.5.5v2h-1a.5.5 0 1 0 .001 1H12a.5.5 0 0 0 .5-.5V9.5A.5.5 0 0 0 12 9Z"/></svg>`
 };
+export const viTableHeaderColumn: {
+  name: 'table_header_column';
+  data: string;
+} = {
+  name: 'table_header_column',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M3.75 2c-.69 0-1.25.56-1.25 1.25v9.5c0 .69.56 1.25 1.25 1.25h.75V2h-.75ZM6 2v3h3V2H6Zm4.5 0v3h3V3.25c0-.69-.56-1.25-1.25-1.25H10.5Zm3 4.5h-3v3h3v-3Zm0 4.5h-3v3h1.75c.69 0 1.25-.56 1.25-1.25V11ZM9 14v-3H6v3h3ZM6 9.5h3v-3H6v3ZM1 3.25A2.75 2.75 0 0 1 3.75.5h8.5A2.75 2.75 0 0 1 15 3.25v9.5a2.75 2.75 0 0 1-2.75 2.75h-8.5A2.75 2.75 0 0 1 1 12.75v-9.5Z"/></svg>`
+};
+export const viTableHeaderRow: {
+  name: 'table_header_row';
+  data: string;
+} = {
+  name: 'table_header_row',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M3.75 2c-.69 0-1.25.56-1.25 1.25v.25h11v-.25c0-.69-.56-1.25-1.25-1.25h-8.5Zm9.75 3H8.75v2h4.75V5Zm0 3.5H8.75v2h4.75v-2Zm0 3.5H8.75v2h3.5c.69 0 1.25-.56 1.25-1.25V12Zm-6.25 2v-2H2.5v.75c0 .69.56 1.25 1.25 1.25h3.5ZM2.5 10.5h4.75v-2H2.5v2Zm0-3.5h4.75V5H2.5v2ZM1 3.25A2.75 2.75 0 0 1 3.75.5h8.5A2.75 2.75 0 0 1 15 3.25v9.5a2.75 2.75 0 0 1-2.75 2.75h-8.5A2.75 2.75 0 0 1 1 12.75v-9.5Z"/></svg>`
+};
 export const viTable: {
   name: 'table';
   data: string;
@@ -1643,6 +1664,7 @@ export type Valkyrie =
   | 'bug'
   | 'building'
   | 'calendar_clock'
+  | 'calendar_range_clock'
   | 'calendar_range'
   | 'calendar_stars'
   | 'calendar'
@@ -1811,6 +1833,8 @@ export type Valkyrie =
   | 'sun'
   | 'swatchbook'
   | 'table_clock'
+  | 'table_header_column'
+  | 'table_header_row'
   | 'table'
   | 'tag'
   | 'tower_broadcast'
@@ -1880,6 +1904,7 @@ export const valkyrieSet = [
   viBug,
   viBuilding,
   viCalendarClock,
+  viCalendarRangeClock,
   viCalendarRange,
   viCalendarStars,
   viCalendar,
@@ -2048,6 +2073,8 @@ export const valkyrieSet = [
   viSun,
   viSwatchbook,
   viTableClock,
+  viTableHeaderColumn,
+  viTableHeaderRow,
   viTable,
   viTag,
   viTowerBroadcast,

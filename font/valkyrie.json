@@ -228,5 +228,8 @@
     "circle-half-inner": 61923,
     "circle-half": 61924,
     "calendar-clock": 61925,
-    "calendar-range": 61926
+    "calendar-range": 61926,
+    "table-header-column": 61927,
+    "table-header-row": 61928,
+    "calendar-range-clock": 61929
 }

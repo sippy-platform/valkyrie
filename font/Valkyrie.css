@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Valkyrie";
-  src: url("./fonts/Valkyrie.woff?77165f32ce13a695f03de2e659decaff") format("woff"), url("./fonts/Valkyrie.woff2?77165f32ce13a695f03de2e659decaff") format("woff2");
+  src: url("./fonts/Valkyrie.woff?547fb0bcc8c5974a77f22f7c56dec8ef") format("woff"), url("./fonts/Valkyrie.woff2?547fb0bcc8c5974a77f22f7c56dec8ef") format("woff2");
 }
 .vi {
   -moz-osx-font-smoothing: grayscale;
@@ -983,6 +983,18 @@
 
 .vi.vi-calendar-range:before {
   content: "\f1e6";
+}
+
+.vi.vi-table-header-column:before {
+  content: "\f1e7";
+}
+
+.vi.vi-table-header-row:before {
+  content: "\f1e8";
+}
+
+.vi.vi-calendar-range-clock:before {
+  content: "\f1e9";
 }
 
 /*# sourceMappingURL=Valkyrie.css.map */
