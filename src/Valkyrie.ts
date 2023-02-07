@@ -1063,6 +1063,13 @@ export const viNetwork: {
   name: 'network',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M8 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/><path d="M13.5 6a2.5 2.5 0 1 0-2.217-1.344L9.887 6.052A3.484 3.484 0 0 0 8 5.5a3.49 3.49 0 0 0-2.482 1.032l-.603-.384A2.504 2.504 0 0 0 2.5 3a2.5 2.5 0 1 0 1.61 4.413l.602.384a3.5 3.5 0 0 0 4.873 4.325l1.512 1.847a1.5 1.5 0 1 0 1.161-.95l-1.513-1.848c.473-.596.755-1.35.755-2.171 0-.695-.203-1.343-.552-1.887l1.396-1.396c.345.18.739.283 1.156.283Zm0-1.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm-10 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM10 9a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/></svg>`
 };
+export const viNext: {
+  name: 'next';
+  data: string;
+} = {
+  name: 'next',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M3.23 1.174A.75.75 0 0 0 2 1.75v12.5a.75.75 0 0 0 1.23.576l7.5-6.25a.75.75 0 0 0 0-1.152l-7.5-6.25ZM9.078 8 3.5 12.65v-9.3L9.078 8ZM14 1.75a.75.75 0 0 0-1.5 0v12.5a.75.75 0 0 0 1.5 0V1.75Z"/></svg>`
+};
 export const viNumpad: {
   name: 'numpad';
   data: string;
@@ -1265,6 +1272,13 @@ export const viPower: {
 } = {
   name: 'power',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M8.75.75a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0V.75Z"/><path d="M3.67 2.5a.68.68 0 0 1 .902.072c.338.338.262.905-.105 1.212a5.5 5.5 0 1 0 7.065 0c-.366-.307-.442-.874-.104-1.212a.68.68 0 0 1 .902-.073 7 7 0 1 1-8.66 0Z"/></svg>`
+};
+export const viPrevious: {
+  name: 'previous';
+  data: string;
+} = {
+  name: 'previous',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M12.77 14.826A.75.75 0 0 0 14 14.25V1.75a.75.75 0 0 0-1.23-.576l-7.5 6.25a.75.75 0 0 0 0 1.152l7.5 6.25ZM6.922 8 12.5 3.351v9.298L6.922 8ZM2 14.25a.75.75 0 0 0 1.5 0V1.75a.75.75 0 0 0-1.5 0v12.5Z"/></svg>`
 };
 export const viProhibited: {
   name: 'prohibited';
@@ -1776,6 +1790,7 @@ export type Valkyrie =
   | 'music_pause'
   | 'music'
   | 'network'
+  | 'next'
   | 'numpad'
   | 'paper_plane'
   | 'parachute_box'
@@ -1805,6 +1820,7 @@ export type Valkyrie =
   | 'play'
   | 'plus'
   | 'power'
+  | 'previous'
   | 'prohibited'
   | 'puzzle_piece'
   | 'quote'
@@ -2016,6 +2032,7 @@ export const valkyrieSet = [
   viMusicPause,
   viMusic,
   viNetwork,
+  viNext,
   viNumpad,
   viPaperPlane,
   viParachuteBox,
@@ -2045,6 +2062,7 @@ export const valkyrieSet = [
   viPlay,
   viPlus,
   viPower,
+  viPrevious,
   viProhibited,
   viPuzzlePiece,
   viQuote,

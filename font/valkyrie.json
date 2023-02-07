@@ -231,5 +231,7 @@
     "calendar-range": 61926,
     "table-header-column": 61927,
     "table-header-row": 61928,
-    "calendar-range-clock": 61929
+    "calendar-range-clock": 61929,
+    "next": 61930,
+    "previous": 61931
 }

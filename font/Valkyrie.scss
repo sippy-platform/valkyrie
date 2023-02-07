@@ -2,8 +2,8 @@ $Valkyrie-font: "Valkyrie";
 
 @font-face {
   font-family: $Valkyrie-font;
-  src: url("./fonts/Valkyrie.woff?547fb0bcc8c5974a77f22f7c56dec8ef") format("woff"),
-url("./fonts/Valkyrie.woff2?547fb0bcc8c5974a77f22f7c56dec8ef") format("woff2");
+  src: url("./fonts/Valkyrie.woff?d06dab5f7c4d8d393fbbf6499795e423") format("woff"),
+url("./fonts/Valkyrie.woff2?d06dab5f7c4d8d393fbbf6499795e423") format("woff2");
 }
 
 .vi {
@@ -304,6 +304,8 @@ $Valkyrie-map: (
   "table-header-column": "\f1e7",
   "table-header-row": "\f1e8",
   "calendar-range-clock": "\f1e9",
+  "next": "\f1ea",
+  "previous": "\f1eb",
 );
 
 .vi.vi-a-gum:before {
@@ -1004,4 +1006,10 @@ $Valkyrie-map: (
 }
 .vi.vi-calendar-range-clock:before {
   content: map-get($Valkyrie-map, "calendar-range-clock");
+}
+.vi.vi-next:before {
+  content: map-get($Valkyrie-map, "next");
+}
+.vi.vi-previous:before {
+  content: map-get($Valkyrie-map, "previous");
 }
