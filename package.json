@@ -47,7 +47,7 @@
     "react": ">=16.x"
   },
   "devDependencies": {
-    "@types/react": "18.0.27",
+    "@types/react": "18.0.28",
     "autoprefixer": "10.4.13",
     "bundle-scss": "1.5.1",
     "copyfiles": "2.4.1",
