@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Valkyrie";
-  src: url("./fonts/Valkyrie.woff?a5f2fdcd091c90d642c700402827a17f") format("woff"), url("./fonts/Valkyrie.woff2?a5f2fdcd091c90d642c700402827a17f") format("woff2");
+  src: url("./fonts/Valkyrie.woff?8af82341f0b72d4d65801994fd4bb402") format("woff"), url("./fonts/Valkyrie.woff2?8af82341f0b72d4d65801994fd4bb402") format("woff2");
 }
 .vi {
   -moz-osx-font-smoothing: grayscale;
