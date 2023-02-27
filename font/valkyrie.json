@@ -234,5 +234,6 @@
     "calendar-range-clock": 61929,
     "next": 61930,
     "previous": 61931,
-    "tag-plus": 61932
+    "tag-plus": 61932,
+    "tag-gear": 61933
 }
