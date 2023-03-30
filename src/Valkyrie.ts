@@ -1427,6 +1427,13 @@ export const viSquareGum: {
   name: 'square_gum',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M1 3.75A2.75 2.75 0 0 1 3.75 1h8.5A2.75 2.75 0 0 1 15 3.75v5.058a2.752 2.752 0 0 0-1.5-.613V3.75c0-.69-.56-1.25-1.25-1.25h-8.5c-.69 0-1.25.56-1.25 1.25v8.5c0 .69.56 1.25 1.25 1.25h4.465c.077.263.194.519.354.758l.494.742H3.75A2.75 2.75 0 0 1 1 12.25v-8.5Z"/><path d="M14.71 9.964a1.75 1.75 0 0 0-2.506-.43l-2.397 1.798a1.75 1.75 0 0 0-.406 2.371l.889 1.334a1.75 1.75 0 0 0 2.506.429l2.397-1.798a1.75 1.75 0 0 0 .406-2.371l-.889-1.333Zm-1.606.77a.25.25 0 0 1 .358.062l.89 1.333a.25.25 0 0 1-.059.339l-1.609 1.206-1.166-1.75 1.586-1.19Z"/></svg>`
 };
+export const viSquareP: {
+  name: 'square_p';
+  data: string;
+} = {
+  name: 'square_p',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M6.25 4a.75.75 0 0 0-.75.75v6.5a.75.75 0 0 0 1.5 0V9h1.5a2.5 2.5 0 0 0 0-5H6.25ZM8.5 7.5H7v-2h1.5a1 1 0 0 1 0 2Z"/><path d="M1 4a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V4Zm3-1.5A1.5 1.5 0 0 0 2.5 4v8A1.5 1.5 0 0 0 4 13.5h8a1.5 1.5 0 0 0 1.5-1.5V4A1.5 1.5 0 0 0 12 2.5H4Z"/></svg>`
+};
 export const viStar: {
   name: 'star';
   data: string;
@@ -1524,6 +1531,13 @@ export const viTowerBroadcast: {
 } = {
   name: 'tower_broadcast',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M13.954 6.751c.05.412.382.749.796.749.414 0 .754-.337.713-.749a7.5 7.5 0 0 0-14.926 0c-.04.412.299.749.713.749s.745-.337.796-.749a6.001 6.001 0 0 1 11.908 0Z"/><path d="M3.055 6.753c-.06.41.28.747.695.747.414 0 .742-.34.83-.745a3.501 3.501 0 0 1 6.84 0c.088.405.416.745.83.745s.756-.338.694-.747a5.001 5.001 0 0 0-9.889 0Z"/><path d="M10.5 7.5c0 1.12-.736 2.067-1.75 2.386V14.5h1.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5h1.5V9.886A2.501 2.501 0 1 1 10.5 7.5ZM8 8.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>`
+};
+export const viTranslate: {
+  name: 'translate';
+  data: string;
+} = {
+  name: 'translate',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M2 1.5h7a.5.5 0 0 1 .5.5v2H11V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h2V9.5H2a.5.5 0 0 1-.5-.5V2a.5.5 0 0 1 .5-.5Z"/><path d="M8.5 3.75a.749.749 0 0 1-.043.25H7c-.613 0-1.184.184-1.659.5h-.255l.075.13a3.008 3.008 0 0 0-.96 1.287 8.975 8.975 0 0 1-.526-.873 5.679 5.679 0 0 1-.251-.544H3.25a.75.75 0 0 1 0-1.5h1.543a.75.75 0 0 1 1.414 0H7.75a.75.75 0 0 1 .75.75ZM3.25 7c.197 0 .454-.08.763-.276C4.004 6.814 4 6.907 4 7v1.38c-.24.075-.49.12-.75.12a.75.75 0 0 1 0-1.5Zm7.92.915a.75.75 0 0 0-1.34 0l-2.25 4.5a.75.75 0 1 0 1.34.67l.294-.585h2.572l.293.585a.75.75 0 1 0 1.342-.67l-2.25-4.5ZM11.038 11H9.963l.536-1.073.537 1.073Z"/><path d="M7 5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7Zm7 1.5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5H7a.5.5 0 0 1-.5-.5V7a.5.5 0 0 1 .5-.5h7Z"/></svg>`
 };
 export const viTrashCan: {
   name: 'trash_can';
@@ -1856,6 +1870,7 @@ export type Valkyrie =
   | 'spinner_third'
   | 'spy'
   | 'square_gum'
+  | 'square_p'
   | 'star'
   | 'stop'
   | 'store'
@@ -1870,6 +1885,7 @@ export type Valkyrie =
   | 'tag_plus'
   | 'tag'
   | 'tower_broadcast'
+  | 'translate'
   | 'trash_can'
   | 'triangle_exclamation'
   | 'underline'
@@ -2100,6 +2116,7 @@ export const valkyrieSet = [
   viSpinnerThird,
   viSpy,
   viSquareGum,
+  viSquareP,
   viStar,
   viStop,
   viStore,
@@ -2114,6 +2131,7 @@ export const valkyrieSet = [
   viTagPlus,
   viTag,
   viTowerBroadcast,
+  viTranslate,
   viTrashCan,
   viTriangleExclamation,
   viUnderline,
