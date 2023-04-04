@@ -18,7 +18,6 @@ module.exports = {
       }
     },
     "cleanupListOfValues",
-    "sortAttrs",
     {
       name: "removeAttrs",
       params: {
