@@ -1,6 +1,7 @@
 import { IValkyrieIcon } from "./";
 import { Box, SxProps } from "@mui/system";
 import { keyframes } from "@emotion/react";
+import convertHtmlToReact from "@hedgedoc/html-to-react";
 
 interface ValkyrieProps {
   icon: IValkyrieIcon;
@@ -61,8 +62,8 @@ export default function ValkyrieIcon({
         },
         ...(Array.isArray(sx) ? sx : [sx])
       ]}
-      // eslint-disable-next-line react/no-danger
-      dangerouslySetInnerHTML={{ __html: icon.data }}
-    />
+      >
+        {convertHtmlToReact(icon.data)}
+      </Box>
   );
 }

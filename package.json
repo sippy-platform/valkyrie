@@ -46,6 +46,9 @@
     "@mui/system": ">=5.x",
     "react": ">=16.x"
   },
+  "dependencies": {
+    "@hedgedoc/html-to-react": "1.4.6"
+  },
   "devDependencies": {
     "@twbs/fantasticon": "2.6.0",
     "@types/react": "18.0.33",
