@@ -1,7 +1,7 @@
 import { IValkyrieIcon } from "./";
 import { Box, SxProps } from "@mui/system";
 import { keyframes } from "@emotion/react";
-import convertHtmlToReact from "@hedgedoc/html-to-react";
+import HTMLReactParser from "html-react-parser";
 
 interface ValkyrieProps {
   icon: IValkyrieIcon;
@@ -63,7 +63,7 @@ export default function ValkyrieIcon({
         ...(Array.isArray(sx) ? sx : [sx])
       ]}
       >
-        {convertHtmlToReact(icon.data)}
+        {HTMLReactParser(icon.data)}
       </Box>
   );
 }
