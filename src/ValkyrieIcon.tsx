@@ -49,7 +49,7 @@ export default function ValkyrieIcon({
         },
         spin && {
           svg: {
-            animation: `${spinAnimation} 2s infinite linear`,
+            animation: `${spinAnimation} var(--va-animation-duration, 2s) infinite linear`,
           },
         },
         flip && {
