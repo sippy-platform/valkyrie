@@ -1005,7 +1005,7 @@ export const viMessagePen: {
   data: string;
 } = {
   name: 'message_pen',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M15.707 1.707A1 1 0 0 0 14.293.293L9.018 5.568a1 1 0 0 0-.279.538L8.5 7.5l1.394-.24a1 1 0 0 0 .538-.278l5.275-5.275Z"/><path d="M14.5 9.25V4.328l1.5-1.5V9.25A2.75 2.75 0 0 1 13.25 12H9.647a.25.25 0 0 0-.172.068l-3.702 3.485A1.645 1.645 0 0 1 3 14.355V12h-.25A2.75 2.75 0 0 1 0 9.25v-6.5A2.75 2.75 0 0 1 2.75 0h10.422l-1.5 1.5H2.75c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h.5c.69 0 1.25.56 1.25 1.25v2.605a.145.145 0 0 0 .244.106l3.703-3.485a1.75 1.75 0 0 1 1.2-.476h3.603c.69 0 1.25-.56 1.25-1.25Z"/><path d="M3.75 3h6.422l-1.5 1.5H3.75a.75.75 0 0 1 0-1.5Zm0 3h3.993l-.258 1.5H3.75a.75.75 0 0 1 0-1.5Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15.707 1.707A1 1 0 0 0 14.293.293L9.018 5.568a1 1 0 0 0-.279.538L8.5 7.5l1.394-.24a1 1 0 0 0 .538-.278l5.275-5.275ZM14.5 9.25V4.328l1.5-1.5V9.25A2.75 2.75 0 0 1 13.25 12H9.647a.25.25 0 0 0-.172.068l-3.702 3.485A1.645 1.645 0 0 1 3 14.355V12h-.25A2.75 2.75 0 0 1 0 9.25v-6.5A2.75 2.75 0 0 1 2.75 0h10.422l-1.5 1.5H2.75c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h.5c.69 0 1.25.56 1.25 1.25v2.605a.145.145 0 0 0 .244.106l3.703-3.485a1.75 1.75 0 0 1 1.2-.476h3.603c.69 0 1.25-.56 1.25-1.25ZM3.75 3h6.422l-1.5 1.5H3.75a.75.75 0 0 1 0-1.5Zm0 3h3.993l-.258 1.5H3.75a.75.75 0 0 1 0-1.5Z"/></svg>`
 };
 export const viMessageSmile: {
   name: 'message_smile';
@@ -1026,7 +1026,7 @@ export const viMessage: {
   data: string;
 } = {
   name: 'message',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M2.75 1.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h.5c.69 0 1.25.56 1.25 1.25v2.605a.145.145 0 0 0 .244.106l3.703-3.485a1.75 1.75 0 0 1 1.2-.476h3.603c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H2.75ZM0 2.75A2.75 2.75 0 0 1 2.75 0h10.5A2.75 2.75 0 0 1 16 2.75v6.5A2.75 2.75 0 0 1 13.25 12H9.647a.25.25 0 0 0-.172.068l-3.702 3.485A1.645 1.645 0 0 1 3 14.355V12h-.25A2.75 2.75 0 0 1 0 9.25v-6.5Z"/></svg>`
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75 9.25v-6.5a2 2 0 0 1 2-2h10.5a2 2 0 0 1 2 2v6.5a2 2 0 0 1-2 2H9.647a1 1 0 0 0-.686.272l-3.703 3.485a.895.895 0 0 1-1.508-.652V11.75a.5.5 0 0 0-.5-.5h-.5a2 2 0 0 1-2-2Z"/><path d="M2.75 1.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h.5c.69 0 1.25.56 1.25 1.25v2.605a.145.145 0 0 0 .244.106l3.703-3.485a1.75 1.75 0 0 1 1.2-.476h3.603c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H2.75ZM0 2.75A2.75 2.75 0 0 1 2.75 0h10.5A2.75 2.75 0 0 1 16 2.75v6.5A2.75 2.75 0 0 1 13.25 12H9.647a.25.25 0 0 0-.172.068l-3.702 3.485A1.645 1.645 0 0 1 3 14.355V12h-.25A2.75 2.75 0 0 1 0 9.25v-6.5Z"/></svg>`
 };
 export const viMicrophone: {
   name: 'microphone';
@@ -1301,6 +1301,13 @@ export const viQuote: {
   name: 'quote',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M4.5 9c.356 0 .694-.074 1-.208v.458a2.25 2.25 0 0 1-2.25 2.25h-.5a.75.75 0 0 0 0 1.5h.5A3.75 3.75 0 0 0 7 9.25V5.5a2.5 2.5 0 0 0-5 0v1A2.5 2.5 0 0 0 4.5 9Zm1-3.5v1a1 1 0 0 1-2 0v-1a1 1 0 0 1 2 0Zm6 3.5c.356 0 .694-.074 1-.208v.458a2.25 2.25 0 0 1-2.25 2.25h-.5a.75.75 0 0 0 0 1.5h.5A3.75 3.75 0 0 0 14 9.25V5.5a2.5 2.5 0 0 0-5 0v1A2.5 2.5 0 0 0 11.5 9Zm1-3.5v1a1 1 0 1 1-2 0v-1a1 1 0 1 1 2 0Z"/></svg>`
 };
+export const viRectangleP: {
+  name: 'rectangle_p';
+  data: string;
+} = {
+  name: 'rectangle_p',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M6.25 4a.75.75 0 0 0-.75.75v6.5a.75.75 0 0 0 1.5 0V9h1.5a2.5 2.5 0 0 0 0-5H6.25ZM8.5 7.5H7v-2h1.5a1 1 0 0 1 0 2Z"/><path d="M2 3a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V3Zm3-1.5A1.5 1.5 0 0 0 3.5 3v10A1.5 1.5 0 0 0 5 14.5h6a1.5 1.5 0 0 0 1.5-1.5V3A1.5 1.5 0 0 0 11 1.5H5Z"/></svg>`
+};
 export const viRedo: {
   name: 'redo';
   data: string;
@@ -1426,13 +1433,6 @@ export const viSquareGum: {
 } = {
   name: 'square_gum',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M1 3.75A2.75 2.75 0 0 1 3.75 1h8.5A2.75 2.75 0 0 1 15 3.75v5.058a2.752 2.752 0 0 0-1.5-.613V3.75c0-.69-.56-1.25-1.25-1.25h-8.5c-.69 0-1.25.56-1.25 1.25v8.5c0 .69.56 1.25 1.25 1.25h4.465c.077.263.194.519.354.758l.494.742H3.75A2.75 2.75 0 0 1 1 12.25v-8.5Z"/><path d="M14.71 9.964a1.75 1.75 0 0 0-2.506-.43l-2.397 1.798a1.75 1.75 0 0 0-.406 2.371l.889 1.334a1.75 1.75 0 0 0 2.506.429l2.397-1.798a1.75 1.75 0 0 0 .406-2.371l-.889-1.333Zm-1.606.77a.25.25 0 0 1 .358.062l.89 1.333a.25.25 0 0 1-.059.339l-1.609 1.206-1.166-1.75 1.586-1.19Z"/></svg>`
-};
-export const viSquareP: {
-  name: 'square_p';
-  data: string;
-} = {
-  name: 'square_p',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M6.25 4a.75.75 0 0 0-.75.75v6.5a.75.75 0 0 0 1.5 0V9h1.5a2.5 2.5 0 0 0 0-5H6.25ZM8.5 7.5H7v-2h1.5a1 1 0 0 1 0 2Z"/><path d="M1 4a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V4Zm3-1.5A1.5 1.5 0 0 0 2.5 4v8A1.5 1.5 0 0 0 4 13.5h8a1.5 1.5 0 0 0 1.5-1.5V4A1.5 1.5 0 0 0 12 2.5H4Z"/></svg>`
 };
 export const viStar: {
   name: 'star';
@@ -1852,6 +1852,7 @@ export type Valkyrie =
   | 'prohibited'
   | 'puzzle_piece'
   | 'quote'
+  | 'rectangle_p'
   | 'redo'
   | 'repeat_once'
   | 'repeat'
@@ -1870,7 +1871,6 @@ export type Valkyrie =
   | 'spinner_third'
   | 'spy'
   | 'square_gum'
-  | 'square_p'
   | 'star'
   | 'stop'
   | 'store'
@@ -2098,6 +2098,7 @@ export const valkyrieSet = [
   viProhibited,
   viPuzzlePiece,
   viQuote,
+  viRectangleP,
   viRedo,
   viRepeatOnce,
   viRepeat,
@@ -2116,7 +2117,6 @@ export const valkyrieSet = [
   viSpinnerThird,
   viSpy,
   viSquareGum,
-  viSquareP,
   viStar,
   viStop,
   viStore,
