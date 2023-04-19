@@ -1,5 +1,5 @@
 ---
-title: Square p
+title: Rectangle p
 categories:
 tags:
 ---
