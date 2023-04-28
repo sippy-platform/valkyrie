@@ -2,8 +2,8 @@ $Valkyrie-font: "Valkyrie";
 
 @font-face {
   font-family: $Valkyrie-font;
-  src: url("./fonts/Valkyrie.woff?59f758d91f9c1653fb24c2b6480ea99c") format("woff"),
-url("./fonts/Valkyrie.woff2?59f758d91f9c1653fb24c2b6480ea99c") format("woff2");
+  src: url("./fonts/Valkyrie.woff?f4f9ea55412cf0f300050d57c7fcacf2") format("woff"),
+url("./fonts/Valkyrie.woff2?f4f9ea55412cf0f300050d57c7fcacf2") format("woff2");
 }
 
 .vi {
@@ -312,6 +312,8 @@ $Valkyrie-map: (
   "translate": "\f1ef",
   "square-p": "\f1f0",
   "rectangle-p": "\f1f1",
+  "pager": "\f1f2",
+  "speaker-grill": "\f1f3",
 );
 
 .vi.vi-a-gum:before {
@@ -1036,4 +1038,10 @@ $Valkyrie-map: (
 }
 .vi.vi-rectangle-p:before {
   content: map-get($Valkyrie-map, "rectangle-p");
+}
+.vi.vi-pager:before {
+  content: map-get($Valkyrie-map, "pager");
+}
+.vi.vi-speaker-grill:before {
+  content: map-get($Valkyrie-map, "speaker-grill");
 }
