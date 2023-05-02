@@ -1,6 +1,6 @@
 {
   "name": "@sippy-platform/valkyrie",
-  "version": "1.0.0-alpha.17",
+  "version": "1.0.0-alpha.18",
   "description": "The iconography of Sippy.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -47,22 +47,22 @@
     "react": ">=16.x"
   },
   "dependencies": {
-    "html-react-parser": "3.0.15"
+    "html-react-parser": "3.0.16"
   },
   "devDependencies": {
     "@twbs/fantasticon": "2.7.1",
-    "@types/react": "18.0.37",
+    "@types/react": "18.2.0",
     "autoprefixer": "10.4.14",
     "bundle-scss": "1.5.1",
     "copyfiles": "2.4.1",
     "nodemon": "2.0.22",
     "npm-run-all": "4.1.5",
     "picocolors": "1.0.0",
-    "postcss": "8.4.22",
+    "postcss": "8.4.23",
     "postcss-cli": "10.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "1.62.0",
+    "sass": "1.62.1",
     "svg-to-ts": "10.0.0",
     "svgo": "3.0.2",
     "typescript": "5.0.4"
