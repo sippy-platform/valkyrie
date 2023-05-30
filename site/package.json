@@ -9,11 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "11.10.5",
-    "@emotion/styled": "11.10.5",
-    "@mui/joy": "5.0.0-alpha.66",
+    "@emotion/react": "11.11.0",
+    "@emotion/styled": "11.11.0",
+    "@mui/joy": "5.0.0-alpha.82",
     "@sippy-platform/valkyrie": "file:../",
-    "eslint": "8.34.0",
+    "eslint": "8.41.0",
     "eslint-config-next": "13.1.6",
     "gray-matter": "4.0.3",
     "next": "13.1.6",
