@@ -2,8 +2,8 @@ $Valkyrie-font: "Valkyrie";
 
 @font-face {
   font-family: $Valkyrie-font;
-  src: url("./fonts/Valkyrie.woff?62999e6538db1bd0865131a42e08543c") format("woff"),
-url("./fonts/Valkyrie.woff2?62999e6538db1bd0865131a42e08543c") format("woff2");
+  src: url("./fonts/Valkyrie.woff?e3ba9623549ff373a0d4354adda9d3e6") format("woff"),
+url("./fonts/Valkyrie.woff2?e3ba9623549ff373a0d4354adda9d3e6") format("woff2");
 }
 
 .vi {
@@ -319,6 +319,8 @@ $Valkyrie-map: (
   "door": "\f1f6",
   "pin-slash": "\f1f7",
   "pin": "\f1f8",
+  "sidebar-left": "\f1f9",
+  "sidebar-right": "\f1fa",
 );
 
 .vi.vi-a-gum:before {
@@ -1064,4 +1066,10 @@ $Valkyrie-map: (
 }
 .vi.vi-pin:before {
   content: map-get($Valkyrie-map, "pin");
+}
+.vi.vi-sidebar-left:before {
+  content: map-get($Valkyrie-map, "sidebar-left");
+}
+.vi.vi-sidebar-right:before {
+  content: map-get($Valkyrie-map, "sidebar-right");
 }

@@ -246,5 +246,7 @@
     "share": 61941,
     "door": 61942,
     "pin-slash": 61943,
-    "pin": 61944
+    "pin": 61944,
+    "sidebar-left": 61945,
+    "sidebar-right": 61946
 }
