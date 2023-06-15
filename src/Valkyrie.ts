@@ -1588,6 +1588,20 @@ export const viTag: {
   name: 'tag',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M5 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/><path d="M3.75 1A2.75 2.75 0 0 0 1 3.75v2.672c0 .729.29 1.428.805 1.944l5.5 5.5a2.75 2.75 0 0 0 3.89 0l2.695-2.695a2.75 2.75 0 0 0 .033-3.856L8.629 1.839A2.75 2.75 0 0 0 6.652 1H3.75ZM2.5 3.75c0-.69.56-1.25 1.25-1.25h2.902c.339 0 .663.138.898.381l5.294 5.476a1.25 1.25 0 0 1-.015 1.753l-2.695 2.696a1.25 1.25 0 0 1-1.768 0l-5.5-5.5a1.25 1.25 0 0 1-.366-.884V3.75Z"/></svg>`
 };
+export const viToggleOff: {
+  name: 'toggle_off';
+  data: string;
+} = {
+  name: 'toggle_off',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M7.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM6 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0Z"/><path d="M0 8a5 5 0 0 1 5-5h6a5 5 0 0 1 0 10H5a5 5 0 0 1-5-5Zm5-3.5a3.5 3.5 0 1 0 0 7h6a3.5 3.5 0 1 0 0-7H5Z"/></svg>`
+};
+export const viToggleOn: {
+  name: 'toggle_on';
+  data: string;
+} = {
+  name: 'toggle_on',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M11 10.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/><path d="M0 8a5 5 0 0 1 5-5h6a5 5 0 0 1 0 10H5a5 5 0 0 1-5-5Zm5-3.5a3.5 3.5 0 1 0 0 7h6a3.5 3.5 0 1 0 0-7H5Z"/></svg>`
+};
 export const viTowerBroadcast: {
   name: 'tower_broadcast';
   data: string;
@@ -1956,6 +1970,8 @@ export type Valkyrie =
   | 'tag_gear'
   | 'tag_plus'
   | 'tag'
+  | 'toggle_off'
+  | 'toggle_on'
   | 'tower_broadcast'
   | 'translate'
   | 'trash_can'
@@ -2211,6 +2227,8 @@ export const valkyrieSet = [
   viTagGear,
   viTagPlus,
   viTag,
+  viToggleOff,
+  viToggleOn,
   viTowerBroadcast,
   viTranslate,
   viTrashCan,
