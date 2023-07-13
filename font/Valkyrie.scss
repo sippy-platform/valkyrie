@@ -2,8 +2,8 @@ $Valkyrie-font: "Valkyrie";
 
 @font-face {
   font-family: $Valkyrie-font;
-  src: url("./fonts/Valkyrie.woff?242a12e1ab4050c2c5997ded87afa6b7") format("woff"),
-url("./fonts/Valkyrie.woff2?242a12e1ab4050c2c5997ded87afa6b7") format("woff2");
+  src: url("./fonts/Valkyrie.woff?e9e64ed8a00243841ab50c28b611b079") format("woff"),
+url("./fonts/Valkyrie.woff2?e9e64ed8a00243841ab50c28b611b079") format("woff2");
 }
 
 .vi {
@@ -324,6 +324,7 @@ $Valkyrie-map: (
   "toggle-off": "\f1fb",
   "toggle-on": "\f1fc",
   "logo-white": "\f1fd",
+  "chalkboard-person": "\f1fe",
 );
 
 .vi.vi-a-gum:before {
@@ -1084,4 +1085,7 @@ $Valkyrie-map: (
 }
 .vi.vi-logo-white:before {
   content: map-get($Valkyrie-map, "logo-white");
+}
+.vi.vi-chalkboard-person:before {
+  content: map-get($Valkyrie-map, "chalkboard-person");
 }
