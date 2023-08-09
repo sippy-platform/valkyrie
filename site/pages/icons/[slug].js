@@ -35,26 +35,30 @@ function PostTemplate({ data, slug }) {
         <meta name="description" content="The Valkyrie Icon set." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
-        <NextLink href="/" legacyBehavior>
-          <IconButton href="/">
+      <Stack
+        direction="row"
+        spacing={1}
+        justifyContent="flex-start"
+        alignItems="center"
+        sx={{ py: 2 }}
+      >
+        <NextLink href="/">
+          <IconButton variant="outlined">
             <ValkyrieIcon icon={Icons.viArrowLeft} />
           </IconButton>
         </NextLink>
         <Typography
           level="h1"
-          fontSize="xl4"
-          fontWeight="xl"
           sx={{
-            backgroundImage: "linear-gradient(135deg, #0062ff, #9238ff)",
+            display: "inline",
+            backgroundImage: "linear-gradient(135deg, #0061c9, #c455f7)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent"
           }}
         >
           Valkyrie
         </Typography>
-      </Box>
-      <Divider sx={{ my: 2 }} />
+      </Stack>
       <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
         <Typography level="h1" fontSize="xl3" fontWeight="xl">
           {frontmatter.title}
@@ -63,12 +67,12 @@ function PostTemplate({ data, slug }) {
       {(frontmatter.categories || frontmatter.tags) && (
         <Box sx={{ display: "flex", gap: 0.5, alignItems: "center", mt: 2 }}>
           {frontmatter.categories?.map(cat => (
-            <Chip variant="solid" color="primary" key={cat}>{cat}</Chip>
+            <Chip variant="solid" color="primary" key={cat}>
+              {cat}
+            </Chip>
           ))}
           {frontmatter.tags?.map(tag => (
-            <Chip key={tag}>
-              {tag}
-            </Chip>
+            <Chip key={tag}>{tag}</Chip>
           ))}
         </Box>
       )}

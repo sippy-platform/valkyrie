@@ -1,8 +1,5 @@
 import {
   Box,
-  Button,
-  Card,
-  CardOverflow,
   Container,
   Divider,
   Grid,
@@ -10,7 +7,8 @@ import {
   Input,
   Typography,
   Stack,
-  Sheet
+  Sheet,
+  IconButton
 } from "@mui/joy";
 import Head from "next/head";
 import fs from "fs";
@@ -67,20 +65,19 @@ export default function Home({ icons }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Typography
-        level="h1"
-        sx={{
-          display: "inline",
-          lineHeigth: 1.75,
-          backgroundImage: "linear-gradient(135deg, #0062ff, #9238ff)",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-          fontWeight: 700
-        }}
-      >
-        Valkyrie
-      </Typography>
-      <Divider sx={{ my: 2 }} />
+      <Stack direction="row" spacing={1} justifyContent="flex-start" alignItems="center" sx={{ py: 2 }}>
+        <Typography
+          level="h1"
+          sx={{
+            display: 'inline',
+            backgroundImage: "linear-gradient(135deg, #0061c9, #c455f7)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent"
+          }}
+        >
+          Valkyrie
+        </Typography>
+      </Stack>
       <Box
         sx={{
           display: "flex",
@@ -99,7 +96,7 @@ export default function Home({ icons }) {
           value={needle}
           onChange={e => {
             setNeedle(e.target.value);
-            setPage(0)
+            setPage(0);
           }}
         />
       </Box>
@@ -112,7 +109,8 @@ export default function Home({ icons }) {
                 gap: 0,
                 borderRadius: "sm",
                 "&:hover, &:focus-within": {
-                  boxShadow: "md",
+                  backgroundColor:
+                    "rgba(var(--joy-palette-primary-mainChannel) / .0625)",
                   "& > div > a > .MuiTypography-root": {
                     backgroundColor:
                       "rgba(var(--joy-palette-primary-mainChannel) / .125)"
@@ -143,9 +141,9 @@ export default function Home({ icons }) {
                     noWrap
                     level="body-sm"
                     sx={{
-                      px: .5,
-                      py: .25,
-                      borderRadius: 'sm',
+                      px: 0.5,
+                      py: 0.25,
+                      borderRadius: "sm",
                       fontFamily:
                         "SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace"
                     }}
@@ -158,33 +156,33 @@ export default function Home({ icons }) {
           </Grid>
         ))}
         <Grid xs={12}>
-          <Box
-            sx={{
-              mb: 3,
-              display: "flex",
-              gap: 1,
-              justifyContent: "center",
-              alignItems: "center"
-            }}
+          <Stack
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+            gap={1}
+            sx={{ mb: 3 }}
           >
-            <Button
+            <IconButton
+              variant="solid"
+              color="primary"
               onClick={() => setPage(prev => prev - 1)}
               disabled={page === 0}
-              startDecorator={<ValkyrieIcon icon={Icons.viChevronLeft} />}
             >
-              Previous
-            </Button>
+              <ValkyrieIcon icon={Icons.viChevronLeft} />
+            </IconButton>
             <Typography>
               {page + 1}/{Math.ceil(result.length / 42)}
             </Typography>
-            <Button
+            <IconButton
+              variant="solid"
+              color="primary"
               onClick={() => setPage(prev => prev + 1)}
               disabled={page === Math.ceil(result.length / 42) - 1}
-              endDecorator={<ValkyrieIcon icon={Icons.viChevronRight} />}
             >
-              Next
-            </Button>
-          </Box>
+              <ValkyrieIcon icon={Icons.viChevronRight} />
+            </IconButton>
+          </Stack>
         </Grid>
       </Grid>
     </Container>
