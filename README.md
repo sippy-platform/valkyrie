@@ -10,7 +10,7 @@ npm install @sippy-platform/valkyrie
 
 Valkyrie includes a number of ways to use it. Our package will include the individual SVG files, a React-component and JavaScript implementation with TypeScript definitions, as well as an old-school webfont.
 
-# 249 icons
+# 252 icons
 [Available on Figma](https://www.figma.com/file/jeP1aSRulegRxHDegrrmWc/Valkyrie?node-id=1%3A11358)
 
 # About
