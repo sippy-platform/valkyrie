@@ -111,9 +111,8 @@ export default function Home({ icons }) {
                   </NextLink>
                 </Typography>
               </CardOverflow>
-              <Divider />
               <CardOverflow
-                variant="soft"
+                variant="outlined"
                 sx={{
                   py: 1,
                   textAlign: "center",
@@ -123,7 +122,7 @@ export default function Home({ icons }) {
                 }}
               >
                 <Typography
-                  level="body2"
+                  level="body-sm"
                   sx={{
                     fontFamily:
                       "SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace"
