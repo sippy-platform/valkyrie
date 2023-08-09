@@ -160,7 +160,7 @@ export default function Home({ icons }) {
             </Typography>
             <Button
               onClick={() => setPage(prev => prev + 1)}
-              disabled={page === result.length - 1}
+              disabled={page === Math.ceil(result.length / 42) - 1}
               endDecorator={<ValkyrieIcon icon={Icons.viChevronRight} />}
             >
               Next
