@@ -63,10 +63,10 @@ function PostTemplate({ data, slug }) {
       {(frontmatter.categories || frontmatter.tags) && (
         <Box sx={{ display: "flex", gap: 0.5, alignItems: "center", mt: 2 }}>
           {frontmatter.categories?.map(cat => (
-            <Chip key={cat}>{cat}</Chip>
+            <Chip variant="solid" color="primary" key={cat}>{cat}</Chip>
           ))}
           {frontmatter.tags?.map(tag => (
-            <Chip variant="soft" color="neutral" key={tag}>
+            <Chip key={tag}>
               {tag}
             </Chip>
           ))}
