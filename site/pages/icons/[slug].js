@@ -10,6 +10,7 @@ import {
   Grid,
   IconButton,
   Input,
+  Stack,
   Typography
 } from "@mui/joy";
 import Head from "next/head";
@@ -71,57 +72,53 @@ function PostTemplate({ data, slug }) {
           ))}
         </Box>
       )}
-      <Grid container spacing={2} sx={{ mt: 2 }}>
-        <Grid item xs={12} sm={4}>
-          <Card
-            variant="outlined"
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              borderRadius: 8,
-              backgroundColor: "#fdfdfd",
-              backgroundImage:
-                "radial-gradient(circle, #ddd 1px, rgba(0, 0, 0, 0) 1px)",
-              backgroundSize: "1rem 1rem",
-              backgroundPosition: "calc(.5rem - 1px) calc(.5rem - 1px)",
-              fontSize: "10rem",
-              width: "20rem",
-              height: "20rem"
-            }}
-          >
-            <ValkyrieIcon icon={Icons[icon]} />
-          </Card>
-        </Grid>
-        <Grid item xs={12} sm={8} sx={{ height: 1 }}>
-          <Card variant="outlined" sx={{ height: 1 }}>
-            <Typography level="h3" sx={{ mb: 3 }}>
-              <ValkyrieIcon icon={Icons[icon]} /> Heading icon
-            </Typography>
-            <Typography level="body1" sx={{ mb: 3 }}>
-              <ValkyrieIcon icon={Icons[icon]} /> Inline icon
-            </Typography>
-            <Box sx={{ mb: 3, display: "flex", gap: 1 }}>
-              <Button startDecorator={<ValkyrieIcon icon={Icons[icon]} />}>
-                Button icon
-              </Button>
-              <IconButton>
-                <ValkyrieIcon icon={Icons[icon]} />
-              </IconButton>
-            </Box>
-            <Input
-              startDecorator={<ValkyrieIcon icon={Icons[icon]} />}
-              placeholder={frontmatter.title}
-            />
-          </Card>
-        </Grid>
-      </Grid>
+      <Stack direction={{ xs: "column", md: "row" }} spacing={2} sx={{ pt: 2 }}>
+        <Card
+          variant="outlined"
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            borderRadius: 8,
+            backgroundColor: "#fdfdfd",
+            backgroundImage:
+              "radial-gradient(circle, #ddd 1px, rgba(0, 0, 0, 0) 1px)",
+            backgroundSize: "1rem 1rem",
+            backgroundPosition: "calc(.5rem - 1px) calc(.5rem - 1px)",
+            fontSize: "10rem",
+            width: "20rem",
+            height: "20rem"
+          }}
+        >
+          <ValkyrieIcon icon={Icons[icon]} />
+        </Card>
+        <Card variant="outlined" sx={{ flexGrow: 1 }}>
+          <Typography level="h3" sx={{ mb: 3 }}>
+            <ValkyrieIcon icon={Icons[icon]} /> Heading icon
+          </Typography>
+          <Typography level="body-md" sx={{ mb: 3 }}>
+            <ValkyrieIcon icon={Icons[icon]} /> Inline icon
+          </Typography>
+          <Box sx={{ mb: 3, display: "flex", gap: 1 }}>
+            <Button startDecorator={<ValkyrieIcon icon={Icons[icon]} />}>
+              Button icon
+            </Button>
+            <IconButton color="primary" variant="soft">
+              <ValkyrieIcon icon={Icons[icon]} />
+            </IconButton>
+          </Box>
+          <Input
+            startDecorator={<ValkyrieIcon icon={Icons[icon]} />}
+            placeholder={frontmatter.title}
+          />
+        </Card>
+      </Stack>
       <Grid container spacing={2} sx={{ mt: 3 }}>
         <Grid item xs={12} sm={6}>
           <Typography level="h3" sx={{ mb: 2 }}>
             HTML
           </Typography>
-          <Card variant="soft" sx={{ py: 2 }}>
+          <Card variant="outlined" sx={{ py: 2 }}>
             <code>{`<i class="vi vi-${slug.replaceAll(" ", "-")}"></i>`}</code>
           </Card>
         </Grid>
@@ -129,7 +126,7 @@ function PostTemplate({ data, slug }) {
           <Typography level="h3" sx={{ mb: 2 }}>
             React
           </Typography>
-          <Card variant="soft" sx={{ py: 2 }}>
+          <Card variant="outlined" sx={{ py: 2 }}>
             <code>{`<ValkyrieIcon icon={${icon}} />`}</code>
           </Card>
         </Grid>
