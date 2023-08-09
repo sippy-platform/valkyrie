@@ -97,7 +97,10 @@ export default function Home({ icons }) {
           startDecorator={<ValkyrieIcon icon={Icons.viMagnifyingGlass} />}
           placeholder="Search"
           value={needle}
-          onChange={e => setNeedle(e.target.value)}
+          onChange={e => {
+            setNeedle(e.target.value);
+            setPage(0)
+          }}
         />
       </Box>
       <Grid container spacing={2}>
