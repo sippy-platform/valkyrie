@@ -8,7 +8,9 @@ import {
   Grid,
   Link,
   Input,
-  Typography
+  Typography,
+  Stack,
+  Sheet
 } from "@mui/joy";
 import Head from "next/head";
 import fs from "fs";
@@ -101,41 +103,55 @@ export default function Home({ icons }) {
       <Grid container spacing={2}>
         {result.slice(page * 42, (page + 1) * 42).map(({ slug, viIcon }) => (
           <Grid item xs={4} sm={3} md={2} key={slug}>
-            <Card variant="outlined">
-              <CardOverflow>
-                <Typography fontSize="xl4" textAlign="center" sx={{ my: 2 }}>
-                  <NextLink href={`/icons/${slug}`} legacyBehavior>
-                    <Link overlay underline="none" sx={{ color: "#222" }}>
-                      {Icons?.[viIcon] && <ValkyrieIcon icon={Icons[viIcon]} />}
-                    </Link>
-                  </NextLink>
-                </Typography>
-              </CardOverflow>
-              <CardOverflow
-                variant="outlined"
-                sx={{
-                  py: 1,
-                  textAlign: "center",
-                  overflow: "hidden",
-                  whiteSpace: "nowrap",
-                  textOverflow: "ellipsis"
-                }}
+            <Sheet
+              variant="outlined"
+              sx={{
+                gap: 0,
+                borderRadius: "sm",
+                "&:hover, &:focus-within": {
+                  boxShadow: "md",
+                  "& > div > a > .MuiTypography-root": {
+                    backgroundColor:
+                      "rgba(var(--joy-palette-primary-mainChannel) / .125)"
+                  }
+                }
+              }}
+            >
+              <Stack
+                gap={3}
+                justifyContent="center"
+                alignItems="center"
+                sx={{ pt: 3, pb: 1 }}
               >
-                <Typography
-                  level="body-sm"
+                {Icons?.[viIcon] && (
+                  <ValkyrieIcon icon={Icons[viIcon]} sx={{ fontSize: 32 }} />
+                )}
+                <Link
+                  overlay
+                  component={NextLink}
+                  href={`/icons/${slug}`}
+                  underline="none"
+                  color="neutral"
                   sx={{
-                    fontFamily:
-                      "SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace"
+                    maxWidth: "calc(100% - 32px)"
                   }}
                 >
-                  <NextLink href={`/icons/${slug}`} legacyBehavior>
-                    <Link overlay underline="none" color="neutral">
-                      {viIcon}
-                    </Link>
-                  </NextLink>
-                </Typography>
-              </CardOverflow>
-            </Card>
+                  <Typography
+                    noWrap
+                    level="body-sm"
+                    sx={{
+                      px: .5,
+                      py: .25,
+                      borderRadius: 'sm',
+                      fontFamily:
+                        "SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace"
+                    }}
+                  >
+                    {viIcon}
+                  </Typography>
+                </Link>
+              </Stack>
+            </Sheet>
           </Grid>
         ))}
         <Grid xs={12}>
