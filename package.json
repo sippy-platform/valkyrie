@@ -47,7 +47,7 @@
     "react": ">=16.x"
   },
   "dependencies": {
-    "html-react-parser": "4.0.0"
+    "html-react-parser": "4.2.0"
   },
   "devDependencies": {
     "@twbs/fantasticon": "2.7.1",
