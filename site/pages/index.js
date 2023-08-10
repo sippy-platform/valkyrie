@@ -62,7 +62,7 @@ export default function Home({ icons }) {
       <Head>
         <title>Valkyrie</title>
         <meta name="description" content="The Valkyrie Icon set." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
       <Stack direction="row" spacing={1} justifyContent="flex-start" alignItems="center" sx={{ py: 2 }}>
