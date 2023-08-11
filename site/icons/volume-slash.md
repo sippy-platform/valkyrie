@@ -1,5 +1,5 @@
 ---
-title: Volume slash0
+title: Volume slash
 categories:
   - media
 tags:
