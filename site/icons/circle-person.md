@@ -1,5 +1,14 @@
 ---
 title: Circle person
 categories:
+  - people
+  - social
 tags:
+  - avatar
+  - organization
+  - account
+  - user
+  - profile
+created: 0.1.0
+updated: 0.1.0
 ---

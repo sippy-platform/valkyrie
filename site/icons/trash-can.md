@@ -1,5 +1,14 @@
 ---
 title: Trash can
 categories:
+  - maps
+  - editor
 tags:
+  - trash
+  - delete
+  - garbage
+  - remove
+  - junk
+created: 0.1.0
+updated: 0.1.0
 ---

@@ -1,5 +1,13 @@
 ---
 title: Floppy disk
 categories:
+  - editor
+  - business
+  - design
+  - device
+  - files
 tags:
+  - save
+created: 0.1.0
+updated: 0.1.0
 ---

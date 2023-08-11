@@ -1,5 +1,12 @@
 ---
 title: Ellipsis
 categories:
+  - editor
 tags:
+  - three dots
+  - meatballs
+  - more
+  - overflow
+created: 0.1.0
+updated: 0.1.0
 ---

@@ -1,5 +1,11 @@
 ---
 title: Compass
 categories:
+  - maps
+  - camping
+  - spinners
 tags:
+  - location
+created: 0.1.0
+updated: 0.1.0
 ---
