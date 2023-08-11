@@ -1,5 +1,14 @@
 ---
 title: Bars
 categories:
+  - coding
+  - editor
 tags:
+  - menu
+  - navigation
+  - justify
+  - aligment
+  - hamburger
+created: 0.4.0
+updated: 0.4.0
 ---
