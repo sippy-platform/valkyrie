@@ -1,12 +1,12 @@
 ---
-title: Pin slash
+title: Thumbstack slash
 categories:
   - business
   - maps
   - social
   - writing
 tags:
-  - thumbstack
+  - pin
 created: 1.0.0
 updated: 1.0.0
 ---
