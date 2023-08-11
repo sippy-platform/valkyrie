@@ -7,5 +7,5 @@ tags:
   - geography
   - map-marker
 created: 0.7.0
-updated: 0.10.0
+updated: 1.0.0-alpha.1
 ---

@@ -6,5 +6,5 @@ categories:
 tags:
   - email
 created: 0.7.0
-updated: 0.7.0
+updated: 1.0.0-alpha.1
 ---
