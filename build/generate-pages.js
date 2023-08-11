@@ -6,6 +6,8 @@ const fs = require('fs').promises
 const path = require('path')
 const picocolors = require('picocolors')
 
+const version = require('../package.json').version
+
 const iconsDir = path.join(__dirname, '../icons/')
 const pagesDir = path.join(__dirname, '../site/icons/')
 
@@ -24,6 +26,8 @@ async function main(file) {
 title: ${iconTitle}
 categories:
 tags:
+created: ${version}
+updated: ${version}
 ---
 `
 
