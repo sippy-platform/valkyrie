@@ -6,6 +6,7 @@ categories:
   - tools
 tags:
   - settings
+  - options
   - preferences
   - tools
 created: 0.1.0
