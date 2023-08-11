@@ -7,5 +7,5 @@ categories:
 tags:
   - shop
 created: 0.7.0
-updated: 1.0.0-alpha.8
+updated: 1.0.0
 ---

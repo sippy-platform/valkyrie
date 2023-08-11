@@ -1,5 +1,8 @@
 ---
-title: Rectangle p
+title: Rectangle P
 categories:
+  - alphabet
 tags:
+created: 1.0.0
+updated: 1.0.0
 ---

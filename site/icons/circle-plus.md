@@ -7,5 +7,5 @@ tags:
   - add
   - create
 created: 0.2.0
-updated: 1.0.0-alpha.1
+updated: 1.0.0
 ---

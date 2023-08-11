@@ -4,5 +4,5 @@ categories:
   - coding
 tags:
 created: 0.12.0
-updated: 1.0.0-alpha.1
+updated: 1.0.0
 ---

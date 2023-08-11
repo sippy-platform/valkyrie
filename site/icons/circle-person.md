@@ -10,5 +10,5 @@ tags:
   - user
   - profile
 created: 0.1.0
-updated: 1.0.0-alpha.2
+updated: 1.0.0
 ---

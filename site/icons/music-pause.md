@@ -7,6 +7,6 @@ categories:
 tags:
   - audio
   - sound
-created: 1.0.0-alpha.6
-updated: 1.0.0-alpha.8
+created: 1.0.0
+updated: 1.0.0
 ---
