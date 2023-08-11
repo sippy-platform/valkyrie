@@ -2,7 +2,7 @@
 title: Phone
 categories:
   - business
-  - communcation
+  - communication
   - maps
 tags:
   - telephone

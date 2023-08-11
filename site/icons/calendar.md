@@ -1,5 +1,10 @@
 ---
 title: Calendar
 categories:
+  - business
+  - time
 tags:
+  - month
+created: 0.5.0
+updated: 0.5.0
 ---

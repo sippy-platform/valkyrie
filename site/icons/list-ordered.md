@@ -1,5 +1,8 @@
 ---
 title: List ordered
 categories:
+  - editor
 tags:
+created: 0.5.0
+updated: 0.5.0
 ---

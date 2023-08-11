@@ -1,10 +1,9 @@
 ---
 title: Apple App Store
 categories:
- - brands
+  - brands
 tags:
- - apple
- - app
- - software
- - store
+  - software
+created: 0.5.0
+updated: 0.5.0
 ---

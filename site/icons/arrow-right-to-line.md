@@ -1,5 +1,9 @@
 ---
 title: Arrow right to line
 categories:
+  - arrows
 tags:
+  - direction
+created: 0.5.0
+updated: 0.5.0
 ---
