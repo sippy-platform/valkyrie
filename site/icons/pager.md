@@ -1,5 +1,11 @@
 ---
 title: Pager
 categories:
+  - communication
+  - devices
+  - health
 tags:
+  - beeper
+created: 1.0.0
+updated: 1.0.0
 ---
