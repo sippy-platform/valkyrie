@@ -1,5 +1,12 @@
 ---
 title: Circle half inner
 categories:
+  - design
+  - charts
+  - shapes
 tags:
+  - contrast
+  - theme
+created: 1.0.0-alpha.9
+updated: 1.0.0-alpha.9
 ---
