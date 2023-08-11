@@ -1,5 +1,9 @@
 ---
 title: Arrow pointer
 categories:
+  - arrows
 tags:
+  - cursor
+created: 0.10.0
+updated: 0.10.0
 ---

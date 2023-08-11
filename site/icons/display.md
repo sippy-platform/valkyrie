@@ -7,5 +7,5 @@ tags:
   - monitor
   - desktop
 created: 0.6.0
-updated: 0.6.0
+updated: 0.10.0
 ---
