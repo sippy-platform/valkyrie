@@ -142,6 +142,7 @@ export default function Home({ icons }) {
             .slice(page * 180, (page + 1) * 180)
             .map(({ slug, viIcon }) => (
               <Sheet
+                key={viIcon}
                 variant="outlined"
                 sx={{
                   gap: 0,
