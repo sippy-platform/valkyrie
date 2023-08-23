@@ -14,7 +14,7 @@
     "icons:ts": "svg-to-ts-constants",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pages": "node build/generate-pages.js --verbose",
-    "prod": "npm run icons && npm run build"
+    "prod": "npm run icons && npm run pages && npm run build"
   },
   "repository": {
     "type": "git",
