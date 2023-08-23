@@ -1,4 +1,4 @@
-import { IValkyrieIcon } from "./";
+import { IValkyrieIcon } from "./Valkyrie";
 import { Box, SxProps } from "@mui/system";
 import { keyframes } from "@emotion/react";
 import HTMLReactParser from "html-react-parser";
