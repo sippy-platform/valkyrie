@@ -1084,6 +1084,13 @@ export const viMicrophone: {
   name: 'microphone',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M8 0a3.5 3.5 0 0 0-3.5 3.5V7a3.5 3.5 0 1 0 7 0V3.5A3.5 3.5 0 0 0 8 0ZM6 3.5a2 2 0 1 1 4 0V7a2 2 0 1 1-4 0V3.5Z"/><path d="M3.5 5.75a.75.75 0 0 0-1.5 0V7c0 3.06 2.29 5.585 5.25 5.954V14.5H5.5a.75.75 0 0 0 0 1.5h5a.75.75 0 0 0 0-1.5H8.75v-1.546A6.001 6.001 0 0 0 14 7V5.75a.75.75 0 0 0-1.5 0V7a4.5 4.5 0 1 1-9 0V5.75Z"/></svg>`
 };
+export const viMin: {
+  name: 'min';
+  data: string;
+} = {
+  name: 'min',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M1 8a.75.75 0 0 1 .75-.75h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 8Z"/></svg>`
+};
 export const viMoon: {
   name: 'moon';
   data: string;
@@ -1933,6 +1940,7 @@ export type Valkyrie =
   | 'message_text'
   | 'message'
   | 'microphone'
+  | 'min'
   | 'moon'
   | 'music_pause'
   | 'music'
@@ -2195,6 +2203,7 @@ export const valkyrieSet = [
   viMessageText,
   viMessage,
   viMicrophone,
+  viMin,
   viMoon,
   viMusicPause,
   viMusic,
