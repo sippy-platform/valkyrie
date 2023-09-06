@@ -1,28 +1,17 @@
-import { Accordion, AccordionDetails, AccordionGroup, AccordionSummary, Card, Typography } from '@mui/joy';
-import { accordionDetailsClasses } from '@mui/joy/AccordionDetails';
+import { Card, Stack, Typography } from '@mui/joy';
 
 import Code from '@/design/components/Code';
 
 export default function Usage() {
   return (
-    <Card sx={{ textAlign: 'initial', contain: 'paint' }}>
-      <AccordionGroup
-        variant="outlined"
-        sx={{
-          borderRadius: 'sm',
-          [`& .${accordionDetailsClasses.content}.${accordionDetailsClasses.expanded}`]: {
-            py: 1
-          }
-        }}
-      >
-        <Accordion>
-          <AccordionSummary>Install Vaklyrie</AccordionSummary>
-          <AccordionDetails>
-            <Typography>Run the following command in npm to get started.</Typography>
-            <Code>npm install @sippy-platform/valkyrie@next</Code>
-          </AccordionDetails>
-        </Accordion>
-      </AccordionGroup>
-    </Card>
+    <Stack gap={2}>
+      <Typography level="h1">Documentation</Typography>
+      <Card sx={{ textAlign: 'initial', contain: 'paint' }}>
+        <Typography level="h3">Install Vaklyrie</Typography>
+        <Typography>
+          Run the following command in npm to get started <Code>npm install @sippy-platform/valkyrie@next</Code>.
+        </Typography>
+      </Card>
+    </Stack>
   );
 }

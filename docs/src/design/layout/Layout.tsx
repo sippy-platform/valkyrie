@@ -1,6 +1,6 @@
 import { Outlet, useNavigate } from 'react-router-dom';
 
-import { Button, Container, Dropdown, IconButton, ListItemDecorator, Menu, MenuButton, MenuItem, Sheet, Stack, Typography, useColorScheme } from '@mui/joy';
+import { Button, Container, Dropdown, IconButton, Link, ListItemDecorator, Menu, MenuButton, MenuItem, Sheet, Stack, Typography, useColorScheme } from '@mui/joy';
 
 import ValkyrieIcon, { viCircleHalfInner, viGithub, viMoon, viSun, viValkyrieSword } from '@sippy-platform/valkyrie';
 
@@ -11,20 +11,22 @@ export default function Layout() {
   return (
     <>
       <Sheet variant="outlined" sx={{ borderWidth: 0, borderBottomWidth: 1 }}>
-        <Container>
+        <Container maxWidth="xl">
           <Stack direction="row" justifyContent="space-between" sx={{ py: 1.5 }}>
-            <Typography
+            <Link
+              color="neutral"
+              underline="none"
               level="h1"
               fontSize="xl"
-              startDecorator={<ValkyrieIcon icon={viValkyrieSword} />}
               sx={{
                 backgroundImage: 'linear-gradient(135deg, #0061c9, #c455f7)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent'
               }}
+              onClick={() => navigate('/')}
             >
               Valkyrie
-            </Typography>
+            </Link>
             <Stack direction="row" gap={0.5}>
               <Button onClick={() => navigate('/')} variant="plain" size="sm" color="neutral">
                 Icons
@@ -39,11 +41,11 @@ export default function Layout() {
           </Stack>
         </Container>
       </Sheet>
-      <Container sx={{ my: 2 }}>
+      <Container maxWidth="xl" sx={{ my: 2 }}>
         <Outlet />
       </Container>
       <Sheet variant="outlined" sx={{ borderWidth: 0, borderTopWidth: 1, bgcolor: 'transparent' }}>
-        <Container sx={{ py: 2 }}>
+        <Container maxWidth="xl" sx={{ py: 2 }}>
           <Stack spacing={2}>
             <Stack direction="row" justifyContent="space-between" alignItems="center">
               <Typography level="body-sm">&copy; Sippy 2023</Typography>

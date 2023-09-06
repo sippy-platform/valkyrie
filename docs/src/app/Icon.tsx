@@ -13,7 +13,7 @@ export default function Icon() {
   const [icon, setIcon] = useState({});
 
   useEffect(() => {
-    fetch(`../public/data/icons/${slug}.json`)
+    fetch(`/data/icons/${slug}.json`)
       .then((res) => res.json())
       .then((data) => setIcon(data));
   }, [slug]);

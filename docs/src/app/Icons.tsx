@@ -18,7 +18,7 @@ export default function Icons() {
         <Stack direction="row" spacing={1} alignItems="baseline">
           <Typography level="h2">{result.length} icons</Typography>
           <Typography color="neutral">
-            Page {page + 1} of {Math.ceil(result.length / 180)}
+            Page {page + 1} of {Math.ceil(result.length / 99)}
           </Typography>
         </Stack>
 
@@ -39,7 +39,7 @@ export default function Icons() {
           gap: { xs: 1 }
         }}
       >
-        {result.slice(page * 180, (page + 1) * 180).map((icon) => (
+        {result.slice(page * 99, (page + 1) * 99).map((icon) => (
           <Sheet
             key={icon.slug}
             variant="outlined"
@@ -87,7 +87,7 @@ export default function Icons() {
         <IconButton variant="solid" color="primary" onClick={() => setPage((prev) => prev - 1)} disabled={page === 0}>
           <ValkyrieIcon icon={viChevronLeft} />
         </IconButton>
-        <IconButton variant="solid" color="primary" onClick={() => setPage((prev) => prev + 1)} disabled={page === Math.ceil(result.length / 180) - 1}>
+        <IconButton variant="solid" color="primary" onClick={() => setPage((prev) => prev + 1)} disabled={page === Math.ceil(result.length / 99) - 1}>
           <ValkyrieIcon icon={viChevronRight} />
         </IconButton>
       </Stack>
