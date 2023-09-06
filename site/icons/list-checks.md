@@ -1,8 +1,0 @@
----
-title: List checks
-categories:
-  - editor
-tags:
-created: 0.7.0
-updated: 1.0.0
----

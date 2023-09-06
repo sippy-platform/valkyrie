@@ -1,8 +1,0 @@
----
-title: Shield plus
-categories:
-  - security
-tags:
-created: 0.2.0
-updated: 1.0.0
----
