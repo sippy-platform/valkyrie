@@ -5,7 +5,7 @@ import { Box, IconButton, Input, Link, Sheet, Stack, Typography } from '@mui/joy
 import icons from '@/data/icons';
 import useSearch from '@/hooks/useSearch';
 
-import ValkyrieIcon, { viChevronLeft, viChevronRight, viMagnifyingGlass } from '@sippy-platform/valkyrie';
+import ValkyrieIcon, { viChevronLeft, viChevronRight, viMagnifyingGlass, viXmark } from '@sippy-platform/valkyrie';
 
 export default function Icons() {
   const [page, setPage] = useState(0);
@@ -24,6 +24,11 @@ export default function Icons() {
 
         <Input
           startDecorator={<ValkyrieIcon icon={viMagnifyingGlass} />}
+          endDecorator={
+            <IconButton onClick={() => setNeedle('')} disabled={!needle}>
+              <ValkyrieIcon icon={viXmark} />
+            </IconButton>
+          }
           placeholder="Search"
           value={needle}
           onChange={(e) => {

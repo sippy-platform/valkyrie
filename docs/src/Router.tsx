@@ -1,10 +1,10 @@
 import { createBrowserRouter } from 'react-router-dom';
 
+import Error from './app/Error';
+import Icon from './app/Icon';
 import Icons from './app/Icons';
 import Usage from './app/Usage';
 import Layout from './design/layout/Layout';
-import Error from './app/Error';
-import Icon from './app/Icon';
 
 const router = createBrowserRouter([
   {

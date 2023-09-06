@@ -1,6 +1,20 @@
 import { Outlet, useNavigate } from 'react-router-dom';
 
-import { Button, Container, Dropdown, IconButton, Link, ListItemDecorator, Menu, MenuButton, MenuItem, Sheet, Stack, Typography, useColorScheme } from '@mui/joy';
+import {
+  Button,
+  Container,
+  Dropdown,
+  IconButton,
+  Link,
+  ListItemDecorator,
+  Menu,
+  MenuButton,
+  MenuItem,
+  Sheet,
+  Stack,
+  Typography,
+  useColorScheme
+} from '@mui/joy';
 
 import ValkyrieIcon, { viCircleHalfInner, viGithub, viMoon, viSun, viValkyrieSword } from '@sippy-platform/valkyrie';
 
