@@ -14,9 +14,7 @@
     "icons:ts": "svg-to-ts-constants",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pages": "node build/generate-pages.js --verbose",
-    "json": "node build/generate-json.js --verbose",
-    "yaml": "node build/generate-yaml.js --verbose",
-    "cvr": "node build/convert-md-to-yaml.js --verbose",
+    "library": "node build/generate-library.js",
     "prod": "npm run icons && npm run pages && npm run build"
   },
   "repository": {

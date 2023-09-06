@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
 import { Box, Button, Card, Chip, IconButton, Input, Stack, Typography } from '@mui/joy';

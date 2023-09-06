@@ -3,15 +3,12 @@
 'use strict'
 
 const fs = require('fs').promises
+const fst = require('fs')
 const path = require('path')
 const picocolors = require('picocolors')
 
-const version = require('../package.json').version
-
-const iconsDir = path.join(__dirname, '../icons/')
+const iconsDir = path.join(__dirname, '../docs/public/data/icons')
 const pagesDir = path.join(__dirname, '../docs/src/data/')
-
-const VERBOSE = process.argv.includes('--verbose')
 
 function getReactImportName(string) {
   return `vi${string
@@ -23,25 +20,37 @@ function getReactImportName(string) {
 }
 
 async function main(file) {
+  const iconFilePath = path.join(iconsDir, file);
+  const iconFile = fst.readFileSync(iconFilePath);
+
+  let iconJson = {};
+
+  try {
+    iconJson = JSON.parse(iconFile);
+  } catch (e) {
+    console.log(iconFilePath);
+  }
+
   const iconBasename = path.basename(file, path.extname(file))
   const iconTitle = getReactImportName(iconBasename)
 
-  const iconList = `${iconTitle}`;
   const jsonTemplate = `
   {
     component: '${iconTitle}',
+    categories: ${JSON.stringify(iconJson.categories)},
+    tags: ${JSON.stringify(iconJson.tags)},
     slug: '${iconBasename}',
     icon: ${iconTitle}
   }`
 
-  return [iconList, jsonTemplate];
+  return [`${iconTitle}`, jsonTemplate];
 }
 
 (async () => {
   try {
-    const timeLabel = picocolors.cyan(`Page generation finished`)
+    const timeLabel = picocolors.cyan(`Library generation finished`)
 
-    console.log(picocolors.cyan(`Page generation started`))
+    console.log(picocolors.cyan(`Library generation started`))
     console.time(timeLabel)
 
     const files = await fs.readdir(iconsDir);
@@ -49,6 +58,7 @@ async function main(file) {
     const names = [];
     const configs = [];
 
+    // Read content from each icon
     await Promise.all(files.map(async file => {
       const [name, config] = await Promise.resolve(main(file));
 
