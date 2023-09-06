@@ -10,7 +10,7 @@ import ValkyrieIcon, { viChevronLeft, viChevronRight, viMagnifyingGlass } from '
 export default function Icons() {
   const [page, setPage] = useState(0);
 
-  const { result, needle, setNeedle } = useSearch(icons, ['slug']);
+  const { result, needle, setNeedle } = useSearch(icons, ['slug', 'categories', 'tags']);
 
   return (
     <Stack spacing={2}>

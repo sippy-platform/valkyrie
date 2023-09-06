@@ -8,7 +8,7 @@ export default function useSearch(haystack, keys, initialNeedle) {
     prefix = prefix ? prefix + '.' : '';
 
     for (const key in item) {
-      if (typeof item[key] === 'object' && item[key] !== null) {
+      if (typeof item[key] === 'object' && item[key] !== null && !Array.isArray(item[key])) {
         Object.assign(flattened, flattenObject(item[key], prefix + key));
       } else {
         flattened[prefix + key] = item[key];
@@ -54,8 +54,14 @@ export default function useSearch(haystack, keys, initialNeedle) {
 
       keys.forEach((key) => {
         if (flatItem[key]) {
-          // Do a 1:1 comparison between all searchable items
-          matchScore += scoreHaystackItem(flatItem[key], cleanNeedle);
+          if (Array.isArray(flatItem[key])) {
+            flatItem[key].map((arrayItem) => {
+              matchScore += scoreHaystackItem(arrayItem, cleanNeedle);
+            });
+          } else {
+            // Do a 1:1 comparison between all searchable items
+            matchScore += scoreHaystackItem(flatItem[key], cleanNeedle);
+          }
         }
       });
 
