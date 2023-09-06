@@ -16,6 +16,7 @@
     "pages": "node build/generate-pages.js --verbose",
     "json": "node build/generate-json.js --verbose",
     "yaml": "node build/generate-yaml.js --verbose",
+    "cvr": "node build/convert-md-to-yaml.js --verbose",
     "prod": "npm run icons && npm run pages && npm run build"
   },
   "repository": {

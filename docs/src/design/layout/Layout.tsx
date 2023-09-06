@@ -12,7 +12,7 @@ export default function Layout() {
     <>
       <Sheet variant="outlined" sx={{ borderWidth: 0, borderBottomWidth: 1 }}>
         <Container>
-          <Stack direction="row" justifyContent="space-between" sx={{ py: 1 }}>
+          <Stack direction="row" justifyContent="space-between" sx={{ py: 1.5 }}>
             <Typography
               level="h1"
               fontSize="xl"
