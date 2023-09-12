@@ -4,7 +4,7 @@ import { viAGum,viAddressBook,viAngleDown,viAngleLeft,viAngleRight,viAngleUp,viA
 const icons = [
   {
     component: 'viAGum',
-    categories: ["text","editor"],
+    categories: ["editor"],
     tags: [],
     slug: 'a-gum',
     icon: viAGum
@@ -173,7 +173,7 @@ const icons = [
   {
     component: 'viArrowUpToLine',
     categories: ["arrows"],
-    tags: ["direction","upload"],
+    tags: ["direction"],
     slug: 'arrow-up-to-line',
     icon: viArrowUpToLine
   },
@@ -235,22 +235,22 @@ const icons = [
   },
   {
     component: 'viBold',
-    categories: ["text","editor"],
+    categories: ["editor"],
     tags: [],
     slug: 'bold',
     icon: viBold
   },
   {
     component: 'viBook',
-    categories: ["business","writing"],
+    categories: ["business","writing","education"],
     tags: ["read","magazine"],
     slug: 'book',
     icon: viBook
   },
   {
     component: 'viBoxOpenFull',
-    categories: ["moving","shopping"],
-    tags: ["package","cardboard"],
+    categories: ["shopping","logistics"],
+    tags: ["package","cardboard","moving"],
     slug: 'box-open-full',
     icon: viBoxOpenFull
   },
@@ -285,7 +285,7 @@ const icons = [
   {
     component: 'viCalendarDay',
     categories: ["business","time"],
-    tags: ["holidays","date","time"],
+    tags: ["date","day"],
     slug: 'calendar-day',
     icon: viCalendarDay
   },
@@ -313,7 +313,7 @@ const icons = [
   {
     component: 'viCalendarWeek',
     categories: ["business","time"],
-    tags: ["holidays","date","time"],
+    tags: ["date","week"],
     slug: 'calendar-week',
     icon: viCalendarWeek
   },
@@ -536,14 +536,14 @@ const icons = [
   },
   {
     component: 'viDoor',
-    categories: ["house","travel","security"],
+    categories: ["buildings","security"],
     tags: [],
     slug: 'door',
     icon: viDoor
   },
   {
     component: 'viEarth',
-    categories: ["travel","maps"],
+    categories: ["maps"],
     tags: ["europe"],
     slug: 'earth',
     icon: viEarth
@@ -614,14 +614,14 @@ const icons = [
   {
     component: 'viFacebookMessenger',
     categories: ["brands"],
-    tags: [],
+    tags: ["meta"],
     slug: 'facebook-messenger',
     icon: viFacebookMessenger
   },
   {
     component: 'viFacebook',
     categories: ["brands"],
-    tags: [],
+    tags: ["meta"],
     slug: 'facebook',
     icon: viFacebook
   },
@@ -670,7 +670,7 @@ const icons = [
   {
     component: 'viFilmstrip',
     categories: ["media"],
-    tags: ["video","film"],
+    tags: ["video"],
     slug: 'filmstrip',
     icon: viFilmstrip
   },
@@ -725,7 +725,7 @@ const icons = [
   },
   {
     component: 'viFloppyDisk',
-    categories: ["editor","business","design","device","files"],
+    categories: ["editor","business","design","devices","files"],
     tags: ["save"],
     slug: 'floppy-disk',
     icon: viFloppyDisk
@@ -746,7 +746,7 @@ const icons = [
   },
   {
     component: 'viGauge',
-    categories: ["automotive"],
+    categories: ["transportation"],
     tags: ["speedometer","tachometer","dashboard"],
     slug: 'gauge',
     icon: viGauge
@@ -795,42 +795,42 @@ const icons = [
   },
   {
     component: 'viHeading1',
-    categories: ["text","editor"],
+    categories: ["editor"],
     tags: [],
     slug: 'heading-1',
     icon: viHeading1
   },
   {
     component: 'viHeading2',
-    categories: ["text","editor"],
+    categories: ["editor"],
     tags: [],
     slug: 'heading-2',
     icon: viHeading2
   },
   {
     component: 'viHeading3',
-    categories: ["text","editor"],
+    categories: ["editor"],
     tags: [],
     slug: 'heading-3',
     icon: viHeading3
   },
   {
     component: 'viHeading4',
-    categories: ["text","editor"],
+    categories: ["editor"],
     tags: [],
     slug: 'heading-4',
     icon: viHeading4
   },
   {
     component: 'viHeading5',
-    categories: ["text","editor"],
+    categories: ["editor"],
     tags: [],
     slug: 'heading-5',
     icon: viHeading5
   },
   {
     component: 'viHeading6',
-    categories: ["text","editor"],
+    categories: ["editor"],
     tags: [],
     slug: 'heading-6',
     icon: viHeading6
@@ -886,14 +886,14 @@ const icons = [
   },
   {
     component: 'viItalic',
-    categories: ["text","editor"],
+    categories: ["editor"],
     tags: [],
     slug: 'italic',
     icon: viItalic
   },
   {
     component: 'viKey',
-    categories: ["security","travel"],
+    categories: ["security","maps"],
     tags: [],
     slug: 'key',
     icon: viKey
@@ -1082,7 +1082,7 @@ const icons = [
   },
   {
     component: 'viMicrophone',
-    categories: ["communication","audio","social","devices"],
+    categories: ["communication","media","social","devices"],
     tags: ["record"],
     slug: 'microphone',
     icon: viMicrophone
@@ -1090,7 +1090,7 @@ const icons = [
   {
     component: 'viMin',
     categories: ["editor","maps","mathematics","punctuation","alerts"],
-    tags: ["subtract","minus","remove"],
+    tags: ["minus","delete"],
     slug: 'min',
     icon: viMin
   },
@@ -1117,7 +1117,7 @@ const icons = [
   },
   {
     component: 'viNetwork',
-    categories: ["charts","science"],
+    categories: ["charts","science","communication","connectivity"],
     tags: [],
     slug: 'network',
     icon: viNetwork
@@ -1159,7 +1159,7 @@ const icons = [
   },
   {
     component: 'viParagraph',
-    categories: ["text","editor"],
+    categories: ["editor"],
     tags: [],
     slug: 'paragraph',
     icon: viParagraph
@@ -1173,7 +1173,7 @@ const icons = [
   },
   {
     component: 'viPen',
-    categories: ["editor","business","design"],
+    categories: ["editor","business","design","writing"],
     tags: ["write","ballpoint"],
     slug: 'pen',
     icon: viPen
@@ -1243,28 +1243,28 @@ const icons = [
   },
   {
     component: 'viPhoneArrowDownLeftProhibited',
-    categories: ["business","communication","maps"],
+    categories: ["business","communication"],
     tags: ["telephone","call","incoming"],
     slug: 'phone-arrow-down-left-prohibited',
     icon: viPhoneArrowDownLeftProhibited
   },
   {
     component: 'viPhoneArrowDownLeft',
-    categories: ["business","communication","maps"],
+    categories: ["business","communication"],
     tags: ["telephone","call","incoming"],
     slug: 'phone-arrow-down-left',
     icon: viPhoneArrowDownLeft
   },
   {
     component: 'viPhoneArrowUpRightProhibited',
-    categories: ["business","communication","maps"],
+    categories: ["business","communication"],
     tags: ["telephone","call","outgoing"],
     slug: 'phone-arrow-up-right-prohibited',
     icon: viPhoneArrowUpRightProhibited
   },
   {
     component: 'viPhoneArrowUpRight',
-    categories: ["business","communication","maps"],
+    categories: ["business","communication"],
     tags: ["telephone","call","outgoing"],
     slug: 'phone-arrow-up-right',
     icon: viPhoneArrowUpRight
@@ -1285,7 +1285,7 @@ const icons = [
   },
   {
     component: 'viPhoneList',
-    categories: ["business","communication","maps"],
+    categories: ["business","communication"],
     tags: ["telephone","call","log"],
     slug: 'phone-list',
     icon: viPhoneList
@@ -1299,7 +1299,7 @@ const icons = [
   },
   {
     component: 'viPhoneVolume',
-    categories: ["business","communication","maps"],
+    categories: ["business","communication"],
     tags: ["telephone","call"],
     slug: 'phone-volume',
     icon: viPhoneVolume
@@ -1327,7 +1327,7 @@ const icons = [
   },
   {
     component: 'viPlus',
-    categories: ["editor","maps","mathematics","medical-health","punctuation","alerts"],
+    categories: ["editor","maps","mathematics","health","punctuation","alerts"],
     tags: ["add","create"],
     slug: 'plus',
     icon: viPlus
@@ -1362,7 +1362,7 @@ const icons = [
   },
   {
     component: 'viQuote',
-    categories: ["text","editor"],
+    categories: ["editor"],
     tags: [],
     slug: 'quote',
     icon: viQuote
@@ -1523,7 +1523,7 @@ const icons = [
   },
   {
     component: 'viSquareGum',
-    categories: ["text","editor","shapes"],
+    categories: ["editor","shapes"],
     tags: [],
     slug: 'square-gum',
     icon: viSquareGum
@@ -1551,7 +1551,7 @@ const icons = [
   },
   {
     component: 'viStrikethrough',
-    categories: ["text","editor"],
+    categories: ["editor"],
     tags: [],
     slug: 'strikethrough',
     icon: viStrikethrough
@@ -1572,15 +1572,15 @@ const icons = [
   },
   {
     component: 'viTableClock',
-    categories: ["communication"],
-    tags: [],
+    categories: ["communication","business"],
+    tags: ["spreadsheet"],
     slug: 'table-clock',
     icon: viTableClock
   },
   {
     component: 'viTableHeaderColumn',
-    categories: ["editor"],
-    tags: [],
+    categories: ["editor","business"],
+    tags: ["spreadsheet"],
     slug: 'table-header-column',
     icon: viTableHeaderColumn
   },
@@ -1677,7 +1677,7 @@ const icons = [
   },
   {
     component: 'viUnderline',
-    categories: ["text","editor"],
+    categories: ["editor"],
     tags: [],
     slug: 'underline',
     icon: viUnderline

@@ -28,16 +28,6 @@ const categories = [
     icon: viCircleDashed
   },
   {
-    slug: "audio",
-    title: "audio",
-    icon: viCircleDashed
-  },
-  {
-    slug: "automotive",
-    title: "automotive",
-    icon: viCircleDashed
-  },
-  {
     slug: "brands",
     title: "brands",
     icon: viCircleDashed
@@ -88,11 +78,6 @@ const categories = [
     icon: viCircleDashed
   },
   {
-    slug: "device",
-    title: "device",
-    icon: viCircleDashed
-  },
-  {
     slug: "devices",
     title: "devices",
     icon: viCircleDashed
@@ -138,13 +123,13 @@ const categories = [
     icon: viCircleDashed
   },
   {
-    slug: "house",
-    title: "house",
+    slug: "human",
+    title: "human",
     icon: viCircleDashed
   },
   {
-    slug: "human",
-    title: "human",
+    slug: "logistics",
+    title: "logistics",
     icon: viCircleDashed
   },
   {
@@ -163,18 +148,8 @@ const categories = [
     icon: viCircleDashed
   },
   {
-    slug: "medical-health",
-    title: "medical-health",
-    icon: viCircleDashed
-  },
-  {
     slug: "money",
     title: "money",
-    icon: viCircleDashed
-  },
-  {
-    slug: "moving",
-    title: "moving",
     icon: viCircleDashed
   },
   {
@@ -223,11 +198,6 @@ const categories = [
     icon: viCircleDashed
   },
   {
-    slug: "text",
-    title: "text",
-    icon: viCircleDashed
-  },
-  {
     slug: "time",
     title: "time",
     icon: viCircleDashed
@@ -243,8 +213,8 @@ const categories = [
     icon: viCircleDashed
   },
   {
-    slug: "travel",
-    title: "travel",
+    slug: "transportation",
+    title: "transportation",
     icon: viCircleDashed
   },
   {
