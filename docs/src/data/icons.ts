@@ -1,0 +1,2047 @@
+import {
+  viAddressBook,
+  viAGum,
+  viAngleDown,
+  viAngleLeft,
+  viAngleRight,
+  viAnglesY,
+  viAngleUp,
+  viAppleAppStore,
+  viArrowDown,
+  viArrowDownShortWide,
+  viArrowDownToLine,
+  viArrowDownWideShort,
+  viArrowLeft,
+  viArrowLeftFromBracket,
+  viArrowLeftToBracket,
+  viArrowLeftToLine,
+  viArrowPointer,
+  viArrowRight,
+  viArrowRightFromBracket,
+  viArrowRightProhibited,
+  viArrowRightToBracket,
+  viArrowRightToLine,
+  viArrowRotateRight,
+  viArrowsRotateRight,
+  viArrowUp,
+  viArrowUpShortWide,
+  viArrowUpToLine,
+  viArrowUpWideShort,
+  viAsterisk,
+  viAt,
+  viBackward,
+  viBars,
+  viBlf,
+  viBold,
+  viBook,
+  viBoxOpenFull,
+  viBracketsCurly,
+  viBug,
+  viBuilding,
+  viCalendar,
+  viCalendarClock,
+  viCalendarDay,
+  viCalendarRange,
+  viCalendarRangeClock,
+  viCalendarStars,
+  viCalendarWeek,
+  viChain,
+  viChainSlash,
+  viChalkboardPerson,
+  viChartPie,
+  viCheck,
+  viChevronDown,
+  viChevronLeft,
+  viChevronRight,
+  viChevronUp,
+  viChrome,
+  viCircleCheck,
+  viCircleDashed,
+  viCircleExclamation,
+  viCircleHalf,
+  viCircleHalfInner,
+  viCircleInfo,
+  viCirclePerson,
+  viCirclePlus,
+  viCircleQuestion,
+  viCircleXmark,
+  viCity,
+  viClock,
+  viClockRotateLeft,
+  viCode,
+  viCodeblock,
+  viCompass,
+  viCompress,
+  viCopy,
+  viDevices,
+  viDisplay,
+  viDoor,
+  viEarth,
+  viEclipse,
+  viEdge,
+  viEllipsis,
+  viEnvelope,
+  viEthernet,
+  viEuro,
+  viExpand,
+  viEye,
+  viEyeSlash,
+  viFacebook,
+  viFacebookMessenger,
+  viFastBackward,
+  viFastForward,
+  viFax,
+  viFile,
+  viFiles,
+  viFilesList,
+  viFilmstrip,
+  viFilter,
+  viFilterPlus,
+  viFilterXmark,
+  viFingerprint,
+  viFirefox,
+  viFlag,
+  viFlagCheckered,
+  viFloppyDisk,
+  viFolder,
+  viForward,
+  viGauge,
+  viGear,
+  viGift,
+  viGithub,
+  viGooglePlay,
+  viGrid,
+  viGripLines,
+  viHeading1,
+  viHeading2,
+  viHeading3,
+  viHeading4,
+  viHeading5,
+  viHeading6,
+  viHeadset,
+  viHeart,
+  viHeartCrack,
+  viHeartHalf,
+  viHouse,
+  viIdCard,
+  viImage,
+  viItalic,
+  viKey,
+  viLaptop,
+  viLayers,
+  viLayersPlus,
+  viLifeRing,
+  viLightbulb,
+  viLightbulbOn,
+  viLine,
+  viLinkedin,
+  viList,
+  viListChecks,
+  viListChecksXmark,
+  viListClock,
+  viListOrdered,
+  viListOrderedClock,
+  viLocationPin,
+  viLocationPinDot,
+  viLocationPinSlash,
+  viLocationPinsRoute,
+  viLock,
+  viLockOpen,
+  viMagnifyingGlass,
+  viMegaphone,
+  viMessage,
+  viMessagePen,
+  viMessageSmile,
+  viMessageText,
+  viMicrophone,
+  viMin,
+  viMoon,
+  viMusic,
+  viMusicPause,
+  viNetwork,
+  viNext,
+  viNumpad,
+  viPager,
+  viPaperPlane,
+  viParachuteBox,
+  viParagraph,
+  viPause,
+  viPen,
+  viPeople,
+  viPeopleCircle,
+  viPerson,
+  viPersonClock,
+  viPersonGear,
+  viPersonHeadset,
+  viPersonList,
+  viPersonLock,
+  viPersonPlus,
+  viPhone,
+  viPhoneArrowDownLeft,
+  viPhoneArrowDownLeftProhibited,
+  viPhoneArrowUpRight,
+  viPhoneArrowUpRightProhibited,
+  viPhoneClock,
+  viPhoneGear,
+  viPhoneList,
+  viPhoneOffice,
+  viPhoneVolume,
+  viPlay,
+  viPlayPause,
+  viPlus,
+  viPower,
+  viPrevious,
+  viProhibited,
+  viPuzzlePiece,
+  viQuote,
+  viRectangleP,
+  viRedo,
+  viRepeat,
+  viRepeatOnce,
+  viSafari,
+  viServer,
+  viShare,
+  viShield,
+  viShieldKeyhole,
+  viShieldPlus,
+  viShieldXmark,
+  viShuffle,
+  viSidebarLeft,
+  viSidebarRight,
+  viSimCard,
+  viSippy,
+  viSliders,
+  viSmartphone,
+  viSmartphoneArrowRight,
+  viSpeakerGrill,
+  viSpinnerThird,
+  viSpy,
+  viSquareGum,
+  viStar,
+  viStop,
+  viStore,
+  viStrikethrough,
+  viSun,
+  viSwatchbook,
+  viTable,
+  viTableClock,
+  viTableHeaderColumn,
+  viTableHeaderRow,
+  viTag,
+  viTagGear,
+  viTagPlus,
+  viThumbstack,
+  viThumbstackSlash,
+  viToggleOff,
+  viToggleOn,
+  viTowerBroadcast,
+  viTranslate,
+  viTrashCan,
+  viTriangleExclamation,
+  viUnderline,
+  viUndo,
+  viValkyrieSword,
+  viVideo,
+  viVoicemail,
+  viVolume0,
+  viVolume1,
+  viVolume2,
+  viVolume3,
+  viVolumeSlash,
+  viWallpaper,
+  viWaveform,
+  viWebhooks,
+  viWebhooksClock,
+  viWindow,
+  viXmark
+} from '@sippy-platform/valkyrie';
+
+const icons = [
+  {
+    component: 'viAGum',
+    categories: ['text', 'editor'],
+    tags: [],
+    slug: 'a-gum',
+    icon: viAGum
+  },
+  {
+    component: 'viAddressBook',
+    categories: ['business', 'communication', 'people'],
+    tags: [],
+    slug: 'address-book',
+    icon: viAddressBook
+  },
+  {
+    component: 'viAngleDown',
+    categories: ['arrows'],
+    tags: ['direction'],
+    slug: 'angle-down',
+    icon: viAngleDown
+  },
+  {
+    component: 'viAngleLeft',
+    categories: ['arrows'],
+    tags: ['direction'],
+    slug: 'angle-left',
+    icon: viAngleLeft
+  },
+  {
+    component: 'viAngleRight',
+    categories: ['arrows'],
+    tags: ['direction'],
+    slug: 'angle-right',
+    icon: viAngleRight
+  },
+  {
+    component: 'viAngleUp',
+    categories: ['arrows'],
+    tags: ['direction'],
+    slug: 'angle-up',
+    icon: viAngleUp
+  },
+  {
+    component: 'viAnglesY',
+    categories: ['arrows'],
+    tags: ['direction'],
+    slug: 'angles-y',
+    icon: viAnglesY
+  },
+  {
+    component: 'viAppleAppStore',
+    categories: ['brands'],
+    tags: ['software'],
+    slug: 'apple-app-store',
+    icon: viAppleAppStore
+  },
+  {
+    component: 'viArrowDownShortWide',
+    categories: ['arrows'],
+    tags: ['sort', 'ascending'],
+    slug: 'arrow-down-short-wide',
+    icon: viArrowDownShortWide
+  },
+  {
+    component: 'viArrowDownToLine',
+    categories: ['arrows'],
+    tags: ['direction', 'download'],
+    slug: 'arrow-down-to-line',
+    icon: viArrowDownToLine
+  },
+  {
+    component: 'viArrowDownWideShort',
+    categories: ['arrows'],
+    tags: ['sort', 'descending'],
+    slug: 'arrow-down-wide-short',
+    icon: viArrowDownWideShort
+  },
+  {
+    component: 'viArrowDown',
+    categories: ['arrows'],
+    tags: ['direction'],
+    slug: 'arrow-down',
+    icon: viArrowDown
+  },
+  {
+    component: 'viArrowLeftFromBracket',
+    categories: ['arrows'],
+    tags: ['direction', 'leave', 'signout'],
+    slug: 'arrow-left-from-bracket',
+    icon: viArrowLeftFromBracket
+  },
+  {
+    component: 'viArrowLeftToBracket',
+    categories: ['arrows'],
+    tags: ['direction', 'enter', 'signin'],
+    slug: 'arrow-left-to-bracket',
+    icon: viArrowLeftToBracket
+  },
+  {
+    component: 'viArrowLeftToLine',
+    categories: ['arrows'],
+    tags: ['direction'],
+    slug: 'arrow-left-to-line',
+    icon: viArrowLeftToLine
+  },
+  {
+    component: 'viArrowLeft',
+    categories: ['arrows'],
+    tags: ['direction'],
+    slug: 'arrow-left',
+    icon: viArrowLeft
+  },
+  {
+    component: 'viArrowPointer',
+    categories: ['arrows'],
+    tags: ['cursor'],
+    slug: 'arrow-pointer',
+    icon: viArrowPointer
+  },
+  {
+    component: 'viArrowRightFromBracket',
+    categories: ['arrows'],
+    tags: ['direction', 'leave', 'signout'],
+    slug: 'arrow-right-from-bracket',
+    icon: viArrowRightFromBracket
+  },
+  {
+    component: 'viArrowRightProhibited',
+    categories: ['arrows'],
+    tags: ['direction'],
+    slug: 'arrow-right-prohibited',
+    icon: viArrowRightProhibited
+  },
+  {
+    component: 'viArrowRightToBracket',
+    categories: ['arrows'],
+    tags: ['direction', 'enter', 'signin'],
+    slug: 'arrow-right-to-bracket',
+    icon: viArrowRightToBracket
+  },
+  {
+    component: 'viArrowRightToLine',
+    categories: ['arrows'],
+    tags: ['direction'],
+    slug: 'arrow-right-to-line',
+    icon: viArrowRightToLine
+  },
+  {
+    component: 'viArrowRight',
+    categories: ['arrows'],
+    tags: ['direction'],
+    slug: 'arrow-right',
+    icon: viArrowRight
+  },
+  {
+    component: 'viArrowRotateRight',
+    categories: ['arrows', 'spinners', 'editor', 'media'],
+    tags: ['refresh', 'reload'],
+    slug: 'arrow-rotate-right',
+    icon: viArrowRotateRight
+  },
+  {
+    component: 'viArrowUpShortWide',
+    categories: ['arrows'],
+    tags: ['sort', 'ascending'],
+    slug: 'arrow-up-short-wide',
+    icon: viArrowUpShortWide
+  },
+  {
+    component: 'viArrowUpToLine',
+    categories: ['arrows'],
+    tags: ['direction', 'upload'],
+    slug: 'arrow-up-to-line',
+    icon: viArrowUpToLine
+  },
+  {
+    component: 'viArrowUpWideShort',
+    categories: ['arrows'],
+    tags: ['sort', 'descending'],
+    slug: 'arrow-up-wide-short',
+    icon: viArrowUpWideShort
+  },
+  {
+    component: 'viArrowUp',
+    categories: ['arrows'],
+    tags: ['direction'],
+    slug: 'arrow-up',
+    icon: viArrowUp
+  },
+  {
+    component: 'viArrowsRotateRight',
+    categories: ['arrows', 'spinners', 'editor', 'media'],
+    tags: ['refresh', 'reload'],
+    slug: 'arrows-rotate-right',
+    icon: viArrowsRotateRight
+  },
+  {
+    component: 'viAsterisk',
+    categories: ['punctuation', 'spinners'],
+    tags: [],
+    slug: 'asterisk',
+    icon: viAsterisk
+  },
+  {
+    component: 'viAt',
+    categories: ['communication', 'punctuation'],
+    tags: ['email'],
+    slug: 'at',
+    icon: viAt
+  },
+  {
+    component: 'viBackward',
+    categories: ['media'],
+    tags: ['rewind'],
+    slug: 'backward',
+    icon: viBackward
+  },
+  {
+    component: 'viBars',
+    categories: ['coding', 'editor'],
+    tags: ['menu', 'navigation', 'justify', 'aligment', 'hamburger'],
+    slug: 'bars',
+    icon: viBars
+  },
+  {
+    component: 'viBlf',
+    categories: ['communication', 'business'],
+    tags: ['line key'],
+    slug: 'blf',
+    icon: viBlf
+  },
+  {
+    component: 'viBold',
+    categories: ['text', 'editor'],
+    tags: [],
+    slug: 'bold',
+    icon: viBold
+  },
+  {
+    component: 'viBook',
+    categories: ['business', 'writing'],
+    tags: ['read', 'magazine'],
+    slug: 'book',
+    icon: viBook
+  },
+  {
+    component: 'viBoxOpenFull',
+    categories: ['moving', 'shopping'],
+    tags: ['package', 'cardboard'],
+    slug: 'box-open-full',
+    icon: viBoxOpenFull
+  },
+  {
+    component: 'viBracketsCurly',
+    categories: ['coding'],
+    tags: [],
+    slug: 'brackets-curly',
+    icon: viBracketsCurly
+  },
+  {
+    component: 'viBug',
+    categories: ['coding', 'nature', 'security'],
+    tags: ['insect'],
+    slug: 'bug',
+    icon: viBug
+  },
+  {
+    component: 'viBuilding',
+    categories: ['buildings', 'business', 'maps'],
+    tags: ['company', 'enterprise', 'organization', 'office'],
+    slug: 'building',
+    icon: viBuilding
+  },
+  {
+    component: 'viCalendarClock',
+    categories: ['business', 'time'],
+    tags: ['holidays', 'date', 'time'],
+    slug: 'calendar-clock',
+    icon: viCalendarClock
+  },
+  {
+    component: 'viCalendarDay',
+    categories: ['business', 'time'],
+    tags: ['holidays', 'date', 'time'],
+    slug: 'calendar-day',
+    icon: viCalendarDay
+  },
+  {
+    component: 'viCalendarRangeClock',
+    categories: ['business', 'time'],
+    tags: ['holidays', 'date', 'time'],
+    slug: 'calendar-range-clock',
+    icon: viCalendarRangeClock
+  },
+  {
+    component: 'viCalendarRange',
+    categories: ['business', 'time'],
+    tags: ['holidays', 'date'],
+    slug: 'calendar-range',
+    icon: viCalendarRange
+  },
+  {
+    component: 'viCalendarStars',
+    categories: ['business', 'time'],
+    tags: ['holidays'],
+    slug: 'calendar-stars',
+    icon: viCalendarStars
+  },
+  {
+    component: 'viCalendarWeek',
+    categories: ['business', 'time'],
+    tags: ['holidays', 'date', 'time'],
+    slug: 'calendar-week',
+    icon: viCalendarWeek
+  },
+  {
+    component: 'viCalendar',
+    categories: ['business', 'time'],
+    tags: ['month'],
+    slug: 'calendar',
+    icon: viCalendar
+  },
+  {
+    component: 'viChainSlash',
+    categories: ['editor'],
+    tags: ['link'],
+    slug: 'chain-slash',
+    icon: viChainSlash
+  },
+  {
+    component: 'viChain',
+    categories: ['editor'],
+    tags: ['link'],
+    slug: 'chain',
+    icon: viChain
+  },
+  {
+    component: 'viChalkboardPerson',
+    categories: ['education', 'people'],
+    tags: ['whiteboard'],
+    slug: 'chalkboard-person',
+    icon: viChalkboardPerson
+  },
+  {
+    component: 'viChartPie',
+    categories: ['business', 'charts', 'money'],
+    tags: ['data', 'graph', 'analytics'],
+    slug: 'chart-pie',
+    icon: viChartPie
+  },
+  {
+    component: 'viCheck',
+    categories: ['alerts'],
+    tags: ['checkmark', 'confirm', 'done'],
+    slug: 'check',
+    icon: viCheck
+  },
+  {
+    component: 'viChevronDown',
+    categories: ['arrows'],
+    tags: ['direction'],
+    slug: 'chevron-down',
+    icon: viChevronDown
+  },
+  {
+    component: 'viChevronLeft',
+    categories: ['arrows'],
+    tags: ['direction'],
+    slug: 'chevron-left',
+    icon: viChevronLeft
+  },
+  {
+    component: 'viChevronRight',
+    categories: ['arrows'],
+    tags: ['direction'],
+    slug: 'chevron-right',
+    icon: viChevronRight
+  },
+  {
+    component: 'viChevronUp',
+    categories: ['arrows'],
+    tags: ['direction'],
+    slug: 'chevron-up',
+    icon: viChevronUp
+  },
+  {
+    component: 'viChrome',
+    categories: ['brands'],
+    tags: ['google', 'browser'],
+    slug: 'chrome',
+    icon: viChrome
+  },
+  {
+    component: 'viCircleCheck',
+    categories: ['alerts'],
+    tags: ['checkmark', 'confirm', 'done'],
+    slug: 'circle-check',
+    icon: viCircleCheck
+  },
+  {
+    component: 'viCircleDashed',
+    categories: ['design', 'editor', 'shapes'],
+    tags: [],
+    slug: 'circle-dashed',
+    icon: viCircleDashed
+  },
+  {
+    component: 'viCircleExclamation',
+    categories: ['alerts', 'punctuation'],
+    tags: ['warning', 'danger'],
+    slug: 'circle-exclamation',
+    icon: viCircleExclamation
+  },
+  {
+    component: 'viCircleHalfInner',
+    categories: ['design', 'charts', 'shapes'],
+    tags: ['contrast', 'theme'],
+    slug: 'circle-half-inner',
+    icon: viCircleHalfInner
+  },
+  {
+    component: 'viCircleHalf',
+    categories: ['design', 'charts', 'shapes'],
+    tags: ['contrast'],
+    slug: 'circle-half',
+    icon: viCircleHalf
+  },
+  {
+    component: 'viCircleInfo',
+    categories: ['accessibility', 'maps', 'alerts'],
+    tags: ['information', 'help'],
+    slug: 'circle-info',
+    icon: viCircleInfo
+  },
+  {
+    component: 'viCirclePerson',
+    categories: ['people', 'social'],
+    tags: ['avatar', 'organization', 'account', 'user', 'profile'],
+    slug: 'circle-person',
+    icon: viCirclePerson
+  },
+  {
+    component: 'viCirclePlus',
+    categories: ['alerts', 'mathematics'],
+    tags: ['add', 'create'],
+    slug: 'circle-plus',
+    icon: viCirclePlus
+  },
+  {
+    component: 'viCircleQuestion',
+    categories: ['accessibility', 'maps', 'alerts', 'punctuation'],
+    tags: ['information', 'help'],
+    slug: 'circle-question',
+    icon: viCircleQuestion
+  },
+  {
+    component: 'viCircleXmark',
+    categories: ['alerts', 'mathematics'],
+    tags: ['warning', 'danger'],
+    slug: 'circle-xmark',
+    icon: viCircleXmark
+  },
+  {
+    component: 'viCity',
+    categories: ['buildings', 'business', 'maps'],
+    tags: [],
+    slug: 'city',
+    icon: viCity
+  },
+  {
+    component: 'viClockRotateLeft',
+    categories: ['time', 'arrows'],
+    tags: ['history'],
+    slug: 'clock-rotate-left',
+    icon: viClockRotateLeft
+  },
+  {
+    component: 'viClock',
+    categories: ['time'],
+    tags: [],
+    slug: 'clock',
+    icon: viClock
+  },
+  {
+    component: 'viCode',
+    categories: ['coding', 'editor'],
+    tags: [],
+    slug: 'code',
+    icon: viCode
+  },
+  {
+    component: 'viCodeblock',
+    categories: ['coding', 'editor'],
+    tags: [],
+    slug: 'codeblock',
+    icon: viCodeblock
+  },
+  {
+    component: 'viCompass',
+    categories: ['maps', 'camping', 'spinners'],
+    tags: ['location'],
+    slug: 'compass',
+    icon: viCompass
+  },
+  {
+    component: 'viCompress',
+    categories: ['media'],
+    tags: [],
+    slug: 'compress',
+    icon: viCompress
+  },
+  {
+    component: 'viCopy',
+    categories: ['design', 'files'],
+    tags: [],
+    slug: 'copy',
+    icon: viCopy
+  },
+  {
+    component: 'viDevices',
+    categories: ['coding', 'devices'],
+    tags: ['laptop', 'smartphone', 'mobile'],
+    slug: 'devices',
+    icon: viDevices
+  },
+  {
+    component: 'viDisplay',
+    categories: ['devices'],
+    tags: ['screen', 'monitor', 'desktop'],
+    slug: 'display',
+    icon: viDisplay
+  },
+  {
+    component: 'viDoor',
+    categories: ['house', 'travel', 'security'],
+    tags: [],
+    slug: 'door',
+    icon: viDoor
+  },
+  {
+    component: 'viEarth',
+    categories: ['travel', 'maps'],
+    tags: ['europe'],
+    slug: 'earth',
+    icon: viEarth
+  },
+  {
+    component: 'viEclipse',
+    categories: ['astronomy', 'weather'],
+    tags: ['sun', 'moon'],
+    slug: 'eclipse',
+    icon: viEclipse
+  },
+  {
+    component: 'viEdge',
+    categories: ['brands'],
+    tags: ['microsoft', 'browser'],
+    slug: 'edge',
+    icon: viEdge
+  },
+  {
+    component: 'viEllipsis',
+    categories: ['editor'],
+    tags: ['three dots', 'meatballs', 'more', 'overflow'],
+    slug: 'ellipsis',
+    icon: viEllipsis
+  },
+  {
+    component: 'viEnvelope',
+    categories: ['business', 'communication', 'social', 'writing'],
+    tags: ['email', 'message', 'mail', 'letter'],
+    slug: 'envelope',
+    icon: viEnvelope
+  },
+  {
+    component: 'viEthernet',
+    categories: ['connectivity', 'devices'],
+    tags: ['network', 'internet'],
+    slug: 'ethernet',
+    icon: viEthernet
+  },
+  {
+    component: 'viEuro',
+    categories: ['money'],
+    tags: [],
+    slug: 'euro',
+    icon: viEuro
+  },
+  {
+    component: 'viExpand',
+    categories: ['media'],
+    tags: [],
+    slug: 'expand',
+    icon: viExpand
+  },
+  {
+    component: 'viEyeSlash',
+    categories: ['accessibility', 'design', 'human'],
+    tags: [],
+    slug: 'eye-slash',
+    icon: viEyeSlash
+  },
+  {
+    component: 'viEye',
+    categories: ['accessibility', 'design', 'human'],
+    tags: [],
+    slug: 'eye',
+    icon: viEye
+  },
+  {
+    component: 'viFacebookMessenger',
+    categories: ['brands'],
+    tags: [],
+    slug: 'facebook-messenger',
+    icon: viFacebookMessenger
+  },
+  {
+    component: 'viFacebook',
+    categories: ['brands'],
+    tags: [],
+    slug: 'facebook',
+    icon: viFacebook
+  },
+  {
+    component: 'viFastBackward',
+    categories: ['media'],
+    tags: ['rewind'],
+    slug: 'fast-backward',
+    icon: viFastBackward
+  },
+  {
+    component: 'viFastForward',
+    categories: ['media'],
+    tags: [],
+    slug: 'fast-forward',
+    icon: viFastForward
+  },
+  {
+    component: 'viFax',
+    categories: ['business', 'communication', 'devices'],
+    tags: [],
+    slug: 'fax',
+    icon: viFax
+  },
+  {
+    component: 'viFile',
+    categories: ['files', 'business', 'coding', 'writing'],
+    tags: ['document', 'paper'],
+    slug: 'file',
+    icon: viFile
+  },
+  {
+    component: 'viFilesList',
+    categories: ['files', 'business', 'coding', 'writing'],
+    tags: ['document', 'paper', 'log'],
+    slug: 'files-list',
+    icon: viFilesList
+  },
+  {
+    component: 'viFiles',
+    categories: ['files', 'business', 'coding', 'writing'],
+    tags: ['document', 'paper'],
+    slug: 'files',
+    icon: viFiles
+  },
+  {
+    component: 'viFilmstrip',
+    categories: ['media'],
+    tags: ['video', 'film'],
+    slug: 'filmstrip',
+    icon: viFilmstrip
+  },
+  {
+    component: 'viFilterPlus',
+    categories: ['coding', 'editor'],
+    tags: ['sort'],
+    slug: 'filter-plus',
+    icon: viFilterPlus
+  },
+  {
+    component: 'viFilterXmark',
+    categories: ['coding', 'editor'],
+    tags: ['sort'],
+    slug: 'filter-xmark',
+    icon: viFilterXmark
+  },
+  {
+    component: 'viFilter',
+    categories: ['coding', 'editor'],
+    tags: ['sort'],
+    slug: 'filter',
+    icon: viFilter
+  },
+  {
+    component: 'viFingerprint',
+    categories: ['accessibility', 'security'],
+    tags: ['biometrics'],
+    slug: 'fingerprint',
+    icon: viFingerprint
+  },
+  {
+    component: 'viFirefox',
+    categories: ['brands'],
+    tags: ['mozilla', 'browser'],
+    slug: 'firefox',
+    icon: viFirefox
+  },
+  {
+    component: 'viFlagCheckered',
+    categories: ['maps'],
+    tags: [],
+    slug: 'flag-checkered',
+    icon: viFlagCheckered
+  },
+  {
+    component: 'viFlag',
+    categories: ['maps'],
+    tags: [],
+    slug: 'flag',
+    icon: viFlag
+  },
+  {
+    component: 'viFloppyDisk',
+    categories: ['editor', 'business', 'design', 'device', 'files'],
+    tags: ['save'],
+    slug: 'floppy-disk',
+    icon: viFloppyDisk
+  },
+  {
+    component: 'viFolder',
+    categories: ['files', 'coding', 'business'],
+    tags: ['map'],
+    slug: 'folder',
+    icon: viFolder
+  },
+  {
+    component: 'viForward',
+    categories: ['media'],
+    tags: [],
+    slug: 'forward',
+    icon: viForward
+  },
+  {
+    component: 'viGauge',
+    categories: ['automotive'],
+    tags: ['speedometer', 'tachometer', 'dashboard'],
+    slug: 'gauge',
+    icon: viGauge
+  },
+  {
+    component: 'viGear',
+    categories: ['coding', 'spinners', 'tools'],
+    tags: ['settings', 'options', 'preferences', 'tools'],
+    slug: 'gear',
+    icon: viGear
+  },
+  {
+    component: 'viGift',
+    categories: ['holidays', 'maps'],
+    tags: ['present'],
+    slug: 'gift',
+    icon: viGift
+  },
+  {
+    component: 'viGithub',
+    categories: ['brands'],
+    tags: [],
+    slug: 'github',
+    icon: viGithub
+  },
+  {
+    component: 'viGooglePlay',
+    categories: ['brands'],
+    tags: ['software', 'store'],
+    slug: 'google-play',
+    icon: viGooglePlay
+  },
+  {
+    component: 'viGrid',
+    categories: ['design', 'editor'],
+    tags: ['dashboard'],
+    slug: 'grid',
+    icon: viGrid
+  },
+  {
+    component: 'viGripLines',
+    categories: ['editor'],
+    tags: ['handles'],
+    slug: 'grip-lines',
+    icon: viGripLines
+  },
+  {
+    component: 'viHeading1',
+    categories: ['text', 'editor'],
+    tags: [],
+    slug: 'heading-1',
+    icon: viHeading1
+  },
+  {
+    component: 'viHeading2',
+    categories: ['text', 'editor'],
+    tags: [],
+    slug: 'heading-2',
+    icon: viHeading2
+  },
+  {
+    component: 'viHeading3',
+    categories: ['text', 'editor'],
+    tags: [],
+    slug: 'heading-3',
+    icon: viHeading3
+  },
+  {
+    component: 'viHeading4',
+    categories: ['text', 'editor'],
+    tags: [],
+    slug: 'heading-4',
+    icon: viHeading4
+  },
+  {
+    component: 'viHeading5',
+    categories: ['text', 'editor'],
+    tags: [],
+    slug: 'heading-5',
+    icon: viHeading5
+  },
+  {
+    component: 'viHeading6',
+    categories: ['text', 'editor'],
+    tags: [],
+    slug: 'heading-6',
+    icon: viHeading6
+  },
+  {
+    component: 'viHeadset',
+    categories: ['communication', 'devices'],
+    tags: ['headphone', 'microphone'],
+    slug: 'headset',
+    icon: viHeadset
+  },
+  {
+    component: 'viHeartCrack',
+    categories: ['health', 'charity', 'shapes'],
+    tags: ['love', 'favorite', 'heartbreak'],
+    slug: 'heart-crack',
+    icon: viHeartCrack
+  },
+  {
+    component: 'viHeartHalf',
+    categories: ['health', 'charity', 'shapes'],
+    tags: ['love', 'favorite'],
+    slug: 'heart-half',
+    icon: viHeartHalf
+  },
+  {
+    component: 'viHeart',
+    categories: ['health', 'charity', 'shapes'],
+    tags: ['love', 'favorite'],
+    slug: 'heart',
+    icon: viHeart
+  },
+  {
+    component: 'viHouse',
+    categories: ['buildings', 'maps'],
+    tags: ['home'],
+    slug: 'house',
+    icon: viHouse
+  },
+  {
+    component: 'viIdCard',
+    categories: ['security', 'people'],
+    tags: ['identification'],
+    slug: 'id-card',
+    icon: viIdCard
+  },
+  {
+    component: 'viImage',
+    categories: ['social', 'maps'],
+    tags: ['picture', 'photo'],
+    slug: 'image',
+    icon: viImage
+  },
+  {
+    component: 'viItalic',
+    categories: ['text', 'editor'],
+    tags: [],
+    slug: 'italic',
+    icon: viItalic
+  },
+  {
+    component: 'viKey',
+    categories: ['security', 'travel'],
+    tags: [],
+    slug: 'key',
+    icon: viKey
+  },
+  {
+    component: 'viLaptop',
+    categories: ['devices'],
+    tags: ['notebook'],
+    slug: 'laptop',
+    icon: viLaptop
+  },
+  {
+    component: 'viLayersPlus',
+    categories: ['design', 'maps'],
+    tags: ['stacked', 'perspective'],
+    slug: 'layers-plus',
+    icon: viLayersPlus
+  },
+  {
+    component: 'viLayers',
+    categories: ['design', 'maps'],
+    tags: ['stacked', 'perspective'],
+    slug: 'layers',
+    icon: viLayers
+  },
+  {
+    component: 'viLifeRing',
+    categories: ['maps', 'spinners'],
+    tags: ['support'],
+    slug: 'life-ring',
+    icon: viLifeRing
+  },
+  {
+    component: 'viLightbulbOn',
+    categories: ['energy', 'maps'],
+    tags: ['light', 'lamp', 'idea'],
+    slug: 'lightbulb-on',
+    icon: viLightbulbOn
+  },
+  {
+    component: 'viLightbulb',
+    categories: ['energy', 'maps'],
+    tags: ['light', 'lamp', 'idea'],
+    slug: 'lightbulb',
+    icon: viLightbulb
+  },
+  {
+    component: 'viLine',
+    categories: ['shapes', 'editor'],
+    tags: [],
+    slug: 'line',
+    icon: viLine
+  },
+  {
+    component: 'viLinkedin',
+    categories: ['brands'],
+    tags: [],
+    slug: 'linkedin',
+    icon: viLinkedin
+  },
+  {
+    component: 'viListChecksXmark',
+    categories: ['editor'],
+    tags: [],
+    slug: 'list-checks-xmark',
+    icon: viListChecksXmark
+  },
+  {
+    component: 'viListChecks',
+    categories: ['editor'],
+    tags: [],
+    slug: 'list-checks',
+    icon: viListChecks
+  },
+  {
+    component: 'viListClock',
+    categories: ['time', 'editor'],
+    tags: [],
+    slug: 'list-clock',
+    icon: viListClock
+  },
+  {
+    component: 'viListOrderedClock',
+    categories: ['editor', 'time'],
+    tags: [],
+    slug: 'list-ordered-clock',
+    icon: viListOrderedClock
+  },
+  {
+    component: 'viListOrdered',
+    categories: ['editor'],
+    tags: [],
+    slug: 'list-ordered',
+    icon: viListOrdered
+  },
+  {
+    component: 'viList',
+    categories: ['editor'],
+    tags: [],
+    slug: 'list',
+    icon: viList
+  },
+  {
+    component: 'viLocationPinDot',
+    categories: ['maps', 'social'],
+    tags: ['geography', 'map-marker'],
+    slug: 'location-pin-dot',
+    icon: viLocationPinDot
+  },
+  {
+    component: 'viLocationPinSlash',
+    categories: ['maps', 'social'],
+    tags: ['geography', 'map-marker'],
+    slug: 'location-pin-slash',
+    icon: viLocationPinSlash
+  },
+  {
+    component: 'viLocationPin',
+    categories: ['maps', 'social'],
+    tags: ['geography', 'map-marker'],
+    slug: 'location-pin',
+    icon: viLocationPin
+  },
+  {
+    component: 'viLocationPinsRoute',
+    categories: ['maps'],
+    tags: ['geography', 'map-marker'],
+    slug: 'location-pins-route',
+    icon: viLocationPinsRoute
+  },
+  {
+    component: 'viLockOpen',
+    categories: ['security'],
+    tags: ['privacy'],
+    slug: 'lock-open',
+    icon: viLockOpen
+  },
+  {
+    component: 'viLock',
+    categories: ['security'],
+    tags: ['privacy'],
+    slug: 'lock',
+    icon: viLock
+  },
+  {
+    component: 'viMagnifyingGlass',
+    categories: ['maps'],
+    tags: ['search'],
+    slug: 'magnifying-glass',
+    icon: viMagnifyingGlass
+  },
+  {
+    component: 'viMegaphone',
+    categories: ['business', 'communication'],
+    tags: ['bullhorn'],
+    slug: 'megaphone',
+    icon: viMegaphone
+  },
+  {
+    component: 'viMessagePen',
+    categories: ['communication', 'social'],
+    tags: ['speech bubble', 'chat', 'text'],
+    slug: 'message-pen',
+    icon: viMessagePen
+  },
+  {
+    component: 'viMessageSmile',
+    categories: ['communication', 'social'],
+    tags: ['speech bubble', 'chat', 'text'],
+    slug: 'message-smile',
+    icon: viMessageSmile
+  },
+  {
+    component: 'viMessageText',
+    categories: ['communication', 'social'],
+    tags: ['speech bubble', 'chat', 'text'],
+    slug: 'message-text',
+    icon: viMessageText
+  },
+  {
+    component: 'viMessage',
+    categories: ['communication', 'social'],
+    tags: ['speech bubble', 'chat', 'text'],
+    slug: 'message',
+    icon: viMessage
+  },
+  {
+    component: 'viMicrophone',
+    categories: ['communication', 'audio', 'social', 'devices'],
+    tags: ['record'],
+    slug: 'microphone',
+    icon: viMicrophone
+  },
+  {
+    component: 'viMin',
+    categories: ['editor', 'maps', 'mathematics', 'punctuation', 'alerts'],
+    tags: ['subtract', 'minus', 'remove'],
+    slug: 'min',
+    icon: viMin
+  },
+  {
+    component: 'viMoon',
+    categories: ['astronomy', 'weather'],
+    tags: ['clear sky'],
+    slug: 'moon',
+    icon: viMoon
+  },
+  {
+    component: 'viMusicPause',
+    categories: ['media', 'files', 'education'],
+    tags: ['audio', 'sound'],
+    slug: 'music-pause',
+    icon: viMusicPause
+  },
+  {
+    component: 'viMusic',
+    categories: ['media', 'files', 'education'],
+    tags: ['audio', 'sound'],
+    slug: 'music',
+    icon: viMusic
+  },
+  {
+    component: 'viNetwork',
+    categories: ['charts', 'science'],
+    tags: [],
+    slug: 'network',
+    icon: viNetwork
+  },
+  {
+    component: 'viNext',
+    categories: ['media'],
+    tags: [],
+    slug: 'next',
+    icon: viNext
+  },
+  {
+    component: 'viNumpad',
+    categories: ['coding', 'devices', 'writing'],
+    tags: ['ten keys'],
+    slug: 'numpad',
+    icon: viNumpad
+  },
+  {
+    component: 'viPager',
+    categories: ['communication', 'devices', 'health'],
+    tags: ['beeper'],
+    slug: 'pager',
+    icon: viPager
+  },
+  {
+    component: 'viPaperPlane',
+    categories: ['communication', 'social'],
+    tags: [],
+    slug: 'paper-plane',
+    icon: viPaperPlane
+  },
+  {
+    component: 'viParachuteBox',
+    categories: ['charity'],
+    tags: [],
+    slug: 'parachute-box',
+    icon: viParachuteBox
+  },
+  {
+    component: 'viParagraph',
+    categories: ['text', 'editor'],
+    tags: [],
+    slug: 'paragraph',
+    icon: viParagraph
+  },
+  {
+    component: 'viPause',
+    categories: ['media'],
+    tags: [],
+    slug: 'pause',
+    icon: viPause
+  },
+  {
+    component: 'viPen',
+    categories: ['editor', 'business', 'design'],
+    tags: ['write', 'ballpoint'],
+    slug: 'pen',
+    icon: viPen
+  },
+  {
+    component: 'viPeopleCircle',
+    categories: ['people', 'spinners'],
+    tags: ['users'],
+    slug: 'people-circle',
+    icon: viPeopleCircle
+  },
+  {
+    component: 'viPeople',
+    categories: ['people'],
+    tags: ['users', 'profiles'],
+    slug: 'people',
+    icon: viPeople
+  },
+  {
+    component: 'viPersonClock',
+    categories: ['people', 'time'],
+    tags: ['user', 'profile'],
+    slug: 'person-clock',
+    icon: viPersonClock
+  },
+  {
+    component: 'viPersonGear',
+    categories: ['people'],
+    tags: ['user', 'profile'],
+    slug: 'person-gear',
+    icon: viPersonGear
+  },
+  {
+    component: 'viPersonHeadset',
+    categories: ['people', 'social'],
+    tags: ['user', 'microphone', 'headset'],
+    slug: 'person-headset',
+    icon: viPersonHeadset
+  },
+  {
+    component: 'viPersonList',
+    categories: ['people', 'social'],
+    tags: ['user'],
+    slug: 'person-list',
+    icon: viPersonList
+  },
+  {
+    component: 'viPersonLock',
+    categories: ['people', 'security'],
+    tags: ['user'],
+    slug: 'person-lock',
+    icon: viPersonLock
+  },
+  {
+    component: 'viPersonPlus',
+    categories: ['people', 'social'],
+    tags: ['user'],
+    slug: 'person-plus',
+    icon: viPersonPlus
+  },
+  {
+    component: 'viPerson',
+    categories: ['people'],
+    tags: ['user'],
+    slug: 'person',
+    icon: viPerson
+  },
+  {
+    component: 'viPhoneArrowDownLeftProhibited',
+    categories: ['business', 'communication', 'maps'],
+    tags: ['telephone', 'call', 'incoming'],
+    slug: 'phone-arrow-down-left-prohibited',
+    icon: viPhoneArrowDownLeftProhibited
+  },
+  {
+    component: 'viPhoneArrowDownLeft',
+    categories: ['business', 'communication', 'maps'],
+    tags: ['telephone', 'call', 'incoming'],
+    slug: 'phone-arrow-down-left',
+    icon: viPhoneArrowDownLeft
+  },
+  {
+    component: 'viPhoneArrowUpRightProhibited',
+    categories: ['business', 'communication', 'maps'],
+    tags: ['telephone', 'call', 'outgoing'],
+    slug: 'phone-arrow-up-right-prohibited',
+    icon: viPhoneArrowUpRightProhibited
+  },
+  {
+    component: 'viPhoneArrowUpRight',
+    categories: ['business', 'communication', 'maps'],
+    tags: ['telephone', 'call', 'outgoing'],
+    slug: 'phone-arrow-up-right',
+    icon: viPhoneArrowUpRight
+  },
+  {
+    component: 'viPhoneClock',
+    categories: ['business', 'communication', 'time'],
+    tags: ['telephone', 'call'],
+    slug: 'phone-clock',
+    icon: viPhoneClock
+  },
+  {
+    component: 'viPhoneGear',
+    categories: ['business', 'communication'],
+    tags: ['telephone', 'call'],
+    slug: 'phone-gear',
+    icon: viPhoneGear
+  },
+  {
+    component: 'viPhoneList',
+    categories: ['business', 'communication', 'maps'],
+    tags: ['telephone', 'call', 'log'],
+    slug: 'phone-list',
+    icon: viPhoneList
+  },
+  {
+    component: 'viPhoneOffice',
+    categories: ['communication', 'devices'],
+    tags: ['desk phone'],
+    slug: 'phone-office',
+    icon: viPhoneOffice
+  },
+  {
+    component: 'viPhoneVolume',
+    categories: ['business', 'communication', 'maps'],
+    tags: ['telephone', 'call'],
+    slug: 'phone-volume',
+    icon: viPhoneVolume
+  },
+  {
+    component: 'viPhone',
+    categories: ['business', 'communication', 'maps'],
+    tags: ['telephone', 'call'],
+    slug: 'phone',
+    icon: viPhone
+  },
+  {
+    component: 'viPlayPause',
+    categories: ['media'],
+    tags: [],
+    slug: 'play-pause',
+    icon: viPlayPause
+  },
+  {
+    component: 'viPlay',
+    categories: ['media'],
+    tags: [],
+    slug: 'play',
+    icon: viPlay
+  },
+  {
+    component: 'viPlus',
+    categories: ['editor', 'maps', 'mathematics', 'medical-health', 'punctuation', 'alerts'],
+    tags: ['add', 'create'],
+    slug: 'plus',
+    icon: viPlus
+  },
+  {
+    component: 'viPower',
+    categories: ['devices', 'energy'],
+    tags: [],
+    slug: 'power',
+    icon: viPower
+  },
+  {
+    component: 'viPrevious',
+    categories: ['media'],
+    tags: [],
+    slug: 'previous',
+    icon: viPrevious
+  },
+  {
+    component: 'viProhibited',
+    categories: ['security'],
+    tags: ['ban'],
+    slug: 'prohibited',
+    icon: viProhibited
+  },
+  {
+    component: 'viPuzzlePiece',
+    categories: ['gaming'],
+    tags: [],
+    slug: 'puzzle-piece',
+    icon: viPuzzlePiece
+  },
+  {
+    component: 'viQuote',
+    categories: ['text', 'editor'],
+    tags: [],
+    slug: 'quote',
+    icon: viQuote
+  },
+  {
+    component: 'viRectangleP',
+    categories: ['alphabet'],
+    tags: [],
+    slug: 'rectangle-p',
+    icon: viRectangleP
+  },
+  {
+    component: 'viRedo',
+    categories: ['arrows', 'editor'],
+    tags: [],
+    slug: 'redo',
+    icon: viRedo
+  },
+  {
+    component: 'viRepeatOnce',
+    categories: ['media', 'arrows'],
+    tags: [],
+    slug: 'repeat-once',
+    icon: viRepeatOnce
+  },
+  {
+    component: 'viRepeat',
+    categories: ['media', 'arrows'],
+    tags: [],
+    slug: 'repeat',
+    icon: viRepeat
+  },
+  {
+    component: 'viSafari',
+    categories: ['brands'],
+    tags: ['apple', 'browser'],
+    slug: 'safari',
+    icon: viSafari
+  },
+  {
+    component: 'viServer',
+    categories: ['devices', 'business'],
+    tags: [],
+    slug: 'server',
+    icon: viServer
+  },
+  {
+    component: 'viShare',
+    categories: ['arrows', 'social'],
+    tags: ['forward'],
+    slug: 'share',
+    icon: viShare
+  },
+  {
+    component: 'viShieldKeyhole',
+    categories: ['security'],
+    tags: [],
+    slug: 'shield-keyhole',
+    icon: viShieldKeyhole
+  },
+  {
+    component: 'viShieldPlus',
+    categories: ['security'],
+    tags: [],
+    slug: 'shield-plus',
+    icon: viShieldPlus
+  },
+  {
+    component: 'viShieldXmark',
+    categories: ['security'],
+    tags: [],
+    slug: 'shield-xmark',
+    icon: viShieldXmark
+  },
+  {
+    component: 'viShield',
+    categories: ['security'],
+    tags: [],
+    slug: 'shield',
+    icon: viShield
+  },
+  {
+    component: 'viShuffle',
+    categories: ['media', 'arrows'],
+    tags: ['random'],
+    slug: 'shuffle',
+    icon: viShuffle
+  },
+  {
+    component: 'viSidebarLeft',
+    categories: ['coding'],
+    tags: [],
+    slug: 'sidebar-left',
+    icon: viSidebarLeft
+  },
+  {
+    component: 'viSidebarRight',
+    categories: ['coding'],
+    tags: [],
+    slug: 'sidebar-right',
+    icon: viSidebarRight
+  },
+  {
+    component: 'viSimCard',
+    categories: ['devices'],
+    tags: ['mobile'],
+    slug: 'sim-card',
+    icon: viSimCard
+  },
+  {
+    component: 'viSippy',
+    categories: ['brands'],
+    tags: [],
+    slug: 'sippy',
+    icon: viSippy
+  },
+  {
+    component: 'viSliders',
+    categories: ['editor', 'media'],
+    tags: ['options', 'settings', 'preferences'],
+    slug: 'sliders',
+    icon: viSliders
+  },
+  {
+    component: 'viSmartphoneArrowRight',
+    categories: ['communication', 'devices', 'arrows'],
+    tags: [],
+    slug: 'smartphone-arrow-right',
+    icon: viSmartphoneArrowRight
+  },
+  {
+    component: 'viSmartphone',
+    categories: ['communication', 'devices'],
+    tags: [],
+    slug: 'smartphone',
+    icon: viSmartphone
+  },
+  {
+    component: 'viSpeakerGrill',
+    categories: ['communication', 'devices'],
+    tags: ['intercom'],
+    slug: 'speaker-grill',
+    icon: viSpeakerGrill
+  },
+  {
+    component: 'viSpinnerThird',
+    categories: ['spinners'],
+    tags: ['loading', 'progress'],
+    slug: 'spinner-third',
+    icon: viSpinnerThird
+  },
+  {
+    component: 'viSpy',
+    categories: ['security', 'people'],
+    tags: ['secret', 'agent'],
+    slug: 'spy',
+    icon: viSpy
+  },
+  {
+    component: 'viSquareGum',
+    categories: ['text', 'editor', 'shapes'],
+    tags: [],
+    slug: 'square-gum',
+    icon: viSquareGum
+  },
+  {
+    component: 'viStar',
+    categories: ['astronomy', 'shapes', 'social'],
+    tags: ['favorite'],
+    slug: 'star',
+    icon: viStar
+  },
+  {
+    component: 'viStop',
+    categories: ['media'],
+    tags: [],
+    slug: 'stop',
+    icon: viStop
+  },
+  {
+    component: 'viStore',
+    categories: ['buildings', 'maps', 'business'],
+    tags: ['shop'],
+    slug: 'store',
+    icon: viStore
+  },
+  {
+    component: 'viStrikethrough',
+    categories: ['text', 'editor'],
+    tags: [],
+    slug: 'strikethrough',
+    icon: viStrikethrough
+  },
+  {
+    component: 'viSun',
+    categories: ['astronomy', 'weather'],
+    tags: ['clear sky'],
+    slug: 'sun',
+    icon: viSun
+  },
+  {
+    component: 'viSwatchbook',
+    categories: ['design'],
+    tags: ['color'],
+    slug: 'swatchbook',
+    icon: viSwatchbook
+  },
+  {
+    component: 'viTableClock',
+    categories: ['communication'],
+    tags: [],
+    slug: 'table-clock',
+    icon: viTableClock
+  },
+  {
+    component: 'viTableHeaderColumn',
+    categories: ['editor'],
+    tags: [],
+    slug: 'table-header-column',
+    icon: viTableHeaderColumn
+  },
+  {
+    component: 'viTableHeaderRow',
+    categories: ['editor'],
+    tags: [],
+    slug: 'table-header-row',
+    icon: viTableHeaderRow
+  },
+  {
+    component: 'viTable',
+    categories: ['editor', 'business', 'files'],
+    tags: ['spreadsheet'],
+    slug: 'table',
+    icon: viTable
+  },
+  {
+    component: 'viTagGear',
+    categories: ['business', 'maps'],
+    tags: ['label'],
+    slug: 'tag-gear',
+    icon: viTagGear
+  },
+  {
+    component: 'viTagPlus',
+    categories: ['business', 'maps'],
+    tags: ['label'],
+    slug: 'tag-plus',
+    icon: viTagPlus
+  },
+  {
+    component: 'viTag',
+    categories: ['business', 'maps'],
+    tags: ['label'],
+    slug: 'tag',
+    icon: viTag
+  },
+  {
+    component: 'viThumbstackSlash',
+    categories: ['business', 'maps', 'social', 'writing'],
+    tags: ['pin'],
+    slug: 'thumbstack-slash',
+    icon: viThumbstackSlash
+  },
+  {
+    component: 'viThumbstack',
+    categories: ['business', 'maps', 'social', 'writing'],
+    tags: ['pin'],
+    slug: 'thumbstack',
+    icon: viThumbstack
+  },
+  {
+    component: 'viToggleOff',
+    categories: ['toggle'],
+    tags: [],
+    slug: 'toggle-off',
+    icon: viToggleOff
+  },
+  {
+    component: 'viToggleOn',
+    categories: ['toggle'],
+    tags: [],
+    slug: 'toggle-on',
+    icon: viToggleOn
+  },
+  {
+    component: 'viTowerBroadcast',
+    categories: ['connectivity', 'energy'],
+    tags: [],
+    slug: 'tower-broadcast',
+    icon: viTowerBroadcast
+  },
+  {
+    component: 'viTranslate',
+    categories: ['communication'],
+    tags: [],
+    slug: 'translate',
+    icon: viTranslate
+  },
+  {
+    component: 'viTrashCan',
+    categories: ['maps', 'editor'],
+    tags: ['trash', 'delete', 'garbage', 'remove', 'junk'],
+    slug: 'trash-can',
+    icon: viTrashCan
+  },
+  {
+    component: 'viTriangleExclamation',
+    categories: ['alerts', 'punctuation'],
+    tags: ['warning', 'danger'],
+    slug: 'triangle-exclamation',
+    icon: viTriangleExclamation
+  },
+  {
+    component: 'viUnderline',
+    categories: ['text', 'editor'],
+    tags: [],
+    slug: 'underline',
+    icon: viUnderline
+  },
+  {
+    component: 'viUndo',
+    categories: ['arrows', 'editor'],
+    tags: [],
+    slug: 'undo',
+    icon: viUndo
+  },
+  {
+    component: 'viValkyrieSword',
+    categories: ['brands'],
+    tags: [],
+    slug: 'valkyrie-sword',
+    icon: viValkyrieSword
+  },
+  {
+    component: 'viVideo',
+    categories: ['communication', 'film', 'social', 'devices'],
+    tags: ['record'],
+    slug: 'video',
+    icon: viVideo
+  },
+  {
+    component: 'viVoicemail',
+    categories: ['communication'],
+    tags: [],
+    slug: 'voicemail',
+    icon: viVoicemail
+  },
+  {
+    component: 'viVolume0',
+    categories: ['media'],
+    tags: ['sound', 'silence'],
+    slug: 'volume-0',
+    icon: viVolume0
+  },
+  {
+    component: 'viVolume1',
+    categories: ['media'],
+    tags: ['sound'],
+    slug: 'volume-1',
+    icon: viVolume1
+  },
+  {
+    component: 'viVolume2',
+    categories: ['media'],
+    tags: ['sound'],
+    slug: 'volume-2',
+    icon: viVolume2
+  },
+  {
+    component: 'viVolume3',
+    categories: ['media'],
+    tags: ['sound'],
+    slug: 'volume-3',
+    icon: viVolume3
+  },
+  {
+    component: 'viVolumeSlash',
+    categories: ['media'],
+    tags: ['sound', 'silence'],
+    slug: 'volume-slash',
+    icon: viVolumeSlash
+  },
+  {
+    component: 'viWallpaper',
+    categories: ['devices'],
+    tags: [],
+    slug: 'wallpaper',
+    icon: viWallpaper
+  },
+  {
+    component: 'viWaveform',
+    categories: ['files'],
+    tags: ['audio', 'music'],
+    slug: 'waveform',
+    icon: viWaveform
+  },
+  {
+    component: 'viWebhooksClock',
+    categories: ['coding', 'time'],
+    tags: [],
+    slug: 'webhooks-clock',
+    icon: viWebhooksClock
+  },
+  {
+    component: 'viWebhooks',
+    categories: ['coding'],
+    tags: [],
+    slug: 'webhooks',
+    icon: viWebhooks
+  },
+  {
+    component: 'viWindow',
+    categories: ['coding'],
+    tags: [],
+    slug: 'window',
+    icon: viWindow
+  },
+  {
+    component: 'viXmark',
+    categories: ['editor', 'mathematics'],
+    tags: ['close', 'cancel'],
+    slug: 'xmark',
+    icon: viXmark
+  }
+];
+
+export default icons;

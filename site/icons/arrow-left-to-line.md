@@ -1,9 +1,0 @@
----
-title: Arrow left to line
-categories:
-  - arrows
-tags:
-  - direction
-created: 0.5.0
-updated: 1.0.0
----

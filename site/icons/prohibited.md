@@ -1,9 +1,0 @@
----
-title: Prohibited
-categories:
-  - security
-tags:
-  - ban
-created: 0.18.0
-updated: 1.0.0
----

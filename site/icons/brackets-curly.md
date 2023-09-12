@@ -1,8 +1,0 @@
----
-title: Brackets curly
-categories:
-  - coding
-tags:
-created: 0.20.0
-updated: 1.0.0
----

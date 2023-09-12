@@ -14,6 +14,7 @@
     "icons:ts": "svg-to-ts-constants",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pages": "node build/generate-pages.js --verbose",
+    "library": "node build/generate-library.js",
     "prod": "npm run icons && npm run pages && npm run build"
   },
   "repository": {
@@ -36,9 +37,7 @@
   },
   "homepage": "https://sippy-platform.github.io/valkyrie",
   "peerDependencies": {
-    "@emotion/react": ">=11.x",
-    "@emotion/styled": ">=11.x",
-    "@mui/system": ">=5.x",
+    "@emotion/css": ">=11.x",
     "react": ">=16.x"
   },
   "dependencies": {

@@ -1,9 +1,0 @@
----
-title: Power
-categories:
-  - devices
-  - energy
-tags:
-created: 0.7.0
-updated: 1.0.0
----
