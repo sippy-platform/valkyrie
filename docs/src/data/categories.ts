@@ -1,231 +1,273 @@
-
-import { viCircleDashed } from '@sippy-platform/valkyrie';
+import {
+  viValkyrieSword,
+  viArrowUp,
+  viAsterisk,
+  viBold,
+  viBook,
+  viChartPie,
+  viCircleDashed,
+  viClock,
+  viCode,
+  viDevices,
+  viEarth,
+  viEthernet,
+  viEuro,
+  viEye,
+  viFax,
+  viFiles,
+  viGear,
+  viGift,
+  viHeart,
+  viHouse,
+  viLightbulb,
+  viLock,
+  viMessageText,
+  viMoon,
+  viNetwork,
+  viPen,
+  viPerson,
+  viPlay,
+  viPlus,
+  viRectangleP,
+  viShare,
+  viSpinnerThird,
+  viSun,
+  viSwatchbook,
+  viToggleOn,
+  viVideo,
+  viBoxOpenFull,
+  viCompass,
+  viGauge,
+  viPuzzlePiece,
+  viBug,
+  viCircleCheck
+} from '@sippy-platform/valkyrie';
 
 const categories = [
   {
     slug: "accessibility",
-    title: "accessibility",
-    icon: viCircleDashed
+    title: "Accessibility",
+    icon: viEye
   },
   {
     slug: "alerts",
-    title: "alerts",
-    icon: viCircleDashed
+    title: "Alerts",
+    icon: viCircleCheck
   },
   {
     slug: "alphabet",
-    title: "alphabet",
-    icon: viCircleDashed
+    title: "Alphabet",
+    icon: viRectangleP
   },
   {
     slug: "arrows",
-    title: "arrows",
-    icon: viCircleDashed
+    title: "Arrows",
+    icon: viArrowUp
   },
   {
     slug: "astronomy",
-    title: "astronomy",
-    icon: viCircleDashed
+    title: "Astronomy",
+    icon: viMoon
   },
   {
     slug: "brands",
-    title: "brands",
-    icon: viCircleDashed
+    title: "Brands",
+    icon: viValkyrieSword
   },
   {
     slug: "buildings",
-    title: "buildings",
-    icon: viCircleDashed
+    title: "Buildings",
+    icon: viHouse
   },
   {
     slug: "business",
-    title: "business",
-    icon: viCircleDashed
+    title: "Business",
+    icon: viFax
   },
   {
     slug: "camping",
-    title: "camping",
-    icon: viCircleDashed
+    title: "Camping",
+    icon: viCompass
   },
   {
     slug: "charity",
-    title: "charity",
-    icon: viCircleDashed
+    title: "Charity",
+    icon: viHeart
   },
   {
     slug: "charts",
-    title: "charts",
-    icon: viCircleDashed
+    title: "Charts",
+    icon: viChartPie
   },
   {
     slug: "coding",
-    title: "coding",
-    icon: viCircleDashed
+    title: "Coding",
+    icon: viCode
   },
   {
     slug: "communication",
-    title: "communication",
-    icon: viCircleDashed
+    title: "Communication",
+    icon: viMessageText
   },
   {
     slug: "connectivity",
-    title: "connectivity",
-    icon: viCircleDashed
+    title: "Connectivity",
+    icon: viEthernet
   },
   {
     slug: "design",
-    title: "design",
-    icon: viCircleDashed
+    title: "Design",
+    icon: viSwatchbook
   },
   {
     slug: "devices",
-    title: "devices",
-    icon: viCircleDashed
+    title: "Devices",
+    icon: viDevices
   },
   {
     slug: "editor",
-    title: "editor",
-    icon: viCircleDashed
+    title: "Editor",
+    icon: viBold
   },
   {
     slug: "education",
-    title: "education",
-    icon: viCircleDashed
+    title: "Education",
+    icon: viBook
   },
   {
     slug: "energy",
-    title: "energy",
-    icon: viCircleDashed
+    title: "Energy",
+    icon: viLightbulb
   },
   {
-    slug: "files",
-    title: "files",
-    icon: viCircleDashed
+    slug: "files & folders",
+    title: "Files",
+    icon: viFiles
   },
   {
     slug: "film",
-    title: "film",
-    icon: viCircleDashed
+    title: "Film",
+    icon: viVideo
   },
   {
     slug: "gaming",
-    title: "gaming",
-    icon: viCircleDashed
+    title: "Gaming",
+    icon: viPuzzlePiece
   },
   {
     slug: "health",
-    title: "health",
-    icon: viCircleDashed
+    title: "Health",
+    icon: viHeart
   },
   {
     slug: "holidays",
-    title: "holidays",
-    icon: viCircleDashed
+    title: "Holidays",
+    icon: viGift
   },
   {
     slug: "human",
-    title: "human",
-    icon: viCircleDashed
+    title: "Human",
+    icon: viEye
   },
   {
     slug: "logistics",
-    title: "logistics",
-    icon: viCircleDashed
+    title: "Logistics",
+    icon: viBoxOpenFull
   },
   {
     slug: "maps",
-    title: "maps",
-    icon: viCircleDashed
+    title: "Maps",
+    icon: viEarth
   },
   {
     slug: "mathematics",
-    title: "mathematics",
-    icon: viCircleDashed
+    title: "Mathematics",
+    icon: viPlus
   },
   {
     slug: "media",
-    title: "media",
-    icon: viCircleDashed
+    title: "Media",
+    icon: viPlay
   },
   {
     slug: "money",
-    title: "money",
-    icon: viCircleDashed
+    title: "Money",
+    icon: viEuro
   },
   {
     slug: "nature",
-    title: "nature",
-    icon: viCircleDashed
+    title: "Nature & outdoors",
+    icon: viBug
   },
   {
     slug: "people",
-    title: "people",
-    icon: viCircleDashed
+    title: "People",
+    icon: viPerson
   },
   {
     slug: "punctuation",
-    title: "punctuation",
-    icon: viCircleDashed
+    title: "Punctuation",
+    icon: viAsterisk
   },
   {
     slug: "science",
-    title: "science",
-    icon: viCircleDashed
+    title: "Science",
+    icon: viNetwork
   },
   {
     slug: "security",
-    title: "security",
-    icon: viCircleDashed
+    title: "Security",
+    icon: viLock
   },
   {
     slug: "shapes",
-    title: "shapes",
+    title: "Shapes",
     icon: viCircleDashed
   },
   {
     slug: "shopping",
-    title: "shopping",
-    icon: viCircleDashed
+    title: "Shopping",
+    icon: viBoxOpenFull
   },
   {
     slug: "social",
-    title: "social",
-    icon: viCircleDashed
+    title: "Social",
+    icon: viShare
   },
   {
     slug: "spinners",
-    title: "spinners",
-    icon: viCircleDashed
+    title: "Spinners",
+    icon: viSpinnerThird
   },
   {
     slug: "time",
-    title: "time",
-    icon: viCircleDashed
+    title: "Time",
+    icon: viClock
   },
   {
     slug: "toggle",
-    title: "toggle",
-    icon: viCircleDashed
+    title: "Toggle",
+    icon: viToggleOn
   },
   {
     slug: "tools",
-    title: "tools",
-    icon: viCircleDashed
+    title: "Tools",
+    icon: viGear
   },
   {
     slug: "transportation",
-    title: "transportation",
-    icon: viCircleDashed
+    title: "Transportation",
+    icon: viGauge
   },
   {
     slug: "weather",
-    title: "weather",
-    icon: viCircleDashed
+    title: "Weather",
+    icon: viSun
   },
   {
     slug: "writing",
-    title: "writing",
-    icon: viCircleDashed
+    title: "Writing",
+    icon: viPen
   }
 ];
 
