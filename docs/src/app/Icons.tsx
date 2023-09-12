@@ -60,14 +60,16 @@ export default function Icons() {
             }}
           >
             <Stack gap={3} justifyContent="center" alignItems="center" sx={{ pt: 3, pb: 1 }}>
-              <ValkyrieIcon icon={icon.icon} sx={{ fontSize: 32 }} />
+              <Typography fontSize={32} lineHeight="1rem">
+                <ValkyrieIcon icon={icon.icon} />
+              </Typography>
               <Link
                 overlay
                 href={`/icons/${icon.slug}`}
                 underline="none"
                 color="neutral"
                 sx={{
-                  maxWidth: 'calc(100% - 32px)'
+                  maxWidth: 'calc(100% - 16px)'
                 }}
               >
                 <Typography
