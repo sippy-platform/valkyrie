@@ -140,7 +140,7 @@ const categories = [
     icon: viLightbulb
   },
   {
-    slug: "files & folders",
+    slug: "files",
     title: "Files",
     icon: viFiles
   },
