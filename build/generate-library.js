@@ -43,7 +43,7 @@ async function main(file) {
     icon: ${iconTitle}
   }`;
 
-  return [`${iconTitle}`, jsonTemplate];
+  return [`${iconTitle}`, jsonTemplate, iconJson.categories];
 }
 
 (async () => {
@@ -57,16 +57,23 @@ async function main(file) {
 
     const names = [];
     const configs = [];
+    let categories = new Set();
 
     // Read content from each icon
     await Promise.all(
       files.map(async file => {
-        const [name, config] = await Promise.resolve(main(file));
+        const [name, config, cats] = await Promise.resolve(main(file));
 
         names.push(name);
         configs.push(config);
+
+        cats.map(cat => {
+          categories.add(cat);
+        });
       })
     );
+
+    categories = Array.from(categories).sort();
 
     const template = `
 import { ${names.map(icon => `${icon}`)} } from '@sippy-platform/valkyrie';
