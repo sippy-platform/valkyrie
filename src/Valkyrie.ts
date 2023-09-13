@@ -496,6 +496,13 @@ export const viCodeblock: {
   name: 'codeblock',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M6.78 4.72a.75.75 0 0 1 0 1.06L4.56 8l2.22 2.22a.75.75 0 1 1-1.06 1.06L3.323 8.884a1.25 1.25 0 0 1 0-1.768L5.72 4.72a.75.75 0 0 1 1.06 0Zm2.44 0a.75.75 0 0 1 1.06 0l2.397 2.396a1.25 1.25 0 0 1 0 1.768L10.28 11.28a.75.75 0 0 1-1.06-1.06L11.44 8 9.22 5.78a.75.75 0 0 1 0-1.06Z"/><path d="M2.75 2A2.75 2.75 0 0 0 0 4.75v6.5A2.75 2.75 0 0 0 2.75 14h10.5A2.75 2.75 0 0 0 16 11.25v-6.5A2.75 2.75 0 0 0 13.25 2H2.75ZM1.5 4.75c0-.69.56-1.25 1.25-1.25h10.5c.69 0 1.25.56 1.25 1.25v6.5c0 .69-.56 1.25-1.25 1.25H2.75c-.69 0-1.25-.56-1.25-1.25v-6.5Z"/></svg>`
 };
+export const viCompare: {
+  name: 'compare';
+  data: string;
+} = {
+  name: 'compare',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M8.75 11.937V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h4.75c.173 0 .34.022.5.063V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9.25c-.173 0-.34-.022-.5-.063Zm.5-1.437H14a.5.5 0 0 0 .5-.5V6.75h-2.12l.44.512a.75.75 0 1 1-1.14.976l-1.5-1.75a.75.75 0 0 1 0-.976l1.5-1.75a.75.75 0 1 1 1.14.976l-.44.512h2.12V2a.5.5 0 0 0-.5-.5H9.25a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5Zm-2-4.5a.5.5 0 0 0-.5-.5H2a.5.5 0 0 0-.5.5v3.25h2.12l-.44-.512a.75.75 0 1 1 1.14-.976l1.5 1.75a.75.75 0 0 1 0 .976l-1.5 1.75a.75.75 0 1 1-1.14-.976l.44-.512H1.5V14a.5.5 0 0 0 .5.5h4.75a.5.5 0 0 0 .5-.5V6Z"/></svg>`
+};
 export const viCompass: {
   name: 'compass';
   data: string;
@@ -1856,6 +1863,7 @@ export type Valkyrie =
   | 'clock'
   | 'code'
   | 'codeblock'
+  | 'compare'
   | 'compass'
   | 'compress'
   | 'copy'
@@ -2119,6 +2127,7 @@ export const valkyrieSet = [
   viClock,
   viCode,
   viCodeblock,
+  viCompare,
   viCompass,
   viCompress,
   viCopy,
