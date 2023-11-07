@@ -55,6 +55,13 @@ export const viAppleAppStore: {
   name: 'apple_app_store',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M13.5 1h-11A1.5 1.5 0 0 0 1 2.5v11A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-11A1.5 1.5 0 0 0 13.5 1ZM4.969 12.016a.624.624 0 1 1-1.082-.625l.447-.772c.504-.153.916-.035 1.238.356l-.603 1.04Zm4.34-1.685H3.625A.627.627 0 0 1 3 9.706c0-.343.281-.625.625-.625h1.594l2.043-3.537-.64-1.106a.626.626 0 0 1 .228-.854.626.626 0 0 1 .853.228l.278.482.278-.481a.624.624 0 1 1 1.082.624L6.659 9.082H8.6c.631 0 .984.74.71 1.25Zm3.066 0h-.906l.612 1.06c.172.3.069.68-.228.853a.626.626 0 0 1-.853-.228C9.972 10.238 9.203 8.9 8.687 8.012c-.521-.906-.15-1.812.222-2.118.41.71 1.022 1.772 1.841 3.187h1.625a.625.625 0 1 1 0 1.25Z"/></svg>`
 };
+export const viArrowDownFromCloud: {
+  name: 'arrow_down_from_cloud';
+  data: string;
+} = {
+  name: 'arrow_down_from_cloud',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M16 8a4.002 4.002 0 0 1-3.043 3.885 1.75 1.75 0 0 0-.33-1.464 2.501 2.501 0 0 0 .355-4.72 2.5 2.5 0 0 0-4.026-1.667 1.748 1.748 0 0 0-.104-.063A3.489 3.489 0 0 0 6 2.5 3.5 3.5 0 0 0 2.5 6a2.501 2.501 0 0 0 .872 4.42 1.75 1.75 0 0 0-.33 1.465A4.002 4.002 0 0 1 1.05 5.3a5.001 5.001 0 0 1 8.2-3.1 4 4 0 0 1 5.04 2.52A3.995 3.995 0 0 1 16 8Z"/><path d="M9.75 10.5h.025l-.025.025V10.5Zm-3.5.025-.025-.025h.025v.025Z"/><path d="M5.28 10.97a.75.75 0 0 0-1.06 1.06l3.25 3.25a.75.75 0 0 0 1.06 0l3.25-3.25a.75.75 0 1 0-1.06-1.06l-1.97 1.97V5.5a.75.75 0 0 0-1.5 0v7.44l-1.97-1.97Z"/></svg>`
+};
 export const viArrowDownShortWide: {
   name: 'arrow_down_short_wide';
   data: string;
@@ -187,6 +194,13 @@ export const viArrowUpShortWide: {
 } = {
   name: 'arrow_up_short_wide',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M9 1.75A.75.75 0 0 1 9.75 1h1a.75.75 0 0 1 0 1.5h-1A.75.75 0 0 1 9 1.75ZM7.78 5.53a.75.75 0 0 1-1.06 0L4.75 3.56v10.69a.75.75 0 0 1-1.5 0V3.56L1.28 5.53A.75.75 0 0 1 .22 4.47l3.25-3.25a.75.75 0 0 1 1.06 0l3.25 3.25a.75.75 0 0 1 0 1.06ZM9.75 5a.75.75 0 0 0 0 1.5h2.5a.75.75 0 0 0 0-1.5h-2.5ZM9 9.75A.75.75 0 0 1 9.75 9h4a.75.75 0 0 1 0 1.5h-4A.75.75 0 0 1 9 9.75ZM9.75 13a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5h-5.5Z"/></svg>`
+};
+export const viArrowUpToCloud: {
+  name: 'arrow_up_to_cloud';
+  data: string;
+} = {
+  name: 'arrow_up_to_cloud',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M12 12H9.75v-1.5H12a2.5 2.5 0 0 0 .982-4.8 2.5 2.5 0 0 0-4.026-1.666 1.734 1.734 0 0 0-.104-.063A3.489 3.489 0 0 0 6 2.5 3.5 3.5 0 0 0 2.5 6 2.5 2.5 0 0 0 4 10.5h2.25V12H4a4 4 0 0 1-2.951-6.7 5.001 5.001 0 0 1 8.2-3.1 4 4 0 0 1 5.041 2.52A4 4 0 0 1 12 12Z"/><path d="M10.72 9.28a.75.75 0 1 0 1.06-1.06L8.53 4.97a.75.75 0 0 0-1.06 0L4.22 8.22a.75.75 0 0 0 1.06 1.06l1.97-1.97v7.44a.75.75 0 0 0 1.5 0V7.31l1.97 1.97Z"/></svg>`
 };
 export const viArrowUpToLine: {
   name: 'arrow_up_to_line';
@@ -1814,6 +1828,7 @@ export type Valkyrie =
   | 'angle_up'
   | 'angles_y'
   | 'apple_app_store'
+  | 'arrow_down_from_cloud'
   | 'arrow_down_short_wide'
   | 'arrow_down_to_line'
   | 'arrow_down_wide_short'
@@ -1833,6 +1848,7 @@ export type Valkyrie =
   | 'arrow_right'
   | 'arrow_rotate_right'
   | 'arrow_up_short_wide'
+  | 'arrow_up_to_cloud'
   | 'arrow_up_to_line'
   | 'arrow_up_wide_short'
   | 'arrow_up'
@@ -2080,6 +2096,7 @@ export const valkyrieSet = [
   viAngleUp,
   viAnglesY,
   viAppleAppStore,
+  viArrowDownFromCloud,
   viArrowDownShortWide,
   viArrowDownToLine,
   viArrowDownWideShort,
@@ -2099,6 +2116,7 @@ export const valkyrieSet = [
   viArrowRight,
   viArrowRotateRight,
   viArrowUpShortWide,
+  viArrowUpToCloud,
   viArrowUpToLine,
   viArrowUpWideShort,
   viArrowUp,
