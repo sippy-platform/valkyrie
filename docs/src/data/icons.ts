@@ -613,7 +613,7 @@ const icons = [
   },
   {
     component: 'viDice',
-    categories: ["gaming"],
+    categories: ["gaming","maps"],
     tags: ["random","chance"],
     slug: 'dice',
     icon: viDice
