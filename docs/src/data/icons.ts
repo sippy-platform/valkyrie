@@ -690,8 +690,8 @@ const icons = [
   },
   {
     component: 'viExport',
-    categories: [],
-    tags: [],
+    categories: ["arrows","social"],
+    tags: ["share"],
     slug: 'export',
     icon: viExport
   },
