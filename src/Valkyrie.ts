@@ -531,6 +531,13 @@ export const viCodeblock: {
   name: 'codeblock',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M6.78 4.72a.75.75 0 0 1 0 1.06L4.56 8l2.22 2.22a.75.75 0 1 1-1.06 1.06L3.323 8.884a1.25 1.25 0 0 1 0-1.768L5.72 4.72a.75.75 0 0 1 1.06 0m2.44 0a.75.75 0 0 1 1.06 0l2.397 2.396a1.25 1.25 0 0 1 0 1.768L10.28 11.28a.75.75 0 0 1-1.06-1.06L11.44 8 9.22 5.78a.75.75 0 0 1 0-1.06"/><path d="M2.75 2A2.75 2.75 0 0 0 0 4.75v6.5A2.75 2.75 0 0 0 2.75 14h10.5A2.75 2.75 0 0 0 16 11.25v-6.5A2.75 2.75 0 0 0 13.25 2zM1.5 4.75c0-.69.56-1.25 1.25-1.25h10.5c.69 0 1.25.56 1.25 1.25v6.5c0 .69-.56 1.25-1.25 1.25H2.75c-.69 0-1.25-.56-1.25-1.25z"/></svg>`
 };
+export const viCommand: {
+  name: 'command';
+  data: string;
+} = {
+  name: 'command',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M3 1.5A1.5 1.5 0 0 1 4.5 3v1.5H3a1.5 1.5 0 1 1 0-3m3 3V3a3 3 0 1 0-3 3h1.5v4H3a3 3 0 1 0 3 3v-1.5h4V13a3 3 0 1 0 3-3h-1.5V6H13a3 3 0 1 0-3-3v1.5zM6 6h4v4H6zm5.5-1.5V3A1.5 1.5 0 1 1 13 4.5zm0 7H13a1.5 1.5 0 1 1-1.5 1.5zm-7 0V13A1.5 1.5 0 1 1 3 11.5z"/></svg>`
+};
 export const viCompare: {
   name: 'compare';
   data: string;
@@ -1973,6 +1980,7 @@ export type Valkyrie =
   | 'clock'
   | 'code'
   | 'codeblock'
+  | 'command'
   | 'compare'
   | 'compass'
   | 'compress'
@@ -2252,6 +2260,7 @@ export const valkyrieSet = [
   viClock,
   viCode,
   viCodeblock,
+  viCommand,
   viCompare,
   viCompass,
   viCompress,
