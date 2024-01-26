@@ -293,6 +293,13 @@ export const viBracketsCurly: {
   name: 'brackets_curly',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M4.75 1A2.75 2.75 0 0 0 2 3.75v1.922c0 .331-.132.649-.366.883L.79 7.4a.85.85 0 0 0 0 1.202l.844.844c.234.234.366.552.366.883v1.922A2.75 2.75 0 0 0 4.75 15h.5a.75.75 0 0 0 0-1.5h-.5c-.69 0-1.25-.56-1.25-1.25v-1.922c0-.729-.29-1.428-.805-1.944L2.31 8l.384-.384A2.75 2.75 0 0 0 3.5 5.672V3.75c0-.69.56-1.25 1.25-1.25h.5a.75.75 0 0 0 0-1.5zm6.5 14A2.75 2.75 0 0 0 14 12.25v-1.922c0-.331.132-.649.366-.883l.844-.844a.85.85 0 0 0 0-1.202l-.844-.844A1.25 1.25 0 0 1 14 5.672V3.75A2.75 2.75 0 0 0 11.25 1h-.5a.75.75 0 0 0 0 1.5h.5c.69 0 1.25.56 1.25 1.25v1.922c0 .729.29 1.428.805 1.944L13.69 8l-.384.384a2.75 2.75 0 0 0-.805 1.944v1.922c0 .69-.56 1.25-1.25 1.25h-.5a.75.75 0 0 0 0 1.5z"/></svg>`
 };
+export const viBroom: {
+  name: 'broom';
+  data: string;
+} = {
+  name: 'broom',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M15.78.22a.75.75 0 0 1 0 1.06L11.06 6l1.47 1.47a.75.75 0 0 1 .127.892l-4 7.25a.75.75 0 0 1-1.187.168L.22 8.53a.75.75 0 0 1 .168-1.187l7.25-4a.75.75 0 0 1 .892.127L10 4.94 14.72.22a.75.75 0 0 1 1.06 0m-5.26 8.912L6.867 5.48 1.986 8.175l2.43 2.43 1.78-.79a.75.75 0 0 1 .99.99l-.791 1.779 1.43 1.43z"/></svg>`
+};
 export const viBug: {
   name: 'bug';
   data: string;
@@ -1946,6 +1953,7 @@ export type Valkyrie =
   | 'book'
   | 'box_open_full'
   | 'brackets_curly'
+  | 'broom'
   | 'bug'
   | 'building'
   | 'calendar_clock'
@@ -2226,6 +2234,7 @@ export const valkyrieSet = [
   viBook,
   viBoxOpenFull,
   viBracketsCurly,
+  viBroom,
   viBug,
   viBuilding,
   viCalendarClock,
