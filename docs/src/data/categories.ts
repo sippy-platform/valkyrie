@@ -30,7 +30,7 @@ import {
   viPlus,
   viRectangleP,
   viShare,
-  viSpinnerThird,
+  viSpinner,
   viSun,
   viSwatchbook,
   viToggleOn,
@@ -237,7 +237,7 @@ const categories = [
   {
     slug: "spinners",
     title: "Spinners",
-    icon: viSpinnerThird
+    icon: viSpinner
   },
   {
     slug: "time",

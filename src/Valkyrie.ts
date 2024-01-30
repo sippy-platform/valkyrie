@@ -1637,6 +1637,13 @@ export const viSpinnerThird: {
   name: 'spinner_third',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M14.28 11.626c.359.207.82.086.994-.29A8 8 0 0 0 8.75.035c-.413-.04-.75.3-.75.714s.337.745.749.793a6.5 6.5 0 0 1 5.219 9.037c-.165.38-.047.839.312 1.046"/></svg>`
 };
+export const viSpinner: {
+  name: 'spinner';
+  data: string;
+} = {
+  name: 'spinner',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M9.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-8-5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M4.464 4.464a1.5 1.5 0 1 0-2.12-2.12 1.5 1.5 0 0 0 2.12 2.12m9.193 7.072a1.5 1.5 0 1 1-2.122 2.12 1.5 1.5 0 0 1 2.122-2.12m-9.193 2.121a1.5 1.5 0 1 0-2.121-2.121 1.5 1.5 0 0 0 2.121 2.12"/></svg>`
+};
 export const viSpy: {
   name: 'spy';
   data: string;
@@ -2145,6 +2152,7 @@ export type Valkyrie =
   | 'smartphone'
   | 'speaker_grill'
   | 'spinner_third'
+  | 'spinner'
   | 'spy'
   | 'square_gum'
   | 'star'
@@ -2426,6 +2434,7 @@ export const valkyrieSet = [
   viSmartphone,
   viSpeakerGrill,
   viSpinnerThird,
+  viSpinner,
   viSpy,
   viSquareGum,
   viStar,
