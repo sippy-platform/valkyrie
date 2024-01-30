@@ -25,7 +25,7 @@ export default function ValkyrieIcon({
     }
   `;
 
-  const aiClass = css`
+  const viClass = css`
     height: 1em;
     width: 1em;
     min-width: 1em;
@@ -41,6 +41,7 @@ export default function ValkyrieIcon({
 
   const rotateClass = css`
     transform: rotate(${rotate}deg);
+    transition: transform var(--vi-transition-duration, .2s) var(--vi-transition-easing, ease-in-out);
   `;
 
   const flipClass = css`
@@ -53,7 +54,7 @@ export default function ValkyrieIcon({
 
   const spinClass = css`
     svg {
-      animation: ${spinAnimation} var(--ai-animation-duration, 2s) infinite
+      animation: ${spinAnimation} var(--vi-animation-duration, 2s) infinite
         linear;
     }
   `;
@@ -62,7 +63,7 @@ export default function ValkyrieIcon({
     <span
       {...props}
       className={cx({
-        [aiClass]: true,
+        [viClass]: true,
         [rotateClass]: !!rotate,
         [flipClass]: !!flip,
         [spinClass]: spin
