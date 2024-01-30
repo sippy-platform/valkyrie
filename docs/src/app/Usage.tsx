@@ -4,7 +4,7 @@ import { Button, Card, Sheet, Stack, Table, Typography } from '@mui/joy';
 
 import Code from '@/design/components/Code';
 
-import ValkyrieIcon, { viArrowsRotateRight, viMessageSmile, viSpinnerThird } from '@sippy-platform/valkyrie';
+import ValkyrieIcon, { viArrowsRotateRight, viHeart, viMessageSmile, viSpinnerThird } from '@sippy-platform/valkyrie';
 
 export default function Usage() {
   const [rotate, setRotate] = useState(false);
@@ -68,6 +68,24 @@ export default function Usage() {
                 <Code>2s</Code>
               </td>
               <td>Time for a full play through of the animation.</td>
+            </tr>
+            <tr>
+              <td>
+                <Code>--vi-animation-timing-function</Code>
+              </td>
+              <td>
+                <Code>linear</Code>
+              </td>
+              <td>The timing function used for the animation.</td>
+            </tr>
+            <tr>
+              <td>
+                <Code>--vi-animation-iteration-count</Code>
+              </td>
+              <td>
+                <Code>infinite</Code>
+              </td>
+              <td>Number of times the animation is repeated.</td>
             </tr>
           </tbody>
         </Table>
@@ -215,6 +233,78 @@ export default function Usage() {
             </Stack>
           </Sheet>
         </Stack>
+      </Card>
+      <Card>
+        <Typography level="h3">Beat</Typography>
+        <Typography>
+          The <Code>ValkyrieIcon</Code> component supports a basic beat animation.
+        </Typography>
+
+        <Stack direction="row" fontSize={32} spacing={1}>
+          <Sheet sx={{ p: 1, minWidth: 120, textAlign: 'center', borderRadius: 'sm' }} variant="outlined">
+            <Stack spacing={1}>
+              <Typography fontSize={32}>
+                <ValkyrieIcon icon={viHeart} />
+              </Typography>
+              <Code>null</Code>
+            </Stack>
+          </Sheet>
+          <Sheet sx={{ p: 1, minWidth: 120, textAlign: 'center', borderRadius: 'sm' }} variant="outlined">
+            <Stack spacing={1}>
+              <Typography fontSize={32}>
+                <ValkyrieIcon icon={viHeart} beat />
+              </Typography>
+              <Code>beat</Code>
+            </Stack>
+          </Sheet>
+          <Sheet sx={{ p: 1, minWidth: 120, textAlign: 'center', borderRadius: 'sm' }} variant="outlined">
+            <Stack spacing={1}>
+              <Typography fontSize={32}>
+                <ValkyrieIcon icon={viHeart} beat={false} />
+              </Typography>
+              <Code>beat={`{false}`}</Code>
+            </Stack>
+          </Sheet>
+        </Stack>
+
+        <Table variant="outlined">
+          <thead>
+            <tr>
+              <th style={{ width: '25%' }}>Property name</th>
+              <th style={{ width: '25%' }}>Default</th>
+              <th style={{ width: '50%' }}>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <Code>--vi-animation-duration</Code>
+              </td>
+              <td>
+                <Code>1s</Code>
+              </td>
+              <td>Time for a full play through of the animation.</td>
+            </tr>
+            <tr>
+              <td>
+                <Code>--vi-animation-timing-function</Code>
+              </td>
+              <td>
+                <Code>ease-in-out</Code>
+              </td>
+              <td>The timing function used for the animation.</td>
+            </tr>
+            <tr>
+              <td>
+                <Code>--vi-animation-iteration-count</Code>
+              </td>
+              <td>
+                <Code>infinite</Code>
+              </td>
+              <td>Number of times the animation is repeated.</td>
+            </tr>
+          </tbody>
+        </Table>
       </Card>
     </Stack>
   );

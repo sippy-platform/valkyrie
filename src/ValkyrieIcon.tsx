@@ -7,13 +7,15 @@ interface ValkyrieProps {
   rotate?: 0 | 90 | 180 | 270 | false;
   flip?: true | "x" | "y" | false;
   spin?: boolean;
+  beat?: boolean;
 }
 
 export default function ValkyrieIcon({
   flip = false,
   icon,
-  rotate = 0,
+  rotate = undefined,
   spin = false,
+  beat = false,
   ...props
 }: ValkyrieProps) {
   const spinAnimation = keyframes`
@@ -22,6 +24,15 @@ export default function ValkyrieIcon({
     }
     to {
       transform: rotate(360deg);
+    }
+  `;
+
+  const beatAnimation = keyframes`
+    0%, 90% {
+      transform: scale(1);
+    }
+    45% {
+      transform: scale(1.4);
     }
   `;
 
@@ -54,19 +65,33 @@ export default function ValkyrieIcon({
 
   const spinClass = css`
     svg {
-      animation: ${spinAnimation} var(--vi-animation-duration, 2s) infinite
-        linear;
+      animation-name: ${spinAnimation};
+      animation-timing-function: var(--vi-animation-timing-function, linear);
+      animation-duration: var(--vi-animation-duration, 2s);
+      animation-iteration-count: var(--vi-animation-iteration-coun, infinite);
     }
   `;
+
+  const beatClass = css `
+    svg {
+      animation-name: ${beatAnimation};
+      animation-timing-function: var(--vi-animation-timing-function, ease-in-out);
+      animation-duration: var(--vi-animation-duration, 1s);
+      animation-iteration-count: var(--vi-animation-iteration-coun, infinite);
+    }
+  `;
+
+  console.log(beat);
 
   return (
     <span
       {...props}
       className={cx({
         [viClass]: true,
-        [rotateClass]: rotate !== null,
+        [rotateClass]: rotate !== null && rotate !== undefined,
         [flipClass]: !!flip,
-        [spinClass]: spin
+        [spinClass]: spin,
+        [beatClass]: beat
       })}
     >
       {HTMLReactParser(icon.data)}
