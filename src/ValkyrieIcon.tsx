@@ -6,7 +6,7 @@ interface ValkyrieProps {
   icon: IValkyrieIcon;
   rotate?: 0 | 90 | 180 | 270 | false;
   flip?: true | "x" | "y" | false;
-  spin?: boolean;
+  spin?: boolean | "pulse";
   beat?: boolean;
 }
 
@@ -68,20 +68,25 @@ export default function ValkyrieIcon({
       animation-name: ${spinAnimation};
       animation-timing-function: var(--vi-animation-timing-function, linear);
       animation-duration: var(--vi-animation-duration, 2s);
-      animation-iteration-count: var(--vi-animation-iteration-coun, infinite);
+      animation-iteration-count: var(--vi-animation-iteration-count, infinite);
     }
   `;
+
+  const spinPulseClass = css`
+    svg {
+      --vi-animation-timing-function: steps(var(--vi-animation-pulse-steps, 8));
+      --vi-animation-duration: 1s;
+    }
+  `
 
   const beatClass = css `
     svg {
       animation-name: ${beatAnimation};
       animation-timing-function: var(--vi-animation-timing-function, ease-in-out);
       animation-duration: var(--vi-animation-duration, 1s);
-      animation-iteration-count: var(--vi-animation-iteration-coun, infinite);
+      animation-iteration-count: var(--vi-animation-iteration-count, infinite);
     }
   `;
-
-  console.log(beat);
 
   return (
     <span
@@ -90,7 +95,8 @@ export default function ValkyrieIcon({
         [viClass]: true,
         [rotateClass]: rotate !== null && rotate !== undefined,
         [flipClass]: !!flip,
-        [spinClass]: spin,
+        [spinClass]: !!spin,
+        [spinPulseClass]: spin === 'pulse',
         [beatClass]: beat
       })}
     >

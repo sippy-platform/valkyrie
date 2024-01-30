@@ -4,7 +4,7 @@ import { Button, Card, Sheet, Stack, Table, Typography } from '@mui/joy';
 
 import Code from '@/design/components/Code';
 
-import ValkyrieIcon, { viArrowsRotateRight, viHeart, viMessageSmile, viSpinnerThird } from '@sippy-platform/valkyrie';
+import ValkyrieIcon, { viArrowsRotateRight, viHeart, viMessageSmile, viSpinner, viSpinnerThird } from '@sippy-platform/valkyrie';
 
 export default function Usage() {
   const [rotate, setRotate] = useState(false);
@@ -44,6 +44,14 @@ export default function Usage() {
           <Sheet sx={{ p: 1, minWidth: 120, textAlign: 'center', borderRadius: 'sm' }} variant="outlined">
             <Stack spacing={1}>
               <Typography fontSize={32}>
+                <ValkyrieIcon icon={viSpinner} spin="pulse" />
+              </Typography>
+              <Code>spin="pulse"</Code>
+            </Stack>
+          </Sheet>
+          <Sheet sx={{ p: 1, minWidth: 120, textAlign: 'center', borderRadius: 'sm' }} variant="outlined">
+            <Stack spacing={1}>
+              <Typography fontSize={32}>
                 <ValkyrieIcon icon={viSpinnerThird} spin={false} />
               </Typography>
               <Code>spin={`{false}`}</Code>
@@ -55,8 +63,8 @@ export default function Usage() {
           <thead>
             <tr>
               <th style={{ width: '25%' }}>Property name</th>
-              <th style={{ width: '25%' }}>Default</th>
-              <th style={{ width: '50%' }}>Description</th>
+              <th style={{ width: '15%' }}>Default</th>
+              <th style={{ width: '60%' }}>Description</th>
             </tr>
           </thead>
           <tbody>
@@ -86,6 +94,15 @@ export default function Usage() {
                 <Code>infinite</Code>
               </td>
               <td>Number of times the animation is repeated.</td>
+            </tr>
+            <tr>
+              <td>
+                <Code>--vi-animation-pulse-steps</Code>
+              </td>
+              <td>
+                <Code>8</Code>
+              </td>
+              <td>Number of steps when the spin property is set to <Code>pulse</Code>.</td>
             </tr>
           </tbody>
         </Table>
@@ -167,8 +184,8 @@ export default function Usage() {
           <thead>
             <tr>
               <th style={{ width: '25%' }}>Property name</th>
-              <th style={{ width: '25%' }}>Default</th>
-              <th style={{ width: '50%' }}>Description</th>
+              <th style={{ width: '15%' }}>Default</th>
+              <th style={{ width: '60%' }}>Description</th>
             </tr>
           </thead>
           <tbody>
@@ -271,8 +288,8 @@ export default function Usage() {
           <thead>
             <tr>
               <th style={{ width: '25%' }}>Property name</th>
-              <th style={{ width: '25%' }}>Default</th>
-              <th style={{ width: '50%' }}>Description</th>
+              <th style={{ width: '15%' }}>Default</th>
+              <th style={{ width: '60%' }}>Description</th>
             </tr>
           </thead>
           <tbody>
