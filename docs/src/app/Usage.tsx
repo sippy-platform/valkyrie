@@ -183,12 +183,12 @@ export default function Usage() {
             </tr>
             <tr>
               <td>
-                <Code>--vi-transition-easing</Code>
+                <Code>--vi-transition-timing-function</Code>
               </td>
               <td>
                 <Code>ease-in-out</Code>
               </td>
-              <td>The easing function used for the animation.</td>
+              <td>The timing function used for the animation.</td>
             </tr>
           </tbody>
         </Table>

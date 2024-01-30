@@ -52,7 +52,7 @@ export default function ValkyrieIcon({
 
   const rotateClass = css`
     transform: rotate(${rotate}deg);
-    transition: transform var(--vi-transition-duration, .2s) var(--vi-transition-easing, ease-in-out);
+    transition: transform var(--vi-transition-duration, .2s) var(--vi-transition-timing-function, ease-in-out);
   `;
 
   const flipClass = css`
