@@ -73,7 +73,7 @@ export default function Usage() {
                 <Code>--vi-animation-duration</Code>
               </td>
               <td>
-                <Code>2s</Code>
+                <Code>2s</Code>, <Code>1s</Code> for pulse
               </td>
               <td>Time for a full play through of the animation.</td>
             </tr>
@@ -102,7 +102,9 @@ export default function Usage() {
               <td>
                 <Code>8</Code>
               </td>
-              <td>Number of steps when the spin property is set to <Code>pulse</Code>.</td>
+              <td>
+                Number of steps when the spin property is set to <Code>pulse</Code>.
+              </td>
             </tr>
           </tbody>
         </Table>
