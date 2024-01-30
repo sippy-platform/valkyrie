@@ -1,14 +1,19 @@
-import { Card, Sheet, Stack, Typography } from '@mui/joy';
+import { useState } from 'react';
+
+import { Button, Card, Sheet, Stack, Table, Typography } from '@mui/joy';
 
 import Code from '@/design/components/Code';
-import ValkyrieIcon, { viSpinnerThird, viMessageSmile } from '@sippy-platform/valkyrie';
+
+import ValkyrieIcon, { viArrowsRotateRight, viMessageSmile, viSpinnerThird } from '@sippy-platform/valkyrie';
 
 export default function Usage() {
+  const [rotate, setRotate] = useState(false);
+
   return (
     <Stack gap={2}>
       <Typography level="h1">Documentation</Typography>
       <Card sx={{ textAlign: 'initial', contain: 'paint' }}>
-        <Typography level="h3">Install Vaklyrie</Typography>
+        <Typography level="h3">Install Valkyrie</Typography>
         <Typography>
           Run the following command in npm to get started <Code>npm install @sippy-platform/valkyrie@next</Code>.
         </Typography>
@@ -45,6 +50,27 @@ export default function Usage() {
             </Stack>
           </Sheet>
         </Stack>
+
+        <Table variant="outlined">
+          <thead>
+            <tr>
+              <th style={{ width: '25%' }}>Property name</th>
+              <th style={{ width: '25%' }}>Default</th>
+              <th style={{ width: '50%' }}>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <Code>--vi-animation-duration</Code>
+              </td>
+              <td>
+                <Code>2s</Code>
+              </td>
+              <td>Time for a full play through of the animation.</td>
+            </tr>
+          </tbody>
+        </Table>
       </Card>
       <Card>
         <Typography level="h3">Rotation</Typography>
@@ -102,6 +128,52 @@ export default function Usage() {
             </Stack>
           </Sheet>
         </Stack>
+
+        <Typography level="h4">Rotation animation</Typography>
+
+        <Stack direction="row" fontSize={32} spacing={1} alignItems="flex-start">
+          <Sheet sx={{ p: 1, minWidth: 120, textAlign: 'center', borderRadius: 'sm' }} variant="outlined">
+            <Stack spacing={1}>
+              <Typography fontSize={32}>
+                <ValkyrieIcon icon={viMessageSmile} rotate={rotate ? 0 : 180} />
+              </Typography>
+              <Code>rotate={rotate ? 0 : 180}</Code>
+            </Stack>
+          </Sheet>
+          <Button onClick={() => setRotate(!rotate)} startDecorator={<ValkyrieIcon icon={viArrowsRotateRight} />}>
+            Rotate
+          </Button>
+        </Stack>
+
+        <Table variant="outlined">
+          <thead>
+            <tr>
+              <th style={{ width: '25%' }}>Property name</th>
+              <th style={{ width: '25%' }}>Default</th>
+              <th style={{ width: '50%' }}>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <Code>--vi-transition-duration</Code>
+              </td>
+              <td>
+                <Code>0.2s</Code>
+              </td>
+              <td>Time for a full play through of the animation.</td>
+            </tr>
+            <tr>
+              <td>
+                <Code>--vi-transition-easing</Code>
+              </td>
+              <td>
+                <Code>ease-in-out</Code>
+              </td>
+              <td>The easing function used for the animation.</td>
+            </tr>
+          </tbody>
+        </Table>
       </Card>
       <Card>
         <Typography level="h3">Flip</Typography>
