@@ -64,7 +64,7 @@ export default function ValkyrieIcon({
       {...props}
       className={cx({
         [viClass]: true,
-        [rotateClass]: !!rotate,
+        [rotateClass]: rotate !== null,
         [flipClass]: !!flip,
         [spinClass]: spin
       })}
