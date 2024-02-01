@@ -13,11 +13,11 @@ interface ValkyrieProps {
 }
 
 export default function ValkyrieIcon({
-  flip = false,
+  flip = undefined,
   icon,
   rotate = undefined,
-  spin = false,
-  beat = false,
+  spin = undefined,
+  beat = undefined,
   ...props
 }: ValkyrieProps) {
   const spinAnimation = keyframes`
