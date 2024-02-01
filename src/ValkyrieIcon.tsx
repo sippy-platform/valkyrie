@@ -1,6 +1,7 @@
 import { IValkyrieIcon } from ".";
 import HTMLReactParser from "html-react-parser";
 import { cx, css, keyframes } from "@emotion/css";
+import { CSSProperties } from "react";
 
 interface ValkyrieProps {
   icon: IValkyrieIcon;
@@ -8,6 +9,7 @@ interface ValkyrieProps {
   flip?: true | "x" | "y" | false;
   spin?: boolean | "pulse";
   beat?: boolean;
+  style?: CSSProperties;
 }
 
 export default function ValkyrieIcon({
