@@ -55,7 +55,7 @@ export default function Icons() {
           gap: { xs: 1 }
         }}
       >
-        <Box sx={{ position: 'sticky', top: 56, height: 'calc(100vh - 40px - 16px)', overflow: 'auto', py: 1.5 }}>
+        <Box sx={{ position: 'sticky', top: 0, height: 'calc(100vh)', overflow: 'auto', py: 1.5 }}>
           <Typography level="title-md" sx={{ mb: 1.5 }}>
             Categories
           </Typography>
@@ -66,35 +66,42 @@ export default function Icons() {
               '--ListItem-paddingY': 0,
               '--ListItem-radius': '4px',
               '--ListItem-minHeight': '2.25rem',
-              '--ListItem-paddingLeft': '.5rem',
-              '--ListItem-paddingRight': '.5rem',
               '--ListItemDecorator-size': '1.5rem'
             }}
           >
-            {categories.map((_category) => (
-              <ListItem key={_category.slug}>
-                <ListItemButton
-                  onClick={() => {
-                    if (category?.slug === _category.slug) {
-                      setCategory(null);
-                    } else {
-                      setCategory(_category);
-                    }
+            {categories.map((_category) => {
+              const categoryIcons = searchableList.filter((icon) => icon.categories.includes(_category.slug));
 
-                    setPage(0);
-                  }}
-                  selected={category?.slug === _category.slug}
-                  color="primary"
-                >
-                  <ListItemDecorator>
-                    <ValkyrieIcon icon={_category.icon} />
-                  </ListItemDecorator>
-                  <ListItemContent>
-                    <Typography noWrap>{_category.title}</Typography>
-                  </ListItemContent>
-                </ListItemButton>
-              </ListItem>
-            ))}
+              if (categoryIcons.length === 0) {
+                return;
+              }
+
+              return (
+                <ListItem key={_category.slug}>
+                  <ListItemButton
+                    onClick={() => {
+                      if (category?.slug === _category.slug) {
+                        setCategory(null);
+                      } else {
+                        setCategory(_category);
+                      }
+
+                      setPage(0);
+                    }}
+                    selected={category?.slug === _category.slug}
+                    color="primary"
+                  >
+                    <ListItemDecorator>
+                      <ValkyrieIcon icon={_category.icon} />
+                    </ListItemDecorator>
+                    <ListItemContent>
+                      <Typography noWrap>{_category.title}</Typography>
+                    </ListItemContent>
+                    <ListItemContent sx={{ fontFamily: 'display', textAlign: 'right' }}>{categoryIcons.length}</ListItemContent>
+                  </ListItemButton>
+                </ListItem>
+              );
+            })}
           </List>
         </Box>
         <div>

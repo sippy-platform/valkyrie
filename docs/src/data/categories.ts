@@ -109,11 +109,6 @@ const categories = [
     icon: viFiles
   },
   {
-    slug: "film",
-    title: "Film",
-    icon: viVideo
-  },
-  {
     slug: "gaming",
     title: "Gaming",
     icon: viPuzzlePiece
@@ -127,11 +122,6 @@ const categories = [
     slug: "human",
     title: "Human",
     icon: viEye
-  },
-  {
-    slug: "letters-numbers",
-    title: "Letters & numbers",
-    icon: viRectangleP
   },
   {
     slug: "logistics",
@@ -167,11 +157,6 @@ const categories = [
     slug: "people",
     title: "People",
     icon: viPerson
-  },
-  {
-    slug: "play",
-    title: "Play & sport",
-    icon: viPlay
   },
   {
     slug: "punctuation-symbols",
