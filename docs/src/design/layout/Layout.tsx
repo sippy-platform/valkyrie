@@ -16,7 +16,7 @@ import {
   useColorScheme
 } from '@mui/joy';
 
-import ValkyrieIcon, { viCircleHalfInner, viGithub, viMoon, viSun, viValkyrieSword } from '@sippy-platform/valkyrie';
+import ValkyrieIcon, { viCircleHalfInner, viGithub, viMoon, viSun } from '@sippy-platform/valkyrie';
 
 export default function Layout() {
   const navigate = useNavigate();
