@@ -1,16 +1,18 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
 import { Box, Button, Card, Chip, IconButton, Input, Stack, Typography } from '@mui/joy';
 
-import * as Icons from '@sippy-platform/valkyrie';
+import icons from '@/data/icons';
+import { IIcon, ILibraryIcon } from '@/types';
+
 import ValkyrieIcon, { viArrowLeft } from '@sippy-platform/valkyrie';
 
 export default function Icon() {
   const navigate = useNavigate();
   const { slug } = useParams();
 
-  const [icon, setIcon] = useState({});
+  const [icon, setIcon] = useState<IIcon | null>(null);
 
   useEffect(() => {
     fetch(`/data/icons/${slug}.json`)
@@ -18,12 +20,16 @@ export default function Icon() {
       .then((data) => setIcon(data));
   }, [slug]);
 
-  const reactImport = `vi${slug
-    .split('-')
-    .map((word) => {
-      return word[0].toUpperCase() + word.substring(1);
-    })
-    .join('')}`;
+  const reactImport = slug
+    ? `vi${slug
+        .split('-')
+        .map((word) => {
+          return word[0].toUpperCase() + word.substring(1);
+        })
+        .join('')}`
+    : '';
+
+  const viIcon: ILibraryIcon = useMemo(() => icons.find((icon) => icon.component === reactImport)!, [reactImport]);
 
   return (
     <Stack spacing={2}>
@@ -32,18 +38,18 @@ export default function Icon() {
           <IconButton variant="outlined" size="sm" onClick={() => navigate('/')}>
             <ValkyrieIcon icon={viArrowLeft} />
           </IconButton>
-          <Typography level="h2">{icon.title}</Typography>
+          <Typography level="h2">{icon?.title}</Typography>
         </Stack>
       </Stack>
 
-      {(icon.categories || icon.tags) && (
+      {(icon?.categories || icon?.tags) && (
         <Box sx={{ display: 'flex', gap: 0.5, alignItems: 'center' }}>
-          {icon.categories?.map((cat) => (
+          {icon?.categories?.map((cat) => (
             <Chip variant="solid" color="primary" size="sm" key={cat}>
               {cat}
             </Chip>
           ))}
-          {icon.tags?.map((tag) => (
+          {icon?.tags?.map((tag) => (
             <Chip key={tag} variant="outlined" size="sm">
               {tag}
             </Chip>
@@ -67,22 +73,22 @@ export default function Icon() {
             height: '20rem'
           }}
         >
-          <ValkyrieIcon icon={Icons[reactImport]} />
+          <ValkyrieIcon icon={viIcon?.icon} />
         </Card>
         <Card variant="outlined" sx={{ flexGrow: 1 }}>
           <Typography level="h3" sx={{ mb: 3 }}>
-            <ValkyrieIcon icon={Icons[reactImport]} /> Heading icon
+            <ValkyrieIcon icon={viIcon?.icon} /> Heading icon
           </Typography>
           <Typography level="body-md" sx={{ mb: 3 }}>
-            <ValkyrieIcon icon={Icons[reactImport]} /> Inline icon
+            <ValkyrieIcon icon={viIcon?.icon} /> Inline icon
           </Typography>
           <Box sx={{ mb: 3, display: 'flex', gap: 1 }}>
-            <Button startDecorator={<ValkyrieIcon icon={Icons[reactImport]} />}>Button icon</Button>
+            <Button startDecorator={<ValkyrieIcon icon={viIcon?.icon} />}>Button icon</Button>
             <IconButton color="primary" variant="soft">
-              <ValkyrieIcon icon={Icons[reactImport]} />
+              <ValkyrieIcon icon={viIcon?.icon} />
             </IconButton>
           </Box>
-          <Input startDecorator={<ValkyrieIcon icon={Icons[reactImport]} />} placeholder={icon.title} />
+          <Input startDecorator={<ValkyrieIcon icon={viIcon?.icon} />} placeholder={icon?.title} />
         </Card>
       </Stack>
       <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
@@ -104,12 +110,12 @@ export default function Icon() {
         </Box>
       </Stack>
       <Stack direction="row" spacing={3} alignItems="center" justifyContent="center">
-        {icon.created && (
+        {icon?.created && (
           <Stack direction="row" spacing={1} alignItems="baseline">
             <Typography color="neutral">Created</Typography> <Chip size="sm">{icon.created}</Chip>
           </Stack>
         )}
-        {icon.updated && (
+        {icon?.updated && (
           <Stack direction="row" spacing={1} alignItems="baseline">
             <Typography color="neutral">Last updated</Typography> <Chip size="sm">{icon.updated}</Chip>
           </Stack>
