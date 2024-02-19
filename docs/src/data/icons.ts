@@ -60,7 +60,7 @@ const icons = [
   },
   {
     component: 'viArrowDownFromCloud',
-    categories: ["arrows","connectivity"],
+    categories: ["arrows","communication"],
     tags: ["direction","download","cloud-download"],
     slug: 'arrow-down-from-cloud',
     icon: viArrowDownFromCloud
@@ -138,7 +138,7 @@ const icons = [
   {
     component: 'viArrowRightFromFile',
     categories: ["files","business","arrows"],
-    tags: ["export"],
+    tags: ["import"],
     slug: 'arrow-right-from-file',
     icon: viArrowRightFromFile
   },
@@ -200,7 +200,7 @@ const icons = [
   },
   {
     component: 'viArrowUpToCloud',
-    categories: ["arrows","connectivity"],
+    categories: ["arrows","communication"],
     tags: ["direction","upload","cloud-upload"],
     slug: 'arrow-up-to-cloud',
     icon: viArrowUpToCloud
@@ -235,14 +235,14 @@ const icons = [
   },
   {
     component: 'viAsterisk',
-    categories: ["punctuation","spinners"],
+    categories: ["punctuation-symbols","spinners"],
     tags: [],
     slug: 'asterisk',
     icon: viAsterisk
   },
   {
     component: 'viAt',
-    categories: ["communication","punctuation"],
+    categories: ["communication","punctuation-symbols"],
     tags: ["email"],
     slug: 'at',
     icon: viAt
@@ -291,7 +291,7 @@ const icons = [
   },
   {
     component: 'viBracketsCurly',
-    categories: ["coding"],
+    categories: ["coding","punctuation-symbols"],
     tags: [],
     slug: 'brackets-curly',
     icon: viBracketsCurly
@@ -312,7 +312,7 @@ const icons = [
   },
   {
     component: 'viBuilding',
-    categories: ["buildings","business","maps"],
+    categories: ["business","maps"],
     tags: ["company","enterprise","organization","office"],
     slug: 'building',
     icon: viBuilding
@@ -396,7 +396,7 @@ const icons = [
   },
   {
     component: 'viCheck',
-    categories: ["alerts"],
+    categories: ["alerts","punctuation-symbols"],
     tags: ["checkmark","confirm","done"],
     slug: 'check',
     icon: viCheck
@@ -452,7 +452,7 @@ const icons = [
   },
   {
     component: 'viCircleExclamation',
-    categories: ["alerts","punctuation"],
+    categories: ["alerts","punctuation-symbols"],
     tags: ["warning","danger"],
     slug: 'circle-exclamation',
     icon: viCircleExclamation
@@ -494,7 +494,7 @@ const icons = [
   },
   {
     component: 'viCircleQuestion',
-    categories: ["accessibility","maps","alerts","punctuation"],
+    categories: ["accessibility","maps","alerts","punctuation-symbols"],
     tags: ["information","help"],
     slug: 'circle-question',
     icon: viCircleQuestion
@@ -508,7 +508,7 @@ const icons = [
   },
   {
     component: 'viCity',
-    categories: ["buildings","business","maps"],
+    categories: ["business","maps"],
     tags: [],
     slug: 'city',
     icon: viCity
@@ -530,7 +530,7 @@ const icons = [
   {
     component: 'viCode',
     categories: ["coding","editor"],
-    tags: [],
+    tags: ["different","unequal"],
     slug: 'code',
     icon: viCode
   },
@@ -557,7 +557,7 @@ const icons = [
   },
   {
     component: 'viCompass',
-    categories: ["maps","camping","spinners"],
+    categories: ["maps","nature","spinners"],
     tags: ["location"],
     slug: 'compass',
     icon: viCompass
@@ -571,7 +571,7 @@ const icons = [
   },
   {
     component: 'viCopy',
-    categories: ["design","files"],
+    categories: ["business","design","files"],
     tags: [],
     slug: 'copy',
     icon: viCopy
@@ -641,21 +641,21 @@ const icons = [
   },
   {
     component: 'viDoor',
-    categories: ["buildings","security"],
+    categories: ["maps","security"],
     tags: [],
     slug: 'door',
     icon: viDoor
   },
   {
     component: 'viEarth',
-    categories: ["maps"],
+    categories: ["science","maps"],
     tags: ["europe"],
     slug: 'earth',
     icon: viEarth
   },
   {
     component: 'viEclipse',
-    categories: ["astronomy","weather"],
+    categories: ["science","weather"],
     tags: ["sun","moon"],
     slug: 'eclipse',
     icon: viEclipse
@@ -683,7 +683,7 @@ const icons = [
   },
   {
     component: 'viEthernet',
-    categories: ["connectivity","devices"],
+    categories: ["devices"],
     tags: ["network","internet"],
     slug: 'ethernet',
     icon: viEthernet
@@ -788,28 +788,28 @@ const icons = [
   },
   {
     component: 'viFilterPlus',
-    categories: ["coding","editor"],
+    categories: ["coding"],
     tags: ["sort"],
     slug: 'filter-plus',
     icon: viFilterPlus
   },
   {
     component: 'viFilterXmark',
-    categories: ["coding","editor"],
+    categories: ["coding"],
     tags: ["sort"],
     slug: 'filter-xmark',
     icon: viFilterXmark
   },
   {
     component: 'viFilter',
-    categories: ["coding","editor"],
+    categories: ["coding"],
     tags: ["sort"],
     slug: 'filter',
     icon: viFilter
   },
   {
     component: 'viFingerprint',
-    categories: ["accessibility","security"],
+    categories: ["accessibility","human","security"],
     tags: ["biometrics"],
     slug: 'fingerprint',
     icon: viFingerprint
@@ -872,14 +872,14 @@ const icons = [
   },
   {
     component: 'viGear',
-    categories: ["coding","spinners","tools"],
+    categories: ["coding","spinners"],
     tags: ["settings","options","preferences","tools"],
     slug: 'gear',
     icon: viGear
   },
   {
     component: 'viGift',
-    categories: ["holidays","maps"],
+    categories: ["maps"],
     tags: ["present"],
     slug: 'gift',
     icon: viGift
@@ -963,42 +963,42 @@ const icons = [
   },
   {
     component: 'viHeartCrack',
-    categories: ["health","charity","shapes"],
+    categories: ["health","shapes"],
     tags: ["love","favorite","heartbreak"],
     slug: 'heart-crack',
     icon: viHeartCrack
   },
   {
     component: 'viHeartHalf',
-    categories: ["health","charity","shapes"],
+    categories: ["health","shapes"],
     tags: ["love","favorite"],
     slug: 'heart-half',
     icon: viHeartHalf
   },
   {
     component: 'viHeart',
-    categories: ["health","charity","shapes"],
+    categories: ["health","human","shapes"],
     tags: ["love","favorite"],
     slug: 'heart',
     icon: viHeart
   },
   {
     component: 'viHouse',
-    categories: ["buildings","maps"],
+    categories: ["maps"],
     tags: ["home"],
     slug: 'house',
     icon: viHouse
   },
   {
     component: 'viIdCard',
-    categories: ["security","people"],
+    categories: ["business","security","people"],
     tags: ["identification"],
     slug: 'id-card',
     icon: viIdCard
   },
   {
     component: 'viImage',
-    categories: ["social","maps"],
+    categories: ["social","files"],
     tags: ["picture","photo"],
     slug: 'image',
     icon: viImage
@@ -1208,14 +1208,14 @@ const icons = [
   },
   {
     component: 'viMin',
-    categories: ["editor","maps","mathematics","punctuation","alerts"],
+    categories: ["editor","maps","mathematics","punctuation-symbols","alerts"],
     tags: ["minus","delete"],
     slug: 'min',
     icon: viMin
   },
   {
     component: 'viMoon',
-    categories: ["astronomy","weather"],
+    categories: ["science","weather"],
     tags: ["clear sky"],
     slug: 'moon',
     icon: viMoon
@@ -1236,7 +1236,7 @@ const icons = [
   },
   {
     component: 'viNetwork',
-    categories: ["charts","science","communication","connectivity"],
+    categories: ["charts","science","communication"],
     tags: [],
     slug: 'network',
     icon: viNetwork
@@ -1271,7 +1271,7 @@ const icons = [
   },
   {
     component: 'viParachuteBox',
-    categories: ["charity"],
+    categories: ["logistics"],
     tags: [],
     slug: 'parachute-box',
     icon: viParachuteBox
@@ -1432,7 +1432,7 @@ const icons = [
   },
   {
     component: 'viPhoneVolume',
-    categories: ["business","communication"],
+    categories: ["accessibility","business","communication"],
     tags: ["telephone","call"],
     slug: 'phone-volume',
     icon: viPhoneVolume
@@ -1460,7 +1460,7 @@ const icons = [
   },
   {
     component: 'viPlus',
-    categories: ["editor","maps","mathematics","health","punctuation","alerts"],
+    categories: ["editor","maps","mathematics","health","punctuation-symbols","alerts"],
     tags: ["add","create"],
     slug: 'plus',
     icon: viPlus
@@ -1495,7 +1495,7 @@ const icons = [
   },
   {
     component: 'viQuote',
-    categories: ["editor"],
+    categories: ["editor","punctuation-symbols"],
     tags: [],
     slug: 'quote',
     icon: viQuote
@@ -1663,7 +1663,7 @@ const icons = [
   },
   {
     component: 'viStar',
-    categories: ["astronomy","shapes","social"],
+    categories: ["science","shapes","social"],
     tags: ["favorite"],
     slug: 'star',
     icon: viStar
@@ -1677,7 +1677,7 @@ const icons = [
   },
   {
     component: 'viStore',
-    categories: ["buildings","maps","business"],
+    categories: ["business","maps"],
     tags: ["shop"],
     slug: 'store',
     icon: viStore
@@ -1691,7 +1691,7 @@ const icons = [
   },
   {
     component: 'viSun',
-    categories: ["astronomy","weather"],
+    categories: ["science","weather"],
     tags: ["clear sky"],
     slug: 'sun',
     icon: viSun
@@ -1803,7 +1803,7 @@ const icons = [
   },
   {
     component: 'viTriangleExclamation',
-    categories: ["alerts","punctuation"],
+    categories: ["alerts","punctuation-symbols"],
     tags: ["warning","danger"],
     slug: 'triangle-exclamation',
     icon: viTriangleExclamation
@@ -1831,7 +1831,7 @@ const icons = [
   },
   {
     component: 'viVideo',
-    categories: ["communication","film","social","devices"],
+    categories: ["communication","media","social","devices"],
     tags: ["record"],
     slug: 'video',
     icon: viVideo
@@ -1915,7 +1915,7 @@ const icons = [
   },
   {
     component: 'viXmark',
-    categories: ["editor","mathematics"],
+    categories: ["editor","mathematics","punctuation-symbols"],
     tags: ["close","cancel"],
     slug: 'xmark',
     icon: viXmark

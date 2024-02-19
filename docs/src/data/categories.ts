@@ -1,47 +1,41 @@
 import {
-  viValkyrieSword,
   viArrowUp,
   viAsterisk,
   viBold,
   viBook,
+  viBoxOpenFull,
   viChartPie,
+  viCircleCheck,
   viCircleDashed,
   viClock,
   viCode,
+  viCompass,
   viDevices,
   viEarth,
-  viEthernet,
   viEuro,
   viEye,
   viFax,
   viFiles,
-  viGear,
-  viGift,
+  viFlask,
+  viGauge,
   viHeart,
-  viHouse,
   viLightbulb,
   viLock,
   viMessageText,
-  viMoon,
-  viNetwork,
   viPen,
   viPerson,
   viPlay,
   viPlus,
+  viPuzzlePiece,
   viRectangleP,
   viShare,
   viSpinner,
   viSun,
   viSwatchbook,
   viToggleOn,
-  viVideo,
-  viBoxOpenFull,
-  viCompass,
-  viGauge,
-  viPuzzlePiece,
-  viBug,
-  viCircleCheck
-} from '@sippy-platform/valkyrie';
+  viValkyrieSword,
+  viVideo
+} from "@sippy-platform/valkyrie";
 
 const categories = [
   {
@@ -55,19 +49,9 @@ const categories = [
     icon: viCircleCheck
   },
   {
-    slug: "alphabet",
-    title: "Alphabet",
-    icon: viRectangleP
-  },
-  {
     slug: "arrows",
     title: "Arrows",
     icon: viArrowUp
-  },
-  {
-    slug: "astronomy",
-    title: "Astronomy",
-    icon: viMoon
   },
   {
     slug: "brands",
@@ -75,24 +59,9 @@ const categories = [
     icon: viValkyrieSword
   },
   {
-    slug: "buildings",
-    title: "Buildings",
-    icon: viHouse
-  },
-  {
     slug: "business",
     title: "Business",
     icon: viFax
-  },
-  {
-    slug: "camping",
-    title: "Camping",
-    icon: viCompass
-  },
-  {
-    slug: "charity",
-    title: "Charity",
-    icon: viHeart
   },
   {
     slug: "charts",
@@ -108,11 +77,6 @@ const categories = [
     slug: "communication",
     title: "Communication",
     icon: viMessageText
-  },
-  {
-    slug: "connectivity",
-    title: "Connectivity",
-    icon: viEthernet
   },
   {
     slug: "design",
@@ -141,7 +105,7 @@ const categories = [
   },
   {
     slug: "files",
-    title: "Files",
+    title: "Files & folders",
     icon: viFiles
   },
   {
@@ -160,14 +124,14 @@ const categories = [
     icon: viHeart
   },
   {
-    slug: "holidays",
-    title: "Holidays",
-    icon: viGift
-  },
-  {
     slug: "human",
     title: "Human",
     icon: viEye
+  },
+  {
+    slug: "letters-numbers",
+    title: "Letters & numbers",
+    icon: viRectangleP
   },
   {
     slug: "logistics",
@@ -176,7 +140,7 @@ const categories = [
   },
   {
     slug: "maps",
-    title: "Maps",
+    title: "Maps & buildings",
     icon: viEarth
   },
   {
@@ -197,7 +161,7 @@ const categories = [
   {
     slug: "nature",
     title: "Nature & outdoors",
-    icon: viBug
+    icon: viCompass
   },
   {
     slug: "people",
@@ -205,14 +169,19 @@ const categories = [
     icon: viPerson
   },
   {
-    slug: "punctuation",
-    title: "Punctuation",
+    slug: "play",
+    title: "Play & sport",
+    icon: viPlay
+  },
+  {
+    slug: "punctuation-symbols",
+    title: "Punctuation & symbols",
     icon: viAsterisk
   },
   {
     slug: "science",
-    title: "Science",
-    icon: viNetwork
+    title: "Science & astronomy",
+    icon: viFlask
   },
   {
     slug: "security",
@@ -248,11 +217,6 @@ const categories = [
     slug: "toggle",
     title: "Toggle",
     icon: viToggleOn
-  },
-  {
-    slug: "tools",
-    title: "Tools",
-    icon: viGear
   },
   {
     slug: "transportation",
