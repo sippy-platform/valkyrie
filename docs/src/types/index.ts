@@ -1,4 +1,4 @@
-import { IValkyrieIcon } from "@sippy-platform/valkyrie";
+import { IValkyrieIcon } from '@sippy-platform/valkyrie';
 
 export interface IIcon {
   title: string;

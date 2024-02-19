@@ -1,7 +1,7 @@
 import { IValkyrieIcon } from ".";
 import HTMLReactParser from "html-react-parser";
 import { cx, css, keyframes } from "@emotion/css";
-import { CSSProperties } from "react";
+import { ComponentPropsWithoutRef } from "react";
 
 interface ValkyrieProps {
   icon: IValkyrieIcon;
@@ -9,7 +9,6 @@ interface ValkyrieProps {
   flip?: true | "x" | "y" | false;
   spin?: boolean | "pulse";
   beat?: boolean;
-  style?: CSSProperties;
 }
 
 export default function ValkyrieIcon({
@@ -19,7 +18,7 @@ export default function ValkyrieIcon({
   spin = undefined,
   beat = undefined,
   ...props
-}: ValkyrieProps) {
+}: ValkyrieProps & ComponentPropsWithoutRef<"span">) {
   const spinAnimation = keyframes`
     from {
       transform: rotate(0deg);
@@ -62,8 +61,8 @@ export default function ValkyrieIcon({
     transform: ${flip === "x"
       ? "scaleX(-1)"
       : flip === "y"
-      ? "scaleY(-1)"
-      : "scale(-1)"};
+        ? "scaleY(-1)"
+        : "scale(-1)"};
   `;
 
   const spinClass = css`
@@ -93,7 +92,7 @@ export default function ValkyrieIcon({
         [flipClass]: !!flip,
         [spinClass]: !!spin,
         [spinPulseClass]: spin === "pulse",
-        [beatClass]: beat
+        [beatClass]: beat,
       })}
       {...props}
     >
