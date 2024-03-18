@@ -853,6 +853,13 @@ export const viFloppyDisk: {
   name: 'floppy_disk',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M1 3.75A2.75 2.75 0 0 1 3.75 1h6.422c.729 0 1.428.29 1.944.805l2.079 2.079A2.75 2.75 0 0 1 15 5.828v6.422A2.75 2.75 0 0 1 12.25 15h-8.5A2.75 2.75 0 0 1 1 12.25zM3.75 2.5c-.69 0-1.25.56-1.25 1.25v8.5c0 .69.56 1.25 1.25 1.25H4v-3.25c0-.966.784-1.75 1.75-1.75h4.5c.966 0 1.75.784 1.75 1.75v3.25h.25c.69 0 1.25-.56 1.25-1.25V5.828a1.25 1.25 0 0 0-.366-.883l-2.078-2.079a1.25 1.25 0 0 0-.556-.322V3.75A1.75 1.75 0 0 1 8.75 5.5h-3A1.75 1.75 0 0 1 4 3.75V2.5zm1.75 0v1.25c0 .138.112.25.25.25h3A.25.25 0 0 0 9 3.75V2.5zm5 11v-3.25a.25.25 0 0 0-.25-.25h-4.5a.25.25 0 0 0-.25.25v3.25z"/></svg>`,
 };
+export const viFolderImage: {
+  name: 'folder_image';
+  data: string;
+} = {
+  name: 'folder_image',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M11.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/><path d="M0 4.25A2.75 2.75 0 0 1 2.75 1.5h2.72c.95 0 1.777.647 2.008 1.568a.57.57 0 0 0 .553.432h5.219A2.75 2.75 0 0 1 16 6.25v5.5a2.75 2.75 0 0 1-2.75 2.75H2.75A2.75 2.75 0 0 1 0 11.75zM2.75 3c-.69 0-1.25.56-1.25 1.25v6.69l2.763-2.763a1.75 1.75 0 0 1 2.474 0l4.793 4.793-.03.03h1.75c.69 0 1.25-.56 1.25-1.25v-5.5c0-.69-.56-1.25-1.25-1.25H8.03a2.07 2.07 0 0 1-2.008-1.568A.57.57 0 0 0 5.47 3zm0 10h6.69L5.676 9.237a.25.25 0 0 0-.354 0l-3.426 3.427c.223.208.523.336.853.336"/></svg>`,
+};
 export const viFolder: {
   name: 'folder';
   data: string;
@@ -914,14 +921,14 @@ export const viGripDotsV: {
   data: string;
 } = {
   name: 'grip_dots_v',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M6 13a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-6a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-6a1 1 0 1 1 0 2 1 1 0 0 1 0-2m4 12a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-6a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-6a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg>`,
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M6 13a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2m4 12a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg>`,
 };
 export const viGripDots: {
   name: 'grip_dots';
   data: string;
 } = {
   name: 'grip_dots',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M3 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m6 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m6 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M3 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0m6 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m6 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>`,
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M3 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M3 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>`,
 };
 export const viGripLines: {
   name: 'grip_lines';
@@ -2061,6 +2068,7 @@ export type Valkyrie =
   | 'flag'
   | 'flask'
   | 'floppy_disk'
+  | 'folder_image'
   | 'folder'
   | 'forward'
   | 'gauge'
@@ -2345,6 +2353,7 @@ export const valkyrieSet = [
   viFlag,
   viFlask,
   viFloppyDisk,
+  viFolderImage,
   viFolder,
   viForward,
   viGauge,
