@@ -272,6 +272,13 @@ export const viBars: {
   name: 'bars',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75M1 8a.75.75 0 0 1 .75-.75h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 8m0 5.25a.75.75 0 0 1 .75-.75h12.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1-.75-.75"/></svg>`,
 };
+export const viBel: {
+  name: 'bel';
+  data: string;
+} = {
+  name: 'bel',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M1.723 13.5a1 1 0 0 1-.868-1.496l.486-.851A5 5 0 0 0 2 8.673V6a6 6 0 1 1 12 0v2.672a5 5 0 0 0 .659 2.48l.486.852a1 1 0 0 1-.868 1.496H10.5a2.5 2.5 0 0 1-5 0zM7 13.5a1 1 0 1 0 2 0zm6.356-1.603a6.5 6.5 0 0 1-.856-3.225V6a4.5 4.5 0 1 0-9 0v2.672a6.5 6.5 0 0 1-.856 3.225l-.06.103h10.831z"/></svg>`,
+};
 export const viBlf: {
   name: 'blf';
   data: string;
@@ -2013,6 +2020,7 @@ export type Valkyrie =
   | 'backward'
   | 'bars_uneven'
   | 'bars'
+  | 'bel'
   | 'blf'
   | 'bold'
   | 'book'
@@ -2302,6 +2310,7 @@ export const valkyrieSet = [
   viBackward,
   viBarsUneven,
   viBars,
+  viBel,
   viBlf,
   viBold,
   viBook,
