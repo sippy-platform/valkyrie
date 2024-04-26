@@ -263,7 +263,7 @@ export const viBarsUneven: {
   data: string;
 } = {
   name: 'bars_uneven',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path stroke="#000" stroke-linecap="round" stroke-width="1.5" d="M1.75 8h6.5m-6.5-5.25h12.5m-12.5 10.5h9.5"/></svg>`,
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 2.75A.75.75 0 0 1 1.75 2h12.5a.75.75 0 0 1 0 1.5H1.75A.75.75 0 0 1 1 2.75M1 8a.75.75 0 0 1 .75-.75h6.5a.75.75 0 0 1 0 1.5h-6.5A.75.75 0 0 1 1 8m0 5.25a.75.75 0 0 1 .75-.75h9.5a.75.75 0 0 1 0 1.5h-9.5a.75.75 0 0 1-.75-.75"/></svg>`,
 };
 export const viBars: {
   name: 'bars';
