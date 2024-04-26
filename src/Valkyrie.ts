@@ -258,6 +258,13 @@ export const viBackward: {
   name: 'backward',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M7.77 14.826A.75.75 0 0 0 9 14.25V1.75a.75.75 0 0 0-1.23-.576l-7.5 6.25a.75.75 0 0 0 0 1.152zM1.922 8 7.5 3.351v9.298zm12.848 6.826L10 10.851V8.9l4.5 3.75v-9.3L10 7.101V5.15l4.77-3.975A.75.75 0 0 1 16 1.75v12.5a.75.75 0 0 1-1.23.576"/></svg>`,
 };
+export const viBarsUneven: {
+  name: 'bars_uneven';
+  data: string;
+} = {
+  name: 'bars_uneven',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path stroke="#000" stroke-linecap="round" stroke-width="1.5" d="M1.75 8h6.5m-6.5-5.25h12.5m-12.5 10.5h9.5"/></svg>`,
+};
 export const viBars: {
   name: 'bars';
   data: string;
@@ -1042,6 +1049,27 @@ export const viKey: {
   name: 'key',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M11.5 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/><path d="M10.5 0a5.5 5.5 0 0 0-5.431 6.37l-4.85 4.85a.75.75 0 0 0-.219.53v3.5c0 .414.336.75.75.75h3.5a.75.75 0 0 0 .75-.75V14h1.25a.75.75 0 0 0 .75-.75V12h1.25a.75.75 0 0 0 .53-.22l.85-.849q.425.069.87.069a5.5 5.5 0 1 0 0-11m-4 5.5a4 4 0 1 1 3.058 3.889.75.75 0 0 0-.706.198l-.913.913H6.25a.75.75 0 0 0-.75.75v1.25H4.25a.75.75 0 0 0-.75.75v1.25h-2v-2.44l4.913-4.912a.75.75 0 0 0 .198-.706A4 4 0 0 1 6.5 5.5"/></svg>`,
 };
+export const viKeyboardBrightnessHigh: {
+  name: 'keyboard_brightness_high';
+  data: string;
+} = {
+  name: 'keyboard_brightness_high',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M8.75 5a.75.75 0 0 0-1.5 0v2a.75.75 0 0 0 1.5 0zM3.404 6.593a.75.75 0 0 0-1.06 1.06l1.413 1.415a.75.75 0 0 0 1.061-1.06zM0 12.25a.75.75 0 0 1 .75-.75h2a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1-.75-.75m12.5 0a.75.75 0 0 1 .75-.75h2a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1-.75-.75m1.157-4.596a.75.75 0 0 0-1.06-1.06l-1.415 1.413a.75.75 0 0 0 1.06 1.061zM5.25 11.5a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5z"/></svg>`,
+};
+export const viKeyboardBrightnessLow: {
+  name: 'keyboard_brightness_low';
+  data: string;
+} = {
+  name: 'keyboard_brightness_low',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M8 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-4.243.343a1 1 0 1 1-1.414 1.414 1 1 0 0 1 1.414-1.414M1 11a1 1 0 1 1 0 2 1 1 0 0 1 0-2m15 1a1 1 0 1 0-2 0 1 1 0 0 0 2 0m-2.343-4.243a1 1 0 1 1-1.414-1.414 1 1 0 0 1 1.414 1.414M5.25 11.5a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5z"/></svg>`,
+};
+export const viKeyboard: {
+  name: 'keyboard';
+  data: string;
+} = {
+  name: 'keyboard',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M3.75 5.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0M5 6.5A.75.75 0 1 0 5 5a.75.75 0 0 0 0 1.5m2.75-.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0M9 6.5A.75.75 0 1 0 9 5a.75.75 0 0 0 0 1.5m2.75-.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0M13 6.5A.75.75 0 1 0 13 5a.75.75 0 0 0 0 1.5M4.75 7.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0M6 8.5A.75.75 0 1 0 6 7a.75.75 0 0 0 0 1.5m2.75-.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0M10 8.5A.75.75 0 1 0 10 7a.75.75 0 0 0 0 1.5m2.75-.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0M5.25 9.5a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5z"/><path d="M0 5.25A2.75 2.75 0 0 1 2.75 2.5h10.5A2.75 2.75 0 0 1 16 5.25v5.5a2.75 2.75 0 0 1-2.75 2.75H2.75A2.75 2.75 0 0 1 0 10.75zM2.75 4c-.69 0-1.25.56-1.25 1.25v5.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-5.5c0-.69-.56-1.25-1.25-1.25z"/></svg>`,
+};
 export const viLaptop: {
   name: 'laptop';
   data: string;
@@ -1187,7 +1215,7 @@ export const viMagnifyingGlass: {
   data: string;
 } = {
   name: 'magnifying_glass',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M15 6.5a5.5 5.5 0 0 1-8.823 4.383L2.28 14.78a.75.75 0 0 1-1.06-1.06l3.897-3.897A5.5 5.5 0 1 1 15 6.5m-1.5 0a4 4 0 1 0-8 0 4 4 0 0 0 8 0"/></svg>`,
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M15 7a6 6 0 0 1-9.68 4.74l-3.04 3.04a.75.75 0 0 1-1.06-1.06l3.04-3.04A6 6 0 1 1 15 7m-1.5 0a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0"/></svg>`,
 };
 export const viMegaphone: {
   name: 'megaphone';
@@ -1983,6 +2011,7 @@ export type Valkyrie =
   | 'asterisk'
   | 'at'
   | 'backward'
+  | 'bars_uneven'
   | 'bars'
   | 'blf'
   | 'bold'
@@ -2095,6 +2124,9 @@ export type Valkyrie =
   | 'image'
   | 'italic'
   | 'key'
+  | 'keyboard_brightness_high'
+  | 'keyboard_brightness_low'
+  | 'keyboard'
   | 'laptop'
   | 'layers_plus'
   | 'layers'
@@ -2268,6 +2300,7 @@ export const valkyrieSet = [
   viAsterisk,
   viAt,
   viBackward,
+  viBarsUneven,
   viBars,
   viBlf,
   viBold,
@@ -2380,6 +2413,9 @@ export const valkyrieSet = [
   viImage,
   viItalic,
   viKey,
+  viKeyboardBrightnessHigh,
+  viKeyboardBrightnessLow,
+  viKeyboard,
   viLaptop,
   viLayersPlus,
   viLayers,
