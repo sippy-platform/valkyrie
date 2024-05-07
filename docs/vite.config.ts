@@ -20,5 +20,6 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src')
     }
   },
+  base: '/valkyrie/',
   envPrefix: 'VALKYRIE_'
 });

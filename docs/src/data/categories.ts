@@ -1,16 +1,16 @@
 import {
   viArrowUp,
   viAsterisk,
+  viBel,
   viBold,
   viBook,
   viBoxOpenFull,
+  viBug,
   viChartPie,
-  viCircleCheck,
-  viCircleDashed,
   viClock,
   viCode,
-  viCompass,
   viDevices,
+  viDice,
   viEarth,
   viEuro,
   viEye,
@@ -22,13 +22,13 @@ import {
   viLightbulb,
   viLock,
   viMessageText,
+  viParachuteBox,
   viPen,
   viPerson,
   viPlay,
   viPlus,
-  viPuzzlePiece,
-  viShare,
   viSpinner,
+  viStar,
   viSun,
   viSwatchbook,
   viToggleOn,
@@ -44,7 +44,7 @@ const categories = [
   {
     slug: 'alerts',
     title: 'Alerts',
-    icon: viCircleCheck
+    icon: viBel
   },
   {
     slug: 'arrows',
@@ -109,7 +109,7 @@ const categories = [
   {
     slug: 'gaming',
     title: 'Gaming',
-    icon: viPuzzlePiece
+    icon: viDice
   },
   {
     slug: 'health',
@@ -124,7 +124,7 @@ const categories = [
   {
     slug: 'logistics',
     title: 'Logistics',
-    icon: viBoxOpenFull
+    icon: viParachuteBox
   },
   {
     slug: 'maps',
@@ -149,7 +149,7 @@ const categories = [
   {
     slug: 'nature',
     title: 'Nature & outdoors',
-    icon: viCompass
+    icon: viBug
   },
   {
     slug: 'people',
@@ -174,7 +174,7 @@ const categories = [
   {
     slug: 'shapes',
     title: 'Shapes',
-    icon: viCircleDashed
+    icon: viStar
   },
   {
     slug: 'shopping',
@@ -184,7 +184,7 @@ const categories = [
   {
     slug: 'social',
     title: 'Social',
-    icon: viShare
+    icon: viMessageText
   },
   {
     slug: 'spinners',

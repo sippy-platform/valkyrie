@@ -1,5 +1,6 @@
 {
   "name": "valkyrie-docs",
+  "homepage": "https://sippy-platform.github.io/valkyrie",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -15,6 +16,7 @@
     "@emotion/react": "11.11.4",
     "@emotion/styled": "11.11.5",
     "@mui/joy": "5.0.0-beta.36",
+    "@mui/material": "5.15.15",
     "@sippy-platform/valkyrie": "file:../",
     "react": "18.3.1",
     "react-dom": "18.3.1",
@@ -35,7 +37,7 @@
     "eslint-plugin-react-refresh": "0.4.6",
     "prettier": "3.2.5",
     "typescript": "5.4.5",
-    "vite": "5.2.11",
+    "vite": "5.2.10",
     "vite-bundle-visualizer": "1.1.0",
     "vite-plugin-html": "3.2.2"
   }
