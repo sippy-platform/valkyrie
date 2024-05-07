@@ -9,6 +9,7 @@ interface ValkyrieProps {
   flip?: true | "x" | "y" | false;
   spin?: boolean | "pulse";
   beat?: boolean;
+  fade?: boolean;
 }
 
 export default function ValkyrieIcon({
@@ -17,6 +18,8 @@ export default function ValkyrieIcon({
   rotate = undefined,
   spin = undefined,
   beat = undefined,
+  fade = undefined,
+  className,
   ...props
 }: ValkyrieProps & ComponentPropsWithoutRef<"span">) {
   const spinAnimation = keyframes`
@@ -33,7 +36,16 @@ export default function ValkyrieIcon({
       transform: scale(1);
     }
     45% {
-      transform: scale(1.4);
+      transform: scale(var(--vi-animation-scale, 1.4));
+    }
+  `;
+
+  const fadeAnimation = keyframes`
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: var(--vi-animation-opacity, .4);
     }
   `;
 
@@ -61,8 +73,8 @@ export default function ValkyrieIcon({
     transform: ${flip === "x"
       ? "scaleX(-1)"
       : flip === "y"
-        ? "scaleY(-1)"
-        : "scale(-1)"};
+      ? "scaleY(-1)"
+      : "scale(-1)"};
   `;
 
   const spinClass = css`
@@ -84,6 +96,13 @@ export default function ValkyrieIcon({
     animation-iteration-count: var(--vi-animation-iteration-count, infinite);
   `;
 
+  const fadeClass = css`
+    animation-name: ${fadeAnimation};
+    animation-timing-function: var(--vi-animation-timing-function, ease-in-out);
+    animation-duration: var(--vi-animation-duration, 1.5s);
+    animation-iteration-count: var(--vi-animation-iteration-count, infinite);
+  `;
+
   return (
     <span
       className={cx({
@@ -93,6 +112,7 @@ export default function ValkyrieIcon({
         [spinClass]: !!spin,
         [spinPulseClass]: spin === "pulse",
         [beatClass]: beat,
+        [fadeClass]: fade
       })}
       {...props}
     >
