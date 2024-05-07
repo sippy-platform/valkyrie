@@ -97,6 +97,13 @@ export const viArrowDown: {
   name: 'arrow_down',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1a.75.75 0 0 1 .75.75v10.69l3.97-3.97a.75.75 0 1 1 1.06 1.06l-5.25 5.25a.75.75 0 0 1-1.06 0L2.22 9.53a.75.75 0 0 1 1.06-1.06l3.97 3.97V1.75A.75.75 0 0 1 8 1"/></svg>`,
 };
+export const viArrowLeftArrowRight: {
+  name: 'arrow_left_arrow_right';
+  data: string;
+} = {
+  name: 'arrow_left_arrow_right',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M5.53 1.28A.75.75 0 0 0 4.47.22L1.22 3.47a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 0 0 1.06-1.06L3.56 4.75h10.69a.75.75 0 0 0 0-1.5H3.56zm4.94 13.44a.75.75 0 1 0 1.06 1.06l3.25-3.25a.75.75 0 0 0 0-1.06l-3.25-3.25a.75.75 0 1 0-1.06 1.06l1.97 1.97H1.75a.75.75 0 0 0 0 1.5h10.69z"/></svg>`,
+};
 export const viArrowLeftFromBracket: {
   name: 'arrow_left_from_bracket';
   data: string;
@@ -2023,6 +2030,7 @@ export type Valkyrie =
   | 'arrow_down_to_line'
   | 'arrow_down_wide_short'
   | 'arrow_down'
+  | 'arrow_left_arrow_right'
   | 'arrow_left_from_bracket'
   | 'arrow_left_to_bracket'
   | 'arrow_left_to_line'
@@ -2317,6 +2325,7 @@ export const valkyrieSet = [
   viArrowDownToLine,
   viArrowDownWideShort,
   viArrowDown,
+  viArrowLeftArrowRight,
   viArrowLeftFromBracket,
   viArrowLeftToBracket,
   viArrowLeftToLine,
