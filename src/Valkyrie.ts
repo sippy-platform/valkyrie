@@ -1336,18 +1336,18 @@ export const viOrderAlphabeticalDesc: {
   name: 'order_alphabetical_desc',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M12.5 1c.31 0 .587.19.699.478l1.75 4.5a.75.75 0 0 1-1.398.544l-.106-.272h-1.89l-.106.272a.75.75 0 1 1-1.398-.544l1.75-4.5A.75.75 0 0 1 12.5 1m.362 3.75-.362-.93-.362.93zM10 9.75a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .592 1.21l-2.559 3.29h1.967a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1-.592-1.21l2.559-3.29H10.75a.75.75 0 0 1-.75-.75M7.72 5.53a.75.75 0 0 0 1.06-1.06L5.53 1.22a.75.75 0 0 0-1.06 0L1.22 4.47a.75.75 0 0 0 1.06 1.06l1.97-1.97v10.69a.75.75 0 0 0 1.5 0V3.56z"/></svg>`,
 };
-export const viOrderNumericAsc: {
-  name: 'order_numeric_asc';
+export const viOrderNumericalAsc: {
+  name: 'order_numerical_asc';
   data: string;
 } = {
-  name: 'order_numeric_asc',
+  name: 'order_numerical_asc',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M2.28 10.47a.75.75 0 0 0-1.06 1.06l3.25 3.25a.75.75 0 0 0 1.06 0l3.25-3.25a.75.75 0 1 0-1.06-1.06l-1.97 1.97V1.75a.75.75 0 0 0-1.5 0v10.69zm8.22-8.72a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 .75.75V5.5h.75a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5H12v-3h-.75a.75.75 0 0 1-.75-.75m4.5 8.508v-.008a2.25 2.25 0 1 0-1.506 2.124A1.25 1.25 0 0 1 12.25 13.5h-1a.75.75 0 0 0 0 1.5h1A2.75 2.75 0 0 0 15 12.25zM12.75 9.5a.75.75 0 0 1 .75.75v.005a.75.75 0 1 1-.75-.755"/></svg>`,
 };
-export const viOrderNumericDesc: {
-  name: 'order_numeric_desc';
+export const viOrderNumericalDesc: {
+  name: 'order_numerical_desc';
   data: string;
 } = {
-  name: 'order_numeric_desc',
+  name: 'order_numerical_desc',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M10.5 1.75a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 .75.75V5.5h.75a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5H12v-3h-.75a.75.75 0 0 1-.75-.75m4.5 8.508v-.008a2.25 2.25 0 1 0-1.506 2.124A1.25 1.25 0 0 1 12.25 13.5h-1a.75.75 0 0 0 0 1.5h1A2.75 2.75 0 0 0 15 12.25zM12.75 9.5a.75.75 0 0 1 .75.75v.005a.75.75 0 1 1-.75-.755M7.72 5.53a.75.75 0 0 0 1.06-1.06L5.53 1.22a.75.75 0 0 0-1.06 0L1.22 4.47a.75.75 0 0 0 1.06 1.06l1.97-1.97v10.69a.75.75 0 0 0 1.5 0V3.56z"/></svg>`,
 };
 export const viPager: {
@@ -2207,8 +2207,8 @@ export type Valkyrie =
   | 'numpad'
   | 'order_alphabetical_asc'
   | 'order_alphabetical_desc'
-  | 'order_numeric_asc'
-  | 'order_numeric_desc'
+  | 'order_numerical_asc'
+  | 'order_numerical_desc'
   | 'pager'
   | 'paper_plane'
   | 'parachute_box'
@@ -2502,8 +2502,8 @@ export const valkyrieSet = [
   viNumpad,
   viOrderAlphabeticalAsc,
   viOrderAlphabeticalDesc,
-  viOrderNumericAsc,
-  viOrderNumericDesc,
+  viOrderNumericalAsc,
+  viOrderNumericalDesc,
   viPager,
   viPaperPlane,
   viParachuteBox,
