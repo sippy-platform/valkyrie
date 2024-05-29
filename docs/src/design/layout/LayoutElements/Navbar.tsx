@@ -44,7 +44,7 @@ export default function Navbar() {
         >
           <Stack direction="row" alignItems="center" gap={1} sx={{ pl: 0.5 }}>
             <Link color="neutral" underline="none" level="h1" fontSize="xl" sx={{ color: 'common.white' }} component={NavLink} to="/">
-              <img src="favicon.svg" style={{ width: 24, height: 24, marginRight: 8 }} />
+              <img src="logo.svg" style={{ width: 24, height: 24, marginRight: 8 }} />
               <Box component="span" sx={{ display: { xs: 'none', sm: 'inline' } }}>
                 Valkyrie
               </Box>
