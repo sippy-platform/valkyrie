@@ -1378,6 +1378,13 @@ export const viParagraph: {
   name: 'paragraph',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M4.904 2.5a2.5 2.5 0 1 0 0 5H9v-5zm5.596 0v11.75a.75.75 0 0 1-1.5 0V9H4.904a4 4 0 0 1 0-8h9.346a.75.75 0 0 1 0 1.5h-.75v11.75a.75.75 0 0 1-1.5 0V2.5z"/></svg>`,
 };
+export const viPassword: {
+  name: 'password';
+  data: string;
+} = {
+  name: 'password',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><circle cx="3" cy="8" r="2"/><circle cx="9" cy="8" r="2"/><path fill-rule="evenodd" d="M13.75 2a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-1.5 0V2.75a.75.75 0 0 1 .75-.75"/></svg>`,
+};
 export const viPause: {
   name: 'pause';
   data: string;
@@ -2213,6 +2220,7 @@ export type Valkyrie =
   | 'paper_plane'
   | 'parachute_box'
   | 'paragraph'
+  | 'password'
   | 'pause'
   | 'pen'
   | 'people_circle'
@@ -2508,6 +2516,7 @@ export const valkyrieSet = [
   viPaperPlane,
   viParachuteBox,
   viParagraph,
+  viPassword,
   viPause,
   viPen,
   viPeopleCircle,
