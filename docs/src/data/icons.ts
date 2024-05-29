@@ -1384,7 +1384,7 @@ const icons = [
   {
     component: 'viPassword',
     categories: ["design","editor","security"],
-    tags: ["code"],
+    tags: ["code","input"],
     slug: 'password',
     icon: viPassword
   },
