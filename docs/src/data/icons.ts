@@ -943,21 +943,21 @@ const icons = [
   {
     component: 'viGripDotsV',
     categories: ["editor"],
-    tags: ["handles"],
+    tags: ["handles","drag"],
     slug: 'grip-dots-v',
     icon: viGripDotsV
   },
   {
     component: 'viGripDots',
     categories: ["editor"],
-    tags: ["handles"],
+    tags: ["handles","drag"],
     slug: 'grip-dots',
     icon: viGripDots
   },
   {
     component: 'viGripLines',
     categories: ["editor"],
-    tags: ["handles"],
+    tags: ["handles","drag"],
     slug: 'grip-lines',
     icon: viGripLines
   },
