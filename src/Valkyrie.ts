@@ -552,6 +552,13 @@ export const viClock: {
   name: 'clock',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M8.75 3.75a.75.75 0 0 0-1.5 0V8c0 .199.079.39.22.53l2.25 2.25a.75.75 0 1 0 1.06-1.06L8.75 7.69z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0"/></svg>`,
 };
+export const viCloudSoftphone: {
+  name: 'cloud_softphone';
+  data: string;
+} = {
+  name: 'cloud_softphone',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M.545 2.73C0 3.8 0 5.2 0 8s0 4.2.545 5.27a5 5 0 0 0 2.185 2.185C3.8 16 5.2 16 8 16s4.2 0 5.27-.545a5 5 0 0 0 2.185-2.185C16 12.2 16 10.8 16 8s0-4.2-.545-5.27A5 5 0 0 0 13.27.545C12.2 0 10.8 0 8 0S3.8 0 2.73.545A5 5 0 0 0 .545 2.73m4.252 12.205c-.771-.063-1.243-.182-1.613-.371a4 4 0 0 1-1.62-1.518l3.031-4.764c.078.364.215.72.411 1.05L8.372 15H8c-1.417 0-2.419 0-3.203-.065m.258-9.238-.008.012-3.906 6.138a8 8 0 0 1-.076-.644C1 10.419 1 9.417 1 8s0-2.419.065-3.203c.063-.771.182-1.243.371-1.613a4 4 0 0 1 1.748-1.748c.37-.189.842-.308 1.613-.371C5.581 1 6.583 1 8 1s2.419 0 3.203.065c.772.063 1.243.182 1.613.371a4 4 0 0 1 1.748 1.748c.189.37.308.842.371 1.613C15 5.581 15 6.583 15 8s0 2.419-.065 3.203a8 8 0 0 1-.076.644l-3.921-6.162c-1.369-2.15-4.507-2.15-5.876 0zm9.382 7.35a4 4 0 0 1-1.621 1.517c-.37.189-.841.308-1.613.371-.466.038-1.01.054-1.671.06L5.866 8.822c-.475-.8-.462-1.8.033-2.587.986-1.532 3.229-1.528 4.21.01z"/></svg>`,
+};
 export const viCode: {
   name: 'code';
   data: string;
@@ -2102,6 +2109,7 @@ export type Valkyrie =
   | 'city'
   | 'clock_rotate_left'
   | 'clock'
+  | 'cloud_softphone'
   | 'code'
   | 'codeblock'
   | 'command'
@@ -2398,6 +2406,7 @@ export const valkyrieSet = [
   viCity,
   viClockRotateLeft,
   viClock,
+  viCloudSoftphone,
   viCode,
   viCodeblock,
   viCommand,
