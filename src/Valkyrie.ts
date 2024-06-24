@@ -207,7 +207,7 @@ export const viArrowUpRightFromSquare: {
   data: string;
 } = {
   name: 'arrow_up_right_from_square',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M9.75 0a.75.75 0 0 0 0 1.5h3.69L7.22 7.72a.75.75 0 0 0 1.06 1.06l6.22-6.22v3.69a.75.75 0 0 0 1.5 0V.75a.75.75 0 0 0-.75-.75zM1.5 4.25C1.5 3.56 2.06 3 2.75 3h4.5a.75.75 0 0 0 0-1.5h-4.5A2.75 2.75 0 0 0 0 4.25v9A2.75 2.75 0 0 0 2.75 16h9a2.75 2.75 0 0 0 2.75-2.75v-4.5a.75.75 0 0 0-1.5 0v4.5c0 .69-.56 1.25-1.25 1.25h-9c-.69 0-1.25-.56-1.25-1.25z"/><path d="M9.75 0a.75.75 0 0 0 0 1.5h3.69L7.22 7.72a.75.75 0 0 0 1.06 1.06l6.22-6.22v3.69a.75.75 0 0 0 1.5 0V.75a.75.75 0 0 0-.75-.75z"/><path d="M1.5 4.25C1.5 3.56 2.06 3 2.75 3h4.5a.75.75 0 0 0 0-1.5h-4.5A2.75 2.75 0 0 0 0 4.25v9A2.75 2.75 0 0 0 2.75 16h9a2.75 2.75 0 0 0 2.75-2.75v-4.5a.75.75 0 0 0-1.5 0v4.5c0 .69-.56 1.25-1.25 1.25h-9c-.69 0-1.25-.56-1.25-1.25z"/></svg>`,
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M9.75 0a.75.75 0 0 0 0 1.5h3.69L7.22 7.72a.75.75 0 0 0 1.06 1.06l6.22-6.22v3.69a.75.75 0 0 0 1.5 0V.75a.75.75 0 0 0-.75-.75z"/><path d="M2.75 2A2.75 2.75 0 0 0 0 4.75v8.5A2.75 2.75 0 0 0 2.75 16h8.5A2.75 2.75 0 0 0 14 13.25v-4.5a.75.75 0 0 0-1.5 0v4.5c0 .69-.56 1.25-1.25 1.25h-8.5c-.69 0-1.25-.56-1.25-1.25v-8.5c0-.69.56-1.25 1.25-1.25h4.5a.75.75 0 0 0 0-1.5z"/></svg>`,
 };
 export const viArrowUpShortWide: {
   name: 'arrow_up_short_wide';
@@ -713,6 +713,13 @@ export const viEllipsisH: {
   name: 'ellipsis_h',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M3.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m6 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m6 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/></svg>`,
 };
+export const viEllipsisV: {
+  name: 'ellipsis_v';
+  data: string;
+} = {
+  name: 'ellipsis_v',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M9.5 2a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/></svg>`,
+};
 export const viEnvelope: {
   name: 'envelope';
   data: string;
@@ -951,19 +958,19 @@ export const viGrid: {
   name: 'grid',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.75 1A1.75 1.75 0 0 0 1 2.75v2.5C1 6.216 1.784 7 2.75 7h2.5A1.75 1.75 0 0 0 7 5.25v-2.5A1.75 1.75 0 0 0 5.25 1zM2.5 2.75a.25.25 0 0 1 .25-.25h2.5a.25.25 0 0 1 .25.25v2.5a.25.25 0 0 1-.25.25h-2.5a.25.25 0 0 1-.25-.25zM2.75 9A1.75 1.75 0 0 0 1 10.75v2.5c0 .966.784 1.75 1.75 1.75h2.5A1.75 1.75 0 0 0 7 13.25v-2.5A1.75 1.75 0 0 0 5.25 9zm-.25 1.75a.25.25 0 0 1 .25-.25h2.5a.25.25 0 0 1 .25.25v2.5a.25.25 0 0 1-.25.25h-2.5a.25.25 0 0 1-.25-.25zm6.5-8C9 1.784 9.784 1 10.75 1h2.5c.966 0 1.75.784 1.75 1.75v2.5A1.75 1.75 0 0 1 13.25 7h-2.5A1.75 1.75 0 0 1 9 5.25zm1.75-.25a.25.25 0 0 0-.25.25v2.5c0 .138.112.25.25.25h2.5a.25.25 0 0 0 .25-.25v-2.5a.25.25 0 0 0-.25-.25zm0 6.5A1.75 1.75 0 0 0 9 10.75v2.5c0 .966.784 1.75 1.75 1.75h2.5A1.75 1.75 0 0 0 15 13.25v-2.5A1.75 1.75 0 0 0 13.25 9zm-.25 1.75a.25.25 0 0 1 .25-.25h2.5a.25.25 0 0 1 .25.25v2.5a.25.25 0 0 1-.25.25h-2.5a.25.25 0 0 1-.25-.25z"/></svg>`,
 };
+export const viGripDotsH: {
+  name: 'grip_dots_h';
+  data: string;
+} = {
+  name: 'grip_dots_h',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M3 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M3 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>`,
+};
 export const viGripDotsV: {
   name: 'grip_dots_v';
   data: string;
 } = {
   name: 'grip_dots_v',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M6 13a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2m4 12a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2m0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg>`,
-};
-export const viGripDots: {
-  name: 'grip_dots';
-  data: string;
-} = {
-  name: 'grip_dots',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M3 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M3 10a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>`,
 };
 export const viGripLines: {
   name: 'grip_lines';
@@ -2139,6 +2146,7 @@ export type Valkyrie =
   | 'eclipse'
   | 'edge'
   | 'ellipsis_h'
+  | 'ellipsis_v'
   | 'envelope'
   | 'ethernet'
   | 'euro'
@@ -2173,8 +2181,8 @@ export type Valkyrie =
   | 'github'
   | 'google_play'
   | 'grid'
+  | 'grip_dots_h'
   | 'grip_dots_v'
-  | 'grip_dots'
   | 'grip_lines'
   | 'heading_1'
   | 'heading_2'
@@ -2437,6 +2445,7 @@ export const valkyrieSet = [
   viEclipse,
   viEdge,
   viEllipsisH,
+  viEllipsisV,
   viEnvelope,
   viEthernet,
   viEuro,
@@ -2471,8 +2480,8 @@ export const valkyrieSet = [
   viGithub,
   viGooglePlay,
   viGrid,
+  viGripDotsH,
   viGripDotsV,
-  viGripDots,
   viGripLines,
   viHeading1,
   viHeading2,
