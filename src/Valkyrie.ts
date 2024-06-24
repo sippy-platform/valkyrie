@@ -202,6 +202,13 @@ export const viArrowRotateRight: {
   name: 'arrow_rotate_right',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M8.125 2a6.125 6.125 0 1 0 3.77 10.953c.326-.255.799-.26 1.091.033.293.293.295.771-.025 1.034A7.625 7.625 0 1 1 14.5 3.94V2.25a.75.75 0 0 1 1.5 0v4a.75.75 0 0 1-.75.75h-4a.75.75 0 0 1 0-1.5h2.41A6.13 6.13 0 0 0 8.126 2"/></svg>`,
 };
+export const viArrowUpRightFromSquare: {
+  name: 'arrow_up_right_from_square';
+  data: string;
+} = {
+  name: 'arrow_up_right_from_square',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M9.75 0a.75.75 0 0 0 0 1.5h3.69L7.22 7.72a.75.75 0 0 0 1.06 1.06l6.22-6.22v3.69a.75.75 0 0 0 1.5 0V.75a.75.75 0 0 0-.75-.75zM1.5 4.25C1.5 3.56 2.06 3 2.75 3h4.5a.75.75 0 0 0 0-1.5h-4.5A2.75 2.75 0 0 0 0 4.25v9A2.75 2.75 0 0 0 2.75 16h9a2.75 2.75 0 0 0 2.75-2.75v-4.5a.75.75 0 0 0-1.5 0v4.5c0 .69-.56 1.25-1.25 1.25h-9c-.69 0-1.25-.56-1.25-1.25z"/><path d="M9.75 0a.75.75 0 0 0 0 1.5h3.69L7.22 7.72a.75.75 0 0 0 1.06 1.06l6.22-6.22v3.69a.75.75 0 0 0 1.5 0V.75a.75.75 0 0 0-.75-.75z"/><path d="M1.5 4.25C1.5 3.56 2.06 3 2.75 3h4.5a.75.75 0 0 0 0-1.5h-4.5A2.75 2.75 0 0 0 0 4.25v9A2.75 2.75 0 0 0 2.75 16h9a2.75 2.75 0 0 0 2.75-2.75v-4.5a.75.75 0 0 0-1.5 0v4.5c0 .69-.56 1.25-1.25 1.25h-9c-.69 0-1.25-.56-1.25-1.25z"/></svg>`,
+};
 export const viArrowUpShortWide: {
   name: 'arrow_up_short_wide';
   data: string;
@@ -2059,6 +2066,7 @@ export type Valkyrie =
   | 'arrow_right_to_line'
   | 'arrow_right'
   | 'arrow_rotate_right'
+  | 'arrow_up_right_from_square'
   | 'arrow_up_short_wide'
   | 'arrow_up_to_cloud'
   | 'arrow_up_to_line'
@@ -2356,6 +2364,7 @@ export const valkyrieSet = [
   viArrowRightToLine,
   viArrowRight,
   viArrowRotateRight,
+  viArrowUpRightFromSquare,
   viArrowUpShortWide,
   viArrowUpToCloud,
   viArrowUpToLine,
