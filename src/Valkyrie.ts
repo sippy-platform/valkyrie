@@ -783,6 +783,13 @@ export const viFacebook: {
   name: 'facebook',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M16 8a8 8 0 0 0-8-8 8 8 0 0 0-8 8c0 3.75 2.584 6.9 6.069 7.766v-5.322h-1.65V8h1.65V6.947c0-2.722 1.231-3.984 3.906-3.984.506 0 1.381.1 1.74.2v2.212a11 11 0 0 0-.924-.031c-1.313 0-1.82.497-1.82 1.787V8h2.613l-.45 2.444H8.97v5.497A8 8 0 0 0 16 8"/></svg>`,
 };
+export const viFanvil: {
+  name: 'fanvil';
+  data: string;
+} = {
+  name: 'fanvil',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 1A1.5 1.5 0 0 0 1 2.5v11A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-11A1.5 1.5 0 0 0 13.5 1zM7 3a3 3 0 0 0-3 3v7h2V9h6V7H6V6a1 1 0 0 1 1-1h5V3z"/></svg>`,
+};
 export const viFastBackward: {
   name: 'fast_backward';
   data: string;
@@ -2050,6 +2057,13 @@ export const viXmark: {
   name: 'xmark',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M3.22 3.22a.75.75 0 0 1 1.06 0L8 6.94l3.72-3.72a.75.75 0 1 1 1.06 1.06L9.06 8l3.72 3.72a.75.75 0 1 1-1.06 1.06L8 9.06l-3.72 3.72a.75.75 0 0 1-1.06-1.06L6.94 8 3.22 4.28a.75.75 0 0 1 0-1.06"/></svg>`,
 };
+export const viYealink: {
+  name: 'yealink';
+  data: string;
+} = {
+  name: 'yealink',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M3 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm3.983 8.261L3.04 3h2.363L8 7.123 10.596 3h2.364L8.983 9.315 8.766 13H6.763z"/></svg>`,
+};
 export type Valkyrie =
   | 'a_gum'
   | 'address_book'
@@ -2163,6 +2177,7 @@ export type Valkyrie =
   | 'eye'
   | 'facebook_messenger'
   | 'facebook'
+  | 'fanvil'
   | 'fast_backward'
   | 'fast_forward'
   | 'fax'
@@ -2343,7 +2358,8 @@ export type Valkyrie =
   | 'webhooks_clock'
   | 'webhooks'
   | 'window'
-  | 'xmark';
+  | 'xmark'
+  | 'yealink';
 export interface IValkyrieIcon {
   name: Valkyrie;
   data: string;
@@ -2463,6 +2479,7 @@ export const valkyrieSet = [
   viEye,
   viFacebookMessenger,
   viFacebook,
+  viFanvil,
   viFastBackward,
   viFastForward,
   viFax,
@@ -2644,4 +2661,5 @@ export const valkyrieSet = [
   viWebhooks,
   viWindow,
   viXmark,
+  viYealink,
 ];
