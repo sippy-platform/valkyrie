@@ -207,7 +207,7 @@ export const viArrowUpRightFromSquare: {
   data: string;
 } = {
   name: 'arrow_up_right_from_square',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M9.75 0a.75.75 0 0 0 0 1.5h3.69L7.22 7.72a.75.75 0 0 0 1.06 1.06l6.22-6.22v3.69a.75.75 0 0 0 1.5 0V.75a.75.75 0 0 0-.75-.75z"/><path d="M2.75 2A2.75 2.75 0 0 0 0 4.75v8.5A2.75 2.75 0 0 0 2.75 16h8.5A2.75 2.75 0 0 0 14 13.25v-4.5a.75.75 0 0 0-1.5 0v4.5c0 .69-.56 1.25-1.25 1.25h-8.5c-.69 0-1.25-.56-1.25-1.25v-8.5c0-.69.56-1.25 1.25-1.25h4.5a.75.75 0 0 0 0-1.5z"/></svg>`,
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M9.75 0a.75.75 0 0 0 0 1.5h3.69L7.22 7.72a.75.75 0 0 0 1.06 1.06l6.22-6.22v3.69a.75.75 0 0 0 1.5 0V.75a.75.75 0 0 0-.75-.75zm-7 2A2.75 2.75 0 0 0 0 4.75v8.5A2.75 2.75 0 0 0 2.75 16h8.5A2.75 2.75 0 0 0 14 13.25v-4.5a.75.75 0 0 0-1.5 0v4.5c0 .69-.56 1.25-1.25 1.25h-8.5c-.69 0-1.25-.56-1.25-1.25v-8.5c0-.69.56-1.25 1.25-1.25h4.5a.75.75 0 0 0 0-1.5z"/></svg>`,
 };
 export const viArrowUpShortWide: {
   name: 'arrow_up_short_wide';
@@ -1875,6 +1875,13 @@ export const viTag: {
   name: 'tag',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M5 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/><path d="M3.75 1A2.75 2.75 0 0 0 1 3.75v2.672c0 .729.29 1.428.805 1.944l5.75 5.75a2.75 2.75 0 0 0 3.89 0l2.694-2.694a2.75 2.75 0 0 0 .032-3.857L8.628 1.838A2.75 2.75 0 0 0 6.652 1zM2.5 3.75c0-.69.56-1.25 1.25-1.25h2.902c.339 0 .663.137.899.38l5.542 5.728a1.25 1.25 0 0 1-.014 1.753l-2.695 2.694a1.25 1.25 0 0 1-1.768 0l-5.75-5.75a1.25 1.25 0 0 1-.366-.883z"/></svg>`,
 };
+export const viTeams: {
+  name: 'teams';
+  data: string;
+} = {
+  name: 'teams',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M9.5 4.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2M9 5.95v.55h7V11a2.5 2.5 0 0 1-3.738 2.173A3 3 0 0 1 9.5 15H9a3 3 0 0 1-2.959-2.5H1.5A1.5 1.5 0 0 1 0 11V5a1.5 1.5 0 0 1 1.5-1.5H7a2.5 2.5 0 1 1 2 2.45m-1.415 6.548A1.5 1.5 0 0 0 9 13.5h.5A1.5 1.5 0 0 0 11 12V8H9v3a1.5 1.5 0 0 1-1.415 1.498M12.5 11a1 1 0 1 0 2 0V8h-2zM14 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M3.75 7H2V5.5h5V7H5.25v3.5h-1.5z"/></svg>`,
+};
 export const viThumbstackSlash: {
   name: 'thumbstack_slash';
   data: string;
@@ -2312,6 +2319,7 @@ export type Valkyrie =
   | 'tag_gear'
   | 'tag_plus'
   | 'tag'
+  | 'teams'
   | 'thumbstack_slash'
   | 'thumbstack'
   | 'toggle_off'
@@ -2611,6 +2619,7 @@ export const valkyrieSet = [
   viTagGear,
   viTagPlus,
   viTag,
+  viTeams,
   viThumbstackSlash,
   viThumbstack,
   viToggleOff,
