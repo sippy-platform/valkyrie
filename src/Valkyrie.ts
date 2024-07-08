@@ -1889,18 +1889,18 @@ export const viTeams: {
   name: 'teams',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M9 5.95v.55h7V11a2.5 2.5 0 0 1-3.738 2.173A3 3 0 0 1 9.5 15H9a3 3 0 0 1-2.959-2.5H1.5A1.5 1.5 0 0 1 0 11V5a1.5 1.5 0 0 1 1.5-1.5H7a2.5 2.5 0 1 1 2 2.45m.5-1.45a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-1.915 7.998A1.5 1.5 0 0 0 9 13.5h.5A1.5 1.5 0 0 0 11 12V8H9v3a1.5 1.5 0 0 1-1.415 1.498M12.5 11a1 1 0 1 0 2 0V8h-2zM3.75 7v3.5h1.5V7H7V5.5H2V7z"/><path d="M14 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></svg>`,
 };
-export const viThumbstackSlash: {
-  name: 'thumbstack_slash';
+export const viThumbtackSlash: {
+  name: 'thumbtack_slash';
   data: string;
 } = {
-  name: 'thumbstack_slash',
+  name: 'thumbtack_slash',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M1.28.22A.75.75 0 1 0 .22 1.28l3.592 3.593-.127.025c-1.37.274-1.882 1.965-.894 2.954L4.939 10 .22 14.72a.75.75 0 1 0 1.061 1.06L6 11.06l2.148 2.15c.989.987 2.68.475 2.954-.895l.025-.127 3.593 3.592a.75.75 0 1 0 1.06-1.06zm8.573 10.693-.222 1.108a.25.25 0 0 1-.422.127L3.852 6.791a.25.25 0 0 1 .127-.422l1.108-.222zm1.2-2.938-.01.008 1.065 1.064 3.083-2.596a2 2 0 0 0 .126-2.944L12.493.683A2 2 0 0 0 9.55.808L6.953 3.892l1.064 1.064.008-.008 2.672-3.173a.5.5 0 0 1 .736-.032l2.824 2.824a.5.5 0 0 1-.032.736z"/></svg>`,
 };
-export const viThumbstack: {
-  name: 'thumbstack';
+export const viThumbtack: {
+  name: 'thumbtack';
   data: string;
 } = {
-  name: 'thumbstack',
+  name: 'thumbtack',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M12.493.683A2 2 0 0 0 9.55.808L6.877 3.981a1.25 1.25 0 0 1-.71.42l-2.482.497c-1.37.274-1.882 1.965-.894 2.954L4.939 10 .22 14.72a.75.75 0 1 0 1.061 1.06L6 11.06l2.148 2.15c.989.987 2.68.475 2.954-.895l.496-2.481a1.25 1.25 0 0 1 .42-.711l3.173-2.672a2 2 0 0 0 .126-2.944zm-1.796 1.092a.5.5 0 0 1 .736-.032l2.824 2.824a.5.5 0 0 1-.032.736l-3.172 2.672a2.75 2.75 0 0 0-.926 1.564l-.496 2.482a.25.25 0 0 1-.422.127L3.852 6.791a.25.25 0 0 1 .127-.422l2.482-.496a2.75 2.75 0 0 0 1.564-.925z"/></svg>`,
 };
 export const viToggleOff: {
@@ -2335,8 +2335,8 @@ export type Valkyrie =
   | 'tag_plus'
   | 'tag'
   | 'teams'
-  | 'thumbstack_slash'
-  | 'thumbstack'
+  | 'thumbtack_slash'
+  | 'thumbtack'
   | 'toggle_off'
   | 'toggle_on'
   | 'tower_broadcast'
@@ -2637,8 +2637,8 @@ export const valkyrieSet = [
   viTagPlus,
   viTag,
   viTeams,
-  viThumbstackSlash,
-  viThumbstack,
+  viThumbtackSlash,
+  viThumbtack,
   viToggleOff,
   viToggleOn,
   viTowerBroadcast,

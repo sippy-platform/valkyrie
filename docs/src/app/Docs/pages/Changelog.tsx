@@ -8,6 +8,15 @@ export default function Changelog() {
   return (
     <Stack gap={5}>
       <Release
+        name="Valkyrie 1.0 alpha 49"
+        version="1.0.0-alpha.49"
+        date="8 July 2024"
+        renamedIcons={[
+          { old: 'thumbstack', new: 'thumbtack' },
+          { old: 'thumbstack-slash', new: 'thumbtack-slash' }
+        ]}
+      />
+      <Release
         name="Valkyrie 1.0 alpha 48"
         version="1.0.0-alpha.48"
         date="3 July 2024"
@@ -229,9 +238,9 @@ export default function Changelog() {
         version="1.0.0-alpha.22"
         date="12 June 2023"
         newIcons={['sidebar-left', 'sidebar-right']}
-        updatedIcons={['thumbstack', 'thumbstack-slash', 'translate']}
+        updatedIcons={['thumbtack', 'thumbtack-slash', 'translate']}
       />
-      <Release name="Valkyrie 1.0 alpha 21" version="1.0.0-alpha.21" date="12 June 2023" newIcons={['thumbstack', 'thumbstack-slash']} />
+      <Release name="Valkyrie 1.0 alpha 21" version="1.0.0-alpha.21" date="12 June 2023" newIcons={['thumbtack', 'thumbtack-slash']} />
       <Release name="Valkyrie 1.0 alpha 20" version="1.0.0-alpha.20" date="30 May 2023" newIcons={['door']} />
       <Release
         name="Valkyrie 1.0 alpha 19"
