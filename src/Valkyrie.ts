@@ -55,6 +55,13 @@ export const viAppleAppStore: {
   name: 'apple_app_store',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M13.5 1h-11A1.5 1.5 0 0 0 1 2.5v11A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-11A1.5 1.5 0 0 0 13.5 1M4.969 12.016a.624.624 0 1 1-1.082-.625l.447-.772q.755-.23 1.238.356zm4.34-1.685H3.625A.627.627 0 0 1 3 9.706c0-.343.281-.625.625-.625h1.594l2.043-3.537-.64-1.106a.626.626 0 0 1 .228-.854.626.626 0 0 1 .853.228l.278.482.278-.481a.624.624 0 1 1 1.082.624L6.659 9.082H8.6c.631 0 .984.74.71 1.25m3.066 0h-.906l.612 1.06c.172.3.069.68-.228.853a.626.626 0 0 1-.853-.228C9.972 10.238 9.203 8.9 8.688 8.012c-.522-.906-.15-1.812.221-2.118q.614 1.065 1.841 3.187h1.625a.625.625 0 1 1 0 1.25"/></svg>`,
 };
+export const viApple: {
+  name: 'apple';
+  data: string;
+} = {
+  name: 'apple',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M11.96 8.397c-.007-1.147.512-2.013 1.562-2.65-.588-.84-1.475-1.303-2.647-1.394C9.765 4.266 8.553 5 8.109 5c-.468 0-1.543-.616-2.387-.616-1.744.028-3.597 1.391-3.597 4.163q0 1.228.45 2.537c.4 1.147 1.844 3.96 3.35 3.913.788-.019 1.344-.56 2.369-.56.993 0 1.51.56 2.387.56 1.519-.022 2.825-2.578 3.207-3.728-2.038-.96-1.929-2.813-1.929-2.872m-1.77-5.131c.854-1.013.776-1.935.75-2.266-.752.044-1.624.513-2.121 1.09-.547.62-.869 1.385-.8 2.248.815.062 1.56-.357 2.172-1.072"/></svg>`,
+};
 export const viArrowDownArrowUp: {
   name: 'arrow_down_arrow_up';
   data: string;
@@ -2050,6 +2057,13 @@ export const viWindow: {
   name: 'window',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M0 4.75A2.75 2.75 0 0 1 2.75 2h10.5A2.75 2.75 0 0 1 16 4.75v7.5A2.75 2.75 0 0 1 13.25 15H2.75A2.75 2.75 0 0 1 0 12.25zm1.5.75v6.75c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25V5.5zm7.25-1a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5M12 3.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0m1.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5"/></svg>`,
 };
+export const viWindows: {
+  name: 'windows';
+  data: string;
+} = {
+  name: 'windows',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M2 1a1 1 0 0 0-1 1v5.5h6.5V1zm6.5 0v6.5H15V2a1 1 0 0 0-1-1zM15 8.5H8.5V15H14a1 1 0 0 0 1-1zM7.5 15V8.5H1V14a1 1 0 0 0 1 1z"/></svg>`,
+};
 export const viXmark: {
   name: 'xmark';
   data: string;
@@ -2073,6 +2087,7 @@ export type Valkyrie =
   | 'angle_up'
   | 'angles_y'
   | 'apple_app_store'
+  | 'apple'
   | 'arrow_down_arrow_up'
   | 'arrow_down_from_cloud'
   | 'arrow_down_short_wide'
@@ -2358,6 +2373,7 @@ export type Valkyrie =
   | 'webhooks_clock'
   | 'webhooks'
   | 'window'
+  | 'windows'
   | 'xmark'
   | 'yealink';
 export interface IValkyrieIcon {
@@ -2375,6 +2391,7 @@ export const valkyrieSet = [
   viAngleUp,
   viAnglesY,
   viAppleAppStore,
+  viApple,
   viArrowDownArrowUp,
   viArrowDownFromCloud,
   viArrowDownShortWide,
@@ -2660,6 +2677,7 @@ export const valkyrieSet = [
   viWebhooksClock,
   viWebhooks,
   viWindow,
+  viWindows,
   viXmark,
   viYealink,
 ];
