@@ -11,6 +11,11 @@ export default function Changelog() {
         name="Valkyrie 1.0 alpha 49"
         version="1.0.0-alpha.49"
         date="17 October 2024"
+        added={[
+          <>
+            You can now apply <Code>className</Code> to the <Code>ValkyrieIcon</Code> component.
+          </>
+        ]}
         newIcons={['apple', 'moped', 'plate-utensils', 'receipt', 'shopping-cart', 'wallet', 'windows']}
         renamedIcons={[
           { old: 'thumbstack', new: 'thumbtack' },

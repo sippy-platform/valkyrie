@@ -73,8 +73,8 @@ export default function ValkyrieIcon({
     transform: ${flip === "x"
       ? "scaleX(-1)"
       : flip === "y"
-      ? "scaleY(-1)"
-      : "scale(-1)"};
+        ? "scaleY(-1)"
+        : "scale(-1)"};
   `;
 
   const spinClass = css`
@@ -105,14 +105,14 @@ export default function ValkyrieIcon({
 
   return (
     <span
-      className={cx({
+      className={cx(className, {
         [viClass]: true,
         [rotateClass]: rotate !== null && rotate !== undefined,
         [flipClass]: !!flip,
         [spinClass]: !!spin,
         [spinPulseClass]: spin === "pulse",
         [beatClass]: beat,
-        [fadeClass]: fade
+        [fadeClass]: fade,
       })}
       {...props}
     >
