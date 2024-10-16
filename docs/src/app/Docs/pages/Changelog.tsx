@@ -10,8 +10,8 @@ export default function Changelog() {
       <Release
         name="Valkyrie 1.0 alpha 49"
         version="1.0.0-alpha.49"
-        date="5 September 2024"
-        newIcons={['apple', 'windows']}
+        date="17 October 2024"
+        newIcons={['apple', 'moped', 'plate-utensils', 'receipt', 'shopping-cart', 'wallet', 'windows']}
         renamedIcons={[
           { old: 'thumbstack', new: 'thumbtack' },
           { old: 'thumbstack-slash', new: 'thumbtack-slash' }
