@@ -37,7 +37,7 @@ export default function Icon() {
 
   const categoryIcons = useMemo(() => {
     if (firstCategory) {
-      return icons.filter((icon) => icon.categories.includes(firstCategory));
+      return icons.filter((icon) => icon.categories.includes(firstCategory as never));
     }
 
     return icons;
