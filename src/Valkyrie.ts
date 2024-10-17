@@ -41,12 +41,19 @@ export const viAngleUp: {
   name: 'angle_up',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M11.53 10.03a.75.75 0 0 1-1.06 0L8 7.56l-2.47 2.47a.75.75 0 1 1-1.06-1.06l3-3a.75.75 0 0 1 1.06 0l3 3a.75.75 0 0 1 0 1.06"/></svg>`,
 };
+export const viAnglesX: {
+  name: 'angles_x';
+  data: string;
+} = {
+  name: 'angles_x',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M6.78 5.53a.75.75 0 0 0-1.06-1.06l-3 3a.75.75 0 0 0 0 1.06l3 3a.75.75 0 0 0 1.06-1.06L4.31 8zm2.44 4.94a.75.75 0 1 0 1.06 1.06l3-3a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06L11.69 8z"/></svg>`,
+};
 export const viAnglesY: {
   name: 'angles_y';
   data: string;
 } = {
   name: 'angles_y',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10.47 6.78a.75.75 0 1 0 1.06-1.06l-3-3a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 0 0 1.06 1.06L8 4.31zM5.53 9.22a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06L8 11.69z"/><path d="M10.47 6.78a.75.75 0 1 0 1.06-1.06l-3-3a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 0 0 1.06 1.06L8 4.31zM5.53 9.22a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06L8 11.69z"/></svg>`,
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M10.47 6.78a.75.75 0 1 0 1.06-1.06l-3-3a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 0 0 1.06 1.06L8 4.31zM5.53 9.22a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06L8 11.69z"/></svg>`,
 };
 export const viAppleAppStore: {
   name: 'apple_app_store';
@@ -2134,6 +2141,7 @@ export type Valkyrie =
   | 'angle_left'
   | 'angle_right'
   | 'angle_up'
+  | 'angles_x'
   | 'angles_y'
   | 'apple_app_store'
   | 'apple'
@@ -2445,6 +2453,7 @@ export const valkyrieSet = [
   viAngleLeft,
   viAngleRight,
   viAngleUp,
+  viAnglesX,
   viAnglesY,
   viAppleAppStore,
   viApple,
