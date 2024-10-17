@@ -6,6 +6,7 @@ import {
   viBook,
   viBoxOpenFull,
   viBug,
+  viBurgerGlass,
   viChartPie,
   viClock,
   viCode,
@@ -105,6 +106,11 @@ const categories = [
     slug: 'files',
     title: 'Files & folders',
     icon: viFiles
+  },
+  {
+    slug: 'food-beverage',
+    title: 'Food & beverages',
+    icon: viBurgerGlass
   },
   {
     slug: 'gaming',

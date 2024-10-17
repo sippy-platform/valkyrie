@@ -16,7 +16,7 @@ export default function Changelog() {
             You can now apply <Code>className</Code> to the <Code>ValkyrieIcon</Code> component.
           </>
         ]}
-        newIcons={['apple', 'moped', 'plate-utensils', 'receipt', 'shopping-cart', 'wallet', 'windows']}
+        newIcons={['apple', 'burger-glass', 'glass', 'moped', 'plate-utensils', 'receipt', 'shopping-cart', 'wallet', 'windows']}
         renamedIcons={[
           { old: 'thumbstack', new: 'thumbtack' },
           { old: 'thumbstack-slash', new: 'thumbtack-slash' }
