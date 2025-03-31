@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { createSearchParams, NavLink, useNavigate } from 'react-router-dom';
+import { createSearchParams, NavLink, useNavigate } from 'react-router';
 
 import { Alert, Box, Button, Container, IconButton, Input, Stack, Typography } from '@mui/joy';
 
