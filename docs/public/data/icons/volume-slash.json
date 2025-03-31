@@ -1,6 +1,6 @@
 {
   "title": "Volume slash",
-  "categories": ["media"],
+  "categories": ["media", "toggle"],
   "tags": ["sound", "silence"],
   "created": "0.7.0",
   "updated": "1.0.0"

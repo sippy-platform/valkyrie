@@ -1959,6 +1959,48 @@ export const viSidebarRight: {
   name: 'sidebar_right',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M0 3.75A2.75 2.75 0 0 1 2.75 1h10.5A2.75 2.75 0 0 1 16 3.75v8.5A2.75 2.75 0 0 1 13.25 15H2.75A2.75 2.75 0 0 1 0 12.25zM2.75 2.5c-.69 0-1.25.56-1.25 1.25v8.5c0 .69.56 1.25 1.25 1.25H10v-11zm8.75 0v11h1.75c.69 0 1.25-.56 1.25-1.25v-8.5c0-.69-.56-1.25-1.25-1.25z"/></svg>`,
 };
+export const viSignalFair: {
+  name: 'signal_fair';
+  data: string;
+} = {
+  name: 'signal_fair',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M5.5 10.75a.75.75 0 0 0-1.5 0v3.5a.75.75 0 0 0 1.5 0zm-3 3a.75.75 0 0 0-1.5 0v.5a.75.75 0 0 0 1.5 0z"/></svg>`,
+};
+export const viSignalGood: {
+  name: 'signal_good';
+  data: string;
+} = {
+  name: 'signal_good',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M12 4.75a.75.75 0 0 0-1.5 0v9.5a.75.75 0 0 0 1.5 0zM8 7a.75.75 0 0 1 .75.75v6.5a.75.75 0 0 1-1.5 0v-6.5A.75.75 0 0 1 8 7m-2.5 3.75a.75.75 0 0 0-1.5 0v3.5a.75.75 0 0 0 1.5 0zm-3 3a.75.75 0 0 0-1.5 0v.5a.75.75 0 0 0 1.5 0z"/></svg>`,
+};
+export const viSignalModerate: {
+  name: 'signal_moderate';
+  data: string;
+} = {
+  name: 'signal_moderate',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M8.75 7.75a.75.75 0 0 0-1.5 0v6.5a.75.75 0 0 0 1.5 0zm-4 2.25a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5a.75.75 0 0 1 .75-.75m-3 3a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-1.5 0v-.5a.75.75 0 0 1 .75-.75"/></svg>`,
+};
+export const viSignalSlash: {
+  name: 'signal_slash';
+  data: string;
+} = {
+  name: 'signal_slash',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M1.28.22A.75.75 0 1 0 .22 1.28l7.03 7.03v5.94a.75.75 0 0 0 1.5 0V9.81l1.75 1.75v2.69a.75.75 0 0 0 1.5 0v-1.19l2.72 2.72a.75.75 0 1 0 1.06-1.06zM13.5 10.44l1.5 1.5V1.75a.75.75 0 0 0-1.5 0zm-3-3 1.5 1.5V4.75a.75.75 0 0 0-1.5 0z"/><path d="M4.75 10a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5a.75.75 0 0 1 .75-.75m-3 3a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-1.5 0v-.5a.75.75 0 0 1 .75-.75"/></svg>`,
+};
+export const viSignalStrong: {
+  name: 'signal_strong';
+  data: string;
+} = {
+  name: 'signal_strong',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15 1.75a.75.75 0 0 0-1.5 0v12.5a.75.75 0 0 0 1.5 0zM11.25 4a.75.75 0 0 1 .75.75v9.5a.75.75 0 0 1-1.5 0v-9.5a.75.75 0 0 1 .75-.75m-2.5 3.75a.75.75 0 0 0-1.5 0v6.5a.75.75 0 0 0 1.5 0zm-4 2.25a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5a.75.75 0 0 1 .75-.75m-3 3a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-1.5 0v-.5a.75.75 0 0 1 .75-.75"/><path d="M15 1.75a.75.75 0 0 0-1.5 0v12.5a.75.75 0 0 0 1.5 0zM11.25 4a.75.75 0 0 1 .75.75v9.5a.75.75 0 0 1-1.5 0v-9.5a.75.75 0 0 1 .75-.75m-2.5 3.75a.75.75 0 0 0-1.5 0v6.5a.75.75 0 0 0 1.5 0zm-4 2.25a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5a.75.75 0 0 1 .75-.75m-3 3a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-1.5 0v-.5a.75.75 0 0 1 .75-.75"/></svg>`,
+};
+export const viSignalWeak: {
+  name: 'signal_weak';
+  data: string;
+} = {
+  name: 'signal_weak',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M1.75 13a.75.75 0 0 1 .75.75v.5a.75.75 0 0 1-1.5 0v-.5a.75.75 0 0 1 .75-.75"/></svg>`,
+};
 export const viSimCard: {
   name: 'sim_card';
   data: string;
@@ -2667,6 +2709,12 @@ export type Valkyrie =
   | 'shuffle'
   | 'sidebar_left'
   | 'sidebar_right'
+  | 'signal_fair'
+  | 'signal_good'
+  | 'signal_moderate'
+  | 'signal_slash'
+  | 'signal_strong'
+  | 'signal_weak'
   | 'sim_card'
   | 'sippy'
   | 'sliders'
@@ -3015,6 +3063,12 @@ export const valkyrieSet = [
   viShuffle,
   viSidebarLeft,
   viSidebarRight,
+  viSignalFair,
+  viSignalGood,
+  viSignalModerate,
+  viSignalSlash,
+  viSignalStrong,
+  viSignalWeak,
   viSimCard,
   viSippy,
   viSliders,

@@ -28,6 +28,7 @@ import {
   viPerson,
   viPlay,
   viPlus,
+  viSignalStrong,
   viSpinner,
   viStar,
   viSun,
@@ -76,6 +77,11 @@ const categories = [
     slug: 'communication',
     title: 'Communication',
     icon: viMessageText
+  },
+  {
+    slug: 'connectivity',
+    title: 'Connectivity',
+    icon: viSignalStrong
   },
   {
     slug: 'design',

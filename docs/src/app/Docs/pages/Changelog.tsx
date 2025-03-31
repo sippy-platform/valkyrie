@@ -7,6 +7,12 @@ import Release from './_Release';
 export default function Changelog() {
   return (
     <Stack gap={5}>
+      <Release
+        name="Valkyrie 1.0 alpha 56"
+        version="1.0.0-alpha.56"
+        date="31 March 2025"
+        newIcons={['signal-slash', 'signal-fair', 'signal-weak', 'signal-moderate', 'signal-good', 'signal-strong']}
+      />
       <Release name="Valkyrie 1.0 alpha 55" version="1.0.0-alpha.55" date="28 March 2025" newIcons={['clock-pause', 'clock-slash']} />
       <Release
         name="Valkyrie 1.0 alpha 54"
