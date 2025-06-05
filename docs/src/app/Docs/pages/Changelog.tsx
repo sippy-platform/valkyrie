@@ -7,6 +7,7 @@ import Release from './_Release';
 export default function Changelog() {
   return (
     <Stack gap={5}>
+      <Release name="Valkyrie 1.0 alpha 58" version="1.0.0-alpha.58" date="June 2025" />
       <Release
         name="Valkyrie 1.0 alpha 57"
         version="1.0.0-alpha.57"
