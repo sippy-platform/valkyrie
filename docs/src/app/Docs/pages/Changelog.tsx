@@ -475,7 +475,7 @@ export default function Changelog() {
           { old: 'link-slash', new: 'chain-slash' },
           { old: 'list-check', new: 'list-checks' },
           { old: 'list-ol', new: 'list-ordered' },
-          { old: 'list-ol-cloc', new: 'list-ordered-clock' },
+          { old: 'list-ol-clock', new: 'list-ordered-clock' },
           { old: 'logs', new: 'files-list' },
           { old: 'paper-plane-top', new: 'paper-plane' },
           { old: 'phone-arrow-down-left-ban', new: 'phone-arrow-down-left-prohibited' },
