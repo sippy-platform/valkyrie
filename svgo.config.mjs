@@ -1,9 +1,7 @@
-"use strict";
-
-module.exports = {
+export default {
   multipass: true,
   js2svg: {
-    eol: "lf"
+    eol: "lf",
   },
   plugins: [
     {
@@ -11,18 +9,17 @@ module.exports = {
       params: {
         overrides: {
           removeUnknownsAndDefaults: {
-            keepRoleAttr: true
+            keepRoleAttr: true,
           },
-          removeViewBox: false
-        }
-      }
+        },
+      },
     },
     "cleanupListOfValues",
     {
       name: "removeAttrs",
       params: {
-        attrs: ["clip-rule", "data-name", "fill"]
-      }
+        attrs: ["clip-rule", "data-name", "fill"],
+      },
     },
     {
       name: "explicitAttrs",
@@ -32,8 +29,8 @@ module.exports = {
           xmlns: "http://www.w3.org/2000/svg",
           fill: "currentColor",
           class: "vi",
-          viewBox: "0 0 16 16"
-        }
+          viewBox: "0 0 16 16",
+        },
       },
       fn(_root, params) {
         if (!params.attributes) {
@@ -49,10 +46,10 @@ module.exports = {
                   node.attributes[key] = value;
                 }
               }
-            }
-          }
+            },
+          },
         };
-      }
-    }
-  ]
+      },
+    },
+  ],
 };
