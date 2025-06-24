@@ -7,7 +7,27 @@ import Release from './_Release';
 export default function Changelog() {
   return (
     <Stack gap={5}>
-      <Release name="Valkyrie 1.0 alpha 58" version="1.0.0-alpha.58" date="June 2025" />
+      <Release
+        name="Valkyrie 1.0 alpha 58"
+        version="1.0.0-alpha.58"
+        date="14 June 2025"
+        updatedIcons={[
+          'arrow-down-to-line',
+          'arrow-left-from-bracket',
+          'arrow-up-right-from-square',
+          'devices',
+          'fanvil',
+          'fingerprint',
+          'message-pen',
+          'record-stop',
+          'safari',
+          'signal-strong',
+          'triangle-exclamation',
+          'yealink'
+        ]}
+        added={[<>Valkyrie is now properly exported as both a CJS and ESM package.</>]}
+        fixed={[<>Fixes the SVG and export for fingerprint, record-stop, safari, signal-strong, and triangle-exclamation containing the icon twice.</>]}
+      />
       <Release
         name="Valkyrie 1.0 alpha 57"
         version="1.0.0-alpha.57"
