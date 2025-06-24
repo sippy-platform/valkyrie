@@ -2,26 +2,30 @@
 
 "use strict";
 
-const fs = require("fs").promises;
-const fst = require("fs");
-const path = require("path");
-const picocolors = require("picocolors");
+import { promises as fs } from "fs";
+import { readFileSync } from "fs";
+import { join, basename, extname, dirname } from "path";
+import picocolors from "picocolors";
+import { fileURLToPath } from "url";
 
-const iconsDir = path.join(__dirname, "../docs/public/data/icons");
-const pagesDir = path.join(__dirname, "../docs/src/data/");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const iconsDir = join(__dirname, "../docs/public/data/icons");
+const pagesDir = join(__dirname, "../docs/src/data/");
 
 function getReactImportName(string) {
   return `vi${string
     .split("-")
-    .map(word => {
+    .map((word) => {
       return word[0].toUpperCase() + word.substring(1);
     })
     .join("")}`;
 }
 
 async function main(file) {
-  const iconFilePath = path.join(iconsDir, file);
-  const iconFile = fst.readFileSync(iconFilePath);
+  const iconFilePath = join(iconsDir, file);
+  const iconFile = readFileSync(iconFilePath);
 
   let iconJson = {};
 
@@ -31,7 +35,7 @@ async function main(file) {
     console.log(iconFilePath);
   }
 
-  const iconBasename = path.basename(file, path.extname(file));
+  const iconBasename = basename(file, extname(file));
   const iconTitle = getReactImportName(iconBasename);
 
   const jsonTemplate = `
@@ -61,40 +65,40 @@ async function main(file) {
 
     // Read content from each icon
     await Promise.all(
-      files.map(async file => {
+      files.map(async (file) => {
         const [name, config, cats] = await Promise.resolve(main(file));
 
         names.push(name);
         configs.push(config);
 
-        cats.map(cat => {
+        cats.map((cat) => {
           categories.add(cat);
         });
-      })
+      }),
     );
 
     categories = Array.from(categories).sort();
 
     const template = `
-import { ${names.map(icon => `${icon}`)} } from '@sippy-platform/valkyrie';
+import { ${names.map((icon) => `${icon}`)} } from '@sippy-platform/valkyrie';
 
-const icons = [${configs.map(page => `${page}`)}
+const icons = [${configs.map((page) => `${page}`)}
 ];
 
 export default icons;`;
 
-    await fs.writeFile(path.join(pagesDir, `icons.ts`), template);
+    await fs.writeFile(join(pagesDir, `icons.ts`), template);
 
     const categoriesTemplate = `
 import { viCircleDashed } from '@sippy-platform/valkyrie';
 
 const categories = [${categories.map(
-      cat => `
+      (cat) => `
   {
     slug: "${cat}",
     title: "${cat}",
     icon: viCircleDashed
-  }`
+  }`,
     )}
 ];
 
@@ -107,7 +111,7 @@ export default categories;`;
     console.log(
       picocolors.green("\nSuccess, %s icon%s written to library!"),
       filesLength,
-      filesLength !== 1 ? "s" : ""
+      filesLength !== 1 ? "s" : "",
     );
     console.timeEnd(timeLabel);
   } catch (error) {
