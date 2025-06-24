@@ -4,7 +4,7 @@ import { Box, Card, Chip, Divider, FormControl, FormLabel, IconButton, Input, Sh
 
 import Codeblock from '@/design/components/Codeblock';
 
-import ValkyrieIcon, { IValkyrieIcon, viBroom } from '@sippy-platform/valkyrie';
+import { IValkyrieIcon, Valkyrie, viBroom } from '@sippy-platform/valkyrie';
 
 export interface IPlaygroundConfig {
   icons: IValkyrieIcon[];
@@ -113,7 +113,7 @@ export default function Playground({ config }: IPlaygroundProps) {
     <Card sx={{ display: 'grid', gridTemplateColumns: 'auto 280px', p: 0, contain: 'paint', gap: 0 }}>
       <Stack sx={{ p: 2 }}>
         <Box sx={{ display: 'flex', flexGrow: 1, justifyContent: 'center', alignItems: 'center', fontSize: 'xl4' }}>
-          <ValkyrieIcon icon={playgroundIcon} {...iconProperties} style={playgroundCssVariable} />
+          <Valkyrie icon={playgroundIcon} {...iconProperties} style={playgroundCssVariable} />
         </Box>
         <Codeblock>{`<ValkyrieIcon
   icon={${iconName}}${propertyParser}${
@@ -136,7 +136,7 @@ export default function Playground({ config }: IPlaygroundProps) {
             }}
             size="sm"
           >
-            <ValkyrieIcon icon={viBroom} />
+            <Valkyrie icon={viBroom} />
           </IconButton>
         </Stack>
         <Divider sx={{ my: 2, mx: -2 }} />
@@ -151,7 +151,7 @@ export default function Playground({ config }: IPlaygroundProps) {
                   onClick={() => setPlaygroundIcon(icon)}
                   key={icon.name}
                 >
-                  <ValkyrieIcon icon={icon} />
+                  <Valkyrie icon={icon} />
                 </IconButton>
               ))}
             </Stack>

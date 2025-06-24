@@ -3,7 +3,7 @@ import { NavLink, useLocation } from 'react-router';
 
 import { List, ListItem, ListItemButton, ListItemContent, ListSubheader, Typography } from '@mui/joy';
 
-import ValkyrieIcon, { viArrowRotateRight, viCircleHalfInner, viHeart, viReact, viSpinner, viStar, viValkyrieSword } from '@sippy-platform/valkyrie';
+import { Valkyrie, viArrowRotateRight, viCircleHalfInner, viHeart, viReact, viSpinner, viStar, viValkyrieSword } from '@sippy-platform/valkyrie';
 
 export default function DocsNavigation() {
   const location = useLocation();
@@ -79,7 +79,7 @@ export default function DocsNavigation() {
       {pages.map((category, key) => (
         <Fragment key={key}>
           <ListSubheader sx={{ '&:not(:first-child)': { mt: 2 } }}>
-            <Typography level="title-sm" textTransform="none" letterSpacing="initial" fontSize="md" startDecorator={<ValkyrieIcon icon={category.icon} />}>
+            <Typography level="title-sm" textTransform="none" letterSpacing="initial" fontSize="md" startDecorator={<Valkyrie icon={category.icon} />}>
               {category.title}
             </Typography>
           </ListSubheader>

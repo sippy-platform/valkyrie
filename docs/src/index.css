@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@source "../node_modules/@sippy-platform/valkyrie";
+
+@keyframes beat {
+  0%,
+  90% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.4);
+  }
+}
+
+.animate-beat {
+  animation: beat 2s infinite;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.animate-fade {
+  animation: fade 1.5s infinite;
+}
+
+.animate-spin-steps {
+  animation-timing-function: steps(8);
+}

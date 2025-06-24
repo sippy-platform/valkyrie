@@ -23,7 +23,7 @@ import Header from '@/design/layout/LayoutElements/Header';
 import useSearch from '@/hooks/useSearch';
 import { ILibraryIcon } from '@/types';
 
-import ValkyrieIcon, { viFilterXmark, viMagnifyingGlass } from '@sippy-platform/valkyrie';
+import { Valkyrie, viFilterXmark, viMagnifyingGlass } from '@sippy-platform/valkyrie';
 
 import IconCard from './Components/IconCard';
 import Pagination from './Components/Pagination';
@@ -138,7 +138,7 @@ export default function Icons() {
                   <ListItem key={_category.slug}>
                     <ListItemButton onClick={() => setSearchQuery('c', _category.slug)} selected={searchCategories.includes(_category.slug)} color="primary">
                       <ListItemDecorator>
-                        <ValkyrieIcon icon={_category.icon} />
+                        <Valkyrie icon={_category.icon} />
                       </ListItemDecorator>
                       <ListItemContent>
                         <Typography noWrap>{_category.title}</Typography>
@@ -161,7 +161,7 @@ export default function Icons() {
 
               <Stack direction="row" gap={0.5} alignItems="baseline">
                 <Input
-                  startDecorator={<ValkyrieIcon icon={viMagnifyingGlass} />}
+                  startDecorator={<Valkyrie icon={viMagnifyingGlass} />}
                   placeholder="Search"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery('q', e.target.value)}
@@ -176,7 +176,7 @@ export default function Icons() {
                     });
                   }}
                 >
-                  <ValkyrieIcon icon={viFilterXmark} />
+                  <Valkyrie icon={viFilterXmark} />
                 </IconButton>
               </Stack>
             </Stack>

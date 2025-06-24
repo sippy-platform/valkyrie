@@ -7,7 +7,7 @@ import icons from '@/data/icons';
 import Codeblock from '@/design/components/Codeblock';
 import Header from '@/design/layout/LayoutElements/Header';
 
-import ValkyrieIcon, { viBook, viCircleExclamation, viFlag, viHeart, viHouse, viLockOpen, viMagnifyingGlass, viValkyrieSword } from '@sippy-platform/valkyrie';
+import { Valkyrie, viBook, viCircleExclamation, viFlag, viHeart, viHouse, viLockOpen, viMagnifyingGlass, viValkyrieSword } from '@sippy-platform/valkyrie';
 
 import LargeIconGrid from './Components/LargeIconGrid';
 
@@ -39,7 +39,7 @@ export default function Home() {
               <Input
                 startDecorator={
                   <IconButton type="submit" color="primary" sx={{ borderRadius: 'md' }}>
-                    <ValkyrieIcon icon={viMagnifyingGlass} />
+                    <Valkyrie icon={viMagnifyingGlass} />
                   </IconButton>
                 }
                 size="lg"
@@ -58,12 +58,12 @@ export default function Home() {
               />
             </form>
           </Stack>
-          <LargeIconGrid icon={viValkyrieSword} sx={{ order: { xs: 1, md: 2 }, '--ValkyrieIcon-scale': { xs: '8px', md: '16px' } }} />
+          <LargeIconGrid icon={viValkyrieSword} sx={{ order: { xs: 1, md: 2 }, '--Valkyrie-scale': { xs: '8px', md: '16px' } }} />
         </Stack>
       </Header>
       <Container>
         <Stack gap={5} sx={{ my: 5 }}>
-          <Alert color="danger" variant="solid" startDecorator={<ValkyrieIcon icon={viCircleExclamation} />} size="lg" sx={{ borderRadius: 'xl' }}>
+          <Alert color="danger" variant="solid" startDecorator={<Valkyrie icon={viCircleExclamation} />} size="lg" sx={{ borderRadius: 'xl' }}>
             We're still working on this, a lot can change.
           </Alert>
           <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1f', md: '1fr 1fr' }, gap: 5 }}>
@@ -72,7 +72,7 @@ export default function Home() {
               <Typography>Get started with Valkyrie by installing the npm package.</Typography>
               <Codeblock>npm install @sippy-platform/valkyrie</Codeblock>
               <Stack direction="row" gap={1} sx={{ mt: 3 }}>
-                <Button startDecorator={<ValkyrieIcon icon={viBook} />} component={NavLink} to="/docs">
+                <Button startDecorator={<Valkyrie icon={viBook} />} component={NavLink} to="/docs">
                   Documentation
                 </Button>
               </Stack>
@@ -93,8 +93,8 @@ export default function Home() {
                 height: { xs: 120, md: 300 }
               }}
             >
-              <ValkyrieIcon icon={viFlag} />
-              <ValkyrieIcon icon={viValkyrieSword} />
+              <Valkyrie icon={viFlag} />
+              <Valkyrie icon={viValkyrieSword} />
             </Box>
           </Box>
           <Box sx={{ display: 'grid', gridTemplateColumns: { xs: '1f', md: '1fr 1fr' }, gap: 5 }}>
@@ -114,15 +114,15 @@ export default function Home() {
                 height: { xs: 120, md: 300 }
               }}
             >
-              <ValkyrieIcon icon={viValkyrieSword} />
-              <ValkyrieIcon icon={viHeart} />
-              <ValkyrieIcon icon={viHouse} />
+              <Valkyrie icon={viValkyrieSword} />
+              <Valkyrie icon={viHeart} />
+              <Valkyrie icon={viHouse} />
             </Box>
             <Stack gap={1} justifyContent="center" sx={{ order: { xs: 1, md: 2 } }}>
               <Typography level="h2">Icons with love</Typography>
               <Typography>Every icon is made by hand, and with our heart. We don't include that in the package tho, we still need it.</Typography>
               <Stack direction="row" gap={1} sx={{ mt: 3 }}>
-                <Button startDecorator={<ValkyrieIcon icon={viValkyrieSword} />} component={NavLink} to="/icons">
+                <Button startDecorator={<Valkyrie icon={viValkyrieSword} />} component={NavLink} to="/icons">
                   Full library
                 </Button>
               </Stack>
@@ -149,7 +149,7 @@ export default function Home() {
                 height: { xs: 120, md: 300 }
               }}
             >
-              <ValkyrieIcon icon={viLockOpen} />
+              <Valkyrie icon={viLockOpen} />
             </Box>
           </Box>
         </Stack>
