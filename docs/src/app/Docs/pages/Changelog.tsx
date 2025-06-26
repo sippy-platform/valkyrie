@@ -44,34 +44,22 @@ export default function Changelog() {
         version="1.0.0-alpha.57"
         date="19 May 2025"
         added={[
+          <>Fully redesigned icons based on Amicons.</>,
           <>
-            The <Code>ValkyrieIcon</Code> component now supports the <Code>fade</Code> and <Code>beat</Code> property.
+            Adds the React <Code>ValkyrieIcon</Code> component.
           </>,
-          <>
-            Adds support to set the <Code>spin</Code> property to <Code>pulse</Code>.
-          </>,
-          <>
-            The <Code>ValkyrieIcon</Code> now allows you to pass the <Code>classname</Code> prop.
-          </>,
+          <>Adds new animations like fade, beat and pulse to our default CSS.</>,
           <>
             Introduces a brand new documentation website with improved icon previews, component documentation with interactive playground, this changelog, and
             much more. And best of all; it's now available online instead of needing to be compiled by you.
-          </>,
-          <>Adds support for React 19.</>,
-          <>
-            The <Code>ValkyrieIcon</Code> component will now play a transition when its props change.
           </>
         ]}
         changed={[
-          <>You can now search on categories and tags in icons.</>,
           <>Improved tooling for builds.</>,
           <>
             Renames the <Code>ValkyrieIcon</Code> type to <Code>IValkyrieIcon</Code>.
           </>,
-          <>
-            The <Code>ValkyrieIcon</Code> TypeScript type is now exported.
-          </>,
-          <>CSS transitions are now inherited from the parent component.</>
+          <>CSS transitions are now inherited from the parent element.</>
         ]}
         removed={[<>Removes the included CSS and font files.</>]}
         newIcons={[
