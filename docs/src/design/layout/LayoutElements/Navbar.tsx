@@ -54,18 +54,9 @@ export default function Navbar() {
             <Button
               component={NavLink}
               to="/"
-              variant={location?.pathname === '/' ? 'solid' : 'plain'}
+              variant={location?.pathname === '/' || location?.pathname?.startsWith('/icons') ? 'solid' : 'plain'}
               size="sm"
-              color={location?.pathname === '/' ? 'primary' : 'primary'}
-            >
-              Home
-            </Button>
-            <Button
-              component={NavLink}
-              to="/icons"
-              variant={location?.pathname?.startsWith('/icons') ? 'solid' : 'plain'}
-              size="sm"
-              color={location?.pathname?.startsWith('/icons') ? 'primary' : 'primary'}
+              color={location?.pathname === '/' || location?.pathname?.startsWith('/icons') ? 'primary' : 'primary'}
             >
               Icons
             </Button>
