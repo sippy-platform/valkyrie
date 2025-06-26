@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router';
 
 import { Container, IconButton, Stack, Typography } from '@mui/joy';
 
-import { Valkyrie, viArrowLeft } from '@sippy-platform/valkyrie';
+import Valkyrie, { viArrowLeft } from '@sippy-platform/valkyrie';
 
 export default function Error() {
   const navigate = useNavigate();

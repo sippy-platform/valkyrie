@@ -4,7 +4,7 @@ import { Box, Link, Sheet, Stack, Typography } from '@mui/joy';
 
 import { ILibraryIcon } from '@/types';
 
-import ValkyrieIcon from '@sippy-platform/valkyrie';
+import Valkyrie from '@sippy-platform/valkyrie';
 
 export default function IconCard({ icon }: { icon: ILibraryIcon }) {
   return (
@@ -23,7 +23,7 @@ export default function IconCard({ icon }: { icon: ILibraryIcon }) {
     >
       <Stack gap={1} justifyContent="center" alignItems="center" sx={{ pt: 2.5, pb: 1.5 }}>
         <Box sx={{ height: 28, width: 28, fontSize: 28 }} lineHeight="1rem">
-          <ValkyrieIcon icon={icon.icon} />
+          <Valkyrie icon={icon.icon} />
         </Box>
         <Link
           overlay

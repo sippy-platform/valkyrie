@@ -6,7 +6,7 @@ import icons from '@/data/icons';
 import Code from '@/design/components/Code';
 import { ILibraryIcon } from '@/types';
 
-import ValkyrieIcon, { viArrowRight, viBug, viPen, viPlus, viTrashCan, viValkyrieSword } from '@sippy-platform/valkyrie';
+import Valkyrie, { viArrowRight, viBug, viPen, viPlus, viTrashCan, viValkyrieSword } from '@sippy-platform/valkyrie';
 
 import IconCard from '../../Components/IconCard';
 
@@ -43,7 +43,7 @@ export default function Release({
       <Stack gap={4}>
         <Stack direction="row" alignItems="center" gap={2}>
           <Avatar size="lg" color="primary" variant="solid">
-            <ValkyrieIcon icon={viValkyrieSword} />
+            <Valkyrie icon={viValkyrieSword} />
           </Avatar>
           <Stack gap={0.5}>
             <Typography level="h2" lineHeight={1}>
@@ -61,7 +61,7 @@ export default function Release({
               {added.map((item: ReactNode, key: number) => (
                 <ListItem key={key}>
                   <ListItemDecorator>
-                    <ValkyrieIcon icon={viPlus} />
+                    <Valkyrie icon={viPlus} />
                   </ListItemDecorator>
                   <ListItemContent>
                     <Typography>{item}</Typography>
@@ -78,7 +78,7 @@ export default function Release({
               {changed.map((item: ReactNode, key: number) => (
                 <ListItem key={key}>
                   <ListItemDecorator>
-                    <ValkyrieIcon icon={viPen} />
+                    <Valkyrie icon={viPen} />
                   </ListItemDecorator>
                   <ListItemContent>
                     <Typography>{item}</Typography>
@@ -95,7 +95,7 @@ export default function Release({
               {fixed.map((item: ReactNode, key: number) => (
                 <ListItem key={key}>
                   <ListItemDecorator>
-                    <ValkyrieIcon icon={viBug} />
+                    <Valkyrie icon={viBug} />
                   </ListItemDecorator>
                   <ListItemContent>
                     <Typography>{item}</Typography>
@@ -112,7 +112,7 @@ export default function Release({
               {removed.map((item: ReactNode, key: number) => (
                 <ListItem key={key}>
                   <ListItemDecorator>
-                    <ValkyrieIcon icon={viTrashCan} />
+                    <Valkyrie icon={viTrashCan} />
                   </ListItemDecorator>
                   <ListItemContent>
                     <Typography>{item}</Typography>
@@ -160,7 +160,7 @@ export default function Release({
             <List marker="disc" sx={{ '--ListItem-minHeight': '1.5rem', '--ListItem-paddingY': '.125rem' }}>
               {renamedIcons.map((icon: { new: string; old: string }) => (
                 <ListItem key={icon.new}>
-                  <Code>{icon.old}</Code> <ValkyrieIcon icon={viArrowRight} style={{ marginInline: 8, top: 2 }} /> <Code>{icon.new}</Code>
+                  <Code>{icon.old}</Code> <Valkyrie icon={viArrowRight} style={{ marginInline: 8, top: 2 }} /> <Code>{icon.new}</Code>
                 </ListItem>
               ))}
             </List>

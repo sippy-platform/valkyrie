@@ -4,7 +4,7 @@ import { Box, Card, Chip, Divider, FormControl, FormLabel, IconButton, Input, Sh
 
 import Codeblock from '@/design/components/Codeblock';
 
-import { IValkyrieIcon, Valkyrie, viBroom } from '@sippy-platform/valkyrie';
+import Valkyrie, { IValkyrieIcon, viBroom } from '@sippy-platform/valkyrie';
 
 export interface IPlaygroundConfig {
   icons: IValkyrieIcon[];

@@ -2,6 +2,7 @@ import { createHashRouter, Navigate } from 'react-router';
 
 import Docs from './app/Docs';
 import PageBeat from './app/Docs/pages/Beat';
+import PageBounce from './app/Docs/pages/Bounce';
 import Changelog from './app/Docs/pages/Changelog';
 import PageFade from './app/Docs/pages/Fade';
 import PageFlip from './app/Docs/pages/Flip';
@@ -47,6 +48,10 @@ const router = createHashRouter([
           {
             path: 'spin',
             element: <PageSpin />
+          },
+          {
+            path: 'bounce',
+            element: <PageBounce />
           },
           {
             path: 'rotate',

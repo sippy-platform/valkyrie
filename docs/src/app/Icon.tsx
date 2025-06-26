@@ -8,7 +8,7 @@ import Codeblock from '@/design/components/Codeblock';
 import Header from '@/design/layout/LayoutElements/Header';
 import { IIcon, ILibraryIcon } from '@/types';
 
-import { Valkyrie, viArrowLeft, viXmark } from '@sippy-platform/valkyrie';
+import Valkyrie, { viArrowLeft, viXmark } from '@sippy-platform/valkyrie';
 
 import IconCard from './Components/IconCard';
 import LargeIconGrid from './Components/LargeIconGrid';

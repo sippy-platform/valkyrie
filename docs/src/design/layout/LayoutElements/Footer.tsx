@@ -17,7 +17,7 @@ import {
   useColorScheme
 } from '@mui/joy';
 
-import ValkyrieIcon, { viCircleHalfInner, viGithub, viHeart, viMoon, viSun, viValkyrieSword } from '@sippy-platform/valkyrie';
+import Valkyrie, { viCircleHalfInner, viGithub, viHeart, viMoon, viSun, viValkyrieSword } from '@sippy-platform/valkyrie';
 
 export default function Footer() {
   const { mode, setMode } = useColorScheme();
@@ -52,7 +52,7 @@ export default function Footer() {
                 </Typography>
               </Stack>
               <Typography sx={{ mt: 1 }}>
-                Valkyrie is a set of SVG icons made with <ValkyrieIcon icon={viHeart} /> in Belgium.
+                Valkyrie is a set of SVG icons made with <Valkyrie icon={viHeart} /> in Belgium.
               </Typography>
             </Box>
           </Grid>
@@ -111,7 +111,7 @@ export default function Footer() {
                 <ListItem>
                   <ListItemButton color="primary" variant="soft" component="a" href="https://github.com/sippy-platform/valkyrie">
                     <ListItemDecorator>
-                      <ValkyrieIcon icon={viGithub} />
+                      <Valkyrie icon={viGithub} />
                     </ListItemDecorator>
                     <ListItemContent>
                       <Typography>GitHub</Typography>
@@ -121,7 +121,7 @@ export default function Footer() {
                 <ListItem>
                   <ListItemButton color="primary" variant="soft" component="a" href="https://sippy.cloud">
                     <ListItemDecorator>
-                      <ValkyrieIcon icon={viValkyrieSword} />
+                      <Valkyrie icon={viValkyrieSword} />
                     </ListItemDecorator>
                     <ListItemContent>
                       <Typography>Valkyrie</Typography>
@@ -141,7 +141,7 @@ export default function Footer() {
               </Typography>
               <Stack direction="row" gap={0.5}>
                 <IconButton color="primary" variant="soft" onClick={() => setMode(mode === 'dark' ? 'light' : mode === 'light' ? 'system' : 'dark')}>
-                  <ValkyrieIcon icon={mode === 'dark' ? viMoon : mode === 'light' ? viSun : viCircleHalfInner} />
+                  <Valkyrie icon={mode === 'dark' ? viMoon : mode === 'light' ? viSun : viCircleHalfInner} />
                 </IconButton>
               </Stack>
             </Stack>

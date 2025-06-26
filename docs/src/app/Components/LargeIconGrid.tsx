@@ -1,7 +1,7 @@
 import { Box, Sheet } from '@mui/joy';
 import { SxProps } from '@mui/joy/styles/types';
 
-import ValkyrieIcon, { IValkyrieIcon } from '@sippy-platform/valkyrie';
+import Valkyrie, { IValkyrieIcon } from '@sippy-platform/valkyrie';
 
 export default function LargeIconGrid({ icon, sx }: { icon: IValkyrieIcon; sx?: SxProps }) {
   return (
@@ -36,7 +36,7 @@ export default function LargeIconGrid({ icon, sx }: { icon: IValkyrieIcon; sx?: 
             'linear-gradient(to right, var(--joy-palette-primary-200) 1px, transparent 1px), linear-gradient(to bottom, var(--joy-palette-primary-200) 1px, transparent 1px)'
         }}
       >
-        <ValkyrieIcon icon={icon} style={{ fontSize: 'calc(var(--ValkyrieIcon-scale, 16px) * 16)' }} />
+        <Valkyrie icon={icon} style={{ fontSize: 'calc(var(--ValkyrieIcon-scale, 16px) * 16)' }} />
       </Sheet>
     </Box>
   );

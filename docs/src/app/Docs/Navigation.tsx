@@ -3,7 +3,7 @@ import { NavLink, useLocation } from 'react-router';
 
 import { List, ListItem, ListItemButton, ListItemContent, ListSubheader, Typography } from '@mui/joy';
 
-import { Valkyrie, viArrowRotateRight, viCircleHalfInner, viHeart, viReact, viSpinner, viStar, viValkyrieSword } from '@sippy-platform/valkyrie';
+import Valkyrie, { viArrowRotateRight, viArrowUp, viCircleHalfInner, viHeart, viReact, viSpinner, viStar, viValkyrieSword } from '@sippy-platform/valkyrie';
 
 export default function DocsNavigation() {
   const location = useLocation();
@@ -28,6 +28,11 @@ export default function DocsNavigation() {
           title: 'Spin',
           icon: viSpinner,
           link: '/docs/spin'
+        },
+        {
+          title: 'Bounce',
+          icon: viArrowUp,
+          link: '/docs/bounce'
         },
         {
           title: 'Rotate',

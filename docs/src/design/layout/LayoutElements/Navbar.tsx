@@ -2,7 +2,7 @@ import { NavLink, useLocation } from 'react-router';
 
 import { Box, Button, Container, IconButton, Link, Sheet, Stack } from '@mui/joy';
 
-import ValkyrieIcon, { viGithub } from '@sippy-platform/valkyrie';
+import Valkyrie, { viGithub } from '@sippy-platform/valkyrie';
 
 export default function Navbar() {
   const location = useLocation();
@@ -90,7 +90,7 @@ export default function Navbar() {
           </Stack>
           <Stack direction="row" justifyContent="flex-end">
             <IconButton size="sm" variant="plain" color="primary" component="a" href="https://github.com/sippy-platform/valkyrie" target="_blank">
-              <ValkyrieIcon icon={viGithub} />
+              <Valkyrie icon={viGithub} />
             </IconButton>
           </Stack>
         </Box>

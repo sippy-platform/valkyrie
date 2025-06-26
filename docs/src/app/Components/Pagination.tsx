@@ -2,7 +2,7 @@ import { Button, Divider, IconButton, Stack } from '@mui/joy';
 import { PaginationProps } from '@mui/material';
 import usePagination from '@mui/material/usePagination';
 
-import ValkyrieIcon, { viArrowLeft, viArrowRight, viEllipsisH } from '@sippy-platform/valkyrie';
+import Valkyrie, { viArrowLeft, viArrowRight, viEllipsisH } from '@sippy-platform/valkyrie';
 
 export default function Pagination(props: PaginationProps) {
   const { items } = usePagination(props);
@@ -24,7 +24,7 @@ export default function Pagination(props: PaginationProps) {
                 color={selected ? 'primary' : 'neutral'}
                 variant={selected ? 'solid' : 'plain'}
                 disabled={disabled}
-                startDecorator={<ValkyrieIcon icon={viArrowLeft} />}
+                startDecorator={<Valkyrie icon={viArrowLeft} />}
                 {...props}
                 key={key}
               >
@@ -38,7 +38,7 @@ export default function Pagination(props: PaginationProps) {
                 color={selected ? 'primary' : 'neutral'}
                 variant={selected ? 'solid' : 'plain'}
                 disabled={disabled}
-                endDecorator={<ValkyrieIcon icon={viArrowRight} />}
+                endDecorator={<Valkyrie icon={viArrowRight} />}
                 {...props}
                 key={key}
               >
@@ -49,7 +49,7 @@ export default function Pagination(props: PaginationProps) {
           case 'end-ellipsis':
             return (
               <IconButton size="sm" color={selected ? 'primary' : 'neutral'} variant={selected ? 'solid' : 'plain'} disabled={disabled} {...props} key={key}>
-                <ValkyrieIcon icon={viEllipsisH} />
+                <Valkyrie icon={viEllipsisH} />
               </IconButton>
             );
         }

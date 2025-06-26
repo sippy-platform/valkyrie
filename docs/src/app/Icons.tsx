@@ -23,7 +23,7 @@ import Header from '@/design/layout/LayoutElements/Header';
 import useSearch from '@/hooks/useSearch';
 import { ILibraryIcon } from '@/types';
 
-import { Valkyrie, viFilterXmark, viMagnifyingGlass } from '@sippy-platform/valkyrie';
+import Valkyrie, { viFilterXmark, viMagnifyingGlass } from '@sippy-platform/valkyrie';
 
 import IconCard from './Components/IconCard';
 import Pagination from './Components/Pagination';

@@ -1,5 +1,4 @@
 export * from "./Valkyrie";
-import ValkyrieIcon from "./ValkyrieIcon";
-export { ValkyrieTailwind as Valkyrie } from "./ValkyrieTailwind";
+import Valkyrie from "./ValkyrieIcon";
 
-export default ValkyrieIcon;
+export default Valkyrie;

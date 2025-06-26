@@ -25,7 +25,18 @@ export default function Changelog() {
           'triangle-exclamation',
           'yealink'
         ]}
-        added={[<>Valkyrie is now properly exported as both a CJS and ESM package.</>]}
+        added={[
+          <>Valkyrie is now properly exported as both a CJS and ESM package.</>,
+          <>
+            The <Code>ValkyrieIcon</Code> component has been renamed to <Code>Valkyrie</Code>.
+          </>,
+          <>
+            Adds the bounce animation to our default style, and added the <Code>bounce</Code> prop to our React component.
+          </>,
+          <>
+            We've removed the dependency on <Code>@emotion/css</Code>!
+          </>
+        ]}
         fixed={[<>Fixes the SVG and export for fingerprint, record-stop, safari, signal-strong, and triangle-exclamation containing the icon twice.</>]}
       />
       <Release

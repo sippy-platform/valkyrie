@@ -7,7 +7,7 @@ import icons from '@/data/icons';
 import Codeblock from '@/design/components/Codeblock';
 import Header from '@/design/layout/LayoutElements/Header';
 
-import { Valkyrie, viBook, viCircleExclamation, viFlag, viHeart, viHouse, viLockOpen, viMagnifyingGlass, viValkyrieSword } from '@sippy-platform/valkyrie';
+import Valkyrie, { viBook, viCircleExclamation, viFlag, viHeart, viHouse, viLockOpen, viMagnifyingGlass, viValkyrieSword } from '@sippy-platform/valkyrie';
 
 import LargeIconGrid from './Components/LargeIconGrid';
 
