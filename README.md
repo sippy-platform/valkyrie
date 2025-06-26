@@ -12,15 +12,7 @@ npm install @sippy-platform/valkyrie
 
 Valkyrie includes a number of ways to use it. Our package will include the individual SVG files, a React-component and JavaScript implementation with TypeScript definitions, as well as an old-school webfont.
 
-## Usage with Tailwind
-
-If you're using Tailwind, you can opt to use the `Valkyrie` component instead of the `ValkyrieIcon` component. To get the styling working, you'll include the following directive in your CSS file:
-
-```css
-@source "../node_modules/@sippy-platform/valkyrie";
-```
-
-# 255 icons
+# 352 icons
 
 [Available on Figma](https://www.figma.com/file/jeP1aSRulegRxHDegrrmWc/Valkyrie?node-id=1%3A11358)
 
