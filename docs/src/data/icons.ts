@@ -1,5 +1,5 @@
 
-import { viAGum,viAddressBook,viAlignCenter,viAlignContentCenter,viAlignContentEnd,viAlignContentStart,viAlignJustify,viAlignLeft,viAlignRight,viAngleDown,viAngleLeft,viAngleRight,viAngleUp,viAnglesX,viAnglesY,viAppleAppStore,viApple,viArrowDownArrowUp,viArrowDownFromCloud,viArrowDownShortWide,viArrowDownToLine,viArrowDownWideShort,viArrowDown,viArrowLeftArrowRight,viArrowLeftFromBracket,viArrowLeftToBracket,viArrowLeftToLine,viArrowLeft,viArrowPointer,viArrowRightFromBracket,viArrowRightFromFile,viArrowRightFromSmartphone,viArrowRightProhibited,viArrowRightToBracketClock,viArrowRightToBracket,viArrowRightToFile,viArrowRightToLine,viArrowRight,viArrowRotateRight,viArrowUpRightFromSquare,viArrowUpShortWide,viArrowUpToCloud,viArrowUpToLine,viArrowUpWideShort,viArrowUp,viArrowsRotateRight,viAsterisk,viAt,viBackward,viBarsUneven,viBars,viBel,viBlf,viBold,viBook,viBoxOpenFull,viBracketsCurly,viBroom,viBug,viBuilding,viBurgerGlass,viCalendarClock,viCalendarDay,viCalendarRangeClock,viCalendarRange,viCalendarStars,viCalendarWeek,viCalendar,viCarSide,viChainSlash,viChain,viChalkboardPerson,viChartPie,viCheck,viChevronDown,viChevronLeft,viChevronRight,viChevronUp,viChrome,viCircleCheck,viCircleDashed,viCircleExclamation,viCircleHalfInner,viCircleHalf,viCircleInfo,viCirclePerson,viCirclePlus,viCircleQuestion,viCircleXmark,viCity,viClockPause,viClockRotateLeft,viClockSlash,viClock,viCloudSoftphone,viCode,viCodeblock,viCommand,viCompare,viCompass,viCompress,viCopy,viDevices,viDiagram,viDiceFive,viDiceFour,viDiceOne,viDiceSix,viDiceThree,viDiceTwo,viDice,viDisplay,viDoor,viEarth,viEclipse,viEdge,viEllipsisH,viEllipsisV,viEnvelope,viEthernet,viEuro,viExpand,viExport,viEyeSlash,viEye,viFacebookMessenger,viFacebook,viFanvil,viFastBackward,viFastForward,viFax,viFileAudio,viFileExcel,viFilePowerpoint,viFileText,viFileWord,viFileZip,viFile,viFilesList,viFiles,viFilmstrip,viFilterPlus,viFilterXmark,viFilter,viFingerprint,viFirefox,viFlagCheckered,viFlag,viFlask,viFloppyDisk,viFolderImage,viFolderMin,viFolderOpen,viFolderPlus,viFolder,viForward,viGauge,viGear,viGift,viGithub,viGlass,viGooglePlay,viGrid,viGripDotsH,viGripDotsV,viGripLines,viHeading1,viHeading2,viHeading3,viHeading4,viHeading5,viHeading6,viHeadset,viHeartCrack,viHeartHalf,viHeart,viHorizontalLine,viHouse,viIdCard,viImage,viItalic,viKey,viKeyboardBrightnessHigh,viKeyboardBrightnessLow,viKeyboard,viLaptop,viLayersPlus,viLayers,viLifeRing,viLightbulbOn,viLightbulb,viLine,viLinkedin,viListBarChart,viListChecksXmark,viListChecks,viListClock,viListOrderedClock,viListOrdered,viList,viLocationPinDot,viLocationPinSlash,viLocationPin,viLocationPinsRoute,viLockOpen,viLock,viMagnifyingGlassMin,viMagnifyingGlassPlus,viMagnifyingGlass,viMegaphone,viMessagePen,viMessageSmile,viMessageText,viMessage,viMicrophoneSlash,viMicrophone,viMin,viMoon,viMoped,viMusicPause,viMusic,viNetwork,viNext,viNumpad,viOrderAlphabeticalAsc,viOrderAlphabeticalDesc,viOrderNumericalAsc,viOrderNumericalDesc,viPager,viPaperPlane,viParachuteBox,viParagraph,viPassword,viPause,viPen,viPeopleCircle,viPeopleXmark,viPeople,viPersonClock,viPersonGear,viPersonHeadset,viPersonList,viPersonLock,viPersonPlus,viPersonXmark,viPerson,viPhoneArrowDownLeftProhibited,viPhoneArrowDownLeft,viPhoneArrowUpRightProhibited,viPhoneArrowUpRight,viPhoneClock,viPhoneGear,viPhoneList,viPhoneOffice,viPhoneVolume,viPhoneXmark,viPhone,viPlateUtensils,viPlayPause,viPlay,viPlus,viPower,viPrevious,viProhibited,viPuzzlePiece,viQuote,viReact,viReceipt,viRecordStop,viRecord,viRectangleP,viRedo,viRepeatOnce,viRepeat,viSafari,viServer,viShare,viShieldKeyhole,viShieldPlus,viShieldXmark,viShield,viShoppingCart,viShuffle,viSidebarLeft,viSidebarRight,viSignalFair,viSignalGood,viSignalModerate,viSignalSlash,viSignalStrong,viSignalWeak,viSimCard,viSippy,viSliders,viSmartphone,viSpeakerGrill,viSpinnerThird,viSpinner,viSpy,viSquareGum,viStar,viStop,viStore,viStrikethrough,viSubscript,viSun,viSuperscript,viSwatchbook,viTableCellMerge,viTableClock,viTableColumnInsertLeft,viTableColumnInsertRight,viTableColumnMin,viTableHeaderCell,viTableHeaderColumn,viTableHeaderRow,viTableMin,viTableRowInsertBottom,viTableRowInsertTop,viTableRowMin,viTable,viTagGear,viTagPlus,viTag,viTeams,viThumbtackSlash,viThumbtack,viToggleOff,viToggleOn,viTowerBroadcast,viTranslate,viTrashCan,viTriangleExclamation,viUnderline,viUndo,viValkyrieSword,viVideo,viVoicemail,viVolume0,viVolume1,viVolume2,viVolume3,viVolumeSlash,viWallet,viWallpaper,viWaveform,viWebhooksClock,viWebhooks,viWindow,viWindows,viXmark,viYealink } from '@sippy-platform/valkyrie';
+import { viAGum,viAddressBook,viAlignCenter,viAlignContentCenter,viAlignContentEnd,viAlignContentStart,viAlignJustify,viAlignLeft,viAlignRight,viAngleDown,viAngleLeft,viAngleRight,viAngleUp,viAnglesX,viAnglesY,viAppleAppStore,viApple,viArrowDownArrowUp,viArrowDownFromCloud,viArrowDownShortWide,viArrowDownToLine,viArrowDownWideShort,viArrowDown,viArrowLeftArrowRight,viArrowLeftFromBracket,viArrowLeftToBracket,viArrowLeftToLine,viArrowLeft,viArrowPointer,viArrowRightFromBracket,viArrowRightFromFile,viArrowRightFromSmartphone,viArrowRightProhibited,viArrowRightToBracketClock,viArrowRightToBracket,viArrowRightToFile,viArrowRightToLine,viArrowRight,viArrowRotateRight,viArrowUpRightFromSquare,viArrowUpShortWide,viArrowUpToCloud,viArrowUpToLine,viArrowUpWideShort,viArrowUp,viArrowsRotateRight,viAsterisk,viAt,viBackward,viBarsUneven,viBars,viBel,viBlf,viBold,viBook,viBoxOpenFull,viBracketsCurly,viBroom,viBug,viBuilding,viBurgerGlass,viCalendarClock,viCalendarDay,viCalendarRangeClock,viCalendarRange,viCalendarStars,viCalendarWeek,viCalendar,viCarSide,viChainSlash,viChain,viChalkboardPerson,viChartPie,viCheck,viChevronDown,viChevronLeft,viChevronRight,viChevronUp,viChrome,viCircleCheck,viCircleDashed,viCircleExclamation,viCircleHalfInner,viCircleHalf,viCircleInfo,viCirclePerson,viCirclePlus,viCircleQuestion,viCircleXmark,viCity,viClockPause,viClockRotateLeft,viClockSlash,viClock,viCloudSoftphone,viCode,viCodeblock,viCommand,viCompare,viCompass,viCompress,viCopy,viCursor,viDevices,viDiagram,viDiamonds,viDiceFive,viDiceFour,viDiceOne,viDiceSix,viDiceThree,viDiceTwo,viDice,viDisplay,viDoor,viEarth,viEclipse,viEdge,viEllipsisH,viEllipsisV,viEnvelope,viEthernet,viEuro,viExpand,viExport,viEyeSlash,viEye,viFacebookMessenger,viFacebook,viFanvil,viFastBackward,viFastForward,viFax,viFileAudio,viFileExcel,viFilePowerpoint,viFileText,viFileWord,viFileZip,viFile,viFilesList,viFiles,viFilmstrip,viFilterPlus,viFilterXmark,viFilter,viFingerprint,viFirefox,viFlagCheckered,viFlag,viFlask,viFloppyDisk,viFolderImage,viFolderMin,viFolderOpen,viFolderPlus,viFolder,viForward,viGauge,viGear,viGift,viGithub,viGlass,viGooglePlay,viGrid,viGripDotsH,viGripDotsV,viGripLines,viHeading1,viHeading2,viHeading3,viHeading4,viHeading5,viHeading6,viHeadset,viHeartCrack,viHeartHalf,viHeart,viHorizontalLine,viHouse,viIdCard,viImage,viInput,viItalic,viKey,viKeyboardBrightnessHigh,viKeyboardBrightnessLow,viKeyboard,viLaptop,viLayersPlus,viLayers,viLifeRing,viLightbulbOn,viLightbulb,viLine,viLinkedin,viListBarChart,viListChecksXmark,viListChecks,viListClock,viListOrderedClock,viListOrdered,viList,viLocationPinDot,viLocationPinSlash,viLocationPin,viLocationPinsRoute,viLockOpen,viLock,viMacosFinder,viMagnifyingGlassMin,viMagnifyingGlassPlus,viMagnifyingGlass,viMegaphone,viMessagePen,viMessageSmile,viMessageText,viMessage,viMicrophoneSlash,viMicrophone,viMin,viMoon,viMoped,viMusicPause,viMusic,viNetwork,viNext,viNumpad,viOrderAlphabeticalAsc,viOrderAlphabeticalDesc,viOrderNumericalAsc,viOrderNumericalDesc,viPager,viPaperPlane,viParachuteBox,viParagraph,viPassword,viPause,viPen,viPeopleCircle,viPeopleXmark,viPeople,viPersonClock,viPersonGear,viPersonHeadset,viPersonList,viPersonLock,viPersonPlus,viPersonXmark,viPerson,viPhoneArrowDownLeftProhibited,viPhoneArrowDownLeft,viPhoneArrowUpRightProhibited,viPhoneArrowUpRight,viPhoneClock,viPhoneGear,viPhoneList,viPhoneOffice,viPhoneVolume,viPhoneXmark,viPhone,viPlateUtensils,viPlayPause,viPlay,viPlus,viPower,viPrevious,viProhibited,viPuzzlePiece,viQuote,viReact,viReceipt,viRecordStop,viRecord,viRectangleP,viRedo,viRepeatOnce,viRepeat,viSafari,viServer,viShare,viShieldKeyhole,viShieldPlus,viShieldXmark,viShield,viShoppingCart,viShuffle,viSidebarLeft,viSidebarRight,viSignalFair,viSignalGood,viSignalModerate,viSignalSlash,viSignalStrong,viSignalWeak,viSimCard,viSippy,viSliders,viSmartphone,viSpeakerGrill,viSpinnerThird,viSpinner,viSpy,viSquareCheck,viSquareGum,viStar,viStop,viStore,viStrikethrough,viSubscript,viSun,viSuperscript,viSwatchbook,viTableCellMerge,viTableClock,viTableColumnInsertLeft,viTableColumnInsertRight,viTableColumnMin,viTableHeaderCell,viTableHeaderColumn,viTableHeaderRow,viTableMin,viTableRowInsertBottom,viTableRowInsertTop,viTableRowMin,viTable,viTagGear,viTagPlus,viTag,viTeams,viThumbtackSlash,viThumbtack,viToggleOff,viToggleOn,viTowerBroadcast,viTranslate,viTrashCan,viTriangleExclamation,viUnderline,viUndo,viValkyrieSword,viVideo,viVoicemail,viVolume0,viVolume1,viVolume2,viVolume3,viVolumeSlash,viWallet,viWallpaper,viWaveform,viWebhooksClock,viWebhooks,viWindow,viWindows,viXmark,viYealink } from '@sippy-platform/valkyrie';
 
 const icons = [
   {
@@ -717,6 +717,13 @@ const icons = [
     icon: viCopy
   },
   {
+    component: 'viCursor',
+    categories: ["design"],
+    tags: ["input"],
+    slug: 'cursor',
+    icon: viCursor
+  },
+  {
     component: 'viDevices',
     categories: ["coding","devices"],
     tags: ["laptop","smartphone","mobile"],
@@ -729,6 +736,13 @@ const icons = [
     tags: ["data","graph","analytics"],
     slug: 'diagram',
     icon: viDiagram
+  },
+  {
+    component: 'viDiamonds',
+    categories: ["design","shapes"],
+    tags: ["components"],
+    slug: 'diamonds',
+    icon: viDiamonds
   },
   {
     component: 'viDiceFive',
@@ -1263,6 +1277,13 @@ const icons = [
     icon: viImage
   },
   {
+    component: 'viInput',
+    categories: ["design"],
+    tags: ["input","rename"],
+    slug: 'input',
+    icon: viInput
+  },
+  {
     component: 'viItalic',
     categories: ["editor"],
     tags: [],
@@ -1443,6 +1464,13 @@ const icons = [
     tags: ["privacy"],
     slug: 'lock',
     icon: viLock
+  },
+  {
+    component: 'viMacosFinder',
+    categories: ["brands"],
+    tags: ["apple","macos","ipados"],
+    slug: 'macos-finder',
+    icon: viMacosFinder
   },
   {
     component: 'viMagnifyingGlassMin',
@@ -2094,6 +2122,13 @@ const icons = [
     tags: ["secret","agent"],
     slug: 'spy',
     icon: viSpy
+  },
+  {
+    component: 'viSquareCheck',
+    categories: ["alerts","design"],
+    tags: ["checkmark","confirm","done"],
+    slug: 'square-check',
+    icon: viSquareCheck
   },
   {
     component: 'viSquareGum',
