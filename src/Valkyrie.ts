@@ -321,6 +321,20 @@ export const viArrowsRotateRight: {
   name: 'arrows_rotate_right',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M11.25 5.5h2.206l-.005-.01A6 6 0 0 0 4.32 3.261c-.327.255-.8.259-1.092-.034s-.295-.771.025-1.033A7.47 7.47 0 0 1 8 .5a7.5 7.5 0 0 1 6.5 3.756V2.25a.75.75 0 0 1 1.5 0v4a.75.75 0 0 1-.75.75h-4a.75.75 0 0 1 0-1.5m-6.49 5H2.554l.004.01a6 6 0 0 0 9.132 2.229c.327-.255.8-.259 1.093.034s.295.771-.026 1.033A7.47 7.47 0 0 1 8.01 15.5a7.5 7.5 0 0 1-6.5-3.756v2.006a.75.75 0 0 1-1.5 0v-4A.75.75 0 0 1 .76 9h4a.75.75 0 1 1 0 1.5"/></svg>`,
 };
+export const viArrowsUpRightAndDownLeftFromCenter: {
+  name: 'arrows_up_right_and_down_left_from_center';
+  data: string;
+} = {
+  name: 'arrows_up_right_and_down_left_from_center',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M5.72 9.22a.75.75 0 1 1 1.06 1.06L2.56 14.5h2.69a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 1 1.5 0v2.69zM15.25 0a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0V2.56l-4.22 4.22a.75.75 0 1 1-1.06-1.06l4.22-4.22h-2.69a.75.75 0 0 1 0-1.5z"/></svg>`,
+};
+export const viArrowsUpRightAndDownLeftToCenter: {
+  name: 'arrows_up_right_and_down_left_to_center';
+  data: string;
+} = {
+  name: 'arrows_up_right_and_down_left_to_center',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M6.25 9a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-1.5 0v-2.69l-4.22 4.22a.75.75 0 1 1-1.06-1.06l4.22-4.22H1.75a.75.75 0 0 1 0-1.5zM14.72.22a.75.75 0 1 1 1.06 1.06L11.56 5.5h2.69a.75.75 0 0 1 0 1.5h-4.5A.75.75 0 0 1 9 6.25v-4.5a.75.75 0 0 1 1.5 0v2.69z"/></svg>`,
+};
 export const viAsterisk: {
   name: 'asterisk';
   data: string;
@@ -1259,6 +1273,13 @@ export const viHouse: {
   name: 'house',
   data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M8.804 2.155a1.25 1.25 0 0 0-1.608 0l-4.25 3.57a1.25 1.25 0 0 0-.446.957v6.568c0 .69.56 1.25 1.25 1.25h8.5c.69 0 1.25-.56 1.25-1.25V6.682c0-.37-.163-.72-.446-.957zM6.231 1.006a2.75 2.75 0 0 1 3.538 0l4.25 3.57A2.75 2.75 0 0 1 15 6.682v6.568A2.75 2.75 0 0 1 12.25 16h-8.5A2.75 2.75 0 0 1 1 13.25V6.682c0-.812.36-1.583.981-2.106z"/></svg>`,
 };
+export const viIdCardSlash: {
+  name: 'id_card_slash';
+  data: string;
+} = {
+  name: 'id_card_slash',
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M.22.22a.75.75 0 0 1 1.06 0l14.5 14.5a.75.75 0 1 1-1.06 1.06L12.94 14H2.75A2.75 2.75 0 0 1 0 11.25v-6.5c0-1 .536-1.873 1.335-2.354L.22 1.28a.75.75 0 0 1 0-1.06M1.5 5v6.25c0 .69.56 1.25 1.25 1.25h.128q-.076-.094-.147-.193c-.307-.436-.32-1.11.186-1.279a9.75 9.75 0 0 1 6.166 0c.506.17.493.843.185 1.279q-.07.099-.147.193h2.319L7.532 8.593A1.748 1.748 0 0 1 4.25 7.75c0-.66.366-1.235.906-1.533L3.94 5zm11.75-3A2.75 2.75 0 0 1 16 4.75v6.5c0 .487-.129.942-.35 1.339l-1.165-1.164a1 1 0 0 0 .015-.175V5H8.06l-3-3z"/><path d="M11.75 8.5a.75.75 0 0 1 .729.918L11.56 8.5zm1-2.5a.75.75 0 0 1 0 1.5h-2.19L9.253 6.191A.75.75 0 0 1 9.75 6z"/></svg>`,
+};
 export const viIdCard: {
   name: 'id_card';
   data: string;
@@ -1313,7 +1334,7 @@ export const viKeyboard: {
   data: string;
 } = {
   name: 'keyboard',
-  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M3.75 5.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0M5 6.5A.75.75 0 1 0 5 5a.75.75 0 0 0 0 1.5m2.75-.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0M9 6.5A.75.75 0 1 0 9 5a.75.75 0 0 0 0 1.5m2.75-.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0M13 6.5A.75.75 0 1 0 13 5a.75.75 0 0 0 0 1.5M4.75 7.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0M6 8.5A.75.75 0 1 0 6 7a.75.75 0 0 0 0 1.5m2.75-.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0M10 8.5A.75.75 0 1 0 10 7a.75.75 0 0 0 0 1.5m2.75-.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0M5.25 9.5a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5z"/><path d="M0 5.25A2.75 2.75 0 0 1 2.75 2.5h10.5A2.75 2.75 0 0 1 16 5.25v5.5a2.75 2.75 0 0 1-2.75 2.75H2.75A2.75 2.75 0 0 1 0 10.75zM2.75 4c-.69 0-1.25.56-1.25 1.25v5.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-5.5c0-.69-.56-1.25-1.25-1.25z"/></svg>`,
+  data: `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="vi" viewBox="0 0 16 16"><path d="M10.75 9.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1 0-1.5zM4 7a.75.75 0 1 1 0 1.5A.75.75 0 0 1 4 7m2.5 0a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5M9 7a.75.75 0 1 1 0 1.5A.75.75 0 0 1 9 7m2.5 0a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5M3 5a.75.75 0 1 1 0 1.5A.75.75 0 0 1 3 5m2.5 0a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5M8 5a.75.75 0 1 1 0 1.5A.75.75 0 0 1 8 5m2.5 0a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5M13 5a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5"/><path d="M13.25 2.5A2.75 2.75 0 0 1 16 5.25v5.5a2.75 2.75 0 0 1-2.75 2.75H2.75A2.75 2.75 0 0 1 0 10.75v-5.5A2.75 2.75 0 0 1 2.75 2.5zM2.75 4c-.69 0-1.25.56-1.25 1.25v5.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-5.5c0-.69-.56-1.25-1.25-1.25z"/></svg>`,
 };
 export const viLaptop: {
   name: 'laptop';
@@ -2545,6 +2566,8 @@ export type Valkyrie =
   | 'arrow_up_wide_short'
   | 'arrow_up'
   | 'arrows_rotate_right'
+  | 'arrows_up_right_and_down_left_from_center'
+  | 'arrows_up_right_and_down_left_to_center'
   | 'asterisk'
   | 'at'
   | 'backward'
@@ -2679,6 +2702,7 @@ export type Valkyrie =
   | 'heart'
   | 'horizontal_line'
   | 'house'
+  | 'id_card_slash'
   | 'id_card'
   | 'image'
   | 'input'
@@ -2909,6 +2933,8 @@ export const valkyrieSet = [
   viArrowUpWideShort,
   viArrowUp,
   viArrowsRotateRight,
+  viArrowsUpRightAndDownLeftFromCenter,
+  viArrowsUpRightAndDownLeftToCenter,
   viAsterisk,
   viAt,
   viBackward,
@@ -3043,6 +3069,7 @@ export const valkyrieSet = [
   viHeart,
   viHorizontalLine,
   viHouse,
+  viIdCardSlash,
   viIdCard,
   viImage,
   viInput,
