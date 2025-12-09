@@ -7,7 +7,13 @@ import Release from './_Release';
 export default function Changelog() {
   return (
     <Stack gap={5}>
-      <Release name="Valkyrie 1.0 beta 4" version="1.0.0-beta.4" date="October 2025" newIcons={['calendar-arrow-to-day']} updatedIcons={['teams']} />
+      <Release
+        name="Valkyrie 1.0 beta 4"
+        version="1.0.0-beta.4"
+        date="9 December 2025"
+        newIcons={['calendar-arrow-to-day']}
+        updatedIcons={['gauge', 'teams']}
+      />
       <Release
         name="Valkyrie 1.0 beta 3"
         version="1.0.0-beta.3"
