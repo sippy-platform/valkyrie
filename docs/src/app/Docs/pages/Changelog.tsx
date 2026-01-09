@@ -7,6 +7,7 @@ import Release from './_Release';
 export default function Changelog() {
   return (
     <Stack gap={5}>
+      <Release name="Valkyrie 1.0 beta 5" version="1.0.0-beta.5" date="9 January 2026" fixed={[<>Fixes the ESM export missing file extensions.</>]} />
       <Release
         name="Valkyrie 1.0 beta 4"
         version="1.0.0-beta.4"
