@@ -1,4 +1,4 @@
-export * from "./Valkyrie";
-import Valkyrie from "./ValkyrieIcon";
+export * from "./Valkyrie.js";
+import Valkyrie from "./ValkyrieIcon.js";
 
 export default Valkyrie;
