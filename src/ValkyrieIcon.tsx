@@ -1,5 +1,4 @@
 import { IValkyrieIcon } from ".";
-import HTMLReactParser from "html-react-parser";
 import { ComponentPropsWithoutRef } from "react";
 import clsx from "clsx";
 
@@ -44,9 +43,8 @@ export default function ValkyrieIcon({
         "vi-bounce": bounce,
       })}
       style={{ ...rotateStyle, ...style }}
+      dangerouslySetInnerHTML={{ __html: icon.data }}
       {...props}
-    >
-      {HTMLReactParser(icon.data)}
-    </span>
+    />
   );
 }
