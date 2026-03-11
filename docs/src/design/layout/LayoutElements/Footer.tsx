@@ -134,7 +134,7 @@ export default function Footer() {
           <Grid xs={12} sx={{ pt: { xs: 3, md: 5 } }}>
             <Stack direction="row" gap={1} justifyContent="space-between" alignItems="center">
               <Typography fontSize="sm">
-                &copy; 2021-2025 &middot;{' '}
+                &copy; 2021-2026 &middot;{' '}
                 <Link href="https://sippy.cloud" color="primary">
                   Sippy
                 </Link>
