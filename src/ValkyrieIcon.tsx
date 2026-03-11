@@ -3,7 +3,7 @@ import { ComponentPropsWithoutRef } from "react";
 import clsx from "clsx";
 
 interface ValkyrieProps {
-  icon: IValkyrieIcon;
+  icon?: IValkyrieIcon;
   rotate?: number | false;
   flip?: true | "x" | "y" | false;
   spin?: boolean | "pulse";
