@@ -5,19 +5,25 @@ import Release from './_Release';
 export default function Changelog() {
   return (
     <Stack gap={5}>
+      <Release name="Valkyrie 1.0 Release Candidate 1" version="1.0.0-rc.1" date="April 2026" />
       <Release
-        name="Valkyrie 1.0 beta 6"
+        name="Valkyrie 1.0 beta"
         version="1.0.0-beta.6"
-        date="March 2026"
+        date="11 March 2026"
         added={[
+          'Valkyrie is now available as both a CJS and ESM package.',
+          'Adds the bounce animation to our default style, and added the `bounce` prop to our React component.',
           "When the `Valkyrie` component isn't passed an icon, or the icon isn't valid, it will now show the `viCircleQuestion` icon. The `fade` property will be enabled to draw attention to it."
         ]}
         changed={[
+          'The `ValkyrieIcon` component has been renamed to `Valkyrie`.',
           'Rotate now allows you to set any numeric value rather than just `0`, `90`, `180`, or `270`.',
-          "Valkyrie now only has 1 dependency as we've dropped `html-react-parser`.",
+          "Valkyrie now only has 1 dependency as we've dropped `@emotion/css` and `html-react-parser`.",
           'Major enhancements to our build process and library generation. We now include source maps.'
         ]}
         fixed={[
+          'Fixes the ESM export missing file extensions.',
+          'Fixes the SVG and export for `fingerprint`, `record-stop`, `safari`, `signal-strong`, and `triangle-exclamation` containing the icon twice.',
           'Fixes a bug where `rotate` would not correctly apply the animation styling.',
           'Fixes a bug where markdown generation would report a successful run before finishing.'
         ]}
@@ -26,27 +32,16 @@ export default function Changelog() {
           'Various categories have been updated and categories have been regrouped to make more sense.',
           'Major improvements to our documentation, including simpeler changelog markup.'
         ]}
-      />
-      <Release name="Valkyrie 1.0 beta 5" version="1.0.0-beta.5" date="9 January 2026" fixed={['Fixes the ESM export missing file extensions.']} />
-      <Release
-        name="Valkyrie 1.0 beta 4"
-        version="1.0.0-beta.4"
-        date="9 December 2025"
-        newIcons={['calendar-arrow-to-day']}
-        updatedIcons={['gauge', 'teams']}
-      />
-      <Release
-        name="Valkyrie 1.0 beta 3"
-        version="1.0.0-beta.3"
-        date="19 August 2025"
-        newIcons={['arrows-up-right-and-down-left-from-center', 'arrows-up-right-and-down-left-to-center', 'id-card-slash']}
-        updatedIcons={['keyboard']}
-      />
-      <Release name="Valkyrie 1.0 beta 2" version="1.0.0-beta.2" date="11 July 2025" newIcons={['cursor', 'input', 'square-check', 'diamonds']} />
-      <Release
-        name="Valkyrie 1.0 beta 1"
-        version="1.0.0-beta.1"
-        date="26 June 2025"
+        newIcons={[
+          'arrows-up-right-and-down-left-from-center',
+          'arrows-up-right-and-down-left-to-center',
+          'calendar-arrow-to-day',
+          'cursor',
+          'diamonds',
+          'id-card-slash',
+          'input',
+          'square-check'
+        ]}
         updatedIcons={[
           'arrow-down-to-line',
           'arrow-left-from-bracket',
@@ -54,20 +49,16 @@ export default function Changelog() {
           'devices',
           'fanvil',
           'fingerprint',
+          'gauge',
+          'keyboard',
           'message-pen',
           'record-stop',
           'safari',
           'signal-strong',
+          'teams',
           'triangle-exclamation',
           'yealink'
         ]}
-        added={[
-          'Valkyrie is now properly exported as both a CJS and ESM package.',
-          'The `ValkyrieIcon` component has been renamed to `Valkyrie`.',
-          'Adds the bounce animation to our default style, and added the `bounce` prop to our React component.',
-          "We've removed the dependency on `@emotion/css`!"
-        ]}
-        fixed={['Fixes the SVG and export for fingerprint, record-stop, safari, signal-strong, and triangle-exclamation containing the icon twice.']}
       />
       <Release
         name="Valkyrie 1.0 alpha"
