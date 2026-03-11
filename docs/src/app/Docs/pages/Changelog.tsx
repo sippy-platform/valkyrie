@@ -1,13 +1,28 @@
 import { Stack } from '@mui/joy';
 
-import Code from '@/design/components/Code';
-
 import Release from './_Release';
 
 export default function Changelog() {
   return (
     <Stack gap={5}>
-      <Release name="Valkyrie 1.0 beta 5" version="1.0.0-beta.5" date="9 January 2026" fixed={[<>Fixes the ESM export missing file extensions.</>]} />
+      <Release
+        name="Valkyrie 1.0 beta 6"
+        version="1.0.0-beta.6"
+        date="March 2026"
+        added={[
+          "When the `Valkyrie` component isn't passed an icon, or the icon isn't valid, it will now show the `viCircleQuestion` icon. The `fade` property will be enabled to draw attention to it."
+        ]}
+        changed={[
+          'Rotate now allows you to set any numeric value rather than just `0`, `90`, `180`, or `270`.',
+          "Valkyrie now only has 1 dependency as we've dropped `html-react-parser`."
+        ]}
+        fixed={['Fixes a bug where `rotate` would not correctly apply the animation styling.']}
+        docs={[
+          'The category filter now keeps showing empty categories for easier navigation.',
+          'Major improvements to our documentation, including simpeler changelog markup.'
+        ]}
+      />
+      <Release name="Valkyrie 1.0 beta 5" version="1.0.0-beta.5" date="9 January 2026" fixed={['Fixes the ESM export missing file extensions.']} />
       <Release
         name="Valkyrie 1.0 beta 4"
         version="1.0.0-beta.4"
@@ -42,42 +57,29 @@ export default function Changelog() {
           'yealink'
         ]}
         added={[
-          <>Valkyrie is now properly exported as both a CJS and ESM package.</>,
-          <>
-            The <Code>ValkyrieIcon</Code> component has been renamed to <Code>Valkyrie</Code>.
-          </>,
-          <>
-            Adds the bounce animation to our default style, and added the <Code>bounce</Code> prop to our React component.
-          </>,
-          <>
-            We've removed the dependency on <Code>@emotion/css</Code>!
-          </>
+          'Valkyrie is now properly exported as both a CJS and ESM package.',
+          'The `ValkyrieIcon` component has been renamed to `Valkyrie`.',
+          'Adds the bounce animation to our default style, and added the `bounce` prop to our React component.',
+          "We've removed the dependency on `@emotion/css`!"
         ]}
-        fixed={[<>Fixes the SVG and export for fingerprint, record-stop, safari, signal-strong, and triangle-exclamation containing the icon twice.</>]}
+        fixed={['Fixes the SVG and export for fingerprint, record-stop, safari, signal-strong, and triangle-exclamation containing the icon twice.']}
       />
       <Release
         name="Valkyrie 1.0 alpha"
         version="1.0.0-alpha.57"
         date="19 May 2025"
         added={[
-          <>Fully redesigned icons based on Amicons.</>,
-          <>
-            Adds the React <Code>ValkyrieIcon</Code> component.
-          </>,
-          <>Adds new animations like fade, beat and pulse to our default CSS.</>,
-          <>
-            Introduces a brand new documentation website with improved icon previews, component documentation with interactive playground, this changelog, and
-            much more. And best of all; it's now available online instead of needing to be compiled by you.
-          </>
+          'Fully redesigned icons based on Amicons.',
+          'Adds the React `ValkyrieIcon` component.',
+          'Adds new animations like fade, beat and pulse to our default CSS.',
+          "Introduces a brand new documentation website with improved icon previews, component documentation with interactive playground, this changelog, and much more. And best of all; it's now available online instead of needing to be compiled by you."
         ]}
         changed={[
-          <>Improved tooling for builds.</>,
-          <>
-            Renames the <Code>ValkyrieIcon</Code> type to <Code>IValkyrieIcon</Code>.
-          </>,
-          <>CSS transitions are now inherited from the parent element.</>
+          'Improved tooling for builds.',
+          'Renames the `ValkyrieIcon` type to `IValkyrieIcon`.',
+          'CSS transitions are now inherited from the parent element.'
         ]}
-        removed={[<>Removes the included CSS and font files.</>]}
+        removed={['Removes the included CSS and font files.']}
         newIcons={[
           'align-center',
           'align-content-center',
