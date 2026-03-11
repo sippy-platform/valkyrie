@@ -1,7 +1,7 @@
 {
   "title": "Quote",
-  "categories": ["editor", "punctuation-symbols"],
+  "categories": ["text-formatting", "punctuation-symbols"],
   "tags": [],
-  "created": "0.13.0",
+  "created": "1.0.0",
   "updated": "1.0.0"
 }

@@ -1,7 +1,7 @@
 {
   "title": "Box open full",
-  "created": "0.1.0",
-  "categories": ["shopping", "logistics"],
+  "categories": ["shopping", "shopping"],
   "tags": ["package", "cardboard", "moving"],
+  "created": "0.1.0",
   "updated": "1.0.0"
 }

@@ -1,15 +1,16 @@
 import {
+  viAlignCenter,
   viArrowUp,
   viAsterisk,
   viBel,
   viBold,
   viBook,
-  viBoxOpenFull,
-  viBug,
   viBurgerGlass,
+  viCarSide,
   viChartPie,
   viClock,
   viCode,
+  viCompass,
   viDevices,
   viDice,
   viEarth,
@@ -18,16 +19,17 @@ import {
   viFax,
   viFiles,
   viFlask,
-  viGauge,
   viHeart,
+  viHouse,
   viLightbulb,
   viLock,
   viMessageText,
-  viParachuteBox,
   viPen,
   viPerson,
   viPlay,
   viPlus,
+  viShare,
+  viShoppingCart,
   viSignalStrong,
   viSpinner,
   viStar,
@@ -59,18 +61,13 @@ const categories = [
     icon: viValkyrieSword
   },
   {
-    slug: 'business',
-    title: 'Business',
-    icon: viFax
-  },
-  {
     slug: 'charts',
-    title: 'Charts',
+    title: 'Charts & diagrams',
     icon: viChartPie
   },
   {
-    slug: 'coding',
-    title: 'Coding',
+    slug: 'code-editing',
+    title: 'Code editing',
     icon: viCode
   },
   {
@@ -85,18 +82,13 @@ const categories = [
   },
   {
     slug: 'design',
-    title: 'Design',
+    title: 'Design tools',
     icon: viSwatchbook
   },
   {
     slug: 'devices',
     title: 'Devices',
     icon: viDevices
-  },
-  {
-    slug: 'editor',
-    title: 'Editor',
-    icon: viBold
   },
   {
     slug: 'education',
@@ -109,9 +101,19 @@ const categories = [
     icon: viLightbulb
   },
   {
+    slug: 'entertainment',
+    title: 'Entertainment & gaming',
+    icon: viDice
+  },
+  {
     slug: 'files',
     title: 'Files & folders',
     icon: viFiles
+  },
+  {
+    slug: 'finance',
+    title: 'Finance',
+    icon: viEuro
   },
   {
     slug: 'food-beverage',
@@ -119,28 +121,23 @@ const categories = [
     icon: viBurgerGlass
   },
   {
-    slug: 'gaming',
-    title: 'Gaming',
-    icon: viDice
-  },
-  {
     slug: 'health',
     title: 'Health',
     icon: viHeart
   },
   {
-    slug: 'human',
-    title: 'Human',
-    icon: viEye
+    slug: 'home-living',
+    title: 'Home & living',
+    icon: viHouse
   },
   {
-    slug: 'logistics',
-    title: 'Logistics',
-    icon: viParachuteBox
+    slug: 'layout-design',
+    title: 'Layout & alignment',
+    icon: viAlignCenter
   },
   {
     slug: 'maps',
-    title: 'Maps & buildings',
+    title: 'Maps & location',
     icon: viEarth
   },
   {
@@ -150,18 +147,18 @@ const categories = [
   },
   {
     slug: 'media',
-    title: 'Media',
+    title: 'Media & video',
     icon: viPlay
-  },
-  {
-    slug: 'money',
-    title: 'Money',
-    icon: viEuro
   },
   {
     slug: 'nature',
     title: 'Nature & outdoors',
-    icon: viBug
+    icon: viCompass
+  },
+  {
+    slug: 'office-tools',
+    title: 'Office tools',
+    icon: viFax
   },
   {
     slug: 'people',
@@ -190,18 +187,23 @@ const categories = [
   },
   {
     slug: 'shopping',
-    title: 'Shopping',
-    icon: viBoxOpenFull
+    title: 'Shopping & commerce',
+    icon: viShoppingCart
   },
   {
     slug: 'social',
     title: 'Social',
-    icon: viMessageText
+    icon: viShare
   },
   {
     slug: 'spinners',
     title: 'Spinners',
     icon: viSpinner
+  },
+  {
+    slug: 'text-formatting',
+    title: 'Text formatting',
+    icon: viBold
   },
   {
     slug: 'time',
@@ -216,7 +218,7 @@ const categories = [
   {
     slug: 'transportation',
     title: 'Transportation',
-    icon: viGauge
+    icon: viCarSide
   },
   {
     slug: 'weather',

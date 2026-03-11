@@ -1,7 +1,9 @@
 {
   "title": "Paragraph",
-  "categories": ["editor"],
+  "categories": [
+    "layout-design"
+  ],
   "tags": [],
-  "created": "0.13.0",
+  "created": "1.0.0",
   "updated": "1.0.0"
 }

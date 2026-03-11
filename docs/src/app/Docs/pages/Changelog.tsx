@@ -23,6 +23,7 @@ export default function Changelog() {
         ]}
         docs={[
           'The category filter now keeps showing empty categories for easier navigation.',
+          'Various categories have been updated and categories have been regrouped to make more sense.',
           'Major improvements to our documentation, including simpeler changelog markup.'
         ]}
       />

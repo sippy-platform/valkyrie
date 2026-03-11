@@ -1,7 +1,7 @@
 {
   "title": "Code",
-  "categories": ["coding", "editor"],
-  "created": "0.13.0",
+  "categories": ["code-editing", "text-formatting"],
   "tags": ["different", "unequal"],
+  "created": "0.13.0",
   "updated": "1.0.0"
 }

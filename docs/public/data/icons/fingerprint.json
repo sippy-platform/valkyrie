@@ -1,7 +1,7 @@
 {
   "title": "Fingerprint",
-  "categories": ["accessibility", "human", "security"],
+  "categories": ["accessibility", "people", "security"],
   "tags": ["biometrics"],
-  "created": "0.5.0",
+  "created": "1.0.0",
   "updated": "1.0.0"
 }

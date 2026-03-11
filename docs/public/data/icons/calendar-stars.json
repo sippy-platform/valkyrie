@@ -1,7 +1,7 @@
 {
   "title": "Calendar stars",
-  "categories": ["business", "time"],
+  "categories": ["office-tools", "time"],
   "tags": ["holidays"],
-  "created": "0.5.0",
+  "created": "1.0.0",
   "updated": "1.0.0"
 }

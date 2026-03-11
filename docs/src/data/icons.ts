@@ -3,63 +3,63 @@ import { viAGum, viAddressBook, viAlignCenter, viAlignContentCenter, viAlignCont
 const icons = [
   {
     component: 'viAGum',
-    categories: ["editor"],
+    categories: ["text-formatting"],
     tags: [],
     slug: 'a-gum',
     icon: viAGum
   },
   {
     component: 'viAddressBook',
-    categories: ["business","communication","people"],
+    categories: ["office-tools","communication","people"],
     tags: [],
     slug: 'address-book',
     icon: viAddressBook
   },
   {
     component: 'viAlignCenter',
-    categories: ["editor"],
+    categories: ["layout-design"],
     tags: [],
     slug: 'align-center',
     icon: viAlignCenter
   },
   {
     component: 'viAlignContentCenter',
-    categories: ["charts","editor"],
+    categories: ["charts","layout-design"],
     tags: [],
     slug: 'align-content-center',
     icon: viAlignContentCenter
   },
   {
     component: 'viAlignContentEnd',
-    categories: ["charts","editor"],
+    categories: ["charts","layout-design"],
     tags: [],
     slug: 'align-content-end',
     icon: viAlignContentEnd
   },
   {
     component: 'viAlignContentStart',
-    categories: ["charts","editor"],
+    categories: ["charts","layout-design"],
     tags: [],
     slug: 'align-content-start',
     icon: viAlignContentStart
   },
   {
     component: 'viAlignJustify',
-    categories: ["editor"],
+    categories: ["layout-design"],
     tags: [],
     slug: 'align-justify',
     icon: viAlignJustify
   },
   {
     component: 'viAlignLeft',
-    categories: ["editor"],
+    categories: ["layout-design"],
     tags: [],
     slug: 'align-left',
     icon: viAlignLeft
   },
   {
     component: 'viAlignRight',
-    categories: ["editor"],
+    categories: ["layout-design"],
     tags: [],
     slug: 'align-right',
     icon: viAlignRight
@@ -213,7 +213,7 @@ const icons = [
   },
   {
     component: 'viArrowRightFromFile',
-    categories: ["files","business","arrows"],
+    categories: ["files","office-tools","arrows"],
     tags: ["import"],
     slug: 'arrow-right-from-file',
     icon: viArrowRightFromFile
@@ -248,7 +248,7 @@ const icons = [
   },
   {
     component: 'viArrowRightToFile',
-    categories: ["files","business","arrows"],
+    categories: ["files","office-tools","arrows"],
     tags: ["import"],
     slug: 'arrow-right-to-file',
     icon: viArrowRightToFile
@@ -269,7 +269,7 @@ const icons = [
   },
   {
     component: 'viArrowRotateRight',
-    categories: ["arrows","spinners","editor","media"],
+    categories: ["arrows","spinners","text-formatting","media"],
     tags: ["refresh","reload"],
     slug: 'arrow-rotate-right',
     icon: viArrowRotateRight
@@ -277,7 +277,7 @@ const icons = [
   {
     component: 'viArrowUpRightFromSquare',
     categories: ["arrows"],
-    tags: ["external-link"],
+    tags: ["external","external-link"],
     slug: 'arrow-up-right-from-square',
     icon: viArrowUpRightFromSquare
   },
@@ -318,7 +318,7 @@ const icons = [
   },
   {
     component: 'viArrowsRotateRight',
-    categories: ["arrows","spinners","editor","media"],
+    categories: ["arrows","spinners","text-formatting","media"],
     tags: ["refresh","reload"],
     slug: 'arrows-rotate-right',
     icon: viArrowsRotateRight
@@ -360,14 +360,14 @@ const icons = [
   },
   {
     component: 'viBarsUneven',
-    categories: ["coding","editor"],
+    categories: ["code-editing","text-formatting"],
     tags: ["menu","navigation","justify","aligment","hamburger"],
     slug: 'bars-uneven',
     icon: viBarsUneven
   },
   {
     component: 'viBars',
-    categories: ["coding","editor"],
+    categories: ["code-editing","text-formatting"],
     tags: ["menu","navigation","justify","aligment","hamburger"],
     slug: 'bars',
     icon: viBars
@@ -381,119 +381,119 @@ const icons = [
   },
   {
     component: 'viBlf',
-    categories: ["communication","business"],
+    categories: ["communication","office-tools"],
     tags: ["line key"],
     slug: 'blf',
     icon: viBlf
   },
   {
     component: 'viBold',
-    categories: ["editor"],
+    categories: ["text-formatting"],
     tags: [],
     slug: 'bold',
     icon: viBold
   },
   {
     component: 'viBook',
-    categories: ["business","writing","education"],
+    categories: ["office-tools","writing","education"],
     tags: ["read","magazine"],
     slug: 'book',
     icon: viBook
   },
   {
     component: 'viBoxOpenFull',
-    categories: ["shopping","logistics"],
+    categories: ["shopping","shopping"],
     tags: ["package","cardboard","moving"],
     slug: 'box-open-full',
     icon: viBoxOpenFull
   },
   {
     component: 'viBracketsCurly',
-    categories: ["coding","punctuation-symbols"],
+    categories: ["code-editing","punctuation-symbols"],
     tags: [],
     slug: 'brackets-curly',
     icon: viBracketsCurly
   },
   {
     component: 'viBroom',
-    categories: ["design","household"],
+    categories: ["design","home-living"],
     tags: ["clean","cleanup"],
     slug: 'broom',
     icon: viBroom
   },
   {
     component: 'viBug',
-    categories: ["coding","nature","security"],
+    categories: ["code-editing","nature","security"],
     tags: ["insect"],
     slug: 'bug',
     icon: viBug
   },
   {
     component: 'viBuilding',
-    categories: ["business","maps"],
+    categories: ["office-tools","maps"],
     tags: ["company","enterprise","organization","office"],
     slug: 'building',
     icon: viBuilding
   },
   {
     component: 'viBurgerGlass',
-    categories: ["food-beverage"],
+    categories: ["food-beverage","maps"],
     tags: ["food","drink","eat","restaurant"],
     slug: 'burger-glass',
     icon: viBurgerGlass
   },
   {
     component: 'viCalendarArrowToDay',
-    categories: ["arrows","business","time"],
+    categories: ["arrows","office-tools","time"],
     tags: ["holidays","date","time"],
     slug: 'calendar-arrow-to-day',
     icon: viCalendarArrowToDay
   },
   {
     component: 'viCalendarClock',
-    categories: ["business","time"],
+    categories: ["office-tools","time"],
     tags: ["holidays","date","time"],
     slug: 'calendar-clock',
     icon: viCalendarClock
   },
   {
     component: 'viCalendarDay',
-    categories: ["business","time"],
+    categories: ["office-tools","time"],
     tags: ["date","day"],
     slug: 'calendar-day',
     icon: viCalendarDay
   },
   {
     component: 'viCalendarRangeClock',
-    categories: ["business","time"],
+    categories: ["office-tools","time"],
     tags: ["holidays","date","time"],
     slug: 'calendar-range-clock',
     icon: viCalendarRangeClock
   },
   {
     component: 'viCalendarRange',
-    categories: ["business","time"],
+    categories: ["office-tools","time"],
     tags: ["holidays","date"],
     slug: 'calendar-range',
     icon: viCalendarRange
   },
   {
     component: 'viCalendarStars',
-    categories: ["business","time"],
+    categories: ["office-tools","time"],
     tags: ["holidays"],
     slug: 'calendar-stars',
     icon: viCalendarStars
   },
   {
     component: 'viCalendarWeek',
-    categories: ["business","time"],
+    categories: ["office-tools","time"],
     tags: ["date","week"],
     slug: 'calendar-week',
     icon: viCalendarWeek
   },
   {
     component: 'viCalendar',
-    categories: ["business","time"],
+    categories: ["office-tools","time"],
     tags: ["month"],
     slug: 'calendar',
     icon: viCalendar
@@ -507,14 +507,14 @@ const icons = [
   },
   {
     component: 'viChainSlash',
-    categories: ["editor","toggle"],
+    categories: ["code-editing"],
     tags: ["link"],
     slug: 'chain-slash',
     icon: viChainSlash
   },
   {
     component: 'viChain',
-    categories: ["editor","toggle"],
+    categories: ["code-editing"],
     tags: ["link"],
     slug: 'chain',
     icon: viChain
@@ -528,7 +528,7 @@ const icons = [
   },
   {
     component: 'viChartPie',
-    categories: ["business","charts","money"],
+    categories: ["finance","charts"],
     tags: ["data","graph","analytics"],
     slug: 'chart-pie',
     icon: viChartPie
@@ -584,7 +584,7 @@ const icons = [
   },
   {
     component: 'viCircleDashed',
-    categories: ["design","editor","shapes"],
+    categories: ["design","shapes"],
     tags: [],
     slug: 'circle-dashed',
     icon: viCircleDashed
@@ -647,7 +647,7 @@ const icons = [
   },
   {
     component: 'viCity',
-    categories: ["business","maps"],
+    categories: ["office-tools","maps"],
     tags: [],
     slug: 'city',
     icon: viCity
@@ -675,7 +675,7 @@ const icons = [
   },
   {
     component: 'viClock',
-    categories: ["time","toggle"],
+    categories: ["time"],
     tags: [],
     slug: 'clock',
     icon: viClock
@@ -689,21 +689,21 @@ const icons = [
   },
   {
     component: 'viCode',
-    categories: ["coding","editor"],
+    categories: ["code-editing","text-formatting"],
     tags: ["different","unequal"],
     slug: 'code',
     icon: viCode
   },
   {
     component: 'viCodeblock',
-    categories: ["coding","editor"],
+    categories: ["code-editing","text-formatting"],
     tags: [],
     slug: 'codeblock',
     icon: viCodeblock
   },
   {
     component: 'viCommand',
-    categories: ["editor","coding"],
+    categories: ["text-formatting","code-editing"],
     tags: ["apple"],
     slug: 'command',
     icon: viCommand
@@ -731,84 +731,84 @@ const icons = [
   },
   {
     component: 'viCopy',
-    categories: ["business","design","files"],
+    categories: ["office-tools","design","files"],
     tags: [],
     slug: 'copy',
     icon: viCopy
   },
   {
     component: 'viCursor',
-    categories: ["design"],
-    tags: ["input"],
+    categories: ["writing"],
+    tags: ["cursor"],
     slug: 'cursor',
     icon: viCursor
   },
   {
     component: 'viDevices',
-    categories: ["coding","devices"],
+    categories: ["code-editing","devices"],
     tags: ["laptop","smartphone","mobile"],
     slug: 'devices',
     icon: viDevices
   },
   {
     component: 'viDiagram',
-    categories: ["business","charts","money"],
+    categories: ["finance","charts"],
     tags: ["data","graph","analytics"],
     slug: 'diagram',
     icon: viDiagram
   },
   {
     component: 'viDiamonds',
-    categories: ["design","shapes"],
-    tags: ["components"],
+    categories: [],
+    tags: [],
     slug: 'diamonds',
     icon: viDiamonds
   },
   {
     component: 'viDiceFive',
-    categories: ["gaming"],
+    categories: ["entertainment"],
     tags: ["random","chance"],
     slug: 'dice-five',
     icon: viDiceFive
   },
   {
     component: 'viDiceFour',
-    categories: ["gaming"],
+    categories: ["entertainment"],
     tags: ["random","chance"],
     slug: 'dice-four',
     icon: viDiceFour
   },
   {
     component: 'viDiceOne',
-    categories: ["gaming"],
+    categories: ["entertainment"],
     tags: ["random","chance"],
     slug: 'dice-one',
     icon: viDiceOne
   },
   {
     component: 'viDiceSix',
-    categories: ["gaming"],
+    categories: ["entertainment"],
     tags: ["random","chance"],
     slug: 'dice-six',
     icon: viDiceSix
   },
   {
     component: 'viDiceThree',
-    categories: ["gaming"],
+    categories: ["entertainment"],
     tags: ["random","chance"],
     slug: 'dice-three',
     icon: viDiceThree
   },
   {
     component: 'viDiceTwo',
-    categories: ["gaming"],
+    categories: ["entertainment"],
     tags: ["random","chance"],
     slug: 'dice-two',
     icon: viDiceTwo
   },
   {
     component: 'viDice',
-    categories: ["gaming","maps"],
+    categories: ["entertainment","maps"],
     tags: ["random","chance"],
     slug: 'dice',
     icon: viDice
@@ -850,21 +850,21 @@ const icons = [
   },
   {
     component: 'viEllipsisH',
-    categories: ["editor"],
+    categories: ["layout-design"],
     tags: ["three dots","meatballs","more","overflow"],
     slug: 'ellipsis-h',
     icon: viEllipsisH
   },
   {
     component: 'viEllipsisV',
-    categories: ["editor"],
+    categories: ["layout-design"],
     tags: ["three dots","meatballs","more","overflow"],
     slug: 'ellipsis-v',
     icon: viEllipsisV
   },
   {
     component: 'viEnvelope',
-    categories: ["business","communication","social","writing"],
+    categories: ["office-tools","communication","social","writing"],
     tags: ["email","message","mail","letter"],
     slug: 'envelope',
     icon: viEnvelope
@@ -878,7 +878,7 @@ const icons = [
   },
   {
     component: 'viEuro',
-    categories: ["money"],
+    categories: ["finance"],
     tags: [],
     slug: 'euro',
     icon: viEuro
@@ -899,28 +899,28 @@ const icons = [
   },
   {
     component: 'viEyeSlash',
-    categories: ["accessibility","design","human","toggle"],
+    categories: ["accessibility","design","people"],
     tags: [],
     slug: 'eye-slash',
     icon: viEyeSlash
   },
   {
     component: 'viEye',
-    categories: ["accessibility","design","human","toggle"],
+    categories: ["accessibility","design","people"],
     tags: [],
     slug: 'eye',
     icon: viEye
   },
   {
     component: 'viFacebookMessenger',
-    categories: ["brands"],
+    categories: ["brands","social"],
     tags: ["meta"],
     slug: 'facebook-messenger',
     icon: viFacebookMessenger
   },
   {
     component: 'viFacebook',
-    categories: ["brands"],
+    categories: ["brands","social"],
     tags: ["meta"],
     slug: 'facebook',
     icon: viFacebook
@@ -948,7 +948,7 @@ const icons = [
   },
   {
     component: 'viFax',
-    categories: ["business","communication","devices"],
+    categories: ["office-tools","communication","devices"],
     tags: [],
     slug: 'fax',
     icon: viFax
@@ -997,21 +997,21 @@ const icons = [
   },
   {
     component: 'viFile',
-    categories: ["files","business","coding","writing"],
+    categories: ["files","office-tools","code-editing","writing"],
     tags: ["document","paper"],
     slug: 'file',
     icon: viFile
   },
   {
     component: 'viFilesList',
-    categories: ["files","business","coding","writing"],
+    categories: ["files","office-tools","code-editing","writing"],
     tags: ["document","paper","log"],
     slug: 'files-list',
     icon: viFilesList
   },
   {
     component: 'viFiles',
-    categories: ["files","business","coding","writing"],
+    categories: ["files","office-tools","code-editing","writing"],
     tags: ["document","paper"],
     slug: 'files',
     icon: viFiles
@@ -1025,28 +1025,28 @@ const icons = [
   },
   {
     component: 'viFilterPlus',
-    categories: ["coding"],
+    categories: ["code-editing"],
     tags: ["sort"],
     slug: 'filter-plus',
     icon: viFilterPlus
   },
   {
     component: 'viFilterXmark',
-    categories: ["coding"],
+    categories: ["code-editing"],
     tags: ["sort"],
     slug: 'filter-xmark',
     icon: viFilterXmark
   },
   {
     component: 'viFilter',
-    categories: ["coding"],
+    categories: ["code-editing"],
     tags: ["sort"],
     slug: 'filter',
     icon: viFilter
   },
   {
     component: 'viFingerprint',
-    categories: ["accessibility","human","security"],
+    categories: ["accessibility","people","security"],
     tags: ["biometrics"],
     slug: 'fingerprint',
     icon: viFingerprint
@@ -1081,42 +1081,42 @@ const icons = [
   },
   {
     component: 'viFloppyDisk',
-    categories: ["editor","business","design","devices","files"],
+    categories: ["text-formatting","office-tools","design","devices","files"],
     tags: ["save"],
     slug: 'floppy-disk',
     icon: viFloppyDisk
   },
   {
     component: 'viFolderImage',
-    categories: ["files","business"],
+    categories: ["files","office-tools"],
     tags: ["images","map"],
     slug: 'folder-image',
     icon: viFolderImage
   },
   {
     component: 'viFolderMin',
-    categories: ["business","files"],
+    categories: ["office-tools","files"],
     tags: [],
     slug: 'folder-min',
     icon: viFolderMin
   },
   {
     component: 'viFolderOpen',
-    categories: ["business","files","writing"],
+    categories: ["office-tools","files","writing"],
     tags: [],
     slug: 'folder-open',
     icon: viFolderOpen
   },
   {
     component: 'viFolderPlus',
-    categories: ["business","files"],
+    categories: ["office-tools","files"],
     tags: [],
     slug: 'folder-plus',
     icon: viFolderPlus
   },
   {
     component: 'viFolder',
-    categories: ["files","coding","business"],
+    categories: ["files","code-editing","office-tools"],
     tags: ["map"],
     slug: 'folder',
     icon: viFolder
@@ -1137,7 +1137,7 @@ const icons = [
   },
   {
     component: 'viGear',
-    categories: ["coding","spinners"],
+    categories: ["code-editing","spinners"],
     tags: ["settings","options","preferences","tools"],
     slug: 'gear',
     icon: viGear
@@ -1172,70 +1172,70 @@ const icons = [
   },
   {
     component: 'viGrid',
-    categories: ["design","editor"],
+    categories: ["design","layout-design"],
     tags: ["dashboard"],
     slug: 'grid',
     icon: viGrid
   },
   {
     component: 'viGripDotsH',
-    categories: ["editor"],
+    categories: ["layout-design"],
     tags: ["handles","drag"],
     slug: 'grip-dots-h',
     icon: viGripDotsH
   },
   {
     component: 'viGripDotsV',
-    categories: ["editor"],
+    categories: ["layout-design"],
     tags: ["handles","drag"],
     slug: 'grip-dots-v',
     icon: viGripDotsV
   },
   {
     component: 'viGripLines',
-    categories: ["editor"],
+    categories: ["layout-design"],
     tags: ["handles","drag"],
     slug: 'grip-lines',
     icon: viGripLines
   },
   {
     component: 'viHeading1',
-    categories: ["editor"],
+    categories: ["text-formatting"],
     tags: [],
     slug: 'heading-1',
     icon: viHeading1
   },
   {
     component: 'viHeading2',
-    categories: ["editor"],
+    categories: ["text-formatting"],
     tags: [],
     slug: 'heading-2',
     icon: viHeading2
   },
   {
     component: 'viHeading3',
-    categories: ["editor"],
+    categories: ["text-formatting"],
     tags: [],
     slug: 'heading-3',
     icon: viHeading3
   },
   {
     component: 'viHeading4',
-    categories: ["editor"],
+    categories: ["text-formatting"],
     tags: [],
     slug: 'heading-4',
     icon: viHeading4
   },
   {
     component: 'viHeading5',
-    categories: ["editor"],
+    categories: ["text-formatting"],
     tags: [],
     slug: 'heading-5',
     icon: viHeading5
   },
   {
     component: 'viHeading6',
-    categories: ["editor"],
+    categories: ["text-formatting"],
     tags: [],
     slug: 'heading-6',
     icon: viHeading6
@@ -1263,14 +1263,14 @@ const icons = [
   },
   {
     component: 'viHeart',
-    categories: ["health","human","shapes"],
+    categories: ["health","people","shapes"],
     tags: ["love","favorite"],
     slug: 'heart',
     icon: viHeart
   },
   {
     component: 'viHorizontalLine',
-    categories: ["editor","punctuation-symbols"],
+    categories: ["layout-design","punctuation-symbols"],
     tags: ["rule"],
     slug: 'horizontal-line',
     icon: viHorizontalLine
@@ -1284,14 +1284,14 @@ const icons = [
   },
   {
     component: 'viIdCardSlash',
-    categories: ["business","security","people"],
+    categories: ["office-tools","security","people"],
     tags: ["identification"],
     slug: 'id-card-slash',
     icon: viIdCardSlash
   },
   {
     component: 'viIdCard',
-    categories: ["business","security","people"],
+    categories: ["office-tools","security","people"],
     tags: ["identification"],
     slug: 'id-card',
     icon: viIdCard
@@ -1305,14 +1305,14 @@ const icons = [
   },
   {
     component: 'viInput',
-    categories: ["design"],
-    tags: ["input","rename"],
+    categories: [],
+    tags: [],
     slug: 'input',
     icon: viInput
   },
   {
     component: 'viItalic',
-    categories: ["editor"],
+    categories: ["text-formatting"],
     tags: [],
     slug: 'italic',
     icon: viItalic
@@ -1340,7 +1340,7 @@ const icons = [
   },
   {
     component: 'viKeyboard',
-    categories: ["coding","devices","writing"],
+    categories: ["code-editing","devices","writing"],
     tags: ["input"],
     slug: 'keyboard',
     icon: viKeyboard
@@ -1389,63 +1389,63 @@ const icons = [
   },
   {
     component: 'viLine',
-    categories: ["shapes","editor"],
+    categories: ["shapes","layout-design"],
     tags: [],
     slug: 'line',
     icon: viLine
   },
   {
     component: 'viLinkedin',
-    categories: ["brands"],
-    tags: [],
+    categories: ["brands","social"],
+    tags: ["microsoft","office"],
     slug: 'linkedin',
     icon: viLinkedin
   },
   {
     component: 'viListBarChart',
-    categories: ["editor","charts"],
+    categories: ["layout-design","charts"],
     tags: [],
     slug: 'list-bar-chart',
     icon: viListBarChart
   },
   {
     component: 'viListChecksXmark',
-    categories: ["editor"],
+    categories: ["layout-design"],
     tags: [],
     slug: 'list-checks-xmark',
     icon: viListChecksXmark
   },
   {
     component: 'viListChecks',
-    categories: ["editor"],
+    categories: ["layout-design"],
     tags: [],
     slug: 'list-checks',
     icon: viListChecks
   },
   {
     component: 'viListClock',
-    categories: ["time","editor"],
+    categories: ["time","layout-design"],
     tags: [],
     slug: 'list-clock',
     icon: viListClock
   },
   {
     component: 'viListOrderedClock',
-    categories: ["editor","time"],
+    categories: ["layout-design","time"],
     tags: [],
     slug: 'list-ordered-clock',
     icon: viListOrderedClock
   },
   {
     component: 'viListOrdered',
-    categories: ["editor"],
+    categories: ["layout-design"],
     tags: [],
     slug: 'list-ordered',
     icon: viListOrdered
   },
   {
     component: 'viList',
-    categories: ["editor"],
+    categories: ["layout-design"],
     tags: [],
     slug: 'list',
     icon: viList
@@ -1494,8 +1494,8 @@ const icons = [
   },
   {
     component: 'viMacosFinder',
-    categories: ["brands"],
-    tags: ["apple","macos","ipados"],
+    categories: [],
+    tags: [],
     slug: 'macos-finder',
     icon: viMacosFinder
   },
@@ -1522,7 +1522,7 @@ const icons = [
   },
   {
     component: 'viMegaphone',
-    categories: ["business","communication"],
+    categories: ["office-tools","communication"],
     tags: ["bullhorn"],
     slug: 'megaphone',
     icon: viMegaphone
@@ -1557,21 +1557,21 @@ const icons = [
   },
   {
     component: 'viMicrophoneSlash',
-    categories: ["communication","media","social","devices","toggle"],
+    categories: ["communication","media","social","devices"],
     tags: ["record"],
     slug: 'microphone-slash',
     icon: viMicrophoneSlash
   },
   {
     component: 'viMicrophone',
-    categories: ["communication","media","social","devices","toggle"],
+    categories: ["communication","media","social","devices"],
     tags: ["record"],
     slug: 'microphone',
     icon: viMicrophone
   },
   {
     component: 'viMin',
-    categories: ["editor","maps","mathematics","punctuation-symbols","alerts"],
+    categories: ["text-formatting","maps","mathematics","punctuation-symbols","alerts"],
     tags: ["minus","delete"],
     slug: 'min',
     icon: viMin
@@ -1620,7 +1620,7 @@ const icons = [
   },
   {
     component: 'viNumpad',
-    categories: ["coding","devices","writing"],
+    categories: ["code-editing","devices","writing"],
     tags: ["ten keys"],
     slug: 'numpad',
     icon: viNumpad
@@ -1669,21 +1669,21 @@ const icons = [
   },
   {
     component: 'viParachuteBox',
-    categories: ["logistics"],
+    categories: ["shopping"],
     tags: [],
     slug: 'parachute-box',
     icon: viParachuteBox
   },
   {
     component: 'viParagraph',
-    categories: ["editor"],
+    categories: ["layout-design"],
     tags: [],
     slug: 'paragraph',
     icon: viParagraph
   },
   {
     component: 'viPassword',
-    categories: ["design","editor","security"],
+    categories: ["design","security"],
     tags: ["code","input"],
     slug: 'password',
     icon: viPassword
@@ -1697,7 +1697,7 @@ const icons = [
   },
   {
     component: 'viPen',
-    categories: ["editor","business","design","writing"],
+    categories: ["text-formatting","office-tools","design","writing"],
     tags: ["write","ballpoint"],
     slug: 'pen',
     icon: viPen
@@ -1781,49 +1781,49 @@ const icons = [
   },
   {
     component: 'viPhoneArrowDownLeftProhibited',
-    categories: ["business","communication"],
+    categories: ["office-tools","communication"],
     tags: ["telephone","call","incoming"],
     slug: 'phone-arrow-down-left-prohibited',
     icon: viPhoneArrowDownLeftProhibited
   },
   {
     component: 'viPhoneArrowDownLeft',
-    categories: ["business","communication"],
+    categories: ["office-tools","communication"],
     tags: ["telephone","call","incoming"],
     slug: 'phone-arrow-down-left',
     icon: viPhoneArrowDownLeft
   },
   {
     component: 'viPhoneArrowUpRightProhibited',
-    categories: ["business","communication"],
+    categories: ["office-tools","communication"],
     tags: ["telephone","call","outgoing"],
     slug: 'phone-arrow-up-right-prohibited',
     icon: viPhoneArrowUpRightProhibited
   },
   {
     component: 'viPhoneArrowUpRight',
-    categories: ["business","communication"],
+    categories: ["office-tools","communication"],
     tags: ["telephone","call","outgoing"],
     slug: 'phone-arrow-up-right',
     icon: viPhoneArrowUpRight
   },
   {
     component: 'viPhoneClock',
-    categories: ["business","communication","time"],
+    categories: ["office-tools","communication","time"],
     tags: ["telephone","call"],
     slug: 'phone-clock',
     icon: viPhoneClock
   },
   {
     component: 'viPhoneGear',
-    categories: ["business","communication"],
+    categories: ["office-tools","communication"],
     tags: ["telephone","call"],
     slug: 'phone-gear',
     icon: viPhoneGear
   },
   {
     component: 'viPhoneList',
-    categories: ["business","communication"],
+    categories: ["office-tools","communication"],
     tags: ["telephone","call","log"],
     slug: 'phone-list',
     icon: viPhoneList
@@ -1837,21 +1837,21 @@ const icons = [
   },
   {
     component: 'viPhoneVolume',
-    categories: ["accessibility","business","communication"],
+    categories: ["accessibility","office-tools","communication"],
     tags: ["telephone","call"],
     slug: 'phone-volume',
     icon: viPhoneVolume
   },
   {
     component: 'viPhoneXmark',
-    categories: ["business","communication","maps"],
+    categories: ["office-tools","communication","maps"],
     tags: ["telephone","call","hangup"],
     slug: 'phone-xmark',
     icon: viPhoneXmark
   },
   {
     component: 'viPhone',
-    categories: ["business","communication","maps"],
+    categories: ["office-tools","communication","maps"],
     tags: ["telephone","call"],
     slug: 'phone',
     icon: viPhone
@@ -1879,7 +1879,7 @@ const icons = [
   },
   {
     component: 'viPlus',
-    categories: ["editor","maps","mathematics","health","punctuation-symbols","alerts"],
+    categories: ["text-formatting","maps","mathematics","health","punctuation-symbols","alerts"],
     tags: ["add","create"],
     slug: 'plus',
     icon: viPlus
@@ -1907,14 +1907,14 @@ const icons = [
   },
   {
     component: 'viPuzzlePiece',
-    categories: ["gaming"],
+    categories: ["entertainment"],
     tags: [],
     slug: 'puzzle-piece',
     icon: viPuzzlePiece
   },
   {
     component: 'viQuote',
-    categories: ["editor","punctuation-symbols"],
+    categories: ["text-formatting","punctuation-symbols"],
     tags: [],
     slug: 'quote',
     icon: viQuote
@@ -1928,7 +1928,7 @@ const icons = [
   },
   {
     component: 'viReceipt',
-    categories: ["money"],
+    categories: ["finance"],
     tags: ["price"],
     slug: 'receipt',
     icon: viReceipt
@@ -1949,14 +1949,14 @@ const icons = [
   },
   {
     component: 'viRectangleP',
-    categories: ["alphabet"],
+    categories: ["letters-numbers"],
     tags: [],
     slug: 'rectangle-p',
     icon: viRectangleP
   },
   {
     component: 'viRedo',
-    categories: ["arrows","editor"],
+    categories: ["arrows","text-formatting"],
     tags: [],
     slug: 'redo',
     icon: viRedo
@@ -1984,7 +1984,7 @@ const icons = [
   },
   {
     component: 'viServer',
-    categories: ["devices","business"],
+    categories: ["devices","office-tools"],
     tags: [],
     slug: 'server',
     icon: viServer
@@ -2040,14 +2040,14 @@ const icons = [
   },
   {
     component: 'viSidebarLeft',
-    categories: ["coding"],
+    categories: ["code-editing"],
     tags: [],
     slug: 'sidebar-left',
     icon: viSidebarLeft
   },
   {
     component: 'viSidebarRight',
-    categories: ["coding"],
+    categories: ["code-editing"],
     tags: [],
     slug: 'sidebar-right',
     icon: viSidebarRight
@@ -2110,7 +2110,7 @@ const icons = [
   },
   {
     component: 'viSliders',
-    categories: ["editor","media"],
+    categories: ["text-formatting","media"],
     tags: ["options","settings","preferences"],
     slug: 'sliders',
     icon: viSliders
@@ -2152,14 +2152,14 @@ const icons = [
   },
   {
     component: 'viSquareCheck',
-    categories: ["alerts","design"],
-    tags: ["checkmark","confirm","done"],
+    categories: [],
+    tags: [],
     slug: 'square-check',
     icon: viSquareCheck
   },
   {
     component: 'viSquareGum',
-    categories: ["editor","shapes"],
+    categories: ["text-formatting","shapes"],
     tags: [],
     slug: 'square-gum',
     icon: viSquareGum
@@ -2180,21 +2180,21 @@ const icons = [
   },
   {
     component: 'viStore',
-    categories: ["business","maps"],
+    categories: ["office-tools","maps"],
     tags: ["shop"],
     slug: 'store',
     icon: viStore
   },
   {
     component: 'viStrikethrough',
-    categories: ["editor"],
+    categories: ["text-formatting"],
     tags: [],
     slug: 'strikethrough',
     icon: viStrikethrough
   },
   {
     component: 'viSubscript',
-    categories: ["editor"],
+    categories: ["text-formatting"],
     tags: [],
     slug: 'subscript',
     icon: viSubscript
@@ -2208,7 +2208,7 @@ const icons = [
   },
   {
     component: 'viSuperscript',
-    categories: ["editor"],
+    categories: ["text-formatting"],
     tags: [],
     slug: 'superscript',
     icon: viSuperscript
@@ -2222,112 +2222,112 @@ const icons = [
   },
   {
     component: 'viTableCellMerge',
-    categories: ["communication","business"],
+    categories: ["communication","office-tools"],
     tags: ["spreadsheet"],
     slug: 'table-cell-merge',
     icon: viTableCellMerge
   },
   {
     component: 'viTableClock',
-    categories: ["communication","business"],
+    categories: ["communication","office-tools"],
     tags: ["spreadsheet"],
     slug: 'table-clock',
     icon: viTableClock
   },
   {
     component: 'viTableColumnInsertLeft',
-    categories: ["editor","business"],
+    categories: ["layout-design","office-tools"],
     tags: ["spreadsheet"],
     slug: 'table-column-insert-left',
     icon: viTableColumnInsertLeft
   },
   {
     component: 'viTableColumnInsertRight',
-    categories: ["editor","business"],
+    categories: ["layout-design","office-tools"],
     tags: ["spreadsheet"],
     slug: 'table-column-insert-right',
     icon: viTableColumnInsertRight
   },
   {
     component: 'viTableColumnMin',
-    categories: ["editor","business"],
+    categories: ["layout-design","office-tools"],
     tags: ["spreadsheet"],
     slug: 'table-column-min',
     icon: viTableColumnMin
   },
   {
     component: 'viTableHeaderCell',
-    categories: ["editor","business"],
+    categories: ["layout-design","office-tools"],
     tags: ["spreadsheet"],
     slug: 'table-header-cell',
     icon: viTableHeaderCell
   },
   {
     component: 'viTableHeaderColumn',
-    categories: ["editor","business"],
+    categories: ["layout-design","office-tools"],
     tags: ["spreadsheet"],
     slug: 'table-header-column',
     icon: viTableHeaderColumn
   },
   {
     component: 'viTableHeaderRow',
-    categories: ["editor"],
+    categories: ["layout-design"],
     tags: [],
     slug: 'table-header-row',
     icon: viTableHeaderRow
   },
   {
     component: 'viTableMin',
-    categories: ["editor","business"],
+    categories: ["layout-design","office-tools"],
     tags: ["spreadsheet"],
     slug: 'table-min',
     icon: viTableMin
   },
   {
     component: 'viTableRowInsertBottom',
-    categories: ["editor","business"],
+    categories: ["layout-design","office-tools"],
     tags: ["spreadsheet"],
     slug: 'table-row-insert-bottom',
     icon: viTableRowInsertBottom
   },
   {
     component: 'viTableRowInsertTop',
-    categories: ["editor","business"],
+    categories: ["layout-design","office-tools"],
     tags: ["spreadsheet"],
     slug: 'table-row-insert-top',
     icon: viTableRowInsertTop
   },
   {
     component: 'viTableRowMin',
-    categories: ["editor","business"],
+    categories: ["layout-design","office-tools"],
     tags: ["spreadsheet"],
     slug: 'table-row-min',
     icon: viTableRowMin
   },
   {
     component: 'viTable',
-    categories: ["editor","business","files"],
+    categories: ["layout-design","office-tools","files"],
     tags: ["spreadsheet"],
     slug: 'table',
     icon: viTable
   },
   {
     component: 'viTagGear',
-    categories: ["business","maps"],
+    categories: ["office-tools","maps"],
     tags: ["label"],
     slug: 'tag-gear',
     icon: viTagGear
   },
   {
     component: 'viTagPlus',
-    categories: ["business","maps"],
+    categories: ["office-tools","maps"],
     tags: ["label"],
     slug: 'tag-plus',
     icon: viTagPlus
   },
   {
     component: 'viTag',
-    categories: ["business","maps"],
+    categories: ["office-tools","maps"],
     tags: ["label"],
     slug: 'tag',
     icon: viTag
@@ -2335,20 +2335,20 @@ const icons = [
   {
     component: 'viTeams',
     categories: ["brands"],
-    tags: ["microsoft","communication"],
+    tags: ["microsoft","communication","office","social"],
     slug: 'teams',
     icon: viTeams
   },
   {
     component: 'viThumbtackSlash',
-    categories: ["business","maps","social","writing","toggle"],
+    categories: ["office-tools","maps","social","writing"],
     tags: ["pin"],
     slug: 'thumbtack-slash',
     icon: viThumbtackSlash
   },
   {
     component: 'viThumbtack',
-    categories: ["business","maps","social","writing","toggle"],
+    categories: ["office-tools","maps","social","writing"],
     tags: ["pin"],
     slug: 'thumbtack',
     icon: viThumbtack
@@ -2383,7 +2383,7 @@ const icons = [
   },
   {
     component: 'viTrashCan',
-    categories: ["maps","editor"],
+    categories: ["maps","text-formatting"],
     tags: ["trash","delete","garbage","remove","junk"],
     slug: 'trash-can',
     icon: viTrashCan
@@ -2397,14 +2397,14 @@ const icons = [
   },
   {
     component: 'viUnderline',
-    categories: ["editor"],
+    categories: ["text-formatting"],
     tags: [],
     slug: 'underline',
     icon: viUnderline
   },
   {
     component: 'viUndo',
-    categories: ["arrows","editor"],
+    categories: ["arrows","text-formatting"],
     tags: [],
     slug: 'undo',
     icon: viUndo
@@ -2453,21 +2453,21 @@ const icons = [
   },
   {
     component: 'viVolume3',
-    categories: ["media","toggle"],
+    categories: ["media"],
     tags: ["sound"],
     slug: 'volume-3',
     icon: viVolume3
   },
   {
     component: 'viVolumeSlash',
-    categories: ["media","toggle"],
+    categories: ["media"],
     tags: ["sound","silence"],
     slug: 'volume-slash',
     icon: viVolumeSlash
   },
   {
     component: 'viWallet',
-    categories: ["business","money","shopping"],
+    categories: ["finance","shopping"],
     tags: [],
     slug: 'wallet',
     icon: viWallet
@@ -2488,21 +2488,21 @@ const icons = [
   },
   {
     component: 'viWebhooksClock',
-    categories: ["coding","time"],
+    categories: ["code-editing","time"],
     tags: [],
     slug: 'webhooks-clock',
     icon: viWebhooksClock
   },
   {
     component: 'viWebhooks',
-    categories: ["coding"],
+    categories: ["code-editing"],
     tags: [],
     slug: 'webhooks',
     icon: viWebhooks
   },
   {
     component: 'viWindow',
-    categories: ["coding"],
+    categories: ["code-editing"],
     tags: [],
     slug: 'window',
     icon: viWindow
@@ -2516,7 +2516,7 @@ const icons = [
   },
   {
     component: 'viXmark',
-    categories: ["editor","mathematics","punctuation-symbols"],
+    categories: ["text-formatting","mathematics","punctuation-symbols"],
     tags: ["close","cancel"],
     slug: 'xmark',
     icon: viXmark

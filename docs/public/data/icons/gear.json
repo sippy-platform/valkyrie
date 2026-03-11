@@ -1,7 +1,7 @@
 {
   "title": "Gear",
-  "categories": ["coding", "spinners"],
+  "categories": ["code-editing", "spinners"],
   "tags": ["settings", "options", "preferences", "tools"],
-  "created": "0.1.0",
+  "created": "1.0.0",
   "updated": "1.0.0"
 }
