@@ -14,9 +14,13 @@ export default function Changelog() {
         ]}
         changed={[
           'Rotate now allows you to set any numeric value rather than just `0`, `90`, `180`, or `270`.',
-          "Valkyrie now only has 1 dependency as we've dropped `html-react-parser`."
+          "Valkyrie now only has 1 dependency as we've dropped `html-react-parser`.",
+          'Major enhancements to our build process and library generation. We now include source maps.'
         ]}
-        fixed={['Fixes a bug where `rotate` would not correctly apply the animation styling.']}
+        fixed={[
+          'Fixes a bug where `rotate` would not correctly apply the animation styling.',
+          'Fixes a bug where markdown generation would report a successful run before finishing.'
+        ]}
         docs={[
           'The category filter now keeps showing empty categories for easier navigation.',
           'Major improvements to our documentation, including simpeler changelog markup.'
