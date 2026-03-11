@@ -15,7 +15,7 @@ export default function PageRotate() {
         label: 'Rotate',
         type: 'chip',
         name: 'rotate',
-        values: [0, 90, 180, 270, false],
+        values: [0, 45, 90, 135, 180, 225, 270, 315, false],
         default: 90
       }
     ],

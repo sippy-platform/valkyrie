@@ -5,7 +5,7 @@ import clsx from "clsx";
 
 interface ValkyrieProps {
   icon: IValkyrieIcon;
-  rotate?: 0 | 90 | 180 | 270 | false;
+  rotate?: number | false;
   flip?: true | "x" | "y" | false;
   spin?: boolean | "pulse";
   beat?: boolean;
@@ -15,21 +15,25 @@ interface ValkyrieProps {
 
 export default function ValkyrieIcon({
   icon,
-  className,
   beat = undefined,
   bounce = undefined,
   fade = undefined,
   flip = undefined,
   rotate = undefined,
   spin = undefined,
+  className,
+  style,
   ...props
 }: ValkyrieProps & ComponentPropsWithoutRef<"span">) {
+  const rotateStyle =
+    rotate !== undefined && rotate !== false
+      ? ({ "--vi-rotate": `${rotate}deg` } as React.CSSProperties)
+      : {};
+
   return (
     <span
       className={clsx(className, "vi-icon", {
-        "vi-rotate-90": rotate === 90,
-        "vi-rotate-180": rotate === 180,
-        "vi-rotate-270": rotate === 270,
+        "vi-rotate": !!rotate || rotate === 0,
         "vi-flip-x": flip === "x",
         "vi-flip-y": flip === "y",
         "vi-flip": flip === true,
@@ -39,6 +43,7 @@ export default function ValkyrieIcon({
         "vi-fade": fade,
         "vi-bounce": bounce,
       })}
+      style={{ ...rotateStyle, ...style }}
       {...props}
     >
       {HTMLReactParser(icon.data)}

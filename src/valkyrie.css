@@ -52,22 +52,13 @@
   vertical-align: 0;
   flex-shrink: 0;
   transition: inherit;
+  transform: rotate(var(--vi-rotate, 0deg));
 }
 
 /* Transform classes */
 .vi-rotate {
   transition: transform var(--vi-transition-duration, 0.2s)
     var(--vi-transition-timing-function, ease-in-out);
-}
-
-.vi-rotate-90 {
-  transform: rotate(90deg);
-}
-.vi-rotate-180 {
-  transform: rotate(180deg);
-}
-.vi-rotate-270 {
-  transform: rotate(270deg);
 }
 
 .vi-flip {
