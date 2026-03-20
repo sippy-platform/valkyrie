@@ -1,22 +1,15 @@
 import { RouterProvider } from 'react-router';
 
-import { CssBaseline, CssVarsProvider, GlobalStyles } from '@mui/joy';
+import { TanStackDevtools } from '@tanstack/react-devtools';
+import { pacerDevtoolsPlugin } from '@tanstack/react-pacer-devtools';
 
-import joyTheme from './design/joyTheme';
-import router from './Router';
+import { router } from './Router';
 
 export default function App() {
   return (
-    <CssVarsProvider theme={joyTheme} defaultMode="system">
-      <CssBaseline />
-      <GlobalStyles
-        styles={{
-          '*': {
-            scrollBehavior: 'smooth'
-          }
-        }}
-      />
+    <>
+      <TanStackDevtools config={{ hideUntilHover: true }} plugins={[pacerDevtoolsPlugin()]} />
       <RouterProvider router={router} />
-    </CssVarsProvider>
+    </>
   );
 }

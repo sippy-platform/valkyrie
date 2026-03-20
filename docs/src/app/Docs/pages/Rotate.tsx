@@ -1,8 +1,6 @@
-import { Stack, Typography } from '@mui/joy';
-
 import Code from '@/design/components/Code';
 
-import { viArrowUp, viMessageSmile, viValkyrieSword } from '@sippy-platform/valkyrie';
+import { viValkyrieSword, viArrowUp, viMessageSmile } from '@sippy-platform/valkyrie';
 
 import ApiTable from '../playground/ApiTable';
 import Playground, { IIconCssVariables, IPlaygroundConfig } from '../playground/Playground';
@@ -34,17 +32,17 @@ export default function PageRotate() {
   };
 
   return (
-    <Stack gap={2}>
-      <Typography level="h2">Rotate</Typography>
-      <Typography>
-        With the <Code>rotate</Code> property you can change the default rotation of your icon.
-      </Typography>
+    <div className="flex flex-col gap-4">
+      <h2 className="font-display text-3xl font-medium">Rotate</h2>
+      <p>
+        With the <Code>rotate</Code> property you can change the default rotation of your icon. You can pass any numeric degree value for full flexibility.
+      </p>
 
       <Playground config={playgroundConfig} />
 
-      <Typography level="h3">API</Typography>
+      <h3 className="font-display text-2xl font-medium">API</h3>
 
       <ApiTable cssVariables={playgroundConfig.cssVariables as IIconCssVariables[]} />
-    </Stack>
+    </div>
   );
 }

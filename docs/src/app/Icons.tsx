@@ -1,224 +1,122 @@
-import { useCallback, useMemo } from 'react';
-import { useSearchParams } from 'react-router';
-
-import {
-  Box,
-  Chip,
-  ChipDelete,
-  Container,
-  IconButton,
-  Input,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemContent,
-  ListItemDecorator,
-  Stack,
-  Typography
-} from '@mui/joy';
+import { useMemo } from 'react';
 
 import categories from '@/data/categories';
 import icons from '@/data/icons';
+import { Button } from '@/design/components/Button';
+import { IconCard } from '@/design/components/IconCard';
+import { Pagination } from '@/design/components/Pagination';
+import { Search } from '@/design/components/Search';
 import Header from '@/design/layout/LayoutElements/Header';
+import { useFilters } from '@/hooks/useFilters';
 import useSearch from '@/hooks/useSearch';
 import { ILibraryIcon } from '@/types';
 
-import Valkyrie, { viFilterXmark, viMagnifyingGlass } from '@sippy-platform/valkyrie';
-
-import IconCard from './Components/IconCard';
-import Pagination from './Components/Pagination';
+import Valkyrie, { viFilterXmark, viXmark } from '@sippy-platform/valkyrie';
+import clsx from 'clsx';
 
 export default function Icons() {
-  const [searchParams, setSearchParams] = useSearchParams();
-
-  const [searchCategories, searchQuery, searchPage]: [string[], string, number] = useMemo(() => {
-    const categories = searchParams.get('category');
-    const query = searchParams.get('search');
-    const page = Number(searchParams.get('page') ?? 1);
-
-    return [categories?.split(',').filter((item) => item !== '') ?? [], query ?? '', page ?? 1];
-  }, [searchParams]);
+  const filters = useFilters();
 
   const searchableList = useMemo(() => {
-    if (searchCategories.length >= 1) {
-      return icons.filter((icon) => searchCategories.every((_searchCategory) => icon.categories.includes(_searchCategory as never)));
+    if (filters.query.categories.length >= 1) {
+      return icons.filter((icon) => filters.query.categories.every((_searchCategory) => icon.categories.includes(_searchCategory as never)));
     }
 
     return icons;
-  }, [searchCategories]);
+  }, [filters.query.categories]);
 
-  const { result } = useSearch(searchableList, ['slug', 'tags'], searchQuery);
-
-  // c: categories
-  // q: query
-  // p: page
-  const setSearchQuery = useCallback(
-    (type: 'q' | 'c' | 'p', value: string | number) => {
-      let search = searchParams.get('search');
-      let page = Number(searchParams.get('page'));
-      let category =
-        searchParams
-          .get('category')
-          ?.split(',')
-          .filter((item) => item !== '') ?? [];
-
-      switch (type) {
-        case 'c': {
-          if (typeof value === 'number') return;
-
-          if (category.includes(value)) {
-            category = category.filter((item) => item !== value);
-          } else {
-            category.push(value);
-          }
-
-          page = 1; // Always reset page
-          break;
-        }
-        case 'q': {
-          if (typeof value === 'number') return;
-
-          search = value;
-          page = 1; // Always reset page
-          break;
-        }
-        case 'p': {
-          if (typeof value === 'string') return;
-
-          page = value;
-          break;
-        }
-      }
-
-      setSearchParams({
-        page: (page || 1).toString(),
-        search: search ?? '',
-        category: category.join(',') ?? ''
-      });
-    },
-    [searchParams, setSearchParams]
-  );
+  const { result } = useSearch(searchableList, filters.query.search);
 
   return (
     <>
       <Header>
-        <Typography level="h1" fontSize={48}>
-          Icons
-        </Typography>
+        <h1 className="font-display py-2 text-5xl font-medium text-black">Icons</h1>
       </Header>
-      <Container>
-        <Box
-          sx={{
-            display: 'grid',
-            gridTemplateColumns: '220px auto',
-            gap: 3
-          }}
-        >
-          <Box sx={{ position: 'sticky', top: 58 + 16, overflow: 'auto', maxHeight: 'calc(100dvh - 58px - 16px)', alignSelf: 'flex-start' }}>
-            <List
-              sx={{
-                p: 0,
-                my: 2,
-                gap: 0.25,
-                '--ListItem-paddingY': 0,
-                '--ListItem-radius': 'var(--joy-radius-md)',
-                '--ListItem-paddingLeft': '.5rem',
-                '--ListItem-paddingRight': '.5rem',
-                '--ListItemDecorator-size': '1.5rem'
-              }}
-            >
+      <div className="container m-auto my-8 max-w-7xl px-4">
+        <div className="grid grid-cols-[220px_auto] gap-4">
+          <div className="sticky top-18.5 max-h-[calc(100dvh-74px)] self-start overflow-auto">
+            <div className="my-2 flex flex-col gap-0.5">
               {categories.map((_category) => {
                 const categoryIcons = searchableList.filter((icon) => icon.categories.includes(_category.slug as never));
 
                 return (
-                  <ListItem key={_category.slug}>
-                    <ListItemButton onClick={() => setSearchQuery('c', _category.slug)} selected={searchCategories.includes(_category.slug)} color="primary">
-                      <ListItemDecorator sx={{ opacity: categoryIcons.length === 0 ? 0.5 : 1 }}>
-                        <Valkyrie icon={_category.icon} />
-                      </ListItemDecorator>
-                      <ListItemContent>
-                        <Typography noWrap sx={{ opacity: categoryIcons.length === 0 ? 0.5 : 1 }}>
-                          {_category.title}
-                        </Typography>
-                      </ListItemContent>
-                      <ListItemContent sx={{ fontFamily: 'display', textAlign: 'right', opacity: categoryIcons.length === 0 ? 0.5 : 1 }}>
-                        {categoryIcons.length}
-                      </ListItemContent>
-                    </ListItemButton>
-                  </ListItem>
+                  <button
+                    key={_category.slug}
+                    onClick={() => filters.toggleCategory(_category.slug)}
+                    data-selected={filters.query.categories.includes(_category.slug) || undefined}
+                    data-noicons={categoryIcons.length === 0 ? true : undefined}
+                    className={clsx(
+                      'group grid h-8 grid-cols-[min-content_auto_min-content] items-center gap-2 rounded-sm px-2.5 text-start text-sm hover:cursor-pointer hover:bg-blue-200 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-blue-500 data-selected:focus-visible:outline-blue-700',
+                      {
+                        'bg-blue-500 text-white hover:bg-blue-600': filters.query.categories.includes(_category.slug)
+                      }
+                    )}
+                  >
+                    <Valkyrie icon={_category.icon} className="text-blue-600 group-data-noicons:opacity-50 group-data-selected:text-white" />
+                    <span className="truncate group-data-noicons:opacity-50">{_category.title}</span>
+                    <span className="font-display text-blue-600 group-data-noicons:opacity-50 group-data-selected:text-white">{categoryIcons.length}</span>
+                  </button>
                 );
               })}
-            </List>
-          </Box>
-          <Stack gap={2} sx={{ my: 2 }}>
-            <Stack direction="row" gap={1} justifyContent="space-between" alignItems="center">
-              <Stack direction="row" gap={1} alignItems="baseline">
-                <Typography level="h2">{result.length} icons</Typography>
-                <Typography color="neutral">
-                  Page {searchPage} of {Math.ceil(result.length / 96)}
-                </Typography>
-              </Stack>
+            </div>
+          </div>
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center justify-between gap-2">
+              <div className="flex items-baseline gap-2">
+                <h2 className="font-display text-3xl font-medium">{result.length} icons</h2>
+                <span className="text-zinc-600">
+                  Page {filters.query.page} of {Math.ceil(result.length / 96)}
+                </span>
+              </div>
 
-              <Stack direction="row" gap={0.5} alignItems="baseline">
-                <Input
-                  startDecorator={<Valkyrie icon={viMagnifyingGlass} />}
-                  placeholder="Search"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery('q', e.target.value)}
-                />
-                <IconButton
-                  variant="outlined"
-                  disabled={searchQuery === '' && searchCategories.length === 0}
-                  onClick={() => {
-                    setSearchParams({
-                      search: '',
-                      category: ''
-                    });
-                  }}
+              <div className="flex gap-1">
+                <Search placeholder="Search" value={filters.searchValue} onValueChange={(value) => filters.setSearch(value)} />
+                <Button
+                  icon
+                  variant="secondary"
+                  disabled={filters.searchValue === '' && filters.query.categories.length === 0}
+                  onClick={() => filters.resetQuery()}
                 >
                   <Valkyrie icon={viFilterXmark} />
-                </IconButton>
-              </Stack>
-            </Stack>
-            {(searchQuery || searchCategories.length >= 1) && (
-              <Stack direction="row" gap={0.5} sx={{ '--_Chip-minHeight': '2rem' }}>
-                {searchQuery && (
-                  <Chip
-                    size="lg"
-                    sx={{ fontSize: 'sm', fontWeight: '300', gap: 1.25, fontFamily: 'display', '--_Chip-minHeight': '2rem' }}
-                    endDecorator={<ChipDelete onClick={() => setSearchQuery('q', '')} />}
-                  >
-                    "{searchQuery}"
-                  </Chip>
+                </Button>
+              </div>
+            </div>
+            {(filters.query.search || filters.query.categories.length >= 1) && (
+              <div className="flex gap-1">
+                {filters.query.search && (
+                  <div className="font-display flex items-center gap-1 rounded-full bg-zinc-100 py-1 ps-2.5 pe-1 text-sm">
+                    "{filters.query.search}"
+                    <button
+                      className="text-md flex size-6 cursor-pointer items-center justify-center rounded-full bg-transparent hover:bg-zinc-300"
+                      onClick={() => filters.setSearch('')}
+                    >
+                      <Valkyrie icon={viXmark} /> <span className="sr-only">Delete category</span>
+                    </button>
+                  </div>
                 )}
-                {searchCategories.map((category) => (
-                  <Chip
-                    key={category}
-                    size="lg"
-                    sx={{ fontSize: 'sm', fontWeight: '300', gap: 1.25, fontFamily: 'display', '--_Chip-minHeight': '2rem' }}
-                    endDecorator={<ChipDelete onClick={() => setSearchQuery('c', category)} />}
-                  >
+                {filters.query.categories.map((category) => (
+                  <div key={category} className="font-display flex items-center gap-1 rounded-full bg-zinc-100 py-1 ps-2.5 pe-1 text-sm">
                     {category}
-                  </Chip>
+                    <button
+                      className="text-md flex size-6 cursor-pointer items-center justify-center rounded-full bg-transparent hover:bg-zinc-300"
+                      onClick={() => filters.toggleCategory(category)}
+                    >
+                      <Valkyrie icon={viXmark} /> <span className="sr-only">Delete category</span>
+                    </button>
+                  </div>
                 ))}
-              </Stack>
+              </div>
             )}
-            <Box
-              sx={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(min(9rem, 100%), 1fr))',
-                gap: { xs: 1 }
-              }}
-            >
-              {result.slice((searchPage - 1) * 96, searchPage * 96).map((icon: ILibraryIcon) => (
+            <div className="grid grid-cols-[repeat(auto-fill,minmax(min(9rem,100%),1fr))] gap-2">
+              {result.slice((filters.query.page - 1) * 96, filters.query.page * 96).map((icon: ILibraryIcon) => (
                 <IconCard key={icon.slug} icon={icon} />
               ))}
-            </Box>
+            </div>
 
-            {result.length > 0 && <Pagination count={Math.ceil(result.length / 96)} page={searchPage} onChange={(_, page) => setSearchQuery('p', page)} />}
-          </Stack>
-        </Box>
-      </Container>
+            {result.length > 0 && <Pagination count={Math.ceil(result.length / 96)} page={filters.query.page} onChange={(_, page) => filters.setPage(page)} />}
+          </div>
+        </div>
+      </div>
     </>
   );
 }

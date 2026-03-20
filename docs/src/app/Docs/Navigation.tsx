@@ -1,9 +1,18 @@
 import { Fragment } from 'react';
 import { NavLink, useLocation } from 'react-router';
 
-import { List, ListItem, ListItemButton, ListItemContent, ListSubheader, Typography } from '@mui/joy';
-
-import Valkyrie, { viArrowRotateRight, viArrowUp, viCircleHalfInner, viHeart, viReact, viSpinner, viStar, viValkyrieSword } from '@sippy-platform/valkyrie';
+import clsx from 'clsx';
+import Valkyrie, {
+  viArrowRotateRight,
+  viArrowsRotateRight,
+  viArrowUp,
+  viCircleHalfInner,
+  viHeart,
+  viReact,
+  viSpinner,
+  viStar,
+  viValkyrieSword
+} from '@sippy-platform/valkyrie';
 
 export default function DocsNavigation() {
   const location = useLocation();
@@ -41,7 +50,7 @@ export default function DocsNavigation() {
         },
         {
           title: 'Flip',
-          icon: viValkyrieSword,
+          icon: viArrowsRotateRight,
           link: '/docs/flip'
         },
         {
@@ -70,35 +79,31 @@ export default function DocsNavigation() {
   ];
 
   return (
-    <List
-      sx={{
-        p: 0,
-        gap: 0.25,
-        '--ListItem-paddingY': 0,
-        '--ListItem-radius': 'var(--joy-radius-md)',
-        '--ListItem-paddingLeft': '.5rem',
-        '--ListItem-paddingRight': '.5rem',
-        '--ListItemDecorator-size': '1.5rem'
-      }}
-    >
+    <>
       {pages.map((category, key) => (
         <Fragment key={key}>
-          <ListSubheader sx={{ '&:not(:first-child)': { mt: 2 } }}>
-            <Typography level="title-sm" textTransform="none" letterSpacing="initial" fontSize="md" startDecorator={<Valkyrie icon={category.icon} />}>
-              {category.title}
-            </Typography>
-          </ListSubheader>
-          {category.pages.map((page) => (
-            <ListItem key={page.link}>
-              <ListItemButton component={NavLink} to={page.link} color="primary" selected={location.pathname.includes(page.link)}>
-                <ListItemContent>
-                  <Typography noWrap>{page.title}</Typography>
-                </ListItemContent>
-              </ListItemButton>
-            </ListItem>
-          ))}
+          <h3 className="font-display text-md mb-2 flex items-center gap-2 px-2.5 font-medium not-first:mt-4">
+            <Valkyrie icon={category.icon} /> <span>{category.title}</span>
+          </h3>
+          <div className="flex flex-col gap-0.5">
+            {category.pages.map((page) => (
+              <NavLink
+                key={page.link}
+                to={page.link}
+                data-selected={location.pathname.includes(page.link) || undefined}
+                className={clsx(
+                  'group flex h-8 items-center gap-2 rounded-sm px-2.5 text-start text-sm hover:cursor-pointer hover:bg-blue-200 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-blue-500 data-selected:focus-visible:outline-blue-700',
+                  {
+                    'bg-blue-500 text-white hover:bg-blue-600': location.pathname.includes(page.link)
+                  }
+                )}
+              >
+                <span className="truncate group-data-noicons:opacity-50">{page.title}</span>
+              </NavLink>
+            ))}
+          </div>
         </Fragment>
       ))}
-    </List>
+    </>
   );
 }

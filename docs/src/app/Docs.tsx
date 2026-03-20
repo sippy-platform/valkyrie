@@ -1,7 +1,5 @@
 import { Outlet } from 'react-router';
 
-import { Box, Container, Stack, Typography } from '@mui/joy';
-
 import Header from '@/design/layout/LayoutElements/Header';
 
 import DocsNavigation from './Docs/Navigation';
@@ -10,26 +8,18 @@ export default function Docs() {
   return (
     <>
       <Header>
-        <Typography level="h1" fontSize={48}>
-          Documentation
-        </Typography>
+        <h1 className="font-display py-2 text-5xl font-medium text-black">Documentation</h1>
       </Header>
-      <Container sx={{ my: 5 }}>
-        <Box
-          sx={{
-            display: 'grid',
-            gridTemplateColumns: '220px auto',
-            gap: 3
-          }}
-        >
-          <Box sx={{ position: 'sticky', top: 58 + 32, overflow: 'auto', maxHeight: 'calc(100dvh - 58px - 32px)', alignSelf: 'flex-start' }}>
+      <div className="container m-auto my-8 max-w-7xl px-4">
+        <div className="grid grid-cols-[220px_auto] gap-4">
+          <div className="max-h-[calc(100dvh-90px) sticky top-22.5 self-start overflow-auto">
             <DocsNavigation />
-          </Box>
-          <Stack gap={4}>
+          </div>
+          <div>
             <Outlet />
-          </Stack>
-        </Box>
-      </Container>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

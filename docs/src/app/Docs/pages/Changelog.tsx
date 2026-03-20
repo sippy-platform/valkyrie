@@ -1,11 +1,18 @@
-import { Stack } from '@mui/joy';
-
 import Release from './_Release';
 
 export default function Changelog() {
   return (
-    <Stack gap={5}>
-      <Release name="Valkyrie 1.0 Release Candidate 1" version="1.0.0-rc.1" date="April 2026" />
+    <div className="flex flex-col gap-4">
+      <Release
+        name="Valkyrie 1.0 Release Candidate 1"
+        version="1.0.0-rc.1"
+        date="April 2026"
+        docs={[
+          'The documentation has been rebuilt with Tailwind and Base UI.',
+          'The search function can now properly look for tags.',
+          'Major improvements to our documentation, including simpeler changelog markup.'
+        ]}
+      />
       <Release
         name="Valkyrie 1.0 beta"
         version="1.0.0-beta.6"
@@ -242,6 +249,6 @@ export default function Changelog() {
           { old: 'volumne-none', new: 'volume-slash' }
         ]}
       />
-    </Stack>
+    </div>
   );
 }

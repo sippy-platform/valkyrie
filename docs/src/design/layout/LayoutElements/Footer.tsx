@@ -1,153 +1,82 @@
 import { NavLink } from 'react-router';
 
-import {
-  Box,
-  Container,
-  Grid,
-  IconButton,
-  Link,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemContent,
-  ListItemDecorator,
-  Sheet,
-  Stack,
-  Typography,
-  useColorScheme
-} from '@mui/joy';
+import Valkryie, { viGithub, viHeart, viSippy, viValkyrieSword } from '@sippy-platform/valkyrie';
 
-import Valkyrie, { viCircleHalfInner, viGithub, viHeart, viMoon, viSun, viValkyrieSword } from '@sippy-platform/valkyrie';
+import pkg from '../../../../../valkyrie/package.json';
 
 export default function Footer() {
-  const { mode, setMode } = useColorScheme();
-
   return (
-    <Sheet
-      variant="soft"
-      color="primary"
-      sx={{
-        py: 5,
-        borderTop: '1px solid var(--joy-palette-primary-300)'
-      }}
-    >
-      <Container>
-        <Grid container spacing={3}>
-          <Grid
-            xs={12}
-            sm={5}
-            md={6}
-            lg={8}
-            sx={{
-              display: 'flex',
-              flexDirection: { sx: 'row', sm: 'column' },
-              justifyContent: 'space-between'
-            }}
+    <div className="container m-auto my-4 max-w-7xl px-4">
+      <div className="rounded-lg border border-blue-200 bg-blue-100 p-8 text-black">
+        <div className="mb-8 grid grid-cols-2 grid-rows-[auto_auto] gap-4 lg:grid-cols-[3fr_1fr_1fr] lg:grid-rows-1">
+          <div className="col-span-full mb-4 lg:col-span-1 lg:mb-0">
+            <NavLink
+              to="/"
+              className="flex flex-row items-center gap-2 rounded-sm font-medium focus-visible:outline-2 focus-visible:outline-offset-0 focus-visible:outline-blue-600"
+            >
+              <Valkryie icon={viValkyrieSword} className="text-4xl" />
+              <span className="hiddem font-display text-3xl lg:block">
+                Valkyrie <span className="text-sm font-light opacity-50">v{pkg.version}</span>
+              </span>
+            </NavLink>
+            <p className="mt-2">
+              Valkyrie is a set of SVG icons made with <Valkryie icon={viHeart} /> in Belgium.
+            </p>
+          </div>
+          <div className="-ms-4 lg:ms-0">
+            <h2 className="font-display mb-4 ps-2.5 text-lg font-medium">Support</h2>
+
+            <div className="flex flex-col gap-0.5">
+              <NavLink
+                to="/docs/installation"
+                className="flex h-8 items-center gap-2 rounded-sm px-2.5 text-sm hover:bg-blue-200 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-blue-500"
+              >
+                Documentation
+              </NavLink>
+              <NavLink
+                to="/changelog"
+                className="flex h-8 items-center gap-2 rounded-sm px-2.5 text-sm hover:bg-blue-200 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-blue-500"
+              >
+                Changelog
+              </NavLink>
+              <a
+                href="https://github.com/sippy-platform/valkyrie/issues/new/choose"
+                className="flex h-8 items-center gap-2 rounded-sm px-2.5 text-sm hover:bg-blue-200 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-blue-500"
+              >
+                Report a bug
+              </a>
+            </div>
+          </div>
+          <div>
+            <h2 className="font-display mb-4 ps-2.5 text-lg font-medium">Community</h2>
+
+            <div className="flex flex-col gap-0.5">
+              <a
+                href="https://github.com/sippy-platform/valkyrie"
+                className="flex h-8 items-center gap-2 rounded-sm px-2.5 text-sm hover:bg-blue-200 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-blue-500"
+              >
+                <Valkryie icon={viGithub} /> GitHub
+              </a>
+              <a
+                href="https://sippy.cloud"
+                className="flex h-8 items-center gap-2 rounded-sm px-2.5 text-sm hover:bg-blue-200 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-blue-500"
+              >
+                <Valkryie icon={viSippy} /> Sippy
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-row items-end justify-between">
+          <a
+            href="https://sippy.cloud"
+            className="font-dev inline-flex items-center justify-center gap-1.5 text-2xl font-bold hover:underline hover:decoration-blue-500 hover:decoration-1 hover:underline-offset-1"
           >
-            <Box>
-              <Stack direction="row" alignItems="center">
-                <img src="favicon.svg" style={{ width: 36, height: 36, marginRight: 8 }} />
-                <Typography level="h1" fontSize="xl3">
-                  Valkyrie
-                </Typography>
-              </Stack>
-              <Typography sx={{ mt: 1 }}>
-                Valkyrie is a set of SVG icons made with <Valkyrie icon={viHeart} /> in Belgium.
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid container xs={12} sm={7} md={6} lg={4}>
-            <Grid xs={6}>
-              <Typography level="title-lg" sx={{ ml: 1, mb: 1 }}>
-                Support
-              </Typography>
-              <List
-                sx={{
-                  gap: 0.25,
-                  '--ListItem-paddingY': 0,
-                  '--ListItem-radius': 'var(--joy-radius-md)',
-                  '--ListItem-paddingLeft': '.5rem',
-                  '--ListItem-paddingRight': '.5rem',
-                  '--ListItemDecorator-size': '1.5rem'
-                }}
-              >
-                <ListItem>
-                  <ListItemButton color="primary" variant="soft" component={NavLink} to="/docs">
-                    <ListItemContent>
-                      <Typography>Documentation</Typography>
-                    </ListItemContent>
-                  </ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton color="primary" variant="soft" component={NavLink} to="/changelog">
-                    <ListItemContent>
-                      <Typography>Changelog</Typography>
-                    </ListItemContent>
-                  </ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton color="primary" variant="soft" component="a" href="https://github.com/sippy-platform/valkyrie/issues/new/choose">
-                    <ListItemContent>
-                      <Typography>Report a bug</Typography>
-                    </ListItemContent>
-                  </ListItemButton>
-                </ListItem>
-              </List>
-            </Grid>
-            <Grid xs={6}>
-              <Typography level="title-lg" sx={{ ml: 1, mb: 1 }}>
-                Community
-              </Typography>
-              <List
-                sx={{
-                  gap: 0.25,
-                  '--ListItem-paddingY': 0,
-                  '--ListItem-radius': 'var(--joy-radius-md)',
-                  '--ListItem-paddingLeft': '.5rem',
-                  '--ListItem-paddingRight': '.5rem',
-                  '--ListItemDecorator-size': '1.5rem'
-                }}
-              >
-                <ListItem>
-                  <ListItemButton color="primary" variant="soft" component="a" href="https://github.com/sippy-platform/valkyrie">
-                    <ListItemDecorator>
-                      <Valkyrie icon={viGithub} />
-                    </ListItemDecorator>
-                    <ListItemContent>
-                      <Typography>GitHub</Typography>
-                    </ListItemContent>
-                  </ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton color="primary" variant="soft" component="a" href="https://sippy.cloud">
-                    <ListItemDecorator>
-                      <Valkyrie icon={viValkyrieSword} />
-                    </ListItemDecorator>
-                    <ListItemContent>
-                      <Typography>Valkyrie</Typography>
-                    </ListItemContent>
-                  </ListItemButton>
-                </ListItem>
-              </List>
-            </Grid>
-          </Grid>
-          <Grid xs={12} sx={{ pt: { xs: 3, md: 5 } }}>
-            <Stack direction="row" gap={1} justifyContent="space-between" alignItems="center">
-              <Typography fontSize="sm">
-                &copy; 2021-2026 &middot;{' '}
-                <Link href="https://sippy.cloud" color="primary">
-                  Sippy
-                </Link>
-              </Typography>
-              <Stack direction="row" gap={0.5}>
-                <IconButton color="primary" variant="soft" onClick={() => setMode(mode === 'dark' ? 'light' : mode === 'light' ? 'system' : 'dark')}>
-                  <Valkyrie icon={mode === 'dark' ? viMoon : mode === 'light' ? viSun : viCircleHalfInner} />
-                </IconButton>
-              </Stack>
-            </Stack>
-          </Grid>
-        </Grid>
-      </Container>
-    </Sheet>
+            <Valkryie icon={viSippy} className="mt-0.5 text-blue-600" />
+            Sippy
+          </a>
+          <p className="text-sm">&copy; 2021-2026</p>
+        </div>
+      </div>
+    </div>
   );
 }
