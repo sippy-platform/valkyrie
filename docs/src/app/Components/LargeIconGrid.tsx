@@ -1,9 +1,9 @@
 import { Box, Sheet } from '@mui/joy';
 import { SxProps } from '@mui/joy/styles/types';
 
-import Valkyrie, { IValkyrieIcon } from '@sippy-platform/valkyrie';
+import Valkyrie, { IValkyrie } from '@sippy-platform/valkyrie';
 
-export default function LargeIconGrid({ icon, sx }: { icon: IValkyrieIcon; sx?: SxProps }) {
+export default function LargeIconGrid({ icon, sx }: { icon: IValkyrie; sx?: SxProps }) {
   return (
     <Box
       sx={[

@@ -72,7 +72,7 @@ export default function Changelog() {
         ]}
         changed={[
           'Improved tooling for builds.',
-          'Renames the `ValkyrieIcon` type to `IValkyrieIcon`.',
+          'Renames the `ValkyrieIcon` type to `IValkyrie`.',
           'CSS transitions are now inherited from the parent element.'
         ]}
         removed={['Removes the included CSS and font files.']}

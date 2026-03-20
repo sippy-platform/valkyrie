@@ -4,10 +4,10 @@ import { Box, Card, Chip, Divider, FormControl, FormLabel, IconButton, Input, Sh
 
 import Codeblock from '@/design/components/Codeblock';
 
-import Valkyrie, { IValkyrieIcon, viBroom } from '@sippy-platform/valkyrie';
+import Valkyrie, { IValkyrie, viBroom } from '@sippy-platform/valkyrie';
 
 export interface IPlaygroundConfig {
-  icons: IValkyrieIcon[];
+  icons: IValkyrie[];
   properties?: IIconProperties[];
   cssVariables?: IIconCssVariables[];
 }
@@ -31,7 +31,7 @@ interface IPlaygroundProps {
 }
 
 export default function Playground({ config }: IPlaygroundProps) {
-  const [playgroundIcon, setPlaygroundIcon] = useState<IValkyrieIcon>(config.icons[0]);
+  const [playgroundIcon, setPlaygroundIcon] = useState<IValkyrie>(config.icons[0]);
 
   // Get the icon name
   function getIconName(icon: string): string {

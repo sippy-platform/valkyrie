@@ -1,9 +1,9 @@
-import { IValkyrieIcon, viCircleQuestion } from ".";
+import { IValkyrie, viCircleQuestion } from ".";
 import { ComponentPropsWithoutRef } from "react";
 import clsx from "clsx";
 
 interface ValkyrieProps {
-  icon?: IValkyrieIcon;
+  icon?: IValkyrie;
   rotate?: number | false;
   flip?: true | "x" | "y" | false;
   spin?: boolean | "pulse";
@@ -12,7 +12,7 @@ interface ValkyrieProps {
   bounce?: boolean;
 }
 
-export default function ValkyrieIcon({
+export default function Valkyrie({
   icon,
   beat = undefined,
   bounce = undefined,

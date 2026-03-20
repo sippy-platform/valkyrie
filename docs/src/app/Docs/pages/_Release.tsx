@@ -6,7 +6,7 @@ import icons from '@/data/icons';
 import Code from '@/design/components/Code';
 import { ILibraryIcon } from '@/types';
 
-import Valkyrie, { IValkyrieIcon, viArrowRight, viBook, viBug, viPen, viPlus, viTrashCan, viValkyrieSword } from '@sippy-platform/valkyrie';
+import Valkyrie, { IValkyrie, viArrowRight, viBook, viBug, viPen, viPlus, viTrashCan, viValkyrieSword } from '@sippy-platform/valkyrie';
 
 import IconCard from '../../Components/IconCard';
 
@@ -25,7 +25,7 @@ const SIMPLE_LIST_SX = {
 // Types
 type ChangeSectionProps = {
   title: string;
-  icon: IValkyrieIcon;
+  icon: IValkyrie;
   items: string[];
 };
 

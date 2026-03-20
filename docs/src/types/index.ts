@@ -1,4 +1,4 @@
-import { IValkyrieIcon } from '@sippy-platform/valkyrie';
+import { IValkyrie } from '@sippy-platform/valkyrie';
 
 export interface IIcon {
   title: string;
@@ -13,13 +13,13 @@ export interface ILibraryIcon {
   categories: string[];
   tags: string[];
   slug: string;
-  icon: IValkyrieIcon;
+  icon: IValkyrie;
 }
 
 export interface IIconCategory {
   slug: string;
   title: string;
-  icon: IValkyrieIcon;
+  icon: IValkyrie;
 }
 
 export interface IColorSwatch {
