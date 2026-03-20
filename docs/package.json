@@ -17,7 +17,7 @@
     "@emotion/styled": "11.14.1",
     "@mui/joy": "5.0.0-beta.52",
     "@mui/material": "7.3.9",
-    "@sippy-platform/valkyrie": "file:../",
+    "@sippy-platform/valkyrie": "file:../valkyrie/",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "react-router": "7.13.1"
@@ -27,7 +27,7 @@
     "@trivago/prettier-plugin-sort-imports": "6.0.2",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "@vitejs/plugin-react-swc": "4.2.3",
+    "@vitejs/plugin-react-swc": "^4.3.0",
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9.24.0",
     "eslint-config-prettier": "^10.0.1",
@@ -36,9 +36,10 @@
     "eslint-plugin-unused-imports": "^4.1.4",
     "globals": "^17.0.0",
     "prettier": "3.8.1",
+    "rollup-plugin-visualizer": "^7.0.1",
     "typescript": "5.9.3",
     "typescript-eslint": "^8.30.1",
-    "vite": "7.3.1",
+    "vite": "^8.0.1",
     "vite-bundle-visualizer": "1.2.1",
     "vite-plugin-html": "3.2.2"
   }
