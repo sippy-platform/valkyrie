@@ -6,7 +6,7 @@
   "interfaceName": "IValkyrie",
   "typeName": "Valkyrie",
   "prefix": "vi",
-  "fileName": "Valkyrie",
+  "fileName": "ValkyrieIcons",
   "additionalModelFile": "./src",
   "compileSources": true,
   "completeIconSetName": "valkyrieSet"
