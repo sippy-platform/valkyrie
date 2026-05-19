@@ -59,7 +59,7 @@ export default function Icon() {
                 {icon?.categories?.map((cat) => (
                   <NavLink
                     key={cat}
-                    to={`/icons?${createSearchParams({ category: cat })}`}
+                    to={`/icons?${createSearchParams({ categories: cat })}`}
                     className="font-display flex items-center gap-1 rounded-full bg-blue-500 px-2.5 py-1 text-xs text-white hover:bg-blue-600"
                   >
                     {cat}

@@ -15,6 +15,7 @@ export default function Changelog() {
           "The documentation has been rebuilt with Tailwind and Base UI.",
           "The search function can now properly look for tags.",
           "Major improvements to our documentation, including simpeler changelog markup.",
+          "Fixes links to categories on the icon detail pages not working.",
         ]}
         newIcons={["sparkle", "sparkles"]}
         updatedIcons={["facebook-messenger", "github", "google-play"]}
