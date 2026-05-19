@@ -6,12 +6,18 @@ export default function Changelog() {
       <Release
         name="Valkyrie 1.0 Release Candidate 1"
         version="1.0.0-rc.1"
-        date="April 2026"
+        date="19 May 2026"
+        added={[
+          "When the `Valkyrie` component isn't passed an icon, or the icon isn't valid, it will now show the `viCircleQuestion` icon. The `fade` property will be enabled to draw attention to it.",
+        ]}
+        changed={["Valkyrie how no dependencies anymore with the removal of `clsx`."]}
         docs={[
           "The documentation has been rebuilt with Tailwind and Base UI.",
           "The search function can now properly look for tags.",
           "Major improvements to our documentation, including simpeler changelog markup.",
         ]}
+        newIcons={["sparkle", "sparkles"]}
+        updatedIcons={["facebook-messenger", "github", "google-play"]}
       />
       <Release
         name="Valkyrie 1.0 beta"
