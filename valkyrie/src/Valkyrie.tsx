@@ -1,6 +1,6 @@
-import { IValkyrie, viCircleQuestion } from ".";
-import { ComponentPropsWithoutRef } from "react";
-import clsx from "clsx";
+import { type ComponentPropsWithoutRef } from "react";
+
+import { type IValkyrie, viCircleQuestion } from ".";
 
 interface ValkyrieProps {
   icon?: IValkyrie;
@@ -13,13 +13,13 @@ interface ValkyrieProps {
 }
 
 export default function Valkyrie({
-  icon,
-  beat = undefined,
-  bounce = undefined,
-  fade = undefined,
   flip = undefined,
+  icon,
   rotate = undefined,
   spin = undefined,
+  beat = undefined,
+  fade = undefined,
+  bounce = undefined,
   className,
   style,
   ...props
@@ -29,23 +29,27 @@ export default function Valkyrie({
   const isFallback = !icon || !icon.data;
 
   const rotateStyle =
-    rotate !== undefined && rotate !== false
-      ? ({ "--vi-rotate": `${rotate}deg` } as React.CSSProperties)
-      : {};
+    rotate !== undefined && rotate !== false ? ({ "--vi-rotate": `${rotate}deg` } as React.CSSProperties) : {};
+
+  const classes = [
+    className,
+    "vi-icon",
+    (!!rotate || rotate === 0) && "vi-rotate",
+    flip === "x" && "vi-flip-x",
+    flip === "y" && "vi-flip-y",
+    flip === true && "vi-flip",
+    spin === true && "vi-spin",
+    spin === "pulse" && "vi-spin vi-spin-pulse",
+    beat && "vi-beat",
+    (isFallback || fade) && "vi-fade",
+    bounce && "vi-bounce",
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   return (
     <span
-      className={clsx(className, "vi-icon", {
-        "vi-rotate": !!rotate || rotate === 0,
-        "vi-flip-x": flip === "x",
-        "vi-flip-y": flip === "y",
-        "vi-flip": flip === true,
-        "vi-spin": spin === true,
-        "vi-spin vi-spin-pulse": spin === "pulse",
-        "vi-beat": beat,
-        "vi-fade": isFallback || fade,
-        "vi-bounce": bounce,
-      })}
+      className={classes}
       style={{ ...rotateStyle, ...style }}
       dangerouslySetInnerHTML={{ __html: resolvedIcon.data }}
       {...props}
