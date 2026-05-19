@@ -1,8 +1,8 @@
-import { NavLink } from 'react-router';
+import { NavLink } from "react-router";
 
-import Valkryie, { viGithub, viHeart, viSippy, viValkyrieSword } from '@sippy-platform/valkyrie';
+import Valkryie, { viGithub, viHeart, viSippy, viValkyrieSword } from "@sippy-platform/valkyrie";
 
-import pkg from '../../../../../valkyrie/package.json';
+import pkg from "../../../../../valkyrie/package.json";
 
 export default function Footer() {
   return (

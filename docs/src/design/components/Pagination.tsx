@@ -1,9 +1,9 @@
-import { Separator } from '@base-ui/react';
-import { PaginationProps } from '@mui/material';
-import usePagination from '@mui/material/usePagination';
+import { Separator } from "@base-ui/react";
+import { type PaginationProps } from "@mui/material";
+import usePagination from "@mui/material/usePagination";
+import Valkyrie, { viArrowLeft, viArrowRight, viEllipsisH } from "@sippy-platform/valkyrie";
 
-import { Button } from './Button';
-import Valkyrie, { viArrowLeft, viArrowRight, viEllipsisH } from '@sippy-platform/valkyrie';
+import { Button } from "./Button";
 
 export function Pagination(props: PaginationProps) {
   const { items } = usePagination(props);
@@ -12,28 +12,44 @@ export function Pagination(props: PaginationProps) {
     <div className="flex items-center justify-center gap-1">
       {items.map(({ page, selected, type, disabled, ...props }, key) => {
         switch (type) {
-          case 'page':
+          case "page":
             return (
-              <Button size="sm" icon variant={selected ? 'primary' : 'secondary'} plain={!selected} disabled={disabled} {...props} key={key}>
+              <Button
+                size="sm"
+                icon
+                variant={selected ? "primary" : "secondary"}
+                plain={!selected}
+                disabled={disabled}
+                {...props}
+                key={key}
+              >
                 {page}
               </Button>
             );
-          case 'previous':
+          case "previous":
             return (
               <Button size="sm" variant="secondary" plain disabled={disabled} {...props} key={key}>
                 <Valkyrie icon={viArrowLeft} /> Prev
               </Button>
             );
-          case 'next':
+          case "next":
             return (
               <Button size="sm" variant="secondary" plain disabled={disabled} {...props} key={key}>
                 Next <Valkyrie icon={viArrowRight} />
               </Button>
             );
-          case 'start-ellipsis':
-          case 'end-ellipsis':
+          case "start-ellipsis":
+          case "end-ellipsis":
             return (
-              <Button size="sm" icon variant={selected ? 'primary' : 'secondary'} plain={!selected} disabled={disabled} {...props} key={key}>
+              <Button
+                size="sm"
+                icon
+                variant={selected ? "primary" : "secondary"}
+                plain={!selected}
+                disabled={disabled}
+                {...props}
+                key={key}
+              >
                 <Valkyrie icon={viEllipsisH} />
               </Button>
             );

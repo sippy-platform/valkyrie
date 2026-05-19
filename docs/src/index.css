@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-@import 'tailwindcss';
-@import '@sippy-platform/valkyrie/valkyrie.css';
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import "tailwindcss";
+@import "@sippy-platform/valkyrie/valkyrie.css";
 
 .root {
   isolation: isolate;
 }
 
 @theme {
-  --font-display: 'Lexend', sans-serif;
-  --font-dev: 'Segoe UI Variable Display', var(--font-sans);
+  --font-display: "Lexend", sans-serif;
+  --font-dev: "Segoe UI Variable Display", var(--font-sans);
 }

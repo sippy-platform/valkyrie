@@ -1,21 +1,21 @@
-import Code from '@/design/components/Code';
+import { viValkyrieSword, viHouse, viMessageSmile } from "@sippy-platform/valkyrie";
 
-import { viValkyrieSword, viHouse, viMessageSmile } from '@sippy-platform/valkyrie';
+import Code from "@/design/components/Code";
 
-import Playground, { IPlaygroundConfig } from '../playground/Playground';
+import Playground, { type IPlaygroundConfig } from "../playground/Playground";
 
 export default function PageFlip() {
   const playgroundConfig: IPlaygroundConfig = {
     icons: [viMessageSmile, viValkyrieSword, viHouse],
     properties: [
       {
-        label: 'Flip',
-        type: 'chip',
-        name: 'flip',
-        values: [true, 'x', 'y', false],
-        default: true
-      }
-    ]
+        label: "Flip",
+        type: "chip",
+        name: "flip",
+        values: [true, "x", "y", false],
+        default: true,
+      },
+    ],
   };
 
   return (

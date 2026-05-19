@@ -1,44 +1,44 @@
-import Code from '@/design/components/Code';
+import { viValkyrieSword, viCircleHalfInner, viMusic } from "@sippy-platform/valkyrie";
 
-import { viValkyrieSword, viCircleHalfInner, viMusic } from '@sippy-platform/valkyrie';
+import Code from "@/design/components/Code";
 
-import ApiTable from '../playground/ApiTable';
-import Playground, { IIconCssVariables, IPlaygroundConfig } from '../playground/Playground';
+import ApiTable from "../playground/ApiTable";
+import Playground, { type IIconCssVariables, type IPlaygroundConfig } from "../playground/Playground";
 
 export default function PageFade() {
   const playgroundConfig: IPlaygroundConfig = {
     icons: [viValkyrieSword, viMusic, viCircleHalfInner],
     properties: [
       {
-        label: 'Fade',
-        type: 'chip',
-        name: 'fade',
+        label: "Fade",
+        type: "chip",
+        name: "fade",
         values: [true, false],
-        default: true
-      }
+        default: true,
+      },
     ],
     cssVariables: [
       {
-        name: '--vi-animation-duration',
-        default: '1.5s',
-        description: 'Time for a full play through of the animation.'
+        name: "--vi-animation-duration",
+        default: "1.5s",
+        description: "Time for a full play through of the animation.",
       },
       {
-        name: '--vi-animation-timing-function',
-        default: 'ease-in-out',
-        description: 'The timing function used for the animation.'
+        name: "--vi-animation-timing-function",
+        default: "ease-in-out",
+        description: "The timing function used for the animation.",
       },
       {
-        name: '--vi-animation-iteration-count',
-        default: 'infinite',
-        description: 'Number of times the animation is repeated.'
+        name: "--vi-animation-iteration-count",
+        default: "infinite",
+        description: "Number of times the animation is repeated.",
       },
       {
-        name: '--vi-animation-opacity',
-        default: '.4',
-        description: 'The lowest opacity of the icon.'
-      }
-    ]
+        name: "--vi-animation-opacity",
+        default: ".4",
+        description: "The lowest opacity of the icon.",
+      },
+    ],
   };
 
   return (

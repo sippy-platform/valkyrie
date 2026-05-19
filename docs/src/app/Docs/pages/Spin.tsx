@@ -1,52 +1,52 @@
-import Code from '@/design/components/Code';
+import { viGear, viSpinner, viSpinnerThird } from "@sippy-platform/valkyrie";
 
-import { viGear, viSpinner, viSpinnerThird } from '@sippy-platform/valkyrie';
+import Code from "@/design/components/Code";
 
-import ApiTable from '../playground/ApiTable';
-import Playground, { IIconCssVariables, IPlaygroundConfig } from '../playground/Playground';
+import ApiTable from "../playground/ApiTable";
+import Playground, { type IIconCssVariables, type IPlaygroundConfig } from "../playground/Playground";
 
 export default function PageSpin() {
   const playgroundConfig: IPlaygroundConfig = {
     icons: [viSpinnerThird, viSpinner, viGear],
     properties: [
       {
-        label: 'Spin',
-        type: 'chip',
-        name: 'spin',
-        values: [true, 'pulse', false],
-        default: true
-      }
+        label: "Spin",
+        type: "chip",
+        name: "spin",
+        values: [true, "pulse", false],
+        default: true,
+      },
     ],
     cssVariables: [
       {
-        name: '--vi-animation-duration',
-        default: '2s',
+        name: "--vi-animation-duration",
+        default: "2s",
         description: (
           <>
             Time for a full play through of the animation. Defaults to <Code>1s</Code> when using <Code>pulse</Code>.
           </>
-        )
+        ),
       },
       {
-        name: '--vi-animation-timing-function',
-        default: 'linear',
-        description: 'The timing function used for the animation.'
+        name: "--vi-animation-timing-function",
+        default: "linear",
+        description: "The timing function used for the animation.",
       },
       {
-        name: '--vi-animation-iteration-count',
-        default: 'infinite',
-        description: 'Number of times the animation is repeated.'
+        name: "--vi-animation-iteration-count",
+        default: "infinite",
+        description: "Number of times the animation is repeated.",
       },
       {
-        name: '--vi-animation-pulse-steps',
+        name: "--vi-animation-pulse-steps",
         default: 8,
         description: (
           <>
             Number of steps when the spin property is set to <Code>pulse</Code>.
           </>
-        )
-      }
-    ]
+        ),
+      },
+    ],
   };
 
   return (
@@ -61,7 +61,8 @@ export default function PageSpin() {
       <h3 className="font-display text-2xl font-medium">API</h3>
 
       <p>
-        When setting the property to <Code>pulse</Code>, some additional variables are avvilable while some defaults are changed.
+        When setting the property to <Code>pulse</Code>, some additional variables are avvilable while some defaults are
+        changed.
       </p>
 
       <ApiTable cssVariables={playgroundConfig.cssVariables as IIconCssVariables[]} />

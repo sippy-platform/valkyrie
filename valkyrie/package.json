@@ -2,13 +2,27 @@
   "name": "@sippy-platform/valkyrie",
   "version": "1.0.0-beta.6",
   "description": "The iconography of Sippy.",
-  "type": "module",
-  "packageManager": "pnpm@11.1.3",
-  "engines": {
-    "node": ">=24",
-    "npm": "use pnpm",
-    "pnpm": ">=10"
+  "keywords": [
+    "iconography",
+    "icons",
+    "svg-icons"
+  ],
+  "homepage": "https://sippy-platform.github.io/valkyrie",
+  "bugs": {
+    "url": "https://github.com/sippy-platform/valkyrie/issues"
   },
+  "license": "AGPL-3.0-or-later",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sippy-platform/valkyrie.git"
+  },
+  "files": [
+    "/icons",
+    "/dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -22,48 +36,32 @@
   "scripts": {
     "build": "tsup && node scripts/copy-css.js",
     "build:watch": "tsup --watch",
-    "style": "copyfiles -u 1 src/valkyrie.css dist/",
+    "fix": "oxfmt && oxlint --fix",
+    "format": "oxfmt --check",
+    "format:fix": "oxfmt",
     "icons": "pnpm icons:clean && pnpm icons:ts",
     "icons:clean": "svgo -f ./icons -o ./icons",
     "icons:ts": "svg-to-ts-constants",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "pages": "node scripts/generate-pages.js --verbose",
     "lib": "node scripts/generate-library.js",
-    "prod": "pnpm icons && pnpm pages && pnpm lib && pnpm build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sippy-platform/valkyrie.git"
-  },
-  "files": [
-    "/icons",
-    "/dist"
-  ],
-  "keywords": [
-    "icons",
-    "svg-icons",
-    "iconography"
-  ],
-  "author": "",
-  "license": "AGPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/sippy-platform/valkyrie/issues"
-  },
-  "homepage": "https://sippy-platform.github.io/valkyrie",
-  "peerDependencies": {
-    "react": ">=16.x"
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "pages": "node scripts/generate-pages.js --verbose",
+    "prod": "pnpm icons && pnpm pages && pnpm lib && pnpm build",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@types/react": "^19.2.14",
-    "nodemon": "3.1.14",
-    "npm-run-all": "4.1.5",
+    "oxfmt": "^0.50.0",
+    "oxlint": "^1.60.0",
     "picocolors": "1.1.1",
-    "react": "^19.2.6",
-    "react-dom": "^19.2.6",
+    "react": "^19.2.5",
     "svg-to-ts": "12.0.0",
     "svgo": "4.0.1",
     "tsup": "^8.5.1",
-    "typescript": "6.0.3"
+    "typescript": "^6.0.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.x"
   },
   "browserslist": {
     "production": [
@@ -72,5 +70,10 @@
       "not ie <= 11"
     ]
   },
-  "sideEffects": false
+  "engines": {
+    "node": ">=24",
+    "npm": "use pnpm",
+    "pnpm": ">=11"
+  },
+  "packageManager": "pnpm@11.1.3"
 }

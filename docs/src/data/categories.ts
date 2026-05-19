@@ -36,200 +36,200 @@ import {
   viSun,
   viSwatchbook,
   viToggleOn,
-  viValkyrieSword
-} from '@sippy-platform/valkyrie';
+  viValkyrieSword,
+} from "@sippy-platform/valkyrie";
 
 const categories = [
   {
-    slug: 'accessibility',
-    title: 'Accessibility',
-    icon: viEye
+    slug: "accessibility",
+    title: "Accessibility",
+    icon: viEye,
   },
   {
-    slug: 'alerts',
-    title: 'Alerts',
-    icon: viBel
+    slug: "alerts",
+    title: "Alerts",
+    icon: viBel,
   },
   {
-    slug: 'arrows',
-    title: 'Arrows',
-    icon: viArrowUp
+    slug: "arrows",
+    title: "Arrows",
+    icon: viArrowUp,
   },
   {
-    slug: 'brands',
-    title: 'Brands',
-    icon: viValkyrieSword
+    slug: "brands",
+    title: "Brands",
+    icon: viValkyrieSword,
   },
   {
-    slug: 'charts',
-    title: 'Charts & diagrams',
-    icon: viChartPie
+    slug: "charts",
+    title: "Charts & diagrams",
+    icon: viChartPie,
   },
   {
-    slug: 'code-editing',
-    title: 'Code editing',
-    icon: viCode
+    slug: "code-editing",
+    title: "Code editing",
+    icon: viCode,
   },
   {
-    slug: 'communication',
-    title: 'Communication',
-    icon: viMessageText
+    slug: "communication",
+    title: "Communication",
+    icon: viMessageText,
   },
   {
-    slug: 'connectivity',
-    title: 'Connectivity',
-    icon: viSignalStrong
+    slug: "connectivity",
+    title: "Connectivity",
+    icon: viSignalStrong,
   },
   {
-    slug: 'design',
-    title: 'Design tools',
-    icon: viSwatchbook
+    slug: "design",
+    title: "Design tools",
+    icon: viSwatchbook,
   },
   {
-    slug: 'devices',
-    title: 'Devices',
-    icon: viDevices
+    slug: "devices",
+    title: "Devices",
+    icon: viDevices,
   },
   {
-    slug: 'education',
-    title: 'Education',
-    icon: viBook
+    slug: "education",
+    title: "Education",
+    icon: viBook,
   },
   {
-    slug: 'energy',
-    title: 'Energy',
-    icon: viLightbulb
+    slug: "energy",
+    title: "Energy",
+    icon: viLightbulb,
   },
   {
-    slug: 'entertainment',
-    title: 'Entertainment & gaming',
-    icon: viDice
+    slug: "entertainment",
+    title: "Entertainment & gaming",
+    icon: viDice,
   },
   {
-    slug: 'files',
-    title: 'Files & folders',
-    icon: viFiles
+    slug: "files",
+    title: "Files & folders",
+    icon: viFiles,
   },
   {
-    slug: 'finance',
-    title: 'Finance',
-    icon: viEuro
+    slug: "finance",
+    title: "Finance",
+    icon: viEuro,
   },
   {
-    slug: 'food-beverage',
-    title: 'Food & beverages',
-    icon: viBurgerGlass
+    slug: "food-beverage",
+    title: "Food & beverages",
+    icon: viBurgerGlass,
   },
   {
-    slug: 'health',
-    title: 'Health',
-    icon: viHeart
+    slug: "health",
+    title: "Health",
+    icon: viHeart,
   },
   {
-    slug: 'home-living',
-    title: 'Home & living',
-    icon: viHouse
+    slug: "home-living",
+    title: "Home & living",
+    icon: viHouse,
   },
   {
-    slug: 'layout-design',
-    title: 'Layout & alignment',
-    icon: viAlignCenter
+    slug: "layout-design",
+    title: "Layout & alignment",
+    icon: viAlignCenter,
   },
   {
-    slug: 'maps',
-    title: 'Maps & location',
-    icon: viEarth
+    slug: "maps",
+    title: "Maps & location",
+    icon: viEarth,
   },
   {
-    slug: 'mathematics',
-    title: 'Mathematics',
-    icon: viPlus
+    slug: "mathematics",
+    title: "Mathematics",
+    icon: viPlus,
   },
   {
-    slug: 'media',
-    title: 'Media & video',
-    icon: viPlay
+    slug: "media",
+    title: "Media & video",
+    icon: viPlay,
   },
   {
-    slug: 'nature',
-    title: 'Nature & outdoors',
-    icon: viCompass
+    slug: "nature",
+    title: "Nature & outdoors",
+    icon: viCompass,
   },
   {
-    slug: 'office-tools',
-    title: 'Office tools',
-    icon: viFax
+    slug: "office-tools",
+    title: "Office tools",
+    icon: viFax,
   },
   {
-    slug: 'people',
-    title: 'People',
-    icon: viPerson
+    slug: "people",
+    title: "People",
+    icon: viPerson,
   },
   {
-    slug: 'punctuation-symbols',
-    title: 'Punctuation & symbols',
-    icon: viAsterisk
+    slug: "punctuation-symbols",
+    title: "Punctuation & symbols",
+    icon: viAsterisk,
   },
   {
-    slug: 'science',
-    title: 'Science & astronomy',
-    icon: viFlask
+    slug: "science",
+    title: "Science & astronomy",
+    icon: viFlask,
   },
   {
-    slug: 'security',
-    title: 'Security',
-    icon: viLock
+    slug: "security",
+    title: "Security",
+    icon: viLock,
   },
   {
-    slug: 'shapes',
-    title: 'Shapes',
-    icon: viStar
+    slug: "shapes",
+    title: "Shapes",
+    icon: viStar,
   },
   {
-    slug: 'shopping',
-    title: 'Shopping & commerce',
-    icon: viShoppingCart
+    slug: "shopping",
+    title: "Shopping & commerce",
+    icon: viShoppingCart,
   },
   {
-    slug: 'social',
-    title: 'Social',
-    icon: viShare
+    slug: "social",
+    title: "Social",
+    icon: viShare,
   },
   {
-    slug: 'spinners',
-    title: 'Spinners',
-    icon: viSpinner
+    slug: "spinners",
+    title: "Spinners",
+    icon: viSpinner,
   },
   {
-    slug: 'text-formatting',
-    title: 'Text formatting',
-    icon: viBold
+    slug: "text-formatting",
+    title: "Text formatting",
+    icon: viBold,
   },
   {
-    slug: 'time',
-    title: 'Time',
-    icon: viClock
+    slug: "time",
+    title: "Time",
+    icon: viClock,
   },
   {
-    slug: 'toggle',
-    title: 'Toggle',
-    icon: viToggleOn
+    slug: "toggle",
+    title: "Toggle",
+    icon: viToggleOn,
   },
   {
-    slug: 'transportation',
-    title: 'Transportation',
-    icon: viCarSide
+    slug: "transportation",
+    title: "Transportation",
+    icon: viCarSide,
   },
   {
-    slug: 'weather',
-    title: 'Weather',
-    icon: viSun
+    slug: "weather",
+    title: "Weather",
+    icon: viSun,
   },
   {
-    slug: 'writing',
-    title: 'Writing',
-    icon: viPen
-  }
+    slug: "writing",
+    title: "Writing",
+    icon: viPen,
+  },
 ];
 
 export default categories;

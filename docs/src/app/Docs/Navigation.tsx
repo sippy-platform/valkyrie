@@ -1,7 +1,6 @@
-import { Fragment } from 'react';
-import { NavLink, useLocation } from 'react-router';
+import { Fragment } from "react";
+import { NavLink, useLocation } from "react-router";
 
-import clsx from 'clsx';
 import Valkyrie, {
   viArrowRotateRight,
   viArrowsRotateRight,
@@ -11,71 +10,72 @@ import Valkyrie, {
   viReact,
   viSpinner,
   viStar,
-  viValkyrieSword
-} from '@sippy-platform/valkyrie';
+  viValkyrieSword,
+} from "@sippy-platform/valkyrie";
+import clsx from "clsx";
 
 export default function DocsNavigation() {
   const location = useLocation();
 
   const pages = [
     {
-      title: 'Get started',
+      title: "Get started",
       icon: viValkyrieSword,
       pages: [
         {
-          title: 'Installation',
+          title: "Installation",
           icon: viValkyrieSword,
-          link: '/docs/installation'
-        }
-      ]
+          link: "/docs/installation",
+        },
+      ],
     },
     {
-      title: 'React component',
+      title: "React component",
       icon: viReact,
       pages: [
         {
-          title: 'Spin',
+          title: "Spin",
           icon: viSpinner,
-          link: '/docs/spin'
+          link: "/docs/spin",
         },
         {
-          title: 'Bounce',
+          title: "Bounce",
           icon: viArrowUp,
-          link: '/docs/bounce'
+          link: "/docs/bounce",
         },
         {
-          title: 'Rotate',
+          title: "Rotate",
           icon: viArrowRotateRight,
-          link: '/docs/rotate'
+          link: "/docs/rotate",
         },
         {
-          title: 'Flip',
+          title: "Flip",
           icon: viArrowsRotateRight,
-          link: '/docs/flip'
+          link: "/docs/flip",
         },
         {
-          title: 'Beat',
+          title: "Beat",
           icon: viHeart,
-          link: '/docs/beat'
+          link: "/docs/beat",
         },
         {
-          title: 'Fade',
+          title: "Fade",
           icon: viCircleHalfInner,
-          link: '/docs/fade'
-        }
-      ]
+          link: "/docs/fade",
+        },
+      ],
     },
     {
-      title: 'More',
+      title: "More",
       icon: viStar,
       pages: [
         {
-          title: 'Changelog',
+          title: "Changelog",
           icon: viStar,
-          link: '/changelog'
-        }
-      ]
-    }
+          link: "/changelog",
+        },
+      ],
+    },
   ];
 
   return (
@@ -92,10 +92,10 @@ export default function DocsNavigation() {
                 to={page.link}
                 data-selected={location.pathname.includes(page.link) || undefined}
                 className={clsx(
-                  'group flex h-8 items-center gap-2 rounded-sm px-2.5 text-start text-sm hover:cursor-pointer hover:bg-blue-200 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-blue-500 data-selected:focus-visible:outline-blue-700',
+                  "group flex h-8 items-center gap-2 rounded-sm px-2.5 text-start text-sm hover:cursor-pointer hover:bg-blue-200 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-blue-500 data-selected:focus-visible:outline-blue-700",
                   {
-                    'bg-blue-500 text-white hover:bg-blue-600': location.pathname.includes(page.link)
-                  }
+                    "bg-blue-500 text-white hover:bg-blue-600": location.pathname.includes(page.link),
+                  },
                 )}
               >
                 <span className="truncate group-data-noicons:opacity-50">{page.title}</span>

@@ -1,34 +1,34 @@
-import Code from '@/design/components/Code';
+import { viArrowUp, viMusic, viValkyrieSword } from "@sippy-platform/valkyrie";
 
-import { viArrowUp, viMusic, viValkyrieSword } from '@sippy-platform/valkyrie';
+import Code from "@/design/components/Code";
 
-import ApiTable from '../playground/ApiTable';
-import Playground, { IIconCssVariables, IPlaygroundConfig } from '../playground/Playground';
+import ApiTable from "../playground/ApiTable";
+import Playground, { type IIconCssVariables, type IPlaygroundConfig } from "../playground/Playground";
 
 export default function PageBounce() {
   const playgroundConfig: IPlaygroundConfig = {
     icons: [viValkyrieSword, viMusic, viArrowUp],
     properties: [
       {
-        label: 'Bounce',
-        type: 'chip',
-        name: 'bounce',
+        label: "Bounce",
+        type: "chip",
+        name: "bounce",
         values: [true, false],
-        default: true
-      }
+        default: true,
+      },
     ],
     cssVariables: [
       {
-        name: '--vi-animation-duration',
-        default: '1s',
-        description: 'Time for a full play through of the animation.'
+        name: "--vi-animation-duration",
+        default: "1s",
+        description: "Time for a full play through of the animation.",
       },
       {
-        name: '--vi-animation-iteration-count',
-        default: 'infinite',
-        description: 'Number of times the animation is repeated.'
-      }
-    ]
+        name: "--vi-animation-iteration-count",
+        default: "infinite",
+        description: "Number of times the animation is repeated.",
+      },
+    ],
   };
 
   return (

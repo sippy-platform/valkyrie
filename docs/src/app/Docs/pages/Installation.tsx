@@ -1,5 +1,5 @@
-import Code from '@/design/components/Code';
-import Codeblock from '@/design/components/Codeblock';
+import Code from "@/design/components/Code";
+import Codeblock from "@/design/components/Codeblock";
 
 export default function PageInstallation() {
   return (

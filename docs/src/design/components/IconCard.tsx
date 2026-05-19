@@ -1,7 +1,8 @@
-import { NavLink } from 'react-router';
+import { NavLink } from "react-router";
 
-import { ILibraryIcon } from '@/types';
-import Valkyrie from '@sippy-platform/valkyrie';
+import Valkyrie from "@sippy-platform/valkyrie";
+
+import { type ILibraryIcon } from "@/types";
 
 export function IconCard({ icon }: { icon: ILibraryIcon }) {
   return (
