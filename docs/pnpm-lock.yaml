@@ -15,7 +15,7 @@ importers:
         specifier: 9.0.1
         version: 9.0.1(@types/react@19.2.14)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       '@sippy-platform/valkyrie':
-        specifier: file:..\valkyrie
+        specifier: file:../valkyrie
         version: file:../valkyrie(react@19.2.6)
       '@tailwindcss/vite':
         specifier: ^4.3.0
@@ -3264,7 +3264,6 @@ snapshots:
 
   '@sippy-platform/valkyrie@file:../valkyrie(react@19.2.6)':
     dependencies:
-      clsx: 2.1.1
       react: 19.2.6
 
   '@solid-primitives/event-listener@2.4.5(solid-js@1.9.13)':
