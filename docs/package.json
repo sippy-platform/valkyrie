@@ -1,6 +1,6 @@
 {
   "name": "valkyrie-docs",
-  "version": "0.1.0",
+  "version": "1.0.0-beta.6",
   "private": true,
   "homepage": "https://sippy-platform.github.io/valkyrie",
   "type": "module",

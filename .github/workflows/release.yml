@@ -1,0 +1,116 @@
+name: Release Valkyrie update
+
+on:
+  pull_request:
+    types: [closed]
+    branches: ["main", "next"]
+
+permissions:
+  contents: write
+  id-token: write
+  pages: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build Valkyrie package
+    if: github.event.pull_request.merged == true && github.event.pull_request.head.repo.full_name == github.repository && (github.event.pull_request.base.ref == 'next' || (github.event.pull_request.base.ref == 'main' && contains(github.event.pull_request.labels.*.name, 'release')))
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Get version
+        id: version
+        run: echo "version=$(jq -r '.version' valkyrie/package.json)" >> $GITHUB_OUTPUT
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v5
+        with:
+          version: 11.1.3
+      - name: Set up Node 24
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+          cache: "pnpm"
+          cache-dependency-path: valkyrie/pnpm-lock.yaml
+      - name: Install dependencies
+        working-directory: valkyrie
+        run: pnpm install --frozen-lockfile
+      - name: Production build
+        working-directory: valkyrie
+        run: pnpm prod
+      - name: Pack for npm
+        working-directory: valkyrie
+        run: pnpm pack
+      - name: Package icons
+        working-directory: valkyrie/icons
+        run: zip -r ../../valkyrie-${{ steps.version.outputs.version }}-icons.zip . -i "*.svg"
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v7
+        with:
+          name: release-artifacts
+          path: |
+            valkyrie/dist
+            valkyrie/sippy-platform-valkyrie-*.tgz
+            valkyrie-${{ steps.version.outputs.version }}-icons.zip
+
+  release:
+    name: Release Valkyrie stable
+    needs: build
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main' && contains(github.event.pull_request.labels.*.name, 'release') && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v8
+        with:
+          name: release-artifacts
+      - name: Set up Node 24
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+          registry-url: "https://registry.npmjs.org"
+      - name: Create GitHub release
+        run: |
+          gh release create v${{ needs.build.outputs.version }} \
+            --repo ${{ github.repository }} \
+            --target "${{ github.event.pull_request.merge_commit_sha }}" \
+            --title "${{ github.event.pull_request.title }}" \
+            --notes "${{ github.event.pull_request.body }}" \
+            "valkyrie-${{ needs.build.outputs.version }}-icons.zip#Valkyrie icons v${{ needs.build.outputs.version }}"
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Publish to npm
+        run: npm publish ./valkyrie/sippy-platform-valkyrie-${{ needs.build.outputs.version }}.tgz --access public --provenance --tag latest
+
+  prerelease:
+    name: Prerelease Valkyrie preview
+    needs: build
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'next' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifacts
+        uses: actions/download-artifact@v8
+        with:
+          name: release-artifacts
+      - name: Set up Node 24
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+          registry-url: "https://registry.npmjs.org"
+      - name: Create GitHub prerelease
+        run: |
+          gh release create v${{ needs.build.outputs.version }} \
+            --repo ${{ github.repository }} \
+            --target "${{ github.event.pull_request.merge_commit_sha }}" \
+            --title "${{ github.event.pull_request.title }}" \
+            --notes "${{ github.event.pull_request.body }}" \
+            --prerelease \
+            "valkyrie-${{ needs.build.outputs.version }}-icons.zip#Valkyrie icons v${{ needs.build.outputs.version }}"
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Publish to npm (next)
+        run: npm publish ./valkyrie/sippy-platform-valkyrie-${{ needs.build.outputs.version }}.tgz --access public --provenance --tag next
