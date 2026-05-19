@@ -78,20 +78,20 @@ async function main(file) {
 
     await fs.writeFile(join(pagesDir, "icons.ts"), template);
 
-    const categoriesTemplate = `
-import { viCircleDashed } from '@sippy-platform/valkyrie';
+    // const categoriesTemplate = `
+    // import { viCircleDashed } from '@sippy-platform/valkyrie';
 
-const categories = [${categories.map(
-      (cat) => `
-  {
-    slug: "${cat}",
-    title: "${cat}",
-    icon: viCircleDashed
-  }`,
-    )}
-];
+    // const categories = [${categories.map(
+    // (cat) => `
+    // {
+    // slug: "${cat}",
+    // title: "${cat}",
+    // icon: viCircleDashed
+    // }`,
+    // )}
+    // ];
 
-export default categories;`;
+    // export default categories;`;
 
     // await fs.writeFile(path.join(pagesDir, `categories.ts`), categoriesTemplate)
 
