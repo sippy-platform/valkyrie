@@ -9,4 +9,16 @@
 @theme {
   --font-display: "Lexend", sans-serif;
   --font-dev: "Segoe UI Variable Display", var(--font-sans);
+
+  --color-blue-50: oklch(97% 0.014 248.72);
+  --color-blue-100: oklch(93.1% 0.02283 249.7);
+  --color-blue-200: oklch(88% 0.04067 248.25);
+  --color-blue-300: oklch(80.6% 0.0775 245.93);
+  --color-blue-400: oklch(70.3% 0.12833 248.74);
+  --color-blue-500: oklch(61.8% 0.16817 253.93);
+  --color-blue-600: oklch(54% 0.19 257);
+  --color-blue-700: oklch(48.35% 0.20175 258.5);
+  --color-blue-800: oklch(42.1% 0.1715 259.76);
+  --color-blue-900: oklch(37.75% 0.13225 259.64);
+  --color-blue-950: oklch(28.2% 0.091 262.05);
 }
