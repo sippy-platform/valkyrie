@@ -1,6 +1,6 @@
 import tailwindcss from "@tailwindcss/vite";
 import { devtools } from "@tanstack/devtools-vite";
-import react from "@vitejs/plugin-react-swc";
+import react from "@vitejs/plugin-react";
 import * as path from "path";
 import { visualizer } from "rollup-plugin-visualizer";
 import { defineConfig } from "vite";
