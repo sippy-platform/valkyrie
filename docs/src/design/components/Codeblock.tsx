@@ -1,28 +1,12 @@
-import { ReactNode } from 'react';
+import { type PropsWithChildren } from "react";
 
-import { Sheet, SheetProps } from '@mui/joy';
-
-interface ICodeblockProps extends SheetProps {
-  children: ReactNode;
-}
-
-export default function Codeblock({ children, ...props }: ICodeblockProps) {
+export default function Codeblock({ children, ...props }: PropsWithChildren) {
   return (
-    <Sheet
-      variant="outlined"
-      color="primary"
-      component="pre"
-      sx={{
-        fontSize: 'sm',
-        fontFamily: 'code',
-        p: 1,
-        m: 0,
-        borderRadius: 'sm',
-        backgroundColor: 'rgba(var(--joy-palette-primary-mainChannel) / .1)'
-      }}
+    <pre
+      className="rounded-sm border border-blue-200 bg-blue-100 px-2 py-1.5 font-mono text-sm text-blue-600"
       {...props}
     >
       <code>{children}</code>
-    </Sheet>
+    </pre>
   );
 }

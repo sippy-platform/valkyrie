@@ -1,50 +1,48 @@
-import { Stack, Typography } from '@mui/joy';
+import { viArrowUp, viMusic, viValkyrieSword } from "@sippy-platform/valkyrie";
 
-import Code from '@/design/components/Code';
+import Code from "@/design/components/Code";
 
-import { viArrowUp, viMusic, viValkyrieSword } from '@sippy-platform/valkyrie';
-
-import ApiTable from '../playground/ApiTable';
-import Playground, { IIconCssVariables, IPlaygroundConfig } from '../playground/Playground';
+import ApiTable from "../playground/ApiTable";
+import Playground, { type IIconCssVariables, type IPlaygroundConfig } from "../playground/Playground";
 
 export default function PageBounce() {
   const playgroundConfig: IPlaygroundConfig = {
     icons: [viValkyrieSword, viMusic, viArrowUp],
     properties: [
       {
-        label: 'Bounce',
-        type: 'chip',
-        name: 'bounce',
+        label: "Bounce",
+        type: "chip",
+        name: "bounce",
         values: [true, false],
-        default: true
-      }
+        default: true,
+      },
     ],
     cssVariables: [
       {
-        name: '--vi-animation-duration',
-        default: '1s',
-        description: 'Time for a full play through of the animation.'
+        name: "--vi-animation-duration",
+        default: "1s",
+        description: "Time for a full play through of the animation.",
       },
       {
-        name: '--vi-animation-iteration-count',
-        default: 'infinite',
-        description: 'Number of times the animation is repeated.'
-      }
-    ]
+        name: "--vi-animation-iteration-count",
+        default: "infinite",
+        description: "Number of times the animation is repeated.",
+      },
+    ],
   };
 
   return (
-    <Stack gap={2}>
-      <Typography level="h2">Fade</Typography>
-      <Typography>
+    <div className="flex flex-col gap-4">
+      <h2 className="font-display text-3xl font-medium">Bounce</h2>
+      <p>
         With the <Code>fade</Code> property gives you a basic fade animation.
-      </Typography>
+      </p>
 
       <Playground config={playgroundConfig} />
 
-      <Typography level="h3">API</Typography>
+      <h3 className="font-display text-2xl font-medium">API</h3>
 
       <ApiTable cssVariables={playgroundConfig.cssVariables as IIconCssVariables[]} />
-    </Stack>
+    </div>
   );
 }

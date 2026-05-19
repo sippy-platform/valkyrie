@@ -1,17 +1,16 @@
-import { useEffect, useMemo, useState } from 'react';
-import { createSearchParams, useNavigate, useParams } from 'react-router';
+import { useEffect, useMemo, useState } from "react";
+import { createSearchParams, NavLink, useNavigate, useParams } from "react-router";
 
-import { Alert, Avatar, Box, Button, Card, Chip, Container, IconButton, Input, Link, Stack, Typography } from '@mui/joy';
+import { Input } from "@base-ui/react";
+import Valkyrie, { viArrowLeft, viXmark } from "@sippy-platform/valkyrie";
 
-import icons from '@/data/icons';
-import Codeblock from '@/design/components/Codeblock';
-import Header from '@/design/layout/LayoutElements/Header';
-import { IIcon, ILibraryIcon } from '@/types';
-
-import Valkyrie, { viArrowLeft, viXmark } from '@sippy-platform/valkyrie';
-
-import IconCard from './Components/IconCard';
-import LargeIconGrid from './Components/LargeIconGrid';
+import icons from "@/data/icons";
+import { Button } from "@/design/components/Button";
+import Codeblock from "@/design/components/Codeblock";
+import { IconCard } from "@/design/components/IconCard";
+import { LargeIconGrid } from "@/design/components/LargeIconGrid";
+import Header from "@/design/layout/LayoutElements/Header";
+import { type IIcon, type ILibraryIcon } from "@/types";
 
 export default function Icon() {
   const navigate = useNavigate();
@@ -28,12 +27,12 @@ export default function Icon() {
 
   const reactImport = slug
     ? `vi${slug
-        .split('-')
+        .split("-")
         .map((word) => {
           return word[0].toUpperCase() + word.substring(1);
         })
-        .join('')}`
-    : '';
+        .join("")}`
+    : "";
 
   const categoryIcons = useMemo(() => {
     if (firstCategory) {
@@ -48,269 +47,184 @@ export default function Icon() {
   return (
     <>
       <Header>
-        <Stack direction="row" alignItems="center" justifyContent="space-between" gap={5}>
-          <Stack gap={1} alignItems="flex-start" sx={{ flexGrow: 1 }}>
-            <IconButton variant="plain" color="primary" onClick={() => navigate('/icons')}>
+        <div className="flex flex-row items-center justify-between">
+          <div className="flex grow flex-col items-start justify-start gap-2">
+            <Button icon plain onClick={() => navigate("/icons")}>
               <Valkyrie icon={viArrowLeft} />
-            </IconButton>
-            <Typography level="h1" fontSize={48}>
-              {icon?.title}
-            </Typography>
+            </Button>
+            <h1 className="font-display text-5xl font-medium">{icon?.title}</h1>
 
             {(icon?.categories || icon?.tags) && (
-              <Stack direction="row" gap={0.5}>
+              <div className="flex gap-1">
                 {icon?.categories?.map((cat) => (
-                  <Chip variant="solid" color="primary" size="sm" key={cat}>
+                  <NavLink
+                    key={cat}
+                    to={`/icons?${createSearchParams({ categories: cat })}`}
+                    className="font-display flex items-center gap-1 rounded-full bg-blue-500 px-2.5 py-1 text-xs text-white hover:bg-blue-600"
+                  >
                     {cat}
-                  </Chip>
+                  </NavLink>
                 ))}
                 {icon?.tags?.map((tag) => (
-                  <Chip key={tag} variant="outlined" size="sm">
+                  <div
+                    key={tag}
+                    className="font-display flex items-center gap-1 rounded-full bg-zinc-50 px-2.5 py-1 text-xs"
+                  >
                     {tag}
-                  </Chip>
+                  </div>
                 ))}
-              </Stack>
+              </div>
             )}
 
-            <Stack direction="row" gap={3} alignItems="center" justifyContent="center" sx={{ mt: 1 }}>
+            <div className="mt-3 flex items-center justify-center gap-3">
               {icon?.created && (
-                <Stack direction="row" gap={1}>
-                  <Typography>Created</Typography>{' '}
-                  <Chip size="sm" color="primary">
+                <div className="flex gap-2">
+                  <p className="text-sm">Created</p>{" "}
+                  <div className="font-display flex items-center gap-1 rounded-full border border-blue-300 bg-blue-200 px-1.5 py-px text-xs text-blue-600">
                     {icon?.created}
-                  </Chip>
-                </Stack>
+                  </div>
+                </div>
               )}
               {icon?.updated && (
-                <Stack direction="row" gap={1}>
-                  <Typography>Last updated</Typography>{' '}
-                  <Chip size="sm" color="primary">
+                <div className="flex gap-2">
+                  <p className="text-sm">Last updated</p>{" "}
+                  <div className="font-display flex items-center gap-1 rounded-full border border-blue-300 bg-blue-200 px-1.5 py-px text-xs text-blue-600">
                     {icon?.updated}
-                  </Chip>
-                </Stack>
+                  </div>
+                </div>
               )}
-            </Stack>
-          </Stack>
+            </div>
+          </div>
           <LargeIconGrid icon={viIcon?.icon} />
-        </Stack>
+        </div>
       </Header>
-      <Container>
-        <Stack gap={4} sx={{ my: 5 }}>
-          <Stack direction={{ xs: 'column', md: 'row' }} gap={2}>
-            <Box sx={{ flexGrow: 1 }}>
-              <Typography level="h3" sx={{ mb: 2 }}>
-                Usage
-              </Typography>
-              <Codeblock>
-                {`import Valkyrie, { ${reactImport} } from "@sippy-platform/valkyrie";
+      <div className="container m-auto my-8 max-w-7xl px-4">
+        <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-3">
+            <h3 className="font-display text-2xl font-medium">Usage</h3>
+            <Codeblock>
+              {`import Valkyrie, { ${reactImport} } from "@sippy-platform/valkyrie";
 
 <Valkyrie icon={${reactImport}} />`}
-              </Codeblock>
-            </Box>
-          </Stack>
-          <Stack direction={{ xs: 'column', md: 'row' }} gap={2}>
-            <Box sx={{ flexGrow: 1 }}>
-              <Typography level="h3" sx={{ mb: 2 }}>
-                Examples
-              </Typography>
-              <Box
-                sx={{
-                  display: 'grid',
-                  gap: 3,
-                  gridTemplateColumns: {
-                    xs: 'repeat(2, minmax(0, 1fr))',
-                    sm: 'repeat(3, minmax(0, 1fr))',
-                    md: 'repeat(4, minmax(0, 1fr))',
-                    lg: 'repeat(6, minmax(0, 1fr))'
-                  },
-                  gridAutoRows: '140px'
-                }}
-              >
-                <Card
-                  variant="solid"
-                  color="primary"
-                  sx={{ fontSize: 'xl4', display: 'flex', justifyContent: 'center', alignItems: 'center', order: 1, boxShadow: 'none' }}
-                >
-                  <Stack justifyContent="center" alignItems="center" gap={1}>
-                    <Valkyrie icon={viIcon?.icon} bounce />
-                    <Typography sx={{ color: 'primary.200', lineHeight: 1 }}>Bounce</Typography>
-                  </Stack>
-                </Card>
-                <Card
-                  variant="outlined"
-                  color="primary"
-                  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gridColumn: 'span 2', order: 2, boxShadow: 'none' }}
-                >
-                  <Typography fontSize="xl4" color="primary" startDecorator={<Valkyrie icon={viIcon?.icon} />} noWrap sx={{ maxWidth: 1 }}>
-                    {icon?.title}
-                  </Typography>
-                </Card>
-                <Card
-                  variant="solid"
-                  color="primary"
-                  sx={{
-                    fontSize: 'xl4',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    bgcolor: 'primary.300',
-                    gridColumn: 'span 2',
-                    order: 3,
-                    boxShadow: 'none'
-                  }}
-                >
-                  <Stack direction="row" gap={10}>
-                    <Stack justifyContent="center" alignItems="center" gap={1}>
-                      <Valkyrie icon={viIcon?.icon} spin />
-                      <Typography sx={{ color: 'primary.800', lineHeight: 1 }}>Spin</Typography>
-                    </Stack>
-                    <Stack justifyContent="center" alignItems="center" gap={1}>
-                      <Valkyrie icon={viIcon?.icon} spin="pulse" />
-                      <Typography sx={{ color: 'primary.800', lineHeight: 1 }}>Pulse</Typography>
-                    </Stack>
-                  </Stack>
-                </Card>
-                <Card
-                  variant="outlined"
-                  color="primary"
-                  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: { xs: 4, md: 2, lg: 4 }, boxShadow: 'none' }}
-                >
-                  <Input startDecorator={<Valkyrie icon={viIcon?.icon} />} placeholder={icon?.title} sx={{ maxWidth: 1 }} />
-                </Card>
-                <Card
-                  variant="outlined"
-                  color="primary"
-                  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: { xs: 6, sm: 10, lg: 5 }, boxShadow: 'none' }}
-                >
-                  <Avatar color="primary" size="lg" variant="solid">
-                    <Valkyrie icon={viIcon?.icon} />
-                  </Avatar>
-                </Card>
-                <Card
-                  variant="soft"
-                  color="primary"
-                  sx={{
-                    fontSize: 'xl4',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    gridColumn: { xs: 'span 2', sm: 'span 3', md: 'span 2', lg: 'span 3' },
-                    order: 7,
-                    boxShadow: 'none'
-                  }}
-                >
-                  <Stack direction="row" gap={10}>
-                    <Stack justifyContent="center" alignItems="center" gap={1}>
-                      <Valkyrie icon={viIcon?.icon} rotate={90} />
-                      <Typography sx={{ lineHeight: 1 }}>90°</Typography>
-                    </Stack>
-                    <Stack justifyContent="center" alignItems="center" gap={1}>
-                      <Valkyrie icon={viIcon?.icon} rotate={180} />
-                      <Typography sx={{ lineHeight: 1 }}>180°</Typography>
-                    </Stack>
-                    <Stack justifyContent="center" alignItems="center" gap={1}>
-                      <Valkyrie icon={viIcon?.icon} rotate={270} />
-                      <Typography sx={{ lineHeight: 1 }}>270°</Typography>
-                    </Stack>
-                  </Stack>
-                </Card>
-                <Card variant="outlined" color="primary" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: 8, boxShadow: 'none' }}>
-                  <Avatar color="primary" size="lg" variant="outlined" sx={{ borderRadius: 'md', bgcolor: 'primary.200', borderColor: 'primary.400' }}>
-                    <Valkyrie icon={viIcon?.icon} />
-                  </Avatar>
-                </Card>
-                <Card
-                  variant="solid"
-                  color="primary"
-                  sx={{ fontSize: 'xl4', display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: 'primary.700', order: 9, boxShadow: 'none' }}
-                >
-                  <Stack justifyContent="center" alignItems="center" gap={1}>
-                    <Valkyrie icon={viIcon?.icon} beat />
-                    <Typography sx={{ color: 'primary.200', lineHeight: 1 }}>Beat</Typography>
-                  </Stack>
-                </Card>
-                <Card
-                  variant="solid"
-                  color="primary"
-                  sx={{
-                    fontSize: 'xl4',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    gridColumn: { xs: 'span 2', sm: 'span 3', md: 'span 2', lg: 'span 3' },
-                    order: { xs: 10, md: 8, lg: 10 },
-                    boxShadow: 'none'
-                  }}
-                >
-                  <Stack direction="row" gap={10}>
-                    <Stack justifyContent="center" alignItems="center" gap={1}>
-                      <Valkyrie icon={viIcon?.icon} flip />
-                      <Typography sx={{ color: 'common.white', lineHeight: 1 }}>Flip</Typography>
-                    </Stack>
-                    <Stack justifyContent="center" alignItems="center" gap={1}>
-                      <Valkyrie icon={viIcon?.icon} flip="x" />
-                      <Typography sx={{ color: 'common.white', lineHeight: 1 }}>X</Typography>
-                    </Stack>
-                    <Stack justifyContent="center" alignItems="center" gap={1}>
-                      <Valkyrie icon={viIcon?.icon} flip="y" />
-                      <Typography sx={{ color: 'common.white', lineHeight: 1 }}>Y</Typography>
-                    </Stack>
-                  </Stack>
-                </Card>
-                <Card
-                  variant="soft"
-                  color="primary"
-                  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: { xs: 1, sm: 11 }, boxShadow: 'none' }}
-                >
-                  <Button size="lg" startDecorator={<Valkyrie icon={viIcon?.icon} />}>
-                    Button
+            </Codeblock>
+          </div>
+          <div className="flex flex-col gap-3">
+            <h3 className="font-display text-2xl font-medium">Examples</h3>
+            <div className="grid auto-rows-[140px] grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+              <div className="order-1 flex items-center justify-center rounded-lg border border-blue-600 bg-blue-500 text-white">
+                <div className="flex flex-col items-center justify-center gap-2">
+                  <Valkyrie icon={viIcon?.icon} bounce className="text-4xl" />
+                  <p className="text-base/5">Bounce</p>
+                </div>
+              </div>
+              <div className="order-2 col-span-2 flex items-center justify-center rounded-lg border border-blue-300 bg-zinc-100">
+                <div className="flex flex-row flex-nowrap items-center gap-4 text-blue-600">
+                  <Valkyrie icon={viIcon?.icon} className="text-4xl" />
+                  <span className="text-4xl text-nowrap">{icon?.title}</span>
+                </div>
+              </div>
+              <div className="order-3 col-span-2 flex items-center justify-center rounded-lg border border-blue-400 bg-blue-300 text-blue-800">
+                <div className="flex flex-row gap-20">
+                  <div className="flex flex-col items-center justify-center gap-2">
+                    <Valkyrie icon={viIcon?.icon} spin className="text-4xl" />
+                    <p className="text-base/5">Spin</p>
+                  </div>
+                  <div className="flex flex-col items-center justify-center gap-2">
+                    <Valkyrie icon={viIcon?.icon} spin="pulse" className="text-4xl" />
+                    <p className="text-base/5">Pulse</p>
+                  </div>
+                </div>
+              </div>
+              <div className="order-4 flex items-center justify-center rounded-lg border border-blue-300 bg-zinc-100 p-4 md:order-2 lg:order-4">
+                <div className="flex h-9 w-56 flex-row items-center justify-center rounded-md border border-zinc-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-blue-600">
+                  <Valkyrie icon={viIcon?.icon} className="ms-2.5" />
+                  <Input className="h-9 w-full px-2 text-base outline-0" placeholder={icon?.title} />
+                </div>
+              </div>
+              <div className="order-6 flex items-center justify-center rounded-lg border border-blue-300 bg-zinc-100 sm:order-10 lg:order-5">
+                <div className="flex size-12 items-center justify-center rounded-full border border-blue-600 bg-blue-500 text-xl text-white">
+                  <Valkyrie icon={viIcon?.icon} />
+                </div>
+              </div>
+              <div className="order-7 col-span-2 flex items-center justify-center rounded-lg border border-blue-300 bg-blue-100 text-blue-800 sm:col-span-3 md:col-span-2 lg:col-span-3">
+                <div className="flex flex-row gap-20">
+                  <div className="flex flex-col items-center justify-center gap-2">
+                    <Valkyrie icon={viIcon?.icon} rotate={90} className="text-4xl" />
+                    <p className="text-base/5 text-blue-800">90°</p>
+                  </div>
+                  <div className="flex flex-col items-center justify-center gap-2">
+                    <Valkyrie icon={viIcon?.icon} rotate={180} className="text-4xl" />
+                    <p className="text-base/5 text-blue-800">180°</p>
+                  </div>
+                  <div className="flex flex-col items-center justify-center gap-2">
+                    <Valkyrie icon={viIcon?.icon} rotate={270} className="text-4xl" />
+                    <p className="text-base/5 text-blue-800">270°</p>
+                  </div>
+                </div>
+              </div>
+              <div className="order-8 flex items-center justify-center rounded-lg border border-blue-300 bg-zinc-100">
+                <div className="flex size-12 items-center justify-center rounded-lg border border-blue-300 bg-blue-200 text-xl text-blue-600">
+                  <Valkyrie icon={viIcon?.icon} />
+                </div>
+              </div>
+              <div className="order-9 flex items-center justify-center rounded-lg border border-blue-950 bg-blue-800 text-white">
+                <div className="flex flex-col items-center justify-center gap-2">
+                  <Valkyrie icon={viIcon?.icon} beat className="text-4xl" />
+                  <p className="text-base/5">Beat</p>
+                </div>
+              </div>
+              <div className="order-10 col-span-2 flex items-center justify-center rounded-lg border border-blue-600 bg-blue-500 text-white sm:col-span-3 md:order-8 md:col-span-2 lg:order-10 lg:col-span-3">
+                <div className="flex flex-row gap-20">
+                  <div className="flex flex-col items-center justify-center gap-2">
+                    <Valkyrie icon={viIcon?.icon} flip className="text-4xl" />
+                    <p className="text-base/5">Flip</p>
+                  </div>
+                  <div className="flex flex-col items-center justify-center gap-2">
+                    <Valkyrie icon={viIcon?.icon} flip="x" className="text-4xl" />
+                    <p className="text-base/5">X</p>
+                  </div>
+                  <div className="flex flex-col items-center justify-center gap-2">
+                    <Valkyrie icon={viIcon?.icon} flip="y" className="text-4xl" />
+                    <p className="text-base/5">Y</p>
+                  </div>
+                </div>
+              </div>
+              <div className="order-1 flex items-center justify-center rounded-lg border border-blue-300 bg-blue-100 text-blue-800 sm:order-11">
+                <Button>
+                  <Valkyrie icon={viIcon?.icon} /> Button
+                </Button>
+              </div>
+              <div className="order-12 col-span-2 flex items-center justify-center rounded-lg border border-blue-300 bg-zinc-100">
+                <div className="flex flex-row items-center gap-3 rounded-md border border-blue-300 bg-blue-200 p-3 text-blue-500">
+                  <Valkyrie icon={viIcon?.icon} />
+                  <span className="text-sm font-medium">Hi! We're demoing you an icon.</span>
+                  <Button size="sm" icon>
+                    <Valkyrie icon={viXmark} />
                   </Button>
-                </Card>
-                <Card
-                  variant="outlined"
-                  color="primary"
-                  sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gridColumn: 'span 2', order: 12, boxShadow: 'none' }}
-                >
-                  <Alert
-                    variant="outlined"
-                    color="primary"
-                    sx={{ bgcolor: 'primary.100' }}
-                    startDecorator={<Valkyrie icon={viIcon?.icon} />}
-                    endDecorator={
-                      <IconButton size="sm" variant="solid" color="primary">
-                        <Valkyrie icon={viXmark} />
-                      </IconButton>
-                    }
-                  >
-                    Hi! We're demoing you an icon.
-                  </Alert>
-                </Card>
-              </Box>
-            </Box>
-          </Stack>
+                </div>
+              </div>
+            </div>
+          </div>
           {firstCategory && categoryIcons.length >= 1 && (
-            <Stack gap={2}>
-              <Typography level="h3">
-                More icons in{' '}
-                <Link color="primary" onClick={() => navigate({ pathname: '/icons', search: `?${createSearchParams({ category: firstCategory })}` })}>
+            <div className="flex flex-col gap-3">
+              <h3 className="font-display text-2xl font-medium">
+                More icons in{" "}
+                <NavLink
+                  to={`/icons?${createSearchParams({ category: firstCategory })}`}
+                  className="text-blue-600 decoration-blue-600 underline-offset-2 hover:underline hover:decoration-2"
+                >
                   {firstCategory}
-                </Link>
-              </Typography>
-              <Box
-                sx={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fill, minmax(min(9rem, 100%), 1fr))',
-                  gap: { xs: 1 }
-                }}
-              >
+                </NavLink>
+              </h3>
+              <div className="grid grid-cols-[repeat(auto-fill,minmax(min(9rem,100%),1fr))] gap-2">
                 {categoryIcons.slice(0, 28).map((icon: ILibraryIcon) => (
                   <IconCard key={icon.slug} icon={icon} />
                 ))}
-              </Box>
-            </Stack>
+              </div>
+            </div>
           )}
-        </Stack>
-      </Container>
+        </div>
+      </div>
     </>
   );
 }

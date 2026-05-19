@@ -1,0 +1,13 @@
+{
+  "srcFiles": [
+    "./icons/**/*.svg"
+  ],
+  "outputDirectory": "./src",
+  "interfaceName": "IValkyrie",
+  "typeName": "Valkyrie",
+  "prefix": "vi",
+  "fileName": "ValkyrieIcons",
+  "additionalModelFile": "./src",
+  "compileSources": true,
+  "completeIconSetName": "valkyrieSet"
+}

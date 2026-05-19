@@ -1,18 +1,17 @@
-import { Outlet } from 'react-router';
+import { type PropsWithChildren } from "react";
+import { Outlet } from "react-router";
 
-import { Box } from '@mui/joy';
+import ScrollToTop from "../components/ScrollToTop";
+import Footer from "./LayoutElements/Footer";
+import Navbar from "./LayoutElements/Navbar";
 
-import ScrollToTop from '../components/ScrollToTop';
-import Footer from './LayoutElements/Footer';
-import Navbar from './LayoutElements/Navbar';
-
-export default function Layout() {
+export default function Layout({ children }: PropsWithChildren) {
   return (
-    <Box sx={{ mt: -11.25 }}>
+    <div className="-mt-23">
       <ScrollToTop />
       <Navbar />
-      <Outlet />
+      {children ? children : <Outlet />}
       <Footer />
-    </Box>
+    </div>
   );
 }

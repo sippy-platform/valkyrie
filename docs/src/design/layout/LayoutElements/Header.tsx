@@ -1,22 +1,9 @@
-import { ReactNode } from 'react';
+import { type PropsWithChildren } from "react";
 
-import { Box, Container } from '@mui/joy';
-
-interface IHeaderProps {
-  children: ReactNode;
-}
-
-export default function Header({ children }: IHeaderProps) {
+export default function Header({ children }: PropsWithChildren) {
   return (
-    <Box
-      sx={{
-        bgcolor: 'primary.100',
-        pb: 3,
-        pt: 12,
-        borderBottom: '1px solid var(--joy-palette-primary-outlinedBorder)'
-      }}
-    >
-      <Container>{children}</Container>
-    </Box>
+    <div className="border-b border-blue-200 bg-blue-100 pt-23 pb-4">
+      <div className="container m-auto max-w-7xl px-4">{children}</div>
+    </div>
   );
 }
