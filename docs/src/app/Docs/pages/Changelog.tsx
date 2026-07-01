@@ -7,7 +7,7 @@ export default function Changelog() {
         name="Valkyrie 1.0 Release Candidate 2"
         version="1.0.0-rc.2"
         date="1 July 2026"
-        newIcons={["coin", "dollar", "pound"]}
+        newIcons={["coin", "dollar", "pound", "pen-to-square"]}
         updatedIcons={["shield-plus", "shield-xmark"]}
       />
       <Release
