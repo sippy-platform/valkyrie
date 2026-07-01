@@ -4,6 +4,13 @@ export default function Changelog() {
   return (
     <div className="flex flex-col gap-4">
       <Release
+        name="Valkyrie 1.0 Release Candidate 2"
+        version="1.0.0-rc.2"
+        date="1 July 2026"
+        newIcons={["coin", "dollar", "pound"]}
+        updatedIcons={["shield-plus", "shield-xmark"]}
+      />
+      <Release
         name="Valkyrie 1.0 Release Candidate 1"
         version="1.0.0-rc.1"
         date="19 May 2026"

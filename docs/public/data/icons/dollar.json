@@ -1,7 +1,7 @@
 {
-  "title": "Euro",
+  "title": "Dollar",
   "categories": ["finance"],
-  "tags": ["eur", "money"],
+  "tags": ["usd", "money"],
   "created": "1.0.0",
   "updated": "1.0.0"
 }
