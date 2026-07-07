@@ -20,7 +20,7 @@
     "version:sync": "node scripts/sync-versions.mjs"
   },
   "devDependencies": {
-    "syncpack": "^14.0.0"
+    "syncpack": "^15.3.2"
   },
   "packageManager": "pnpm@11.10.0"
 }
