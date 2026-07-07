@@ -31,7 +31,8 @@ Common workspace commands:
 pnpm dev
 pnpm build
 pnpm docs:build
-lib lib:prod
+pnpm lib:build
+pnpm lib:prod
 ```
 
 # Resources
