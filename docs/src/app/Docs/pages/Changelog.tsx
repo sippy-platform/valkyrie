@@ -4,6 +4,13 @@ export default function Changelog() {
   return (
     <div className="flex flex-col gap-4">
       <Release
+        name="Valkyrie 1.0.1"
+        version="1.0.1"
+        date="7 July 2026"
+        changed={["Adds the Readme to the package published on the npm registry."]}
+        fixed={["Fixes an error that prevented the documentation from publishing."]}
+      />
+      <Release
         name="Valkyrie 1.0.0"
         version="1.0.0"
         date="7 July 2026"
