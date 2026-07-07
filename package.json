@@ -1,8 +1,11 @@
 {
   "name": "valkyrie-monorepo",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "build": "pnpm -r build",
+    "deps:sync": "syncpack fix --dependency-types local,prod,dev",
+    "deps:sync-check": "syncpack lint --dependency-types local,prod,dev",
     "dev": "pnpm --filter valkyrie-docs dev",
     "docs:build": "pnpm --filter valkyrie-docs build",
     "docs:dev": "pnpm --filter valkyrie-docs dev",
@@ -13,7 +16,11 @@
     "lint": "pnpm -r lint",
     "lint:fix": "pnpm -r lint:fix",
     "lib:build": "pnpm --filter @sippy-platform/valkyrie build",
-    "lib:prod": "pnpm --filter @sippy-platform/valkyrie prod"
+    "lib:prod": "pnpm --filter @sippy-platform/valkyrie prod",
+    "version:sync": "node scripts/sync-versions.mjs"
+  },
+  "devDependencies": {
+    "syncpack": "^15.3.2"
   },
   "packageManager": "pnpm@11.10.0"
 }

@@ -4,121 +4,33 @@ export default function Changelog() {
   return (
     <div className="flex flex-col gap-4">
       <Release
-        name="Valkyrie 1.0 Release Candidate 3"
-        version="1.0.0-rc.3"
+        name="Valkyrie 1.0.1"
+        version="1.0.1"
         date="7 July 2026"
-        newIcons={[
-          "expand-rectangle",
-          "phone-arrow-bounce-left",
-          "phone-arrow-bounce-right",
-          "phone-arrow-right",
-          "phone-hangup",
-        ]}
-        updatedIcons={[
-          "phone-arrow-down-left-prohibited",
-          "phone-arrow-down-left",
-          "phone-arrow-up-right-prohibited",
-          "phone-arrow-up-right",
-          "phone-clock",
-          "phone-gear",
-          "phone-list",
-          "phone-volume",
-          "phone-xmark",
-          "phone",
-        ]}
+        changed={["Adds the Readme to the package published on the npm registry."]}
+        fixed={["Fixes an error that prevented the documentation from publishing."]}
       />
       <Release
-        name="Valkyrie 1.0 Release Candidate 2"
-        version="1.0.0-rc.2"
-        date="1 July 2026"
-        newIcons={["coin", "dollar", "pound", "pen-to-square"]}
-        updatedIcons={["shield-plus", "shield-xmark"]}
-      />
-      <Release
-        name="Valkyrie 1.0 Release Candidate 1"
-        version="1.0.0-rc.1"
-        date="19 May 2026"
-        added={[
-          "When the `Valkyrie` component isn't passed an icon, or the icon isn't valid, it will now show the `viCircleQuestion` icon. The `fade` property will be enabled to draw attention to it.",
-        ]}
-        changed={["Valkyrie how no dependencies anymore with the removal of `clsx`."]}
-        docs={[
-          "The documentation has been rebuilt with Tailwind and Base UI.",
-          "The search function can now properly look for tags.",
-          "Major improvements to our documentation, including simpeler changelog markup.",
-          "Fixes links to categories on the icon detail pages not working.",
-        ]}
-        newIcons={["sparkle", "sparkles"]}
-        updatedIcons={["facebook-messenger", "github", "google-play"]}
-      />
-      <Release
-        name="Valkyrie 1.0 beta"
-        version="1.0.0-beta.6"
-        date="11 March 2026"
-        added={[
-          "Valkyrie is now available as both a CJS and ESM package.",
-          "Adds the bounce animation to our default style, and added the `bounce` prop to our React component.",
-          "When the `Valkyrie` component isn't passed an icon, or the icon isn't valid, it will now show the `viCircleQuestion` icon. The `fade` property will be enabled to draw attention to it.",
-        ]}
-        changed={[
-          "The `ValkyrieIcon` component has been renamed to `Valkyrie`.",
-          "Rotate now allows you to set any numeric value rather than just `0`, `90`, `180`, or `270`.",
-          "Valkyrie now only has 1 dependency as we've dropped `@emotion/css` and `html-react-parser`.",
-          "Major enhancements to our build process and library generation. We now include source maps.",
-        ]}
-        fixed={[
-          "Fixes the ESM export missing file extensions.",
-          "Fixes the SVG and export for `fingerprint`, `record-stop`, `safari`, `signal-strong`, and `triangle-exclamation` containing the icon twice.",
-          "Fixes a bug where `rotate` would not correctly apply the animation styling.",
-          "Fixes a bug where markdown generation would report a successful run before finishing.",
-        ]}
-        docs={[
-          "The category filter now keeps showing empty categories for easier navigation.",
-          "Various categories have been updated and categories have been regrouped to make more sense.",
-          "Major improvements to our documentation, including simpeler changelog markup.",
-        ]}
-        newIcons={[
-          "arrows-up-right-and-down-left-from-center",
-          "arrows-up-right-and-down-left-to-center",
-          "calendar-arrow-to-day",
-          "cursor",
-          "diamonds",
-          "id-card-slash",
-          "input",
-          "square-check",
-        ]}
-        updatedIcons={[
-          "arrow-down-to-line",
-          "arrow-left-from-bracket",
-          "arrow-up-right-from-square",
-          "devices",
-          "fanvil",
-          "fingerprint",
-          "gauge",
-          "keyboard",
-          "message-pen",
-          "record-stop",
-          "safari",
-          "signal-strong",
-          "teams",
-          "triangle-exclamation",
-          "yealink",
-        ]}
-      />
-      <Release
-        name="Valkyrie 1.0 alpha"
-        version="1.0.0-alpha.57"
-        date="19 May 2025"
+        name="Valkyrie 1.0.0"
+        version="1.0.0"
+        date="7 July 2026"
         added={[
           "Fully redesigned icons based on Amicons.",
-          "Adds the React `ValkyrieIcon` component.",
-          "Adds new animations like fade, beat and pulse to our default CSS.",
-          "Introduces a brand new documentation website with improved icon previews, component documentation with interactive playground, this changelog, and much more. And best of all; it's now available online instead of needing to be compiled by you.",
+          "Adds the React `Valkyrie` component.",
+          "Valkyrie is now available as both a CJS and ESM package.",
+          "Adds new animations like fade, beat, pulse, and bounce to our default CSS.",
+          "When the `Valkyrie` component isn't passed an icon, or the icon isn't valid, it will now show the `viCircleQuestion` icon. The `fade` property will be enabled to draw attention to it.",
         ]}
         changed={[
           "Improved tooling for builds.",
           "Renames the `ValkyrieIcon` type to `IValkyrie`.",
           "CSS transitions are now inherited from the parent element.",
+          "Rotate now allows you to set any numeric value rather than just `0`, `90`, `180`, or `270`.",
+          "Valkyrie no longer depends on any other package.",
+          "Major enhancements to our build process and library generation. We now include source maps.",
+        ]}
+        docs={[
+          "Introduces a brand new documentation website with improved icon previews, component documentation with interactive playground, this changelog, and much more. And best of all; it's now available online instead of needing to be compiled by you.",
         ]}
         removed={["Removes the included CSS and font files."]}
         newIcons={[
@@ -139,10 +51,13 @@ export default function Changelog() {
           "arrow-right-to-file",
           "arrow-up-right-from-square",
           "arrow-up-to-cloud",
+          "arrows-up-right-and-down-left-from-center",
+          "arrows-up-right-and-down-left-to-center",
           "bars-uneven",
           "bel",
           "broom",
           "burger-glass",
+          "calendar-arrow-to-day",
           "calendar-clock",
           "calendar-day",
           "calendar-range-clock",
@@ -156,9 +71,12 @@ export default function Changelog() {
           "circle-half-inner",
           "circle-half",
           "cloud-softphone",
+          "coin",
           "command",
           "compare",
+          "cursor",
           "diagram",
+          "diamonds",
           "dice-five",
           "dice-four",
           "dice-one",
@@ -166,6 +84,7 @@ export default function Changelog() {
           "dice-three",
           "dice-two",
           "dice",
+          "dollar",
           "door",
           "ellipsis-v",
           "export",
@@ -185,6 +104,8 @@ export default function Changelog() {
           "grip-dots-v",
           "grip-dots",
           "horizontal-line",
+          "id-card-slash",
+          "input",
           "key",
           "keyboard-brightness-high",
           "keyboard-brightness-low",
@@ -205,10 +126,12 @@ export default function Changelog() {
           "order-numerical-desc",
           "pager",
           "password",
+          "pen-to-square",
           "people-xmark",
           "person-xmark",
           "phone-xmark",
           "plate-utensils",
+          "pound",
           "previous",
           "react",
           "receipt",
@@ -225,8 +148,11 @@ export default function Changelog() {
           "signal-slash",
           "signal-strong",
           "signal-weak",
+          "sparkle",
+          "sparkles",
           "speaker-grill",
           "spinner",
+          "square-check",
           "subscript",
           "superscript",
           "table-cell-merge",
@@ -250,40 +176,54 @@ export default function Changelog() {
           "windows",
           "yealink",
         ]}
+        updatedIcons={[
+          "arrow-down-to-line",
+          "arrow-left-from-bracket",
+          "devices",
+          "facebook-messenger",
+          "gauge",
+          "github",
+          "google-play",
+          "message-pen",
+          "safari",
+          "shield-plus",
+          "shield-xmark",
+          "triangle-exclamation",
+        ]}
         renamedIcons={[
-          { old: "pin", new: "thumbtack" },
-          { old: "pin-slash", new: "thumbtack-slash" },
-          { old: "grip-dots", new: "grip-dots-h" },
-          { old: "ellipsis", new: "ellipsis-h" },
-          { old: "smartphone-arrow-right", new: "arrow-right-from-smartphone" },
-          { old: "square-p", new: "rectangle-p" },
-          { old: "circle-user", new: "circle-person" },
           { old: "arrow-right-ban", new: "arrow-right-prohibited" },
           { old: "ban", new: "prohibited" },
+          { old: "circle-user", new: "circle-person" },
           { old: "clear-formatting", new: "a-gum" },
           { old: "clear-node", new: "square-gum" },
+          { old: "ellipsis", new: "ellipsis-h" },
           { old: "film", new: "filmstrip" },
+          { old: "grip-dots", new: "grip-dots-h" },
           { old: "horizontal-rule", new: "line" },
-          { old: "link", new: "chain" },
           { old: "link-slash", new: "chain-slash" },
+          { old: "link", new: "chain" },
           { old: "list-check", new: "list-checks" },
-          { old: "list-ol", new: "list-ordered" },
           { old: "list-ol-clock", new: "list-ordered-clock" },
+          { old: "list-ol", new: "list-ordered" },
           { old: "logs", new: "files-list" },
           { old: "paper-plane-top", new: "paper-plane" },
           { old: "phone-arrow-down-left-ban", new: "phone-arrow-down-left-prohibited" },
           { old: "phone-arrow-up-right-ban", new: "phone-arrow-up-right-prohibited" },
+          { old: "pin-slash", new: "thumbtack-slash" },
+          { old: "pin", new: "thumbtack" },
           { old: "repeat-1", new: "repeat-once" },
+          { old: "smartphone-arrow-right", new: "arrow-right-from-smartphone" },
           { old: "smartphone-divert", new: "smartphone-arrow-right" },
+          { old: "square-p", new: "rectangle-p" },
           { old: "unlock", new: "lock-open" },
-          { old: "users", new: "people" },
-          { old: "user", new: "person" },
           { old: "user-clock", new: "person-clock" },
           { old: "user-gear", new: "person-gear" },
           { old: "user-headset", new: "person-headset" },
           { old: "user-list", new: "person-list" },
           { old: "user-lock", new: "person-lock" },
           { old: "user-plus", new: "person-plus" },
+          { old: "user", new: "person" },
+          { old: "users", new: "people" },
           { old: "volumne-none", new: "volume-slash" },
         ]}
       />

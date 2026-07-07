@@ -4,9 +4,34 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    '@types/react':
+      specifier: ^19.2.17
+      version: 19.2.17
+    oxfmt:
+      specifier: ^0.58.0
+      version: 0.58.0
+    oxlint:
+      specifier: ^1.73.0
+      version: 1.73.0
+    react:
+      specifier: ^19.2.7
+      version: 19.2.7
+    react-dom:
+      specifier: ^19.2.7
+      version: 19.2.7
+    typescript:
+      specifier: ^6.0.3
+      version: 6.0.3
+
 importers:
 
-  .: {}
+  .:
+    devDependencies:
+      syncpack:
+        specifier: ^15.3.2
+        version: 15.3.2
 
   docs:
     dependencies:
@@ -32,10 +57,10 @@ importers:
         specifier: 1.0.0-beta.4
         version: 1.0.0-beta.4(typescript@6.0.3)
       react:
-        specifier: ^19.2.7
+        specifier: 'catalog:'
         version: 19.2.7
       react-dom:
-        specifier: ^19.2.7
+        specifier: 'catalog:'
         version: 19.2.7(react@19.2.7)
       react-router:
         specifier: 8.1.0
@@ -60,7 +85,7 @@ importers:
         specifier: 6.0.2
         version: 6.0.2(prettier@3.9.4)
       '@types/react':
-        specifier: ^19.2.17
+        specifier: 'catalog:'
         version: 19.2.17
       '@types/react-dom':
         specifier: ^19.2.3
@@ -72,10 +97,10 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0
       oxfmt:
-        specifier: ^0.58.0
+        specifier: 'catalog:'
         version: 0.58.0
       oxlint:
-        specifier: ^1.73.0
+        specifier: 'catalog:'
         version: 1.73.0
       prettier-plugin-tailwindcss:
         specifier: ^0.8.0
@@ -84,7 +109,7 @@ importers:
         specifier: ^7.0.1
         version: 7.0.1(rolldown@1.1.4)(rollup@4.62.2)
       typescript:
-        specifier: ^6.0.3
+        specifier: 'catalog:'
         version: 6.0.3
       vite:
         specifier: ^8.1.3
@@ -99,19 +124,19 @@ importers:
   valkyrie:
     devDependencies:
       '@types/react':
-        specifier: ^19.2.17
+        specifier: 'catalog:'
         version: 19.2.17
       oxfmt:
-        specifier: ^0.58.0
+        specifier: 'catalog:'
         version: 0.58.0
       oxlint:
-        specifier: ^1.73.0
+        specifier: 'catalog:'
         version: 1.73.0
       picocolors:
         specifier: 1.1.1
         version: 1.1.1
       react:
-        specifier: ^19.2.7
+        specifier: 'catalog:'
         version: 19.2.7
       svg-to-ts:
         specifier: 12.0.0
@@ -123,7 +148,7 @@ importers:
         specifier: ^8.5.1
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.16)(typescript@6.0.3)
       typescript:
-        specifier: ^6.0.3
+        specifier: 'catalog:'
         version: 6.0.3
 
 packages:
@@ -2503,6 +2528,51 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
+  syncpack-darwin-arm64@15.3.2:
+    resolution: {integrity: sha512-rQwZOvWJbvUzhBySbKnvs+F5khmdkH2W/kTZo+zz6UfH651K9z2fiOYlcpDPX0L97m566gRxVmOr930ygB97ZQ==}
+    cpu: [arm64]
+    os: [darwin]
+
+  syncpack-darwin-x64@15.3.2:
+    resolution: {integrity: sha512-91CWe9Pamfmlm2nY8bCL5z8GYOafGJUm/nQqtvaQDZ9SS25c6Gn8LDfRu6JSKV0dcI1zOH3EiRCM0K/kn9Mpiw==}
+    cpu: [x64]
+    os: [darwin]
+
+  syncpack-linux-arm64-musl@15.3.2:
+    resolution: {integrity: sha512-IzI4Sr1rFDuF7FFbZ+ti+qA2/0Rp/aGNgzoUzNH28wYJkJMv9KBBr3Nygc1jsoO1+XE1JkYsXkJHuSFrwiwtgA==}
+    cpu: [arm64]
+    os: [linux]
+
+  syncpack-linux-arm64@15.3.2:
+    resolution: {integrity: sha512-eApeUFLb8yFHAFnCyHicDieTBW0eR3HsaKSWPMmz+VOQOpZYl0cmqbRLtunsYN6OykRi9Sl1faYjKmyETow7Gg==}
+    cpu: [arm64]
+    os: [linux]
+
+  syncpack-linux-x64-musl@15.3.2:
+    resolution: {integrity: sha512-dohyuYgUVHdSFz1KYW/XngyYSiSV3tarroYRsloYsT8bcSStkh2vJVBht0eMl1OFTh3Hb6lNEC12Pgtw4gWTcg==}
+    cpu: [x64]
+    os: [linux]
+
+  syncpack-linux-x64@15.3.2:
+    resolution: {integrity: sha512-xrzBZx3DjKoece2h3Olv/Y/U7b1eNorWTMiF407m0tO5KJp5u926TMeHlldaA5GRCkVJBe5VaI33WYTJF753oQ==}
+    cpu: [x64]
+    os: [linux]
+
+  syncpack-windows-arm64@15.3.2:
+    resolution: {integrity: sha512-ZGjVpyS8PW6Y69HyXOb8RYVWRQ+hlRklqdgOp+x+eqrCRidGho8z2nN5tleMGzcaMC7hg+qSPFh5u6Fy/BXr4w==}
+    cpu: [arm64]
+    os: [win32]
+
+  syncpack-windows-x64@15.3.2:
+    resolution: {integrity: sha512-9zKWNXGhd3rryQjcpBjs02pKgvIzuz3PUS+vKL4vWnDu5VoHad4e6TzL4pvn+VfAm4wXzcuS9fZkxLBEMPLerw==}
+    cpu: [x64]
+    os: [win32]
+
+  syncpack@15.3.2:
+    resolution: {integrity: sha512-RKYfXFQlrIWosTheNbyJg3xHNjTDrW2mOvwxAz3XGghrUDN4hDjhKPCTAQrUtGZw9hNeIr37qRO3/+EP927Vtg==}
+    engines: {node: '>=14.17.0'}
+    hasBin: true
+
   tailwind-merge@3.6.0:
     resolution: {integrity: sha512-uxL7qAVQriqRQPAyK3pj66VqskWqoZ37PW94jwOTwNfq/z9oyu1V+eqrZqtR2+fCiXdYOZe/Modt8GtvqNzu+w==}
 
@@ -4688,6 +4758,41 @@ snapshots:
       csso: 5.0.5
       picocolors: 1.1.1
       sax: 1.6.0
+
+  syncpack-darwin-arm64@15.3.2:
+    optional: true
+
+  syncpack-darwin-x64@15.3.2:
+    optional: true
+
+  syncpack-linux-arm64-musl@15.3.2:
+    optional: true
+
+  syncpack-linux-arm64@15.3.2:
+    optional: true
+
+  syncpack-linux-x64-musl@15.3.2:
+    optional: true
+
+  syncpack-linux-x64@15.3.2:
+    optional: true
+
+  syncpack-windows-arm64@15.3.2:
+    optional: true
+
+  syncpack-windows-x64@15.3.2:
+    optional: true
+
+  syncpack@15.3.2:
+    optionalDependencies:
+      syncpack-darwin-arm64: 15.3.2
+      syncpack-darwin-x64: 15.3.2
+      syncpack-linux-arm64: 15.3.2
+      syncpack-linux-arm64-musl: 15.3.2
+      syncpack-linux-x64: 15.3.2
+      syncpack-linux-x64-musl: 15.3.2
+      syncpack-windows-arm64: 15.3.2
+      syncpack-windows-x64: 15.3.2
 
   tailwind-merge@3.6.0: {}
 
