@@ -12,6 +12,28 @@ npm install @sippy-platform/valkyrie
 
 The package includes the individual SVG files, a React-component and JavaScript implementation with TypeScript definitions.
 
+# Development
+
+This repository is managed as a pnpm workspace with two packages:
+
+- `docs` for the Vite documentation site
+- `valkyrie` for the published icon library
+
+Install dependencies from the repository root:
+
+```bash
+pnpm install
+```
+
+Common workspace commands:
+
+```bash
+pnpm dev
+pnpm build
+pnpm docs:build
+lib lib:prod
+```
+
 # Resources
 
 [Available on Figma](https://www.figma.com/file/jeP1aSRulegRxHDegrrmWc/Valkyrie?node-id=1%3A11358)
