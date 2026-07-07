@@ -51,8 +51,8 @@
   },
   "devDependencies": {
     "@types/react": "^19.2.17",
-    "oxfmt": "^0.57.0",
-    "oxlint": "^1.72.0",
+    "oxfmt": "^0.58.0",
+    "oxlint": "^1.73.0",
     "picocolors": "1.1.1",
     "react": "^19.2.7",
     "svg-to-ts": "12.0.0",
