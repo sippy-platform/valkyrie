@@ -4,6 +4,30 @@ export default function Changelog() {
   return (
     <div className="flex flex-col gap-4">
       <Release
+        name="Valkyrie 2.0 Alpha 1"
+        version="2.0.0-alpha.1"
+        date="7 July 2026"
+        newIcons={[
+          "expand-rectangle",
+          "phone-arrow-bounce-left",
+          "phone-arrow-bounce-right",
+          "phone-arrow-right",
+          "phone-hangup",
+        ]}
+        updatedIcons={[
+          "phone-arrow-down-left-prohibited",
+          "phone-arrow-down-left",
+          "phone-arrow-up-right-prohibited",
+          "phone-arrow-up-right",
+          "phone-clock",
+          "phone-gear",
+          "phone-list",
+          "phone-volume",
+          "phone-xmark",
+          "phone",
+        ]}
+      />
+      <Release
         name="Valkyrie 1.0.1"
         version="1.0.1"
         date="7 July 2026"
