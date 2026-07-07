@@ -1,0 +1,19 @@
+{
+  "name": "valkyrie-monorepo",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm --filter valkyrie-docs dev",
+    "docs:build": "pnpm --filter valkyrie-docs build",
+    "docs:dev": "pnpm --filter valkyrie-docs dev",
+    "docs:preview": "pnpm --filter valkyrie-docs preview",
+    "fix": "pnpm -r fix",
+    "format": "pnpm -r format",
+    "format:fix": "pnpm -r format:fix",
+    "lint": "pnpm -r lint",
+    "lint:fix": "pnpm -r lint:fix",
+    "lib:build": "pnpm --filter @sippy-platform/valkyrie build",
+    "lib:prod": "pnpm --filter @sippy-platform/valkyrie prod"
+  },
+  "packageManager": "pnpm@11.10.0"
+}

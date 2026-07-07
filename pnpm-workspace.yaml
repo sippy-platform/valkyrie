@@ -1,7 +1,13 @@
+packages:
+  - docs
+  - valkyrie
+
 minimumReleaseAge: 0
 
 allowBuilds:
   "@swc/core": true
+  esbuild: true
+
 minimumReleaseAgeExclude:
   - "@typescript-eslint/eslint-plugin@8.59.4"
   - "@typescript-eslint/parser@8.59.4"
