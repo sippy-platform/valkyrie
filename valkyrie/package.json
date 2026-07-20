@@ -56,7 +56,7 @@
     "picocolors": "1.1.1",
     "react": "catalog:",
     "svg-to-ts": "12.0.0",
-    "svgo": "4.0.1",
+    "svgo": "^4.0.2",
     "tsup": "^8.5.1",
     "typescript": "catalog:"
   },
