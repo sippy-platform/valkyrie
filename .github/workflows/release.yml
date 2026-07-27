@@ -72,14 +72,16 @@ jobs:
           registry-url: "https://registry.npmjs.org"
       - name: Create GitHub release
         run: |
+          printf '%s' "$RELEASE_NOTES" > release-notes.md
           gh release create v${{ needs.build.outputs.version }} \
             --repo ${{ github.repository }} \
             --target "${{ github.event.pull_request.merge_commit_sha }}" \
             --title "${{ github.event.pull_request.title }}" \
-            --notes "${{ github.event.pull_request.body }}" \
+            --notes-file release-notes.md \
             "valkyrie-${{ needs.build.outputs.version }}-icons.zip#Valkyrie icons v${{ needs.build.outputs.version }}"
         env:
           GH_TOKEN: ${{ github.token }}
+          RELEASE_NOTES: ${{ github.event.pull_request.body }}
       - name: Publish to npm
         run: npm publish ./valkyrie/sippy-platform-valkyrie-${{ needs.build.outputs.version }}.tgz --access public --provenance --tag latest
 
@@ -100,14 +102,16 @@ jobs:
           registry-url: "https://registry.npmjs.org"
       - name: Create GitHub prerelease
         run: |
+          printf '%s' "$RELEASE_NOTES" > release-notes.md
           gh release create v${{ needs.build.outputs.version }} \
             --repo ${{ github.repository }} \
             --target "${{ github.event.pull_request.merge_commit_sha }}" \
             --title "${{ github.event.pull_request.title }}" \
-            --notes "${{ github.event.pull_request.body }}" \
+            --notes-file release-notes.md \
             --prerelease \
             "valkyrie-${{ needs.build.outputs.version }}-icons.zip#Valkyrie icons v${{ needs.build.outputs.version }}"
         env:
           GH_TOKEN: ${{ github.token }}
+          RELEASE_NOTES: ${{ github.event.pull_request.body }}
       - name: Publish to npm (next)
         run: npm publish ./valkyrie/sippy-platform-valkyrie-${{ needs.build.outputs.version }}.tgz --access public --provenance --tag next
