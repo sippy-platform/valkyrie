@@ -3,18 +3,12 @@ packages:
   - valkyrie
 
 catalog:
-  react: ^19.3.1
-  react-dom: ^19.3.1
-  "@types/react": ^19.3.0
-  typescript: ^7.0.2
-  oxfmt: ^0.76.0
-  oxlint: ^1.91.0
-
-# tsup 9 bundles rollup-plugin-dts, which needs the TypeScript compiler API.
-# TypeScript 7 no longer ships it, so the library build stays on TypeScript 6.
-catalogs:
-  ts6:
-    typescript: ^6.0.3
+  react: ^19.2.7
+  react-dom: ^19.2.7
+  "@types/react": ^19.2.17
+  typescript: ^6.0.3
+  oxfmt: ^0.58.0
+  oxlint: ^1.73.0
 
 minimumReleaseAge: 0
 
