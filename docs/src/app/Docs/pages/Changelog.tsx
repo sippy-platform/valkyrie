@@ -4,6 +4,14 @@ export default function Changelog() {
   return (
     <div className="flex flex-col gap-4">
       <Release
+        name="Valkyrie 2.0 alpha 2"
+        version="2.0.0-alpha.2"
+        date="5 November 2026"
+        newIcons={["arrow-split-up-and-right", "bell-ring", "robot"]}
+        updatedIcons={["bell", "rectangle-p"]}
+        renamedIcons={[{ old: "bel", new: "bell" }]}
+      />
+      <Release
         name="Valkyrie 2.0 alpha 1"
         version="2.0.0-alpha.1"
         date="7 July 2026"
