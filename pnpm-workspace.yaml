@@ -10,6 +10,12 @@ catalog:
   oxfmt: ^0.76.0
   oxlint: ^1.91.0
 
+# tsup 9 bundles rollup-plugin-dts, which needs the TypeScript compiler API.
+# TypeScript 7 no longer ships it, so the library build stays on TypeScript 6.
+catalogs:
+  ts6:
+    typescript: ^6.0.3
+
 minimumReleaseAge: 0
 
 allowBuilds:

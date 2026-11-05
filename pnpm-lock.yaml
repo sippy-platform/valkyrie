@@ -182,6 +182,10 @@ catalogs:
     typescript:
       specifier: ^7.0.2
       version: 7.0.2
+  ts6:
+    typescript:
+      specifier: ^6.0.3
+      version: 6.0.3
 
 importers:
 
@@ -304,10 +308,10 @@ importers:
         version: 4.1.0
       tsup:
         specifier: ^9.0.0
-        version: 9.0.0(jiti@2.7.0)(postcss@8.5.32)(typescript@7.0.2)
+        version: 9.0.0(jiti@2.7.0)(postcss@8.5.32)(typescript@6.0.3)
       typescript:
-        specifier: 'catalog:'
-        version: 7.0.2
+        specifier: catalog:ts6
+        version: 6.0.3
 
 packages:
 
@@ -2968,7 +2972,7 @@ packages:
       '@microsoft/api-extractor': ^7.36.0
       '@swc/core': ^1
       postcss: ^8.4.12
-      typescript: '>=4.5.0'
+      typescript: ^6.0.3
     peerDependenciesMeta:
       '@microsoft/api-extractor':
         optional: true
@@ -2982,6 +2986,11 @@ packages:
   typescript@4.9.5:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
     engines: {node: '>=4.2.0'}
+    hasBin: true
+
+  typescript@6.0.3:
+    resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
+    engines: {node: '>=14.17'}
     hasBin: true
 
   typescript@7.0.2:
@@ -5287,7 +5296,7 @@ snapshots:
 
   tslib@2.9.1: {}
 
-  tsup@9.0.0(jiti@2.7.0)(postcss@8.5.32)(typescript@7.0.2):
+  tsup@9.0.0(jiti@2.7.0)(postcss@8.5.32)(typescript@6.0.3):
     dependencies:
       bundle-require: 5.1.0(esbuild@0.28.2)
       cac: 7.1.0
@@ -5308,13 +5317,15 @@ snapshots:
       tree-kill: 1.2.2
     optionalDependencies:
       postcss: 8.5.32
-      typescript: 7.0.2
+      typescript: 6.0.3
     transitivePeerDependencies:
       - jiti
       - tsx
       - yaml
 
   typescript@4.9.5: {}
+
+  typescript@6.0.3: {}
 
   typescript@7.0.2:
     optionalDependencies:
